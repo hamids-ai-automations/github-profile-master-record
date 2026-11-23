@@ -1,0 +1,12 @@
+{
+  "run_at": "2026-11-23T06:23:24+00:00",
+  "mode": "full",
+  "trigger": "initial data collection",
+  "duration_seconds": 75.4,
+  "api_requests": 1062,
+  "failed_requests": 0,
+  "changes_detected": 0,
+  "changed_fields": [],
+  "result": "success",
+  "error": null
+}

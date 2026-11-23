@@ -2,7 +2,7 @@
 
 **Owner:** Muhammad Hamid (@hamids-ai-automations) — AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
-**Last synchronized:** 2026-11-23T06:02:33+00:00
+**Last synchronized:** 2026-11-23T06:23:24+00:00
 
 ## How to use this repository
 
@@ -72,8 +72,8 @@
 - https://google.github.io/sbsim → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/sbsim
 - https://gitwyd.github.io/sbsim_documentation → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/sbsim
 - https://github.com/googleapis/genai-toolbox → hamids-ai-automations/cymbal-air-toolbox-demo
-- https://pypi.org/project/pubchem-finder → hamids-ai-automations/pubchem-finder
 - https://opnform.com → hamids-ai-automations/OpnForm
+- https://vibgrate.com → hamids-ai-automations/cli
 - https://pypi.org/project/pygrpc-native → hamids-ai-automations/pygrpc-native
 - https://ab-lab.streamlit.app → hamids-ai-automations/ab-lab
 - https://ab-lab.streamlit.app/** → hamids-ai-automations/ab-lab

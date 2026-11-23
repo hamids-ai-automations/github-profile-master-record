@@ -267,7 +267,6 @@
 | https://opnform.com | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/OpnForm |
 | https://proteanhq.com | live_site | repository_homepage | hamids-ai-automations/protean |
 | https://pypi.org/project/oschmod | live_site | repository_homepage | hamids-ai-automations/oschmod |
-| https://pypi.org/project/pubchem-finder | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/pubchem-finder |
 | https://pypi.org/project/pygrpc-native | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/pygrpc-native |
 | https://pysad.readthedocs.io/en/stable | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/pysad |
 | https://returns.rtfd.io | live_site | repository_homepage | hamids-ai-automations/returns |
@@ -279,6 +278,7 @@
 | https://supabase.com/docs/reference/python | live_site | repository_homepage | hamids-ai-automations/supabase-py |
 | https://trafilatura.readthedocs.io | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/trafilatura |
 | https://tsoa-community.github.io/reference | live_site | repository_readme_link | hamids-ai-automations/tsoa |
+| https://vibgrate.com | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/cli |
 | https://volparossa.org/volparossa-code | live_site | repository_homepage | hamids-ai-automations/volparossa-code |
 | https://www.exmergo.com/dex | live_site | repository_homepage | hamids-ai-automations/dex |
 | https://linkedin.com/in/iamvisheshsrivastava | social | repository_readme_link | hamids-ai-automations/ab-lab |
@@ -607,6 +607,7 @@
 | https://pypi.org/project/openmed | website | repository_readme_link | hamids-ai-automations/openmed |
 | https://pypi.org/project/orb-py | website | repository_readme_link | hamids-ai-automations/open-resource-broker |
 | https://pypi.org/project/protean | website | repository_readme_link | hamids-ai-automations/protean |
+| https://pypi.org/project/pubchem-finder | website | repository_readme_link, repository_homepage | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/pubchem-finder |
 | https://pypi.org/project/pysad | website | repository_readme_link | hamids-ai-automations/pysad |
 | https://pypi.org/project/returns | website | repository_readme_link | hamids-ai-automations/returns |
 | https://pypi.org/project/rich | website | repository_readme_link | hamids-ai-automations/rich |
@@ -691,7 +692,6 @@
 | https://unaimytext.com | website | repository_readme_link | hamids-ai-automations/dayjs |
 | https://uvicorn.dev | website | repository_readme_link | hamids-ai-automations/starlette |
 | https://vercel.com | website | repository_readme_link | hamids-ai-automations/restock-radar |
-| https://vibgrate.com | website | repository_readme_link, repository_homepage | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/cli |
 | https://vibgrate.com/cli | website | repository_readme_link | hamids-ai-automations/cli |
 | https://vibgrate.com/cli/benchmarks/token-savings | website | repository_readme_link | hamids-ai-automations/cli |
 | https://vibgrate.com/driftrisk | website | repository_readme_link | hamids-ai-automations/cli |

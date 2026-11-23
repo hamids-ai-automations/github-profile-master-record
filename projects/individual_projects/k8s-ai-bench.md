@@ -66,8 +66,8 @@ No deployment configuration detected.
 
 ## Documentation links
 
-- http://localhost:8000
 - https://gke-labs.github.io/k8s-ai-bench
+- http://localhost:8000
 - https://www.vcluster.com/docs/vcluster
 
 ## Development status

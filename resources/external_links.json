@@ -6,10 +6,11 @@
       "profile_website",
       "social_account",
       "profile_readme_link",
-      "repository_homepage",
-      "repository_readme_link"
+      "repository_readme_link",
+      "repository_homepage"
     ],
     "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
       "hamids-ai-automations/hamids-ai-automations",
       "hamids-ai-automations/ghl-devops-toolkit",
       "hamids-ai-automations/envscope",
@@ -179,15 +180,213 @@
     "verified": null
   },
   {
+    "url": "https://hamid-resume.web.app",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link",
+      "repository_homepage"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/searchpulse-ai",
+      "hamids-ai-automations/dynamic-schema-generator",
+      "hamids-ai-automations/hamid-resume",
+      "hamids-ai-automations/seo-audit-tool",
+      "hamids-ai-automations/ppc-performance-dashboard",
+      "hamids-ai-automations/ecommerce-seo-optimizer"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
     "url": "https://marvis.web.app/projects/leadflow-sentinel",
     "type": "live_site",
     "relationships": [
       "repository_readme_link"
     ],
     "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
       "hamids-ai-automations/leadflow-sentinel"
     ],
-    "source": "README of hamids-ai-automations/leadflow-sentinel",
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://abouthamid.web.app",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/pinvault-pinterest-downloader",
+      "hamids-ai-automations/seo-doctor",
+      "hamids-ai-automations/geo-visibility-lab",
+      "hamids-ai-automations/meta-lead-quality-analyzer",
+      "hamids-ai-automations/conversion-tracking-doctor",
+      "hamids-ai-automations/ppc-waste-detector"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://fb-ai-starter-kit.web.app",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/firebase-ai-starter-kit"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://marvis.web.app/projects/firebase-ai-starter-kit",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/firebase-ai-starter-kit"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://marvis.web.app/projects/gemini-agent-automation-toolkit",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link",
+      "repository_homepage"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/gemini-agent-automation-toolkit"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/gemini-agent-automation-toolkit"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://musheabdulhakim.github.io/gohighlevel-php-sdk",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link",
+      "repository_homepage"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/gohighlevel-php-sdk"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://gke-labs.github.io/k8s-ai-bench",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/k8s-ai-bench"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://pypi.org/project/pubchem-finder",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link",
+      "repository_homepage"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/pubchem-finder"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://opnform.com",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link",
+      "repository_homepage"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/OpnForm"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://airkube-dashboard-a4410b460d07.herokuapp.com",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link",
+      "repository_homepage"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/AirKube"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://google.github.io/sbsim",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link",
+      "repository_homepage"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/sbsim"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
+    "type": "github",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://docs.github.com/rest/packages/packages#list-packages-for-a-user",
+    "type": "github",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
     "verified": null
   },
   {
@@ -398,24 +597,6 @@
     "verified": null
   },
   {
-    "url": "https://hamid-resume.web.app",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link",
-      "repository_homepage"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/searchpulse-ai",
-      "hamids-ai-automations/dynamic-schema-generator",
-      "hamids-ai-automations/hamid-resume",
-      "hamids-ai-automations/seo-audit-tool",
-      "hamids-ai-automations/ppc-performance-dashboard",
-      "hamids-ai-automations/ecommerce-seo-optimizer"
-    ],
-    "source": "README of hamids-ai-automations/searchpulse-ai",
-    "verified": null
-  },
-  {
     "url": "https://wa.me/923167417135?text=Hello%20Muhammad%20Hamid,%20I%20reviewed%20SearchPulse%20AI%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20our%20SEO%20and%20growth%20projects",
     "type": "website",
     "relationships": [
@@ -515,23 +696,6 @@
     "verified": null
   },
   {
-    "url": "https://abouthamid.web.app",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/pinvault-pinterest-downloader",
-      "hamids-ai-automations/seo-doctor",
-      "hamids-ai-automations/geo-visibility-lab",
-      "hamids-ai-automations/meta-lead-quality-analyzer",
-      "hamids-ai-automations/conversion-tracking-doctor",
-      "hamids-ai-automations/ppc-waste-detector"
-    ],
-    "source": "README of hamids-ai-automations/pinvault-pinterest-downloader",
-    "verified": null
-  },
-  {
     "url": "https://wordpress.org",
     "type": "website",
     "relationships": [
@@ -606,30 +770,6 @@
     "verified": null
   },
   {
-    "url": "https://fb-ai-starter-kit.web.app",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/firebase-ai-starter-kit"
-    ],
-    "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
-    "verified": null
-  },
-  {
-    "url": "https://marvis.web.app/projects/firebase-ai-starter-kit",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/firebase-ai-starter-kit"
-    ],
-    "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
-    "verified": null
-  },
-  {
     "url": "https://console.firebase.google.com",
     "type": "website",
     "relationships": [
@@ -655,18 +795,6 @@
     "verified": null
   },
   {
-    "url": "https://marvis.web.app/projects/gemini-agent-automation-toolkit",
-    "type": "live_site",
-    "relationships": [
-      "repository_homepage"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/gemini-agent-automation-toolkit"
-    ],
-    "source": "repository hamids-ai-automations/gemini-agent-automation-toolkit",
-    "verified": null
-  },
-  {
     "url": "https://www.python.org",
     "type": "website",
     "relationships": [
@@ -677,18 +805,6 @@
       "hamids-ai-automations/geo-visibility-lab",
       "hamids-ai-automations/opencomplai",
       "hamids-ai-automations/sqlalchemy-cubrid"
-    ],
-    "source": "README of hamids-ai-automations/gemini-agent-automation-toolkit",
-    "verified": null
-  },
-  {
-    "url": "https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/gemini-agent-automation-toolkit"
     ],
     "source": "README of hamids-ai-automations/gemini-agent-automation-toolkit",
     "verified": null
@@ -1146,19 +1262,6 @@
     "verified": null
   },
   {
-    "url": "https://musheabdulhakim.github.io/gohighlevel-php-sdk",
-    "type": "live_site",
-    "relationships": [
-      "repository_homepage",
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/gohighlevel-php-sdk"
-    ],
-    "source": "repository hamids-ai-automations/gohighlevel-php-sdk",
-    "verified": null
-  },
-  {
     "url": "https://packagist.org/packages/musheabdulhakim/gohighlevel-php",
     "type": "website",
     "relationships": [
@@ -1252,18 +1355,6 @@
       "hamids-ai-automations/Go-High-Level-MCP-2026-Complete"
     ],
     "source": "README of hamids-ai-automations/Go-High-Level-MCP-2026-Complete",
-    "verified": null
-  },
-  {
-    "url": "https://gke-labs.github.io/k8s-ai-bench",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/k8s-ai-bench"
-    ],
-    "source": "README of hamids-ai-automations/k8s-ai-bench",
     "verified": null
   },
   {
@@ -1420,19 +1511,6 @@
       "hamids-ai-automations/cymbal-air-toolbox-demo"
     ],
     "source": "README of hamids-ai-automations/cymbal-air-toolbox-demo",
-    "verified": null
-  },
-  {
-    "url": "https://pypi.org/project/pubchem-finder",
-    "type": "live_site",
-    "relationships": [
-      "repository_homepage",
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/pubchem-finder"
-    ],
-    "source": "repository hamids-ai-automations/pubchem-finder",
     "verified": null
   },
   {
@@ -1660,19 +1738,6 @@
     "verified": null
   },
   {
-    "url": "https://opnform.com",
-    "type": "live_site",
-    "relationships": [
-      "repository_homepage",
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/OpnForm"
-    ],
-    "source": "repository hamids-ai-automations/OpnForm",
-    "verified": null
-  },
-  {
     "url": "https://hub.docker.com/r/jhumanj/opnform-api",
     "type": "website",
     "relationships": [
@@ -1805,19 +1870,6 @@
     "verified": null
   },
   {
-    "url": "https://airkube-dashboard-a4410b460d07.herokuapp.com",
-    "type": "live_site",
-    "relationships": [
-      "repository_homepage",
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/AirKube"
-    ],
-    "source": "repository hamids-ai-automations/AirKube",
-    "verified": null
-  },
-  {
     "url": "http://localhost:8080`",
     "type": "website",
     "relationships": [
@@ -1828,19 +1880,6 @@
       "hamids-ai-automations/rag-docker"
     ],
     "source": "README of hamids-ai-automations/AirKube",
-    "verified": null
-  },
-  {
-    "url": "https://google.github.io/sbsim",
-    "type": "live_site",
-    "relationships": [
-      "repository_homepage",
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/sbsim"
-    ],
-    "source": "repository hamids-ai-automations/sbsim",
     "verified": null
   },
   {

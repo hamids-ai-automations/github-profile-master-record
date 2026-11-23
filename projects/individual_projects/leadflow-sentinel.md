@@ -85,11 +85,11 @@ Active — last push 2026-11-22
 
 ## Related projects
 
+- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/ghl-automation-engine
 - hamids-ai-automations/gemini-agent-reliability-kit
 - hamids-ai-automations/envscope
 - hamids-ai-automations/searchpulse-ai
-- hamids-ai-automations/issuefit
 
 ## Known issues and limitations
 

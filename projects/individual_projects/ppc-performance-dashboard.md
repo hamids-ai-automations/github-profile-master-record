@@ -80,11 +80,11 @@ Active — last push 2026-10-18
 
 ## Related projects
 
+- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine
 - hamids-ai-automations/gemini-agent-reliability-kit
 - hamids-ai-automations/envscope
-- hamids-ai-automations/searchpulse-ai
 
 ## Known issues and limitations
 

@@ -69,9 +69,9 @@ Firebase/other hosting declared via homepage field: https://airkube-dashboard-a4
 
 ## Documentation links
 
+- https://airkube-dashboard-a4410b460d07.herokuapp.com
 - http://localhost:8000
 - http://localhost:8501
-- https://airkube-dashboard-a4410b460d07.herokuapp.com
 - http://localhost:8080`
 
 ## Development status
@@ -86,11 +86,11 @@ Fork of another project; see upstream for original authorship.
 
 ## Related projects
 
+- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine
 - hamids-ai-automations/gemini-agent-reliability-kit
 - hamids-ai-automations/envscope
-- hamids-ai-automations/searchpulse-ai
 
 ## Known issues and limitations
 

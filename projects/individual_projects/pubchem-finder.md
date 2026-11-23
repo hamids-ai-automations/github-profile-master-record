@@ -63,8 +63,8 @@ Firebase/other hosting declared via homepage field: https://pypi.org/project/pub
 
 ## Documentation links
 
-- https://modelcontextprotocol.io
 - https://pypi.org/project/pubchem-finder
+- https://modelcontextprotocol.io
 - https://pubchem.ncbi.nlm.nih.gov
 - https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/media/search-demo.gif
 - https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/media/search-demo.mp4
@@ -96,11 +96,11 @@ Fork of another project; see upstream for original authorship.
 
 ## Related projects
 
+- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine
 - hamids-ai-automations/gemini-agent-reliability-kit
 - hamids-ai-automations/envscope
-- hamids-ai-automations/searchpulse-ai
 
 ## Known issues and limitations
 

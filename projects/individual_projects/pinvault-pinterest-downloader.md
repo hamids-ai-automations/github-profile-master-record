@@ -85,8 +85,8 @@ No deployment configuration detected.
 ## Documentation links
 
 - https://wa.me/923167417135
-- https://pin.it/*`
 - https://abouthamid.web.app
+- https://pin.it/*`
 
 ## Development status
 

@@ -4,6 +4,8 @@
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
+[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)
+
 ## Profile overview
 
 | Metric | Value |
@@ -55,10 +57,33 @@ Python (69.84%), TypeScript (17.0%), JavaScript (3.38%), HTML (2.41%), Go (1.97%
 - https://gitwyd.github.io/sbsim_documentation
 - https://vibgrate.com
 
+## Automation
+
+| Workflow | Trigger | What it does |
+| --- | --- | --- |
+| Automatic Profile Sync | hourly cron, `repository_dispatch` (`profile-updated`), manual | Lightweight sync; commits only when the collected data actually changed |
+| Initial Data Collection | manual dispatch, push to `main` | Full collection incl. READMEs, trees, workflows and link discovery |
+| Scheduled Full Sync | daily and weekly cron, manual | Full reconciliation so nothing drifts over time |
+| Validate Master Data | push to `main`, daily cron, manual | JSON/CSV/link validation, unit tests, API-vs-database completeness check |
+
+All workflows are idempotent: an unchanged account produces no commit. Runs that attempt to push without a real diff are skipped by a `git status` gate.
+
+Required repository secret: `GH_PROFILE_SYNC_TOKEN` (classic PAT with `repo`, `read:user`, `gist`, `read:org`). Nothing else is needed; `GITHUB_TOKEN` handles the commits.
+
+Run it locally:
+
+```bash
+pip install -r automation/requirements.txt
+export GH_PROFILE_SYNC_TOKEN=<your-token>
+python automation/sync.py --mode light        # fast: metadata only
+python automation/sync.py --mode incremental  # changed repositories + docs
+python automation/sync.py --mode full         # everything, with history snapshot
+python automation/validate.py                 # full gate: schema, links, tests
+```
+
 ## Latest changes in this sync
 
-- **repository_added** — New repository discovered: hamids-ai-automations/github-profile-master-record
-- **external_links_added** — 2 new external link(s) discovered.
+- no changes detected in this run
 
 ## Recently pushed repositories
 

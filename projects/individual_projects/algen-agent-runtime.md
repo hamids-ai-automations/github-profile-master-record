@@ -24,30 +24,11 @@
 
 ## Objectives
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AlgenAI/algen-agent-runtime/refs/heads/main/docs/assets/brand/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AlgenAI/algen-agent-runtime/refs/heads/main/docs/assets/brand/banner-light.svg">
-  <img alt="Algen Agent Runtime — Build governed agents. Own the runtime." src="https://raw.githubusercontent.com/AlgenAI/algen-agent-runtime/refs/heads/main/docs/assets/brand/banner-light.svg">
-</picture>
+Objectives are not documented in a README. Repository description: Provider-neutral Python runtime for governed AI agents: approvals, policies, budgets, tenant isolation, audit and OpenTelemetry in the execution path. Works alongside LangGraph and the OpenAI Agents SDK..
 
 ## Features
 
-| Capability | Included |
-| --- | --- |
-| Execution | Checkpointed state machine, retries, cancellation, timeouts, resumability |
-| Models | Capability-aware routing and ordered or balanced fallback across OpenAI, Azure OpenAI, Anthropic, Gemini, xAI, Groq, Mistral, DeepSeek, Hugging Face Inference, Ollama, any OpenAI-compatible endpoint and local transformers; prompt caching; recoverable malformed tool calls |
-| File attachments | Images and PDFs passed by reference to scanned artifacts, read natively by models that support them, on runs, conversations and workflows ([guide](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/attachments.md)) |
-| Tools | Typed schemas, permissions, idempotency, approvals enforced at execution, call guards, caller credentials, execution ledger with reconciliation of unknown outcomes |
-| MCP | Managed client for stdio, streamable HTTP and SSE servers with per-tenant or per-user OAuth, DNS-pinned egress, secret references, and governance mapping |
-| Context management | [Working state](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/context-management.md), [progressive skills](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/skills.md), [learned memory](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/learned-memory.md), [compaction/offloading](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/artifacts.md), and [evaluations/diagnostics](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/context-evaluation.md) |
-| Retrieval | Keyword, vector, and hybrid retrieval with citation verification |
-| Governance | Policies at every boundary with explicit fail modes, signed policy bundles, budgets, PII and secret redaction, prompt-injection screening, human-in-the-loop decisions and an approval inbox |
-| Security and operations | OIDC or JWT authentication with scopes and token revocation, egress proxy and mTLS, sandboxed subprocesses, signed plugins, per-run limits, per-tenant storage quotas and retention, readiness and graceful drain |
-| Conversations | Durable messages, feedback, follow-ups, SSE, rich response blocks |
-| Analytics | Typed analytical DAGs, application-registered nodes, secret-safe query sources, semantic layers, governance and evaluation gates |
-| Multi-agent workflows | Validated manifests, dependency scheduling, dynamic fan-out, bounded repair, exact-version child composition, durable clarification and approval pause/resume, explicit crash recovery, typed resources, correlation, and lifecycle events |
-| Observability | Structured logs, OpenTelemetry, optional Traccia integration |
-| Frameworks | Optional LangGraph, OpenAI Agents, AutoGen, and CrewAI adapters |
+No explicit feature list found in the README.
 
 ## Technical architecture
 
@@ -105,10 +86,7 @@
 
 ## Installation and setup
 
-Install the latest package from PyPI:
-
-```bash
-python -m pip install algen-agent-runtime
+No installation instructions found in the README.
 
 ## Deployment
 
@@ -153,109 +131,3 @@ No roadmap documented in the README.
 ## README source
 
 Full README: https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/README.md
-
-```markdown
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AlgenAI/algen-agent-runtime/refs/heads/main/docs/assets/brand/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AlgenAI/algen-agent-runtime/refs/heads/main/docs/assets/brand/banner-light.svg">
-  <img alt="Algen Agent Runtime — Build governed agents. Own the runtime." src="https://raw.githubusercontent.com/AlgenAI/algen-agent-runtime/refs/heads/main/docs/assets/brand/banner-light.svg">
-</picture>
-
-# Algen Agent Runtime
-
-[![Quality](https://github.com/AlgenAI/algen-agent-runtime/actions/workflows/quality.yml/badge.svg)](https://github.com/AlgenAI/algen-agent-runtime/actions/workflows/quality.yml)
-[![Security](https://github.com/AlgenAI/algen-agent-runtime/actions/workflows/security.yml/badge.svg)](https://github.com/AlgenAI/algen-agent-runtime/actions/workflows/security.yml)
-[![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
-[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-
-Algen Agent Runtime is a typed, provider-neutral Python runtime for building governed AI agents. It provides deterministic execution state, model routing, tool controls, human approvals, retrieval, verification, durable stores, streaming events, and OpenTelemetry instrumentation without binding applications to one model vendor or agent framework.
-
-> [!IMPORTANT]
-> `0.1.0a21` is a pre-release, single-node foundation. The repository is suitable for evaluation and contribution, but it is not yet presented as a production distributed control plane. Review the [known production gaps](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/production-readiness.md), [threat model](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/threat-model.md), and [security policy](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/SECURITY.md) before deployment.
-
-**[Documentation](https://algenai.github.io/algen-agent-runtime/)** · [Why use it](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/why-algen-agent-runtime.md) · [Examples](#importable-examples) · [Changelog](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/CHANGELOG.md)
-
-## See it in one minute
-
-No API key and no network: the built-in mock provider stands in for the model.
-
-```bash
-python -m pip install --pre algen-agent-runtime
-python -m examples.quickstart_approval.app
-```
-
-The workflow proposes a change, then pauses at an approval node and asks `Approve or reject?`.
-Approve it and the change is applied once, under an idempotency key; reject it and nothing is
-written. The final state records the decision, who made it, and the key:
-
-<img alt="Terminal recording: the approval quickstart pauses, the user types approve, and the run prints the approval decision and the applied result with its idempotency key" src="https://raw.githubusercontent.com/AlgenAI/algen-agent-runtime/refs/heads/main/docs/assets/demo/approval.gif" width="720">
-
-The approval is part of the Runtime's execution path, not an instruction in the prompt, so the model
-cannot skip it. Pass `--approve-all` or `--reject-all` to run it without a prompt.
-
-## Why Algen Agent Runtime?
-
-- **Provider-neutral execution:** route across local and hosted model providers through typed contracts.
-- **Governance in the execution path:** enforce policies, approvals, budgets, verification, and tenant boundaries around every run.
-- **Durable and observable:** persist agent and multi-agent workflow checkpoints, events, conversations, approvals, artifacts, and tool-execution records with optional PostgreSQL and Redis adapters.
-- **Governed artifact inputs:** stage tenant-scoped files with checksums, scan/quarantine state,
-  expiry, metadata-only listing, and bounded retention before attaching them to a run. Agents that
-  opt in read attached images and PDFs natively, passed by reference and never stored inline.
-- **Application-friendly:** use the same runtime as an embedded Python library or through its FastAPI REST/SSE service.
-- **Runtime-owned multi-agent DAGs:** declare JSON-Schema inputs/outputs, agent, dynamic map-agent, deterministic-handler,
-  predicate, and join nodes with conditions, bounded loops and repairs, clarification limits, and
-  lifecycle events; compose exact-version child workflows without duplicating their topology.
-- **Ready-made connectors:** email (SMTP, Gmail, Outlook), messaging, databases, documents, GitHub
-  and more ship as governed toolkits in
-  [algen-agent-tools](https://github.com/AlgenAI/algen-agent-tools), which builds on this runtime.
-- **Typed System One decisions:** use the optional TypeSafe Jev client for fast Choice, Score, and
-  Noul routing gates while keeping generative work in model providers and deterministic work in code.
-- **Extensible by design:** add model providers, tools, planners, context builders, verifiers, stores, and external-framework adapters without changing the state machine.
-- **Offline-testable:** the deterministic mock provider supports tests without credentials, network access, or paid model calls.
-
-## The Algen agent lifecycle
-
-Runtime is the open-source execution foundation in a three-product lifecycle:
-
-| Product | Role | Boundary |
-| --- | --- | --- |
-| **Algen Agent Runtime** | Build and execute portable, governed agents and multi-agent DAGs | Open-source Python library and service; owns execution contracts and semantics |
-| **Algen Agent Studio** | Low-code build, test, evaluate, publish, and deploy workbench | Private product; consumes Runtime without redefining its workflow dialect |
-| **Algen Agent Marketplace** | Discover, distribute, license, and import versioned agents | Public/private and free/paid catalog; packages agents but does not execute them |
-
-An agent can be built directly with Runtime or visually in Studio. Studio validates and evaluates the
-same Runtime project, publishes a versioned package to Marketplace, and deploys it with
-environment-specific credentials. Marketplace consumers import that package into Studio before
-configuration and deployment. Secrets and live environment values never belong in a marketplace
-artifact.
-
-Typed workflows can reference staged file IDs rather than embedding bytes. See the
-[artifact lifecycle](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/artifacts.md) for upload, checksum, quarantine, retention, and storage
-boundaries.
-
-Workflows can also call exact, trusted child workflow versions through a `WorkflowRegistry`; Runtime
-preserves correlation, lineage, checkpoints, pause/approval propagation, and recovery. See
-[multi-agent workflows](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/multi-agent-workflows.md) and the importable
-`examples/pattern_child_workflow`. For governed outbound messages, see [email](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/email.md).
-
-## Status and support
-
-| Area | Status |
-| --- | --- |
-| Python | 3.12 and 3.13 |
-| Package maturity | Pre-alpha (`0.1.0a21`) |
-| Core execution | Available and covered by deterministic tests |
-| HTTP API | Available; secure deployment configuration is operator-owned |
-| Persistence | In-memory, PostgreSQL, and Redis adapters |
-| Artifact storage | Memory, PostgreSQL, and encrypted S3-compatible object storage |
-| Distributed execution | Experimental; see the production-readiness roadmap |
-| Public API compatibility | Experimental during `0.x`; see the [API stability policy](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/docs/api-stability.md) |
-| Community support | Best effort; see [SUPPORT.md](https://github.com/hamids-ai-automations/algen-agent-runtime/blob/main/SUPPORT.md) |
-
-## Install
-
-Install the latest package from PyPI:
-
-```bash
-python -m
-```

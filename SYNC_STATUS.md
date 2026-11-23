@@ -2,10 +2,10 @@
 
 - **Last successful sync:** 2026-11-23T05:31:44+00:00
 - **Sync mode:** full
-- **Triggered by:** initial data collection
-- **API requests this run:** 1063
-- **Failed API requests:** 0
-- **Runtime:** 57.1s
+- **Triggered by:** readme-template-refresh
+- **API requests this run:** 0
+- **Failed API requests:** None
+- **Runtime:** Nones
 
 ## Data quality
 
@@ -39,4 +39,4 @@
 
 ## Failed or unavailable resources
 
-- packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}
+- none

@@ -24,7 +24,7 @@
 
 ## Objectives
 
-<div align="center">
+Objectives are not documented in a README. Repository description: The Open-Source Developer Platform for GoHighLevel Automations. Inspect APIs, debug webhooks, simulate workflows, run automated tests, and troubleshoot with AI..
 
 ## Features
 
@@ -59,8 +59,7 @@ No explicit feature list found in the README.
 
 ## Installation and setup
 
-npm install --legacy-peer-deps
-```
+No installation instructions found in the README.
 
 ## Deployment
 
@@ -107,115 +106,3 @@ No roadmap documented in the README.
 ## README source
 
 Full README: https://github.com/hamids-ai-automations/ghl-devops-toolkit/blob/main/README.md
-
-```markdown
-<div align="center">
-
-# GHL DevOps Toolkit
-### The Open-Source Developer Platform for GoHighLevel Automations
-
-[![CI](https://github.com/hamids-ai-automations/ghl-devops-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/ghl-devops-toolkit/actions/workflows/ci.yml)
-[![Tests Passing](https://img.shields.io/badge/Tests-20%2F20%20Passing-emerald.svg?style=flat-square)](QA_REPORT.md)
-[![TypeScript 5](https://img.shields.io/badge/TypeScript-5.0-blue.svg?style=flat-square)](https://www.typescriptlang.org/)
-[![Next.js 16](https://img.shields.io/badge/Next.js-16.4-black.svg?style=flat-square)](https://nextjs.org/)
-[![Prisma 6](https://img.shields.io/badge/Prisma-6.x-2D3748.svg?style=flat-square)](https://www.prisma.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![WhatsApp Support](https://img.shields.io/badge/WhatsApp-Contact%20Engineer-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/923167417135)
-
-<p align="center">
-  <b>Inspect APIs · Debug Webhooks · Simulate Workflows · Execute Automated Regression Tests · Validate Snapshots · Diagnose Integrations with AI</b>
-</p>
-
-[Quick Start](#-quick-start) •
-[Core Modules](#-core-modules) •
-[Architecture](#-system-architecture) •
-[Automated QA](#-automated-testing--qa) •
-[Security](#-security--compliance) •
-[Direct WhatsApp Support](#-contact--engineering-inquiries)
-
----
-
-</div>
-
-## 📌 Overview
-
-**GHL DevOps Toolkit** is an open-source engineering platform built specifically for **GoHighLevel (GHL) developers, AI automation engineers, and CRM technical architects**. 
-
-Building and deploying mission-critical GoHighLevel workflows often requires complex webhook debugging, rate-limit management, snapshot migration testing, and manual scenario execution. **GHL DevOps Toolkit** bridges this gap by providing an integrated, production-grade developer environment that replaces guesswork with deterministic testing, deep observability, and AI-assisted troubleshooting.
-
-Whether you are building high-volume marketplace apps, setting up multi-location SaaS snapshots, or orchestrating AI voice and messaging agents, this toolkit equips you with the tooling you need.
-
----
-
-## 🚀 Key Features
-
-```
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│                           GHL DEVOPS TOOLKIT SUITE                              │
-├──────────────────────┬──────────────────────┬───────────────────────────────────┤
-│ 🔌 API Explorer      │ 🪝 Webhook Inspector │ ⚡ Workflow Simulator             │
-│ Test live & demo     │ Ingest & replay      │ Simulate lead journeys            │
-│ GHL v2 endpoints     │ events with HMAC     │ without firing live triggers      │
-├──────────────────────┼──────────────────────┼───────────────────────────────────┤
-│ 🧪 Test Engine       │ 📦 Snapshot Checker  │ 🤖 AI Debugger                    │
-│ Automated regression │ Validate structure,  │ Explain API errors &              │
-│ & assertion suites   │ duplicates & schemas │ diagnose payload failures with AI │
-├──────────────────────┴──────────────────────┴───────────────────────────────────┤
-│ 📊 Integration Monitor · Health checks, latency percentiles & alerts            │
-│ 📑 Report Generator · Export audits in HTML, PDF, CSV, and JSON                 │
-└─────────────────────────────────────────────────────────────────────────────────┘
-```
-
-- **GHL API Explorer**: Execute and manage requests against HighLevel API endpoints (`/contacts`, `/opportunities`, `/calendars`, `/locations`, `/users`). View formatted JSON, response headers, status codes, latency, and saved request history.
-- **Webhook Inspector**: Generate unique webhook capture slugs, inspect raw and parsed payloads in real-time, filter by event type, and safely replay events with HMAC-SHA256 signature verification.
-- **Workflow Simulator**: Step-by-step lead journey simulator (new lead, stage change, appointment booked/cancelled, form submission). Test logic branches with zero risk of accidentally triggering real automations inside customer sub-accounts.
-- **Automation Testing Engine**: Define test cases with declarative assertions (`equals`, `contains`, `exists`, `not_null`, `greater_than`, `less_than`). Group tests into suites and run automated regression passes with structured failure reporting.
-- **Snapshot Validator**: Upload and analyze GoHighLevel snapshot JSON exports. Detects missing configurations, broken pipeline/calendar references, duplicate workflows, and version incompatibilities before importing into live locations.
-- **AI Debugger**: Context-aware AI diagnostic engine powered by Google Gemini and OpenRouter models. Translates cryptic GHL 400/401/403/429 errors into actionable fixes and generates corrected API payloads.
-- **Integration Monitor**: Proactive health-checking engine that pings GHL connections, monitors response time percentiles, tracks failure rates, and fires threshold alerts.
-- **Multi-Format Technical Reports**: Export comprehensive audit reports in HTML, JSON, and CSV covering API diagnostics, webhook receipts, test matrices, and system health.
-
----
-
-## 🛠️ Technology Stack
-
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend Framework** | [Next.js 16](https://nextjs.org/) (App Router), [React 19](https://react.dev/), [TypeScript 5](https://www.typescriptlang.org/) |
-| **Styling & Components** | [Tailwind CSS 4](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/) (New York style), Lucide Icons |
-| **Database & ORM** | [Prisma 6](https://www.prisma.io/) with SQLite (zero-config local) & PostgreSQL (production ready) |
-| **API & Backend** | Next.js Edge & Node.js Serverless API Routes (`src/app/api/*`) |
-| **AI Integration** | Google Gemini API & OpenRouter provider abstraction via `z-ai-web-dev-sdk` |
-| **Testing Framework** | Native Node.js Test Runner (`node:test`, `node:assert/strict`) — 20/20 passed |
-| **Containerization** | Multi-stage production [Dockerfile](https://github.com/hamids-ai-automations/ghl-devops-toolkit/blob/main/docker/Dockerfile) & [Docker Compose](https://github.com/hamids-ai-automations/ghl-devops-toolkit/blob/main/docker/docker-compose.yml) |
-| **Reverse Proxy** | Caddy Gateway configuration included |
-
----
-
-## 🏗️ System Architecture
-
-```
-                                  [ User Browser ]
-                                         │
-                                         ▼ (HTTP / JSON)
-               ┌─────────────────────────────────────────────────────────┐
-               │              Next.js 16 Unified Platform                │
-               │                                                         │
-               │  ┌───────────────────────┐   ┌───────────────────────┐  │
-               │  │   Frontend Dashboard  │   │     REST API Layer    │  │
-               │  │  12 Interactive Views │──▶│   /api/connections    │  │
-               │  │  Dark / Light Themes  │   │   /api/webhooks       │  │
-               │  │  Realtime Status      │   │   /api/testing        │  │
-               │  │  Report Previews      │   │   /api/snapshots      │  │
-               │  └───────────────────────┘   │   /api/ai-debugger    │  │
-               │                              └───────────┬───────────┘  │
-               └──────────────────────────────────────────┼──────────────┘
-                                                          │
-                                     ┌────────────────────┴────────────────────┐
-                                     ▼                                         ▼
-                     ┌───────────────────────────────┐         ┌───────────────────────────────┐
-                     │          Prisma ORM           │         │         GHL API Client        │
-                     │  SQLite (Dev) / Postgres (Prod│         │   services.leadconnectorhq    │
-                     │  14 Data Models & Audit Log   │         │   (SSRF-Protected / HMAC SHA) │
-                  
-```

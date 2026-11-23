@@ -608,6 +608,17 @@ def render_dashboard(db: Dict[str, Any], root: str, change_report: Dict[str, Any
         "",
         f"{details.get('bio') or ''}",
         "",
+        # CI transparency: live workflow status, so freshness is verifiable, not claimed.
+        f"[![Automatic Profile Sync](https://github.com/{details.get('username')}"
+        f"/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)]"
+        f"(https://github.com/{details.get('username')}/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) "
+        f"[![Validate Master Data](https://github.com/{details.get('username')}"
+        f"/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)]"
+        f"(https://github.com/{details.get('username')}/github-profile-master-record/actions/workflows/validate-master-data.yml) "
+        f"[![Scheduled Full Sync](https://github.com/{details.get('username')}"
+        f"/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)]"
+        f"(https://github.com/{details.get('username')}/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)",
+        "",
         "## Profile overview",
         "",
         "| Metric | Value |",
@@ -637,6 +648,32 @@ def render_dashboard(db: Dict[str, Any], root: str, change_report: Dict[str, Any
         "## Live websites",
         "",
         *([f"- {l.get('url')}" for l in live[:15]] or ["- none detected"]),
+        "",
+        "## Automation",
+        "",
+        "| Workflow | Trigger | What it does |",
+        "| --- | --- | --- |",
+        "| Automatic Profile Sync | hourly cron, `repository_dispatch` (`profile-updated`), manual | Lightweight sync; commits only when the collected data actually changed |",
+        "| Initial Data Collection | manual dispatch, push to `main` | Full collection incl. READMEs, trees, workflows and link discovery |",
+        "| Scheduled Full Sync | daily and weekly cron, manual | Full reconciliation so nothing drifts over time |",
+        "| Validate Master Data | push to `main`, daily cron, manual | JSON/CSV/link validation, unit tests, API-vs-database completeness check |",
+        "",
+        "All workflows are idempotent: an unchanged account produces no commit. Runs that "
+        "attempt to push without a real diff are skipped by a `git status` gate.",
+        "",
+        "Required repository secret: `GH_PROFILE_SYNC_TOKEN` (classic PAT with `repo`, "
+        "`read:user`, `gist`, `read:org`). Nothing else is needed; `GITHUB_TOKEN` handles the commits.",
+        "",
+        "Run it locally:",
+        "",
+        "```bash",
+        "pip install -r automation/requirements.txt",
+        "export GH_PROFILE_SYNC_TOKEN=<your-token>",
+        "python automation/sync.py --mode light        # fast: metadata only",
+        "python automation/sync.py --mode incremental  # changed repositories + docs",
+        "python automation/sync.py --mode full         # everything, with history snapshot",
+        "python automation/validate.py                 # full gate: schema, links, tests",
+        "```",
         "",
         "## Latest changes in this sync",
         "",

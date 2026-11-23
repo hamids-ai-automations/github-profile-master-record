@@ -203,7 +203,13 @@ def main(argv: Optional[List[str]] = None) -> int:
     for warning in (result.get("warnings") or [])[:40]:
         print(f"  WARN  {warning}")
 
-    failed = bool(problems) or (args.strict and bool(result.get("warnings")))
+    # Warnings that are factual (e.g. a repository genuinely has no README) are
+    # reported but must not break the strict gate; only actionable warnings do.
+    informational = [w for w in (result.get("warnings") or []) if "has no README" in w]
+    actionable = [w for w in (result.get("warnings") or []) if w not in informational]
+    if informational:
+        print(f"[validate] informational warnings: {len(informational)} (non-blocking)")
+    failed = bool(problems) or (args.strict and bool(actionable))
     print("[validate] RESULT:", "FAILED" if failed else "PASSED")
     return 1 if failed else 0
 

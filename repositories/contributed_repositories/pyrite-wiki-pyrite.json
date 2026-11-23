@@ -1,0 +1,14 @@
+{
+  "full_name": "pyrite-wiki/pyrite",
+  "url": "https://github.com/pyrite-wiki/pyrite",
+  "description": "A second brain for you, your agents, and your teams. Knowledge-as-Code: markdown + YAML in git, schema-validated, with semantic search and a three-tier MCP server. CLI, REST API, web UI, and plugin system. Zero running cost locally.",
+  "owner": "pyrite-wiki",
+  "is_fork": false,
+  "stars": null,
+  "language": null,
+  "commits": 0,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

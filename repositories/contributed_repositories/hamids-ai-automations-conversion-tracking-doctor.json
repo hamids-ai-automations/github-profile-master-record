@@ -1,0 +1,14 @@
+{
+  "full_name": "hamids-ai-automations/conversion-tracking-doctor",
+  "url": "https://github.com/hamids-ai-automations/conversion-tracking-doctor",
+  "description": "Open-source conversion tracking diagnostic suite for GA4, Google Ads, Meta Pixel/CAPI, and GTM. Fixes duplicate events, PII leaks, broken Enhanced Conversions, and CAPI drops.",
+  "owner": "hamids-ai-automations",
+  "is_fork": false,
+  "stars": 1,
+  "language": "Python",
+  "commits": 9,
+  "pull_requests": 0,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": true
+}

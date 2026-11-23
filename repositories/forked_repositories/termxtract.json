@@ -1,0 +1,97 @@
+{
+  "id": "R_kgDOVdDTHg",
+  "name": "TermXtract",
+  "full_name": "hamids-ai-automations/TermXtract",
+  "url": "https://github.com/hamids-ai-automations/TermXtract",
+  "description": null,
+  "homepage": null,
+  "created_at": "2026-10-30T13:13:55Z",
+  "updated_at": "2026-10-30T13:13:55Z",
+  "pushed_at": "2026-10-30T15:07:01Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-30T12:29:09Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "language": "Python",
+  "languages": {
+    "Python": 177842
+  },
+  "language_total_size": 177842,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 4,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 4272,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/TermXtract/blob/main/README.md",
+    "has_readme": true,
+    "length": 7685,
+    "excerpt": "# TermXtract\n\n[![CI](https://github.com/TeangaNLP/TermXtract/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/TeangaNLP/TermXtract/actions/workflows/ci-cd.yml)\n[![Docs](https://img.shields.io/badge/docs-teanga.io%2FTermXtract-blue)](https://teanga.io/TermXtract/)\n[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)\n\n**TermXtract** is a Python library for **automatic term extraction (ATE)**: finding the domain-specific terms in a collection of documents. It offers a range of classic **unsupervised** scoring methods (TF-IDF, C-Value, Weirdness, RAKE, topic models, …) and **supervised** methods that learn from labelled examples (AdaBoost, Roger, and transformer-based token classification).\n\nEvery method takes either a plain list of strings or a [Teanga](https://github.com/TeangaNLP/teanga) `Corpus`, and returns the same `ATEResults` object.\n\n📖 **Documentation:** <https://teanga.io/TermXtract/>\n\n## Installation\n\nTermXtract needs **Python 3.10 or later**. It is not yet on PyPI, so install it from GitHub:\n\n```bash\npip install git+https://github.com/TeangaNLP/TermXtract.git\n```\n\nThe transformer-based `token-classification` extractor needs PyTorch and Hugging Face Transformers, which are large, so they are an optional extra. Install them with:\n\n```bash\npip install \"termxtract[transformers] @ git+https://github.com/TeangaNLP/TermXtract.git\"\n```\n\nAll other methods work with the base install.\n\n## Quickstart\n\n### Unsupervised extraction\n\n```python\nfrom termxtract import TermExtractor\n\ncorpus = [\n    \"Machine learning is a field of artificial intelligence.\",\n    \"Deep learning is a subfield of machine learning.\",\n    \"Natural language processing applies machine learning to text.\",\n]\n\nextractor = TermExtractor(method=\"cvalue\", n=2)  # consider unigrams and bigrams\nresults = extractor.extract(corpus)\n\nfor doc in results.terms:\n    print(doc[\"doc_id\"], doc[\"terms\"][:3])\n# doc_0 [{'term': 'machine learning', 'score': 1.0}, {'term': 'learning is', 'score': 1.0}, {'term': 'is a', 'score': 1.0}]\n# ...\n```\n\nEach document's terms are ranked from highest to lowest score.\n\nPass `threshold=...` to keep only terms scoring at or above a minimum.\n\n### Methods that need a reference corpus\n\n`weirdness`, `domainpertinence` and `relevance` compare the target corpus against a general-language reference corpus:\n\n```python\nreference = [\n    \"The weather was pleasant and people walked in the park.\",\n    \"She bought bread and milk at the shop on the corner.\",\n]\n\nextractor = TermExtractor(method=\"weirdness\", reference_corpus=reference, n=2)\nresults = extractor.extract(corpus)\n```\n\n### Supervised extraction\n\nSupervised methods are trained from a dictionary of candidate terms labelled `1` (term) or `0` (not a term):\n\n```python\nfrom termxtract import SupervisedTermExtractor\n\nlabels = {\n    \"machine learning\": 1,\n    \"deep learning\": 1,\n    \"natural language processing\": 1,\n    \"field\": 0,\n    \"text\": 0,\n}\n\nextractor = SupervisedTermExtractor(method=\"adaboost\", n=3)\nresults = extractor.extract(corpus, labels)\n```\n\nThe AdaBoost extractor uses [Open English WordNet](https://en-word.net/) through the [`wn`](https://pypi.org/project/wn/) package. The first time it needs WordNet it downloads the `oewn:2025+` lexicon into `~/.wn_data` (set `WN_DATA_DIR` to change this). To install it ahead of time, e.g. for offline use, run `python -m wn download oewn:2025+`. Pass `wordnet_lexicon=...` to use a different lexicon.\n\n### Using a Teanga corpus\n\nAny extractor also accepts a Teanga `Corpus` with a `words` span layer:\n\n```python\nfrom teanga import Corpus\n\ncorpus = Corpus()\ncorpus.add_layer_meta(\"text\")\ncorpus.add_layer_meta(\"words\", layer_type=\"span\", base=\"text\")\ndoc = corpus.add_doc(\"Deep learning is a subfield of machine learning.\")\ndoc.words = [(0, 4), (5, 13), (14, 16), (17, 18), (19, 27), (28, 30), (31, 38), (39, 47)]\n\nresults = TermExtractor(method=\"basic\", n=2).extract(corpus)\n```\n\n## Available methods\n\n### Unsupervised — `TermExtract",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 68,
+    "total_entries": 79,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "termxtract",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci-cd.yml"
+    ],
+    "test_files_count": 18,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 2,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "NumPy"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://teanga.io/TermXtract/",
+    "https://en-word.net/",
+    "https://pypi.org/project/wn/"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:36+00:00",
+  "detail_source": "api"
+}

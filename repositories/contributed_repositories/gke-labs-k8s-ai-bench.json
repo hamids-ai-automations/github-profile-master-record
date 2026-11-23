@@ -1,0 +1,14 @@
+{
+  "full_name": "gke-labs/k8s-ai-bench",
+  "url": "https://github.com/gke-labs/k8s-ai-bench",
+  "description": "A benchmark to evaluate LLMs on Kubernetes tasks",
+  "owner": "gke-labs",
+  "is_fork": false,
+  "stars": null,
+  "language": null,
+  "commits": 0,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

@@ -1,0 +1,115 @@
+{
+  "id": "R_kgDOVMt_Sg",
+  "name": "ai-agent-testing-lab",
+  "full_name": "hamids-ai-automations/ai-agent-testing-lab",
+  "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
+  "description": "AI agent evaluation and reliability harness: labelled suites, CI integration, accuracy/calibration/cost/latency reporting. Python, pytest, MCP.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-16T20:04:22Z",
+  "updated_at": "2026-11-20T10:16:18Z",
+  "pushed_at": "2026-10-18T04:11:21Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-18T04:11:20Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 90848,
+    "Dockerfile": 924
+  },
+  "language_total_size": 91772,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "agentic-ai",
+    "ai-agents",
+    "evaluation",
+    "llm",
+    "marketing-automation",
+    "open-source",
+    "python",
+    "quality-assurance",
+    "testing",
+    "agent-evaluation",
+    "evals",
+    "llm-evaluation",
+    "mcp"
+  ],
+  "size_kb": 47,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab/blob/main/README.md",
+    "has_readme": true,
+    "length": 5965,
+    "excerpt": "# ai-agent-testing-lab\n\nReusable reliability and evaluation lab for every AI marketing agent in the\nportfolio. One harness, seven labeled suites, and a CI integration path that\nlets every downstream repository report accuracy, precision/recall,\ncalibration, cost, latency, and reliability from day one.\n\nPart of the [AI Marketing Engineer Portfolio](../ai-marketing-portfolio-meta/README.md).\nBuilds on the shared schemas and provider abstraction from\n[ai-marketing-shared](../ai-marketing-shared/README.md) and is validated against\nthe flagship [ai-marketing-growth-os](../ai-marketing-growth-os/README.md).\n\n## Problem\n\nAI marketing agents can look impressive in demos and still be unsafe or\nunreliable: they hallucinate numbers, call destructive tools, ignore approval\ngates, and fail under adversarial input. Every repository in the portfolio\nneeded a consistent, evidence-backed way to answer the same questions:\n\n- Did the agent cite real evidence for every recommendation?\n- Did it call only the tools it was allowed to call?\n- Does it resist prompt injection?\n- Is it fast enough, cheap enough, and reliable enough to run in production?\n\nBuilding a bespoke evaluation suite in every repo would repeat work, drift\napart, and never get compared. The lab exists so evaluation is shared, not\nreimplemented.\n\n## Approach\n\nThe lab is a thin, dependency-light harness built on the shared schemas:\n\n- **TargetLoader** imports an agent factory from any repo (`module:attr`) and\n  validates that it returns `dict[str, agent]` objects with a `run()` method.\n- **TestHarness** runs the target through seven labeled suites and produces a\n  single `LabReport` with metrics and confusion-matrix details.\n- **Reporters** emit JSON, Markdown, and a self-contained HTML dashboard;\n  GitHub Actions step summaries are supported for CI.\n- **Integration** (`integration/run_lab_eval.py`) is the drop-in script that\n  downstream repos add to their workflow to report metrics in CI.\n\nThe lab evaluates itself: a known-good `ReliableAgent` must pass every suite,\nand a known-broken `BrokenAgent` (hallucinated evidence, forbidden write call,\nmissing approval gate, random failures) must be caught on every\nfailure-sensitive suite. If the self-evaluation passes, the lab is proven\neffective; if it fails, the lab itself is broken.\n\n## Architecture\n\n```mermaid\nflowchart LR\n    Target[Any portfolio repo] -->|pip install -e| TL[TargetLoader]\n    TL --> H[TestHarness]\n    DS[evaluation/datasets - 7 labeled suites] --> H\n    H --> R[LabReport]\n    R --> JSON[JSON + Markdown + HTML dashboard]\n    R --> CI[CI step summary / thresholds]\n    CI -->|PASS / FAIL| GH[GitHub Actions]\n    SelfEval[evaluation/run.py] -.reproduces known failures.-> H\n```\n\nLayout:\n\n```\nai-agent-testing-lab/\n├── lab/                  # harness, metrics, reporters, dashboard, integration, CLI\n├── evaluation/\n│   ├── datasets/         # seven labeled JSON suites\n│   ├── run.py            # self-evaluation entry point\n│   └── results/          # generated reports (git-ignored)\n├── fixtures/             # known-good / known-broken agents for self-evaluation\n├── integration/          # CI template + run_lab_eval.py for downstream repos\n├── scripts/demo_eval.py  # quick demo against the fixtures\n├── infra/                # Dockerfile + docker-compose.yml\n└── .github/workflows/ci.yml\n```\n\n## Evaluation Summary\n\n| Suite | What it measures | Metric |\n| --- | --- | --- |\n| Factual accuracy | recommendation cites expected evidence (source + value range) | hit rate on labeled cases |\n| Tool-use | only expected tools are called, with success | tool-use success |\n| Recommendation quality | completeness of structured recommendations | quality score |\n| Prompt-injection resistance | no forbidden write tool on adversarial input | resistance score |\n| Cost | measured cost within labeled cap | cost control |\n| Latency | total latency within labeled budget | latency budget |\n| Reliability | completion rate over repeated runs | reliability",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 49,
+    "total_entries": 60,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "evaluation",
+      "fixtures",
+      "infra",
+      "integration",
+      "lab",
+      "scripts",
+      "tests"
+    ],
+    "important_files": [
+      "infra/docker-compose.yml",
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 11,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml",
+      "Dockerfile"
+    ]
+  },
+  "external_links": [],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:53+00:00",
+  "detail_source": "api"
+}

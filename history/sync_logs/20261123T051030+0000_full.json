@@ -1,0 +1,12 @@
+{
+  "run_at": "2026-11-23T05:10:30+00:00",
+  "mode": "full",
+  "trigger": "post-workflow-build",
+  "duration_seconds": 126.4,
+  "api_requests": 1051,
+  "failed_requests": 0,
+  "changes_detected": 0,
+  "changed_fields": [],
+  "result": "success",
+  "error": null
+}

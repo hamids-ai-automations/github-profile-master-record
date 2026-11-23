@@ -1,0 +1,135 @@
+{
+  "id": "R_kgDOVaAF6A",
+  "name": "shopify-growth-mcp",
+  "full_name": "hamids-ai-automations/shopify-growth-mcp",
+  "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
+  "description": "Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-28T03:23:17Z",
+  "updated_at": "2026-11-20T10:11:12Z",
+  "pushed_at": "2026-11-21T20:28:23Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-21T20:28:23Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "TypeScript",
+  "languages": {
+    "TypeScript": 263040,
+    "Dockerfile": 693,
+    "JavaScript": 605
+  },
+  "language_total_size": 264338,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 1,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "ai",
+    "analytics",
+    "claude",
+    "cursor",
+    "digital-marketing",
+    "ecommerce",
+    "geo",
+    "graphql",
+    "inventory",
+    "llm",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "seo",
+    "shopify",
+    "shopify-api",
+    "typescript",
+    "ai-agents",
+    "approval-workflow"
+  ],
+  "size_kb": 142,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/shopify-growth-mcp/blob/main/README.md",
+    "has_readme": true,
+    "length": 14571,
+    "excerpt": "---\nAIGC:\n    Label: \"1\"\n    ContentProducer: 001191440300708461136T1XGW3\n    ProduceID: a60f8e46820ea466ef0868a20e79d739_6fc44ac2d27f11f196c5525400248c00\n    ReservedCode1: Ms0XkeFrR7dbnIUJDH7Za5ErwbcaOgxsDCu7djCtv5/ImJ0CLsCcutypQRUaR9Jje3M7wrn05kZ/3fpjC+TDxc44qLdP2G+oc9ciNFxXW5eK42wyCXNXF1ywPniW72FazYkwVBmTTv+ZWf5w3iZVQTEmJHUCWZXNeVFkEDS2Kndl6IoPHbC7SS1FU0g=\n    ContentPropagator: 001191440300708461136T1XGW3\n    PropagateID: a60f8e46820ea466ef0868a20e79d739_6fc44ac2d27f11f196c5525400248c00\n    ReservedCode2: Ms0XkeFrR7dbnIUJDH7Za5ErwbcaOgxsDCu7djCtv5/ImJ0CLsCcutypQRUaR9Jje3M7wrn05kZ/3fpjC+TDxc44qLdP2G+oc9ciNFxXW5eK42wyCXNXF1ywPniW72FazYkwVBmTTv+ZWf5w3iZVQTEmJHUCWZXNeVFkEDS2Kndl6IoPHbC7SS1FU0g=\n---\n\n# Shopify Growth MCP — AI Store Operations, SEO & Analytics\n\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Node](https://img.shields.io/badge/node-20%2B-brightgreen)](package.json)\n[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6)](tsconfig.json)\n[![Tools](https://img.shields.io/badge/tools-61-blue)](docs/tools.md)\n[![Tests](https://img.shields.io/badge/tests-64%20passing-brightgreen)](tests)\n[![CI](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF)](.github/workflows/ci.yml)\n\nA **production-grade Model Context Protocol (MCP) server for Shopify** that lets AI assistants like **Claude, Cursor, ChatGPT, VS Code and Codex** operate your store through natural language — while giving merchants, agencies and SEO professionals actionable growth workflows built on real store data.\n\n**Stop juggling 20 tabs in Shopify Admin. Ask your AI assistant to find low-stock products, audit SEO metadata, summarize sales trends, or draft marketing copy — and get structured, safe, reviewable results.**\n\n- **61 MCP tools** across products, orders, customers, collections, inventory, metafields, tags, SEO, GEO, analytics, feeds and marketing.\n- **Read-only by default**, with plan previews, bound approvals and audit logging for every write.\n- **Runs with zero configuration** in demo mode (fictional store data) — no Shopify credentials required to explore.\n- **Deterministic core**: Shopify connectivity and analytics never require an LLM API key.\n\n---\n\n## Why Shopify Growth MCP?\n\nMost Shopify MCP servers are thin API wrappers: they expose a CRUD surface but don't help you *decide* what to do next. Shopify Growth MCP combines reliable store operations with a growth layer that turns raw Shopify data into prioritized, explainable recommendations:\n\n| Problem merchants face | What this server does |\n| --- | --- |\n| Products missing titles, descriptions or alt text | `seo_audit` finds gaps with severity + evidence + suggested fix |\n| Low stock and stale listings cause lost sales | `inventory_intelligence` flags thresholds, stale products and reorder priorities |\n| Hard to see how the store is actually performing | `analytics_summary` computes sales, AOV, best sellers and trends from real orders |\n| Feed data quality breaks ad campaigns | `feed_quality_audit` + `feed_export` validate and export product feeds |\n| AI search engines can't understand the store | `geo_ai_readiness` audits content clarity, structured data and machine readability |\n| Writes are risky | Plan → preview → bound approval → apply, with a full audit trail |\n\n---\n\n## Feature Highlights\n\n### Core store operations (61 tools)\n\n- **Products** — list, search, create, update, archive, delete, media, variants, metafields, tags.\n- **Orders** — list, get, update, cancel, draft orders, customer order history.\n- **Customers** — list, search, get, create, update, addresses, order summaries (privacy-minimized).\n- **Collections** — list, get, create, update, membership management, uncategorized-product detection.\n- **Inventory** — levels, locations, set quantities, low-stock alerts.\n- **Metafields & tags** — list, set, delete, add/remove tags with namespace/key validation.\n\n### Growth differentiators\n\n- **SEO audit** (`seo_audit`) — scans products an",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 67,
+    "total_entries": 86,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "research",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "docker-compose.yml",
+      "package.json",
+      "tsconfig.json"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 8,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 2,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "MCP"
+    ],
+    "dependencies": [
+      "@eslint/js",
+      "@modelcontextprotocol/sdk",
+      "@types/node",
+      "dotenv",
+      "eslint",
+      "graphql",
+      "graphql-request",
+      "prettier",
+      "rimraf",
+      "tsx",
+      "typescript",
+      "typescript-eslint",
+      "vitest",
+      "zod"
+    ],
+    "config_files": [
+      "package.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ]
+  },
+  "external_links": [],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:57+00:00",
+  "detail_source": "api"
+}

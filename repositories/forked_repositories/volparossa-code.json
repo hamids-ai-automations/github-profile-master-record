@@ -1,0 +1,98 @@
+{
+  "id": "R_kgDOVd2yZA",
+  "name": "volparossa-code",
+  "full_name": "hamids-ai-automations/volparossa-code",
+  "url": "https://github.com/hamids-ai-automations/volparossa-code",
+  "description": "Open-source coding assistant integrating OpenCode with VOLPAROSSA's Decentralized Intelligent Cooperative Network (DICN). Designed to read, edit and test code through cooperating agents and shared intelligence. Editor integrations start with VS Code and VSCodium. Under active development.",
+  "homepage": "https://volparossa.org/volparossa-code/",
+  "created_at": "2026-10-31T06:51:37Z",
+  "updated_at": "2026-10-31T06:51:37Z",
+  "pushed_at": "2026-10-31T07:08:13Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-27T01:00:16Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "GPL-3.0",
+  "license_name": "GNU General Public License v3.0",
+  "language": "JavaScript",
+  "languages": {
+    "JavaScript": 731655,
+    "Python": 464256,
+    "Shell": 2713
+  },
+  "language_total_size": 1198624,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 2,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 4640,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/volparossa-code/blob/main/README.md",
+    "has_readme": true,
+    "length": 10646,
+    "excerpt": "![Project VOLPAROSSA Code — botanical illustration of a flowering plant with circuit-like roots on parchment](docs/assets/volparossa-code-banner.png)\n\n# VOLPAROSSA Code\n\n**Give a coding task a team, without making one device the limit.**\n\nReading an unfamiliar project, proposing a change and checking it belong in one\nworkflow. VOLPAROSSA Code connects the open-source **OpenCode** coding runtime\nto the [VOLPAROSSA core](https://github.com/VOLPAROSSA/volparossa), with explicit\nworkspace permissions and reviewable edits. The goal is to share suitable work\nand combine agent results across the network, including protected private work.\n\nA bounded [read/edit/test task](docs/OPENCODE.md#explicit-native-cpu-candidate)\nalready passes with a real local model on a public fixture, taking about 37 minutes\non the disposable CPU runner. Confidential peer coding remains unfinished.\nContribute to the executable loop, editor integration or measured coding quality\nto help move that larger goal beyond a demonstration.\n\nOpenCode replaces the earlier Codex CLI/app-server foundation. Suitable upstream\napps, clients and editor integrations can share the same core connection. The\nfirst integration is a development extension for VS Code/VSCodium on Linux;\ncross-platform applications and packaging are not yet complete.\n\nThis README describes the OpenCode development integration, not a completed\ncoding assistant. Original integration code is GPL-3.0-only; upstream licenses\nand notices remain intact. This is not an OpenAI-backed service or a copy of\nits proprietary IDE extension.\n\n## One coordinator, multiple cooperating agents\n\n```mermaid\nflowchart TD\n    UI[\"Editor / OpenCode client<br/>Intent, project scope, approvals\"] --> Runtime[\"OpenCode runtime<br/>Tools and subagent sessions\"]\n    Runtime --> Core[\"VOLPAROSSA core<br/>Placement, models, cancellation, accounting\"]\n    Core --> A[\"Network agent A<br/>Suitable authorized work\"]\n    Core --> B[\"Network agent B<br/>Parallel work and review\"]\n    Core --> C[\"Protected network execution<br/>Private work · required, not implemented\"]\n    Core --> Local[\"Local executor<br/>Fallback and development\"]\n    A --> Core\n    B --> Core\n    C --> Core\n    Runtime --> Tools[\"Workspace-scoped tools<br/>Explicit edit / command authority\"]\n    Immune[\"Immune system<br/>Admission, behavior, results\"] -.-> Core\n```\n\nThis is the **target architecture**, not a claim that every arrow works today.\nNetwork cooperation and collective improvement are the default design, including\nprivate projects. Core owns peer scheduling; OpenCode's local subagents do not\nthemselves provide a decentralized network or confidential remote execution.\n\nPrivacy belongs inside cooperation. Private work must also be able to use suitable\nnetwork executors without exposing source or tool data to their operators. That\nprotected execution is **not implemented by the current local executor**: TLS,\ntask fragmentation and peer signatures alone do not hide inputs from an ordinary\nexecuting host. Explicitly public task sharing is a separate capability, not proof\nof private distributed coding. Code, prompts, tool output and history are not\nautomatically public cache or training data. A local-only assistant does not\nfulfill the goal of the shared VOLPAROSSA brain.\n\n## Current executable integration\n\n**VOLPAROSSA: Run OpenCode Task (Development)** selects the new OpenCode launcher,\nnot Codex. It joins these implemented components:\n\n- Pinned OpenCode **v1.18.34**, authenticated HTTP sessions and SSE events.\n- A Chat Completions provider translating text and function-tool history into\n  the core's typed conversation interface.\n- One-shot command/edit approvals, correlated root and child sessions,\n  cancellation, session deletion and owned-process cleanup.\n- An explicit Linux launcher with a selected writable project, temporary state,\n  no inherited account credentials and no external network interface.\n\n**Runtime and adapter proof:** the pinned OpenCode source ",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 123,
+    "total_entries": 133,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "patches",
+      "scripts",
+      "src",
+      "tests",
+      "third_party"
+    ],
+    "important_files": [
+      "package.json"
+    ],
+    "workflow_files": [
+      ".github/workflows/opencode-inference.yml",
+      ".github/workflows/opencode-public-code.yml",
+      ".github/workflows/source-checks.yml"
+    ],
+    "test_files_count": 49,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 2,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [],
+    "dependencies": [],
+    "config_files": [
+      "package.json"
+    ]
+  },
+  "external_links": [],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:33+00:00",
+  "detail_source": "api"
+}

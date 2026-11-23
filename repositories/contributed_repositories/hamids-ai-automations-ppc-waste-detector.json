@@ -1,0 +1,14 @@
+{
+  "full_name": "hamids-ai-automations/ppc-waste-detector",
+  "url": "https://github.com/hamids-ai-automations/ppc-waste-detector",
+  "description": "Free, open-source PPC budget leak detector for Google & Meta Ads. Detects negative keyword gaps, search query bleed, click fraud, and zero-conversion spend.",
+  "owner": "hamids-ai-automations",
+  "is_fork": false,
+  "stars": 1,
+  "language": "Python",
+  "commits": 9,
+  "pull_requests": 0,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": true
+}

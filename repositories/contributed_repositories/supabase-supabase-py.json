@@ -1,0 +1,14 @@
+{
+  "full_name": "supabase/supabase-py",
+  "url": "https://github.com/supabase/supabase-py",
+  "description": "Python Client for Supabase. Query Postgres from Flask, Django, FastAPI. Python user authentication, security policies, edge functions, file storage, and realtime data streaming.",
+  "owner": "supabase",
+  "is_fork": false,
+  "stars": 2639,
+  "language": "Python",
+  "commits": 1,
+  "pull_requests": 1,
+  "issues": 1,
+  "reviews": 0,
+  "owned_by_profile": false
+}

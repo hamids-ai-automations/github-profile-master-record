@@ -1,0 +1,14 @@
+{
+  "full_name": "connabyss/bite",
+  "url": "https://github.com/connabyss/bite",
+  "description": "Checks whether the \"fixed\" in your AI coding agent's commits is true. It takes each fix back out and runs your tests. Free, with no key.",
+  "owner": "connabyss",
+  "is_fork": false,
+  "stars": 3,
+  "language": "Python",
+  "commits": 1,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

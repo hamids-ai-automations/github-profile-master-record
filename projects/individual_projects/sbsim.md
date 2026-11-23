@@ -1,0 +1,188 @@
+# sbsim
+
+**Overview:** _No repository description provided._
+
+| Attribute | Value |
+| --- | --- |
+| Repository | [hamids-ai-automations/sbsim](https://github.com/hamids-ai-automations/sbsim) |
+| Live website | https://google.github.io/sbsim/ |
+| Visibility | public |
+| Status | fork |
+| Creation date | 2026-10-28 |
+| Last update | 2026-10-28 |
+| Last push | 2026-11-15 |
+| Default branch | copybara_push |
+| License | Apache-2.0 |
+| Primary language | Python |
+| Stars / Forks / Watchers | 0 / 0 / 0 |
+| Issues (open / closed) | 0 / 0 |
+| Pull requests (open / merged) | 0 / 0 |
+| Releases | 0 |
+| Contributors | 19 |
+| Size | 10543 KB |
+| Topics | - |
+
+## Objectives
+
+# Google Smart Buildings Control
+
+## Features
+
+No explicit feature list found in the README.
+
+## Technical architecture
+
+- **Top-level directories:** .github, .vscode, data, docs, smart_control
+- **Total files (tracked in default branch):** 227
+- **CI workflows:** .github/workflows/build.yaml, .github/workflows/deploy-docs.yml, .github/workflows/docker-build.yaml
+- **Test files detected:** 59
+
+## Languages and technologies
+
+| Language | Bytes |
+| --- | --- |
+| Python | 1493816 |
+| Jupyter Notebook | 353981 |
+| Dockerfile | 1946 |
+| Makefile | 1088 |
+
+**Frameworks / libraries detected:** pandas, pytest
+
+**Dependencies:** none detected
+
+## Important source files
+
+- `pyproject.toml`
+
+## Installation and setup
+
+A great place to start is by reviewing the
+[Soft Actor Critic Demo notebook](https://github.com/hamids-ai-automations/sbsim/blob/copybara_push/smart_control/notebooks/SAC_Demo.ipynb). This
+notebook will walk you through:
+
+1. Creating a gym-compatible Reinforcement Learning (RL) environment.
+
+2. Visualizing the environment.
+
+3. Training an agent using the
+    [Tensorflow Agents Library](https://www.tensorflow.org/agents).
+
+Alternatively, RL agents can be trained by running various scripts in the
+"smart_control/reinforcement_learning/scripts" directory.
+
+Before running notebooks or scripts, make sure to complete the setup
+instructions linked below.
+
+## Deployment
+
+Firebase/other hosting declared via homepage field: https://google.github.io/sbsim/
+
+## Documentation links
+
+- https://google.github.io/sbsim
+- https://dl.acm.org/doi/10.1145/3600100.3625682
+- https://www.tensorflow.org/datasets/catalog/smart_buildings
+- https://storage.googleapis.com/gresearch/smart_buildings_dataset/tabular_data/sb1.zip
+- https://gitwyd.github.io/sbsim_documentation
+- https://www.tensorflow.org/agents
+
+## Development status
+
+Fork of another project; see upstream for original authorship.
+
+## Associated contributions
+
+- Open issues: 0
+- Merged pull requests: 0
+- Releases: 0
+
+## Related projects
+
+- hamids-ai-automations/leadflow-sentinel
+- hamids-ai-automations/ghl-automation-engine
+- hamids-ai-automations/gemini-agent-reliability-kit
+- hamids-ai-automations/envscope
+- hamids-ai-automations/searchpulse-ai
+
+## Known issues and limitations
+
+No limitations documented in the README.
+
+## Future development opportunities
+
+No roadmap documented in the README.
+
+## README source
+
+Full README: https://github.com/hamids-ai-automations/sbsim/blob/copybara_push/README.md
+
+```markdown
+# Google Smart Buildings Control
+
+This repository accompanies Goldfeder, J., Sipple, J., Real-World Data and
+Calibrated Simulation Suite for Offline Training of Reinforcement Learning
+Agents to Optimize Energy and Emission in Office Buildings, currently under
+review at Neurips 2024, and builds off of Goldfeder, J., Sipple, J., (2023).
+[A Lightweight Calibrated Simulation Enabling Efficient Offline Learning for Optimal Control of Real Buildings](https://dl.acm.org/doi/10.1145/3600100.3625682),
+BuildSys '23, November 15–16, 2023, Istanbul, Turkey
+
+## Real World Data
+
+In addition to our calibrated simulator, we have released six years of data from
+three buildings. This data can be used for further simulator calibration, and
+for training and evaluating reinforcement learning (RL) models.
+
+The dataset is available for download from
+[Tensorflow Datasets](https://www.tensorflow.org/datasets/catalog/smart_buildings).
+
+Alternatively, a smaller version of the dataset can be downloaded as a
+[zip file](https://storage.googleapis.com/gresearch/smart_buildings_dataset/tabular_data/sb1.zip)
+from cloud storage.
+
+## Documentation
+
+View the official [Documentation Site](https://google.github.io/sbsim/) for a
+complete auto-generated API reference.
+
+There is also a legacy unofficial
+[Community-run Documentation Site](https://gitwyd.github.io/sbsim_documentation/)
+containing more information about the project and the codebase. We plan to merge
+all this content into the official documentation site soon.
+
+## Getting Started
+
+A great place to start is by reviewing the
+[Soft Actor Critic Demo notebook](https://github.com/hamids-ai-automations/sbsim/blob/copybara_push/smart_control/notebooks/SAC_Demo.ipynb). This
+notebook will walk you through:
+
+1. Creating a gym-compatible Reinforcement Learning (RL) environment.
+
+2. Visualizing the environment.
+
+3. Training an agent using the
+    [Tensorflow Agents Library](https://www.tensorflow.org/agents).
+
+Alternatively, RL agents can be trained by running various scripts in the
+"smart_control/reinforcement_learning/scripts" directory.
+
+Before running notebooks or scripts, make sure to complete the setup
+instructions linked below.
+
+## Setup
+
+The [Setup Guide](https://github.com/hamids-ai-automations/sbsim/blob/copybara_push/docs/setup.md) provides all the information you need to run
+the code locally.
+
+## Contributing
+
+The [Contributor's Guide](https://github.com/hamids-ai-automations/sbsim/blob/copybara_push/docs/contributing.md) provides more information on how
+to contribute to this repository.
+
+We appreciate contributions and interest from the community! Please note that our 
+team maintains this repository alongside active internal Google project commitments, 
+so pull request reviews may take anywhere from a few days to a couple of weeks.
+We review PRs as maintainer bandwidth allows. Thank you for your patience and support!
+
+## [License](https://github.com/hamids-ai-automations/sbsim/blob/copybara_push/LICENSE)
+
+```

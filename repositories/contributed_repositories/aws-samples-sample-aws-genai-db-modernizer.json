@@ -1,0 +1,14 @@
+{
+  "full_name": "aws-samples/sample-aws-genai-db-modernizer",
+  "url": "https://github.com/aws-samples/sample-aws-genai-db-modernizer",
+  "description": "Assess a relational database for modernization on AWS. Analyzes your real schema and queries, scores each query pattern against purpose-built engines (DynamoDB, DocumentDB, Aurora, OpenSearch, ElastiCache), and produces schema designs, migration waves and cost estimates. Runs locally with Claude Code.",
+  "owner": "aws-samples",
+  "is_fork": false,
+  "stars": null,
+  "language": null,
+  "commits": 0,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

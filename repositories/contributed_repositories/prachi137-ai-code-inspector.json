@@ -1,0 +1,14 @@
+{
+  "full_name": "prachi137/ai-code-inspector",
+  "url": "https://github.com/prachi137/ai-code-inspector",
+  "description": "An automated AI code reviewer built with FastAPI, Google Gemini 1.5 Flash, and GitHub Webhooks that delivers instant code feedback on Pull Requests",
+  "owner": "prachi137",
+  "is_fork": false,
+  "stars": null,
+  "language": null,
+  "commits": 0,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

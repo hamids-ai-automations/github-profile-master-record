@@ -1,0 +1,123 @@
+{
+  "id": "R_kgDOVFpFUA",
+  "name": "seo-doctor",
+  "full_name": "hamids-ai-automations/seo-doctor",
+  "url": "https://github.com/hamids-ai-automations/seo-doctor",
+  "description": "Open-source technical SEO crawler: broken links, canonical validation, crawl comparison and SEO health scoring. Python CLI.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-12T06:59:37Z",
+  "updated_at": "2026-11-20T10:11:24Z",
+  "pushed_at": "2026-10-12T12:44:07Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-12T12:44:05Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 100750,
+    "HTML": 16691
+  },
+  "language_total_size": 117441,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "broken-link-checker",
+    "canonical-tags",
+    "cli",
+    "core-web-vitals",
+    "digital-marketing",
+    "on-page-seo",
+    "python",
+    "seo",
+    "seo-audit",
+    "seo-tools",
+    "site-crawler",
+    "technical-seo"
+  ],
+  "size_kb": 578,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/seo-doctor/blob/main/README.md",
+    "has_readme": true,
+    "length": 14958,
+    "excerpt": "# SEO-Doctor 🩺\n\n[![CI Pipeline](https://github.com/hamid-digitalmarketer/seo-doctor/actions/workflows/ci.yml/badge.svg)](https://github.com/hamid-digitalmarketer/seo-doctor/actions/workflows/ci.yml)\n[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)\n[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)\n[![Tests: 23/23 Passing](https://img.shields.io/badge/tests-23%2F23%20passed-success.svg)](tests/)\n[![Code Style: Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)\n[![Type Checked: Mypy](https://img.shields.io/badge/type%20checked-mypy-blue.svg)](https://github.com/python/mypy)\n[![Hire Me: Technical SEO Audits](https://img.shields.io/badge/Hire%20Me-SEO%20Audits%20%26%20Consulting-2ea44f?style=flat-square&logo=googlechrome&logoColor=white)](https://abouthamid.web.app/)\n[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Hamid-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hamid-digital-marketing/)\n[![Direct Email](https://img.shields.io/badge/Email-mhamidlad%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:mhamidlad@gmail.com)\n[![Cost: $0.00 Free](https://img.shields.io/badge/cost-%240.00%20free-brightgreen.svg)](#pricing--free-open-source)\n\nA free, production-grade, open-source **technical SEO auditor, crawler, and site diagnostics engine**. Designed for business owners, SEO freelancers, marketing agencies, and web developers who need to identify indexing blockers, broken link equity, duplicate metadata, canonical tag conflicts, and crawl regressions—**without expensive monthly software subscriptions**.\n\n---\n\n## 📌 Executive Overview: Why Technical SEO Auditing Matters\n\nWebsite owners frequently encounter discouraging organic search bottlenecks:\n- *Why is my website not ranking on Google?*\n- *Why are my newly published product pages not indexed?*\n- *Which pages leak link equity through 404 dead ends or redirect chains?*\n- *Did our recent staging deployment accidentally break canonical tags or introduce `noindex` directives?*\n\nMost commercial tools (Screaming Frog, Ahrefs, Semrush) charge $120–$500/month or enforce strict URL caps. **SEO-Doctor** runs locally on your machine, respects target servers, detects technical search bottlenecks, prioritizes fixes into clear actionable tiers, and produces executive-ready **HTML, CSV, and JSON** audit reports.\n\n---\n\n## 📸 Interactive HTML Audit Dashboard\n\nSEO-Doctor generates a standalone, responsive HTML report featuring a technical health score ring, critical blocker callouts, and filterable diagnostic tables:\n\n![SEO-Doctor Report Preview](docs/report_preview.png)\n\n---\n\n## ⚡ Key Capabilities & Diagnostic Checks\n\nSEO-Doctor audits your website across 10 specialized technical disciplines:\n\n| Diagnostic Check | Issues Detected | Impact Level |\n| :--- | :--- | :---: |\n| **1. Broken Links** | Internal 404s, 500 server crashes, and broken external links | `CRITICAL` / `MEDIUM` |\n| **2. Redirects** | Multi-hop redirect chains (2+ hops), redirect loops, temporary 302s | `CRITICAL` / `HIGH` |\n| **3. Metadata** | Missing `<title>`, duplicate titles, short/long titles, missing/duplicate meta descriptions | `CRITICAL` / `HIGH` |\n| **4. Headings** | Missing `<h1>`, multiple conflicting `<h1>` tags, skipped hierarchy levels (e.g. H1 $\\to$ H3) | `HIGH` / `LOW` |\n| **5. Canonical Tags** | Missing canonicals, multiple canonical tags, canonicals pointing to 404s or redirects | `CRITICAL` / `HIGH` |\n| **6. Robots Directives** | Meta robots `noindex`/`nofollow`, `X-Robots-Tag` headers, and `robots.txt` disallows | `CRITICAL` / `HIGH` |\n| **7. Images** | Missing `alt` attributes, empty `alt` on content images, broken image sources | `HIGH` / `MEDIUM` |\n| **8. XML Sitemaps** | Missing `sitemap.xml`, dead 404 URLs in sitemap, sitemap URLs redirecting or noindexed | `CRITICAL` / `HIGH` |\n| **9. Or",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 51,
+    "total_entries": 64,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "examples",
+      "reports",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 8,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "BeautifulSoup",
+      "FastAPI",
+      "pandas",
+      "pytest",
+      "requests"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://www.python.org/downloads/",
+    "https://abouthamid.web.app/",
+    "https://www.linkedin.com/in/muhammad-hamid-digital-marketing/",
+    "https://example.com",
+    "https://example.com/checkout",
+    "https://example.com/pricing",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000/index.html",
+    "http://127.0.0.1:8000/sitemap.xml"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:57+00:00",
+  "detail_source": "api"
+}

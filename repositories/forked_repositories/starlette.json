@@ -1,0 +1,119 @@
+{
+  "id": "R_kgDOVbSz2g",
+  "name": "starlette",
+  "full_name": "hamids-ai-automations/starlette",
+  "url": "https://github.com/hamids-ai-automations/starlette",
+  "description": "The little ASGI framework that shines. 🌟",
+  "homepage": "https://starlette.dev",
+  "created_at": "2026-10-29T03:34:19Z",
+  "updated_at": "2026-10-29T03:34:19Z",
+  "pushed_at": "2026-10-29T03:35:24Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-24T14:58:54Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "BSD-3-Clause",
+  "license_name": "BSD 3-Clause \"New\" or \"Revised\" License",
+  "language": "Python",
+  "languages": {
+    "Python": 812747,
+    "Shell": 1161
+  },
+  "language_total_size": 813908,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 202,
+  "branches_count": 30,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 8656,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/starlette/blob/main/README.md",
+    "has_readme": true,
+    "length": 4930,
+    "excerpt": "<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://raw.githubusercontent.com/Kludex/starlette/main/docs/img/starlette_dark.svg\" width=\"420px\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://raw.githubusercontent.com/Kludex/starlette/main/docs/img/starlette.svg\" width=\"420px\">\n    <img alt=\"starlette-logo\" src=\"https://raw.githubusercontent.com/Kludex/starlette/main/docs/img/starlette.svg\">\n  </picture>\n</p>\n\n<p align=\"center\">\n    <em>✨ The little ASGI framework that shines. ✨</em>\n</p>\n\n---\n\n[![Build Status](https://github.com/Kludex/starlette/workflows/Test%20Suite/badge.svg)](https://github.com/Kludex/starlette/actions)\n[![Package version](https://badge.fury.io/py/starlette.svg)](https://pypi.python.org/pypi/starlette)\n[![Supported Python Version](https://img.shields.io/pypi/pyversions/starlette.svg?color=%2334D058)](https://pypi.org/project/starlette)\n[![Discord](https://img.shields.io/discord/1051468649518616576?logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/RxKUF5JuHs)\n\n---\n\n**Documentation**: <a href=\"https://starlette.dev/\" target=\"_blank\">https://starlette.dev</a>\n\n**Source Code**: <a href=\"https://github.com/Kludex/starlette\" target=\"_blank\">https://github.com/Kludex/starlette</a>\n\n---\n\n# Starlette\n\nStarlette is a lightweight [ASGI][asgi] framework/toolkit,\nwhich is ideal for building async web services in Python.\n\nIt is production-ready, and gives you the following:\n\n* A lightweight, low-complexity HTTP web framework.\n* WebSocket support.\n* In-process background tasks.\n* Startup and shutdown events.\n* Test client built on `httpx2`.\n* CORS, GZip, Static Files, Streaming responses.\n* Session and Cookie support.\n* 100% test coverage.\n* 100% type annotated codebase.\n* Few hard dependencies.\n* Compatible with `asyncio` and `trio` backends.\n* Great overall performance [against independent benchmarks][techempower].\n\n## Installation\n\n```shell\n$ pip install starlette\n```\n\nYou'll also want to install an ASGI server, such as [uvicorn](https://uvicorn.dev) or any of the [other ASGI server implementations](https://asgi.readthedocs.io/en/latest/implementations.html#servers).\n\n```shell\n$ pip install uvicorn\n```\n\n## Example\n\n```python title=\"main.py\"\nfrom starlette.applications import Starlette\nfrom starlette.responses import JSONResponse\nfrom starlette.routing import Route\n\n\nasync def homepage(request):\n    return JSONResponse({'hello': 'world'})\n\nroutes = [\n    Route(\"/\", endpoint=homepage)\n]\n\napp = Starlette(debug=True, routes=routes)\n```\n\nThen run the application using Uvicorn:\n\n```shell\n$ uvicorn main:app\n```\n\n## Dependencies\n\nStarlette only requires `anyio`, and the following are optional:\n\n* [`httpx2`][httpx2] - Required if you want to use the `TestClient`.\n* [`jinja2`][jinja2] - Required if you want to use `Jinja2Templates`.\n* [`opentelemetry-api`][opentelemetry-api] - Required for `OpenTelemetryMiddleware`.\n* [`python-multipart`][python-multipart] - Required if you want to support form parsing, with `request.form()`.\n* [`itsdangerous`][itsdangerous] - Required for `SessionMiddleware` support.\n* [`pyyaml`][pyyaml] - Required for `SchemaGenerator` support.\n\nYou can install all of these with `pip install starlette[full]`.\n\n## Framework or Toolkit\n\nStarlette is designed to be used either as a complete framework, or as\nan ASGI toolkit. You can use any of its components independently.\n\n```python\nfrom starlette.responses import PlainTextResponse\n\n\nasync def app(scope, receive, send):\n    assert scope['type'] == 'http'\n    response = PlainTextResponse('Hello, world!')\n    await response(scope, receive, send)\n```\n\nRun the `app` application in `example.py`:\n\n```shell\n$ uvicorn example:app\nINFO: Started server process [11509]\nINFO: Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)\n```\n\nRun uvicorn with `--reload` to enable auto-reloading on code changes.\n\n## Modularity\n\nThe modularity that Starlette is designed on promotes",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 151,
+    "total_entries": 166,
+    "top_level_directories": [
+      ".github",
+      "benchmarks",
+      "docs",
+      "scripts",
+      "starlette",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/benchmark.yml",
+      ".github/workflows/main.yml",
+      ".github/workflows/publish.yml",
+      ".github/workflows/zizmor.yml"
+    ],
+    "test_files_count": 41,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 349,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://raw.githubusercontent.com/Kludex/starlette/main/docs/img/starlette_dark.svg",
+    "https://raw.githubusercontent.com/Kludex/starlette/main/docs/img/starlette.svg",
+    "https://badge.fury.io/py/starlette.svg",
+    "https://pypi.python.org/pypi/starlette",
+    "https://pypi.org/project/starlette",
+    "https://discord.gg/RxKUF5JuHs",
+    "https://starlette.dev/",
+    "https://starlette.dev",
+    "https://uvicorn.dev",
+    "https://asgi.readthedocs.io/en/latest/implementations.html#servers",
+    "http://127.0.0.1:8000",
+    "https://asgi.readthedocs.io/en/latest/",
+    "https://pypi.org/project/httpx2/",
+    "https://jinja.palletsprojects.com/",
+    "https://opentelemetry.io/docs/languages/python/api/",
+    "https://multipart.fastapiexpert.com/",
+    "https://itsdangerous.palletsprojects.com/",
+    "https://www.sqlalchemy.org",
+    "https://pyyaml.org/wiki/PyYAMLDocumentation"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:43+00:00",
+  "detail_source": "api"
+}

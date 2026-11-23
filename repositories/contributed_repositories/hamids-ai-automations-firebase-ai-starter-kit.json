@@ -1,0 +1,14 @@
+{
+  "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
+  "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
+  "description": "Secure Gemini AI on Firebase: Auth, Firestore ownership rules, hardened Cloud Functions, emulator-first tests, CI and guarded deploys.",
+  "owner": "hamids-ai-automations",
+  "is_fork": false,
+  "stars": 0,
+  "language": "TypeScript",
+  "commits": 9,
+  "pull_requests": 0,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": true
+}

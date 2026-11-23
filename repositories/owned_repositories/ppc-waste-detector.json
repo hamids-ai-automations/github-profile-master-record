@@ -1,0 +1,122 @@
+{
+  "id": "R_kgDOVFr3Pg",
+  "name": "ppc-waste-detector",
+  "full_name": "hamids-ai-automations/ppc-waste-detector",
+  "url": "https://github.com/hamids-ai-automations/ppc-waste-detector",
+  "description": "Free, open-source PPC budget leak detector for Google & Meta Ads. Detects negative keyword gaps, search query bleed, click fraud, and zero-conversion spend.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-12T07:38:10Z",
+  "updated_at": "2026-11-20T10:11:20Z",
+  "pushed_at": "2026-10-12T12:41:32Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-12T12:41:30Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 63102,
+    "HTML": 12256
+  },
+  "language_total_size": 75358,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "ad-spend",
+    "adtech",
+    "adwords",
+    "cli",
+    "click-fraud",
+    "cro",
+    "digital-marketing",
+    "google-ads",
+    "martech",
+    "meta-ads",
+    "negative-keywords",
+    "performance-marketing",
+    "ppc-optimization",
+    "python",
+    "ad-waste",
+    "search-query-mining"
+  ],
+  "size_kb": 682,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ppc-waste-detector/blob/main/README.md",
+    "has_readme": true,
+    "length": 12173,
+    "excerpt": "# PPC Waste Detector 🎯💸\n\n[![CI](https://github.com/hamid-digitalmarketer/ppc-waste-detector/actions/workflows/ci.yml/badge.svg)](https://github.com/hamid-digitalmarketer/ppc-waste-detector/actions/workflows/ci.yml)\n[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)\n[![Type checked: mypy](https://img.shields.io/badge/type%20checked-mypy-blue.svg)](http://mypy-lang.org/)\n[![Hire Me: PPC Audits](https://img.shields.io/badge/Hire%20Me-PPC%20Audit%20%26%20Consulting-2ea44f?style=flat-square&logo=googlechrome&logoColor=white)](https://abouthamid.web.app/)\n[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Hamid-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hamid-digital-marketing/)\n[![Direct Email](https://img.shields.io/badge/Email-mhamidlad%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:mhamidlad@gmail.com)\n\n> **A production-grade, open-source PPC budget leak detector for Google Ads and Meta Ads.**  \n> Automatically detects search query bleed, internal keyword cannibalization, junk mobile app placements, geo-location bleed, off-hour dayparting spikes, and runaway smart bidding CPC anomalies. Generates one-click exclusion lists for **Google Ads Editor** and self-contained interactive Tailwind CSS audit dashboards.\n\n---\n\n![PPC Waste Audit Dashboard Preview](docs/report_preview.png)\n\n---\n\n## ⚡ The Problem: Invisible PPC Ad Spend Bleed\n\nModern paid search and display platforms optimize for inventory monetization, often hiding budget waste inside broad matching, Performance Max black boxes, and multi-network default settings:\n\n1. **Broad Match Query Bleed**: Broad match expansion captures low-intent, non-converting queries (`free`, `login`, `jobs`, `tutorial`).\n2. **Internal Keyword Cannibalization**: Multiple campaigns or ad groups bid against each other on the same search queries, driving up your own clearing CPCs.\n3. **GDN / PMax Junk Placements**: Display campaigns and Performance Max silently serve impressions on hyper-casual mobile games (`mobileapp::*`) and MFA click-farms with high accidental click-through rates and 0% conversion rates.\n4. **Geographic Bleed**: Ads show to users outside your targeted geographies due to Google's default *\"Presence or interest\"* setting.\n5. **Dayparting Waste**: High budget burns between 1:00 AM and 5:00 AM with zero conversions and unstaffed sales teams.\n6. **Smart Bidding Runaways**: Automated bidding algorithms aggressively bid on low-intent search terms during inventory spikes without CPC ceilings.\n\n**PPC Waste Detector** parses your raw Google Ads or Meta Ads performance CSV reports and pinpoints every wasted dollar with mathematical rigor.\n\n---\n\n## 🚀 Key Features\n\n- 🔍 **6 Specialized Detection Engines**:\n  - `SearchQueryBleedDetector`: Flags negative-intent queries, zero-conversion high-spend queries, and traffic spikes.\n  - `KeywordCannibalizationDetector`: Maps internal cross-campaign auction conflicts and calculates wasted delta spend.\n  - `JunkPlacementLeakDetector`: Detects spam domains, MFA click-farms, and mobile game app IDs (`mobileapp::*`).\n  - `GeoBleedDetector`: Catches impressions and spend occurring outside your target service areas.\n  - `DaypartingWasteDetector`: Identifies off-peak hourly budget burns with conversion rates below 10% of account average.\n  - `SmartBiddingRunawayDetector`: Detects severe CPC inflation ($>3\\times$ median) triggered by unconstrained automated bidding.\n- 📋 **Google Ads Editor Ready**:\n  - `negative_keywords_editor.csv`: Formatted with `Campaign`, `Ad Group`, `Criterion Type`, `Keyword` for bulk import.\n  - `placement_exclusions_editor.csv`: Formatted for instant PMax and GDN placemen",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 43,
+    "total_entries": 58,
+    "top_level_directories": [
+      ".github",
+      "data",
+      "docs",
+      "reports",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 5,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://www.python.org/downloads/",
+    "https://opensource.org/licenses/MIT",
+    "http://mypy-lang.org/",
+    "https://abouthamid.web.app/",
+    "https://www.linkedin.com/in/muhammad-hamid-digital-marketing/",
+    "http://localhost:8000`"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:58+00:00",
+  "detail_source": "api"
+}

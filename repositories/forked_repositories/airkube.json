@@ -1,0 +1,126 @@
+{
+  "id": "R_kgDOVbCIDw",
+  "name": "AirKube",
+  "full_name": "hamids-ai-automations/AirKube",
+  "url": "https://github.com/hamids-ai-automations/AirKube",
+  "description": "MLOps platform: LangGraph agent (OpenRouter/GLM-4.6), Neo4j knowledge graph, FastAPI inference, Airflow pipelines, Datadog.",
+  "homepage": "https://airkube-dashboard-a4410b460d07.herokuapp.com/",
+  "created_at": "2026-10-28T21:07:43Z",
+  "updated_at": "2026-10-28T21:07:43Z",
+  "pushed_at": "2026-11-15T17:05:27Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-28T19:33:38Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 129259,
+    "Dockerfile": 539,
+    "Procfile": 112
+  },
+  "language_total_size": 129910,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 4,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 713,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/AirKube/blob/main/README.md",
+    "has_readme": true,
+    "length": 7862,
+    "excerpt": "# AirKube\n\nAn agentic MLOps platform that combines a **LangGraph + OpenRouter (GLM-4.6)-powered AI agent**, a **Knowledge Graph** (Neo4j), an **ML inference API** (FastAPI), and a **news data pipeline** (Airflow + BigQuery) — all wired together in a Streamlit dashboard with Datadog observability.\n\n**Live demo:** https://airkube-dashboard-a4410b460d07.herokuapp.com/\n\n---\n\n## What it does\n\nThe dashboard gives you three views:\n\n- **Chat** — talk to the AirKube agent. It can query the knowledge graph, trigger Airflow pipelines, and check system health.\n- **Knowledge Graph Explorer** — run Cypher queries directly against Neo4j to explore models, experiments, runs, and deployments. Queries run in a read-only transaction (both here and from the agent's `query_knowledge_graph` tool), so write clauses like `CREATE`/`MERGE`/`DELETE` get rejected at the driver level, not just filtered out with a regex.\n- **Extraction Playground** — paste any text and the agent extracts MLOps entities (models, datasets, experiments, deployments) using OpenRouter (GLM-4.6).\n\n---\n\n## Screenshots\n\nCaptured running the dashboard locally against a live Neo4j Aura instance (the public demo above currently points at a stale/unreachable Aura instance — see [#2](https://github.com/iamvisheshsrivastava/AirKube/issues/2) and [#3](https://github.com/iamvisheshsrivastava/AirKube/issues/3)).\n\n**Landing page** — the three-view navigation and connection status sidebar:\n\n![Landing page](docs/screenshots/landing.png)\n\n**Knowledge Graph Explorer** — a real Cypher query (`MATCH (n) RETURN n LIMIT 25`) run through the read-only driver. This particular run shows the honest failure mode when the configured Aura instance isn't reachable, rather than a raw traceback:\n\n![Knowledge Graph Explorer](docs/screenshots/kg_explorer.png)\n\n**Extraction Playground** — free text ready to be parsed into MLOps entities (model, experiment, deployment) via OpenRouter:\n\n![Extraction Playground](docs/screenshots/extraction_playground.png)\n\n---\n\n## Architecture\n\n```\n┌─────────────────────────────────────────────────────┐\n│                  Streamlit Dashboard                │\n│   Chat  │  KG Explorer  │  Extraction Playground   │\n└──────────────────────┬──────────────────────────────┘\n                       │\n          ┌────────────▼────────────┐\n          │   LangGraph Agent       │\n          │   (OpenRouter GLM-4.6)  │\n          └──┬──────────┬───────────┘\n             │          │\n    ┌─────────▼──┐  ┌───▼──────────────┐\n    │  Neo4j KG  │  │  FastAPI         │\n    │  (Models,  │  │  Inference API   │\n    │  Runs,     │  │  /predict        │\n    │  Deploys)  │  │  /batch-predict  │\n    └────────────┘  └──────────────────┘\n             │\n    ┌────────▼──────────────────────┐\n    │  Airflow DAGs                 │\n    │  ml_pipeline  │  kg_pipeline  │\n    │  news_data_pipeline           │\n    └────────┬──────────────────────┘\n             │\n    ┌────────▼──────────────┐\n    │  BigQuery + GCS       │\n    │  dbt transformation   │\n    └───────────────────────┘\n```\n\n**Observability:** Datadog APM traces every API request and agent invocation in production.\n\n---\n\n## Tech Stack\n\n| Layer | Technology |\n|---|---|\n| Agent | LangGraph, OpenRouter (GLM-4.6) |\n| Dashboard | Streamlit |\n| Inference API | FastAPI, scikit-learn |\n| Knowledge Graph | Neo4j |\n| Orchestration | Apache Airflow |\n| Data Warehouse | BigQuery, GCS |\n| Transformation | dbt |\n| Observability | Datadog (APM + Logs) |\n| Deployment | Heroku |\n| Containers | Docker, Docker Compose |\n\n---\n\n## Project Structure\n\n```\nAirKube/\n├── dashboard.py          # Streamlit app (deployed to Heroku)\n├── run_agent.py          # CLI entry point for the agent\n├── Procfile              # Heroku: runs the dashboard\n├── Procfile.api          # Heroku: runs the inference API\n│\n├── agent/\n│   ├── graph.py          # LangGraph state machine\n│   ├── state.py          # Agent state definition\n│   └── tools.py          # Agent tools (KG query, pipeline trigger, health",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 55,
+    "total_entries": 69,
+    "top_level_directories": [
+      ".github",
+      "agent",
+      "dags",
+      "dbt",
+      "docker",
+      "docs",
+      "ml",
+      "sql",
+      "tests"
+    ],
+    "important_files": [
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/tests.yml"
+    ],
+    "test_files_count": 5,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "LangChain",
+      "OpenAI API",
+      "Streamlit",
+      "requests"
+    ],
+    "dependencies": [
+      "ddtrace",
+      "fastapi",
+      "httpx",
+      "langchain",
+      "langchain-core",
+      "langchain-openai",
+      "langgraph",
+      "langgraph-checkpoint-sqlite",
+      "neo4j",
+      "pydantic",
+      "python-multipart",
+      "requests",
+      "rich",
+      "scikit-learn",
+      "streamlit",
+      "uvicorn"
+    ],
+    "config_files": [
+      "requirements.txt"
+    ]
+  },
+  "external_links": [
+    "https://airkube-dashboard-a4410b460d07.herokuapp.com/",
+    "http://localhost:8501",
+    "http://localhost:8000",
+    "http://localhost:8080`"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:08+00:00",
+  "detail_source": "api"
+}

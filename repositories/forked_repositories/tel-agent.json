@@ -1,0 +1,132 @@
+{
+  "id": "R_kgDOVaZ20Q",
+  "name": "Tel-Agent",
+  "full_name": "hamids-ai-automations/Tel-Agent",
+  "url": "https://github.com/hamids-ai-automations/Tel-Agent",
+  "description": "AI phone assistant | open-source ",
+  "homepage": "https://Tel-Agent.com",
+  "created_at": "2026-10-28T11:10:52Z",
+  "updated_at": "2026-10-28T11:10:52Z",
+  "pushed_at": "2026-10-28T14:09:40Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-08T19:00:02Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "AGPL-3.0",
+  "license_name": "GNU Affero General Public License v3.0",
+  "language": "Python",
+  "languages": {
+    "Python": 2415145,
+    "TypeScript": 1043703,
+    "CSS": 16223,
+    "JavaScript": 14216,
+    "Shell": 10393,
+    "PowerShell": 4631,
+    "Inno Setup": 4096,
+    "Dockerfile": 3973,
+    "Batchfile": 1268,
+    "Mako": 704
+  },
+  "language_total_size": 3514352,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 2,
+  "branches_count": 5,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 5532,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/Tel-Agent/blob/main/README.md",
+    "has_readme": true,
+    "length": 15743,
+    "excerpt": "<div align=\"center\">\n\n<img src=\"logo.png\" alt=\"Tel-Agent\" height=\"130\">\n\n# AI phone assistant\n\n**Connect any phone line to any AI model. Self-hosted, bring your own keys.**\n\n<!-- Two rows of marks. The first is the channels that ship today (call and\n     landline are two drawings of the one phone channel); the second is the wave-2\n     channels being added now, tracked in the issues labelled \"channel\". The rows are\n     about recognition, not arithmetic. -->\n<p>\n  <img src=\"docs/brand/channels/call.svg\" alt=\"Call\" title=\"Call\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/landline.svg\" alt=\"Landline\" title=\"Landline\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/web-chat.svg\" alt=\"Web chat\" title=\"Web chat\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/sms.svg\" alt=\"SMS\" title=\"SMS\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/email.svg\" alt=\"Email\" title=\"Email\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/whatsapp.svg\" alt=\"WhatsApp\" title=\"WhatsApp\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/telegram.svg\" alt=\"Telegram\" title=\"Telegram\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/messenger.svg\" alt=\"Messenger\" title=\"Messenger\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/instagram.svg\" alt=\"Instagram\" title=\"Instagram\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/discord.svg\" alt=\"Discord\" title=\"Discord\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/slack.png\" alt=\"Slack\" title=\"Slack\" height=\"26\">\n</p>\n<p>\n  <img src=\"docs/brand/channels/teams.svg\" alt=\"Microsoft Teams\" title=\"Microsoft Teams\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/signal.svg\" alt=\"Signal\" title=\"Signal\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/viber.svg\" alt=\"Viber\" title=\"Viber\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/google-chat.svg\" alt=\"Google Chat\" title=\"Google Chat\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/mattermost.svg\" alt=\"Mattermost\" title=\"Mattermost\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/matrix.svg\" alt=\"Matrix\" title=\"Matrix\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/irc.svg\" alt=\"IRC\" title=\"IRC\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/line.svg\" alt=\"LINE\" title=\"LINE\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/wechat.svg\" alt=\"WeChat\" title=\"WeChat\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/wecom.svg\" alt=\"WeCom\" title=\"WeCom\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/qq.svg\" alt=\"QQ\" title=\"QQ\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/dingtalk.svg\" alt=\"DingTalk\" title=\"DingTalk\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/feishu.svg\" alt=\"Feishu / Lark\" title=\"Feishu / Lark\" height=\"26\">\n  &nbsp;&nbsp;\n  <img src=\"docs/brand/channels/imessage.svg\" alt=\"iMessage\" title=\"iMessage\" height=\"26\">\n</p>\n\n<p>Connect them over MCP — and get full control.</p>\n\n<!-- Thirteen logos, one file per theme. Seven of them are single-colour marks, so the\n     strip is built twice rather than recoloured live. See docs/brand/models/README.md. -->\n<p>\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/brand/models/models-dark.svg\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"docs/brand/models/models-light.svg\">\n  <img src=\"docs/brand/models/models-light.svg\" alt=\"Works with OpenAI, Claude, Gemini, Mistral, Ollama, Perplexity, Copilot, Manus, DeepSeek, Grok, Qwen, Groq and OpenRouter\" height=\"28\">\n</picture>\n</p>\n\n<!-- Two files, one seal. The wreath is single-colour artwork on a transparent\n     background, so it needs dark ink on GitHub's light theme and white ink on the\n     dark one; <picture> is what lets a README ship both. -->\n<p>\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/brand/awards/product-of-the-day-dark.svg\">\n  <source",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 814,
+    "total_entries": 946,
+    "top_level_directories": [
+      ".claude",
+      ".cursor",
+      ".github",
+      "agent",
+      "alembic",
+      "api",
+      "docker",
+      "docs",
+      "examples",
+      "locales",
+      "packaging",
+      "scripts",
+      "tests",
+      "web"
+    ],
+    "important_files": [
+      "api/main.py",
+      "docker-compose.yml",
+      "pyproject.toml",
+      "web/package.json",
+      "web/tsconfig.json"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/release-drafter.yml",
+      ".github/workflows/release-images.yml",
+      ".github/workflows/release-packages.yml"
+    ],
+    "test_files_count": 90,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 11,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "Next.js",
+      "SQLAlchemy",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml",
+      "docker-compose.yml"
+    ]
+  },
+  "external_links": [
+    "https://tel-agent.com",
+    "https://dpro.at",
+    "https://tel-agent.com/download",
+    "http://localhost:38471**",
+    "http://localhost:38472/docs",
+    "https://www.star-history.com/?repos=dpro-at%2Ftel-agent&type=date&legend=top-left",
+    "https://api.star-history.com/chart?repos=dpro-at/tel-agent&type=date&theme=dark&legend=top-left",
+    "https://api.star-history.com/chart?repos=dpro-at/tel-agent&type=date&legend=top-left"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:48+00:00",
+  "detail_source": "api"
+}

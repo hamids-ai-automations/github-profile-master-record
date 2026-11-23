@@ -1,0 +1,14 @@
+{
+  "full_name": "cfgaudit/cfgaudit",
+  "url": "https://github.com/cfgaudit/cfgaudit",
+  "description": "Static security auditor for AI-agent configuration: Claude Code, MCP servers, Cursor, Codex, Copilot, Gemini CLI and more. SARIF output, OWASP LLM Top 10 mapping.",
+  "owner": "cfgaudit",
+  "is_fork": false,
+  "stars": 29,
+  "language": "Go",
+  "commits": 1,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

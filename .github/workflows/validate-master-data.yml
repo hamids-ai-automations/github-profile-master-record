@@ -1,0 +1,53 @@
+name: Validate Master Data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "MASTER_DATABASE.json"
+      - "**/*.json"
+      - "**/*.csv"
+      - "automation/**"
+      - ".github/workflows/**"
+  pull_request:
+  schedule:
+    - cron: "0 4 * * 1"   # weekly completeness verification, Monday 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  GH_PROFILE_SYNC_TOKEN: ${{ secrets.GH_PROFILE_SYNC_TOKEN }}
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r automation/requirements.txt
+
+      - name: Validate JSON and CSV integrity
+        run: python automation/data_validator.py --root . --strict
+
+      - name: Run pipeline regression tests
+        run: python -m unittest discover -s automation/tests -v
+
+      - name: Verify markdown link integrity
+        run: python automation/verify_links.py --root .
+
+      - name: Verify database matches GitHub API (completeness)
+        if: env.GH_PROFILE_SYNC_TOKEN != ''
+        run: python automation/verify_completeness.py --root .

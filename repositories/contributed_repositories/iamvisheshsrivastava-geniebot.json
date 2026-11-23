@@ -1,0 +1,14 @@
+{
+  "full_name": "iamvisheshsrivastava/geniebot",
+  "url": "https://github.com/iamvisheshsrivastava/geniebot",
+  "description": "RAG + vision Telegram bot: document Q&A and image captioning via OpenRouter free-tier LLMs, with SQLite vector storage.",
+  "owner": "iamvisheshsrivastava",
+  "is_fork": false,
+  "stars": 0,
+  "language": "Python",
+  "commits": 2,
+  "pull_requests": 3,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

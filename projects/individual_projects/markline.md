@@ -1,0 +1,321 @@
+# markline
+
+**Overview:** Open-source, self-hostable documentation framework with first-class OpenAPI, full-text search, and an interactive API playground. A fully open alternative to Scalar and Mintlify.
+
+| Attribute | Value |
+| --- | --- |
+| Repository | [hamids-ai-automations/markline](https://github.com/hamids-ai-automations/markline) |
+| Live website | https://markline.dev |
+| Visibility | public |
+| Status | fork |
+| Creation date | 2026-10-31 |
+| Last update | 2026-10-31 |
+| Last push | 2026-11-10 |
+| Default branch | main |
+| License | MIT |
+| Primary language | TypeScript |
+| Stars / Forks / Watchers | 0 / 0 / 0 |
+| Issues (open / closed) | 0 / 0 |
+| Pull requests (open / merged) | 0 / 0 |
+| Releases | 0 |
+| Contributors | 4 |
+| Size | 1894 KB |
+| Topics | - |
+
+## Objectives
+
+# Markline
+
+## Features
+
+- Config-driven navigation, theming, and branding — no code to fork.
+- MDX content with server-side syntax highlighting (Shiki).
+- First-class OpenAPI: operation pages, schema tables, sample requests/responses.
+- **Interactive API playground** ("Try it") on every endpoint.
+- Static full-text search (Pagefind) — zero search infrastructure.
+- Dark mode, table of contents, responsive layout.
+
+## Technical architecture
+
+- **Top-level directories:** .github, app, bin, components, create, lib, public, scripts, site, templates, test
+- **Total files (tracked in default branch):** 165
+- **CI workflows:** .github/workflows/ci.yml, .github/workflows/deploy-site.yml, .github/workflows/release.yml
+- **Test files detected:** 11
+
+## Languages and technologies
+
+| Language | Bytes |
+| --- | --- |
+| TypeScript | 469298 |
+| CSS | 202242 |
+| MDX | 106184 |
+| JavaScript | 36675 |
+| Dockerfile | 461 |
+
+**Frameworks / libraries detected:** Next.js, React
+
+**Dependencies:** @mdx-js/loader, @mdx-js/react, @next/mdx, @phosphor-icons/react, @types/mdx, @types/node, @types/react, @types/react-dom, autoprefixer, clsx, eslint, eslint-config-next, gray-matter, next, next-mdx-remote, pagefind, postcss, react, react-dom, rehype-pretty-code, rehype-sanitize, rehype-stringify, remark-gfm, remark-parse, remark-rehype, shiki, typescript, unified
+
+## Important source files
+
+- `create/package.json`
+- `package.json`
+- `templates/ai-worker/package.json`
+- `templates/ai-worker/tsconfig.json`
+- `templates/feedback-worker/package.json`
+- `templates/feedback-worker/schema.sql`
+- `templates/feedback-worker/tsconfig.json`
+- `templates/init/netlify.toml`
+- `templates/init/package.json`
+- `tsconfig.json`
+
+## Installation and setup
+
+No installation instructions found in the README.
+
+## Deployment
+
+Firebase/other hosting declared via homepage field: https://markline.dev
+
+## Documentation links
+
+- http://localhost:3000
+- https://markline.dev
+- https://www.npmjs.com/package/@markline/markline
+- https://api.example.com
+- https://example.com/api/docs-feedback
+
+## Development status
+
+Fork of another project; see upstream for original authorship.
+
+## Associated contributions
+
+- Open issues: 0
+- Merged pull requests: 0
+- Releases: 0
+
+## Related projects
+
+- hamids-ai-automations/ghl-devops-toolkit
+- hamids-ai-automations/nexgen-financial-experts
+- hamids-ai-automations/shopify-growth-mcp
+- hamids-ai-automations/firebase-ai-starter-kit
+- hamids-ai-automations/Go-High-Level-MCP-2026-Complete
+
+## Known issues and limitations
+
+No limitations documented in the README.
+
+## Future development opportunities
+
+No roadmap documented in the README.
+
+## README source
+
+Full README: https://github.com/hamids-ai-automations/markline/blob/main/README.md
+
+```markdown
+# Markline
+
+Open-source, self-hostable documentation framework with first-class OpenAPI, full-text
+search, and an interactive API playground. A fully open alternative to Scalar and Mintlify.
+
+[![npm](https://img.shields.io/npm/v/@markline/markline.svg)](https://www.npmjs.com/package/@markline/markline)
+[![CI](https://github.com/markline-dev/markline/actions/workflows/ci.yml/badge.svg)](https://github.com/markline-dev/markline/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+
+**[markline.dev](https://markline.dev)** — built with Markline.
+
+## Quickstart
+
+```bash
+npm create @markline@latest my-docs   # scaffold a new project
+cd my-docs
+npm install
+npm run dev                           # preview at http://localhost:3000
+```
+
+Or add Markline to an existing project:
+
+```bash
+npm install @markline/markline
+npx markline init      # scaffold markline.json + sample content in the current dir
+npx markline dev
+```
+
+Your project holds only content + config:
+
+```
+my-docs/
+├── markline.json      # navigation, theme, branding, API settings
+├── docs/              # your pages (*.mdx)
+│   ├── index.mdx
+│   └── quickstart.mdx
+└── api/
+    └── openapi.json   # rendered as an interactive API reference
+```
+
+## CLI
+
+| Command | Description |
+| --- | --- |
+| `markline init [dir]` | Scaffold a new docs project. |
+| `markline dev` | Start the dev server against `./markline.json`. |
+| `markline build` | Build a production Node server bundle (Docker / Vercel). |
+| `markline start` | Serve a production build. |
+| `markline export` | Build a static HTML site into `./out` (any CDN / GitHub Pages / S3). |
+
+## Hosting
+
+`markline init` scaffolds ready-to-use deploy configs (`Dockerfile`, `netlify.toml`,
+`.github/workflows/deploy.yml`).
+
+### Static (any CDN / GitHub Pages / Netlify / S3)
+
+```bash
+markline export   # → ./out
+```
+
+Upload `out/` to any static host. The API playground runs in direct-fetch mode (set
+`api.playground.proxy` to `"never"` if your API lacks CORS).
+
+- **GitHub Pages** — the scaffolded workflow exports and deploys on push to `main`.
+  Project sites are served under `/<repo>`, so it builds with
+  `MARKLINE_BASE_PATH=/<repo>`. For a user/org root site or custom domain, remove that env.
+- **Netlify** — `netlify.toml` sets `command = "npm install && npx markline export"`
+  and `publish = "out"`.
+- **Sub-path hosting** — set `MARKLINE_BASE_PATH=/prefix` so assets and the search bundle
+  resolve correctly.
+
+### Node server (Docker / Vercel — full features)
+
+```bash
+markline build && markline start   # serves on :3000
+```
+
+Enables the playground's server-side proxy for APIs without CORS. The scaffolded
+`Dockerfile` builds and serves the site:
+
+```bash
+docker build -t my-docs . && docker run -p 3000:3000 my-docs
+```
+
+## Configuration (`markline.json`)
+
+Config is read from `markline.json` (a `docs.json` is also accepted, for
+Mintlify-style projects). `theme.appearance` sets the default color scheme —
+`"dark"`, `"light"`, or `"system"` (follows the OS; the default).
+
+```jsonc
+{
+  "name": "My API",
+  "theme": {
+    "logo": { "light": "/logo-light.svg", "dark": "/logo-dark.svg", "text": "My API" },
+    "colors": { "primary": "#4f46e5", "primaryDark": "#818cf8" },
+    "appearance": "system"
+  },
+  "topbar": {
+    "links": [{ "label": "GitHub ↗", "href": "https://github.com/me/repo" }],
+    "cta": { "label": "Get started", "href": "/quickstart" },
+    "width": "full",        // docs + API reference topbar: "full" (edge-to-edge) | "contained" (centered max-width)
+    "homeWidth": "contained" // homepage topbar — independent (defaults to "contained")
+  },
+  "navigation": {
+    "tabs": [
+      { "id": "docs", "label": "Documentation", "href": "/", "match": ["__default__"],
+        "groups": [{ "group": "Get started", "pages": [{ "href": "/", "label": "Intro" }] }] },
+      { "id": "api", "label": "API reference", "href": "/api-reference",
+        "match": ["/api-reference"], "openapi": true }
+    ]
+  },
+  "api": {
+    "baseUrl": "https://api.example.com",
+    "playground": { "mode": "full", "proxy": "auto" }
+  },
+  "editUrl": "https://github.com/me/repo/edit/main",
+  "analytics": { "plausible": { "domain": "docs.example.com" } },
+  "feedback": { "endpoint": "https://example.com/api/docs-feedback" },
+  "seo": { "title": "My API", "description": "..." }
+}
+```
+
+- **`topbar.width`** / **`topbar.homeWidth`** — topbar layout: `"full"` spans
+  edge-to-edge; `"contained"` centers it to the content max-width. `width`
+  governs docs + the API reference (default `"full"`); `homeWidth` governs the
+  homepage independently (default `"contained"`, so the marketing nav aligns
+  with the hero).
+- **`api.playground.mode`** — the "Try it" experience: `"full"` (inline param
+  inputs + live console + API Explorer modal), `"inline"` (Mintlify-style, no
+  modal), `"explorer"` (read-only docs + console + Explorer modal, Stripe-style),
+  or `"off"` (static cURL panel).
+
+### Ask AI (BYOK)
+
+Opt-in AI assistant for the API reference — a docked chat panel with "Ask about
+this section" and source citations. **Bring your own key**; Markline never ships
+one. Omit the `ai` block (or set `enabled: false`) and there is no AI route, no
+client weight, and no UI — the framework is unchanged.
+
+```jsonc
+"ai": {
+  "enabled": true,
+  "provider": "openrouter",          // openai · openrouter · together · groq · fireworks · local · openai-compatible
+  "baseUrl": null,                   // required for "openai-compatible"
+  "model": "anthropic/claude-3.5-sonnet",
+  "mode": "proxy",                   // "proxy" (operator key, server) | "byok" (reader key, browser)
+  "label": "Ask AI",
+  "maxTokens": 1024,
+  "rateLimit": { "perMinute": 10 }
+}
+```
+
+- **`mode: "proxy"`** (Node/Docker/Vercel) — the key lives only on the server in
+  `MARKLINE_AI_KEY` (never `markline.json`, never `NEXT_PUBLIC_*`). Requests go
+  through the built-in `/api/ai` route, which is dropped in static export.
+  ⚠️ A public site with a proxy is an open relay to your paid LLM — the route
+  ships with origin checks and a per-IP rate limit, but **enabling proxy mode on
+  a public site spends your budget**; tune `rateLimit` and `maxTokens`.
+- **`mode: "byok"`** — the reader pastes their own key (stored in their browser)
+  and calls the provider directly. Works on pure-static hosting; the operator
+  spends nothing.
+- One transport speaks the OpenAI `/chat/completions` shape, so any
+  OpenAI-compatible vendor works via the `provider` preset or a `baseUrl`.
+
+### API reference content (MDX overlays)
+
+The reference is generated from `api/openapi.json`, but you can layer authored
+MDX on top — full components (callouts, tables, tabs) included:
+
+```
+api/
+├── openapi.json
+├── introduction.mdx              # replaces the auto API landing page
+├── sections/<tag>.mdx            # rich summary for an OpenAPI tag/resource
+└── operations/<operationId>.mdx  # extra prose on a single operation page
+```
+
+- **`sections/<tag>.mdx`** renders as the resource intro on the reference
+  landing (Stripe-style), overriding the OpenAPI tag `description`. The filename
+  is the slugified tag (e.g. `Payment Methods` → `payment-methods.mdx`).
+- **`operations/<operationId>.mdx`** renders between the endpoint path and the
+  auto-generated parameters on that operation's page.
+- **`editUrl`** — adds an "Edit this page" link; the page's content-relative path
+  is appended (e.g. `docs/quickstart.mdx`).
+- **`analytics`** — opt-in `plausible`, `googleAnalytics` (`measurementId`), or
+  `posthog` (`apiKey`, `apiHost`).
+- **`feedback.endpoint`** — the "Was this page helpful?" widget POSTs
+  `{ answer, reason, comment, path }` here (logs to console when unset).
+
+### Versioning
+
+Declare multiple versions to get a version switcher in the topbar. The first
+version is the default and is served unprefixed; others are served under their
+id and read content from `<id>/docs/`.
+
+```jsonc
+"versions": [
+  { "id": "v2", "label": "v2 (latest)" },
+  {
+    "id
+```

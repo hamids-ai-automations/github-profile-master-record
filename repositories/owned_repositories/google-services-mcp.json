@@ -1,0 +1,111 @@
+{
+  "id": "R_kgDOV2gYQw",
+  "name": "google-services-mcp",
+  "full_name": "hamids-ai-automations/google-services-mcp",
+  "url": "https://github.com/hamids-ai-automations/google-services-mcp",
+  "description": "MCP server for Google Drive, Sheets, Gmail, Calendar and Docs - 44 tools, read-only by default, OAuth, permission gating, audit logging.",
+  "homepage": null,
+  "created_at": "2026-11-21T10:43:40Z",
+  "updated_at": "2026-11-21T10:44:37Z",
+  "pushed_at": "2026-11-21T14:04:41Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-21T14:04:31Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 190757
+  },
+  "language_total_size": 190757,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "automation",
+    "gmail",
+    "google-calendar",
+    "google-docs",
+    "google-drive",
+    "google-sheets",
+    "google-workspace",
+    "mcp",
+    "model-context-protocol",
+    "oauth2",
+    "python"
+  ],
+  "size_kb": 80,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/google-services-mcp/blob/main/README.md",
+    "has_readme": true,
+    "length": 9356,
+    "excerpt": "# Google Services MCP\n\nA permission-controlled [Model Context Protocol](https://modelcontextprotocol.io) gateway that gives AI agents scoped,\nauditable access to **Google Drive, Sheets, Gmail, Calendar and Docs** — with OAuth scopes, a server-side permission\npolicy, mandatory confirmation for destructive actions, rate limiting and a JSONL audit trail.\n\nThe design goal is blunt: an agent should be able to *read* your workspace by default, and only *change* it when a human\noperator deliberately widened the policy. The policy lives in the server, not in the prompt, so no amount of prompting\ncan talk its way past it.\n\n```\nagent ──MCP──▶ tool wrapper ──▶ 1. rate limit ──▶ 2. permission policy ──▶ 3. Google API\n                                    │                                         │\n                                    └── 4. redact + truncate ◀────────────────┘\n                                                     │\n                                                     └──▶ audit.jsonl\n```\n\n## Highlights\n\n- **Default read-only.** `read_only` mode blocks every write/destructive tool before a network call is made.\n- **Per-service, per-action flags.** `drive.share`, `gmail.send`, `calendar.delete`, … each have their own switch.\n- **Two-key outbound email.** Sending requires `permissions.allow_email_send: true` *and* `gmail.send: true` *and*\n  `confirm: true` on the call itself.\n- **Dry-run by default.** Writes preview their effect unless the caller passes `dry_run: false`; deletions need\n  `confirm: true` as well.\n- **44 tools** across five services, each with an MCP `ToolSpec` (operation, policy key, scopes, annotations).\n- **Untrusted content handling.** Gmail/Drive/Docs text is wrapped and control characters stripped before it reaches the\n  model, so a malicious document cannot smuggle instructions.\n- **Local file sandbox.** Drive upload/download are confined to `files.download_dir`; path traversal is rejected.\n- **Audit without payloads.** `logs/audit.jsonl` records tool, service, outcome, duration, correlation id — never\n  message bodies or tokens.\n\n## Install\n\n```bash\ngit clone https://github.com/hamids-ai-automations/google-services-mcp.git\ncd google-services-mcp\npython -m venv .venv\n.\\.venv\\Scripts\\activate            # Windows\n# source .venv/bin/activate         # macOS / Linux\npip install -e \".[dev]\"\n```\n\nRequirements: Python 3.11+, an OAuth client (Desktop app) from Google Cloud Console with the Drive, Sheets, Gmail,\nCalendar and Docs APIs enabled.\n\n## Configure\n\n```bash\ncp config/config.example.yaml config/config.yaml\ncp .env.example .env\n```\n\nEvery flag in `permissions.services` maps to a policy key used by the tools. Widening one widens what the agent can do:\n\n| Service | Policy keys | Notes |\n| --- | --- | --- |\n| `drive` | `read`, `create`, `update`, `upload`, `share`, `delete` | `delete` also needs `confirm=true` per call |\n| `sheets` | `read`, `write`, `create`, `delete` | `delete` removes a whole sheet (irreversible) |\n| `gmail` | `read`, `draft`, `send`, `modify`, `trash` | `send` needs `allow_email_send` + `confirm=true` |\n| `calendar` | `read`, `create`, `update`, `delete` | deleting an event also needs `confirm=true` |\n| `docs` | `read`, `create`, `update` | updates are append/insert/replace-text only |\n\n`permissions.mode` adds a global gate on top: `read_only` (reads only), `read_write` (flag-driven), `restricted`\n(only names in `allowed_tools`), `custom` (flags only, no mode-level short-circuit).\n\n## Authorise\n\n```bash\ngoogle-services-mcp auth login               # opens a browser, stores the refresh token\ngoogle-services-mcp auth login --console     # headless: paste the code\ngoogle-services-mcp auth login --write       # request write scopes too\ngoogle-services-mcp auth status              # token presence, expiry, granted scopes\ngoogle-services-mcp auth logout              # revoke at Google and delete locally\n```\n\nTick the scopes you actually intend to use. A token that was granted read-only scopes can",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 53,
+    "total_entries": 63,
+    "top_level_directories": [
+      ".github",
+      "config",
+      "docs",
+      "google_services_mcp",
+      "scripts",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 7,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Google APIs",
+      "MCP",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://modelcontextprotocol.io"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:03+00:00",
+  "detail_source": "api"
+}

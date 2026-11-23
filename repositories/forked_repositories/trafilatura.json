@@ -1,0 +1,127 @@
+{
+  "id": "R_kgDOVdPeuQ",
+  "name": "trafilatura",
+  "full_name": "hamids-ai-automations/trafilatura",
+  "url": "https://github.com/hamids-ai-automations/trafilatura",
+  "description": "Python & Command-line tool to gather text and metadata on the Web: Crawling, scraping, extraction, output as CSV, JSON, HTML, MD, TXT, XML",
+  "homepage": "https://trafilatura.readthedocs.io",
+  "created_at": "2026-10-30T16:08:39Z",
+  "updated_at": "2026-10-30T16:08:39Z",
+  "pushed_at": "2026-11-11T00:28:54Z",
+  "default_branch": "master",
+  "last_commit_at": "2026-10-30T14:40:40Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "language": "Python",
+  "languages": {
+    "Python": 1069929
+  },
+  "language_total_size": 1069929,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 43,
+  "branches_count": 7,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 35843,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/trafilatura/blob/master/README.md",
+    "has_readme": true,
+    "length": 9292,
+    "excerpt": "# Trafilatura: Discover Web Content, Extract Text and Metadata\n\n<br/>\n\n<img alt=\"Trafilatura Logo\" src=\"https://raw.githubusercontent.com/adbar/trafilatura/master/docs/trafilatura-logo.png\" align=\"center\" width=\"60%\"/>\n\n<br/>\n\n[![Python package](https://img.shields.io/pypi/v/trafilatura.svg)](https://pypi.python.org/pypi/trafilatura)\n[![Python versions](https://img.shields.io/pypi/pyversions/trafilatura.svg)](https://pypi.python.org/pypi/trafilatura)\n[![Documentation Status](https://readthedocs.org/projects/trafilatura/badge/?version=latest)](http://trafilatura.readthedocs.org/en/latest/?badge=latest)\n[![Code Coverage](https://img.shields.io/codecov/c/github/adbar/trafilatura.svg)](https://codecov.io/gh/adbar/trafilatura)\n[![Downloads](https://static.pepy.tech/badge/trafilatura/month)](https://pepy.tech/project/trafilatura)\n[![Reference DOI: 10.18653/v1/2021.acl-demo.15](https://img.shields.io/badge/DOI-10.18653%2Fv1%2F2021.acl--demo.15-blue)](https://aclanthology.org/2021.acl-demo.15/)\n\n\n``` python\n>>> from trafilatura import fetch_url, extract\n>>> downloaded = fetch_url(\"https://github.blog/2019-03-29-leader-spotlight-erin-spiceland/\")\n>>> extract(downloaded)\n'Erin Spiceland is a software engineer and ...'\n>>> extract(downloaded, output_format=\"json\", with_metadata=True)\n'{\"title\": \"Leader spotlight: Erin Spiceland\", \"author\": \"Jessica Rudder\", \"text\": \"Erin Spiceland is a software engineer and ...\"}'\n```\n\n\n## Introduction\n\nTrafilatura is a comprehensive **Python package and command-line tool**\ndesigned to **gather text from the Web and turn raw HTML into structured,\nmeaningful data**. It includes all necessary\ndiscovery and text processing components to perform **web crawling,\ndownloads, scraping, and extraction** of main texts, metadata and\ncomments. It aims at staying **handy and modular**: no database is\nrequired, the output can be converted to commonly used formats.\n\nGoing from raw HTML to essential parts, it **focuses on the actual\ncontent**, **avoids noise** caused by recurring elements (headers,\nfooters, boilerplate), and **makes sense of the data and metadata**.\nThe extractor strikes a balance between limiting noise (precision) and\nincluding all valid parts (recall). It is **robust and reasonably fast**.\n\nTrafilatura is [widely used](https://trafilatura.readthedocs.io/en/latest/used-by.html)\nacross [thousands of projects](https://github.com/adbar/trafilatura/network/dependents),\nincluding by HuggingFace, IBM, Microsoft Research, NVIDIA, the Allen Institute for AI, Stanford, and the Internet Archive.\n\n\n### Features\n\n- Advanced web crawling and text discovery:\n  - Support for sitemaps (TXT, XML) and feeds (ATOM, JSON, RSS)\n  - Smart crawling and URL management (filtering and deduplication)\n\n- Parallel processing of online and offline input:\n  - Live URLs, efficient and polite processing of download queues\n  - Previously downloaded HTML files and parsed HTML trees\n\n- Robust and configurable extraction of key elements:\n  - Main text (own rule-based extractor with jusText and readability-lxml as fallbacks)\n  - Metadata (title, author, date, site name, categories and tags)\n  - Formatting and structure: paragraphs, titles, lists, quotes, code, line breaks, in-line text formatting\n  - Optional elements: comments, links, images, tables\n  - Optional add-ons: language detection, speed optimizations\n\n- Multiple output formats:\n  - TXT and Markdown\n  - CSV\n  - JSON\n  - HTML, XML and [XML-TEI](https://tei-c.org/)\n\n\n### Evaluation\n\nTrafilatura consistently outperforms other open-source libraries in text\nextraction benchmarks. For more information see the\n[benchmark section](https://trafilatura.readthedocs.io/en/latest/evaluation.html)\nand the [evaluation readme](https://github.com/adbar/trafilatura/blob/master/tests/README.rst)\nto run the evaluation with the latest data and packages.\n\n\n#### Other evaluations\n\n- Most efficient open-source library in *ScrapingHub*'s [article extraction benchmark](https://github.com/scrapinghub/artic",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 1173,
+    "total_entries": 1182,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "tests",
+      "trafilatura"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/codeql.yml",
+      ".github/workflows/tests.yml"
+    ],
+    "test_files_count": 1086,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 99,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "BeautifulSoup",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://raw.githubusercontent.com/adbar/trafilatura/master/docs/trafilatura-logo.png",
+    "https://pypi.python.org/pypi/trafilatura",
+    "https://readthedocs.org/projects/trafilatura/badge/?version=latest",
+    "http://trafilatura.readthedocs.org/en/latest/?badge=latest",
+    "https://codecov.io/gh/adbar/trafilatura",
+    "https://static.pepy.tech/badge/trafilatura/month",
+    "https://pepy.tech/project/trafilatura",
+    "https://aclanthology.org/2021.acl-demo.15/",
+    "https://github.blog/2019-03-29-leader-spotlight-erin-spiceland/",
+    "https://trafilatura.readthedocs.io/en/latest/used-by.html",
+    "https://tei-c.org/",
+    "https://trafilatura.readthedocs.io/en/latest/evaluation.html",
+    "https://hal.archives-ouvertes.fr/hal-02768510v3/document",
+    "https://webis.de/downloads/publications/papers/bevendorff_2023b.pdf",
+    "https://trafilatura.readthedocs.io/en/latest/quickstart.html",
+    "https://trafilatura.readthedocs.io/",
+    "https://trafilatura.readthedocs.io/en/latest/installation.html",
+    "https://trafilatura.readthedocs.io/en/latest/usage-cli.html",
+    "https://trafilatura.readthedocs.io/en/latest/usage-python.html",
+    "https://trafilatura.readthedocs.io/en/latest/usage-r.html",
+    "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+    "https://trafilatura.readthedocs.io/en/latest/tutorials.html",
+    "https://www.youtube.com/watch?v=8GkiOM17t0Q&list=PL-pKWbySIRGMgxXQOtGIz1-nbfYLvqrci",
+    "https://www.apache.org/licenses/LICENSE-2.0.html",
+    "https://ko-fi.com/adbarbaresi",
+    "https://en.wikipedia.org/wiki/Wire_drawing",
+    "https://adrien.barbaresi.eu/",
+    "https://hal.archives-ouvertes.fr/hal-02447264/document",
+    "https://hal.archives-ouvertes.fr/hal-01371704v2/document",
+    "https://www.sigwac.org.uk/wiki/WAC-X"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:15+00:00",
+  "detail_source": "api"
+}

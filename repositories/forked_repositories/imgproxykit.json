@@ -1,0 +1,115 @@
+{
+  "id": "R_kgDOVbzSeA",
+  "name": "imgproxykit",
+  "full_name": "hamids-ai-automations/imgproxykit",
+  "url": "https://github.com/hamids-ai-automations/imgproxykit",
+  "description": "A type-safe Python toolkit for imgproxy with signed URLs, image transformations, and seamless Django & FastAPI integration",
+  "homepage": "https://imgproxykit.rtfd.io",
+  "created_at": "2026-10-29T13:10:34Z",
+  "updated_at": "2026-11-09T14:23:44Z",
+  "pushed_at": "2026-10-30T13:41:12Z",
+  "default_branch": "master",
+  "last_commit_at": "2026-10-29T13:08:30Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 157442,
+    "Makefile": 2280,
+    "HTML": 1142
+  },
+  "language_total_size": 160864,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 4,
+  "branches_count": 2,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 450,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/imgproxykit/blob/master/README.md",
+    "has_readme": true,
+    "length": 5157,
+    "excerpt": "<h1 align=\"center\">imgproxykit</h1>\n\n<p align=\"center\">\n  <em>A typed Python toolkit for building imgproxy URLs.</em>\n</p>\n\n<div align=\"center\">\n\n[![Tests Result](https://img.shields.io/github/actions/workflow/status/kondratevdev/imgproxykit/test.yml?branch=master&label=tests&labelColor=black&color=blue)](https://github.com/kondratevdev/imgproxykit/actions/workflows/test.yml)\n[![PyPI Version](https://img.shields.io/pypi/v/imgproxykit.svg?labelColor=black&color=blue)](https://pypi.org/project/imgproxykit/)\n[![PyPI Downloads](https://static.pepy.tech/personalized-badge/imgproxykit?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/imgproxykit)\n[![Supported Python Version](https://img.shields.io/pypi/pyversions/imgproxykit.svg?labelColor=black&color=blue)](https://pypi.org/project/imgproxykit/)\n[![License](https://img.shields.io/badge/license-MIT-blue.svg?labelColor=black)](LICENSE)\n\n</div>\n\n## Features\n\n- [x] Fully typed and checked with `mypy`, `pyright`, `ty` and `pyrefly` in strict modes\n- [x] Signed URLs using your `imgproxy` server's `key` and `salt`\n- [x] Immutable, reusable transforms combining typed options and scalar arguments\n- [x] Variants: generate multiple image URLs from a reusable set of transforms\n- [x] Support for named presets configured on your `imgproxy` server\n- [x] Native `Django` integration with settings, shortcuts, and template tags\n- [x] Native `Django REST Framework` integration with serializers\n- [x] Native `FastAPI` integration with dependency injection\n\n---------\n\n## Installation\n\nRequires **Python 3.12+** and a running [imgproxy](https://github.com/imgproxy/imgproxy) server.\n\n```bash\npip install imgproxykit\n```\n\nThere are several included extras:\n\n- `'imgproxykit[django]'` provides [Django integration](https://imgproxykit.readthedocs.io/en/latest/pages/integrations/django.html)\n  with settings, shortcuts, and template tags\n- `'imgproxykit[drf]'` provides [Django REST Framework integration](https://imgproxykit.readthedocs.io/en/latest/pages/integrations/drf.html)\n  with serializer fields for image URLs and named variants\n- `'imgproxykit[fastapi]'` provides [FastAPI integration](https://imgproxykit.readthedocs.io/en/latest/pages/integrations/fastapi.html)\n  with client registration and dependency injection\n\n## Examples\n\n### Single URL\n\nBuild a URL for a cropped `webp` thumbnail:\n\n```python\n>>> from imgproxykit import Client, Transform\n>>> from imgproxykit.options import Resize\n\n>>> # Public URL of your imgproxy server.\n>>> client = Client('https://imgproxy.example.com')\n\n>>> thumbnail = Transform(\n...     Resize(width=300, height=300, mode='fill'),  # Pass typed option objects.\n...     quality=80,  # Or scalar keywords, equivalent to Quality(80).\n...     format='webp',\n... )\n\n>>> source_url = 'https://originals.example.com/products/backpack.jpg'\n>>> thumbnail_url = client.url(source=source_url, transform=thumbnail)\n\n```\n\nThe generated URL has this structure, with the source URL encoded as URL-safe Base64:\n\n```text\nhttps://imgproxy.example.com/unsafe/resize:fill:300:300/quality:80/format:webp/<encoded-source>\n```\n\n`thumbnail_url` points to a 300×300 `webp` thumbnail cropped to fill the dimensions.\nImgproxy fetches and processes the original image when this URL is requested.\n\n### Variants\n\nBuild variants by combining shared transforms with different settings:\n\n```python\n>>> from imgproxykit import Client, Transform\n\n>>> client = Client('https://imgproxy.example.com')\n\n>>> # Share quality and output format across all variants.\n>>> base = Transform(quality=85, format='webp')\n>>> products = {\n...     'small': Transform(*base.options, width=320),\n...     'medium': Transform(*base.options, width=640),\n...     'large': Transform(*base.options, width=1280),\n... }\n\n>>> source_url = 'https://originals.example.com/products/backpack.jpg'\n>>> # Build one URL per variant for the same source image.\n>>> product_urls = client.variants(source=sourc",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 214,
+    "total_entries": 258,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "imgproxykit",
+      "test_apps",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml",
+      "test_apps/django/manage.py",
+      "test_apps/fastapi/app.py"
+    ],
+    "workflow_files": [
+      ".github/workflows/lychee.yml",
+      ".github/workflows/release.yml",
+      ".github/workflows/test-extras.yml",
+      ".github/workflows/test.yml"
+    ],
+    "test_files_count": 76,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 7,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Django",
+      "FastAPI",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://pypi.org/project/imgproxykit/",
+    "https://static.pepy.tech/personalized-badge/imgproxykit?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=BLUE&left_text=downloads",
+    "https://pepy.tech/projects/imgproxykit",
+    "https://imgproxykit.readthedocs.io/en/latest/pages/integrations/django.html",
+    "https://imgproxykit.readthedocs.io/en/latest/pages/integrations/drf.html",
+    "https://imgproxykit.readthedocs.io/en/latest/pages/integrations/fastapi.html",
+    "https://imgproxy.example.com",
+    "https://originals.example.com/products/backpack.jpg",
+    "https://imgproxy.example.com/unsafe/resize:fill:300:300/quality:80/format:webp/",
+    "https://imgproxykit.readthedocs.io/en/latest/",
+    "https://imgproxykit.readthedocs.io/en/latest/pages/changelog.html"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:38+00:00",
+  "detail_source": "api"
+}

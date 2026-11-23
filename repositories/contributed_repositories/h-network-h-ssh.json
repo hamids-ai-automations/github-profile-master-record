@@ -1,0 +1,14 @@
+{
+  "full_name": "h-network/h-ssh",
+  "url": "https://github.com/h-network/h-ssh",
+  "description": "Multi-vendor network automation framework with parallel execution, safety gates, and audit logging",
+  "owner": "h-network",
+  "is_fork": false,
+  "stars": null,
+  "language": null,
+  "commits": 0,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

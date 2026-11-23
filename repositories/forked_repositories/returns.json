@@ -1,0 +1,128 @@
+{
+  "id": "R_kgDOVbPBCg",
+  "name": "returns",
+  "full_name": "hamids-ai-automations/returns",
+  "url": "https://github.com/hamids-ai-automations/returns",
+  "description": "Make your functions return something meaningful, typed, and safe!",
+  "homepage": "https://returns.rtfd.io",
+  "created_at": "2026-10-29T02:08:07Z",
+  "updated_at": "2026-10-29T02:08:07Z",
+  "pushed_at": "2026-10-29T10:24:06Z",
+  "default_branch": "master",
+  "last_commit_at": "2026-10-28T15:50:36Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "BSD-2-Clause",
+  "license_name": "BSD 2-Clause \"Simplified\" License",
+  "language": "Python",
+  "languages": {
+    "Python": 689959,
+    "Makefile": 1372
+  },
+  "language_total_size": 691331,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 33,
+  "branches_count": 12,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 6953,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/returns/blob/master/README.md",
+    "has_readme": true,
+    "length": 23674,
+    "excerpt": "[![Returns logo](https://raw.githubusercontent.com/dry-python/brand/master/logo/returns_white-outline.png)](https://github.com/dry-python/returns)\n\n-----\n\n[![test](https://github.com/dry-python/returns/actions/workflows/test.yml/badge.svg?branch=master&event=push)](https://github.com/dry-python/returns/actions/workflows/test.yml)\n[![codecov](https://codecov.io/gh/dry-python/returns/branch/master/graph/badge.svg)](https://codecov.io/gh/dry-python/returns)\n[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://app.codspeed.io/dry-python/returns?utm_source=badge)\n[![Documentation Status](https://readthedocs.org/projects/returns/badge/?version=latest)](https://returns.readthedocs.io/en/latest/?badge=latest)\n[![Python Version](https://img.shields.io/pypi/pyversions/returns.svg)](https://pypi.org/project/returns/)\n[![conda](https://img.shields.io/conda/v/conda-forge/returns?label=conda)](https://anaconda.org/conda-forge/returns)\n[![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)\n[![Telegram chat](https://img.shields.io/badge/chat-join-blue?logo=telegram)](https://t.me/drypython)\n\n-----\n\nMake your functions return something meaningful, typed, and safe!\n\n\n## Features\n\n- Brings functional programming to Python land\n- Provides a bunch of primitives to write declarative business logic\n- Enforces better architecture\n- Fully typed with annotations and checked with `mypy`, [PEP561 compatible](https://www.python.org/dev/peps/pep-0561/)\n- Adds emulated [Higher Kinded Types](https://returns.readthedocs.io/en/latest/pages/hkt.html) support\n- Provides type-safe interfaces to create your own data-types with enforced laws\n- Has a bunch of helpers for better composition\n- Pythonic and pleasant to write and to read 🐍\n- Supports functions and coroutines, framework agnostic\n- Easy to start: has lots of docs, tests, and tutorials\n\n[Quickstart](https://returns.readthedocs.io/en/latest/pages/quickstart.html) right now!\n\n\n## Installation\n\n```bash\npip install returns\n```\n\nYou can also install `returns` with the latest supported `mypy` version:\n\n```bash\npip install returns[compatible-mypy]\n```\n\nYou would also need to configure our [`mypy` plugin](https://returns.readthedocs.io/en/latest/pages/contrib/mypy_plugins.html):\n\n```ini\n# In setup.cfg or mypy.ini:\n[mypy]\nplugins =\n  returns.contrib.mypy.returns_plugin\n```\n\nor:\n\n```toml\n[tool.mypy]\nplugins = [\"returns.contrib.mypy.returns_plugin\"]\n```\n\nWe also recommend to use the same `mypy` settings we use, which you'll find in the `[tool.mypy]` sections in our [pyproject.toml](https://github.com/wemake-services/wemake-python-styleguide/blob/master/pyproject.toml) file.\n\nMake sure you know how to get started, [check out our docs](https://returns.readthedocs.io/en/latest/)!\n[Try our demo](https://repl.it/@sobolevn/returns#ex.py).\n\n\n## Contents\n\n- [Maybe container](#maybe-container) that allows you to write `None`-free code\n- [RequiresContext container](#requirescontext-container) that allows you to use typed functional dependency injection\n- [Result container](#result-container) that lets you to get rid of exceptions\n- [IO container](#io-container) and [IOResult](#troublesome-io) that marks all impure operations and structures them\n- [Future container](#future-container) and [FutureResult](#async-code-without-exceptions) to work with `async` code\n- [Write your own container!](https://returns.readthedocs.io/en/latest/pages/create-your-own-container.html) You would still have all the features for your own types (including full existing code reuse and type-safety)\n- Use [`do-notation`](https://returns.readthedocs.io/en/latest/pages/do-notation.html) to make your code easier!\n\n\n## Maybe container\n\n`None` is called the [worst mistake in the history of Computer Science](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/).\n\nSo, what can we do to check for `",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 415,
+    "total_entries": 552,
+    "top_level_directories": [
+      ".github",
+      "benchmarks",
+      "docs",
+      "returns",
+      "tests",
+      "typesafety"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/codspeed.yml",
+      ".github/workflows/test.yml"
+    ],
+    "test_files_count": 264,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 74,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://raw.githubusercontent.com/dry-python/brand/master/logo/returns_white-outline.png",
+    "https://codecov.io/gh/dry-python/returns/branch/master/graph/badge.svg",
+    "https://codecov.io/gh/dry-python/returns",
+    "https://app.codspeed.io/dry-python/returns?utm_source=badge",
+    "https://readthedocs.org/projects/returns/badge/?version=latest",
+    "https://returns.readthedocs.io/en/latest/?badge=latest",
+    "https://pypi.org/project/returns/",
+    "https://anaconda.org/conda-forge/returns",
+    "https://t.me/drypython",
+    "https://www.python.org/dev/peps/pep-0561/",
+    "https://returns.readthedocs.io/en/latest/pages/hkt.html",
+    "https://returns.readthedocs.io/en/latest/pages/quickstart.html",
+    "https://returns.readthedocs.io/en/latest/pages/contrib/mypy_plugins.html",
+    "https://returns.readthedocs.io/en/latest/",
+    "https://repl.it/@sobolevn/returns#ex.py",
+    "https://returns.readthedocs.io/en/latest/pages/create-your-own-container.html",
+    "https://returns.readthedocs.io/en/latest/pages/do-notation.html",
+    "https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/",
+    "https://mypy.readthedocs.io/en/stable/kinds_of_types.html#optional-types-and-the-none-type",
+    "https://returns.readthedocs.io/en/latest/pages/maybe.html",
+    "https://returns.readthedocs.io/en/latest/pages/context.html",
+    "https://returns.readthedocs.io/en/latest/pages/context.html#requirescontextresult-container",
+    "https://returns.readthedocs.io/en/latest/pages/context.html#requirescontextioresult-container",
+    "https://returns.readthedocs.io/en/latest/pages/context.html#requirescontextfutureresult-container",
+    "https://fsharpforfunandprofit.com/rop/",
+    "https://returns.readthedocs.io/en/latest/pages/result.html#safe",
+    "https://returns.readthedocs.io/en/latest/pages/result.html",
+    "https://returns.readthedocs.io/en/latest/pages/pipeline.html#flow",
+    "https://returns.readthedocs.io/en/latest/pages/pointfree.html#bind",
+    "https://en.wikipedia.org/wiki/Pure_function"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:42+00:00",
+  "detail_source": "api"
+}

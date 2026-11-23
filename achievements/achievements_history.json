@@ -1,0 +1,26 @@
+{
+  "note": "Achievement badges are web-UI only; this history records observed states per sync.",
+  "observations": [
+    {
+      "timestamp": "2026-11-23T05:10:30+00:00",
+      "badges": [
+        {
+          "name": "Pull Shark",
+          "status": "unverified"
+        },
+        {
+          "name": "Quickdraw",
+          "status": "unverified"
+        },
+        {
+          "name": "Pair Extraordinaire",
+          "status": "unverified"
+        },
+        {
+          "name": "Achievements API availability",
+          "status": "unavailable"
+        }
+      ]
+    }
+  ]
+}

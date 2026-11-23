@@ -1,0 +1,14 @@
+{
+  "full_name": "finos/open-resource-broker",
+  "url": "https://github.com/finos/open-resource-broker",
+  "description": "A unified API for orchestrating and provisioning compute capacity. Define what you need in a template, request it, track it and return it through a CLI, REST API, MCP server or native SDKs.",
+  "owner": "finos",
+  "is_fork": false,
+  "stars": 21,
+  "language": "Python",
+  "commits": 2,
+  "pull_requests": 4,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

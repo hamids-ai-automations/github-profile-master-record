@@ -1,0 +1,100 @@
+{
+  "id": "R_kgDOVdUKGQ",
+  "name": "envscope",
+  "full_name": "hamids-ai-automations/envscope",
+  "url": "https://github.com/hamids-ai-automations/envscope",
+  "description": "CLI that audits .env files against .env.example and a JSON schema without ever printing secrets. DevSecOps, Python.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-30T17:18:32Z",
+  "updated_at": "2026-11-20T15:07:13Z",
+  "pushed_at": "2026-11-21T20:28:26Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-21T20:28:26Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 48113,
+    "Makefile": 359
+  },
+  "language_total_size": 48472,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 1,
+  "branches_count": 2,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "cli",
+    "devsecops",
+    "dotenv",
+    "python",
+    "secrets-scanning",
+    "security"
+  ],
+  "size_kb": 53,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/envscope/blob/main/README.md",
+    "has_readme": true,
+    "length": 2306,
+    "excerpt": "envscope: zero-dependency CLI that audits .env files against .env.example and a JSON schema, never printing secret values.\r\n\r\n## Features\r\n- Drift detection (missing, extra, empty, duplicate keys)\r\n- Type validation: string, int, float, bool, port, url, email, pattern, choices\r\n- Duplicate detection\r\n- Secret-aware (values flagged secret are never printed)\r\n- CI-friendly (--json, --sarif, stable exit codes)\r\n- SARIF 2.1.0 export for GitHub code scanning\r\n- Zero dependencies (Python 3.9+)\r\n- Fast (parses thousands of keys in milliseconds)\r\n\r\n## Requirements\r\n- Python 3.11 or newer\r\n- macOS, Linux, or Windows\r\n\r\n## Install\r\n```bash\r\ngit clone https://github.com/hamids-ai-automations/envscope.git\r\ncd envscope\r\npython -m pip install -e .\r\n```\r\n\r\n## Usage\r\n```bash\r\nenvscope check [--env .env --example .env.example --schema envscope.json --strict --json --sarif PATH --quiet --no-color]\r\nenvscope init --example .env.example --out envscope.json\r\nenvscope version\r\n```\r\n\r\n## Schema format\r\nenvscope.json: `{\"variables\": {\"APP_ENV\":{\"type\":\"string\",\"choices\":[\"development\",\"staging\",\"production\"]},...}}`\r\nFlat `{\"PORT\":\"port\"}` also accepted.\r\n\r\n## CI example\r\n```yaml\r\n- name: Validate environment contract\r\n  run: |\r\n    python -m pip install -e .\r\n    envscope check --strict --json > envscope-report.json\r\n  env:\r\n    PYTHONPATH: src\r\n```\r\n\r\n## SARIF / code scanning\r\n`envscope check --sarif envscope.sarif` writes a SARIF 2.1.0 log next to the normal\r\noutput. Findings map to one rule per issue code (`parse`, `duplicate`, `missing`,\r\n`empty`, `invalid`, `extra`) with error/warning levels, so GitHub code scanning can\r\ngroup and annotate them inline on the offending dotenv line.\r\n\r\nThe log only contains key names, line numbers and envscope's own messages. Secret\r\nvalues are never written to it, which is what makes it safe to upload as a build\r\nartifact.\r\n\r\n```yaml\r\n- name: Validate environment contract\r\n  run: |\r\n    python -m pip install -e .\r\n    envscope check --strict --sarif envscope.sarif\r\n  env:\r\n    PYTHONPATH: src\r\n  continue-on-error: true\r\n\r\n- name: Upload SARIF\r\n  uses: github/codeql-action/upload-sarif@v3\r\n  with:\r\n    sarif_file: envscope.sarif\r\n    category: envscope\r\n```\r\n\r\n## Tests\r\n42 tests, no dependencies. CI runs on Python 3.11, 3.12, 3.13.\r\n\r\n## License\r\nMIT\r\n",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 30,
+    "total_entries": 38,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "examples",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 5,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 2,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:56+00:00",
+  "detail_source": "api"
+}

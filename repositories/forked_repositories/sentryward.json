@@ -1,0 +1,120 @@
+{
+  "id": "R_kgDOVfBCbw",
+  "name": "sentryward",
+  "full_name": "hamids-ai-automations/sentryward",
+  "url": "https://github.com/hamids-ai-automations/sentryward",
+  "description": "Self-hosted AI code reviewer with automated reviews, inline suggestions, and flexible support for cloud and local models.",
+  "homepage": "",
+  "created_at": "2026-11-01T12:44:22Z",
+  "updated_at": "2026-11-01T12:44:22Z",
+  "pushed_at": "2026-11-06T03:06:32Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-01T12:17:25Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "TypeScript",
+  "languages": {
+    "TypeScript": 3360367,
+    "Python": 6683,
+    "CSS": 5853,
+    "Go": 3709,
+    "Dockerfile": 2267,
+    "Shell": 961,
+    "HTML": 661
+  },
+  "language_total_size": 3380501,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 5,
+  "branches_count": 6,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 3403,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/sentryward/blob/main/README.md",
+    "has_readme": true,
+    "length": 85999,
+    "excerpt": "<h1 align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"client/public/sentryward-logo-dark.png\">\n    <img src=\"client/public/sentryward-logo-light.png\" alt=\"Sentryward\" width=\"360\">\n  </picture>\n</h1>\n\n<p align=\"center\">\n  <b>Self-hosted AI code review for GitHub pull requests and GitLab merge requests.</b>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/rdlugs/sentryward/actions/workflows/ci.yml\"><img src=\"https://github.com/rdlugs/sentryward/actions/workflows/ci.yml/badge.svg\" alt=\"CI\"></a>\n  <a href=\"https://github.com/rdlugs/sentryward/releases\"><img src=\"https://img.shields.io/github/v/release/rdlugs/sentryward?label=release\" alt=\"Latest release\"></a>\n  <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/license-MIT-blue.svg\" alt=\"License: MIT\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"#quick-start\">Quick start</a> ·\n  <a href=\"#how-it-works\">How it works</a> ·\n  <a href=\"#review-configuration\">Configuration</a> ·\n  <a href=\"CHANGELOG.md\">Changelog</a> ·\n  <a href=\"https://github.com/rdlugs/sentryward/discussions\">Discussions</a>\n</p>\n\nSentryward is an AI code reviewer for GitHub pull requests and GitLab merge requests.\nConnect repositories, choose a model provider or Ollama, and run manual or\nautomatic reviews with inline findings, walkthroughs, and commit statuses. The\ndashboard tracks reviews and findings across runs.\n\n> [!WARNING]\n> Sentryward is pre-1.0: minor releases may include breaking changes. AI findings\n> need human verification and can miss problems or report false positives.\n> `docker-compose.yml` is for development; to host an instance, see [Deploying](#deploying).\n\n## Contents\n\n- [Highlights](#highlights)\n- [Quick start](#quick-start)\n- [How it works](#how-it-works)\n- [Getting started](#getting-started): [runtime environment](#docker-runtime-environment), [users and invites](#users-and-invites), [workspaces and teams](#workspaces-and-teams), [first review](#run-your-first-review), [troubleshooting](#troubleshooting)\n- [Deploying](#deploying)\n- [Forge connections](#forge-connections), [publishing](#publishing-to-the-forge), [automatic reviews](#automatic-reviews), [notifications](#notifications)\n- [Review configuration](#review-configuration): [LLM connections](#llm-connections-and-custom-endpoints), [Ollama](#ollama), [`.sentryward.yaml`](#sentrywardyaml-reference), [review rules](#review-rules)\n- [Privacy and data](#privacy-and-data): [what is stored](#what-is-stored), [what leaves the server](#what-leaves-the-server), [retention](#retention), [provider restrictions](#provider-and-host-restrictions), [audit log](#audit-log)\n- [API](#api)\n- [Development](#development)\n- [Contributing and license](#contributing-and-license)\n\n## Highlights\n\n- **Self-hosted, bring your own model:** Anthropic, OpenAI, Google, a compatible\n  proxy on a [custom host](#llm-connections-and-custom-endpoints), or a local\n  [Ollama](#ollama) model.\n- **GitHub and GitLab:** a GitHub App, plus GitLab.com or self-hosted GitLab.\n- **Reviews where you work:** inline findings with suggestions, one summary\n  comment, and a `sentryward/review` commit status.\n- **Manual or automatic:** submit a PR/MR URL, review on webhooks, or comment\n  `/sentryward review`.\n- **Per-repository config:** dashboard settings, overridable by a\n  [`.sentryward.yaml`](#review-configuration) in the repository.\n- **Findings across runs:** a later run never posts the same finding twice.\n  Ignore findings as false positives, intentional, or fix later, and track the\n  false-positive rate on the dashboard, broken down by category, severity and\n  model with a pointer to the setting that would quiet the noisiest ones.\n- **Teams:** share connections, repositories, reviews and model keys in team\n  workspaces, with owner, admin and member roles and one-time invite links,\n  managed from **Team settings** in the workspace switcher.\n\n## Quick start\n\n```sh\ngit clone https://github.com/rdlugs/sentryward.git && cd sentryward\ncp .env.exam",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 746,
+    "total_entries": 1021,
+    "top_level_directories": [
+      ".github",
+      "client",
+      "docker",
+      "docs",
+      "server"
+    ],
+    "important_files": [
+      "client/package.json",
+      "client/tsconfig.json",
+      "docker-compose.yml",
+      "server/evals/cases/go-clean-loopvar/after/go.mod",
+      "server/evals/cases/go-clean-loopvar/before/go.mod",
+      "server/package.json",
+      "server/tsconfig.json"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/codeql.yml",
+      ".github/workflows/release-image.yml"
+    ],
+    "test_files_count": 119,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 6,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Anthropic API",
+      "OpenAI API"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "docker-compose.yml"
+    ]
+  },
+  "external_links": [
+    "http://localhost:5173",
+    "http://localhost:4000/api",
+    "http://localhost:4000/api/health",
+    "https://`",
+    "http://localhost:5173/api/connections/gitlab/oauth/callback`",
+    "http://localhost:5173/api/connections/github/callback`",
+    "https://sentryward.example.com/reviews/",
+    "http://host.docker.internal:11434/v1`",
+    "https://sentryward.example.com/api/reviews",
+    "https://sentryward.example.com/api/reviews/"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:17+00:00",
+  "detail_source": "api"
+}

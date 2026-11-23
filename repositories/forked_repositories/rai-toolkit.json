@@ -1,0 +1,115 @@
+{
+  "id": "R_kgDOVfSanA",
+  "name": "rai-toolkit",
+  "full_name": "hamids-ai-automations/rai-toolkit",
+  "url": "https://github.com/hamids-ai-automations/rai-toolkit",
+  "description": null,
+  "homepage": null,
+  "created_at": "2026-11-01T18:02:46Z",
+  "updated_at": "2026-11-01T18:02:46Z",
+  "pushed_at": "2026-11-10T11:48:09Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-30T01:26:39Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "language": "Python",
+  "languages": {
+    "Python": 1143048,
+    "Jinja": 310
+  },
+  "language_total_size": 1143358,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 2,
+  "branches_count": 7,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 633,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/rai-toolkit/blob/main/README.md",
+    "has_readme": true,
+    "length": 38928,
+    "excerpt": "# Responsible AI Toolkit\n\n> **Evidence-backed AI review gates for LLM apps.**\n>\n> Run compliance-aware evals, adversarial probes, policy checks, and\n> reviewer-led probing. Produce a repeatable approval record that links\n> findings back to the evidence that produced them.\n\nPrefer to watch first? See the full review gate in a short walkthrough video: https://www.youtube.com/watch?v=-dGIUA_LLik\n\nCompanion resources: the ebook [Governance Workflows for AI Agents](https://wandb.ai/site/resources/whitepapers/operationalizing-ai-governance/) and the webinar [How to Operationalize AI Governance for Production Agents](https://wandb.ai/site/resources/events/how-to-operationalize-ai-governance-for-production-agents/).\n\nRequires **Python 3.11 or newer**. Create a fresh virtual environment when\nupgrading from Python 3.10; existing environments keep their original interpreter.\n\n```bash\ngit clone https://github.com/wandb/rai-toolkit.git\ncd rai-toolkit\npython3.11 -m venv .venv\nsource .venv/bin/activate\npython -m pip install -e \".[all]\"\n```\n\n```bash\nrai assess my_pkg.MyModel --preset healthcare --dataset my-healthcare-eval --output report.json\n```\n\nOutput:\n\n```\n==================================================================\n  Responsible AI Review Report\n==================================================================\n  Model:        gpt-4o-healthcare-bot\n  Preset:       healthcare\n  Run ID:       asmt-a74f2e9bd1\n  Overall:      83.2%  [PASS]\n\n  Framework Coverage\n  ------------------------------------------------\n  NIST AI RMF: MEASURE           78.0%  PASS\n  NIST AI RMF: MANAGE            75.0%  PASS\n  EU AI Act: Article 15          87.0%  PASS\n  EU AI Act: Article 10          92.0%  PASS\n\n  Red-Team Assessment\n  ------------------------------------------------\n  Attacks run:          15\n  Attack success rate:  6.7%\n  Resistance rate:      93.3%\n\n  Policy Violations\n  ------------------------------------------------\n  medium  2\n  - [MEDIUM] explainability-threshold (EU-AI-Act-Art-13): ...\n==================================================================\n```\n\n---\n\n## Why this exists\n\nAI teams are increasingly asked to prove more than \"the model scored well.\"\nThey need to show that the right risks were scoped, the right tests were run,\nfailures were reviewed, and a named person made a documented ship / fix /\nreject decision.\n\nEvaluation platforms often stop at scores. Governance tools often stop at\nquestionnaires and policy documents. Real RAI review needs both: technical\nevidence and a decision record.\n\nThis toolkit closes that gap. Pick an industry preset, point it at a model,\nrun the assessment, let a reviewer probe the same system, and produce a\nJSON / HTML record that ties findings back to datasets, policies, attacks,\nand traces.\n\n## What this does and does not do\n\n**This project helps you:**\n- Run repeatable RAI assessments for LLM apps.\n- Map evaluation coverage to frameworks such as MIT AI Risk Repository,\n  NIST AI RMF, and EU AI Act-style controls.\n- Encode organization-specific checks as YAML policies.\n- Run a curated adversarial probe suite.\n- Capture reviewer-pinned findings from manual chat probes.\n- Export evidence-backed JSON / HTML reports for internal review.\n\n**This project does not:**\n- Provide legal advice or guarantee regulatory compliance.\n- Replace a formal audit, risk-management process, or qualified legal review.\n- Prove that an AI system is safe in all deployment contexts.\n- Make LLM-as-judge scores authoritative without calibration and human review.\n- Cover every requirement in every regulation out of the box.\n\n## Who this is for\n\n- **Responsible AI teams** that need a repeatable review gate before an LLM\n  app ships to production.\n- **ML platform teams** that want evaluation, red-team, tracing, policy checks,\n  and reporting behind one internal workflow.\n- **Compliance and model-risk reviewers** who need evidence they can inspect,\n  not just a dashboard screenshot or a self-attestation form.\n- **App teams bu",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 163,
+    "total_entries": 200,
+    "top_level_directories": [
+      ".github",
+      ".reuse",
+      "LICENSES",
+      "demo",
+      "demo_app",
+      "docs",
+      "integrations",
+      "rai_toolkit",
+      "tests"
+    ],
+    "important_files": [
+      "demo/rai_review/app.py",
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 40,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 26,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Anthropic API",
+      "OpenAI API",
+      "Streamlit",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://www.youtube.com/watch?v=-dGIUA_LLik",
+    "https://wandb.ai/site/resources/whitepapers/operationalizing-ai-governance/",
+    "https://wandb.ai/site/resources/events/how-to-operationalize-ai-governance-for-production-agents/",
+    "https://arxiv.org/abs/2410.02828",
+    "https://huggingface.co/datasets/openai/healthbench",
+    "https://arxiv.org/abs/2505.08775",
+    "https://airisk.mit.edu/",
+    "https://www.nist.gov/itl/ai-risk-management-framework",
+    "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-15"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:15+00:00",
+  "detail_source": "api"
+}

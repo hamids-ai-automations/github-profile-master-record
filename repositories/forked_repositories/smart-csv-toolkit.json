@@ -1,0 +1,140 @@
+{
+  "id": "R_kgDOVbVT7g",
+  "name": "Smart_CSV_Toolkit",
+  "full_name": "hamids-ai-automations/Smart_CSV_Toolkit",
+  "url": "https://github.com/hamids-ai-automations/Smart_CSV_Toolkit",
+  "description": "Streamlit app for LLM-assisted CSV cleaning, metadata inference, and multi-file merging, with guided decision-tree workflows.",
+  "homepage": "https://smart-csv-toolkit.onrender.com",
+  "created_at": "2026-10-29T04:31:49Z",
+  "updated_at": "2026-10-29T04:31:49Z",
+  "pushed_at": "2026-10-30T11:59:41Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-28T19:33:55Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": null,
+  "license_name": null,
+  "language": "Python",
+  "languages": {
+    "Python": 175840,
+    "Dockerfile": 1460
+  },
+  "language_total_size": 177300,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 1,
+  "branches_count": 5,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 607,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/Smart_CSV_Toolkit/blob/main/README.md",
+    "has_readme": true,
+    "length": 16899,
+    "excerpt": "# Smart CSV Toolkit — LLM‑Assisted CSV Cleaning & Metadata Inference\n\n**Live demo → https://smart-csv-toolkit.onrender.com/** (free-tier Render instance, so the first load after idle can take 30-60s to spin up)\n\nA Streamlit app for cleaning messy CSVs, figuring out what's actually in each column, merging multiple files, and generating plots without writing pandas by hand every time. I built this mostly to stop rewriting the same `df.dropna()` / dtype-coercion boilerplate for every one-off dataset — an LLM proposes the cleaning code, you read it before it runs, and every action gets logged to SQLite so you can see what happened after the fact.\n\n> **TL;DR**\n> • **Tab 1 – CSV Cleaner:** choose built‑in steps from `table_steps.json`, get **LLM suggestions**, optionally apply **LLM‑generated Python code** (shown before execution), and download the cleaned CSV.\n> • **Tab 2 – Metadata Inspector:** upload/merge up to 5 CSVs, **infer column types**, preview media/links, and **auto‑generate plots** (with or without LLM help).\n> • **Advanced:** interactive **decision‑tree UI** for guided cleaning; optional **custom LLM API**; session/file/event **audit logging** with timestamped CSVs.\n\n---\n\n## Screenshots\n\nA quick walkthrough of the CSV Cleaner tab (Tab 1), using a small sample CSV with a missing `age` value, a missing `city`, a missing `signup_date`, and a duplicated row:\n\n**1. Upload a CSV** — drag-and-drop or browse, 25MB limit enforced client-side and server-side.\n\n![Upload CSV](docs/screenshots/01_upload.png)\n\n**2. Preview the raw data** — the app renders the first N rows immediately so you can sanity-check what was uploaded before picking any cleaning steps. Note the missing `age`, `city`, and `signup_date` cells.\n\n![Preview of uploaded data](docs/screenshots/02_preview.png)\n\n**3. Pick a cleaning step** — here, `Impute Missing Values` (strategy: mean) is checked from the config-driven step list defined in `table_steps.json`.\n\n![Selecting the Impute Missing Values step](docs/screenshots/03_steps_selected.png)\n\n**4. Run the pipeline and preview the cleaned result** — the missing `age` values (`None`) have been imputed to the column mean (`226.4`, pulled up by the `999` outlier in the sample — a good illustration of why `Remove Outliers` is a separate, composable step).\n\n![Cleaned data preview after running the pipeline](docs/screenshots/04_cleaned_result.png)\n\n---\n\n## Features\n\n* **Guided CSV Cleaning**\n\n  * Configurable steps defined in `table_steps.json` (sliders, selects, text inputs rendered dynamically)\n  * LLM proposes **5 non‑redundant** cleaning suggestions (excludes already‑selected steps)\n  * Any natural‑language instruction → **executable Python code** that mutates `df` in place\n    *(code is displayed before execution for review)*\n\n* **Metadata Inference & Usability**\n\n  * Infers semantic types like: *Categorical, Text, Numerical, Datetime, GPS Coordinates, Email, Phone, Currency, Percentage, Color Code, Image/Video/Document/General URL, Identifier/ID, Null‑heavy, Constant/Low Variance*, etc.\n  * Context‑aware visualizations:\n\n    * Categorical → top‑k bar chart\n    * Text → word cloud\n    * Numerical → box plot + correlation heatmap\n    * Datetime → time‑series line plot\n    * GPS → map from `lat,lon`\n    * Color codes → swatches\n    * Email/Phone → frequency bars\n    * URLs → previews (images, videos) + **webpage summarization** via LLM for general links\n\n* **Multi‑CSV Merge UI**\n\n  * Upload up to **5** CSVs, configure pairwise joins (keys + type), then merge CSVs with one click\n\n* **Interactive Cleaning Graph**\n\n  * AGraph‑based decision tree per column; **click leaf nodes** to apply LLM‑generated cleaning for the chosen path; executed code is surfaced and actions are tracked\n\n* **Exploration via D‑Tale**\n\n  * One‑click link to open D‑Tale and explore the current DataFrame\n\n* **Audit Logging**\n\n  * Sessions, files, and events logged to SQLite via `DB/log_to_db.py`\n  * Uploaded/merged CSVs saved into an **audit folder**",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 35,
+    "total_entries": 45,
+    "top_level_directories": [
+      ".devcontainer",
+      ".github",
+      ".streamlit",
+      "DB",
+      "LLM",
+      "docs",
+      "tests",
+      "vector_store"
+    ],
+    "important_files": [
+      "app.py",
+      "docker-compose.yml",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci-cd.yml"
+    ],
+    "test_files_count": 5,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "BeautifulSoup",
+      "LangChain",
+      "NumPy",
+      "OpenAI API",
+      "Streamlit",
+      "pandas",
+      "requests"
+    ],
+    "dependencies": [
+      "Pillow",
+      "beautifulsoup4",
+      "chromadb",
+      "dateparser",
+      "dtale",
+      "geopy",
+      "imbalanced-learn",
+      "joblib",
+      "langchain",
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "openai",
+      "pandas",
+      "plotly",
+      "python-dotenv",
+      "pyvis",
+      "requests",
+      "scikit-learn",
+      "seaborn",
+      "streamlit",
+      "streamlit-agraph",
+      "tldextract",
+      "torch",
+      "transformers",
+      "wordcloud"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "docker-compose.yml",
+      "Dockerfile"
+    ]
+  },
+  "external_links": [
+    "https://smart-csv-toolkit.onrender.com/**",
+    "https://openrouter.ai/keys",
+    "http://localhost:9000/generate",
+    "https://render.com"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:39+00:00",
+  "detail_source": "api"
+}

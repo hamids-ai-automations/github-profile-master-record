@@ -1,0 +1,121 @@
+{
+  "id": "R_kgDOVFr4KQ",
+  "name": "geo-visibility-lab",
+  "full_name": "hamids-ai-automations/geo-visibility-lab",
+  "url": "https://github.com/hamids-ai-automations/geo-visibility-lab",
+  "description": "Open-source Local SEO & Google Business Profile (GBP) proximity rank tracker. Audits 5x5 geo-grids, aggregator NAP citation drift, review velocity decay, and exports Schema.org JSON-LD.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-12T07:38:22Z",
+  "updated_at": "2026-11-20T10:13:14Z",
+  "pushed_at": "2026-10-12T12:43:33Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-12T12:43:31Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 58453,
+    "HTML": 10736
+  },
+  "language_total_size": 69189,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "citation-audit",
+    "geo-grid",
+    "geojson",
+    "google-business-profile",
+    "json-ld",
+    "local-pack",
+    "local-search",
+    "local-seo",
+    "maps-seo",
+    "martech",
+    "nap-consistency",
+    "python",
+    "rank-tracker",
+    "schema-org",
+    "seo-audit",
+    "review-velocity"
+  ],
+  "size_kb": 601,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/geo-visibility-lab/blob/main/README.md",
+    "has_readme": true,
+    "length": 12849,
+    "excerpt": "# GeoVisibilityLab 🗺️\n\n[![CI](https://github.com/hamid-digitalmarketer/geo-visibility-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/hamid-digitalmarketer/geo-visibility-lab/actions/workflows/ci.yml)\n[![Python 3.10 | 3.11 | 3.12](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)\n[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)\n[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)\n[![Checked with mypy](https://img.shields.io/badge/mypy-checked-blue.svg)](http://mypy-lang.org/)\n[![Hire Me: Local SEO Audits](https://img.shields.io/badge/Hire%20Me-Local%20SEO%20%26%20GBP%20Audits-2ea44f?style=flat-square&logo=googlechrome&logoColor=white)](https://abouthamid.web.app/)\n[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Hamid-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hamid-digital-marketing/)\n[![Direct Email](https://img.shields.io/badge/Email-mhamidlad%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:mhamidlad@gmail.com)\n\n> **Open-Source Local SEO Proximity Matrix, NAP Consistency & Review Velocity Engine.** Audit Google Business Profile ranking drop-offs across geographic coordinates, detect aggregator citation drift, forecast review velocity decay, and generate production-ready Schema.org JSON-LD and GeoJSON heatmaps.\n\n---\n\n## Visual Dashboard Preview\n\n![GeoVisibilityLab Dashboard Preview](docs/report_preview.png)\n\n*Interactive audit dashboard featuring a 5x5 proximity rank heatmap, citation consistency audit, review velocity trajectory, and LocalBusiness JSON-LD markup generator.*\n\n---\n\n## The Problem\n\nLocal SEO success hinges on geographical proximity, accurate citations across aggregators, and consistent review velocity. Yet marketing teams and multi-location agencies struggle with:\n\n1. **Ranking Blindspots Beyond 2 Miles**: Traditional single-location rank trackers report one rank for an entire city, missing severe ranking drops just blocks away.\n2. **Aggregator NAP Citation Drift**: Inconsistencies in Name, Address, or Phone across Yelp, Apple Maps, Bing, and Facebook quietly erode Google Local Pack trust signals.\n3. **Review Velocity Decay & Drought**: Stalled customer reviews trigger algorithmic demotion in local search packs before business owners notice.\n4. **Manual Schema & GIS Workflows**: Converting local performance into actionable Schema.org structured data or GIS heatmaps requires fragmented tools.\n\n**GeoVisibilityLab** provides an automated, programmatic pipeline to evaluate proximity grids, audit aggregator citations, monitor review momentum, and export structured data.\n\n---\n\n## Core Capabilities\n\n- **📍 Geo-Grid Proximity Ranking Analyzer**: Evaluates coordinate grids (e.g. 5x5 or 7x7) to calculate Average Rank Position (ARP), Share of Voice in the Top 3 Map Pack (SoV%), rank volatility, and maximum drop-off radius.\n- **🏢 NAP Citation Consistency Engine**: Calculates Levenshtein string similarity against canonical business credentials across major directories (Google, Yelp, Bing, Apple Maps, YellowPages, Facebook). Flags critical mismatches that penalize local pack ranking.\n- **⭐ Review Velocity & Reputation Decay Monitor**: Computes 30-day vs historical monthly review velocity, identifies review droughts (>14 days without a customer review), evaluates recent rating trends, and surfaces customer sentiment risks.\n- **📄 LocalBusiness Schema.org JSON-LD Generator**: Instantly produces valid, search-engine-ready `DentalClinic`, `MedicalClinic`, `Restaurant`, `LegalService`, or generic `LocalBusiness` JSON-LD structured markup.\n- **🗺️ GeoJSON Proximity Heatmap Exporter**: Exports RFC 7946 compliant GeoJSON FeatureCollections colored by ranking tier (Top 3 green, 4-10 yellow, 10+ red) for direct visualization in Kepler.gl, Mapbox, or QGIS.\n- **📊 Modern Tailwind CSS Dashb",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 42,
+    "total_entries": 57,
+    "top_level_directories": [
+      ".github",
+      "data",
+      "docs",
+      "reports",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 5,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://www.python.org/",
+    "http://mypy-lang.org/",
+    "https://abouthamid.web.app/",
+    "https://www.linkedin.com/in/muhammad-hamid-digital-marketing/",
+    "https://www.apexdentalcare-example.com"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:56+00:00",
+  "detail_source": "api"
+}

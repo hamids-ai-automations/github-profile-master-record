@@ -1,0 +1,123 @@
+{
+  "id": "R_kgDOVFr3iA",
+  "name": "conversion-tracking-doctor",
+  "full_name": "hamids-ai-automations/conversion-tracking-doctor",
+  "url": "https://github.com/hamids-ai-automations/conversion-tracking-doctor",
+  "description": "Open-source conversion tracking diagnostic suite for GA4, Google Ads, Meta Pixel/CAPI, and GTM. Fixes duplicate events, PII leaks, broken Enhanced Conversions, and CAPI drops.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-12T07:38:14Z",
+  "updated_at": "2026-11-20T10:13:22Z",
+  "pushed_at": "2026-10-12T12:42:20Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-12T12:42:18Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 74548,
+    "HTML": 8654
+  },
+  "language_total_size": 83202,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "adtech",
+    "conversion-tracking",
+    "conversions-api",
+    "cro",
+    "enhanced-conversions",
+    "facebook-capi",
+    "ga4",
+    "google-ads",
+    "google-analytics-4",
+    "google-tag-manager",
+    "gtm",
+    "martech",
+    "meta-pixel",
+    "pii-detection",
+    "python",
+    "server-side-tagging"
+  ],
+  "size_kb": 610,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/conversion-tracking-doctor/blob/main/README.md",
+    "has_readme": true,
+    "length": 12689,
+    "excerpt": "# Conversion Tracking Doctor 🩺📊\n\n[![CI](https://github.com/hamid-digitalmarketer/conversion-tracking-doctor/actions/workflows/ci.yml/badge.svg)](https://github.com/hamid-digitalmarketer/conversion-tracking-doctor/actions/workflows/ci.yml)\n[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)\n[![Type checked: mypy](https://img.shields.io/badge/type%20checked-mypy-blue.svg)](http://mypy-lang.org/)\n[![Hire Me: Tracking Audits](https://img.shields.io/badge/Hire%20Me-Tracking%20%26%20CAPI%20Audits-2ea44f?style=flat-square&logo=googlechrome&logoColor=white)](https://abouthamid.web.app/)\n[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Hamid-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hamid-digital-marketing/)\n[![Direct Email](https://img.shields.io/badge/Email-mhamidlad%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:mhamidlad@gmail.com)\n\n> **Diagnostic and audit engine for web conversion tracking (Google Analytics 4, Meta Conversions API, Google Ads Enhanced Conversions).**  \n> Detects event duplicate firing, unhashed PII privacy leaks in URL query strings, broken Enhanced Conversions hashing, currency/value anomalies, and iOS/ad-blocker signal loss. Automatically exports ready-to-deploy **Google Tag Manager** custom JavaScript deduplication variables and **Meta CAPI** server remediation payloads.\n\n---\n\n![Conversion Tracking Doctor Audit Preview](docs/report_preview.png)\n\n---\n\n## ⚡ The Problem: Silent Conversion Tracking Breakdowns\n\nModern digital marketing relies entirely on conversion data feeding automated smart bidding algorithms (Target CPA, Target ROAS, Advantage+). Yet conversion pipelines frequently fail silently:\n\n1. **Phantom Revenue Duplication**: Users reloading thank-you pages re-fire purchase events, inflating reported ROAS by 20% to 50% and triggering aggressive, overpriced bidding.\n2. **Unhashed PII Privacy Leaks**: Form builders and campaign redirects leak raw customer emails (`?email=`) and phone numbers into GA4 and Meta Pixel URLs, risking immediate ad account suspension and GDPR violations.\n3. **Broken Enhanced Conversions**: Uppercase SHA-256 hashes, un-normalized whitespace, or plaintext strings cause ad platforms to reject customer match keys, wasting attribution recovery.\n4. **100x Value Scale Errors**: Passing raw Stripe or Shopify integer cents as whole dollars ($299.90 passed as $29,990.00) completely corrupts automated bidding value models.\n5. **Missing Deduplication Keys**: Browser pixel tags firing without matching `event_id` parameters to server CAPI webhooks cause platforms to double-count every single conversion.\n6. **Severe iOS / Safari Signal Loss**: Third-party cookie blocking and ad-blockers drop 20%+ of browser conversion hits without server-side CAPI coverage.\n\n**Conversion Tracking Doctor** analyzes raw GA4 client exports and Meta CAPI server logs, audits health with mathematical precision, and generates instant remediation snippets.\n\n---\n\n## 🚀 Key Features\n\n- 🔍 **6 Specialized Diagnostic Engines**:\n  - `DuplicateEventsAnalyzer`: Identifies repeat purchase firings and quantifies overcounted revenue.\n  - `PIILeakAnalyzer`: Scans URLs, query parameters, and custom dimensions for unhashed email and phone numbers.\n  - `EnhancedConversionsAnalyzer`: Validates 64-character lowercase SHA-256 user data hashing.\n  - `ValueCurrencyAnalyzer`: Flags missing/invalid ISO 4217 currencies, zero values, and decimal scaling bugs.\n  - `ClientServerDiscrepancyAnalyzer`: Audits `event_id` deduplication, computes Meta EMQ scores (0-10), and measures ad-blocker drop-off rates.\n  - `EcommerceSchemaAnalyzer`: Validates GA4 recommended schemas (`items` ",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 43,
+    "total_entries": 58,
+    "top_level_directories": [
+      ".github",
+      "data",
+      "docs",
+      "reports",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 5,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://www.python.org/downloads/",
+    "https://opensource.org/licenses/MIT",
+    "http://mypy-lang.org/",
+    "https://abouthamid.web.app/",
+    "https://www.linkedin.com/in/muhammad-hamid-digital-marketing/",
+    "https://store.com/checkout/success?order=1042&email=user@test.com",
+    "http://localhost:8000`"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:58+00:00",
+  "detail_source": "api"
+}

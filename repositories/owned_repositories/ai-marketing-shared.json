@@ -1,0 +1,119 @@
+{
+  "id": "R_kgDOVK72GA",
+  "name": "ai-marketing-shared",
+  "full_name": "hamids-ai-automations/ai-marketing-shared",
+  "url": "https://github.com/hamids-ai-automations/ai-marketing-shared",
+  "description": "Shared Python foundation for AI agents: Pydantic v2 schemas, LLM provider abstraction, tracing, cost controls and an eval harness.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-15T13:13:02Z",
+  "updated_at": "2026-11-20T10:16:20Z",
+  "pushed_at": "2026-10-16T02:22:41Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-15T13:48:13Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 47842,
+    "Dockerfile": 709
+  },
+  "language_total_size": 48551,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "automation",
+    "data-schemas",
+    "digital-marketing",
+    "marketing",
+    "martech",
+    "open-source",
+    "pydantic",
+    "python",
+    "shared-library",
+    "eval-harness",
+    "llm",
+    "pydantic-v2"
+  ],
+  "size_kb": 31,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ai-marketing-shared/blob/main/README.md",
+    "has_readme": true,
+    "length": 5721,
+    "excerpt": "# AI Marketing Shared\n\n[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)](https://python.org)\n[![Pydantic v2](https://img.shields.io/badge/Pydantic-v2-92004C?style=for-the-badge&logo=pydantic)](https://docs.pydantic.dev)\n[![License: MIT](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)\n[![CI](https://img.shields.io/badge/CI-Lint%20%2F%20Type%20%2F%20Test%20%2F%20Build-emerald?style=for-the-badge&logo=githubactions)](.github/workflows/ci.yml)\n\n> **Shared foundation for the AI Marketing Engineer portfolio.** One importable Python package —\n> schemas, tooling, observability, cost controls, evaluation, and provider abstraction — reused by\n> every repository in the portfolio.\n\nBuilt by **Muhammad Hamid** to make every downstream AI marketing repo coherent: same Pydantic\nschemas, same tool permission model, same tracing, same evaluation harness, same zero-cost demo mode.\n\n---\n\n## Why This Exists\n\nEvery repo in the portfolio must produce **evidence-backed recommendations**, use **tools safely**,\nenforce **human approval**, expose **observability**, and run with **zero API keys**. Without a shared\nfoundation, 17 repos would drift into 17 incompatible conventions. `ai-marketing-shared` defines those\nconventions **once**:\n\n1. **Structured outputs** — Pydantic v2 schemas with field names matching the master prompt exactly.\n2. **Safe tools** — a `Tool` base class with explicit permission levels (`read` / `write` / `external`)\n   and a registry that rejects calls below the required permission.\n3. **Provider-agnostic** — OpenAI, Anthropic, local HTTP endpoints, and a deterministic mock provider\n   (default) so every demo runs at `$0.00`.\n4. **Observability** — every run is traced with inputs, tool calls, outputs, cost, latency.\n5. **Cost controls** — model pricing tables, ledgers, and budget caps.\n6. **Evaluation** — a harness with dataset loaders and metric reporters, wired into CI.\n\n---\n\n## Repository Layout\n\n```\nai-marketing-shared/\n├── src/ai_marketing_shared/   # The importable package\n│   ├── schemas.py             # Pydantic v2 schemas (Recommendation, Evidence, ...)\n│   ├── tools.py               # Tool base class, permissions, ToolRegistry, MCP adapter\n│   ├── tracing.py             # Tracer, spans, logging utilities\n│   ├── cost.py                # Model pricing, cost accounting, cost caps\n│   ├── fallback.py            # Rule-based fallback engine (demo mode)\n│   ├── eval.py                # Eval harness: dataset loaders + metric reporters\n│   └── providers.py           # OpenAI / Anthropic / local / mock provider abstraction\n├── agents/                    # Conventions for agents built on top of this package\n├── tools/                     # Conventions for tools built on top of this package\n├── data/sample_data/          # Sample facts + example run fixtures\n├── evaluation/                # Labeled datasets + pytest evaluation suite\n├── tests/                     # Unit tests (>90% coverage on core modules)\n├── infra/                     # Dockerfile + docker-compose\n├── docs/                      # api.md, architecture.md, evaluation.md, cost-controls.md\n└── .github/workflows/ci.yml   # lint → type-check → test → build\n```\n\n---\n\n## Quick Start (Zero API Keys)\n\n```bash\npip install -e .\npytest                       # unit + evaluation suites, coverage gate ≥ 90%\n```\n\nRun a 10-line demo that produces evidence-backed recommendations with the **mock provider**:\n\n```python\nfrom ai_marketing_shared.fallback import build_default_engine\n\nengine = build_default_engine()\nfacts = {\"campaign\": \"Summer_Sale\", \"spend\": 9000, \"cpa\": 115.0, \"target_cpa\": 50.0, \"ctr\": 0.008}\nfor rec in engine.evaluate(facts):\n    print(rec.agent, \"|\", rec.issue, \"| confidence\", rec.confidence)\n```\n\nExpected output (deterministic, zero cost):\n\n```\nspend-waste-rule | High CPA (115.0) vs target (50.0): pause or reallocate spend on Summer_Sale | confidence 0.9\nctr-rule | CTR (0.008) is well",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 37,
+    "total_entries": 50,
+    "top_level_directories": [
+      ".github",
+      "agents",
+      "data",
+      "docs",
+      "evaluation",
+      "infra",
+      "src",
+      "tests",
+      "tools"
+    ],
+    "important_files": [
+      "infra/docker-compose.yml",
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 9,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Anthropic API",
+      "MCP",
+      "OpenAI API",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://python.org",
+    "https://docs.pydantic.dev"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:55+00:00",
+  "detail_source": "api"
+}

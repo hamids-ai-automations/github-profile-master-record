@@ -1,0 +1,144 @@
+{
+  "id": "R_kgDOVOCTiA",
+  "name": "searchpulse-ai",
+  "full_name": "hamids-ai-automations/searchpulse-ai",
+  "url": "https://github.com/hamids-ai-automations/searchpulse-ai",
+  "description": "Google Search Console intelligence: traffic-drop diagnostics, content decay detection and evidence-based SEO decisions. Python, FastAPI, pytest.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-18T04:55:48Z",
+  "updated_at": "2026-11-20T10:11:27Z",
+  "pushed_at": "2026-11-21T20:28:19Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-21T20:28:19Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 90097,
+    "HTML": 30608,
+    "Dockerfile": 632
+  },
+  "language_total_size": 121337,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "ai",
+    "cro",
+    "data-analytics",
+    "digital-marketing",
+    "fastapi",
+    "google-search-console",
+    "martech",
+    "python",
+    "seo",
+    "seo-analytics",
+    "docker",
+    "pytest"
+  ],
+  "size_kb": 53,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/searchpulse-ai/blob/main/README.md",
+    "has_readme": true,
+    "length": 12274,
+    "excerpt": "<h1 align=\"center\">⚡ SearchPulse AI — Google Search Console Intelligence Platform</h1>\n<h3 align=\"center\">Evidence-Based SEO Decisioning, Traffic Drop Diagnostics, Content Decay Recovery & Revenue Optimization</h3>\n\n<p align=\"center\">\n  <a href=\"https://github.com/hamid-digitalmarketer/searchpulse-ai/actions\"><img src=\"https://github.com/hamid-digitalmarketer/searchpulse-ai/actions/workflows/ci.yml/badge.svg\" alt=\"CI Status\"></a>\n  <a href=\"https://hamid-resume.web.app/\"><img src=\"https://img.shields.io/badge/Developer%20Portfolio-Live-2ea44f?style=for-the-badge&logo=googlechrome&logoColor=white\" alt=\"Live Portfolio\"></a>\n  <a href=\"https://wa.me/923167417135?text=Hello%20Muhammad%20Hamid,%20I%20reviewed%20SearchPulse%20AI%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20our%20SEO%20and%20growth%20projects.\"><img src=\"https://img.shields.io/badge/WhatsApp-Hire%20Me%20Direct-25D366?style=for-the-badge&logo=whatsapp&logoColor=white\" alt=\"Hire on WhatsApp\"></a>\n  <a href=\"https://www.linkedin.com/in/muhammad-hamid-digital-marketing/\"><img src=\"https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin&logoColor=white\" alt=\"LinkedIn\"></a>\n  <img src=\"https://img.shields.io/badge/Python-3.11%2B-blue?style=for-the-badge&logo=python&logoColor=white\" alt=\"Python 3.11+\">\n  <img src=\"https://img.shields.io/badge/FastAPI-0.110%2B-009688?style=for-the-badge&logo=fastapi&logoColor=white\" alt=\"FastAPI\">\n  <img src=\"https://img.shields.io/badge/License-MIT-green?style=for-the-badge\" alt=\"MIT License\">\n</p>\n\n<p align=\"center\">\n  <b>Developed by Muhammad Hamid</b> — Head of Digital Marketing & MarTech Engineering Specialist with 7+ years of experience scaling search revenue, healthcare networks, BPOs, and e-commerce brands.<br>\n  <b>Direct Inquiries / Project Hiring</b>: 💬 <a href=\"https://wa.me/923167417135\"><b>+92 316 7417135 (WhatsApp Direct)</b></a>\n</p>\n\n---\n\n## 🎯 Executive Problem Statement\n\nStandard Google Search Console (GSC) is great at reporting raw search metrics, but terrible at telling marketing heads and website owners **what to do next**:\n\n1. **Deceptive Arithmetic Averages**: Averaging CTR percentages across queries produces mathematically flawed numbers that disguise revenue opportunities.\n2. **Unexplained Traffic Collapses**: When organic traffic drops 30%, GSC displays a downward graph line without diagnosing whether the drop was caused by SERP competitor displacement, AI Overview cannibalization, seasonality, or a technical 404/noindex error.\n3. **Silent Content Decay**: High-performing cornerstone articles slowly bleed rankings over 6–12 months without automated alerting.\n4. **Keyword Cannibalization Waste**: Multiple URLs split clicks and impression share for the same keyword topic, depressing both URLs from entering the top 3.\n\n**SearchPulse AI** solves this by converting raw Google Search Analytics API payloads into **prioritized, evidence-backed sprint tickets** that directly translate to organic traffic and revenue growth.\n\n---\n\n## 🚀 Core Features & Capabilities\n\n### ⚡ Feature A: High-Precision Search Performance Dashboard\n- **True Mathematical Aggregation**: Calculates aggregate CTR as $\\frac{\\sum \\text{Clicks}}{\\sum \\text{Impressions}} \\times 100$ rather than averaging percentages.\n- **Impression-Weighted Average Position**: Ranks weighted by visual SERP exposure.\n- **Period-over-Period Delta Analysis**: Real-time comparisons (Last 28 Days vs Prior 28 Days, or 90-Day windows) with absolute and percentage shifts.\n- **Daily Time-Series Trajectory**: Visual trajectory mapping clicks against impression momentum.\n\n### 🎯 Feature B: Keyword Opportunity Finder\n- Compares real-world keyword CTR against an empirical **SERP Position Expected CTR curve**.\n- Identifies striking-distance keywords (Positions 2 through 15) with high impressions (>100) and below-expected CTR.\n- Computes estimated **Potential Clicks Unlocked**.\n- Generates targeted recommendations (SERP title hook rewrites, FAQ/R",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 43,
+    "total_entries": 56,
+    "top_level_directories": [
+      ".github",
+      "backend",
+      "docs"
+    ],
+    "important_files": [
+      "backend/app/main.py",
+      "docker-compose.yml",
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 7,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "Google APIs",
+      "NumPy",
+      "pandas",
+      "pytest",
+      "requests"
+    ],
+    "dependencies": [
+      "fastapi",
+      "google-api-python-client",
+      "google-auth",
+      "google-auth-oauthlib",
+      "httpx",
+      "jinja2",
+      "numpy",
+      "pandas",
+      "pydantic",
+      "pydantic-settings",
+      "pytest",
+      "pytest-cov",
+      "python-dateutil",
+      "requests",
+      "ruff",
+      "uvicorn"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "pyproject.toml",
+      "docker-compose.yml",
+      "Dockerfile"
+    ]
+  },
+  "external_links": [
+    "https://hamid-resume.web.app/",
+    "https://wa.me/923167417135?text=Hello%20Muhammad%20Hamid,%20I%20reviewed%20SearchPulse%20AI%20and%20would%20like%20to%20discuss%20hiring%20you%20for%20our%20SEO%20and%20growth%20projects",
+    "https://www.linkedin.com/in/muhammad-hamid-digital-marketing/",
+    "https://wa.me/923167417135",
+    "http://localhost:8000",
+    "http://localhost:8000/api/docs",
+    "http://localhost:8000/api/reports/html",
+    "https://www.googleapis.com/auth/webmasters.readonly`"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:57+00:00",
+  "detail_source": "api"
+}

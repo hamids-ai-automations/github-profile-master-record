@@ -1,0 +1,122 @@
+{
+  "id": "R_kgDOVFr30w",
+  "name": "meta-lead-quality-analyzer",
+  "full_name": "hamids-ai-automations/meta-lead-quality-analyzer",
+  "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
+  "description": "Open-source lead quality scoring & CRM revenue feedback engine for Meta Ads. Detects fake leads, disposable emails, bot form fatigue, and optimizes Cost-Per-Qualified-Lead (CPQL).",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-12T07:38:19Z",
+  "updated_at": "2026-11-20T10:13:18Z",
+  "pushed_at": "2026-10-12T12:42:57Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-12T12:42:56Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 56097,
+    "HTML": 8325
+  },
+  "language_total_size": 64422,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "adtech",
+    "b2b-marketing",
+    "bot-detection",
+    "conversions-api",
+    "crm-integration",
+    "facebook-leads",
+    "hubspot",
+    "lead-generation",
+    "lead-quality",
+    "lead-scoring",
+    "meta-ads",
+    "offline-conversions",
+    "performance-marketing",
+    "python",
+    "salesforce",
+    "fake-leads"
+  ],
+  "size_kb": 600,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer/blob/main/README.md",
+    "has_readme": true,
+    "length": 11727,
+    "excerpt": "# Meta Lead Quality Analyzer 🎯📋\n\n[![CI](https://github.com/hamid-digitalmarketer/meta-lead-quality-analyzer/actions/workflows/ci.yml/badge.svg)](https://github.com/hamid-digitalmarketer/meta-lead-quality-analyzer/actions/workflows/ci.yml)\n[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)\n[![Type checked: mypy](https://img.shields.io/badge/type%20checked-mypy-blue.svg)](http://mypy-lang.org/)\n[![Hire Me: Lead Gen Audits](https://img.shields.io/badge/Hire%20Me-Lead%20Gen%20Audits%20%26%20CAPI-2ea44f?style=flat-square&logo=googlechrome&logoColor=white)](https://abouthamid.web.app/)\n[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Hamid-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hamid-digital-marketing/)\n[![Direct Email](https://img.shields.io/badge/Email-mhamidlad%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:mhamidlad@gmail.com)\n\n> **Diagnostic and quality audit engine for Meta Lead Ads (Instant Forms) and CRM pipelines.**  \n> Detects disposable burner emails, fake telephone numbers, sub-5-second speed-clickers, and computes true **Cost-Per-Qualified-Lead (CPQL)** vs vanity front-end **Cost-Per-Lead (CPL)**. Generates automated **Meta Conversions API (CAPI) offline event payloads** for value optimization and custom audience exclusion lists.\n\n---\n\n![Meta Lead Quality Analyzer Audit Preview](docs/report_preview.png)\n\n---\n\n## ⚡ The Problem: Cheap Meta Leads That Never Close\n\nMeta Lead Ads (Instant Forms) deliver extraordinary lead volume at low apparent front-end Cost-Per-Lead ($15–$30 CPL). However, sales and revenue teams frequently encounter severe drop-off:\n\n1. **Auto-Fill Mis-clicks & Speed Bots**: Meta pre-populates lead forms with user profile data. Users scrolling Instagram Reels tap the ad, accidentally confirm the pre-filled form, and submit in $<5$ seconds without reading the offer.\n2. **Burner Disposable Emails**: Users seeking downloadable PDFs or price sheets use throwaway temporary inboxes (`@mailinator.com`, `@tempmail.com`, `@guerrillamail.com`).\n3. **Fictional Phone Numbers**: Users bypass mandatory phone fields with repeated digits (`5555555555`, `1234567890`) or reserved dummy prefixes.\n4. **The CPL vs. CPQL Illusion**: While marketing celebrates a $25.00 CPL, sales only qualifies 1 in 8 leads, making the true Cost-Per-Qualified-Lead (CPQL) $200.00+. Meta's algorithm continues optimizing for cheap, low-intent volume because down-funnel sales qualification signals are never fed back.\n\n**Meta Lead Quality Analyzer** audits your lead flow, calculates real acquisition economics, and automates closed-loop feedback to train Meta's algorithms on qualified pipeline.\n\n---\n\n## 🚀 Key Features\n\n- 🔍 **5 Specialized Quality Analyzers**:\n  - `DisposableEmailAnalyzer`: Flags temporary inboxes, throwaway domain providers, and dummy addresses.\n  - `PhoneValidator`: Detects repeated digit spam, sequential keyboard inputs, and invalid formats.\n  - `CompletionSpeedAnalyzer`: Flags sub-5-second submissions indicating auto-fill mis-clicks or bot scrapers.\n  - `CustomQuestionAnalyzer`: Evaluates user answers to custom qualification questions for gibberish (`asdf`, `none`, `test`).\n  - `CRMStageMatchAnalyzer`: Cross-references leads against CRM deal stages (`Qualified`, `Disqualified_Bad_Info`, `Won`), calculating true CPQL and junk lead percentage.\n- 🔄 **Meta CAPI Offline Event Exporter**:\n  - Generates ready-to-upload JSON payloads with SHA-256 normalized user matching (`QualifiedLead`, `WonDeal`) to feed back into Meta Advantage+ value optimization.\n- 📋 **CRM Disqualification & Suppression List**:\n  - Exports flagged leads to CSV for bulk CRM cleanup and Meta Cus",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 42,
+    "total_entries": 57,
+    "top_level_directories": [
+      ".github",
+      "data",
+      "docs",
+      "reports",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 5,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://www.python.org/downloads/",
+    "https://opensource.org/licenses/MIT",
+    "http://mypy-lang.org/",
+    "https://abouthamid.web.app/",
+    "https://www.linkedin.com/in/muhammad-hamid-digital-marketing/",
+    "http://localhost:8000`"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:57+00:00",
+  "detail_source": "api"
+}

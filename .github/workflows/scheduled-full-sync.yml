@@ -1,0 +1,83 @@
+name: Scheduled Full Sync
+
+on:
+  schedule:
+    - cron: "30 2 * * *"   # daily full audit, 02:30 UTC
+    - cron: "45 3 * * 1"    # weekly deep integrity audit, Monday 03:45 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-sync-${{ github.workflow }}
+  cancel-in-progress: false
+
+env:
+  GH_PROFILE_SYNC_TOKEN: ${{ secrets.GH_PROFILE_SYNC_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r automation/requirements.txt
+
+      - name: Preflight — verify sync token
+        run: |
+          if [ -z "$GH_PROFILE_SYNC_TOKEN" ]; then
+            echo "::error::GH_PROFILE_SYNC_TOKEN secret is not configured."
+            exit 1
+          fi
+
+      - name: Run full synchronization
+        run: python automation/sync.py --mode full --trigger "scheduled full sync"
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git status --porcelain | head -50
+          fi
+
+      - name: Commit and push documentation updates
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "data: daily full profile audit"
+          git push origin HEAD:${ github.ref_name }
+
+      - name: No changes detected
+        if: steps.diff.outputs.changed == 'false'
+        run: echo "No data changes — skipping commit (idempotent sync)."
+      - name: Upload run artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sync-output-full-${{ github.run_number }}
+          path: |
+            SYNC_STATUS.md
+            history/sync_logs/*.json
+            history/daily_reports/*.md
+          retention-days: 30
+          if-no-files-found: ignore

@@ -1,0 +1,14 @@
+{
+  "full_name": "hamids-ai-automations/open-resource-broker",
+  "url": "https://github.com/hamids-ai-automations/open-resource-broker",
+  "description": "A unified API for orchestrating and provisioning compute capacity. Define what you need in a template, request it, track it and return it through a CLI, REST API, MCP server or native SDKs.",
+  "owner": "hamids-ai-automations",
+  "is_fork": true,
+  "stars": null,
+  "language": null,
+  "commits": 0,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": true
+}

@@ -1,0 +1,124 @@
+{
+  "id": "R_kgDOVXn9SQ",
+  "name": "restock-radar",
+  "full_name": "hamids-ai-automations/restock-radar",
+  "url": "https://github.com/hamids-ai-automations/restock-radar",
+  "description": "Shopify app for back-in-stock alerts and preorder recovery",
+  "homepage": null,
+  "created_at": "2026-10-26T07:42:40Z",
+  "updated_at": "2026-11-20T01:21:18Z",
+  "pushed_at": "2026-11-21T20:28:44Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-21T20:28:44Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "JavaScript",
+  "languages": {
+    "JavaScript": 36749,
+    "TypeScript": 327
+  },
+  "language_total_size": 37076,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "back-in-stock",
+    "ecommerce",
+    "nodejs",
+    "notifications",
+    "shopify",
+    "javascript"
+  ],
+  "size_kb": 42,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/restock-radar/blob/main/README.md",
+    "has_readme": true,
+    "length": 3479,
+    "excerpt": "# Restock Radar\n\nA Shopify app that helps merchants recover lost sales from stockouts via back-in-stock alerts and preorders.\n\n## Features\n\n- 🔔 **Back-in-Stock Alerts** — Notify customers when out-of-stock products return to inventory\n- 🔄 **Preorders** — Allow customers to pre-order unavailable products\n- 📊 **Analytics** — Track subscribers, notifications, click-through rates, and attributed orders\n- ✉️ **Custom Email Templates** — Brand your restock notification emails\n\n## Architecture\n\n```\nrestock-radar/\n├── app/\n│   ├── components/\n│   │   ├── NotifyButton.jsx       # Storefront notify button\n│   │   └── PolarisProvider.jsx    # Polaris theme provider\n│   ├── models/\n│   │   ├── dashboard.server.jsx   # Dashboard stats\n│   │   ├── subscriber.server.jsx  # Subscriber CRUD\n│   │   ├── shop.server.jsx        # Shop settings\n│   │   └── restock-event.server.jsx # Restock tracking\n│   ├── routes/\n│   │   ├── app._index.jsx         # Main dashboard\n│   │   ├── app.subscribers.jsx    # Subscriber list + export\n│   │   ├── app.settings.jsx       # Settings + email template\n│   │   └── api.webhooks.jsx       # Webhook handlers\n│   ├── shopify.server.jsx         # OAuth + API config\n│   └── root.jsx                    # Remix root\n├── prisma/\n│   └── schema.prisma               # Database schema\n├── extensions/\n│   └── restock-notify/            # Shopify app extension\n│       └── blocks/\n│           └── notify-button/\n├── package.json\n├── shopify.app.toml\n└── remix.config.js\n```\n\n## Quick Start\n\n### Prerequisites\n\n- Node.js 18+\n- Shopify Partner account\n- Development store\n\n### Setup\n\n```bash\n# Install dependencies\nnpm install\n\n# Set up environment variables\ncp .env.example .env\n\n# Set your Shopify credentials\nSHOPIFY_API_KEY=your_api_key\nSHOPIFY_API_SECRET=your_api_secret\nSHOPIFY_APP_URL=https://your-app-url.com\nDATABASE_URL=file:./dev.db\n\n# Start the dev server\nnpm run dev\n```\n\n### Environment Variables\n\n```env\nSHOPIFY_API_KEY=your_api_key\nSHOPIFY_API_SECRET=your_api_secret\nSHOPIFY_APP_URL=https://your-app-url.com\nSHOPIFY_APP_SHOPIFY_EMAIL=admin@example.com\nSHOPIFY_APP_BOT_USERNAME=your-bot-username\nDATABASE_URL=\"file:./dev.db\"\n\nSENDGRID_API_KEY=your_sendgrid_key\nTWILIO_API_KEY=your_twilio_key\n```\n\n## Deployment\n\n### Shopify App Deployment\n\n1. `npm run prepare:app`\n2. Deploy via Shopify CLI:\n   ```bash\n   npm run deploy\n   ```\n\n### Custom Hosting\n\nThe app can be deployed to any Node.js host that supports Remix:\n\n- [Fly.io](https://fly.io)\n- [Railway](https://railway.app)\n- [Vercel](https://vercel.com)\n\n### Environment Variables\n\n| Variable | Description |\n|----------|-------------|\n| SHOPIFY_API_KEY | Your Shopify app API key |\n| SHOPIFY_API_SECRET | Your Shopify app API secret |\n| SHOPIFY_APP_URL | Your app URL (e.g., https://restock-radar.example.com) |\n| DATABASE_URL | Database connection string |\n| SENDGRID_API_KEY | Email sending API key |\n| TWILIO_API_KEY | SMS sending API key |\n\n## Development\n\n### Running Dev Server\n\n```bash\nnpm run dev\n```\n\n### Testing\n\n```bash\nnpm run test\n```\n\n## App Store Requirements\n\n- Secure authentication and least-privilege access ✓\n- Proper tenant isolation ✓\n- Input validation and error handling ✓\n- Rate-limit handling and webhook verification ✓\n- Reliable data storage where required ✓\n- Privacy and data deletion workflows ✓\n- Automated tests and development-store testing ✓\n- Clear installation and troubleshooting documentation ✓\n- No exposed API keys or credentials ✓\n\n## License\n\nMIT",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 28,
+    "total_entries": 34,
+    "top_level_directories": [
+      "app",
+      "docs",
+      "models",
+      "prisma"
+    ],
+    "important_files": [
+      "package.json"
+    ],
+    "workflow_files": [],
+    "test_files_count": 1,
+    "ci_enabled": false
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "React"
+    ],
+    "dependencies": [
+      "@prisma/client",
+      "@remix-run/dev",
+      "@remix-run/node",
+      "@remix-run/react",
+      "@remix-run/serve",
+      "@shopify/app",
+      "@shopify/cli",
+      "@shopify/polaris",
+      "@shopify/shopify-api",
+      "@types/react",
+      "@types/react-dom",
+      "isbot",
+      "prisma",
+      "react",
+      "react-dom",
+      "typescript",
+      "vite",
+      "vitest"
+    ],
+    "config_files": [
+      "package.json"
+    ]
+  },
+  "external_links": [
+    "https://your-app-url.com",
+    "https://fly.io",
+    "https://railway.app",
+    "https://vercel.com",
+    "https://restock-radar.example.com"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:57+00:00",
+  "detail_source": "api"
+}

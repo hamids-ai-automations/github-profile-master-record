@@ -1,0 +1,14 @@
+{
+  "full_name": "hamids-ai-automations/gemini-agent-reliability-kit",
+  "url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit",
+  "description": "Offline-first reliability harness for Gemini tool-calling agents: schema, tool choice, argument contracts, retry telemetry, latency and cost report cards.",
+  "owner": "hamids-ai-automations",
+  "is_fork": false,
+  "stars": 0,
+  "language": "Python",
+  "commits": 1,
+  "pull_requests": 0,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": true
+}

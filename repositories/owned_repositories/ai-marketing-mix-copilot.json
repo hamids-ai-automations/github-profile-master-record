@@ -1,0 +1,138 @@
+{
+  "id": "R_kgDOVFlfWg",
+  "name": "ai-marketing-mix-copilot",
+  "full_name": "hamids-ai-automations/ai-marketing-mix-copilot",
+  "url": "https://github.com/hamids-ai-automations/ai-marketing-mix-copilot",
+  "description": "Production-grade Bayesian Marketing Mix Modeling (MMM) & Causal Incrementality Copilot with Multi-Agent Orchestration and Human-in-the-Loop Governance.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-12T06:02:41Z",
+  "updated_at": "2026-11-20T10:13:25Z",
+  "pushed_at": "2026-10-12T06:04:21Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-12T06:03:59Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 116685,
+    "HTML": 26665,
+    "Dockerfile": 585
+  },
+  "language_total_size": 143935,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "adtech",
+    "ai-marketing",
+    "bayesian-mmm",
+    "budget-allocation",
+    "causal-inference",
+    "incrementality",
+    "marketing-analytics",
+    "marketing-mix-modeling",
+    "martech",
+    "mmm",
+    "multi-agent",
+    "python",
+    "roi-optimization",
+    "ai-agents",
+    "llm"
+  ],
+  "size_kb": 636,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ai-marketing-mix-copilot/blob/main/README.md",
+    "has_readme": true,
+    "length": 17809,
+    "excerpt": "# AI Marketing Mix & Incrementality Copilot 📈\n\n[![CI Pipeline](https://github.com/hamid-digitalmarketer/ai-marketing-mix-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/hamid-digitalmarketer/ai-marketing-mix-copilot/actions/workflows/ci.yml)\n[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)\n[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)\n[![Tests: 19/19 Passing](https://img.shields.io/badge/tests-19%2F19%20passed-success.svg)](evaluation/tests/)\n[![Eval Benchmark: 100%](https://img.shields.io/badge/eval%20benchmark-100%25%20pass%20rate-success.svg)](evaluation/eval_runner.py)\n[![API Cost: $0.00](https://img.shields.io/badge/demo%20cost-%240.00-brightgreen.svg)](#zero-cost-local-execution)\n[![Companion: AI Growth OS](https://img.shields.io/badge/companion-AI%20Marketing%20Growth%20OS-blueviolet.svg)](https://github.com/hamid-digitalmarketer/ai-marketing-growth-os)\n\nAn enterprise-grade, open-source **Bayesian Marketing Mix Modeling (MMM)** and **Causal Incrementality Copilot**. Built with multi-agent orchestration, the platform isolates true incremental returns (iROAS), models Hill diminishing returns saturation curves, simulates counterfactual budget reallocations with 90% Bayesian credible intervals, and enforces rigorous **Human-in-the-Loop** governance before executing portfolio media changes.\n\n---\n\n## 📌 Executive Overview: The Problem with Modern Marketing Attribution\n\nModern digital marketing attribution is fundamentally broken:\n1. **The Last-Touch Attribution Illusion**: Ad platform dashboards (Google Ads, Meta Ads) credit 100% of purchase value to the last click or impression. In reality, **over 60% of brand search conversions would have occurred organically**. Platforms take credit for demand they did not generate.\n2. **Channel Saturation Blindspots**: Blended ROAS averages out past returns, concealing that a channel is operating past its point of diminishing returns. Marketers continue pouring capital into Google Search ($0.78 marginal return per dollar) while starving high-potential channels like Retail Media ($2.65 marginal return).\n3. **Disconnected Experimentation**: Geo-holdout tests and switchback experiments are historically isolated in ad-hoc Jupyter notebooks, never reconciling into unified portfolio budgeting systems.\n\n### Strategic Positioning: How This Complements Tactical Tools\nThis platform serves as the **strategic companion** to [ai-marketing-growth-os](https://github.com/hamid-digitalmarketer/ai-marketing-growth-os):\n- **`ai-marketing-growth-os`**: Operates at the **tactical campaign layer** (campaign audits, creative fatigue detection, keyword expansion, search query sanitization).\n- **`ai-marketing-mix-copilot`**: Operates at the **strategic portfolio capital layer** (cross-channel media mix allocation, Bayesian econometrics, empirical geo-holdout causal lift, counterfactual revenue forecasting).\n\nTogether, they form a closed-loop marketing intelligence stack that audits tactical ad accounts, measures true causal incrementality, guides capital to where the next dollar earns the highest return, and verifies business outcomes over time.\n\n---\n\n## 🏛️ System Architecture\n\n```mermaid\nflowchart TD\n    subgraph Ingestion [\"Data Ingestion & Hygiene Layer\"]\n        A1[Multi-Channel Spend & Revenue 52w] --> DQ[Data Quality Agent]\n        A2[30-DMA Geo Holdout Experiment] --> DQ\n        DQ -->|Sanitized & Validated| SR[Secure In-Memory Registry]\n    end\n\n    subgraph EconometricEngine [\"Statistical Modeling & Causal Inference\"]\n        SR --> MA[Model Agent]\n        SR --> IA[Incrementality Agent]\n        MA -->|MCMC Bayesian MMM| BMMM[Geometric Adstock & Hill Saturation]\n        IA -->|Difference-in-Differences| CAUSAL[Empirical Causal Lift & Haircut]\n    end\n\n    subgraph OptimizationEngine [\"Scenario Simulation & Decision Briefing\"]\n        BMMM --> SA[Scenario Agent]\n        CAUSAL --> SA\n        SA -->|Equa",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 66,
+    "total_entries": 84,
+    "top_level_directories": [
+      ".github",
+      "agents",
+      "backend",
+      "data",
+      "docs",
+      "evaluation",
+      "frontend",
+      "infra",
+      "modeling",
+      "tools"
+    ],
+    "important_files": [
+      "backend/app/main.py",
+      "docker-compose.yml",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 10,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "NumPy",
+      "SQLAlchemy",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [
+      "fastapi",
+      "numpy",
+      "pandas",
+      "pydantic",
+      "pytest",
+      "python-multipart",
+      "scipy",
+      "sqlalchemy",
+      "uvicorn"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "docker-compose.yml"
+    ]
+  },
+  "external_links": [
+    "https://www.python.org/downloads/",
+    "http://localhost:8000",
+    "http://localhost:8000/docs"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:59+00:00",
+  "detail_source": "api"
+}

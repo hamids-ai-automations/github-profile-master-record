@@ -1,0 +1,134 @@
+{
+  "id": "R_kgDOVO_MQw",
+  "name": "conversionbridge",
+  "full_name": "hamids-ai-automations/conversionbridge",
+  "url": "https://github.com/hamids-ai-automations/conversionbridge",
+  "description": "Server-side conversion gateway for Meta Conversions API and Google Analytics 4 with privacy controls. Python, Firebase.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-19T02:01:34Z",
+  "updated_at": "2026-11-20T10:11:14Z",
+  "pushed_at": "2026-10-19T02:04:14Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-19T02:04:10Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 94204
+  },
+  "language_total_size": 94204,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 1,
+  "releases": [
+    {
+      "name": "v1.0.0 - Production Server-Side Conversion Tracking Gateway",
+      "tag_name": "v1.0.0",
+      "url": "https://github.com/hamids-ai-automations/conversionbridge/releases/tag/v1.0.0",
+      "published_at": "2026-10-19T02:02:09Z",
+      "is_prerelease": false
+    }
+  ],
+  "tags_count": 1,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "attribution",
+    "conversion-tracking",
+    "firebase-functions",
+    "ga4",
+    "google-analytics-4",
+    "marketing-technology",
+    "meta-conversions-api",
+    "privacy",
+    "python",
+    "rest-api",
+    "server-side-tracking"
+  ],
+  "size_kb": 58,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/conversionbridge/blob/main/README.md",
+    "has_readme": true,
+    "length": 14147,
+    "excerpt": "# ConversionBridge\n\n<p align=\"center\">\n  <b>Privacy-First Server-Side Conversion Tracking for Meta Ads & Google Analytics 4.</b>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/hamid-digitalmarketer/conversionbridge/actions\"><img src=\"https://img.shields.io/github/actions/workflow/status/hamid-digitalmarketer/conversionbridge/ci.yml?branch=main&style=for-the-badge&logo=github&label=CI%20Build\" alt=\"CI Build\"></a>\n  <img src=\"https://img.shields.io/badge/Python-3.11%20%7C%203.12-3776ab?style=for-the-badge&logo=python&logoColor=white\" alt=\"Python 3.11 | 3.12\">\n  <img src=\"https://img.shields.io/badge/Framework-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white\" alt=\"FastAPI\">\n  <img src=\"https://img.shields.io/badge/Runtime-Firebase%20Functions%20v2-ffca28?style=for-the-badge&logo=firebase&logoColor=black\" alt=\"Firebase Functions v2\">\n  <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/License-MIT-blue?style=for-the-badge\" alt=\"MIT License\"></a>\n  <a href=\"https://wa.me/923167417135\"><img src=\"https://img.shields.io/badge/WhatsApp-Contact%20Architect-25d366?style=for-the-badge&logo=whatsapp&logoColor=white\" alt=\"WhatsApp\"></a>\n</p>\n\n---\n\n## 📌 Executive Summary\n\n**ConversionBridge** is an enterprise-grade, open-source Python and Firebase solution for capturing consent-aware first-party conversion events and dispatching them directly to **Meta Conversions API (CAPI)** and **Google Analytics 4 (GA4) Measurement Protocol** via server-to-server integrations.\n\nModern performance marketing suffers from severe signal degradation caused by iOS App Tracking Transparency (ATT), browser ad-blockers, ITP cookie lifespan caps, and third-party cookie restrictions. Browser-only tracking routinely misses **15% to 30% of conversions**, distorting return on ad spend (ROAS) and crippling algorithmic bidding.\n\nConversionBridge restores measurement integrity by moving conversion delivery to a trusted, secure first-party server environment—enforcing user consent, eliminating duplicate transactions, and protecting customer privacy.\n\n---\n\n## 🏗️ System Architecture\n\n```mermaid\nflowchart TD\n    subgraph Clients[\"First-Party Client Applications\"]\n        Web[\"Web Application / Checkout\"]\n        Backend[\"E-Commerce / CRM Server\"]\n        Mobile[\"Mobile App Backend\"]\n    end\n\n    subgraph Gateway[\"ConversionBridge Gateway (FastAPI / Firebase Functions v2)\"]\n        Ingest[\"POST /api/v1/events\"]\n        AuthRate[\"Authentication & Sliding-Window Rate Limiting\"]\n        Validate[\"Event Validator (Timestamps, Schema, Data Formats)\"]\n        Consent[\"Consent Engine (Fail-Closed Policy)\"]\n        Dedup[\"Deduplication Engine (48-Hour Idempotency)\"]\n        Storage[(\"Storage Backend\\nMemory / Cloud Firestore\")]\n    end\n\n    subgraph Destinations[\"Advertising & Measurement Platforms\"]\n        Meta[\"Meta Conversions API\\nGraph API v20.0\"]\n        GA4[\"Google Analytics 4\\nMeasurement Protocol\"]\n    end\n\n    Web -->|Conversion Event| Ingest\n    Backend -->|Purchase / CRM Deal| Ingest\n    Mobile -->|In-App Conversion| Ingest\n\n    Ingest --> AuthRate\n    AuthRate --> Validate\n    Validate --> Consent\n    Consent -->|Consent Permitted| Dedup\n    Consent -.->|Consent Denied| BlockedConsent[\"Log Skipped (Consent)\"]\n    Dedup <--> Storage\n    Dedup -->|Unique Event| Dispatcher[\"Multi-Channel Dispatcher\"]\n    Dedup -.->|Duplicate ID| BlockedDedup[\"Suppress Duplicate\"]\n\n    Dispatcher -->|SHA-256 Hashed Customer Signals| Meta\n    Dispatcher -->|Client ID & Event Parameters| GA4\n```\n\n---\n\n## ✨ Key Capabilities\n\n- **Unified Multi-Channel Gateway**: Ingests a single standardized first-party event and dispatches to Meta CAPI, GA4, or both in parallel.\n- **Fail-Closed Consent Architecture**: Gated by explicit consent flags (`consent.advertising` for Meta, `consent.analytics` for GA4). If consent is missing or rejected, events are safely suppressed.\n- **Cryptographic PII Protection**: Automatically normalizes and generates one-way SHA-256 hashes for custom",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 62,
+    "total_entries": 74,
+    "top_level_directories": [
+      ".github",
+      "app",
+      "docs",
+      "examples",
+      "tests"
+    ],
+    "important_files": [
+      "app/main.py",
+      "firebase.json",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 8,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "Firebase",
+      "pytest"
+    ],
+    "dependencies": [
+      "fastapi",
+      "firebase-admin",
+      "firebase-functions",
+      "google-cloud-firestore",
+      "httpx",
+      "pydantic",
+      "pydantic-settings",
+      "python-multipart",
+      "uvicorn"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "firebase.json"
+    ]
+  },
+  "external_links": [
+    "https://wa.me/923167417135",
+    "http://localhost:8080/docs`",
+    "http://localhost:8080/api/v1/events",
+    "https://example.com/consultation"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:50+00:00",
+  "detail_source": "api"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "R_kgDOVnyV-A",
+  "name": "Gulliver",
+  "full_name": "hamids-ai-automations/Gulliver",
+  "url": "https://github.com/hamids-ai-automations/Gulliver",
+  "description": "Test on tiny data before you run on giant data. MCP server + CLI that gives AI agents a dress rehearsal for SQL: cost preflight, scale lint with auto-fix, rehearse on 1% → 10%, predict 100%, run only within budget. DuckDB, Postgres, BigQuery, Snowflake. Local-first, MIT.",
+  "homepage": "https://laaielichter.github.io/Gulliver/",
+  "created_at": "2026-11-09T06:18:45Z",
+  "updated_at": "2026-11-09T06:18:45Z",
+  "pushed_at": "2026-11-09T06:29:39Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-09T06:10:57Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 1077421,
+    "JavaScript": 2484
+  },
+  "language_total_size": 1079905,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 2,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 1102,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/Gulliver/blob/main/README.md",
+    "has_readme": true,
+    "length": 55149,
+    "excerpt": "<!-- mcp-name: io.github.laaielichter/gulliver -->\n\n<p align=\"center\">\n  <a href=\"https://laaielichter.github.io/Gulliver/\"><img src=\"https://raw.githubusercontent.com/laaielichter/Gulliver/main/docs/assets/social.jpg\" alt=\"Gulliver: test on tiny data before you run on giant data. A rehearsal on 1%, 3% and 10% predicts the full run.\" width=\"760\"></a>\n</p>\n\n<h1 align=\"center\">Gulliver</h1>\n<p align=\"center\"><img src=\"docs/logo.svg\" alt=\"Gulliver compass icon\" width=\"56\" height=\"56\"></p>\n\n<p align=\"center\"><b>Test on tiny data before you run on giant data.</b><br>\nAn open-source MCP server and CLI that gives AI agents a dress rehearsal for SQL: estimate the cost, fix the slow parts, rehearse on 1% → 3% → 10% of the data, predict what 100% will do, and only run the full query inside a budget.</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/laaielichter/Gulliver/actions/workflows/ci.yml\"><img src=\"https://github.com/laaielichter/Gulliver/actions/workflows/ci.yml/badge.svg\" alt=\"CI\"></a>\n  <a href=\"https://pypi.org/project/gulliver-mcp/\"><img src=\"https://img.shields.io/pypi/v/gulliver-mcp?label=pypi\" alt=\"PyPI version\"></a>\n  <a href=\"https://www.npmjs.com/package/gulliver-mcp\"><img src=\"https://img.shields.io/npm/v/gulliver-mcp?label=npm\" alt=\"npm version\"></a>\n  <img src=\"https://img.shields.io/badge/python-3.10%20%E2%80%93%203.13-blue\" alt=\"Python 3.10 to 3.13\">\n  <a href=\"https://github.com/laaielichter/Gulliver/blob/main/LICENSE\"><img src=\"https://img.shields.io/badge/license-MIT-blue\" alt=\"MIT license\"></a>\n  <a href=\"https://github.com/laaielichter/Gulliver/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22\"><img src=\"https://img.shields.io/github/issues/laaielichter/Gulliver/good%20first%20issue?label=good%20first%20issues&color=7057ff\" alt=\"Good first issues\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://laaielichter.github.io/Gulliver/\">Website</a> ·\n  <a href=\"#quick-start-2-minutes-no-warehouse-needed\">Quick start</a> ·\n  <a href=\"#install-the-mcp-server\">Install</a> ·\n  <a href=\"#auto-fix\">Auto-fix</a> ·\n  <a href=\"#guards-for-agents\">Guards</a> ·\n  <a href=\"#in-ci-and-on-pull-requests\">CI</a> ·\n  <a href=\"#how-it-compares\">Compare</a> ·\n  <a href=\"#faq\">FAQ</a> ·\n  <a href=\"#roadmap\">Roadmap</a>\n</p>\n\n<p align=\"center\">Works with <b>Claude Code</b>, <b>Codex</b>, <b>Cursor</b>, <b>Gemini CLI</b>, Claude Desktop, VS Code, Windsurf and any MCP client, on <b>DuckDB</b>, <b>Postgres</b>, <b>BigQuery</b> and <b>Snowflake</b>.</p>\n\n> **New in 0.3.0:** a read-only gate that also blocks side-effect functions, SQL hidden in strings and file\n> access, with DuckDB sandboxed in the engine. A result guard for personal data and prompt injection in rows. A\n> runaway guard for loops and per-agent budgets. Lint for CI (SARIF, pre-commit), `gulliver fix --verify`,\n> `gulliver top`, and `gulliver review` with a GitHub Action. **One breaking change:** DuckDB can no longer read\n> files outside the database folder and the current folder unless you allow them\n> ([details](#safety-model)). See the [changelog](https://github.com/laaielichter/Gulliver/blob/main/CHANGELOG.md).\n\n![Gulliver rehearses a self-join on 1%, 3% and 10% of a 5-million-row table, predicts the size of the full result, then rewrites a date filter with the same rows](https://raw.githubusercontent.com/laaielichter/Gulliver/main/docs/demo.svg)\n\n<sub>A real recording of the CLI on the demo database (script: [docs/demo.sh](https://github.com/laaielichter/Gulliver/blob/main/docs/demo.sh)).</sub>\n\n> In *Gulliver's Travels*, Gulliver visits Lilliput, a land of tiny people, and Brobdingnag, a land of giants.\n> Gulliver does the same with your data: it tries your query in Lilliput first, and only walks into Brobdingnag\n> when it knows what will happen there.\n\n## Why\n\nAgents write SQL that works on a small table and breaks on a big one. They do not know that `events` has\n5 billion rows, that a join multiplies rows, or that a forgotten partition filter scans every ",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 121,
+    "total_entries": 136,
+    "top_level_directories": [
+      ".claude-plugin",
+      ".github",
+      "docs",
+      "npm",
+      "skills",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "npm/package.json",
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/codeql.yml",
+      ".github/workflows/release.yml"
+    ],
+    "test_files_count": 25,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 13,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "MCP",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://laaielichter.github.io/Gulliver/",
+    "https://raw.githubusercontent.com/laaielichter/Gulliver/main/docs/assets/social.jpg",
+    "https://pypi.org/project/gulliver-mcp/",
+    "https://www.npmjs.com/package/gulliver-mcp",
+    "https://raw.githubusercontent.com/laaielichter/Gulliver/main/docs/demo.svg",
+    "https://docs.astral.sh/uv/",
+    "http://127.0.0.1:8765/mcp`",
+    "https://pypi.org/project/cost-guard-mcp/0.5.0/",
+    "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp",
+    "https://dbhub.ai/blog/postgres-mcp-server-review-dbhub",
+    "https://supabase.com/docs/guides/ai-tools/mcp",
+    "https://supabase.com/blog/defense-in-depth-mcp",
+    "https://squawkhq.com/docs/rules",
+    "https://pypi.org/project/dbt-costgate/1.0.5/",
+    "https://docs.datafold.com/reference/open_source/",
+    "https://contrib.rocks/image?repo=laaielichter/Gulliver"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:16+00:00",
+  "detail_source": "api"
+}

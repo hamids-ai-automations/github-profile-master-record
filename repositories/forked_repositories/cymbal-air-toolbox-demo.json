@@ -1,0 +1,143 @@
+{
+  "id": "R_kgDOV2rUiQ",
+  "name": "cymbal-air-toolbox-demo",
+  "full_name": "hamids-ai-automations/cymbal-air-toolbox-demo",
+  "url": "https://github.com/hamids-ai-automations/cymbal-air-toolbox-demo",
+  "description": "Demo of a customer service agent (Cymbal Air) using LangGraph, Tools, and RAG to interact with Google Cloud Databases via MCP Toolbox.",
+  "homepage": "https://github.com/googleapis/genai-toolbox/",
+  "created_at": "2026-11-21T14:21:54Z",
+  "updated_at": "2026-11-21T14:21:54Z",
+  "pushed_at": "2026-11-21T14:48:33Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-20T21:49:39Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "language": "Python",
+  "languages": {
+    "Python": 62431,
+    "JavaScript": 13964,
+    "CSS": 8971,
+    "HTML": 5112,
+    "Dockerfile": 1041
+  },
+  "language_total_size": 91519,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 5,
+  "branches_count": 17,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 60597,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/cymbal-air-toolbox-demo/blob/main/README.md",
+    "has_readme": true,
+    "length": 8191,
+    "excerpt": "# ![](static/logo-header.png)\n\n> [!NOTE]\n> This project is for demonstration only and is not an officially supported\n> Google product.\n>\n> If you're a Googler using this demo, please fill up this\n> [form](https://forms.gle/dJUdMEbUu7k3TmT4A). If you're interested in using our\n> hosted version, please fill up this\n> [form](https://forms.gle/3AknwhhWv2pWw46Q8).\n\n## Introduction\n\nThis project provides a production-quality reference implementation for building\nAgentic applications that use [Agents] and [Retrieval Augmented Generation\n(RAG)][rag] to query and interact with data stored in Google Cloud Databases.\n\nThis demonstration features Cymbal Air, a fictional airline. The application\nshowcases a customer service assistant that helps travelers manage flights and\nfind information about San Francisco International Airport (SFO), Cymbal Air's\nhub. The agent can answer questions like:\n\n* *Are there any luxury shops in the terminal?*\n* *Where can I get coffee near gate A6?*\n* *I need to find a gift for my colleague.*\n* *What flights are headed to NYC tomorrow?*\n\n[rag]: https://www.promptingguide.ai/techniques/rag\n[Agents]: https://www.promptingguide.ai/agents/introduction\n\n## Table of Contents\n<!-- TOC depthfrom:2 -->\n\n- [Understanding the demo](#understanding-the-demo)\n    - [Retrieval Augmented Generation RAG](#retrieval-augmented-generation-rag)\n    - [Agent-based Orchestration](#agent-based-orchestration)\n    - [Architecture](#architecture)\n- [Deployment](#deployment)\n    - [Before you begin](#before-you-begin)\n    - [One-Time Database & Tool Configuration](#one-time-database--tool-configuration)\n    - [Launch the Toolbox Server Choose One](#launch-the-toolbox-server-choose-one)\n    - [Running the Agentic Application](#running-the-agentic-application)\n    - [Clean Up](#clean-up)\n- [Customizing Your Tools](#customizing-your-tools)\n\n<!-- /TOC -->\n\n## Understanding the demo\n\n### Retrieval Augmented Generation (RAG)\n\nOne of the best tools for reducing hallucinations is to use Retrieval Augmented\nGeneration (RAG). RAG is the concept of retrieving some data or information,\naugmenting your prompt to the agent, and allowing it to generate more accurate\nresponses based on the data included in the prompt. This grounds the model’s\nresponse, making it less likely to hallucinate. This technique is also useful\nfor allowing the agent to access data it didn’t have when it was trained. And\nunlike fine-tuning, the information retrieved for RAG does not alter the model\nor otherwise leave the context of the request - making it more suitable for use\ncases where information privacy and security are important.\n\nCloud databases provide a managed solution for storing and accessing data in a\nscalable and a reliable way. By connecting an agent to a cloud database,\ndevelopers can give their applications access to a wider range of information\nand reduce the risk of hallucinations.\n\n\n### Agent-based Orchestration\n\nThis application uses an Agent-based orchestration model. Instead of a static\nchain of calls, the LLM acts as an intelligent Agent that decides which tools to\nuse and in what order. It is given a set of available tools, each with a\nspecific function (e.g., `find_flights`, `list_amenities`). Based on the user's\nquery, the agent reasons about the best tool to use to find the answer. This\n\"thought process\" allows the agent to handle a wider variety of queries and to\nbreak down complex questions into smaller, manageable steps.\n\n### Architecture\n\n![Overview](architecture.svg)\n\nThe architecture consists of three main components:\n1. **Application** -- The user-facing agentic app that orchestrates the\n   interaction between the user and the agent.\n1. **MCP Toolbox** -- [MCP Toolbox](https://github.com/googleapis/genai-toolbox)\n   is a middleware server that exposes the database operations as a set of\n   tools. The LLM agent connects to the Toolbox to execute these tools. This\n   provides a secure, scalable, and modular way to manage database interactions.\n1",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 52,
+    "total_entries": 60,
+    "top_level_directories": [
+      ".github",
+      "agent",
+      "data",
+      "docs",
+      "models",
+      "static",
+      "templates"
+    ],
+    "important_files": [
+      "app.py",
+      "pyproject.toml",
+      "requirements.txt",
+      "static/index.js"
+    ],
+    "workflow_files": [
+      ".github/workflows/labels.yaml",
+      ".github/workflows/lint.yml",
+      ".github/workflows/lint_fallback.yml",
+      ".github/workflows/release-please.yml"
+    ],
+    "test_files_count": 2,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 18,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Express",
+      "FastAPI",
+      "LangChain",
+      "pandas"
+    ],
+    "dependencies": [
+      "fastapi",
+      "google-auth",
+      "google-cloud-aiplatform",
+      "itsdangerous",
+      "jinja2",
+      "langchain",
+      "langchain-core",
+      "langchain-google-vertexai",
+      "langgraph",
+      "markdown",
+      "pandas",
+      "pandas-stubs",
+      "pydantic",
+      "python-multipart",
+      "pytz",
+      "toolbox-langchain",
+      "types-Markdown",
+      "types-pytz",
+      "uvicorn"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "pyproject.toml",
+      "Dockerfile"
+    ]
+  },
+  "external_links": [
+    "https://forms.gle/dJUdMEbUu7k3TmT4A",
+    "https://forms.gle/3AknwhhWv2pWw46Q8",
+    "https://www.promptingguide.ai/techniques/rag",
+    "https://www.promptingguide.ai/agents/introduction",
+    "https://mcp-toolbox.dev/documentation/introduction/",
+    "https://mcp-toolbox.dev/documentation/introduction/#install-toolbox",
+    "https://storage.googleapis.com/genai-toolbox/v$VERSION/linux/amd64/toolbox",
+    "https://mcp-toolbox.dev/documentation/introduction/#run-toolbox",
+    "https://mcp-toolbox.dev/documentation/deploy-to/cloud-run/",
+    "https://mcp-toolbox.dev/documentation/getting-started/",
+    "https://mcp-toolbox.dev/documentation/configuration/"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:03+00:00",
+  "detail_source": "api"
+}

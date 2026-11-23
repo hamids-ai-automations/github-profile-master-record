@@ -1,0 +1,14 @@
+{
+  "full_name": "hamids-ai-automations/ghl-automation-engine",
+  "url": "https://github.com/hamids-ai-automations/ghl-automation-engine",
+  "description": "Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies.",
+  "owner": "hamids-ai-automations",
+  "is_fork": false,
+  "stars": 1,
+  "language": "Python",
+  "commits": 10,
+  "pull_requests": 0,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": true
+}

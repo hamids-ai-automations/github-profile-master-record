@@ -1,0 +1,111 @@
+{
+  "id": "R_kgDOVN1Lzg",
+  "name": "ai-search-visibility-auditor",
+  "full_name": "hamids-ai-automations/ai-search-visibility-auditor",
+  "url": "https://github.com/hamids-ai-automations/ai-search-visibility-auditor",
+  "description": "GEO toolkit: validate AI crawler access in robots.txt, generate and lint llms.txt, check AI-citation readiness of web content. Python, Streamlit.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-17T22:07:46Z",
+  "updated_at": "2026-11-20T10:16:23Z",
+  "pushed_at": "2026-10-17T23:05:33Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-17T23:05:33Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 35876
+  },
+  "language_total_size": 35876,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "ai-search",
+    "digital-marketing",
+    "generative-engine-optimization",
+    "geo",
+    "llms-txt",
+    "python",
+    "seo",
+    "streamlit"
+  ],
+  "size_kb": 24,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ai-search-visibility-auditor/blob/main/README.md",
+    "has_readme": true,
+    "length": 4994,
+    "excerpt": "# AI Search Visibility Auditor\n\nOpen-source **GEO (Generative Engine Optimization)** toolkit. In 2026, zero-click searches have reached ~68% and AI Overviews cut click-through rates on top organic positions by ~34%. Ranking #1 is no longer enough — brands must be **cited by AI answer engines**. This tool audits whether your website is ready for that world.\n\nIt answers three questions:\n1. **Are AI crawlers allowed in?** — robots.txt checks for GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended and more.\n2. **Do you speak the llms.txt standard?** — detects, validates and generates `/llms.txt` so AI crawlers know what to prioritize.\n3. **Is your content structured for AI citation?** — audits answer blocks, question-based headings, FAQ/Article schema and E-E-A-T signals (author, dates, structured body).\n\nBuilt as a free, open-source alternative to paid AI-visibility tools (SE Ranking ~$129/mo, Semrush ~$139–299/mo, Otterly.AI, Promptwatch).\n\n---\n\n## Features\n\n- **AI crawler access audit** — parses `robots.txt` with standard longest-match precedence, flags crawlers that are disallowed from key paths, distinguishes Google-Extended (Gemini training) from AI Overviews indexing.\n- **llms.txt detection, validation and generation** — parses existing files, flags missing titles / duplicate URLs / non-absolute links, and generates a ready-to-publish `llms.txt` from your pages.\n- **On-page AI-citation readiness audit** — detects direct answer blocks in the first ~100 words, question-based headings, FAQPage / Article / Organization / Person schema (including `@graph`), author & date signals, and structured body content (lists, tables).\n- **Streamlit dashboard** — enter a URL, run the audit, see a prioritized issue list (critical / warning / info), crawler access table, suggested `llms.txt`, and CSV export.\n- **Zero heavy dependencies** — stdlib-only analysis engine (urllib + html.parser); Streamlit is the only runtime dependency for the dashboard.\n- **Polite fetching** — custom user-agent, timeouts, size limits, small crawl delay.\n\n## Quick start\n\n```bash\ngit clone https://github.com/hamid-digitalmarketer/ai-search-visibility-auditor.git\ncd ai-search-visibility-auditor\npip install -r requirements.txt\nstreamlit run app.py\n```\n\nThen open http://localhost:8501, enter a URL (e.g. `https://your-site.com`) and hit **Run audit**.\n\n## CLI usage (library)\n\n```python\nfrom geo_audit import fetcher, report\n\nstatus, robots = fetcher.polite_fetch(\"https://example.com/robots.txt\")\n_, llms = fetcher.polite_fetch(\"https://example.com/llms.txt\")\n_, html = fetcher.polite_fetch(\"https://example.com/\")\n\naudit = report.run_audit(\n    domain=\"https://example.com\",\n    robots_text=robots if status == 200 else None,\n    robots_status=status,\n    llms_text=llms,\n    llms_status=200,\n    html=html,\n)\nfor issue in audit.sorted_issues():\n    print(issue[\"severity\"], issue[\"code\"], \"-\", issue[\"message\"])\n```\n\n## What each check means\n\n| Check | Why it matters in 2026 |\n|---|---|\n| GPTBot / ClaudeBot / PerplexityBot blocked | AI answer engines can't cite what they can't crawl. |\n| Google-Extended blocked | Controls Gemini training only; doesn't block AI Overviews. Blocking by reflex hides content from model training pipelines. |\n| `llms.txt` missing | The emerging standard that explicitly guides AI crawlers to priority content (adoption accelerating across major sites). |\n| No direct answer block | AI extractors often stop at the first clean answer; burying it costs citations. |\n| No FAQ/Article schema | FAQ schema feeds structured Q&A pairs straight into knowledge graphs — one of the highest-impact citation signals. |\n| No author / no dates (E-E-A-T) | Anonymous, undated content fails AI quality filters. |\n\n## Project structure\n\n```\ngeo_audit/\n  fetcher.py           # polite HTTP fetching (timeout, size limit, delay)\n  robots_analyzer.py   # robots.txt parsing + AI crawler access checks\n  llms_analyzer.py     # llms.txt parse / validate /",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 16,
+    "total_entries": 20,
+    "top_level_directories": [
+      ".github",
+      "geo_audit",
+      "tests"
+    ],
+    "important_files": [
+      "app.py",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 3,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Streamlit"
+    ],
+    "dependencies": [
+      "streamlit"
+    ],
+    "config_files": [
+      "requirements.txt"
+    ]
+  },
+  "external_links": [
+    "http://localhost:8501",
+    "https://your-site.com`",
+    "https://example.com/robots.txt",
+    "https://example.com/llms.txt",
+    "https://example.com/",
+    "https://example.com"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:55+00:00",
+  "detail_source": "api"
+}

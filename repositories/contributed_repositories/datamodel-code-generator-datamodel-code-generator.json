@@ -1,0 +1,14 @@
+{
+  "full_name": "datamodel-code-generator/datamodel-code-generator",
+  "url": "https://github.com/datamodel-code-generator/datamodel-code-generator",
+  "description": "Generate Pydantic v2 models, dataclasses, TypedDict, and msgspec.Struct from OpenAPI, JSON Schema, GraphQL, Avro, Protobuf, and raw JSON/YAML/CSV, plus FastAPI servers and Python clients from OpenAPI.",
+  "owner": "datamodel-code-generator",
+  "is_fork": false,
+  "stars": null,
+  "language": null,
+  "commits": 0,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "id": 6079985465,
+    "number": 1862,
+    "title": "bug(postgrest): in_() emits in.(None)/in.(True) instead of in.(null)/in.(true)",
+    "state": "closed",
+    "url": "https://github.com/supabase/supabase-py/issues/1862",
+    "created_at": "2026-10-28T13:33:15Z",
+    "updated_at": "2026-11-02T15:16:02Z",
+    "closed_at": "2026-11-02T15:16:02Z",
+    "repository": "supabase/supabase-py",
+    "author": "hamids-ai-automations",
+    "labels": [
+      "bug",
+      "PostgREST",
+      "python"
+    ],
+    "pull_request_or_issue": "issue",
+    "relationship": "authored"
+  }
+]

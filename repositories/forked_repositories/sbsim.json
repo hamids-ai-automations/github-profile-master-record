@@ -1,0 +1,108 @@
+{
+  "id": "R_kgDOVa_nmw",
+  "name": "sbsim",
+  "full_name": "hamids-ai-automations/sbsim",
+  "url": "https://github.com/hamids-ai-automations/sbsim",
+  "description": null,
+  "homepage": "https://google.github.io/sbsim/",
+  "created_at": "2026-10-28T20:22:58Z",
+  "updated_at": "2026-10-28T20:22:58Z",
+  "pushed_at": "2026-11-15T16:41:34Z",
+  "default_branch": "copybara_push",
+  "last_commit_at": "2026-10-26T17:19:41Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "language": "Python",
+  "languages": {
+    "Python": 1493816,
+    "Jupyter Notebook": 353981,
+    "Dockerfile": 1946,
+    "Makefile": 1088
+  },
+  "language_total_size": 1850831,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 1,
+  "branches_count": 44,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 10543,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/sbsim/blob/copybara_push/README.md",
+    "has_readme": true,
+    "length": 2717,
+    "excerpt": "# Google Smart Buildings Control\n\nThis repository accompanies Goldfeder, J., Sipple, J., Real-World Data and\nCalibrated Simulation Suite for Offline Training of Reinforcement Learning\nAgents to Optimize Energy and Emission in Office Buildings, currently under\nreview at Neurips 2024, and builds off of Goldfeder, J., Sipple, J., (2023).\n[A Lightweight Calibrated Simulation Enabling Efficient Offline Learning for Optimal Control of Real Buildings](https://dl.acm.org/doi/10.1145/3600100.3625682),\nBuildSys '23, November 15–16, 2023, Istanbul, Turkey\n\n## Real World Data\n\nIn addition to our calibrated simulator, we have released six years of data from\nthree buildings. This data can be used for further simulator calibration, and\nfor training and evaluating reinforcement learning (RL) models.\n\nThe dataset is available for download from\n[Tensorflow Datasets](https://www.tensorflow.org/datasets/catalog/smart_buildings).\n\nAlternatively, a smaller version of the dataset can be downloaded as a\n[zip file](https://storage.googleapis.com/gresearch/smart_buildings_dataset/tabular_data/sb1.zip)\nfrom cloud storage.\n\n## Documentation\n\nView the official [Documentation Site](https://google.github.io/sbsim/) for a\ncomplete auto-generated API reference.\n\nThere is also a legacy unofficial\n[Community-run Documentation Site](https://gitwyd.github.io/sbsim_documentation/)\ncontaining more information about the project and the codebase. We plan to merge\nall this content into the official documentation site soon.\n\n## Getting Started\n\nA great place to start is by reviewing the\n[Soft Actor Critic Demo notebook](smart_control/notebooks/SAC_Demo.ipynb). This\nnotebook will walk you through:\n\n1. Creating a gym-compatible Reinforcement Learning (RL) environment.\n\n2. Visualizing the environment.\n\n3. Training an agent using the\n    [Tensorflow Agents Library](https://www.tensorflow.org/agents).\n\nAlternatively, RL agents can be trained by running various scripts in the\n\"smart_control/reinforcement_learning/scripts\" directory.\n\nBefore running notebooks or scripts, make sure to complete the setup\ninstructions linked below.\n\n## Setup\n\nThe [Setup Guide](docs/setup.md) provides all the information you need to run\nthe code locally.\n\n## Contributing\n\nThe [Contributor's Guide](docs/contributing.md) provides more information on how\nto contribute to this repository.\n\nWe appreciate contributions and interest from the community! Please note that our \nteam maintains this repository alongside active internal Google project commitments, \nso pull request reviews may take anywhere from a few days to a couple of weeks.\nWe review PRs as maintainer bandwidth allows. Thank you for your patience and support!\n\n## [License](LICENSE)\n",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 227,
+    "total_entries": 265,
+    "top_level_directories": [
+      ".github",
+      ".vscode",
+      "data",
+      "docs",
+      "smart_control"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/build.yaml",
+      ".github/workflows/deploy-docs.yml",
+      ".github/workflows/docker-build.yaml"
+    ],
+    "test_files_count": 59,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 19,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml",
+      "Dockerfile"
+    ]
+  },
+  "external_links": [
+    "https://dl.acm.org/doi/10.1145/3600100.3625682",
+    "https://www.tensorflow.org/datasets/catalog/smart_buildings",
+    "https://storage.googleapis.com/gresearch/smart_buildings_dataset/tabular_data/sb1.zip",
+    "https://google.github.io/sbsim/",
+    "https://gitwyd.github.io/sbsim_documentation/",
+    "https://www.tensorflow.org/agents"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:09+00:00",
+  "detail_source": "api"
+}

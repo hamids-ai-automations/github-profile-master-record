@@ -1,0 +1,115 @@
+{
+  "id": "R_kgDOVbA2Xw",
+  "name": "geniebot",
+  "full_name": "hamids-ai-automations/geniebot",
+  "url": "https://github.com/hamids-ai-automations/geniebot",
+  "description": "RAG + vision Telegram bot: document Q&A and image captioning via OpenRouter free-tier LLMs, with SQLite vector storage.",
+  "homepage": "https://geniebot-s98h.onrender.com/health",
+  "created_at": "2026-10-28T20:44:46Z",
+  "updated_at": "2026-10-28T20:44:47Z",
+  "pushed_at": "2026-11-11T01:00:22Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-28T19:33:42Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": null,
+  "license_name": null,
+  "language": "Python",
+  "languages": {
+    "Python": 114529,
+    "Dockerfile": 185
+  },
+  "language_total_size": 114714,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 1,
+  "branches_count": 4,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 2652,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/geniebot/blob/main/README.md",
+    "has_readme": true,
+    "length": 9286,
+    "excerpt": "# GenieBot - RAG + Vision Telegram Assistant\n\n[![Tests](https://github.com/iamvisheshsrivastava/geniebot/actions/workflows/tests.yml/badge.svg)](https://github.com/iamvisheshsrivastava/geniebot/actions/workflows/tests.yml)\n\nGenieBot is a Telegram bot that answers questions against a small local document set (RAG), captions and tags photos, and can summarize your last chat or image interaction. I built it to run entirely on free tiers - OpenRouter for the LLM/vision calls, fastembed for embeddings (no torch, no GPU), and SQLite for the vector store - so it comfortably fits on Render's free instance.\n\n## Quick Access\n\n- Telegram bot: [@Hello_Genie_Bot](https://t.me/Hello_Genie_Bot)\n- Service check: [https://geniebot-s98h.onrender.com/health](https://geniebot-s98h.onrender.com/health) to confirm whether the bot service is running\n- Hosted on Render's free tier (see **Deploy (free tier)** below); the previous DigitalOcean droplet deployment has been retired\n\n## Highlights\n\n- RAG retrieval with persistent embeddings in SQLite\n- Query and embedding caches in RAM for fast repeated calls\n- Vision pipeline for image caption + tags (via a hosted vision model, no local weights)\n- User memory that keeps the last 3 interactions per user\n- Health/status page at `/` and `/health`\n\n## Tech Stack\n\n- Python 3.10+\n- python-telegram-bot\n- OpenRouter (`z-ai/glm-4.6` for chat, `z-ai/glm-4.6v` for vision) is the default and what's actually deployed on Render. `LLM_PROVIDER=ollama` still works for local dev if you'd rather point at a model running on your own machine, but the vision pipeline always goes through OpenRouter regardless of that setting.\n- fastembed / sentence-transformers/all-MiniLM-L6-v2 (embeddings, ONNX-based, no torch)\n- SQLite (`data/rag_embeddings.db`)\n\n## Current Runtime Settings\n\n- retrieval top_k: 2\n- chunk_size: 200\n- max_tokens: 800 for `/ask` and `/summarize`, 400 for image captioning (higher than you'd expect for a 2-4 sentence answer, because GLM-4.6 is a reasoning model and spends part of that budget on hidden reasoning before it writes the visible response — too low and you get an empty reply)\n- user history: last 3 interactions per user\n\n## Project Structure\n\n```text\napp.py                    # Bot bootstrap + status server\nbot/handlers.py           # Telegram command handlers\nrag/system.py             # Chunking, embedding, retrieval, SQLite persistence\nrag/qa.py                 # QA orchestration and prompt flow\nrag/llm.py                # OpenRouter + Ollama clients with model fallback handling\nrag/embeddings.py         # fastembed wrapper (no torch dependency)\nvision/processor.py       # Image captioning via a hosted OpenRouter vision model\nutils/cache.py            # QueryCache + EmbeddingCache (RAM)\nutils/memory.py           # Per-user short history (RAM)\nutils/logger.py           # File + console logging\ndata/                     # Knowledge documents + SQLite DB file\nmedia/                    # Assignment screenshots used below\ndocs/diagrams/system-design.mmd\n```\n\n## Setup and Run (local)\n\n### 1) Create and activate virtual environment\n\nWindows (PowerShell):\n\n```powershell\npython -m venv .venv\n.\\.venv\\Scripts\\Activate.ps1\n```\n\nmacOS/Linux:\n\n```bash\npython -m venv .venv\nsource .venv/bin/activate\n```\n\n### 2) Install dependencies\n\n```bash\npip install -r requirements.txt\n```\n\n### 3) Configure environment\n\nCreate `.env` from `.env.example`. By default `LLM_PROVIDER=openrouter`, which needs no local model server:\n\n```env\nTELEGRAM_BOT_TOKEN=your_token_here\nLLM_PROVIDER=openrouter\nOPENROUTER_API_KEY=your_openrouter_api_key\nOPENROUTER_MODEL=z-ai/glm-4.6\nOPENROUTER_VISION_MODEL=z-ai/glm-4.6v\nLOG_LEVEL=INFO\nPORT=8080\n```\n\nA word of caution on `OPENROUTER_MODEL`/`OPENROUTER_VISION_MODEL`: these are free-tier model IDs, and OpenRouter does retire them from time to time (that's what happened to the model this bot originally shipped with - see closed issue [#8](https://github.com/iamvisheshsrivastava/geniebot/issues/8)). If `/a",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 48,
+    "total_entries": 61,
+    "top_level_directories": [
+      ".github",
+      "bot",
+      "data",
+      "docs",
+      "media",
+      "rag",
+      "scripts",
+      "tests",
+      "utils",
+      "vision"
+    ],
+    "important_files": [
+      "app.py",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/tests.yml"
+    ],
+    "test_files_count": 10,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "NumPy",
+      "requests"
+    ],
+    "dependencies": [
+      "Pillow",
+      "fastembed",
+      "numpy",
+      "python-dotenv",
+      "python-telegram-bot",
+      "requests"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "Dockerfile"
+    ]
+  },
+  "external_links": [
+    "https://t.me/Hello_Genie_Bot",
+    "https://geniebot-s98h.onrender.com/health",
+    "https://openrouter.ai/models?max_price=0",
+    "https://render.com"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:09+00:00",
+  "detail_source": "api"
+}

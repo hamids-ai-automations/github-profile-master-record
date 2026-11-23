@@ -1,0 +1,117 @@
+{
+  "id": "R_kgDOVFaXWw",
+  "name": "seo-audit-tool",
+  "full_name": "hamids-ai-automations/seo-audit-tool",
+  "url": "https://github.com/hamids-ai-automations/seo-audit-tool",
+  "description": "Ethical on-page SEO audit crawler: analyzes titles, meta tags, headings, canonicals, image alt texts, duplicate content, and exports actionable CSVs.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-12T02:25:18Z",
+  "updated_at": "2026-11-20T10:12:59Z",
+  "pushed_at": "2026-10-18T04:18:08Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-18T04:18:07Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 19489,
+    "HTML": 591
+  },
+  "language_total_size": 20080,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "image-seo",
+    "meta-tags",
+    "on-page-seo",
+    "python",
+    "seo-audit",
+    "seo-crawler",
+    "streamlit",
+    "website-crawler",
+    "heading-tags"
+  ],
+  "size_kb": 15,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/seo-audit-tool/blob/main/README.md",
+    "has_readme": true,
+    "length": 4460,
+    "excerpt": "# SEO Audit and Website Health Checker\n\nAn ethical, configurable on-page SEO audit application built with Python and Streamlit. Enter a website URL, and the tool crawls internal pages, checks key on-page signals, and produces a prioritized list of issues with recommendations, a summary dashboard, and CSV export.\n\n## Problem it solves\n\nSEO audits are usually manual, slow, and expensive. This tool automates the first-pass technical audit: it catches missing titles and meta descriptions, duplicate titles, weak heading structure, missing canonical tags, images without alt text, broken fetches, and missing `robots.txt` / `sitemap.xml` — then presents everything in a recruiter-friendly, actionable dashboard.\n\n## Key features\n\n- Crawl accessible internal pages within a configurable limit (BFS with polite delays)\n- Analyze page titles, meta descriptions, H1/H2 headings, canonical URLs, and indexability signals\n- Detect images missing alt attributes\n- Detect duplicate titles and duplicate meta descriptions across pages\n- Report fetch failures and HTTP status issues\n- Check `robots.txt` and `sitemap.xml` availability\n- Prioritized issue list (critical / warning / info) with explanations and recommended fixes\n- Summary dashboard with counts by issue type and category chart\n- Export issues to CSV\n\n## Safety and ethics\n\n- Respects `robots.txt`, site terms, crawl limits, and server capacity\n- Conservative timeouts, delays, and concurrency (single-threaded polite crawl by default)\n- Never bypasses CAPTCHAs, authentication, anti-bot controls, or access restrictions\n- Does not claim to measure actual Google rankings — findings are directly observed from the page HTML, and recommendations are clearly marked as recommendations\n\n## Technology stack\n\n- Python 3.11\n- Standard library `html.parser` (portable, dependency-light core)\n- Requests (HTTP fetching)\n- Pandas (reporting/CSV)\n- Plotly (charts)\n- Streamlit (web UI)\n\n## Folder structure\n\n```\nseo-audit-tool/\n├── app.py                  # Streamlit application\n├── seo_audit/\n│   ├── __init__.py\n│   ├── analyzer.py         # HTML parsing and issue detection engine\n│   └── fetcher.py          # Polite HTTP fetching and crawling\n├── tests/\n│   └── test_analyzer.py    # Unit tests for the analyzer\n├── sample.html             # Sample page for offline experimentation\n├── requirements.txt\n└── .gitignore\n```\n\n## Installation\n\n```bash\npython -m venv venv\n# Windows: venv\\Scripts\\activate  |  macOS/Linux: source venv/bin/activate\npip install -r requirements.txt\n```\n\n## Usage\n\n```bash\nstreamlit run app.py\n```\n\nOpen the local URL shown by Streamlit, enter a website URL, choose the crawl limit, and click **Run Audit**.\n\n### Offline / sample input\n\nTo try the analyzer without a network, run the unit tests (see below) or point the tool at any site you are authorized to audit.\n\n## Testing\n\n```bash\npytest -q\n```\n\nTests cover: missing title (critical), noindex detection, missing alt text, multiple H1 headings, duplicate titles across pages, and aggregate counts.\n\n## Limitations and known issues\n\n- Crawling depends on site availability; heavily JS-rendered pages may yield incomplete HTML\n- Redirect chains are reported only as fetch failures in this version (full chain tracing is a future improvement)\n- Findings reflect the fetched HTML snapshot, not Google's index or ranking position\n\n## Future improvements\n\n- Redirect-chain tracing\n- Word-count and keyword-density heuristics\n- Mobile vs desktop viewport checks\n- Scheduled audits with historical comparison\n- CI via GitHub Actions\n\n## Related projects\n\n- [seo-doctor](https://github.com/hamid-digitalmarketer/seo-doctor) — automated technical SEO site crawler (broken links, canonicals, redirect chains)\n- [ecommerce-seo-optimizer](https://github.com/hamid-digitalmarketer/ecommerce-seo-optimizer) — on-page product listing audit and optimization for e-commerce\n\n## License\n\nMIT — see [LICENSE](LICENSE).\n\n---\n\n**Developed by Muhammad Hamid**\n\nDigital Marketing | SEO | Perf",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 11,
+    "total_entries": 15,
+    "top_level_directories": [
+      ".github",
+      "seo_audit",
+      "tests"
+    ],
+    "important_files": [
+      "app.py",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 1,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Streamlit",
+      "pandas",
+      "pytest",
+      "requests"
+    ],
+    "dependencies": [
+      "pandas",
+      "plotly",
+      "pytest",
+      "requests",
+      "streamlit"
+    ],
+    "config_files": [
+      "requirements.txt"
+    ]
+  },
+  "external_links": [
+    "https://hamid-resume.web.app/",
+    "https://www.linkedin.com/in/muhammad-hamid-digital-marketing/",
+    "https://wa.me/923167417135"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:50+00:00",
+  "detail_source": "api"
+}

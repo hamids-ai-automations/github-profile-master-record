@@ -1,0 +1,104 @@
+{
+  "id": "R_kgDOV2H9tg",
+  "name": "gemini-agent-reliability-kit",
+  "full_name": "hamids-ai-automations/gemini-agent-reliability-kit",
+  "url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit",
+  "description": "Offline-first reliability harness for Gemini tool-calling agents: schema, tool choice, argument contracts, retry telemetry, latency and cost report cards.",
+  "homepage": null,
+  "created_at": "2026-11-21T00:37:55Z",
+  "updated_at": "2026-11-21T01:30:58Z",
+  "pushed_at": "2026-11-22T17:07:20Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-22T17:04:54Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 57497
+  },
+  "language_total_size": 57497,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "ai-agents",
+    "gemini",
+    "google-gemini",
+    "llm-eval",
+    "python",
+    "reliability",
+    "tool-calling"
+  ],
+  "size_kb": 37,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit/blob/main/README.md",
+    "has_readme": true,
+    "length": 6341,
+    "excerpt": "# Gemini Agent Reliability Kit (GAR Kit)\n\n[![ci](https://github.com/hamids-ai-automations/gemini-agent-reliability-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/gemini-agent-reliability-kit/actions/workflows/ci.yml)\n[![python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)](pyproject.toml)\n[![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)\n\nMost Gemini agent failures are not \"the model is dumb\". They are concrete, boring, and repeatable:\n\n- the model picks the right tool but drops a required argument,\n- it returns JSON that is 95% correct and unusable,\n- it retries four times with the same backoff and burns your quota,\n- one case in the suite takes 9 seconds and nobody notices until it is in production.\n\nGAR Kit turns a handful of labelled cases into a **report card** that names the failure, on the case, in CI,\nbefore your users find it. Zero dependencies, no network or API key needed for the default path.\n\n```\nGAR Kit report card  suite=smoke  model=mock-1  cases=6\n------------------------------------------------------------------------------\nID                  PASS  SCHEMA  TOOLS  ARGS  RETRY  LATENCY  COST($)\ntool-basic          no    ok      ok     ok    FAIL   ok       0.000000\nschema-json         no    ok      ok     ok    FAIL   ok       0.000000\n------------------------------------------------------------------------------\npass rate 0.0%  (gate 90.0%)  -> FAIL\nfailures by check: retry=6\n\nEVIDENCE\n  tool-basic / retry: 5 attempts exceeded budget of 3\n  schema-json / retry: 5 attempts exceeded budget of 3\n```\n\n## Quickstart\n\n```bash\ngit clone https://github.com/hamids-ai-automations/gemini-agent-reliability-kit\ncd gemini-agent-reliability-kit\npython -m venv .venv && . .venv/Scripts/activate   # Windows; use .venv/bin/activate on macOS/Linux\npip install -e \".[dev]\"\n\ngar run --suite suites/smoke.json --provider mock --report reports/smoke.md\n```\n\nAdd `--fail-on-gate` to turn the gate into an exit code: `1` when the gate is missed, `0` when it passes. Without\nthe flag a failing card still exits `0`, which is what you want for an exploratory run and not what you want in CI.\nThe mock provider is deterministic: same suite in, same card out, no credentials.\n\n## Running against a real model\n\n```bash\n# PowerShell\n$env:GEMINI_API_KEY = \"....\"\ngar run --suite suites/smoke.json --provider gemini --model gemini-2.0-flash `\n        --report reports/gemini-smoke.md --json reports/gemini-smoke.json --fail-on-gate\n```\n\nThe Gemini provider uses the plain REST endpoint over `urllib` — no SDK, no transitive dependency tree.\nIt reports what actually happened: `attempts`, `backoff_ms`, `usageMetadata` token counts. Nothing is estimated\nexcept the price table, and if the response carries no usage metadata the cost is reported as `0`, never invented.\n\n## What gets checked\n\n| check | question it answers | failure looks like |\n| --- | --- | --- |\n| `schema` | Does the structured output satisfy the declared subset of JSON Schema? | missing key, wrong type, unparsable JSON |\n| `tool_call` | Did the model pick the expected tool (and not a dangerous one)? | `delete_everything` instead of `get_weather` |\n| `args` | Did the call carry every required argument with the expected value? | `{}` sent to a tool that needs `city` |\n| `retry` | Did the turn stay inside the attempt budget with growing backoff? | 5 attempts, flat 40 ms spacing |\n| `latency` | Did the case stay inside `max_latency_ms`? | p95 regression nobody caught in review |\n\nEvery failure carries a one-line evidence string naming the case and the check, so a red CI job tells you what to\nfix instead of just that something is wrong.\n\n## Suite format\n\n```json\n{\n  \"name\": \"smoke\",\n  \"gate\": {\"min_pass_rate\": 0.9},\n  \"cases\": [\n    {\n      \"id\": \"tool-basic\",\n      \"prompt\": \"What is the weather in Lahore right now?\",\n      \"tools\": [{\"name\": \"get_weather\", \"parameters\": {\n        \"type\": \"object\",\n        \"properties",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 33,
+    "total_entries": 41,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "gar",
+      "suites",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 6,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://me.developers.google.com/u/hamidautomations"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:51+00:00",
+  "detail_source": "api"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "R_kgDOVh8piQ",
+  "name": "recarena",
+  "full_name": "hamids-ai-automations/recarena",
+  "url": "https://github.com/hamids-ai-automations/recarena",
+  "description": "A recommender simulator that scores off-policy evaluation methods against known true answers",
+  "homepage": null,
+  "created_at": "2026-11-03T22:07:00Z",
+  "updated_at": "2026-11-03T22:07:01Z",
+  "pushed_at": "2026-11-03T22:28:12Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-03T21:42:33Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "language": "Python",
+  "languages": {
+    "Python": 56369
+  },
+  "language_total_size": 56369,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 2,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 34,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/recarena/blob/main/README.md",
+    "has_readme": true,
+    "length": 6445,
+    "excerpt": "# recarena\n\n**How well can you judge a new recommender using only old logs?**\n\nTeams often want to know how a new recommender would perform before showing it to anyone. Off-policy evaluation (OPE) estimates that from logs of the old system. On real data, the true answer is unknown, so it is hard to tell which estimator to trust.\n\nrecarena is a simulator where the true answer is known. It runs each policy directly to get its true value, then scores every estimator against that value.\n\n> Early prototype. The API will change, and the results below come from one simulated setup.\n\n## What's in it\n\n- **Simulated users** with hidden interests that drift, fatigue that builds up, and a chance of leaving after missed recommendations.\n- **Slates:** users look down a list and stop at their first click, and they are less likely to look at lower slots.\n- **A Gymnasium environment**, `SlateRecEnv`, for training RL agents.\n- **Six estimators:** IPS, SNIPS, PDIS, SNPDIS, a direct method (fitted Q evaluation) and doubly robust.\n- **Budgets:** each step reports sponsored exposure as a cost, so you can test whether an estimator can tell if a policy stays within a budget.\n\n## Quickstart\n\n```bash\ngit clone https://github.com/anveshachuri/recarena.git\ncd recarena\npython -m venv .venv\n.venv/Scripts/python -m pip install -e \".[dev]\"   # On Linux or macOS: .venv/bin/python\n.venv/Scripts/python -m pytest\n.venv/Scripts/python -m recarena.benchmark --sizes 200 1000 --seeds 5 --truth 200000\n```\n\nScore the estimators yourself:\n\n```python\nimport numpy as np\nfrom recarena import Catalog, SimConfig, SoftmaxPolicy, collect, estimate_all, true_value\n\nconfig = SimConfig()\ncatalog = Catalog.generate(config)\nrng = np.random.default_rng(0)\n\nold = SoftmaxPolicy(catalog, \"old\")\nnew = SoftmaxPolicy(catalog, \"new\", history_weight=1.5, quality_weight=1.2)\n\nlogs = collect(config, catalog, old, 1000, rng)\nestimates = estimate_all(logs, logs.rewards, new, config.examine_decay, rng)\ntruth = true_value(config, catalog, new, 200_000, rng)\n\nprint(\"true value:\", round(truth.reward, 3))\nprint({name: round(value, 3) for name, value in estimates.items()})\n```\n\nOr train an agent:\n\n```python\nfrom recarena import SlateRecEnv\n\nenv = SlateRecEnv()\nobs, info = env.reset(seed=0)\nobs, reward, terminated, truncated, info = env.step(env.action_space.sample())\nprint(reward, info[\"cost\"])\n```\n\n## What the stress test found\n\n**No estimator won everywhere.** The results depended on how far the new policy was from the logged one, and on what the model knew.\n\nResults for the two new policies far from the logged one, with 5,000 logged sessions, across 5 catalogs and 10 logged datasets per catalog:\n\n| Scenario | SNPDIS | Direct | DR |\n|---|---:|---:|---:|\n| Informed model | 18.5% | **2.5%** | 86.1% |\n| Uninformed model | 21.6% | **14.4%** | 52.2% |\n| Hidden item appeal | 18.3% | **3.5%** | 44.5% |\n| Sponsored items drive users away | 17.2% | **2.8%** | 24.0% |\n| All of the above | **15.2%** | 22.0% | 35.8% |\n\n*Reward error (RMSE as a share of the true value, lower is better). IPS, SNIPS and PDIS were never the best here, and are in the full results.*\n\nEach estimate was also tested against budgets 10% above and below the policy's true cost:\n\n| Scenario | SNPDIS | Direct | DR |\n|---|---:|---:|---:|\n| Informed model | 64% | **100%** | 83% |\n| Uninformed model | 63% | 55% | **70%** |\n| Hidden item appeal | 64% | **100%** | 79% |\n| Sponsored items drive users away | 70% | **100%** | 84% |\n| All of the above | 62% | 65% | **80%** |\n\n*Share of budget decisions that were correct (higher is better). A method that always gives the same answer scores 50%.*\n\nWhat this suggests so far:\n\n- **Close to the logged policy, the choice barely matters.** All six estimators were accurate, and all got 100% of budget decisions right.\n- **The direct method is only as good as its features.** It stayed accurate with hidden effects when it knew about quality and sponsorship, and it became the wrong choice for budgets when it d",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 18,
+    "total_entries": 24,
+    "top_level_directories": [
+      ".github",
+      "results",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/tests.yml"
+    ],
+    "test_files_count": 3,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "NumPy",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:23+00:00",
+  "detail_source": "api"
+}

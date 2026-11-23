@@ -1,0 +1,14 @@
+{
+  "full_name": "rdlugs/sentryward",
+  "url": "https://github.com/rdlugs/sentryward",
+  "description": "Self-hosted AI code reviewer with automated reviews, inline suggestions, and flexible support for cloud and local models.",
+  "owner": "rdlugs",
+  "is_fork": false,
+  "stars": 0,
+  "language": "TypeScript",
+  "commits": 3,
+  "pull_requests": 4,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

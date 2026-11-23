@@ -1,0 +1,14 @@
+{
+  "full_name": "mikesilvers/rag-docker",
+  "url": "https://github.com/mikesilvers/rag-docker",
+  "description": "RAG creation as a docker instance.",
+  "owner": "mikesilvers",
+  "is_fork": false,
+  "stars": 1,
+  "language": "Python",
+  "commits": 3,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

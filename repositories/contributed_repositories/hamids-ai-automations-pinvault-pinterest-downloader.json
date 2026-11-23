@@ -1,0 +1,14 @@
+{
+  "full_name": "hamids-ai-automations/pinvault-pinterest-downloader",
+  "url": "https://github.com/hamids-ai-automations/pinvault-pinterest-downloader",
+  "description": "PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export",
+  "owner": "hamids-ai-automations",
+  "is_fork": false,
+  "stars": 1,
+  "language": "JavaScript",
+  "commits": 7,
+  "pull_requests": 0,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": true
+}

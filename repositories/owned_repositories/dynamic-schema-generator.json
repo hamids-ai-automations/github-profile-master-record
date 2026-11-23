@@ -1,0 +1,123 @@
+{
+  "id": "R_kgDOVOhebA",
+  "name": "dynamic-schema-generator",
+  "full_name": "hamids-ai-automations/dynamic-schema-generator",
+  "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
+  "description": "Dynamic Schema Generator for WordPress: Automated, accurate JSON-LD Schema.org structured data engine with Elementor integration.",
+  "homepage": "https://hamid-resume.web.app/",
+  "created_at": "2026-10-18T15:23:39Z",
+  "updated_at": "2026-10-18T15:24:14Z",
+  "pushed_at": "2026-11-21T20:28:12Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-21T20:28:11Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "PHP",
+  "languages": {
+    "PHP": 158198,
+    "CSS": 4035,
+    "JavaScript": 3721
+  },
+  "language_total_size": 165954,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 1,
+  "releases": [
+    {
+      "name": "Dynamic Schema Generator for WordPress v1.0.0",
+      "tag_name": "v1.0.0",
+      "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator/releases/tag/v1.0.0",
+      "published_at": "2026-10-18T15:25:16Z",
+      "is_prerelease": false
+    }
+  ],
+  "tags_count": 1,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "elementor",
+    "faq-schema",
+    "geo",
+    "json-ld",
+    "local-seo",
+    "martech",
+    "php",
+    "schema",
+    "seo",
+    "structured-data",
+    "wordpress",
+    "wordpress-plugin"
+  ],
+  "size_kb": 60,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/dynamic-schema-generator/blob/main/README.md",
+    "has_readme": true,
+    "length": 13245,
+    "excerpt": "<h1 align=\"center\">Dynamic Schema Generator for WordPress</h1>\n<h3 align=\"center\">Automated, Production-Grade JSON-LD Schema.org Structured Data Engine with Elementor Integration</h3>\n\n<p align=\"center\">\n  <a href=\"https://github.com/hamid-digitalmarketer/dynamic-schema-generator/actions\"><img src=\"https://img.shields.io/badge/CI-Passing-2ea44f?style=for-the-badge&logo=githubactions&logoColor=white\" alt=\"CI Status\"></a>\n  <a href=\"https://wordpress.org/\"><img src=\"https://img.shields.io/badge/WordPress-5.8%20to%206.7+-21759b?style=for-the-badge&logo=wordpress&logoColor=white\" alt=\"WordPress Compatibility\"></a>\n  <a href=\"https://www.php.net/\"><img src=\"https://img.shields.io/badge/PHP-7.4%20|%208.0%20|%208.1%20|%208.2%20|%208.3-777bb4?style=for-the-badge&logo=php&logoColor=white\" alt=\"PHP Versions\"></a>\n  <a href=\"https://schema.org/\"><img src=\"https://img.shields.io/badge/Data%20Format-JSON--LD%20@graph-f59e0b?style=for-the-badge\" alt=\"JSON-LD Format\"></a>\n  <a href=\"https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20saw%20your%20Dynamic%20Schema%20Generator%20plugin%20on%20GitHub%20and%20would%20like%20to%20discuss%20a%20project%20or%20job%20opportunity.\"><img src=\"https://img.shields.io/badge/WhatsApp-Contact%20Author-25d366?style=for-the-badge&logo=whatsapp&logoColor=white\" alt=\"WhatsApp Consultation\"></a>\n</p>\n\n---\n\n## 📌 Executive Overview\n\n**Dynamic Schema Generator** (`dynamic-schema-generator`) is an enterprise-grade, object-oriented WordPress plugin engineered by **Muhammad Hamid** (Digital Marketing Head & MarTech Engineer). It automatically generates accurate, interconnected **Schema.org JSON-LD** structured data directly from WordPress content, landing pages, and **Elementor** layouts.\n\n### The Problem It Solves\n1. **AI-Generated Content Saturation:** Search engines (Google, Bing) and AI answer models (Gemini, ChatGPT, Perplexity) struggle to separate authentic business entities from synthetic spam. Structured, linked Knowledge Graphs enable crawlers to unambiguously verify who you are, what services you provide, and what questions you answer.\n2. **Zero-Click Searches:** Rich snippets and AI Overviews summarize answers directly in SERPs. Structured data provides verified entity anchors without hallucinations.\n3. **Bloatware in Legacy SEO Plugins:** Unlike bulky SEO suites that inject render-blocking scripts, heavy CSS, or vendor ads, Dynamic Schema Generator focuses exclusively on high-precision structured data with zero frontend runtime overhead.\n\n> **Important SEO Reality Check:** Valid structured data improves machine readability and eligibility for search engine features. Search engines decide independently how and when to display rich snippets or cite pages in AI Overviews. Dynamic Schema Generator never promises guaranteed rankings or rich snippet placements.\n\n---\n\n## ⚡ Core Features\n\n```\n+-----------------------------------------------------------------------------------+\n|                        Dynamic Schema Generator Engine                            |\n+-----------------------------------------------------------------------------------+\n            |                                           |\n            v                                           v\n[ Standard WordPress Content ]                 [ Elementor Layouts ]\n  • Posts & Pages                              • Post Document Tree Traversal\n  • Hierarchical Categories                    • Accordion Widgets -> FAQPage\n  • Post Authors -> Person                     • Toggle Widgets    -> FAQPage\n  • Featured Images -> ImageObject             • Heading Widgets   -> Section Outline\n            |                                           |\n            +---------------------+---------------------+\n                                  |\n                                  v\n                    +---------------------------+\n                    |  Schema.org Graph Builder |\n                    +---------------------------+\n                      • Organization ",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 45,
+    "total_entries": 55,
+    "top_level_directories": [
+      ".github",
+      "admin",
+      "includes",
+      "languages",
+      "tests"
+    ],
+    "important_files": [
+      "docker-compose.yml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 9,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 2,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [],
+    "dependencies": [],
+    "config_files": [
+      "docker-compose.yml"
+    ]
+  },
+  "external_links": [
+    "https://wordpress.org/",
+    "https://www.php.net/",
+    "https://schema.org/",
+    "https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20saw%20your%20Dynamic%20Schema%20Generator%20plugin%20on%20GitHub%20and%20would%20like%20to%20discuss%20a%20project%20or%20job%20opportunity",
+    "http://localhost:8080",
+    "https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20reviewed%20Dynamic%20Schema%20Generator%20and%20would%20like%20to%20discuss%20an%20enterprise%20SEO%20and%20Schema%20consulting%20project",
+    "https://hamid-resume.web.app/"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:57+00:00",
+  "detail_source": "api"
+}

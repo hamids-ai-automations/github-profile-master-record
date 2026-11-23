@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Pull Shark",
+    "slug": "pull_shark",
+    "tier": null,
+    "source_url": "https://github.com/hamids-ai-automations?tab=achievements",
+    "value": null,
+    "status": "unverified",
+    "note": "Achievement label present on public profile page; tier/points are not exposed by the GitHub API."
+  },
+  {
+    "name": "Quickdraw",
+    "slug": "quickdraw",
+    "tier": null,
+    "source_url": "https://github.com/hamids-ai-automations?tab=achievements",
+    "value": null,
+    "status": "unverified",
+    "note": "Achievement label present on public profile page; tier/points are not exposed by the GitHub API."
+  },
+  {
+    "name": "Pair Extraordinaire",
+    "slug": "pair_extraordinaire",
+    "tier": null,
+    "source_url": "https://github.com/hamids-ai-automations?tab=achievements",
+    "value": null,
+    "status": "unverified",
+    "note": "Achievement label present on public profile page; tier/points are not exposed by the GitHub API."
+  },
+  {
+    "name": "Achievements API availability",
+    "slug": "api_availability",
+    "tier": null,
+    "source_url": "https://docs.github.com/rest",
+    "value": null,
+    "status": "unavailable",
+    "note": "GitHub REST/GraphQL APIs do not expose achievement badges or their tiers. Badges can only be observed on the profile web page; values are intentionally left null rather than invented."
+  }
+]

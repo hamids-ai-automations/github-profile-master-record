@@ -1,0 +1,107 @@
+{
+  "id": "R_kgDOV294pA",
+  "name": "ghl-automation-engine",
+  "full_name": "hamids-ai-automations/ghl-automation-engine",
+  "url": "https://github.com/hamids-ai-automations/ghl-automation-engine",
+  "description": "Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies.",
+  "homepage": null,
+  "created_at": "2026-11-21T20:19:36Z",
+  "updated_at": "2026-11-22T04:27:56Z",
+  "pushed_at": "2026-11-22T20:01:48Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-22T20:01:38Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 440509
+  },
+  "language_total_size": 440509,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "api-client",
+    "automation",
+    "crm",
+    "gohighlevel",
+    "highlevel",
+    "idempotency",
+    "mcp",
+    "pagination",
+    "python",
+    "webhooks"
+  ],
+  "size_kb": 214,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ghl-automation-engine/blob/main/README.md",
+    "has_readme": true,
+    "length": 17938,
+    "excerpt": "---\nAIGC:\n    Label: \"1\"\n    ContentProducer: 001191440300708461136T1XGW3\n    ProduceID: a60f8e46820ea466ef0868a20e79d739_64158b3be5e411f184bd52540072b1e8\n    ReservedCode1: ADkDg75IRrLxsmT7VnbMUurc8BBlgxLfJaAPJHOg7LWEW+ueKuioY8QFZATuWTNEoJRqsGNUWG3hepfwmbLmL0XuCNH64gdvihEnI1zsBxixRDIeuyfWuZ+sGc9Or4GFJdx0SR/5NygP6xaEPWOnfr1LmPFUBGE20oVc7hSW4hLlshTWaPLYF31SDDQ=\n    ContentPropagator: 001191440300708461136T1XGW3\n    PropagateID: a60f8e46820ea466ef0868a20e79d739_64158b3be5e411f184bd52540072b1e8\n    ReservedCode2: ADkDg75IRrLxsmT7VnbMUurc8BBlgxLfJaAPJHOg7LWEW+ueKuioY8QFZATuWTNEoJRqsGNUWG3hepfwmbLmL0XuCNH64gdvihEnI1zsBxixRDIeuyfWuZ+sGc9Or4GFJdx0SR/5NygP6xaEPWOnfr1LmPFUBGE20oVc7hSW4hLlshTWaPLYF31SDDQ=\n---\n\n# ghl-automation-engine\n\nHighLevel (GoHighLevel) integration engine for teams that put automations in\nproduction and cannot afford them to be quietly wrong.\n\nThe GoHighLevel ecosystem already has a 900-tool MCP server. Tool *count* is not\nthe bottleneck. Reliability is. This project is deliberately narrow: it makes the\nfailure modes visible instead of silent.\n\n## The four failures this exists to prevent\n\n| Failure | What it looks like in production | What this library does |\n| --- | --- | --- |\n| Silent pagination truncation | Page 2 of 5 fails, the caller returns page 1, a downstream workflow treats 100 contacts as \"all contacts\" and archives the rest | Cursor walking is exhaustive by contract: you get a `Collection` with an honest `complete` flag, or a `GhlPartialResultError` carrying what was collected |\n| Refresh-token stampede | 12 concurrent workers see an expired token, all refresh, the provider rotates the refresh token, 11 calls return `invalid_grant`, the integration hard-fails | Single-flight refresh under a lock with a double-checked expiry, and the rotated token is persisted before the lock is released |\n| PII in logs | A debug line logs the contact upsert body and every email address lands in the log aggregator | Recursive redaction of credentials, emails, and phone numbers before any log record is emitted |\n| Untestable integrations | Every test needs a live sub-account and a private token, so there are no tests | An offline mock server with fault injection; the whole suite runs on a clean machine in seconds |\n| Webhook replays processed twice | A captured delivery is resent, or a platform retry arrives after a partial write, and the contact is created or the invoice is paid twice | Signature + timestamp window + an atomic seen-set; a duplicate returns `200` with `process=false`, so the sender stops retrying and your code does not run again |\n\n## Install\n\n```bash\ngit clone <this repo>\ncd ghl-automation-engine\npython -m pytest\n```\n\nNo dependencies. The runtime uses only the standard library, so `pytest` is the\nonly thing you need, and CI needs no Docker and no network.\n\n## Quickstart\n\n```python\nfrom ghl_client import ContactsResource, GhlClient, PrivateIntegrationToken\n\nclient = GhlClient(\n    PrivateIntegrationToken(token=\"pit-...\"),\n    location_id=\"loc_...\",\n)\n\ncontacts = ContactsResource(client)\nresult = contacts.search(query=\"@example.com\")\n\nif not result.complete:\n    raise SystemExit(f\"refusing to act on {len(result)} of an unknown total\")\n\nfor contact in result.items:\n    ...\n```\n\nIdempotent writes:\n\n```python\n# Replaying this call does not create a duplicate contact.\ncontacts.upsert({\"email\": \"jane@example.com\"}, idempotency_key=\"sync-run-2026-11-21\")\n```\n\n## Webhooks\n\n```python\nfrom ghl_webhooks import Receiver\n\nreceiver = Receiver([\"whsec_...\"])\n\ndef handle_delivery(headers, raw_body):\n    intake = receiver.handle(headers, raw_body)\n    if intake.should_process:\n        dispatch(intake.event)      # a real, first-time, verified event\n    return intake.http_status, {\"status\": intake.status.value}\n```\n\nThree things this does that a naive handler does not:\n\n* **Order matters.** Nothing is parsed until the signature verifies, and no event id is\n  claimed until every other check has passed — so an attacker cann",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 90,
+    "total_entries": 105,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "examples",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml",
+      "src/ghl_mock/app.py"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 24,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "MCP",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:51+00:00",
+  "detail_source": "api"
+}

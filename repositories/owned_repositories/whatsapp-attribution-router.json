@@ -1,0 +1,125 @@
+{
+  "id": "R_kgDOVPAntw",
+  "name": "whatsapp-attribution-router",
+  "full_name": "hamids-ai-automations/whatsapp-attribution-router",
+  "url": "https://github.com/hamids-ai-automations/whatsapp-attribution-router",
+  "description": "JavaScript and Python toolkit for UTM-based WhatsApp lead attribution, Google Sheets logging, and GoHighLevel CRM integration.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-19T02:35:54Z",
+  "updated_at": "2026-11-20T10:11:17Z",
+  "pushed_at": "2026-10-19T02:36:27Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-19T02:35:44Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 54527,
+    "JavaScript": 25843
+  },
+  "language_total_size": 80370,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 1,
+  "releases": [
+    {
+      "name": "v1.0.0: WhatsApp Attribution Router Initial Release",
+      "tag_name": "v1.0.0",
+      "url": "https://github.com/hamids-ai-automations/whatsapp-attribution-router/releases/tag/v1.0.0",
+      "published_at": "2026-10-19T02:36:27Z",
+      "is_prerelease": false
+    }
+  ],
+  "tags_count": 1,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "attribution",
+    "conversion-tracking",
+    "gohighlevel",
+    "google-sheets",
+    "javascript",
+    "lead-generation",
+    "marketing-automation",
+    "marketing-technology",
+    "python",
+    "utm-tracking",
+    "webhooks",
+    "whatsapp"
+  ],
+  "size_kb": 54,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/whatsapp-attribution-router/blob/main/README.md",
+    "has_readme": true,
+    "length": 10768,
+    "excerpt": "# WhatsApp Attribution Router\n\n[![CI Quality Assurance & Test Suite](https://github.com/hamid-digitalmarketer/whatsapp-attribution-router/actions/workflows/ci.yml/badge.svg)](https://github.com/hamid-digitalmarketer/whatsapp-attribution-router/actions/workflows/ci.yml)\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)\n[![Python: 3.11+](https://img.shields.io/badge/Python-3.11+-brightgreen.svg)](backend/)\n[![JavaScript: ES6+](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](src/)\n\n> **\"Turn WhatsApp Clicks into Trackable, Campaign-Attributed Leads.\"**  \n> An open-source JavaScript and Python toolkit that captures UTM campaign parameters, generates attributed WhatsApp click-to-chat links, and synchronizes lead events with Google Sheets, GoHighLevel CRM, or outbound webhooks.\n\n---\n\n## The Business Problem\n\nPerformance marketers and digital agencies spend thousands of dollars every month on **Meta Ads (Click-to-WhatsApp)**, **Google Search Ads**, and paid social campaigns. \n\nHowever, the moment a prospect leaves a landing page and jumps into the WhatsApp messaging interface, **standard analytics break into a complete black box**:\n\n1. **Lost Campaign Context:** Sales reps answering WhatsApp messages have no idea which ad, keyword, or campaign prompted the inquiry.\n2. **Attribution Blind Spots:** Advertising algorithms (Meta CAPI, Google Ads Smart Bidding) optimize blindly on button clicks rather than actual qualified conversations or closed revenue.\n3. **Disorganized Inbound Volume:** High-ticket leads get lumped together with casual, unqualified queries without CRM lead tagging or offline conversion loops.\n\n---\n\n## The Solution\n\n**WhatsApp Attribution Router** bridges the gap between web analytics and direct chat apps:\n\n- **Client-Side Parameter Capture:** Captures `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `gclid`, and `fbclid` with zero third-party cookies or fingerprinting.\n- **Dynamic WhatsApp Routing:** Formats official WhatsApp click-to-chat links (`https://wa.me/...`) with prefilled messages referencing the exact campaign name and an opaque lead reference token (`lead_ref`).\n- **Parallel Server-Side Dispatch:** Dispatches an event payload via `navigator.sendBeacon` or async fetch to a lightweight Python FastAPI gateway.\n- **Downstream Synchronization:** Automatically logs click rows to **Google Sheets**, syncs contacts and attribution tags to **GoHighLevel CRM**, and signs outbound webhooks for agency automations.\n\n---\n\n## Architecture & Data Flow\n\n```mermaid\nflowchart TD\n    subgraph Client [\"Browser / Landing Page\"]\n        Visitor([\"Visitor arrives via Ad\"]) --> Page[\"Landing Page (with UTM parameters)\"]\n        Page --> Router[\"WhatsApp Attribution Router (JS)\"]\n        Router --> Capture[\"Capture & Normalize UTMs\"]\n        Capture --> Storage[\"Session / Local Storage (Consent-Aware)\"]\n        Storage --> Click{\"Visitor Clicks WhatsApp CTA\"}\n        Click -->|1. Generate Prefilled URL| WA_App[\"WhatsApp Mobile / Web App\"]\n        Click -->|2. Send Event via Beacon| FastAPIGateway[\"Python FastAPI Gateway\"]\n    end\n\n    subgraph Backend [\"Server-Side Gateway (Python)\"]\n        FastAPIGateway --> Security[\"Rate Limiter & 512KB Size Cap\"]\n        Security --> Dedup[\"Deduplication Engine (48h Window)\"]\n        Dedup --> Dispatcher[\"Integration Dispatcher\"]\n    end\n\n    subgraph Integrations [\"Downstream Marketing Tech\"]\n        Dispatcher --> GSheets[\"Google Sheets API v4\"]\n        Dispatcher --> GHL[\"GoHighLevel CRM (v2 Contacts)\"]\n        Dispatcher --> Webhook[\"Generic Outbound Webhook (HMAC-SHA256)\"]\n    end\n\n    subgraph Conversion_Loop [\"Downstream Conversion Loop\"]\n        WA_App --> CustomerMsg[\"Customer Sends WhatsApp Message\"]\n        CustomerMsg --> SalesRep[\"Sales Representative Identifies lead_ref\"]\n        SalesRep --> CRM_Update[\"POST /api/v1/leads (Status: qualified)\"]\n        CRM_Update --> GHL\n        CRM_Update --> GSheets\n    end\n```\n\n---\n\n##",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 60,
+    "total_entries": 73,
+    "top_level_directories": [
+      ".github",
+      "backend",
+      "demo",
+      "docs",
+      "examples",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "backend/app/main.py",
+      "backend/pyproject.toml",
+      "backend/requirements.txt",
+      "package.json"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 13,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [],
+    "dependencies": [],
+    "config_files": [
+      "package.json"
+    ]
+  },
+  "external_links": [
+    "https://wa.me/...`",
+    "https://api.yourdomain.com/api/v1/events",
+    "https://example.com/services",
+    "https://www.google.com/",
+    "https://wa.me/923167417135"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:48+00:00",
+  "detail_source": "api"
+}

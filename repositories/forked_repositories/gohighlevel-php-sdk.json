@@ -1,0 +1,96 @@
+{
+  "id": "R_kgDOV3VphQ",
+  "name": "gohighlevel-php-sdk",
+  "full_name": "hamids-ai-automations/gohighlevel-php-sdk",
+  "url": "https://github.com/hamids-ai-automations/gohighlevel-php-sdk",
+  "description": "php sdk for gohighlevel api.",
+  "homepage": "https://musheabdulhakim.github.io/gohighlevel-php-sdk/",
+  "created_at": "2026-11-22T07:19:32Z",
+  "updated_at": "2026-11-22T07:19:32Z",
+  "pushed_at": "2026-11-22T09:23:22Z",
+  "default_branch": "master",
+  "last_commit_at": "2025-12-09T13:13:48Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "PHP",
+  "languages": {
+    "PHP": 403879
+  },
+  "language_total_size": 403879,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 8,
+  "branches_count": 3,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 566,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/gohighlevel-php-sdk/blob/master/README.md",
+    "has_readme": true,
+    "length": 10799,
+    "excerpt": "<div align=\"center\">\n<img src=\"art/sdk-art.jpg\" height=\"100\" alt=\"GoHighLevel PHP\">\n    <p align=\"center\">\n        <a href=\"https://github.com/MusheAbdulHakim/gohighlevel-php-sdk/actions\"><img alt=\"GitHub Workflow Status (master)\" src=\"https://github.com/MusheAbdulHakim/gohighlevel-php-sdk/actions/workflows/tests.yml/badge.svg\"></a>\n        <a href=\"https://packagist.org/packages/musheabdulhakim/gohighlevel-php\"><img alt=\"Total Downloads\" src=\"https://img.shields.io/packagist/dt/musheabdulhakim/gohighlevel-php\"></a>\n        <a href=\"https://packagist.org/packages/musheabdulhakim/gohighlevel-php\"><img alt=\"Latest Version\" src=\"https://img.shields.io/packagist/v/musheabdulhakim/gohighlevel-php\"></a>\n        <a href=\"https://packagist.org/packages/musheabdulhakim/gohighlevel-php\"><img alt=\"License\" src=\"https://img.shields.io/packagist/l/musheabdulhakim/gohighlevel-php\"></a>\n    </p>\n</div>\n\n------\n\n# GoHighLevel PHP SDK\n\nThis package provides a wonderful **PHP API** client that allows you to interact\nwith [GoHighLevel Api](https://highlevel.stoplight.io/docs/integrations/0443d7d1a4bd0-overview/). It's  built to simplify your interactions with the platform. This SDK provides a robust, type-safe, and easy-to-use interface for all major API endpoints, from managing businesses and contacts to handling payments and workflows.\n\n## Features ✨\n\n  * **100% PSR-compatible**: The SDK adheres to PSR standards, including PSR-18 for HTTP clients, making it compatible with any modern PHP framework.\n  * **Type-Safe & Predictable**: Written in PHP 8.1 with `strict_types`, the code is reliable and predictable.\n  * **Powerful Factory**: The `Factory` class gives you full control over the client's configuration, allowing you to set custom headers, API versions, and HTTP clients.\n  * **Comprehensive Resource Coverage**: Access all major GoHighLevel API resources through dedicated, logical methods (e.g., `->contacts()`, `->businesses()`, `->workflows()`).\n\n## Installation\n\nYou can install the SDK via Composer.\n\n```bash\ncomposer require musheabdulhakim/gohighlevel-php-sdk\n```\n\n## Quick Start\n\nThe easiest way to get started is to use the `GoHighLevel::client()` method. It handles the client configuration for you.\n\n```php\nuse MusheAbdulHakim\\GoHighLevel\\GoHighLevel;\n\n// Initialize the client with your API key\n$client = GoHighLevel::client('ACCESS_TOKEN');\n\n// Example: Get a business by its ID\n$businessId = 'your_business_id_here';\n$businessData = $client->businesses()->get($businessId);\n\nprint_r($businessData);\n```\n\n## Advanced Usage with the Factory\n\nFor more control over the client's configuration, use the `GoHighLevel::factory()` method. This is useful for setting a specific API version, a custom base URI, or integrating with a specific HTTP client like Guzzle.\n\n```php\nuse MusheAbdulHakim\\GoHighLevel\\GoHighLevel;\nuse GuzzleHttp\\Client as GuzzleClient;\n\n$client = GoHighLevel::factory()\n    ->withApiKey('YOUR_API_KEY')\n    // Set a custom base URI (optional)\n    ->withBaseUri('https://custom-api-endpoint.com')\n    // Set the API Version (optional)\n    ->withVersion('2024-05-15')\n    // Use a custom PSR-18 HTTP client (optional)\n    ->withHttpClient(new GuzzleClient())\n    ->make();\n\n// Now you can use the fully configured client\n$contacts = $client->contacts()->all();\n```\n\n-----\n\n## API Resources\n\nThe SDK provides a simple, object-oriented interface for accessing different GoHighLevel resources. Each resource is accessed via a dedicated method on the `Client` object.\n\n| Method                    | Resource Class                                                              | Description                               |\n| ------------------------- | --------------------------------------------------------------------------- | ----------------------------------------- |\n| `->businesses()`          | `MusheAbdulHakim\\GoHighLevel\\Resources\\Business`                            | Manage businesses.                        |\n| `->calendars()`           | `MusheA",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 235,
+    "total_entries": 318,
+    "top_level_directories": [
+      ".github",
+      "art",
+      "docs",
+      "src",
+      "tests"
+    ],
+    "important_files": [],
+    "workflow_files": [
+      ".github/workflows/formats.yml",
+      ".github/workflows/tests.yml"
+    ],
+    "test_files_count": 62,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 2,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [],
+    "dependencies": [],
+    "config_files": []
+  },
+  "external_links": [
+    "https://packagist.org/packages/musheabdulhakim/gohighlevel-php",
+    "https://highlevel.stoplight.io/docs/integrations/0443d7d1a4bd0-overview/",
+    "https://custom-api-endpoint.com",
+    "https://services.leadconnectorhq.com/oauth/token",
+    "https://musheabdulhakim.github.io/gohighlevel-php-sdk",
+    "https://pestphp.com/"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:51+00:00",
+  "detail_source": "api"
+}

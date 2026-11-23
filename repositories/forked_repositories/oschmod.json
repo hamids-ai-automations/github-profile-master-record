@@ -1,0 +1,97 @@
+{
+  "id": "R_kgDOVbFNvA",
+  "name": "oschmod",
+  "full_name": "hamids-ai-automations/oschmod",
+  "url": "https://github.com/hamids-ai-automations/oschmod",
+  "description": "chmod for Windows, macOS and Linux",
+  "homepage": "https://pypi.org/project/oschmod/",
+  "created_at": "2026-10-28T22:10:44Z",
+  "updated_at": "2026-10-28T22:10:44Z",
+  "pushed_at": "2026-10-28T22:12:25Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-28T00:13:15Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "language": "Python",
+  "languages": {
+    "Python": 55533
+  },
+  "language_total_size": 55533,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 28,
+  "branches_count": 4,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 228,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/oschmod/blob/main/README.md",
+    "has_readme": true,
+    "length": 9084,
+    "excerpt": "<p>\n    <a href=\"./LICENSE\" alt=\"License\">\n        <img src=\"https://img.shields.io/github/license/YakDriver/oschmod.svg\" /></a>\n    <a href=\"https://github.com/YakDriver/oschmod/actions/workflows/ci.yml\" alt=\"Build status\">\n        <img src=\"https://github.com/YakDriver/oschmod/actions/workflows/ci.yml/badge.svg?branch=main\" /></a>\n    <a href=\"https://pypi.python.org/pypi/oschmod\" alt=\"Python versions\">\n        <img src=\"https://img.shields.io/pypi/pyversions/oschmod.svg\" /></a>\n    <a href=\"https://pypi.python.org/pypi/oschmod\" alt=\"Version\">\n        <img src=\"https://img.shields.io/pypi/v/oschmod.svg\" /></a>\n</p>\n\n# oschmod\n\n***oschmod*** sets consistent file permissions across Windows, Linux and macOS.\n\n## oschmod TL;DR\n\n***oschmod*** brings `chmod` functionality to **Windows**, macOS, and Linux! If you're not familiar, `chmod` is a handy macOS and Linux-only tool for setting file permissions.\n\nPrior to ***oschmod***, Windows file permissions couldn't be set in the familiar `chmod` way. Tools did not translate `chmod`-style permissions into Windows-style file permissions. Even though Python's `os.chmod()` sets read, write, and execute file permissions, on Windows, `os.chmod()` basically has no effect. Even worse, Python on Windows gives no warnings or errors. If you think you set file permissions on Windows with `os.chmod()`, you're wrong!\n\n***oschmod*** allows you to set consistent file permissions in a consistent way across platforms.\n\n* Read more about [oschmod](https://medium.com/@dirk.avery/securing-files-on-windows-macos-and-linux-7b2b9899992) on Medium\n* For more background, have a look at the [oschmod Wiki](https://github.com/YakDriver/oschmod/wiki).\n\n## Installation\n\n```console\n$ pip install oschmod\n```\n\nOr with conda:\n\n```console\n$ conda install -c conda-forge oschmod\n```\n\n***oschmod*** requires Python 3.11 or newer. On Windows, it depends on `pywin32`, which is installed automatically.\n\n## GNU Documentation\n\n***oschmod*** changes the file mode bits of each given file according to mode, which can be either a symbolic representation of changes to make, or an octal number representing the bit pattern for the new mode bits.\n\nThe format of a symbolic mode is `[ugoa...][+-=][perms...]` where perms is zero or more letters from the set `rwx`. Multiple symbolic modes can be given, separated by commas.\n\nA combination of the letters `ugoa` controls which users' access to the file will be changed: the user who owns it (`u`), other users in the file's group (`g`), other users not in the file's group (`o`), or all users (`a`). If none of these are given, the effect is as if `a` were given.\n\n*(Modified from the GNU manpage for chmod.)*\n\n## Command line interface\n\n***oschmod*** brings the ability to set consistent file permissions using the command line to Windows, macOS, and Linux platforms. If you are familiar with `chmod`, ***oschmod*** works similarly, albeit with fewer options.\n\n```console\n$ oschmod -h\nusage: oschmod [-h] [-R] [-v] [--other-sid SID] [--version] mode object\n\nChange the mode (permissions) of a file or directory\n\npositional arguments:\n  mode             octal or symbolic mode of the object\n  object           file or directory\n\noptions:\n  -h, --help       show this help message and exit\n  -R               apply mode recursively\n  -v               verbose: show each object as its mode is set; repeat (-vv)\n                   to also show old and new modes\n  --other-sid SID  Windows only: SID that receives \"other\" permissions\n                   (default: S-1-5-32-545, the built-in Users group)\n  --version        show program's version number and exit\n```\n\nYou can also run it as `python -m oschmod`.\n\n## Command line examples\n\nYou can use symbolic (e.g., \"u+rw\") or octal (e.g., \"600\") representations of modes. Multiple mode modifications can be made in a single call by separating modifiers with commas.\n\n### Symbolic representation examples\n\nSymbolic representation mode modifiers have three parts:\n\n1. **whom:** To ",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 25,
+    "total_entries": 30,
+    "top_level_directories": [
+      ".github",
+      "oschmod",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/codeql.yml",
+      ".github/workflows/release.yml"
+    ],
+    "test_files_count": 4,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 6,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://pypi.python.org/pypi/oschmod",
+    "https://medium.com/@dirk.avery/securing-files-on-windows-macos-and-linux-7b2b9899992"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:44+00:00",
+  "detail_source": "api"
+}

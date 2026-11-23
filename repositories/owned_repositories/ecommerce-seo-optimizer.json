@@ -1,0 +1,113 @@
+{
+  "id": "R_kgDOVFgywQ",
+  "name": "ecommerce-seo-optimizer",
+  "full_name": "hamids-ai-automations/ecommerce-seo-optimizer",
+  "url": "https://github.com/hamids-ai-automations/ecommerce-seo-optimizer",
+  "description": "Audit and optimize e-commerce product listings at scale. Validates titles, descriptions, pricing, image alt tags, and exports keyword-optimized catalogs.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-12T04:41:55Z",
+  "updated_at": "2026-11-20T10:13:08Z",
+  "pushed_at": "2026-10-18T04:17:41Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-18T04:17:39Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 14285
+  },
+  "language_total_size": 14285,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "digital-marketing",
+    "e-commerce",
+    "ecommerce-seo",
+    "product-seo",
+    "python",
+    "seo-automation",
+    "shopify-seo",
+    "streamlit",
+    "catalog-optimization"
+  ],
+  "size_kb": 12,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ecommerce-seo-optimizer/blob/main/README.md",
+    "has_readme": true,
+    "length": 3904,
+    "excerpt": "# E-commerce SEO Optimizer\n\nA practical tool for e-commerce teams and SEO specialists to audit and improve on-page product listings at scale. Built with Python, Pandas, and Streamlit: upload a product catalog, see every title/description/image/price issue, review keyword-aware suggestions, and export an optimized copy — original columns are always preserved.\n\n## Problem it solves\n\nE-commerce stores often have hundreds or thousands of thin product listings: short titles, missing descriptions, no keywords, broken image references. Fixing them manually in a spreadsheet is slow and error-prone. This tool surfaces the exact problems, proposes concrete title/description improvements using the product's own brand/category/keywords, and produces a safe export for review before applying changes upstream.\n\n## Key features\n\n- Upload CSV or XLSX product catalogs (title, description, price, category, brand, image columns recognized and normalized)\n- Audit engine: empty/short/long titles, empty/short descriptions, missing prices, missing or malformed image URLs, duplicate titles\n- Severity grading: critical / warning / info\n- Suggestion engine: expands short titles with brand/category keywords, generates description copy, records reasons for every change\n- Safe apply: writes `optimized_title`, `optimized_description`, `optimized` columns without overwriting originals\n- Download the optimized catalog as CSV\n\n## Data expectations\n\nThe tool looks for a title column (`title`, `name`, `product`, `product title`) and optional description, price, category, brand, image columns. Unknown columns are ignored. Missing values are flagged, never guessed.\n\n## Technology stack\n\n- Python 3.11\n- Pandas (catalog processing)\n- Streamlit (web UI)\n- openpyxl (XLSX support)\n\n## Folder structure\n\n```\necommerce-seo-optimizer/\n├── app.py                  # Streamlit application\n├── optimizer.py            # Validation, suggestion, and export engine\n├── tests/\n│   └── test_optimizer.py\n├── requirements.txt\n└── .gitignore\n```\n\n## Installation\n\n```bash\npython -m venv venv\n# Windows: venv/Scripts/activate  |  macOS/Linux: source venv/bin/activate\npip install -r requirements.txt\n```\n\n## Usage\n\n```bash\nstreamlit run app.py\n```\n\nUpload a catalog or use the bundled sample, review the issues and suggestions, then apply and download the optimized file.\n\n## Testing\n\n```bash\npytest -q\n```\n\nTests cover issue detection, suggestion generation, missing-title handling, safe apply behavior, and CSV export.\n\n## Limitations and known issues\n\n- Keyword extraction is heuristic (brand, category, top words); it is not a full SEO content service\n- Title length guidance uses common best-practice ranges (20-70 title, 50-160 description) — tune the constants in `optimizer.py` to your vertical if needed\n- No integration with platforms (Shopify, WooCommerce, etc.); export and import manually\n\n## Future improvements\n\n- Keyword density scoring and SERP snippet preview\n- Competitor title analysis (from a comparison file)\n- Shopify/WooCommerce export formats\n- Batch apply via a reviewed CSV diff\n\n## Related projects\n\n- [seo-doctor](https://github.com/hamid-digitalmarketer/seo-doctor) — automated technical SEO site crawler\n- [seo-audit-tool](https://github.com/hamid-digitalmarketer/seo-audit-tool) — on-page SEO audit and website health checker\n\n## License\n\nMIT — see [LICENSE](LICENSE).\n\n---\n\n**Developed by Muhammad Hamid**\n\nDigital Marketing | SEO | Performance Marketing | E-commerce | Web Development\n\n- Portfolio: [https://hamid-resume.web.app/](https://hamid-resume.web.app/)\n- LinkedIn: [https://www.linkedin.com/in/muhammad-hamid-digital-marketing/](https://www.linkedin.com/in/muhammad-hamid-digital-marketing/)\n- WhatsApp: [https://wa.me/923167417135](https://wa.me/923167417135)\n\nHave a project, job opportunity, or collaboration in mind? [Contact Muhammad Hamid on WhatsApp](https://wa.me/923167417135).\n",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 8,
+    "total_entries": 11,
+    "top_level_directories": [
+      ".github",
+      "tests"
+    ],
+    "important_files": [
+      "app.py",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 1,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Streamlit",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [
+      "openpyxl",
+      "pandas",
+      "pytest",
+      "streamlit"
+    ],
+    "config_files": [
+      "requirements.txt"
+    ]
+  },
+  "external_links": [
+    "https://hamid-resume.web.app/",
+    "https://www.linkedin.com/in/muhammad-hamid-digital-marketing/",
+    "https://wa.me/923167417135"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:51+00:00",
+  "detail_source": "api"
+}

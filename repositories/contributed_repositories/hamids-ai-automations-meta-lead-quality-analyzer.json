@@ -1,0 +1,14 @@
+{
+  "full_name": "hamids-ai-automations/meta-lead-quality-analyzer",
+  "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
+  "description": "Open-source lead quality scoring & CRM revenue feedback engine for Meta Ads. Detects fake leads, disposable emails, bot form fatigue, and optimizes Cost-Per-Qualified-Lead (CPQL).",
+  "owner": "hamids-ai-automations",
+  "is_fork": false,
+  "stars": 1,
+  "language": "Python",
+  "commits": 8,
+  "pull_requests": 0,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": true
+}

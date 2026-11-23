@@ -1,0 +1,97 @@
+{
+  "id": "R_kgDOVbnOlw",
+  "name": "h-ssh",
+  "full_name": "hamids-ai-automations/h-ssh",
+  "url": "https://github.com/hamids-ai-automations/h-ssh",
+  "description": "Multi-vendor network automation framework with parallel execution, safety gates, and audit logging",
+  "homepage": null,
+  "created_at": "2026-10-29T10:03:45Z",
+  "updated_at": "2026-10-29T10:03:45Z",
+  "pushed_at": "2026-10-29T10:50:00Z",
+  "default_branch": "develop",
+  "last_commit_at": "2026-10-29T09:50:34Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "NOASSERTION",
+  "license_name": "Other",
+  "language": "Python",
+  "languages": {
+    "Python": 1937429,
+    "Shell": 6213
+  },
+  "language_total_size": 1943642,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 3,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 2055,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/h-ssh/blob/develop/README.md",
+    "has_readme": true,
+    "length": 163792,
+    "excerpt": "<div align=\"center\">\n\n<img src=\"assets/banner.svg\" alt=\"H-SSH // the fleet loop, not the session // h-network\" width=\"600\">\n \n<br/>\n\n[![License: PolyForm Noncommercial 1.0.0](assets/badges/license.svg)](LICENSE)\n![Python 3.10+](assets/badges/python.svg)\n![Vendors: junos ssh openssh telnet](assets/badges/vendors.svg)\n![Runtime dependencies: paramiko and PyEZ](assets/badges/deps.svg)\n\n</div>\n\n# h-ssh\n\n`h-ssh` runs commands across a fleet of network devices: one device or three hundred, Juniper, any SSH host, or a console\nstill speaking telnet. Devices are worked in parallel, results are collected per device, and one dead box does not sink a run:\nevery run probes the boxes first (unless you say `--no-probe`), without logging in, so a dead one is a FAIL within seconds,\nand an edit does not go on without a box the probe found dead unless you say so.\n\nThe per-device session is a solved problem; what is left is everything around it: the thread pool, per-device result collection, a rate\nlimiter (`--safety-file`) so a router that already failed is not hammered, and a record of what changed (`--audit-log`). That is\nthe part h-ssh provides.\n\nOn Junos, everything goes through PyEZ over NETCONF, reads and writes alike, which gives one session, real RPC errors, and the lock, diff\nand rollback that config changes need. Every edit is probed for reachability (unless `--no-probe`) and prompts before it commits;\nwith `--audit-log` it lands in a JSONL audit trail.\n`--commit-confirmed` puts the device back the way it was if you never confirm.\n\n## Features\n\n- **Four transports, one interface.** Juniper (PyEZ over NETCONF), any SSH host through paramiko or the system `ssh` binary, and raw-socket telnet with IOS-, Junos-, Arista- and NX-OS-flavoured prompt handling. Same flags whichever you point it at; the ones only a Junos transport can honour (`--dry-run` on an edit, `--show-diff`, `--commit-confirmed`, and over NETCONF `--comment`, `--format`, `--rollback`, `--commit-status`) are refused on the others device by device: such a device is a FAIL with the reason, nothing is sent to it, and the run exits 1; never faked.\n- **Parallel by default.** Devices are worked concurrently behind an `asyncio` semaphore, `--workers 8` out of the box.\n- **One command or many, one device or many.** `--batch` runs several commands per device on a single connection; `--job` takes a JSON file with different commands — and different modes — per device, readable from a file or stdin.\n- **A dead box costs seconds, not a worker.** Every run starts with a probe (`--no-probe` skips it) — a TCP connect and the SSH banner, no login, 100 boxes at a time — and goes to the boxes that answered; `--probe` alone is a health check of the fleet, with each box's TCP handshake round trip as the kernel measured it and the time its sshd took to answer. See [The probe](#the-probe).\n- **Writes are gated.** The probe's question before a partial deployment, `y/N` confirmation, `--dry-run` that shows the diff without committing and `--commit-confirmed N` for changes that undo themselves unless you confirm within N minutes (both Junos), and an opt-in per-device rate limit and cooldown (`--safety-file`).\n- **Templates instead of memorised syntax.** `-sC bgp` resolves through a per-vendor JSON template library — *per target*, so the same shortcut sends a Junos router and an EOS switch each their own command. Drop your own in `~/.h-ssh/commands/{dialect}.json` (`junos`, `ios`, `nxos`, `eos`, `none`) to add or override; `junos`, `eos` and `none` ship one.\n- **Built to be scripted.** `--json` on stdout, a structured summary line on stderr, meaningful exit codes, and credentials from `HSSH_USER` / `HSSH_PASSWORD` — or import `hssh` and skip the CLI entirely. A whole fleet run fits in one YAML file (`--run fleet.yaml`) that a pipeline step or a jump-host session runs as it is.\n- **Built for a maintenance, not just a run.** A session pool keeps one NETCONF session per router open for a whole script; `r",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 108,
+    "total_entries": 126,
+    "top_level_directories": [
+      ".github",
+      "assets",
+      "h-app"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/tests.yml"
+    ],
+    "test_files_count": 55,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://raw.githubusercontent.com/h-network/h-ssh/develop/install.sh",
+    "https://pipx.pypa.io",
+    "https://docs.astral.sh/uv/"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:42+00:00",
+  "detail_source": "api"
+}

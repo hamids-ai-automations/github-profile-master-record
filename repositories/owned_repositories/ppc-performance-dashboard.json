@@ -1,0 +1,114 @@
+{
+  "id": "R_kgDOVFa1rg",
+  "name": "ppc-performance-dashboard",
+  "full_name": "hamids-ai-automations/ppc-performance-dashboard",
+  "url": "https://github.com/hamids-ai-automations/ppc-performance-dashboard",
+  "description": "Interactive PPC performance dashboard: normalize and visualize multi-channel ad spend, ROAS, CPA, conversion trends, and period-over-period comparisons.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-12T02:35:47Z",
+  "updated_at": "2026-11-20T10:13:04Z",
+  "pushed_at": "2026-10-18T04:17:55Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-18T04:17:54Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 12350
+  },
+  "language_total_size": 12350,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "ad-reporting",
+    "data-visualization",
+    "google-ads",
+    "marketing-dashboard",
+    "meta-ads",
+    "performance-marketing",
+    "python",
+    "streamlit",
+    "ppc-dashboard"
+  ],
+  "size_kb": 19,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ppc-performance-dashboard/blob/main/README.md",
+    "has_readme": true,
+    "length": 3956,
+    "excerpt": "# PPC Performance Dashboard\n\nAn interactive paid-media performance dashboard built with Python, Pandas, Plotly, and Streamlit. Upload a Google Ads / Meta Ads / Bing Ads export, and get normalized KPIs, filters, trend charts, campaign and ad group breakdowns, period-over-period comparison, and CSV export — all in one page.\n\n## Problem it solves\n\nMarketers waste hours stitching CSV exports into Excel to answer simple questions: *\"How did CTR change this month?\"*, *\"Which ad group has the lowest cost per conversion?\"* This dashboard answers those questions instantly with consistent KPI definitions (CTR, CPC, CPA, conversion rate) and honest, clearly-labeled derived metrics.\n\n## Key features\n\n- Upload CSV or XLSX exports; column names are normalized automatically (date, campaign, ad group, impressions, clicks, spend, conversions)\n- Automatic KPI calculation: CTR, CPC, Cost/Conversion, conversion rate\n- Sidebar filters: date range, campaign, ad group\n- Trend chart for clicks and conversions over time\n- Performance tables and charts by campaign and by ad group\n- Period-over-period comparison with absolute and percentage deltas\n- Download summarized results as CSV\n- Bundled synthetic sample data for an instant demo\n\n## Data expectations\n\nThe dashboard expects at least a date column and one or more of: impressions, clicks, spend, conversions. Recognized date column names include `date`, `day`, `Date`. Campaign and ad group columns are optional but recommended. Any numeric column that is missing is treated as zero; derived metrics are never invented — they are computed from the columns actually present.\n\n## Technology stack\n\n- Python 3.11\n- Pandas (data processing)\n- Plotly (interactive charts)\n- Streamlit (web UI)\n- openpyxl (XLSX upload support)\n\n## Folder structure\n\n```\nppc-performance-dashboard/\n├── app.py                  # Streamlit application\n├── data_processor.py       # Normalization, KPI, filter, aggregation, comparison engine\n├── tests/\n│   └── test_data_processor.py\n├── sample_data.csv         # Synthetic demo data (4 weeks, 4 campaigns)\n├── requirements.txt\n└── .gitignore\n```\n\n## Installation\n\n```bash\npython -m venv venv\n# Windows: venv\\Scripts\\activate  |  macOS/Linux: source venv/bin/activate\npip install -r requirements.txt\n```\n\n## Usage\n\n```bash\nstreamlit run app.py\n```\n\nChoose **Use bundled sample data** for an instant demo, or upload your own campaign export.\n\n## Testing\n\n```bash\npytest -q\n```\n\nTests cover column normalization, KPI math, campaign filters, date-range filters, aggregation, and period comparison.\n\n## Limitations and known issues\n\n- The comparison assumes calendar-aligned equal-length periods\n- Real exports vary by ad platform; unknown columns are ignored (no guessing)\n- No multi-touch attribution or incrementality modeling — the dashboard reports platform-reported metrics as-is\n\n## Future improvements\n\n- Budget pacing / burn-rate alerts\n- Multi-platform data merge (Google Ads + Meta + Bing)\n- Forecasts using simple time-series models\n- Scheduled email delivery of the report\n\n## Related projects\n\n- [ppc-waste-detector](https://github.com/hamid-digitalmarketer/ppc-waste-detector) — forensic detection of wasted ad spend and exclusion list generation\n- [conversion-tracking-doctor](https://github.com/hamid-digitalmarketer/conversion-tracking-doctor) — diagnostics and fixes for broken conversion tracking\n\n## License\n\nMIT — see [LICENSE](LICENSE).\n\n---\n\n**Developed by Muhammad Hamid**\n\nDigital Marketing | SEO | Performance Marketing | E-commerce | Web Development\n\n- Portfolio: [https://hamid-resume.web.app/](https://hamid-resume.web.app/)\n- LinkedIn: [https://www.linkedin.com/in/muhammad-hamid-digital-marketing/](https://www.linkedin.com/in/muhammad-hamid-digital-marketing/)\n- WhatsApp: [https://wa.me/923167417135](https://wa.me/923167417135)\n\nHave a project, job opportunity, or collaboration in mind? [Contact Muhammad Hamid on WhatsApp](https://wa.me/923167417135).\n",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 9,
+    "total_entries": 12,
+    "top_level_directories": [
+      ".github",
+      "tests"
+    ],
+    "important_files": [
+      "app.py",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 1,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Streamlit",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [
+      "openpyxl",
+      "pandas",
+      "plotly",
+      "pytest",
+      "streamlit"
+    ],
+    "config_files": [
+      "requirements.txt"
+    ]
+  },
+  "external_links": [
+    "https://hamid-resume.web.app/",
+    "https://www.linkedin.com/in/muhammad-hamid-digital-marketing/",
+    "https://wa.me/923167417135"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:51+00:00",
+  "detail_source": "api"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "R_kgDOViPt6A",
+  "name": "bite",
+  "full_name": "hamids-ai-automations/bite",
+  "url": "https://github.com/hamids-ai-automations/bite",
+  "description": "Checks whether the \"fixed\" in your AI coding agent's commits is true. It takes each fix back out and runs your tests. Free, with no key.",
+  "homepage": "",
+  "created_at": "2026-11-04T05:19:14Z",
+  "updated_at": "2026-11-04T05:19:14Z",
+  "pushed_at": "2026-11-04T07:22:54Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-03T02:26:39Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 592061
+  },
+  "language_total_size": 592061,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 17,
+  "branches_count": 12,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 1208,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/bite/blob/main/README.md",
+    "has_readme": true,
+    "length": 32005,
+    "excerpt": "<p>\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://raw.githubusercontent.com/connabyss/bite/main/assets/bite-header-dark.png\">\n    <img alt=\"Bite\" src=\"https://raw.githubusercontent.com/connabyss/bite/main/assets/bite-header-light.png\" width=\"300\">\n  </picture>\n</p>\n\n[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Bite%20free%20check-blue?logo=github)](https://github.com/marketplace/actions/bite-free-check)\n\n**Would your tests catch it if the bug came back?**\n\nBite checks whether an AI coding agent's \"fixed\" is actually true.\n\n<img alt=\"bite --demo: one fix is noticed by a test, the other has no test at all\" src=\"https://raw.githubusercontent.com/connabyss/bite/main/assets/bite-demo.svg\" width=\"760\">\n\n**Try it now.** It's free, needs no key, and never changes your files. If you have Python, paste these two\nlines into any terminal window (PowerShell, cmd, Terminal):\n\n```\npython -m pip install bite-check\npython -m bite_check --free\n```\n\nOutside a project, Bite first shows a demo on a tiny made-up one. To check your own project, type the second line\nand a space, drag your project's folder into the window (that types its path), and press Enter.\n\nHave [pipx](https://pipx.pypa.io) or [uv](https://docs.astral.sh/uv/)? One line does it, no install:\n`pipx run bite-check --free` or `uvx bite-check --free`. (On Linux or a Mac, if pip says \"externally managed\",\nuse one of those.) If your commits never say \"fix\", add `--any` to check every recent change. To keep Bite\ninstalled as a `bite` command, see [Try it in a minute](#try-it-in-a-minute).\n\n**Here for Hack Week or your first open-source PR?** These [good first issues](https://github.com/connabyss/bite/labels/good%20first%20issue)\nare small, and each one says where to look and when it's done. Comment on one to claim it.\n\n## Why you need this\n\nWhen an AI fixes a bug for you, it often says \"Fixed, and I added a test.\" If you don't read code, you can't tell\nif that's true.\n\nA test is a tiny robot that checks one thing, like \"2 + 2 should be 4\", and shouts when it isn't. A good test\nshouts if the bug ever comes back. A weak one stays quiet no matter what.\n\nBite checks your robots. It puts the old bug back on purpose and watches whether any test shouts. It's like\ntesting a smoke alarm with real smoke instead of trusting the little green light.\n\nIf a test shouts, that fix is guarded. If they all stay quiet, the next change, by you or your AI, could bring the\nbug back and nobody would notice. Bite names that fix, so you can tell your AI: \"add a test that fails without\nthis fix.\"\n\n## How it works\n\nIt takes each recent fix back out of your code and runs your tests. If they still pass, nothing guards that fix,\nand Bite tells you which one. That free check needs no key and works with pytest, npm test, cargo test, go test,\ndotnet test, Maven and Gradle (Java and Kotlin):\n\n```\npipx install bite-check\nbite --free\n```\n\nWith your own API key it goes one step further: it writes one small test of the commit's exact claim and runs it.\nThat is how it found a memory leak in [prosemirror-py](#the-catch-that-shows-what-its-for) that a commit said it\nhad fixed.\n\n> \"Reverting the claimed fix and making the change prove itself under a real test is exactly the kind of check that\n> should exist for every \"fixed\" commit.\"\n>\n> — [Ivan Zdravkov](https://zdravkov.info), [on DEV](https://dev.to/izdravkov/comment/3jdej)\n\n## Try it in a minute\n\nInstall once with [pipx](https://pipx.pypa.io), which gives Bite its own space so there's no venv to set up or\nactivate:\n\n```\npython -m pip install --user pipx\npython -m pipx ensurepath\n```\n\nClose the terminal window and open a new one, then:\n\n```\npipx install bite-check\nbite --demo\n```\n\n`bite --demo` builds a tiny made-up shop project in a temporary folder and runs the free check on it. Two of\nits commits say they fixed something: one added a test for its fix, the other didn't. Bite takes each fix back\nout and runs the tests, and you ",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 111,
+    "total_entries": 126,
+    "top_level_directories": [
+      ".claude-plugin",
+      ".github",
+      "assets",
+      "bot",
+      "evidence",
+      "plugin",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/bite.yml",
+      ".github/workflows/bot.yml",
+      ".github/workflows/pr-checklist.yml",
+      ".github/workflows/publish.yml",
+      ".github/workflows/self-check.yml",
+      ".github/workflows/tests.yml"
+    ],
+    "test_files_count": 58,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 6,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "MCP",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://raw.githubusercontent.com/connabyss/bite/main/assets/bite-header-dark.png",
+    "https://raw.githubusercontent.com/connabyss/bite/main/assets/bite-header-light.png",
+    "https://raw.githubusercontent.com/connabyss/bite/main/assets/bite-demo.svg",
+    "https://pipx.pypa.io",
+    "https://docs.astral.sh/uv/",
+    "https://zdravkov.info",
+    "https://dev.to/izdravkov/comment/3jdej",
+    "https://code.claude.com/docs/en/agent-sdk/overview",
+    "https://shields.io/badges/endpoint-badge"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:21+00:00",
+  "detail_source": "api"
+}

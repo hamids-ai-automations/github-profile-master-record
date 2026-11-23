@@ -1,0 +1,127 @@
+{
+  "id": "R_kgDOVFi44A",
+  "name": "ai-marketing-growth-os",
+  "full_name": "hamids-ai-automations/ai-marketing-growth-os",
+  "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
+  "description": "Autonomous agentic marketing intelligence platform with human-in-the-loop governance and outcome tracking for multi-channel growth.",
+  "homepage": "https://marvis.web.app/",
+  "created_at": "2026-10-12T05:16:12Z",
+  "updated_at": "2026-11-20T10:13:11Z",
+  "pushed_at": "2026-10-18T04:17:25Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-18T04:17:24Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 73147,
+    "HTML": 6546,
+    "Dockerfile": 793
+  },
+  "language_total_size": 80486,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "adtech",
+    "agentic-ai",
+    "ai-marketing",
+    "autonomous-agents",
+    "growth-hacking",
+    "marketing-automation",
+    "marketing-intelligence",
+    "martech",
+    "python",
+    "agentic-workflow",
+    "evaluation",
+    "human-in-the-loop",
+    "llm",
+    "mcp"
+  ],
+  "size_kb": 48,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os/blob/main/README.md",
+    "has_readme": true,
+    "length": 6339,
+    "excerpt": "# ai-marketing-growth-os\n\nAgentic marketing intelligence platform — a **virtual digital marketing department**.\nFour specialist agents (SEO, Ads, E-commerce, Analytics) read real sample data through\npermission-gated tools, produce **structured, evidence-backed recommendations**, deduplicate\nand prioritize them into a unified action plan, and route every consequential action through a\n**human-in-the-loop approval queue**.\n\nBuilt on the shared portfolio foundation\n[`ai-marketing-shared`](https://github.com/hamid-digitalmarketer/ai-marketing-shared):\nPydantic v2 schemas, tool registry, tracing, cost accounting, eval harness, provider abstraction.\n\n> `docker compose up` runs the full pipeline on sample data and produces evidence-backed\n> recommendations in the dashboard — with **zero API keys** and **zero cost**.\n\n## Problem\n\nMarketing teams drown in disconnected dashboards. SEO tells you about rankings, ads tells you\nabout spend, e-commerce tells you about inventory, analytics tells you about traffic — and a\nhuman has to stitch them together, guess which issue matters most, and risk acting without\nevidence. Consequential actions (publishing, budget changes, campaign edits) are rarely gated,\nso mistakes are expensive.\n\n## Approach\n\nGrowth OS models a marketing department as a set of **tool-using agents**:\n\n- **SEO agent** — crawls + GSC + PageSpeed: broken links, missing meta descriptions, low-CTR\n  queries, slow pages.\n- **Ads agent** — Google Ads + Meta Ads: CPA over target, low CTR creatives, weak ROAS campaigns.\n- **E-commerce agent** — product catalog: stock-outs, reorder points, weak PDP conversion,\n  pricing outliers.\n- **Analytics agent** — GA sessions + GSC: rising bounce, conversion-rate decline, mobile issues.\n\nEvery agent:\n\n1. calls **tools** (never hallucinated numbers) at the lowest permission level required;\n2. emits **structured recommendations** conforming to shared `Recommendation` / `Evidence` schemas;\n3. records a full **trace** (`AgentRun` with tool calls, latency, cost);\n4. is **evaluated** against labeled datasets for factual accuracy, tool-use success,\n   recommendation quality, prompt-injection resistance, cost, and latency.\n\nAn **orchestrator** deduplicates and ranks the combined recommendations into one action plan,\nand every write-type action lands in the **approval queue** (`pending → approved → rejected →\nexecuted → measured`) where a human decides.\n\n## Architecture\n\n```mermaid\nflowchart LR\n    subgraph Data[\"data/sample_data (CSV, zero keys)\"]\n        WC[website_crawl] & GSC[gsc_keywords] & PS[pagespeed] & GA[ga_sessions]\n        GAD[google_ads] & MAD[meta_ads] & PC[product_catalog]\n    end\n    Data -->|tools/| T[ToolRegistry + MCP adapters]\n    T --> A[agents: SEO / Ads / E-commerce / Analytics]\n    A -->|structured Recommendation| O[orchestration: dedupe + prioritize]\n    O -->|ActionPlan| B[backend: FastAPI]\n    B --> Q[approval queue]\n    Q -->|approve/execute/measure| F[frontend dashboard]\n    A -->|AgentRun traces| V[trace viewer]\n```\n\nDesign decisions and tradeoffs are documented in [docs/architecture.md](docs/architecture.md).\n\n## Repository layout\n\n```\nbackend/          FastAPI app + approval queue state machine\nagents/           SEO, Ads, E-commerce, Analytics agents\ntools/            Tool functions + MCP adapters + registry\norchestration/    Dedupe, priority ranking, unified action plan\ndata/             sample_data/ + connectors\nevaluation/       datasets/ + pytest suites (6 dimensions)\ndemo/             Rule-based demo mode (zero API keys)\nfrontend/         Lightweight dashboard (no build step)\ninfra/            Dockerfile (multi-stage) + docker-compose.yml\ndocs/             architecture.md, evaluation.md, cost-controls.md\n.github/workflows CI: lint, typecheck, test, eval, docker build\n```\n\n## Quick start (demo mode, zero API keys)\n\nRequires Python 3.11+. The shared package is installed from the sibling checkout.\n\n```bash\n# from the parent ai_portfolio directory\npip install -e ai-marketi",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 60,
+    "total_entries": 77,
+    "top_level_directories": [
+      ".github",
+      "agents",
+      "backend",
+      "data",
+      "demo",
+      "docs",
+      "evaluation",
+      "frontend",
+      "infra",
+      "orchestration",
+      "scripts",
+      "tests",
+      "tools"
+    ],
+    "important_files": [
+      "backend/app.py",
+      "infra/docker-compose.yml",
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 7,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "MCP",
+      "NumPy",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "http://localhost:8000/dashboard"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:52+00:00",
+  "detail_source": "api"
+}

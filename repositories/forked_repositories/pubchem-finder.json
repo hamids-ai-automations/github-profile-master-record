@@ -1,0 +1,131 @@
+{
+  "id": "R_kgDOVqInGQ",
+  "name": "pubchem-finder",
+  "full_name": "hamids-ai-automations/pubchem-finder",
+  "url": "https://github.com/hamids-ai-automations/pubchem-finder",
+  "description": "Molecular similarity search over PubChem with RDKit: CLI, MCP server for Claude, local fingerprint index",
+  "homepage": "https://pypi.org/project/pubchem-finder/",
+  "created_at": "2026-11-11T03:16:51Z",
+  "updated_at": "2026-11-20T15:19:13Z",
+  "pushed_at": "2026-11-20T14:56:29Z",
+  "default_branch": "master",
+  "last_commit_at": "2026-11-17T11:30:02Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 737327,
+    "Makefile": 1243
+  },
+  "language_total_size": 738570,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 6,
+  "branches_count": 21,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 4341,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/pubchem-finder/blob/master/README.md",
+    "has_readme": true,
+    "length": 27948,
+    "excerpt": "# PubChem Finder\n\nSearch [PubChem](https://pubchem.ncbi.nlm.nih.gov/) by chemical structure from your\nterminal or from Claude. PubChem Finder builds a local fingerprint index of PubChem (all\nof it, or the slice you need) for exact similarity and substructure search with no rate\nlimits, wraps PubChem's live services for names, safety data and bioassays, and adds RDKit\nchemistry: structure drawings, med-chem triage and descriptors. Local search works from the\nfirst question, on a built-in set of 1,932 FDA-approved drugs, until you build a PubChem\nindex. It runs as a command-line tool, a Python library and an\n[MCP](https://modelcontextprotocol.io/) server for Claude Desktop, Claude Code and other MCP\nclients.\n\n[![PyPI](https://img.shields.io/pypi/v/pubchem-finder.svg)](https://pypi.org/project/pubchem-finder/)\n[![Python](https://img.shields.io/pypi/pyversions/pubchem-finder.svg)](https://pypi.org/project/pubchem-finder/)\n[![CI](https://github.com/MysterionRise/pubchem-finder/actions/workflows/ci.yml/badge.svg)](https://github.com/MysterionRise/pubchem-finder/actions/workflows/ci.yml)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/MysterionRise/pubchem-finder/blob/master/LICENSE)\n<!-- mcp-name: io.github.MysterionRise/pubchem-finder -->\n\n![A similarity search for aspirin and a SMARTS substructure search over 444,794 PubChem compounds, with the hits appearing and their key atoms highlighted](https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/media/search-demo.gif)\n\n*Real searches over the first 444,794 compounds of PubChem, rendered from the index the\nproject's real-data workflow builds: similarity hits for aspirin with the atoms that differ\nfrom it highlighted, then hits for an aryl sulfonamide SMARTS with the match highlighted.\n[MP4 version](https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/media/search-demo.mp4).*\n\n## Why this one\n\nOther PubChem tools, MCP servers and hosted connectors included, forward questions to\nPubChem's web API. That works for looking compounds up, but structure search through the\nAPI is rate-limited, times out on generic queries and returns unscored samples. PubChem\nFinder also keeps a local index:\n\n- **Exact, scored similarity search** over every indexed compound (ECFP4 Tanimoto by\n  default) in milliseconds, using [FPSim2](https://github.com/chembl/FPSim2), the engine\n  behind ChEMBL's similarity search.\n- **Local substructure search** with SMILES or SMARTS: a fingerprint screen, then an\n  atom-by-atom match, so every hit is a real match.\n- **Offline chemistry** with RDKit: descriptors, standardization, PAINS/Brenk/NIH alerts,\n  QED, synthetic accessibility, and drawings that show what changed between analogues.\n- **PubChem knowledge, cited:** synonyms and CAS numbers, cross-references, GHS\n  classification, pharmacology, toxicity and bioassay summaries, each with its source.\n\nNo database server, no Docker: the index is a pair of files in your data directory.\n\n## Use it from Claude\n\nRequires [uv](https://docs.astral.sh/uv/getting-started/installation/), which fetches\nPython and everything else on first run.\n\n**Claude Code:**\n\n```bash\nclaude mcp add pubchem-finder -- uvx --python 3.14 pubchem-finder mcp\n```\n\nor as a plugin, which also works in Cowork:\n\n```\n/plugin install pubchem-finder --marketplace MysterionRise/pubchem-finder\n```\n\n**Claude Desktop** (Settings, Developer, Edit Config, then restart Claude):\n\n```json\n{\n  \"mcpServers\": {\n    \"pubchem-finder\": {\n      \"command\": \"uvx\",\n      \"args\": [\"--python\", \"3.14\", \"pubchem-finder\", \"mcp\"]\n    }\n  }\n}\n```\n\nThen ask things like:\n\n- \"What is the molecular weight and XLogP of caffeine? Is it Lipinski-compliant?\"\n- \"Is ibuprofen hazardous? What does its GHS label say? Cite the sources.\"\n- \"What are the main targets of celecoxib in PubChem bioassays?\"\n- \"Show me the closest analogues of aspirin and highlight what changed.\"\n- \"Does this compound have any PAINS alerts",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 134,
+    "total_entries": 163,
+    "top_level_directories": [
+      ".claude",
+      ".claude-plugin",
+      ".github",
+      "docs",
+      "examples",
+      "plugins",
+      "scripts",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "plugins/pubchem-finder/pyproject.toml",
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/e2e-real.yml",
+      ".github/workflows/live.yml",
+      ".github/workflows/monthly-e2e.yml",
+      ".github/workflows/promote-plugin.yml",
+      ".github/workflows/python-next.yml",
+      ".github/workflows/release.yml",
+      ".github/workflows/released-wheel.yml",
+      ".github/workflows/scheduled-failure.yml"
+    ],
+    "test_files_count": 42,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 13,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "MCP",
+      "NumPy",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://pubchem.ncbi.nlm.nih.gov/",
+    "https://modelcontextprotocol.io/",
+    "https://pypi.org/project/pubchem-finder/",
+    "https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/media/search-demo.gif",
+    "https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/media/search-demo.mp4",
+    "https://docs.astral.sh/uv/getting-started/installation/",
+    "https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/images/sulfonamides-smarts.png",
+    "https://registry.modelcontextprotocol.io",
+    "http://127.0.0.1:8000/mcp`",
+    "https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/images/analogues-diff.png",
+    "https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/images/similarity-map.png",
+    "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+    "https://pubchem.ncbi.nlm.nih.gov/docs/citation-guidelines",
+    "https://doi.org/10.1093/nar/gkae1059",
+    "https://www.accessdata.fda.gov/scripts/cder/daf/",
+    "https://www.rdkit.org/",
+    "https://duckdb.org/",
+    "https://arrow.apache.org/",
+    "https://docs.astral.sh/uv/",
+    "http://127.0.0.1:8000/mcp"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:03+00:00",
+  "detail_source": "api"
+}

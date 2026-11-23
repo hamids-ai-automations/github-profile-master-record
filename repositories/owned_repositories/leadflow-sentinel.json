@@ -1,0 +1,104 @@
+{
+  "id": "R_kgDOV3mnag",
+  "name": "leadflow-sentinel",
+  "full_name": "hamids-ai-automations/leadflow-sentinel",
+  "url": "https://github.com/hamids-ai-automations/leadflow-sentinel",
+  "description": "Read-only GoHighLevel CRM observability engine: deterministic findings, explainable health score, optional AI narrative layer.",
+  "homepage": null,
+  "created_at": "2026-11-22T13:31:04Z",
+  "updated_at": "2026-11-22T13:31:41Z",
+  "pushed_at": "2026-11-22T21:19:36Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-22T21:18:25Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 212234
+  },
+  "language_total_size": 212234,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 1,
+  "releases": [
+    {
+      "name": "LeadFlow Sentinel v0.1.0",
+      "tag_name": "v0.1.0",
+      "url": "https://github.com/hamids-ai-automations/leadflow-sentinel/releases/tag/v0.1.0",
+      "published_at": "2026-11-22T13:39:40Z",
+      "is_prerelease": false
+    }
+  ],
+  "tags_count": 1,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 235,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/leadflow-sentinel/blob/main/README.md",
+    "has_readme": true,
+    "length": 13195,
+    "excerpt": "---\nAIGC:\n    Label: \"1\"\n    ContentProducer: 001191440300708461136T1XGW3\n    ProduceID: a60f8e46820ea466ef0868a20e79d739_0701437fe6b411f184bd52540072b1e8\n    ReservedCode1: EBgapKOuBjbmcqWTzR+4lZJbszzBQmtMRmP0eeGlEwXREZsm1UoxCzjud//xifQ3s9U43SDglGci71hmPpTrcjOTC6zvSuI350Q1XhwyA+vSXFyYz4j5etBtBy5n7LHi3A/bTPe9HHvFgAAVaaY35YcxVxMqP7mavIVjnDZJ1wWX5FA8kjE8xf2ZjYk=\n    ContentPropagator: 001191440300708461136T1XGW3\n    PropagateID: a60f8e46820ea466ef0868a20e79d739_0701437fe6b411f184bd52540072b1e8\n    ReservedCode2: EBgapKOuBjbmcqWTzR+4lZJbszzBQmtMRmP0eeGlEwXREZsm1UoxCzjud//xifQ3s9U43SDglGci71hmPpTrcjOTC6zvSuI350Q1XhwyA+vSXFyYz4j5etBtBy5n7LHi3A/bTPe9HHvFgAAVaaY35YcxVxMqP7mavIVjnDZJ1wWX5FA8kjE8xf2ZjYk=\n---\n\n# LeadFlow Sentinel\n\n[![CI](https://github.com/hamids-ai-automations/leadflow-sentinel/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/leadflow-sentinel/actions/workflows/ci.yml)\n[![Release](https://img.shields.io/github/v/release/hamids-ai-automations/leadflow-sentinel?display_name=tag)](https://github.com/hamids-ai-automations/leadflow-sentinel/releases)\n[![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)](https://github.com/hamids-ai-automations/leadflow-sentinel/blob/main/pyproject.toml)\n[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)\n[![Tests](https://img.shields.io/badge/tests-101%20passing-brightgreen)](https://github.com/hamids-ai-automations/leadflow-sentinel/tree/main/tests)\n\n**Read-only CRM health, lead-to-booking monitoring and revenue-leakage detection for GoHighLevel (HighLevel) agencies.**\n\nLeadFlow Sentinel audits a GoHighLevel sub-account snapshot, scores its health, and reports the exact leads, opportunities and bookings where money is leaking — with the evidence attached, not a vague \"your CRM could be better\".\n\n- Zero-dependency Python core. No account, no API key, no dashboard needed to get a first report.\n- Read-only by design: nothing in the CRM is created, updated or deleted.\n- Deterministic: the same snapshot always produces the same score, so numbers in a client proposal cannot drift overnight.\n- AI is optional and fenced: narratives are only accepted when every claim traces back to a finding.\n\n```bash\npython -m leadflow_sentinel demo --out demo-audit.json\n```\n\nThat writes a full audit of a synthetic agency account (52 contacts, 24 opportunities, 15 webhook events, 12 planted defect classes) in under a second.\n\n---\n\n## Why this exists\n\nGoHighLevel agencies do not lose money because a dashboard is missing. They lose it because:\n\n1. **Leads arrive and nobody follows up.** A form fill creates a contact; no opportunity, no call, no appointment. The lead goes cold inside 72 hours.\n2. **The same person exists three times.** One record from a Facebook lead form, one from a website form, one imported from a spreadsheet. Reporting counts them as three leads; the follow-up automation fires on the wrong one.\n3. **Bookings are never confirmed.** An appointment sits in `pending` forever; the show-up rate collapses and nobody notices until the month ends.\n4. **Webhooks fail silently.** HighLevel retries, times out or pauses a subscription; the workflow that was supposed to run simply did not run.\n\nEach of those is measurable from data the account already holds. LeadFlow Sentinel measures them, prices them in severity, and tells the operator which specific records to fix first.\n\n## Quick start\n\n```bash\ngit clone https://github.com/hamids-ai-automations/leadflow-sentinel\ncd leadflow-sentinel\n\n# 1. Prove the detectors fire on known planted defects\npython -m leadflow_sentinel selftest\n\n# 2. Audit the synthetic demo account, write a JSON report\npython -m leadflow_sentinel demo --out demo-audit.json\n\n# 3. Audit the demo account and write a client-ready Markdown report\npython -m leadflow_sentinel demo --out demo-audit.md\n\n# 4. Audit your own snapshot (see docs/GHL-INTEGRATION.md for the shape)\npython -m leadflow_sentinel audit --dataset s",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 63,
+    "total_entries": 70,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 12,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://marvis.web.app/projects/leadflow-sentinel"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:52+00:00",
+  "detail_source": "api"
+}

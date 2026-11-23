@@ -1,0 +1,14 @@
+{
+  "full_name": "cuga-project/cuga-agent",
+  "url": "https://github.com/cuga-project/cuga-agent",
+  "description": "CUGA is an open-source generalist agent harness for the enterprise, supporting complex task execution on web and APIs, OpenAPI/MCP integrations, composable architecture, reasoning modes, and policy-aware features.",
+  "owner": "cuga-project",
+  "is_fork": false,
+  "stars": null,
+  "language": null,
+  "commits": 0,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

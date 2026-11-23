@@ -1,0 +1,106 @@
+{
+  "id": "R_kgDOV2KJ9Q",
+  "name": "k8s-ai-bench",
+  "full_name": "hamids-ai-automations/k8s-ai-bench",
+  "url": "https://github.com/hamids-ai-automations/k8s-ai-bench",
+  "description": "A benchmark to evaluate LLMs on Kubernetes tasks",
+  "homepage": "",
+  "created_at": "2026-11-21T01:42:36Z",
+  "updated_at": "2026-11-21T01:42:36Z",
+  "pushed_at": "2026-11-21T15:33:40Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-03-10T02:22:33Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "language": "Go",
+  "languages": {
+    "Go": 114016,
+    "Shell": 99054,
+    "HTML": 26725,
+    "JavaScript": 11119,
+    "Makefile": 5403,
+    "Python": 478
+  },
+  "language_total_size": 256795,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 7,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 2682,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/k8s-ai-bench/blob/main/README.md",
+    "has_readme": true,
+    "length": 4300,
+    "excerpt": "# k8s-ai-bench\n\n`k8s-ai-bench` is a benchmark for assessing the performance of LLM models for Kubernetes related tasks. It evaluates AI agents (like `kubectl-ai`) on their ability to perform real-world Kubernetes operations such as creating deployments, debugging crash loops, and scaling applications.\n\n## 📊 Live Dashboard\n\nSee [k8s-ai-bench live leaderboard](https://gke-labs.github.io/k8s-ai-bench/) for the latest benchmark results.\n\nThe leaderboard shows run results for widely used proprietary and open models over a few run types:\n\n* **Pass@1**: Can the agent solve the task on the first try? This measures raw capability and immediate correctness.\n* **Pass@5**: Can the agent solve the task at least once in 5 attempts? This shows if the agent can eventually find a solution.\n* **Pass^5**: Does the agent solve the task every single time? This measures reliability and consistency, which is crucial for autonomous usage.\n\n\n\n## 🚀 Quick Start\n\n### 1. Build the Binary\n```sh\ngo build\n```\n\n### 2. Run an Evaluation\nRun the benchmark against your agent binary. Results will be saved to the `.build` directory.\n```sh\n# Basic usage\n./k8s-ai-bench run --agent-bin <path/to/kubectl-ai> --output-dir .build/k8s-ai-bench\n\n# Run a specific task type (e.g., scaling tasks)\n./k8s-ai-bench run --agent-bin <path/to/kubectl-ai> --task-pattern \"scale\" --output-dir .build/k8s-ai-bench\n```\n\n## 🛠 Usage Guide\n\n### `run` Subcommand\nThe `run` subcommand executes the benchmark evaluations. It creates ephemeral clusters to ensure test isolation. We support two platforms for the test environment: **Kind** (default) and **vCluster**.\n\n**vCluster Prerequisites:**\nFor a detailed step-by-step guide on setting up and using vCluster, see [vCluster Guide](docs/vcluster.md).\n\nTo use `vcluster`, you must have:\n* The `vcluster` [CLI](https://www.vcluster.com/docs/vcluster/) installed.\n* A running host Kubernetes cluster.\n* A kubecontext to connect to the host cluster (passed via `--host-cluster-context`).\n\n\n```sh\n# Run with specific LLM provider and model\n./k8s-ai-bench run \\\n  --agent-bin <path/to/kubectl-ai> \\\n  --llm-provider gemini \\\n  --models gemini-2.5-pro-preview-03-25 \\\n  --task-pattern fix \\\n  --output-dir .build/k8s-ai-bench\n```\n\n**Common Flags:**\n| Flag | Description | Default |\n|------|-------------|---------|\n| `--agent-bin` | Path to kubectl-ai binary (Required) | - |\n| `--output-dir` | Directory to write results (Required) | - |\n| `--task-pattern` | RegEx pattern to filter tasks (e.g. 'pod', 'fix') | - |\n| `--llm-provider` | LLM provider ID (e.g. 'gemini', 'openai') | gemini |\n| `--models` | Comma-separated list of models | gemini-2.5-pro... |\n| `--concurrency` | Number of parallel tasks (0 = auto) | 0 |\n| `--cluster-provider` | Cluster provider to use (`kind` or `vcluster`) | kind |\n| `--host-cluster-context` | Host cluster context for vcluster (Required if provider is vcluster) | - |\n\n### `analyze` Subcommand\nProcess and summarize results from previous runs.\n\n```sh\n# Generate a Markdown report\n./k8s-ai-bench analyze --input-dir .build/k8s-ai-bench --results-filepath report.md\n\n# Generate JSONL for visualization\n./k8s-ai-bench analyze --input-dir .build/k8s-ai-bench --output-format jsonl --results-filepath site/combined_results.jsonl\n```\n\n## 💻 Development Scripts\nFor a streamlined development loop, use the scripts in `dev/ci/periodics/`:\n\n- **Run Evaluation Loop**: Runs evaluations multiple times to test consistency.\n  ```sh\n  ./dev/ci/periodics/run-eval-loop.sh --iterations 5 --task-pattern \"create\"\n  ```\n- **Run Single Evaluation**:\n  ```sh\n  TEST_ARGS=\"--task-pattern=fix-probes\" ./dev/ci/periodics/run-evals.sh\n  ```\n- **Analyze Results**:\n  ```sh\n  ./dev/ci/periodics/analyze-evals.sh --show-failures\n  ```\n\n## 📈 Visualizing Results Locally\n\nThe `site` directory contains a static website (Vue.js based) for visualizing benchmark results.\n\n1.  **Generate Data**:\n    ```sh\n    ./k8s-ai-bench analyze --input-dir .build/k8s-ai-bench --output-format jsonl --result",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 466,
+    "total_entries": 585,
+    "top_level_directories": [
+      ".github",
+      "dev",
+      "docs",
+      "pkg",
+      "scripts",
+      "site",
+      "tasks",
+      "tools"
+    ],
+    "important_files": [
+      "go.mod"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci-periodic.yaml",
+      ".github/workflows/ci-presubmit.yaml",
+      ".github/workflows/k8s-bench-evals.yaml",
+      ".github/workflows/release.yaml",
+      ".github/workflows/static.yaml"
+    ],
+    "test_files_count": 0,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 15,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [],
+    "dependencies": [],
+    "config_files": []
+  },
+  "external_links": [
+    "https://gke-labs.github.io/k8s-ai-bench/",
+    "https://www.vcluster.com/docs/vcluster/",
+    "http://localhost:8000"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:03+00:00",
+  "detail_source": "api"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "R_kgDOV3vOhA",
+  "name": "langchain-google-cloud-sql-pg-python",
+  "full_name": "hamids-ai-automations/langchain-google-cloud-sql-pg-python",
+  "url": "https://github.com/hamids-ai-automations/langchain-google-cloud-sql-pg-python",
+  "description": null,
+  "homepage": null,
+  "created_at": "2026-11-22T16:03:43Z",
+  "updated_at": "2026-11-22T16:03:43Z",
+  "pushed_at": "2026-11-22T16:34:19Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-16T04:36:10Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "Apache-2.0",
+  "license_name": "Apache License 2.0",
+  "language": "Python",
+  "languages": {
+    "Python": 381715,
+    "Shell": 19280
+  },
+  "language_total_size": 400995,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 21,
+  "branches_count": 15,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 17547,
+  "readme": {
+    "path": "README.rst",
+    "html_url": "https://github.com/hamids-ai-automations/langchain-google-cloud-sql-pg-python/blob/main/README.rst",
+    "has_readme": true,
+    "length": 10377,
+    "excerpt": "Cloud SQL for PostgreSQL for LangChain\n===================================================================\n\n|preview| |pypi| |versions|\n\n- `Client Library Documentation`_\n- `Product Documentation`_\n\nThe **Cloud SQL for PostgreSQL for LangChain** package provides a first class experience for connecting to\nCloud SQL instances from the LangChain ecosystem while providing the following benefits:\n\n- **Simplified & Secure Connections**: easily and securely create shared connection pools to connect to Google Cloud databases utilizing IAM for authorization and database authentication without needing to manage SSL certificates, configure firewall rules, or enable authorized networks.\n- **Improved performance & Simplified management**: use a single-table schema can lead to faster query execution, especially for large collections.\n- **Improved metadata handling**: store metadata in columns instead of JSON, resulting in significant performance improvements.\n- **Clear separation**: clearly separate table and extension creation, allowing for distinct permissions and streamlined workflows.\n\n.. |preview| image:: https://img.shields.io/badge/support-preview-orange.svg\n   :target: https://github.com/googleapis/google-cloud-python/blob/main/README.rst#stability-levels\n.. |pypi| image:: https://img.shields.io/pypi/v/langchain-google-cloud-sql-pg.svg\n   :target: https://pypi.org/project/langchain-google-cloud-sql-pg/\n.. |versions| image:: https://img.shields.io/pypi/pyversions/langchain-google-cloud-sql-pg.svg\n   :target: https://pypi.org/project/langchain-google-cloud-sql-pg/\n.. _Client Library Documentation: https://cloud.google.com/python/docs/reference/langchain-google-cloud-sql-pg/latest\n.. _Product Documentation: https://cloud.google.com/sql/docs\n\nQuick Start\n-----------\n\nIn order to use this library, you first need to go through the following steps:\n\n1. `Select or create a Cloud Platform project.`_\n2. `Enable billing for your project.`_\n3. `Enable the Cloud SQL Admin API.`_\n4. `Setup Authentication.`_\n\n.. _Select or create a Cloud Platform project.: https://console.cloud.google.com/project\n.. _Enable billing for your project.: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project\n.. _Enable the Cloud SQL Admin API.:\n.. _Setup Authentication.: https://googleapis.dev/python/google-api-core/latest/auth.html\n\nInstallation\n~~~~~~~~~~~~\n\nInstall this library in a virtual environment using `venv`_. `venv`_ is a tool that\ncreates isolated Python environments. These isolated environments can have separate\nversions of Python packages, which allows you to isolate one project's dependencies\nfrom the dependencies of other projects.\n\nWith `venv`_, it's possible to install this library without needing system\ninstall permissions, and without clashing with the installed system\ndependencies.\n\n.. _`venv`: https://docs.python.org/3/library/venv.html\n\n\nSupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^\n\nPython >= 3.10\n\nMac/Linux\n^^^^^^^^^\n\n.. code-block:: console\n\n    pip install virtualenv\n    virtualenv <your-env>\n    source <your-env>/bin/activate\n    <your-env>/bin/pip install langchain-google-cloud-sql-pg\n\n\nWindows\n^^^^^^^\n\n.. code-block:: console\n\n    pip install virtualenv\n    virtualenv <your-env>\n    <your-env>\\Scripts\\activate\n    <your-env>\\Scripts\\pip.exe install langchain-google-cloud-sql-pg\n\n\nExample Usage\n-------------\n\nCode samples and snippets live in the `samples/`_ folder.\n\n.. _samples/: https://github.com/googleapis/langchain-google-cloud-sql-pg-python/tree/main/samples\n\n\nVector Store Usage\n~~~~~~~~~~~~~~~~~~~\n\nUse a Vector Store to store embedded data and perform vector search.\n\n.. code-block:: python\n\n        from langchain_google_cloud_sql_pg import PostgresVectorstore, PostgresEngine\n        from langchain.embeddings import VertexAIEmbeddings\n\n\n        engine = PostgresEngine.from_instance(\"project-id\", \"region\", \"my-instance\", \"my-database\")\n        engine.init_vectorstore_table(\n            table_nam",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 100,
+    "total_entries": 114,
+    "top_level_directories": [
+      ".github",
+      ".kokoro",
+      "docs",
+      "samples",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml",
+      "requirements.txt",
+      "samples/index_tuning_sample/requirements.txt",
+      "samples/langchain_on_vertexai/requirements.txt",
+      "samples/requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/docs.yml",
+      ".github/workflows/lint.yml",
+      ".github/workflows/lint_fallback.yml",
+      ".github/workflows/schedule_reporter.yml"
+    ],
+    "test_files_count": 18,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 18,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "LangChain",
+      "NumPy",
+      "pytest"
+    ],
+    "dependencies": [
+      "cloud-sql-python-connector",
+      "langchain-postgres",
+      "langgraph",
+      "numpy"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://pypi.org/project/langchain-google-cloud-sql-pg/",
+    "https://cloud.google.com/python/docs/reference/langchain-google-cloud-sql-pg/latest",
+    "https://cloud.google.com/sql/docs",
+    "https://console.cloud.google.com/project",
+    "https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project",
+    "https://googleapis.dev/python/google-api-core/latest/auth.html",
+    "https://docs.python.org/3/library/venv.html",
+    "https://python.langchain.com/docs/concepts/async/",
+    "https://docs.python.org/3/library/asyncio.html"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:51+00:00",
+  "detail_source": "api"
+}

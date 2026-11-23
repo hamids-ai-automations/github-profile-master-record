@@ -1,0 +1,14 @@
+{
+  "full_name": "VOLPAROSSA/volparossa-code",
+  "url": "https://github.com/VOLPAROSSA/volparossa-code",
+  "description": "Open-source coding assistant integrating OpenCode with VOLPAROSSA's Decentralized Intelligent Cooperative Network (DICN). Designed to read, edit and test code through cooperating agents and shared intelligence. Editor integrations start with VS Code and VSCodium. Under active development.",
+  "owner": "VOLPAROSSA",
+  "is_fork": false,
+  "stars": 0,
+  "language": "JavaScript",
+  "commits": 1,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

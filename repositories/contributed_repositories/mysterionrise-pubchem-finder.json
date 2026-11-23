@@ -1,0 +1,14 @@
+{
+  "full_name": "MysterionRise/pubchem-finder",
+  "url": "https://github.com/MysterionRise/pubchem-finder",
+  "description": "Molecular similarity search over PubChem with RDKit: CLI, MCP server for Claude, local fingerprint index",
+  "owner": "MysterionRise",
+  "is_fork": false,
+  "stars": 11,
+  "language": "Python",
+  "commits": 1,
+  "pull_requests": 2,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

@@ -1,0 +1,428 @@
+{
+  "window": {
+    "from": "2025-11-23T05:10:08Z",
+    "to": "2026-11-23T05:10:08Z"
+  },
+  "total_commits": 261,
+  "total_contributions": 527,
+  "by_repository": [
+    {
+      "repository": "hamids-ai-automations/hamids-ai-automations",
+      "url": "https://github.com/hamids-ai-automations/hamids-ai-automations",
+      "commits": 17
+    },
+    {
+      "repository": "hamids-ai-automations/ai-search-visibility-auditor",
+      "url": "https://github.com/hamids-ai-automations/ai-search-visibility-auditor",
+      "commits": 16
+    },
+    {
+      "repository": "hamids-ai-automations/proeventsolutions-pk",
+      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
+      "commits": 11
+    },
+    {
+      "repository": "hamids-ai-automations/ghl-automation-engine",
+      "url": "https://github.com/hamids-ai-automations/ghl-automation-engine",
+      "commits": 10
+    },
+    {
+      "repository": "hamids-ai-automations/seo-doctor",
+      "url": "https://github.com/hamids-ai-automations/seo-doctor",
+      "commits": 10
+    },
+    {
+      "repository": "hamids-ai-automations/ai-marketing-growth-os",
+      "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
+      "commits": 10
+    },
+    {
+      "repository": "hamids-ai-automations/ppc-performance-dashboard",
+      "url": "https://github.com/hamids-ai-automations/ppc-performance-dashboard",
+      "commits": 10
+    },
+    {
+      "repository": "hamids-ai-automations/hamid-resume",
+      "url": "https://github.com/hamids-ai-automations/hamid-resume",
+      "commits": 9
+    },
+    {
+      "repository": "hamids-ai-automations/ppc-waste-detector",
+      "url": "https://github.com/hamids-ai-automations/ppc-waste-detector",
+      "commits": 9
+    },
+    {
+      "repository": "hamids-ai-automations/conversion-tracking-doctor",
+      "url": "https://github.com/hamids-ai-automations/conversion-tracking-doctor",
+      "commits": 9
+    },
+    {
+      "repository": "hamids-ai-automations/seo-audit-pro",
+      "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
+      "commits": 9
+    },
+    {
+      "repository": "hamids-ai-automations/firebase-ai-starter-kit",
+      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
+      "commits": 9
+    },
+    {
+      "repository": "hamids-ai-automations/meta-lead-quality-analyzer",
+      "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
+      "commits": 8
+    },
+    {
+      "repository": "hamids-ai-automations/ecommerce-seo-optimizer",
+      "url": "https://github.com/hamids-ai-automations/ecommerce-seo-optimizer",
+      "commits": 8
+    },
+    {
+      "repository": "vibgrate/cli",
+      "url": "https://github.com/vibgrate/cli",
+      "commits": 8
+    },
+    {
+      "repository": "hamids-ai-automations/geo-visibility-lab",
+      "url": "https://github.com/hamids-ai-automations/geo-visibility-lab",
+      "commits": 8
+    },
+    {
+      "repository": "hamids-ai-automations/ai-marketing-mix-copilot",
+      "url": "https://github.com/hamids-ai-automations/ai-marketing-mix-copilot",
+      "commits": 7
+    },
+    {
+      "repository": "hamids-ai-automations/pakistan-online-medical-store",
+      "url": "https://github.com/hamids-ai-automations/pakistan-online-medical-store",
+      "commits": 7
+    },
+    {
+      "repository": "hamids-ai-automations/pinvault-pinterest-downloader",
+      "url": "https://github.com/hamids-ai-automations/pinvault-pinterest-downloader",
+      "commits": 7
+    },
+    {
+      "repository": "hamids-ai-automations/seo-audit-tool",
+      "url": "https://github.com/hamids-ai-automations/seo-audit-tool",
+      "commits": 6
+    },
+    {
+      "repository": "hamids-ai-automations/nexgen-financial-experts",
+      "url": "https://github.com/hamids-ai-automations/nexgen-financial-experts",
+      "commits": 5
+    },
+    {
+      "repository": "lukeautry/tsoa",
+      "url": "https://github.com/lukeautry/tsoa",
+      "commits": 5
+    },
+    {
+      "repository": "nikhilb2/simple-invoicing-free-gst-billing-software",
+      "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software",
+      "commits": 5
+    },
+    {
+      "repository": "selimfirat/pysad",
+      "url": "https://github.com/selimfirat/pysad",
+      "commits": 4
+    },
+    {
+      "repository": "iamvisheshsrivastava/AirKube",
+      "url": "https://github.com/iamvisheshsrivastava/AirKube",
+      "commits": 3
+    },
+    {
+      "repository": "iamvisheshsrivastava/Smart_CSV_Toolkit",
+      "url": "https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit",
+      "commits": 3
+    },
+    {
+      "repository": "hamids-ai-automations/envscope",
+      "url": "https://github.com/hamids-ai-automations/envscope",
+      "commits": 3
+    },
+    {
+      "repository": "rdlugs/sentryward",
+      "url": "https://github.com/rdlugs/sentryward",
+      "commits": 3
+    },
+    {
+      "repository": "markline-dev/markline",
+      "url": "https://github.com/markline-dev/markline",
+      "commits": 3
+    },
+    {
+      "repository": "mikesilvers/rag-docker",
+      "url": "https://github.com/mikesilvers/rag-docker",
+      "commits": 3
+    },
+    {
+      "repository": "hamids-ai-automations/ai-marketing-portfolio-meta",
+      "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
+      "commits": 2
+    },
+    {
+      "repository": "hamids-ai-automations/conversionbridge",
+      "url": "https://github.com/hamids-ai-automations/conversionbridge",
+      "commits": 2
+    },
+    {
+      "repository": "doobidoo/mcp-memory-service",
+      "url": "https://github.com/doobidoo/mcp-memory-service",
+      "commits": 2
+    },
+    {
+      "repository": "hamids-ai-automations/leadflow-sentinel",
+      "url": "https://github.com/hamids-ai-automations/leadflow-sentinel",
+      "commits": 2
+    },
+    {
+      "repository": "hamids-ai-automations/searchpulse-ai",
+      "url": "https://github.com/hamids-ai-automations/searchpulse-ai",
+      "commits": 2
+    },
+    {
+      "repository": "hamids-ai-automations/google-services-mcp",
+      "url": "https://github.com/hamids-ai-automations/google-services-mcp",
+      "commits": 2
+    },
+    {
+      "repository": "iamvisheshsrivastava/ab-lab",
+      "url": "https://github.com/iamvisheshsrivastava/ab-lab",
+      "commits": 2
+    },
+    {
+      "repository": "iamvisheshsrivastava/geniebot",
+      "url": "https://github.com/iamvisheshsrivastava/geniebot",
+      "commits": 2
+    },
+    {
+      "repository": "finos/open-resource-broker",
+      "url": "https://github.com/finos/open-resource-broker",
+      "commits": 2
+    },
+    {
+      "repository": "Opencomplai/opencomplai",
+      "url": "https://github.com/Opencomplai/opencomplai",
+      "commits": 2
+    },
+    {
+      "repository": "OpnForm/OpnForm",
+      "url": "https://github.com/OpnForm/OpnForm",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/gemini-agent-reliability-kit",
+      "url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/restock-radar",
+      "url": "https://github.com/hamids-ai-automations/restock-radar",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/shopify-growth-mcp",
+      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/dynamic-schema-generator",
+      "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
+      "commits": 1
+    },
+    {
+      "repository": "supabase/supabase-py",
+      "url": "https://github.com/supabase/supabase-py",
+      "commits": 1
+    },
+    {
+      "repository": "VOLPAROSSA/volparossa-code",
+      "url": "https://github.com/VOLPAROSSA/volparossa-code",
+      "commits": 1
+    },
+    {
+      "repository": "pygrpc/pygrpc-native",
+      "url": "https://github.com/pygrpc/pygrpc-native",
+      "commits": 1
+    },
+    {
+      "repository": "MysterionRise/pubchem-finder",
+      "url": "https://github.com/MysterionRise/pubchem-finder",
+      "commits": 1
+    },
+    {
+      "repository": "adbar/trafilatura",
+      "url": "https://github.com/adbar/trafilatura",
+      "commits": 1
+    },
+    {
+      "repository": "connabyss/bite",
+      "url": "https://github.com/connabyss/bite",
+      "commits": 1
+    },
+    {
+      "repository": "cfgaudit/cfgaudit",
+      "url": "https://github.com/cfgaudit/cfgaudit",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/ai-agent-testing-lab",
+      "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
+      "commits": 1
+    },
+    {
+      "repository": "laaielichter/Gulliver",
+      "url": "https://github.com/laaielichter/Gulliver",
+      "commits": 1
+    },
+    {
+      "repository": "exmergo/dex",
+      "url": "https://github.com/exmergo/dex",
+      "commits": 1
+    },
+    {
+      "repository": "OpenWave-India/modeldiff",
+      "url": "https://github.com/OpenWave-India/modeldiff",
+      "commits": 1
+    }
+  ],
+  "active_days": [
+    {
+      "date": "2026-10-11",
+      "count": 1
+    },
+    {
+      "date": "2026-10-12",
+      "count": 84
+    },
+    {
+      "date": "2026-10-14",
+      "count": 3
+    },
+    {
+      "date": "2026-10-15",
+      "count": 5
+    },
+    {
+      "date": "2026-10-17",
+      "count": 1
+    },
+    {
+      "date": "2026-10-18",
+      "count": 43
+    },
+    {
+      "date": "2026-10-19",
+      "count": 8
+    },
+    {
+      "date": "2026-10-20",
+      "count": 5
+    },
+    {
+      "date": "2026-10-21",
+      "count": 2
+    },
+    {
+      "date": "2026-10-23",
+      "count": 7
+    },
+    {
+      "date": "2026-10-26",
+      "count": 1
+    },
+    {
+      "date": "2026-10-28",
+      "count": 38
+    },
+    {
+      "date": "2026-10-29",
+      "count": 104
+    },
+    {
+      "date": "2026-10-30",
+      "count": 17
+    },
+    {
+      "date": "2026-10-31",
+      "count": 32
+    },
+    {
+      "date": "2026-11-01",
+      "count": 40
+    },
+    {
+      "date": "2026-11-02",
+      "count": 3
+    },
+    {
+      "date": "2026-11-03",
+      "count": 3
+    },
+    {
+      "date": "2026-11-04",
+      "count": 17
+    },
+    {
+      "date": "2026-11-05",
+      "count": 2
+    },
+    {
+      "date": "2026-11-06",
+      "count": 1
+    },
+    {
+      "date": "2026-11-08",
+      "count": 2
+    },
+    {
+      "date": "2026-11-09",
+      "count": 5
+    },
+    {
+      "date": "2026-11-10",
+      "count": 2
+    },
+    {
+      "date": "2026-11-11",
+      "count": 14
+    },
+    {
+      "date": "2026-11-14",
+      "count": 1
+    },
+    {
+      "date": "2026-11-16",
+      "count": 2
+    },
+    {
+      "date": "2026-11-17",
+      "count": 15
+    },
+    {
+      "date": "2026-11-18",
+      "count": 5
+    },
+    {
+      "date": "2026-11-19",
+      "count": 3
+    },
+    {
+      "date": "2026-11-20",
+      "count": 8
+    },
+    {
+      "date": "2026-11-21",
+      "count": 20
+    },
+    {
+      "date": "2026-11-22",
+      "count": 28
+    },
+    {
+      "date": "2026-11-23",
+      "count": 5
+    }
+  ]
+}

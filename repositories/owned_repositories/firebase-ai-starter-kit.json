@@ -1,0 +1,130 @@
+{
+  "id": "R_kgDOV2ULAA",
+  "name": "firebase-ai-starter-kit",
+  "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
+  "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
+  "description": "Secure Gemini AI on Firebase: Auth, Firestore ownership rules, hardened Cloud Functions, emulator-first tests, CI and guarded deploys.",
+  "homepage": null,
+  "created_at": "2026-11-21T06:06:33Z",
+  "updated_at": "2026-11-21T06:07:40Z",
+  "pushed_at": "2026-11-21T16:02:56Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-21T16:01:46Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "TypeScript",
+  "languages": {
+    "TypeScript": 151246,
+    "JavaScript": 12472,
+    "HTML": 531,
+    "CSS": 201
+  },
+  "language_total_size": 164450,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 9,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 10,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "cloud-functions",
+    "firebase",
+    "gemini",
+    "google-ai",
+    "openai-alternative",
+    "react",
+    "security",
+    "starter-kit",
+    "typescript",
+    "vite"
+  ],
+  "size_kb": 570,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit/blob/main/README.md",
+    "has_readme": true,
+    "length": 25362,
+    "excerpt": "# Firebase AI Starter Kit\n\n[![CI](https://github.com/hamids-ai-automations/firebase-ai-starter-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/firebase-ai-starter-kit/actions/workflows/ci.yml)\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Node 22+](https://img.shields.io/badge/node-22%2B%20%7C%2024.x-brightgreen.svg)](package.json)\n\nA production-minded starter kit for building **Gemini AI features on Firebase** — real authentication,\nowner-scoped Firestore rules, strict validation, an emulator-first workflow, and a working React demo\ninstead of a snippet collection.\n\nIt ships in two interchangeable deployment modes. The default build targets the **free Spark plan**;\nthe same endpoints also exist as server-side Cloud Functions for teams that want the key off the client.\n\n| Mode                                  | Gemini calls run                                                 | Billing             | Status                                        |\n| ------------------------------------- | ---------------------------------------------------------------- | ------------------- | --------------------------------------------- |\n| **Spark mode** (default build)        | In the browser via REST, using the signed-in user's own API key  | None — no Blaze     | **Live:** <https://fb-ai-starter-kit.web.app> |\n| **Blaze mode** (`functions/` variant) | Inside Cloud Functions 2nd gen, key held as a server-only secret | Blaze plan required | Reference implementation, deployed on demand  |\n\n- **Live demo (Spark):** <https://fb-ai-starter-kit.web.app>\n- **Project page:** <https://marvis.web.app/projects/firebase-ai-starter-kit>\n- **Spark deployment guide:** [`docs/FREE_PLAN_DEPLOYMENT.md`](docs/FREE_PLAN_DEPLOYMENT.md)\n- **Documentation:** [`docs/`](docs/) — architecture, setup, API reference, security, testing, deployment\n\n---\n\n## Table of contents\n\n1. [Project introduction](#1-project-introduction)\n2. [Problem statement](#2-problem-statement)\n3. [Key features](#3-key-features)\n4. [Architecture](#4-architecture)\n5. [Technology stack](#5-technology-stack)\n6. [Screenshots](#6-screenshots)\n7. [Prerequisites](#7-prerequisites)\n8. [Installation](#8-installation)\n9. [Firebase configuration](#9-firebase-configuration)\n10. [Gemini configuration](#10-gemini-configuration)\n11. [Environment variables](#11-environment-variables)\n12. [Local development](#12-local-development)\n13. [Authentication guide](#13-authentication-guide)\n14. [Firestore guide](#14-firestore-guide)\n15. [Gemini integration guide](#15-gemini-integration-guide)\n16. [Cloud Functions guide](#16-cloud-functions-guide)\n17. [Security documentation](#17-security-documentation)\n18. [Testing](#18-testing)\n19. [Deployment](#19-deployment)\n20. [Troubleshooting](#20-troubleshooting)\n21. [Contributing](#21-contributing)\n22. [License](#22-license)\n23. [Roadmap](#23-roadmap)\n24. [Project links](#24-project-links)\n\n---\n\n## 1. Project introduction\n\nMost \"AI + Firebase\" samples skip Firestore rules, trust the client to police its own data, and stop\nat a single prototype file. This kit is built around the parts that decide whether an AI feature\nsurvives real users: **who may read a document, what happens when the model returns malformed JSON,\nwhere the API key lives, and how any of it is tested before production.**\n\nThe kit deliberately implements the same product through two back ends:\n\n- **Spark mode** — the browser calls Gemini REST directly with a key the user supplies in the Setup\n  tab. The key lives in `sessionStorage` for that tab only: never committed, never bundled, never\n  written to Firestore. This mode needs no billing account, and it is what runs at\n  <https://fb-ai-starter-kit.web.app>.\n- **Blaze mode** — the same endpoints as Cloud Functions 2nd gen: Zod validation, per-user rate\n  limits, server-only `GEMINI_API_KEY`, conversation persistence. Kept in `functions/` as the\n  production upgrade path.\n\nBoth modes share one co",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 109,
+    "total_entries": 136,
+    "top_level_directories": [
+      ".github",
+      "apps",
+      "docs",
+      "firestore",
+      "functions",
+      "scripts"
+    ],
+    "important_files": [
+      "apps/web/package.json",
+      "apps/web/tsconfig.json",
+      "firebase.json",
+      "functions/package.json",
+      "functions/tsconfig.json",
+      "package.json"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/deploy.yml"
+    ],
+    "test_files_count": 10,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Firebase",
+      "React"
+    ],
+    "dependencies": [
+      "@eslint/js",
+      "eslint",
+      "eslint-plugin-react-hooks",
+      "eslint-plugin-react-refresh",
+      "globals",
+      "prettier",
+      "typescript-eslint"
+    ],
+    "config_files": [
+      "package.json",
+      "firebase.json"
+    ]
+  },
+  "external_links": [
+    "https://fb-ai-starter-kit.web.app",
+    "https://marvis.web.app/projects/firebase-ai-starter-kit",
+    "https://console.firebase.google.com/",
+    "https://wa.me/923167417135"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:02+00:00",
+  "detail_source": "api"
+}

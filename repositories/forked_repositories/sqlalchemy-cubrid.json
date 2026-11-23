@@ -1,0 +1,128 @@
+{
+  "id": "R_kgDOVbu1Pg",
+  "name": "sqlalchemy-cubrid",
+  "full_name": "hamids-ai-automations/sqlalchemy-cubrid",
+  "url": "https://github.com/hamids-ai-automations/sqlalchemy-cubrid",
+  "description": "SQLAlchemy 2.0–2.2 dialect for CUBRID with Alembic, async, and ORM support",
+  "homepage": "https://cubrid-lab.github.io/sqlalchemy-cubrid/",
+  "created_at": "2026-10-29T12:05:43Z",
+  "updated_at": "2026-10-29T12:05:43Z",
+  "pushed_at": "2026-10-29T12:55:24Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-29T07:48:29Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 2515812,
+    "Makefile": 13325,
+    "Shell": 10533
+  },
+  "language_total_size": 2539670,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 36,
+  "branches_count": 8,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 5031,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/sqlalchemy-cubrid/blob/main/README.md",
+    "has_readme": true,
+    "length": 22933,
+    "excerpt": "<!-- CUBRID-LAB-ICON:START -->\n<p align=\"center\">\n  <a href=\"https://github.com/cubrid-lab/brand\"><img src=\"https://raw.githubusercontent.com/cubrid-lab/brand/e55990a6a0b2c3b0d133985951d41e42b62a8588/dist/icons/sqlalchemy-cubrid.svg\" alt=\"sqlalchemy-cubrid icon (CUBRID Lab brand repository)\" width=\"120\"></a>\n</p>\n<!-- CUBRID-LAB-ICON:END -->\n\n# sqlalchemy-cubrid\n\n**SQLAlchemy 2.0–2.1 dialect for the CUBRID database** — Python ORM, schema reflection, Alembic migrations, and type mapping for SQLAlchemy and CUBRID-specific types.\n\n[🇰🇷 한국어](docs/README.ko.md) · [🇺🇸 English](README.md) · [🇨🇳 中文](docs/README.zh.md) · [🇮🇳 हिन्दी](docs/README.hi.md) · [🇩🇪 Deutsch](docs/README.de.md) · [🇷🇺 Русский](docs/README.ru.md)\n\n<!-- BADGES:START -->\n[![PyPI version](https://img.shields.io/pypi/v/sqlalchemy-cubrid)](https://pypi.org/project/sqlalchemy-cubrid)\n[![python version](https://img.shields.io/pypi/pyversions/sqlalchemy-cubrid)](https://www.python.org)\n[![ci workflow](https://github.com/cubrid-lab/sqlalchemy-cubrid/actions/workflows/ci.yml/badge.svg)](https://github.com/cubrid-lab/sqlalchemy-cubrid/actions/workflows/ci.yml)\n[![integration-full workflow](https://github.com/cubrid-lab/sqlalchemy-cubrid/actions/workflows/integration-full.yml/badge.svg)](https://github.com/cubrid-lab/sqlalchemy-cubrid/actions/workflows/integration-full.yml)\n[![license](https://img.shields.io/github/license/cubrid-lab/sqlalchemy-cubrid)](https://github.com/cubrid-lab/sqlalchemy-cubrid/blob/main/LICENSE)\n[![GitHub stars](https://img.shields.io/github/stars/cubrid-lab/sqlalchemy-cubrid)](https://github.com/cubrid-lab/sqlalchemy-cubrid)\n[![docs](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://cubrid-lab.github.io/sqlalchemy-cubrid/)\n<!-- BADGES:END -->\n\n---\n\n> **Status: Production/Stable** — `sqlalchemy-cubrid` is a maintained SQLAlchemy dialect for CUBRID supporting SQLAlchemy 2.0–2.1 and CUBRID 10.2–11.4.\n> **Note:** Versions prior to 1.0.0 used inconsistent numbering (0.x, 2.x). The canonical version history starts at 1.0.0.\n\n## Start here\n\nsqlalchemy-cubrid lets SQLAlchemy work with a CUBRID database. CUBRID itself is\na separate database server that must already be running; installing these\npackages does not install CUBRID or create a database. New to CUBRID or to\nSQLAlchemy? Follow [Your First SQLAlchemy Connection to CUBRID](docs/QUICKSTART.md):\nit shows what to prepare when you already have a database, how to start a\ndisposable local one with Docker, and takes you on the recommended\n`sqlalchemy-cubrid[pycubrid]` path to a first query and a first saved row. The\nrest of this page is reference material for after that first connection works.\n\n## Why sqlalchemy-cubrid?\n\nCUBRID is a high-performance open-source relational database, widely adopted in\nKorean public-sector and enterprise applications. Until now, there was no\nactively maintained SQLAlchemy dialect that supports the modern 2.0–2.1 API.\n\n**sqlalchemy-cubrid** bridges that gap:\n\n- Full SQLAlchemy 2.0–2.1 dialect with **statement caching** and **PEP 561 typing**\n- **Extensive offline test suite** — no database required to run it; CI enforces a minimum 95% line-coverage gate (`--cov-fail-under=95` in the `offline-tests` job, [CI badge above](https://github.com/cubrid-lab/sqlalchemy-cubrid/actions/workflows/ci.yml))\n- **Concurrency stress tests** — `QueuePool` sync threaded + asyncio.gather workloads validated against live CUBRID\n- **SQLAlchemy 2.1-ready compat shim** — private API access wrapped in `_compat.py`; dependency cap `>=2.0,<2.2` covering SA 2.0 and 2.1\n- Tested against **4 CUBRID versions** (10.2, 11.0, 11.2, 11.4) across **Python 3.11 -- 3.15**\n- CUBRID-specific DML constructs: `ON DUPLICATE KEY UPDATE`, `MERGE`, `REPLACE INTO`\n- Alembic migration support out of the box\n- **Three driver options** — pure Python (`cubrid+pycubrid://`, recommended), async pure Python (`cubrid+aiopycubrid://`), or the CUBRIDdb C-extension driver (`cubrid://` / `cubrid+cubriddb://`)\n\n## Support Stat",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 503,
+    "total_entries": 577,
+    "top_level_directories": [
+      ".github",
+      "agent-evals",
+      "benchmarks",
+      "demos",
+      "docs",
+      "samples",
+      "scripts",
+      "sqlalchemy_cubrid",
+      "test"
+    ],
+    "important_files": [
+      ".github/docs-requirements/requirements.txt",
+      "docker-compose.yml",
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/agent-review.yml",
+      ".github/workflows/badge-sync.yml",
+      ".github/workflows/ci.yml",
+      ".github/workflows/codeql.yml",
+      ".github/workflows/dependabot-auto-merge.yml",
+      ".github/workflows/docs-sync.yml",
+      ".github/workflows/docs.yml",
+      ".github/workflows/integration-full.yml",
+      ".github/workflows/issue-triage.yml",
+      ".github/workflows/labels.yml",
+      ".github/workflows/maintenance.yml",
+      ".github/workflows/pr-title.yml",
+      ".github/workflows/publish-pypi.yml",
+      ".github/workflows/python-canary.yml",
+      ".github/workflows/release-please.yml",
+      ".github/workflows/sbom.yml",
+      ".github/workflows/security.yml",
+      ".github/workflows/stale.yml",
+      ".github/workflows/upstream-canary.yml"
+    ],
+    "test_files_count": 121,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 23,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "SQLAlchemy",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml",
+      "docker-compose.yml"
+    ]
+  },
+  "external_links": [
+    "https://raw.githubusercontent.com/cubrid-lab/brand/e55990a6a0b2c3b0d133985951d41e42b62a8588/dist/icons/sqlalchemy-cubrid.svg",
+    "https://pypi.org/project/sqlalchemy-cubrid",
+    "https://www.python.org",
+    "https://cubrid-lab.github.io/sqlalchemy-cubrid/",
+    "https://peps.python.org/pep-0619/#310-lifespan"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:41+00:00",
+  "detail_source": "api"
+}

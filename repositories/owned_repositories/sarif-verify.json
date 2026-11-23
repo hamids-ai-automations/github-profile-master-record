@@ -1,0 +1,101 @@
+{
+  "id": "R_kgDOV1pT_w",
+  "name": "sarif-verify",
+  "full_name": "hamids-ai-automations/sarif-verify",
+  "url": "https://github.com/hamids-ai-automations/sarif-verify",
+  "description": "Validate SARIF 2.1.0 logs against the GitHub code-scanning contract before uploading them. Zero-dependency CLI + Docker, 34 tests.",
+  "homepage": null,
+  "created_at": "2026-11-20T14:38:38Z",
+  "updated_at": "2026-11-20T14:39:30Z",
+  "pushed_at": "2026-11-20T14:49:30Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-20T14:49:22Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 33154,
+    "Dockerfile": 991,
+    "Makefile": 370
+  },
+  "language_total_size": 34515,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "code-scanning",
+    "devsecops",
+    "github-actions",
+    "python",
+    "sarif",
+    "security-tools"
+  ],
+  "size_kb": 20,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/sarif-verify/blob/main/README.md",
+    "has_readme": true,
+    "length": 5726,
+    "excerpt": "# sarif-verify\n\nValidate a SARIF 2.1.0 log **before** GitHub code scanning sees it.\n\n`upload-sarif` fails late and vaguely: a `ruleIndex` that disagrees with\n`ruleId` silently mislabels findings, an absolute artifact URI gets the whole\nupload rejected, and a `startLine` of `0` drops the annotation without any\nerror. `sarif-verify` catches those mistakes locally, in under a second, with\nno network access and no runtime dependencies.\n\n```\n$ sarif-verify check results.sarif\nOK   results.sarif | 0 error(s), 0 warning(s)\n\n$ sarif-verify check broken.sarif\nERROR result-rule-index: ruleIndex 0 points at 'missing-key', not 'empty-value' [runs[0].results[0].ruleIndex]\nERROR uri-relative: uri 'C:/repo/.env' is not repository relative [runs[0].results[0].locations[0].physicalLocation.artifactLocation.uri]\nFAIL broken.sarif | 2 error(s), 0 warning(s)\n```\n\n## Why not just use the schema?\n\nA JSON-schema check tells you the document is shaped correctly. It does not tell\nyou the document will *work*. The checks here encode the code-scanning contract\ninstead:\n\n| Code | Level | What it catches |\n| --- | --- | --- |\n| `document-type` | error | Top level is not a JSON object |\n| `version` | error | `version` is missing or not `2.1.0` |\n| `runs` | error | `runs` is missing, empty, or not an array |\n| `driver-name` | error | `run.tool.driver.name` is empty (upload rejected) |\n| `driver-version` | warning | Tool version missing, so annotations cannot be traced to a release |\n| `rules-id` | error | A rule has no usable `id` |\n| `rules-duplicate` | error | Two rules share an `id`, making `ruleIndex` ambiguous |\n| `column-kind` | warning | `columnKind` outside `utf16CodeUnits` / `unicodeCodePoints` |\n| `result-message` | error | A result has no `message.text`, so the annotation renders blank |\n| `result-rule` | error | `ruleId` is not declared in `driver.rules` |\n| `result-rule-index` | error | `ruleIndex` is out of range or disagrees with `ruleId` |\n| `result-level` | error | `level` outside `none` / `note` / `warning` / `error` |\n| `result-location` | warning | No location, or no `artifactLocation.uri` |\n| `uri-relative` | error | Absolute path, `file://` URI, or `..` traversal |\n| `region-lines` | error | `startLine` is not a positive integer, or `endLine` precedes it |\n\nErrors fail the run; warnings fail it only under `--strict`.\n\n## Install\n\n```bash\npip install git+https://github.com/hamids-ai-automations/sarif-verify.git\n# or, from a checkout\npip install -e .\n```\n\nRequires Python 3.11+. No third-party dependencies.\n\n## Usage\n\n```bash\nsarif-verify check results.sarif                 # one file\nsarif-verify check a.sarif b.sarif              # several files, exit 1 if any fails\nsarif-verify check results.sarif --strict       # warnings become failures\nsarif-verify check results.sarif --json         # machine-readable report\nsarif-verify check - < results.sarif            # stdin\nsarif-verify checks                             # list every check with help text\nsarif-verify version\n```\n\nExit codes: `0` clean, `1` findings, `2` unreadable file or invalid JSON.\n\n### In a GitHub Actions workflow\n\nRun it as the step immediately before the upload, so a malformed log fails with\na readable message instead of an opaque `upload-sarif` error:\n\n```yaml\njobs:\n  scan:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: read\n      security-events: write\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with:\n          python-version: \"3.12\"\n      - run: pip install git+https://github.com/hamids-ai-automations/sarif-verify.git\n      - run: envscope check --sarif results.sarif      # produces the log\n      - run: sarif-verify check --strict results.sarif # fails fast if malformed\n      - uses: github/codeql-action/upload-sarif@v3\n        with:\n          sarif_file: results.sarif\n```\n\n### In Python\n\n```python\nfrom sarif_verify import validate\n\nreport = validate(document, source=\"results.sarif\")\nif not report.ok:\n    fo",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 17,
+    "total_entries": 23,
+    "top_level_directories": [
+      ".github",
+      "fixtures",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 2,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml",
+      "Dockerfile"
+    ]
+  },
+  "external_links": [],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:03+00:00",
+  "detail_source": "api"
+}

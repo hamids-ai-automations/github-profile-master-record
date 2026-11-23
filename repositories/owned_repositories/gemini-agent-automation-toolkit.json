@@ -1,0 +1,119 @@
+{
+  "id": "R_kgDOV1l5hw",
+  "name": "gemini-agent-automation-toolkit",
+  "full_name": "hamids-ai-automations/gemini-agent-automation-toolkit",
+  "url": "https://github.com/hamids-ai-automations/gemini-agent-automation-toolkit",
+  "description": "Production-grade toolkit for Gemini-powered agents in Python: tool calling, structured output, human-in-the-loop approvals and multi-step workflows.",
+  "homepage": "https://marvis.web.app/projects/gemini-agent-automation-toolkit",
+  "created_at": "2026-11-20T13:45:57Z",
+  "updated_at": "2026-11-21T00:05:47Z",
+  "pushed_at": "2026-11-21T00:03:46Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-21T00:00:08Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 150482
+  },
+  "language_total_size": 150482,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 1,
+  "releases": [
+    {
+      "name": "v0.1.0 - first public release",
+      "tag_name": "v0.1.0",
+      "url": "https://github.com/hamids-ai-automations/gemini-agent-automation-toolkit/releases/tag/v0.1.0",
+      "published_at": "2026-11-21T00:04:26Z",
+      "is_prerelease": false
+    }
+  ],
+  "tags_count": 1,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "agent-framework",
+    "ai-agents",
+    "automation",
+    "gemini",
+    "generative-ai",
+    "google-genai",
+    "human-in-the-loop",
+    "llm",
+    "python",
+    "structured-output",
+    "tool-calling",
+    "workflow-automation"
+  ],
+  "size_kb": 74,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/gemini-agent-automation-toolkit/blob/main/README.md",
+    "has_readme": true,
+    "length": 11396,
+    "excerpt": "# Gemini Agent Automation Toolkit\n\n[![tests](https://github.com/hamids-ai-automations/gemini-agent-automation-toolkit/actions/workflows/tests.yml/badge.svg)](https://github.com/hamids-ai-automations/gemini-agent-automation-toolkit/actions/workflows/tests.yml)\n[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)\n[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)\n\nA small, modular Python toolkit for building **reliable** Google Gemini agents: validated tool\ncalling, Pydantic structured outputs, retries with backoff, human approval for sensitive actions,\nmulti-step workflows and redacted execution logging.\n\nIt is deliberately opinionated and dependency-light — a thin, testable layer over the official\n[`google-genai`](https://github.com/googleapis/python-genai) SDK instead of another framework.\n\n- Project page: **https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**\n- Repository: **https://github.com/hamids-ai-automations/gemini-agent-automation-toolkit**\n\n---\n\n## Why this toolkit\n\nMost \"Gemini wrapper\" packages stop at a single API call. Real agents need the boring parts:\ntools that validate their own arguments, outputs that fail loudly instead of silently, retries that\ndo not duplicate side effects, a human in the loop before anything destructive happens, and logs you\ncan hand to a security reviewer.\n\n| Capability | What you get |\n| --- | --- |\n| Agent engine | `Agent(...).run(prompt)` with instructions, context, usage metadata and typed results |\n| Tools | `@tool` decorator, JSON schema generation, argument validation, recursion and call limits |\n| Structured output | Pydantic schemas validated on the way out, with explicit `StructuredOutputError` |\n| Reliability | Exponential backoff with jitter, transient/permanent error classification, timeouts |\n| Human approval | Policies, single-use tokens bound to arguments, expiry, safe failure when unavailable |\n| Workflows | Ordered steps, state passing, per-step retries, approval checkpoints, execution history |\n| Observability | Structured JSON or plain logs, secrets and API keys redacted, token usage recorded |\n\nEverything is in-memory by design; nothing is persisted unless you persist it yourself.\n\n## Install\n\n```bash\npip install gemini-agent-toolkit\n```\n\nFrom source (development):\n\n```bash\ngit clone https://github.com/hamids-ai-automations/gemini-agent-automation-toolkit.git\ncd gemini-agent-automation-toolkit\npython -m venv .venv\n.\\.venv\\Scripts\\activate      # Windows\npip install -e \".[dev]\"\n```\n\nPython 3.10+ is required. The only runtime dependencies are `google-genai` and `pydantic` v2.\n\n## Quick start\n\nSet your key once (never commit it):\n\n```bash\nset GEMINI_API_KEY=your-key        # PowerShell: $env:GEMINI_API_KEY=\"your-key\"\n```\n\n```python\nfrom gemini_agent_toolkit import Agent\n\nagent = Agent(\n    name=\"Research Assistant\",\n    instructions=\"You are a helpful research assistant.\",\n)\n\nresult = agent.run(\"Explain how AI agents work in three sentences.\")\nprint(result.output)\nprint(result.usage)  # token usage when the API reports it\n```\n\n## Tools\n\n```python\nfrom gemini_agent_toolkit import Agent, tool\n\n\n@tool\ndef calculate_total(price: float, quantity: int) -> float:\n    \"\"\"Calculate a purchase total.\"\"\"\n    return price * quantity\n\n\nagent = Agent(\n    name=\"Shopping Assistant\",\n    instructions=\"Help users calculate totals.\",\n    tools=[calculate_total],\n)\n\nresult = agent.run(\"Calculate the total for 5 items costing 20 each.\")\n```\n\nThe model proposes a tool call; the toolkit validates arguments against the generated schema,\nexecutes the function, feeds the real result back to the model, and records the call. A proposal is\nnever reported as an executed call.\n\nUseful decorator options:\n\n```python\n@tool(requires_approval=True, approval_reason=\"Deletes user data\")\ndef delete_file(file_path: str) -> str: ...\n\n\n@tool(idempotent=True, timeout=5.0, tags=(\"files\",))\ndef read_file(file_path: str) ->",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 54,
+    "total_entries": 66,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "examples",
+      "gemini_agent_toolkit",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/tests.yml"
+    ],
+    "test_files_count": 11,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://www.python.org/",
+    "https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**",
+    "https://marvis.web.app/"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:03+00:00",
+  "detail_source": "api"
+}

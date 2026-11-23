@@ -1,0 +1,114 @@
+{
+  "id": "R_kgDOVblopw",
+  "name": "simple_invoicing",
+  "full_name": "hamids-ai-automations/simple_invoicing",
+  "url": "https://github.com/hamids-ai-automations/simple_invoicing",
+  "description": null,
+  "homepage": "https://simpleinvoicings.com",
+  "created_at": "2026-10-29T09:39:00Z",
+  "updated_at": "2026-10-29T09:39:00Z",
+  "pushed_at": "2026-11-01T06:36:16Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-29T09:28:39Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 2384122,
+    "TypeScript": 1701656,
+    "CSS": 182891,
+    "HTML": 90006,
+    "Makefile": 3509,
+    "Dockerfile": 2828,
+    "JavaScript": 1280
+  },
+  "language_total_size": 4366292,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 7,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 3467,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/simple_invoicing/blob/main/README.md",
+    "has_readme": true,
+    "length": 10485,
+    "excerpt": "<div align=\"center\">\n\n# Simple Invoicing\n\n**Modern, open-source invoicing & accounting system for small businesses**\n\nA Tally-inspired full-stack application with dual-voucher accounting, inventory management, ledger statements, and day-book registers.\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)\n[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)\n[![Backend: FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi)](https://fastapi.tiangolo.com/)\n[![Frontend: React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react)](https://react.dev/)\n[![DB: PostgreSQL](https://img.shields.io/badge/DB-PostgreSQL-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)\n\n</div>\n\n---\n\n## Features\n\n- **Dual-Voucher Accounting** — Sales and Purchase invoices with automatic inventory effects\n- **Credit Notes** — Issue credit notes against invoices with linked ledger and stock reversals\n- **Ledger Statements** — Period-based financial views per account (Tally-style)\n- **Day Book Register** — Cross-ledger voucher register for reconciliation\n- **Inventory Management** — Real-time stock tracking with automatic adjustments\n- **Manufacturing / Bill of Materials** — Define BOMs and record production transactions that consume raw materials and produce finished goods\n- **Cash & Bank** — Manage cash and bank accounts with company-account mappings\n- **Dashboard Analytics** — Server-side metrics with monthly trend, payment-status, and top-product charts\n- **Payment Tracking** — Record and track payments against invoices, with due/receivables views\n- **PDF Invoice Generation** — Generate professional invoices with WeasyPrint\n- **Pay by UPI** — Optional QR on invoice PDFs that opens the invoice's share page, where the customer pays the live outstanding balance from any UPI app\n- **Email Delivery** — Send invoices over SMTP with per-company config and full email history/logs\n- **Custom Invoice Numbering** — Configurable invoice series per financial year\n- **Financial Years** — Period management for scoping vouchers and reports\n- **GST Compliance** — Built-in tax fields and GST rate support\n- **GSTR-1 Export** — Generate and validate GSTR-1 returns with government-ready JSON (plus CSV/PDF) export\n- **Role-Based Access** — Admin, Manager, and Staff roles with JWT auth\n- **Backups** — On-demand database backups from the admin UI\n- **Keyboard Shortcuts** — Configurable shortcuts for power users\n- **Docker Ready** — One-command dev and production setup\n- **E2E Tested** — Playwright test suite for critical workflows\n\n### GSTIN validation\n\nCompany, buyer and ledger submissions normalize GSTINs to uppercase and check\ntheir 15-character format, state code (01-38, 97 or 99), and Luhn mod-36 check\ndigit. Blank optional GSTINs remain supported. For a synthetic example,\n`27ABCDE1234F1Z0` passes these checks; the former `27ABCDE1234F1Z5` example has an\nincorrect check digit. These local checks do not confirm registration on the GST\nportal.\n\nPreviously saved buyer and ledger records remain readable even if their GSTIN\nfails the newer state/check-digit checks. Correct the GSTIN before resubmitting\nit; existing stored identifiers are not automatically rewritten. Regression\ntests cover the validation rules, request schemas, and legacy response handling.\n\n## Tech Stack\n\n| Layer | Technology |\n|-------|-----------|\n| **Backend** | Python 3.11, FastAPI 0.115, SQLAlchemy 2.0, Pydantic 2 |\n| **Frontend** | React 18, TypeScript 5.6, Vite 5, Tailwind CSS, TanStack Query 5, Framer Motion |\n| **Database** | PostgreSQL 16 |\n| **Auth** | JWT with bcrypt password hashing |\n| **PDF** | WeasyPrint |\n| **Email** | SMTP (per-company configuration) |\n| **Testing** | Playwright (E2E), pytest (backend) |\n| **Deploy** | Docker, Docker Compose, Kubernetes (Kaniko) configs included |\n\n## Quick Start\n\n### Prerequisites\n\n- [Docker](https://docs.docker.com/get-docker/) & Docker Compose\n- O",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 597,
+    "total_entries": 661,
+    "top_level_directories": [
+      ".github",
+      "backend",
+      "docs",
+      "frontend",
+      "marketing"
+    ],
+    "important_files": [
+      "backend/requirements.txt",
+      "docker-compose.yml",
+      "frontend/package.json",
+      "frontend/tsconfig.json"
+    ],
+    "workflow_files": [
+      ".github/workflows/backend-ci.yml",
+      ".github/workflows/frontend-ci.yml"
+    ],
+    "test_files_count": 147,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 23,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "FastAPI",
+      "React"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "docker-compose.yml"
+    ]
+  },
+  "external_links": [
+    "https://fastapi.tiangolo.com/",
+    "https://react.dev/",
+    "https://www.postgresql.org/",
+    "https://docs.docker.com/get-docker/",
+    "http://localhost:5173",
+    "http://localhost:8000",
+    "http://localhost:8000/docs",
+    "https://tallysolutions.com/"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:30+00:00",
+  "detail_source": "api"
+}

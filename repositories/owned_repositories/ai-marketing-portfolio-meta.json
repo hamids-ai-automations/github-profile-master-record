@@ -1,0 +1,101 @@
+{
+  "id": "R_kgDOVK72jg",
+  "name": "ai-marketing-portfolio-meta",
+  "full_name": "hamids-ai-automations/ai-marketing-portfolio-meta",
+  "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
+  "description": "Portfolio hub: standards, roadmap, case studies, architecture map for the AI Marketing Engineer portfolio",
+  "homepage": null,
+  "created_at": "2026-10-15T13:13:07Z",
+  "updated_at": "2026-10-18T04:08:31Z",
+  "pushed_at": "2026-10-18T04:08:28Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-18T04:08:26Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Astro",
+  "languages": {
+    "Astro": 8841,
+    "JavaScript": 256
+  },
+  "language_total_size": 9097,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "astro",
+    "digital-marketing",
+    "marketing",
+    "martech",
+    "open-source",
+    "personal-brand",
+    "portfolio",
+    "portfolio-website",
+    "seo"
+  ],
+  "size_kb": 187,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta/blob/main/README.md",
+    "has_readme": true,
+    "length": 9810,
+    "excerpt": "---\nAIGC:\n    Label: \"1\"\n    ContentProducer: 001191440300708461136T1XGW3\n    ProduceID: a60f8e46820ea466ef0868a20e79d739_ce891e7ac90811f18b7f525400393706\n    ReservedCode1: ckveJdl0ASp5JoVKd2eqN/fPcPUWizQIu5cQW2c7RAd2oRF+1obXQPA1QIH9Giowya703vOQMgw8hjoGWnDTGIuS3zqK5h+MzHA8QqgnHfvkP4azqqvB/J/GyHsTFiTVFTsuFhQjoMMMt4nloz0OJWn+Jwp8KoX3XFXYD7X+PL9h1HqSXZJCvGgP0QU=\n    ContentPropagator: 001191440300708461136T1XGW3\n    PropagateID: a60f8e46820ea466ef0868a20e79d739_ce891e7ac90811f18b7f525400393706\n    ReservedCode2: ckveJdl0ASp5JoVKd2eqN/fPcPUWizQIu5cQW2c7RAd2oRF+1obXQPA1QIH9Giowya703vOQMgw8hjoGWnDTGIuS3zqK5h+MzHA8QqgnHfvkP4azqqvB/J/GyHsTFiTVFTsuFhQjoMMMt4nloz0OJWn+Jwp8KoX3XFXYD7X+PL9h1HqSXZJCvGgP0QU=\n---\n\n# AI Marketing Engineer — Portfolio Hub\n\n[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)\n[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)](https://python.org)\n[![Astro Site](https://img.shields.io/badge/Astro-4.x-BC52EE?style=for-the-badge&logo=astro&logoColor=white)](site/)\n\n> A governed, evidence-driven AI marketing engineering portfolio.\n> **One coherent architecture. Seventeen production-grade repositories. Zero API keys required to run any of them.**\n\nThis repository is the hub that ties the entire portfolio together: the narrative, the shared standards, the roadmap, the architecture, and the case studies. Land here and understand the whole portfolio in five minutes.\n\n---\n\n## The narrative\n\n> \"I am a digital marketing leader who can design, build, evaluate, and ship governed AI systems that solve real marketing problems. I understand measurement, incrementality, content, lifecycle, compliance, and data quality. I build with modern AI engineering practices: tool-using agents, MCP, structured outputs, human-in-the-loop, observability, and evaluation. I do not build demos. I build systems.\"\n\nThe differentiator is **not** the number of agents. It is that every system:\n\n- Produces **evidence-backed recommendations** (cites data, metrics, or model output)\n- Uses **tools safely** (defined functions, least-privilege permissions, never hallucinated numbers)\n- Passes **meaningful evaluations** (labeled datasets, pass/fail metrics, reported in CI)\n- Measures **real outcomes** (approval queue with pending/approved/rejected/executed/measured states)\n- Runs **without cost** (rule-based demo mode + precomputed fixtures, zero API keys)\n- **Documents itself** (README, architecture, evaluation, cost-controls in every repo)\n- Fits into **one coherent architecture** (everything imports `ai-marketing-shared`)\n\n## Architecture at a glance\n\n![Portfolio architecture](docs/diagrams/architecture.png)\n\nSource: [docs/diagrams/architecture.mmd](docs/diagrams/architecture.mmd) · Full design discussion: [docs/architecture.md](docs/architecture.md)\n\nEvery repository depends on [ai-marketing-shared](../ai-marketing-shared) for schemas, tooling, tracing, cost accounting, evaluation, and provider abstraction. The [ai-agent-testing-lab](../ai-agent-testing-lab) evaluates every other repository in CI. This hub documents the standards and roadmap that keep all seventeen repositories consistent.\n\n## The 17 repositories\n\n| # | Repository | Phase | Status | Purpose |\n|---|-----------|-------|--------|---------|\n| 1 | [ai-marketing-portfolio-meta](../ai-marketing-portfolio-meta) | A · Shared Foundation | In progress | Portfolio hub: narrative, standards, roadmap, architecture, case studies, hub site |\n| 2 | [ai-marketing-shared](../ai-marketing-shared) | A · Shared Foundation | Done · v0.1.0 | Shared Python package: Pydantic schemas, tool base classes + permissions, MCP adapter, tracing, cost accounting, rule-based fallback, eval harness, provider abstraction |\n| 3 | [ai-marketing-growth-os](../ai-marketing-growth-os) | B · Flagship | Planned | Agentic marketing intelligence platform — the virtual digital marketing department |\n| 4 | [ai-marketing-mix-copilot](../ai-marketing-mix-copilot) | ",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 35,
+    "total_entries": 44,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "site"
+    ],
+    "important_files": [
+      "site/package.json"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 1,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [],
+    "dependencies": [],
+    "config_files": []
+  },
+  "external_links": [
+    "https://python.org"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:53+00:00",
+  "detail_source": "api"
+}

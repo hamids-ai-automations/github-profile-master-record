@@ -1,0 +1,14 @@
+{
+  "full_name": "vibgrate/cli",
+  "url": "https://github.com/vibgrate/cli",
+  "description": "Local codebase intelligence for AI coding agents and software teams, in the CLI and VS Code. Vibgrate builds a deterministic Code Graph, measures dependency and runtime drift with DriftScore, maps architecture and blast radius, analyses dependency and vulnerability risk, and generates SBOM/VEX.",
+  "owner": "vibgrate",
+  "is_fork": false,
+  "stars": 6,
+  "language": "TypeScript",
+  "commits": 8,
+  "pull_requests": 8,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

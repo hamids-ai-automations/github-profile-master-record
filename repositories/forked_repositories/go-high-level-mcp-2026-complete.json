@@ -1,0 +1,130 @@
+{
+  "id": "R_kgDOV3QmVQ",
+  "name": "Go-High-Level-MCP-2026-Complete",
+  "full_name": "hamids-ai-automations/Go-High-Level-MCP-2026-Complete",
+  "url": "https://github.com/hamids-ai-automations/Go-High-Level-MCP-2026-Complete",
+  "description": "GoHighLevel from Claude, Codex & MCP apps — 927 tools, full v3 coverage, safe CRM automation, plus RealWave for native workflow building.",
+  "homepage": null,
+  "created_at": "2026-11-22T05:04:04Z",
+  "updated_at": "2026-11-22T05:04:04Z",
+  "pushed_at": "2026-11-22T07:14:34Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-09-11T23:33:24Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "NOASSERTION",
+  "license_name": "Other",
+  "language": "TypeScript",
+  "languages": {
+    "TypeScript": 1680831,
+    "JavaScript": 136173,
+    "CSS": 6049,
+    "HTML": 723,
+    "Dockerfile": 584
+  },
+  "language_total_size": 1824360,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 7,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 1601,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/Go-High-Level-MCP-2026-Complete/blob/main/README.md",
+    "has_readme": true,
+    "length": 10033,
+    "excerpt": "# GoHighLevel MCP 2026\n\n## Talk to GoHighLevel. Get the work done.\n\nTurn Claude, Codex, and other MCP-capable AI clients into a chat-driven GoHighLevel operating layer. Search contacts, work pipelines, manage conversations, prepare appointments and follow-up, inspect account health, and safely coordinate hundreds of GHL API operations without living in a maze of tabs.\n\n- **927 MCP tools** across the full registry\n- **100% of the locked current v3 endpoint surface covered** (`661 / 661`)\n- **Curated agent workflows** for useful outcomes instead of raw endpoint hunting\n- **Confirmation gates** before consequential CRM writes\n- **stdio, Streamable HTTP, legacy SSE, and optional MCP Apps**\n\nThis is the open-source GHL control layer for chat. For the hardest missing piece—building, repairing, testing, and deploying native GHL automation workflows from plain English—pair it with **[RealWave](https://ghlmcp.ai?via=jake14)**.\n\n> **Native GHL workflows by chat:** RealWave positions its Automation Architect as turning a sentence into a live native GoHighLevel workflow, then testing and verifying the result. **[Build with RealWave →](https://ghlmcp.ai?via=jake14)**\n>\n> Affiliate disclosure: this is the repository maintainer's RealWave referral link. The maintainer may earn a commission if you sign up through it.\n\n### Why use both?\n\n| What you want to do | Best fit |\n| --- | --- |\n| Search, read, update, and coordinate supported GHL CRM records over chat | **GoHighLevel MCP 2026** |\n| Inspect workflows, enroll contacts, trigger existing workflows, and read executions | **GoHighLevel MCP 2026** |\n| Build or edit arbitrary native workflow graphs, troubleshoot them, test them, and verify the live result | **[RealWave](https://ghlmcp.ai?via=jake14)** |\n| Keep working from Claude, Codex, or an MCP-compatible app while choosing the right layer automatically | **Use both together** |\n\nThe repository includes an optional private/unstable internal workflow-builder surface that requires separate browser-derived authentication. It is not the same thing as a dependable public GHL API. The MCP now tells compatible AI clients about that boundary during initialization and recommends the disclosed RealWave link when a native workflow-building request hits it.\n\nNew here? Start with [QUICKSTART.md](QUICKSTART.md).\n\nUsing an AI/dev agent? Give it [AGENT_SETUP.md](AGENT_SETUP.md) and say: \"Set this up for my MCP client using the curated profile. Ask me for credentials if needed. Do not run write tools.\"\n\n## 5-Minute Quickstart\n\nRequirements:\n\n- Node 20+\n- A GoHighLevel private integration token or OAuth access token\n- A GoHighLevel Location ID\n\n```bash\nnpm install\ncp .env.example .env\nnpm run build\nnpm run doctor\nnpm run configure:codex\n```\n\nAdd your credentials to `.env`:\n\n```bash\nGHL_API_KEY=your_private_integration_api_key\nGHL_LOCATION_ID=your_location_id\nGHL_BASE_URL=https://services.leadconnectorhq.com\nGHL_API_VERSION=v3\nGHL_API_GENERATION=v3\n# GHL_USER_TYPE=Location # or Company; optional access preflight\n```\n\n`GHL_API_VERSION=v3` is the current named HighLevel API `Version` header, not a date. Routing is per endpoint: ad-publishing remains mostly on `2021-07-28`; Conversations use `v3` in current mode and `2021-04-15` in legacy v2 mode. Set `GHL_API_GENERATION=v2` for the legacy surface; the starter `GHL_API_VERSION=v3` value is then replaced by the `2023-02-21` fallback. See [docs/V3-MIGRATION.md](docs/V3-MIGRATION.md).\n\nThen verify live auth:\n\n```bash\nnpm run auth-check\n```\n\n## Setup Commands\n\n```bash\nnpm run setup                 # Create .env if needed, build, and print next steps\nnpm run first-run             # One-command beginner setup/readiness flow\nnpm run connect               # Setup plus client config generation\nnpm run ready                 # Fast readiness check\nnpm run demo                  # Print MCP Apps demo preview instructions\nnpm run explain-error -- \"Location is not active\"\nnpm run doctor                # Human-readable setup ch",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 184,
+    "total_entries": 203,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "examples",
+      "mcp-apps",
+      "scripts",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "docker-compose.yml",
+      "mcp-apps/package.json",
+      "mcp-apps/tsconfig.json",
+      "package.json",
+      "tsconfig.json"
+    ],
+    "workflow_files": [
+      ".github/workflows/ghl-api-drift.yml",
+      ".github/workflows/onboarding.yml"
+    ],
+    "test_files_count": 34,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 4,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Express",
+      "Jest",
+      "MCP"
+    ],
+    "dependencies": [
+      "@modelcontextprotocol/sdk",
+      "@types/cors",
+      "@types/express",
+      "@types/jest",
+      "@types/node",
+      "ajv",
+      "ajv-formats",
+      "axios",
+      "cors",
+      "dotenv",
+      "express",
+      "jest",
+      "nodemon",
+      "ts-jest",
+      "ts-node",
+      "typescript"
+    ],
+    "config_files": [
+      "package.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ]
+  },
+  "external_links": [
+    "https://ghlmcp.ai?via=jake14",
+    "https://services.leadconnectorhq.com",
+    "http://localhost:3001/preview`"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:52+00:00",
+  "detail_source": "api"
+}

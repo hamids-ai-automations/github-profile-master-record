@@ -1,0 +1,50 @@
+[
+  {
+    "name": "shopify-growth-mcp",
+    "name_with_owner": "hamids-ai-automations/shopify-growth-mcp",
+    "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
+    "description": "Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT.",
+    "stars": 1,
+    "language": "TypeScript"
+  },
+  {
+    "name": "conversionbridge",
+    "name_with_owner": "hamids-ai-automations/conversionbridge",
+    "url": "https://github.com/hamids-ai-automations/conversionbridge",
+    "description": "Server-side conversion gateway for Meta Conversions API and Google Analytics 4 with privacy controls. Python, Firebase.",
+    "stars": 0,
+    "language": "Python"
+  },
+  {
+    "name": "whatsapp-attribution-router",
+    "name_with_owner": "hamids-ai-automations/whatsapp-attribution-router",
+    "url": "https://github.com/hamids-ai-automations/whatsapp-attribution-router",
+    "description": "JavaScript and Python toolkit for UTM-based WhatsApp lead attribution, Google Sheets logging, and GoHighLevel CRM integration.",
+    "stars": 0,
+    "language": "Python"
+  },
+  {
+    "name": "ppc-waste-detector",
+    "name_with_owner": "hamids-ai-automations/ppc-waste-detector",
+    "url": "https://github.com/hamids-ai-automations/ppc-waste-detector",
+    "description": "Free, open-source PPC budget leak detector for Google & Meta Ads. Detects negative keyword gaps, search query bleed, click fraud, and zero-conversion spend.",
+    "stars": 1,
+    "language": "Python"
+  },
+  {
+    "name": "seo-doctor",
+    "name_with_owner": "hamids-ai-automations/seo-doctor",
+    "url": "https://github.com/hamids-ai-automations/seo-doctor",
+    "description": "Open-source technical SEO crawler: broken links, canonical validation, crawl comparison and SEO health scoring. Python CLI.",
+    "stars": 1,
+    "language": "Python"
+  },
+  {
+    "name": "searchpulse-ai",
+    "name_with_owner": "hamids-ai-automations/searchpulse-ai",
+    "url": "https://github.com/hamids-ai-automations/searchpulse-ai",
+    "description": "Google Search Console intelligence: traffic-drop diagnostics, content decay detection and evidence-based SEO decisions. Python, FastAPI, pytest.",
+    "stars": 0,
+    "language": "Python"
+  }
+]

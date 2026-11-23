@@ -1,0 +1,117 @@
+{
+  "id": "R_kgDOVa_XHg",
+  "name": "ab-lab",
+  "full_name": "hamids-ai-automations/ab-lab",
+  "url": "https://github.com/hamids-ai-automations/ab-lab",
+  "description": "Python A/B testing toolkit + Streamlit app: sample-size/power calcs, frequentist & Bayesian inference, CUPED, guardrails.",
+  "homepage": "https://ab-lab.streamlit.app/",
+  "created_at": "2026-10-28T20:18:29Z",
+  "updated_at": "2026-10-28T20:18:30Z",
+  "pushed_at": "2026-11-11T01:04:03Z",
+  "default_branch": "master",
+  "last_commit_at": "2026-10-28T19:33:53Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 78069,
+    "Jupyter Notebook": 4
+  },
+  "language_total_size": 78073,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 1,
+  "branches_count": 6,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 830,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/ab-lab/blob/master/README.md",
+    "has_readme": true,
+    "length": 4737,
+    "excerpt": "# AB Lab - End-to-End A/B Testing Toolkit\n\n**Live demo → https://ab-lab.streamlit.app/** (hosted on Streamlit Community Cloud; free tier apps sleep after inactivity — the first load may take a few seconds to wake up)\n\nAB Lab is a small Python library plus a Streamlit app for the parts of A/B testing I kept re-writing by hand: sizing an experiment, simulating fake data to sanity-check a design, running the actual test, and then arguing with myself about whether the result is real.\n\n## Features\n\n- Simulate binary metrics (conversion) and continuous metrics (revenue, time-on-page), with optional seasonality, noise, and bot traffic mixed in so the \"clean\" case isn't the only one you can test against\n- Two-proportion z-test, pooled and Welch's t-test, and Mann-Whitney U for when a metric is too skewed for a t-test to be trustworthy\n- Sample-size and MDE calculators (closed-form) plus a Monte Carlo power simulation for when the closed-form normal approximation feels too optimistic\n- CUPED variance reduction using a pre-experiment covariate — helps most when that covariate is actually correlated with the metric, does nothing otherwise\n- Guardrails: sample-ratio-mismatch (chi-square) and an A/A sanity check\n- A Beta-Binomial Bayesian view for conversion experiments, if you want P(B beats A) instead of a p-value\n- Streamlit UI wrapping all of the above so you don't have to open a notebook every time\n\nA couple of honest caveats: the Wald CI for a difference in proportions is the quick-and-dirty version, not the more robust Newcombe score interval — fine for a dashboard, not for a paper. `mde_proportions` is a one-shot approximation (it assumes p2 ≈ p1 when estimating the standard error) rather than an iterative solve, so treat it as a ballpark, not a guarantee.\n\n## Screenshots\n\nThe Streamlit Cloud demo sleeps after inactivity (see the live demo note above), so these are captures of the app running locally via `streamlit run app/app.py`.\n\n**Binary metric run** — two-proportion z-test, SRM/A-A guardrails, and closed-form sample-size/MDE numbers for a simulated conversion test:\n\n![Binary conversion overview](docs/screenshots/01_binary_overview.png)\n\n**CUPED + Bayesian view** — the same binary run with CUPED variance reduction applied to the raw 0/1 outcome (not re-binarized) and the Beta-Binomial posterior view turned on:\n\n![CUPED adjustment and Bayesian posterior view](docs/screenshots/02_cuped_bayesian.png)\n\n**Continuous metric run** — Welch/pooled t-tests, Cohen's d and Hedges' g, Mann-Whitney U as a guardrail, and CUPED applied to a simulated revenue-like metric:\n\n![Continuous metric with CUPED](docs/screenshots/03_continuous_metric.png)\n\n## Quickstart\n\nClone the repo:\n\n```bash\ngit clone https://github.com/iamvisheshsrivastava/ab-lab.git\ncd ab-lab\n```\n\nInstall dependencies:\n\n```bash\npip install -r requirements.txt\n```\n\nRun the Streamlit app:\n\n```bash\nstreamlit run app/app.py\n```\n\n## Project Structure\n\n```text\nab-lab/\n|-- app/                # Streamlit web app\n|   `-- app.py\n|-- ablab/              # Core library modules\n|   |-- bayes.py\n|   |-- guardrails.py\n|   |-- metrics.py\n|   |-- power.py\n|   |-- simulate.py\n|   `-- tests.py\n|-- notebooks/          # Jupyter examples\n|-- examples/           # Script and CLI demos\n|-- tests/              # Unit tests\n|-- README.md\n|-- requirements.txt\n`-- pyproject.toml\n```\n\n## Example Usage\n\n### Simulate an A/B test\n\n```python\nfrom ablab.simulate import simulate_binomial\nfrom ablab.tests import ztest_proportions\n\n# Generate synthetic data\na, b = simulate_binomial(n=5000, p_control=0.10, lift=0.02)\n\n# Run z-test\nresult = ztest_proportions(a.sum(), len(a), b.sum(), len(b))\nprint(result)\n```\n\n### CUPED adjustment\n\n```python\nfrom ablab.metrics import cuped\n\nadjusted, theta = cuped(y_metric, covariate)\n```\n\nThere's also a self-contained script, `examples/run_cli_example.py`, that sizes an\nexperiment, simulates it, runs the z-test, an A/A check, and CUPED end to end —\nuseful as a starting point if you'",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 34,
+    "total_entries": 43,
+    "top_level_directories": [
+      ".github",
+      "ablab",
+      "app",
+      "docs",
+      "examples",
+      "notebooks",
+      "tests"
+    ],
+    "important_files": [
+      "app/app.py",
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/tests.yml"
+    ],
+    "test_files_count": 10,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "NumPy",
+      "Streamlit",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [
+      "-e .",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "plotly",
+      "scikit-learn",
+      "scipy",
+      "statsmodels",
+      "streamlit"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://ab-lab.streamlit.app/**",
+    "https://visheshsrivastava.com",
+    "https://linkedin.com/in/iamvisheshsrivastava"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:09+00:00",
+  "detail_source": "api"
+}

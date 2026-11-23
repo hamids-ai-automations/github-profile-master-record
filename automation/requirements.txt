@@ -1,0 +1,5 @@
+# Standard library only — no third-party runtime dependencies.
+# Python 3.10+ (uses modern typing syntax and dict ordering guarantees).
+# Run locally:
+#   export GH_PROFILE_SYNC_TOKEN=<token with repo/gist/read:org scopes>   (Windows: $env:GH_PROFILE_SYNC_TOKEN="...")
+#   python automation/sync.py --mode full

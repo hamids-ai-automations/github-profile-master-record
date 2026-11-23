@@ -1,0 +1,119 @@
+{
+  "id": "R_kgDOVaje3w",
+  "name": "supabase-py",
+  "full_name": "hamids-ai-automations/supabase-py",
+  "url": "https://github.com/hamids-ai-automations/supabase-py",
+  "description": "Python Client for Supabase. Query Postgres from Flask, Django, FastAPI. Python user authentication, security policies, edge functions, file storage, and realtime data streaming. Good first issue.",
+  "homepage": "https://supabase.com/docs/reference/python",
+  "created_at": "2026-10-28T13:33:26Z",
+  "updated_at": "2026-10-28T13:33:27Z",
+  "pushed_at": "2026-11-02T15:09:27Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-28T13:30:17Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 1038051,
+    "Makefile": 13363,
+    "Dockerfile": 4116,
+    "Nix": 2767,
+    "Batchfile": 1529
+  },
+  "language_total_size": 1059826,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 115,
+  "branches_count": 38,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 4604,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/supabase-py/blob/main/README.md",
+    "has_readme": true,
+    "length": 3569,
+    "excerpt": "# `supabase-py`\n\n[![CI](https://github.com/supabase/supabase-py/actions/workflows/ci.yml/badge.svg)](https://github.com/supabase/supabase-py/actions/workflows/ci.yml)\n[![Version](https://img.shields.io/pypi/v/supabase?color=%2334D058)](https://pypi.org/project/supabase)\n[![Coverage Status](https://coveralls.io/repos/github/supabase/supabase-py/badge.svg?branch=main)](https://coveralls.io/github/supabase/supabase-py?branch=main)\n\nPython monorepo for all [Supabase](https://supabase.com) libraries.\n\n- [supabase](src/supabase/README.md)\n- [realtime-py](src/realtime/README.md)\n- [supabase_functions](src/functions/README.md)\n- [storage3](src/storage/README.md)\n- [postgrest](src/postgrest/README.md)\n- [supabase_auth](src/auth/README.md)\n\nRelevant links:\n\n- Documentation: [supabase.com/docs](https://supabase.com/docs/reference/python/introduction)\n- Usage:\n  - [GitHub OAuth in your Python Flask app](https://supabase.com/blog/oauth2-login-python-flask-apps)\n  - [Python data loading with Supabase](https://supabase.com/blog/loading-data-supabase-python)\n\n## Local Development\n\n### Clone the Repository\n\n```bash\ngit clone https://github.com/supabase/supabase-py.git\ncd supabase-py\n```\n\n### Dependencies\n\nThis repository relies on the following dependencies for development: \n- `uv` for python project management.\n- `make` for running project commands.\n- `docker` for both `postgrest` and `auth` test containers.\n- `supabase-cli` for both `storage` and `realtime` test containers.\n\nAll of these dependencies are included in the nix shell environment, through `flake.nix`. If you've got `nix` installed, you may prefer to use it through `nix develop`.\n\n### Use a Virtual Environment\n\nWe recommend using a virtual environment, preferably through `uv`, given it is currently the only tool that understands the workspace setup (you can read more about it in [the uv docs](https://docs.astral.sh/uv/concepts/projects/workspaces/)).\n\n```\nuv venv supabase-py\nsource supabase-py/bin/activate\nuv sync\n```\n\nIf you're using nix, the generated `python` executable should have the correct dependencies installed for the whole workspace, given it is derived from the root's `pyproject.toml` using [uv2nix](https://github.com/pyproject-nix/uv2nix).\n\n### Running tests and other commands\n\nWe use `make` to store and run the relevant commands. The structure is set up such that each sub package can individually set its command in its own `Makefile`, and the job of the main `Makefile` is just coordinate calling each of them.\n\nFor instance, in order to run all tests of all packages, you should use the following root command\n```bash\nmake ci\n```\nWhich internally dispatches `make -C src/{package} tests` calls to each package in the monorepo.\n\nYou should also consider using\n```bash\nmake ci -jN # where N is the number of max concurrent jobs, or just -j for infinite jobs\n```\nTo run each of the packages' tests in parallel. This should be generally faster than running in 1 job, but has the downside of messing up the CLI output, so parsing error messages might not be easy.\n\nOther relevant commands include\n```bash\nmake install-hooks # install all commit hooks into the local .git folder\nmake stop-infra    # stops all running containers from all packages\nmake clean         # delete all intermediary files created by testing\n```\nAll the subpackages command are available from the main root by prefixing the command with `{package_name}.`. Examples:\n```bash\nmake realtime.tests # run only realtime tests\nmake storage.clean  # delete temporary files only in the storage package\n```\n",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 302,
+    "total_entries": 374,
+    "top_level_directories": [
+      ".devcontainer",
+      ".github",
+      "docs",
+      "src"
+    ],
+    "important_files": [
+      "pyproject.toml",
+      "src/auth/infra/docker-compose.yml",
+      "src/auth/pyproject.toml",
+      "src/functions/pyproject.toml",
+      "src/postgrest/docs/requirements.txt",
+      "src/postgrest/pyproject.toml",
+      "src/realtime/pyproject.toml",
+      "src/storage/pyproject.toml",
+      "src/supabase/pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/conventional-commits.yml",
+      ".github/workflows/stale.yml",
+      ".github/workflows/sync-compliance.yml",
+      ".github/workflows/validate-capabilities.yml"
+    ],
+    "test_files_count": 89,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 118,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Supabase",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://pypi.org/project/supabase",
+    "https://coveralls.io/repos/github/supabase/supabase-py/badge.svg?branch=main",
+    "https://coveralls.io/github/supabase/supabase-py?branch=main",
+    "https://supabase.com",
+    "https://supabase.com/docs/reference/python/introduction",
+    "https://supabase.com/blog/oauth2-login-python-flask-apps",
+    "https://supabase.com/blog/loading-data-supabase-python",
+    "https://docs.astral.sh/uv/concepts/projects/workspaces/"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:23+00:00",
+  "detail_source": "api"
+}

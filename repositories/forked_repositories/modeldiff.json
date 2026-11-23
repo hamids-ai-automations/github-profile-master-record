@@ -1,0 +1,105 @@
+{
+  "id": "R_kgDOVcAUPQ",
+  "name": "modeldiff",
+  "full_name": "hamids-ai-automations/modeldiff",
+  "url": "https://github.com/hamids-ai-automations/modeldiff",
+  "description": "Regression testing for local AI",
+  "homepage": "",
+  "created_at": "2026-10-29T16:05:42Z",
+  "updated_at": "2026-10-29T16:05:42Z",
+  "pushed_at": "2026-10-31T18:44:57Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-10-29T16:03:56Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 129057
+  },
+  "language_total_size": 129057,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 1,
+  "branches_count": 2,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": false,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 153,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/modeldiff/blob/main/README.md",
+    "has_readme": true,
+    "length": 24688,
+    "excerpt": "# ModelDiff\n\n[![CI](https://github.com/OpenWave-India/modeldiff/actions/workflows/ci.yml/badge.svg)](https://github.com/OpenWave-India/modeldiff/actions/workflows/ci.yml)\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)\n\n**Regression testing for local AI.**\n\nModelDiff is a local-first testing framework for detecting behavioral regressions across AI model versions, inference configurations, prompt templates, and runtime changes. You describe test cases in a version-controlled YAML or JSON file, run them against a baseline and a candidate configuration, and get a report of what broke, what got fixed, and what merely changed.\n\nNo API keys are needed. The framework, its test suite, and the example workflow run fully offline. Running against a live model is optional and uses a local [Ollama](https://ollama.com) server.\n\n## Why\n\nSwapping a model version, quantization level, prompt template, inference runtime, or generation setting can silently break an application that depends on the model's output:\n\n- JSON that used to parse now arrives wrapped in a Markdown code fence.\n- A classifier starts returning a different label.\n- A tool call passes `7730` where the schema expects `\"7730\"`.\n- A required field disappears from a structured response.\n- Responses get noticeably slower.\n\nOrdinary unit tests do not cover these cases well, because the \"code\" that changed is a model. ModelDiff gives you repeatable test cases with explicit pass criteria, so a model or config change can be checked like any other change.\n\n## Features\n\n- **Test cases as data.** Suites in YAML or JSON, validated against a schema, with error messages that name the case and field at fault. Every problem in the file is reported at once.\n- **Six check types.**\n  | Type | Passes when |\n  | --- | --- |\n  | `exact` | output equals `expected` (whitespace-stripped by default; optional case-insensitive) |\n  | `json` | output parses as JSON and, if `schema` is given, validates against that JSON Schema |\n  | `classification` | the predicted label equals `expected` and is one of `labels` (if given) |\n  | `required_fields` | the JSON output contains every dotted path in `required` and matches `values` |\n  | `tool_call` | the output is a tool call with the expected `name`, and its arguments equal `arguments` and/or validate against `arguments_schema` |\n  | `custom` | a Python function you register returns a pass |\n- **Baseline vs candidate comparison** that separates *regressions* (pass to fail) from *fixes* (fail to pass), cases still failing, *behavior changes* (passing in both runs but with different output), classification label changes, and cases missing from one side.\n- **Reproducible result files** (`modeldiff.run/v1` JSON) recording the output or its hash, status, failure reason, latency, timestamp, runtime and model metadata, and errors. Keys that look like secrets are redacted.\n- **Reports** in text, Markdown, or JSON, written to stdout or a file.\n- **Latency comparison** with an opt-in threshold. Slowdowns are reported but do not fail the build unless you ask them to.\n- **Optional process memory** measurement via `psutil`, clearly labelled as ModelDiff's own process.\n- **Two providers.** `replay` serves recorded outputs and needs no model; `ollama` calls a local Ollama server using only the standard library.\n- **CI-friendly CLI** with stable exit codes.\n\nWhat ModelDiff does **not** do: it does not judge semantic correctness, factuality, or hallucination. A case passes or fails only according to its explicit criterion. When an output changes but the criterion is still met, ModelDiff reports a behavior change for you to review, not a regression.\n\n## Installation\n\nRequires Python 3.11 or newer.\n\n```bash\ngit clone https://github.com/OpenWave-India/modeldiff.git\ncd modeldiff\npython -m venv .venv\nsource .venv/bin/activate        # Windows: .venv\\Scripts\\activate\npi",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 49,
+    "total_entries": 64,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "examples",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 7,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 7,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://ollama.com",
+    "http://localhost:11434",
+    "https://www.linkedin.com/company/openwave-india",
+    "https://allcontributors.org",
+    "https://avatars.githubusercontent.com/u/101915083?v=4?s=80",
+    "https://avatars.githubusercontent.com/u/317772335?v=4?s=80",
+    "https://avatars.githubusercontent.com/u/184008125?v=4?s=80",
+    "https://avatars.githubusercontent.com/u/165297479?v=4?s=80",
+    "https://avatars.githubusercontent.com/u/176455968?v=4?s=80",
+    "https://avatars.githubusercontent.com/u/210186755?v=4?s=80"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:32+00:00",
+  "detail_source": "api"
+}

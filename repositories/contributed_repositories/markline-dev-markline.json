@@ -1,0 +1,14 @@
+{
+  "full_name": "markline-dev/markline",
+  "url": "https://github.com/markline-dev/markline",
+  "description": "Open-source, self-hostable documentation framework with first-class OpenAPI, full-text search, and an interactive API playground. A fully open alternative to Scalar and Mintlify.",
+  "owner": "markline-dev",
+  "is_fork": false,
+  "stars": 5,
+  "language": "TypeScript",
+  "commits": 3,
+  "pull_requests": 1,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

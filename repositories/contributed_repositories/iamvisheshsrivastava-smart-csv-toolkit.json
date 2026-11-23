@@ -1,0 +1,14 @@
+{
+  "full_name": "iamvisheshsrivastava/Smart_CSV_Toolkit",
+  "url": "https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit",
+  "description": "Streamlit app for LLM-assisted CSV cleaning, metadata inference, and multi-file merging, with guided decision-tree workflows.",
+  "owner": "iamvisheshsrivastava",
+  "is_fork": false,
+  "stars": 3,
+  "language": "Python",
+  "commits": 3,
+  "pull_requests": 3,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

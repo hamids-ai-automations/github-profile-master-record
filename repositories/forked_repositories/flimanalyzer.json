@@ -1,0 +1,128 @@
+{
+  "id": "R_kgDOVh4owg",
+  "name": "flimanalyzer",
+  "full_name": "hamids-ai-automations/flimanalyzer",
+  "url": "https://github.com/hamids-ai-automations/flimanalyzer",
+  "description": "Python package for analysis of Fluorescence Lifetime Imaging Microscopy (FLIM) data.",
+  "homepage": "",
+  "created_at": "2026-11-03T20:48:49Z",
+  "updated_at": "2026-11-03T20:48:49Z",
+  "pushed_at": "2026-11-03T23:04:35Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-03T13:51:22Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": true,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 908532,
+    "Dockerfile": 2338
+  },
+  "language_total_size": 910870,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 9,
+  "branches_count": 26,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": false,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 59725,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/flimanalyzer/blob/main/README.md",
+    "has_readme": true,
+    "length": 12833,
+    "excerpt": "# <img src=\"flim/resources/flimanalyzer.png\" alt=\"\" width=\"80\" align=\"top\"> FLIMAnalyzer\n\n[![Python](https://img.shields.io/badge/python-3.12%2B-blue)](https://github.com/uvaKCCI/flimanalyzer/blob/main/pyproject.toml) [![Tests](https://github.com/uvaKCCI/flimanalyzer/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/uvaKCCI/flimanalyzer/actions/workflows/tests.yml) [![codecov](https://codecov.io/gh/uvaKCCI/flimanalyzer/branch/main/graph/badge.svg)](https://codecov.io/gh/uvaKCCI/flimanalyzer) [![Documentation Status](https://readthedocs.org/projects/flimanalyzer/badge/?version=latest)](https://flimanalyzer.readthedocs.io/en/latest/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23426563.svg)](https://doi.org/10.5281/zenodo.23426563)\n\nPython package for analysis of Fluorescence Lifetime Imaging Microscopy (FLIM) data.\n\nDocumentation: https://flimanalyzer.readthedocs.io\n\n## Requirements\n\n* Python 3.12 or later\n* All Python dependencies, including [PyTorch](https://pytorch.org) and [Prefect](https://www.prefect.io), are declared in `pyproject.toml` and installed automatically.\n\n## Installation\n\n### From PyPI with uv (recommended)\n\n[uv](https://docs.astral.sh/uv/) creates a virtual environment in `.venv` (installing a matching Python if needed). Then install FLIMAnalyzer with its graphical user interface (GUI) into it:\n\n    uv venv --python 3.12\n    source .venv/bin/activate    # Windows: .venv\\Scripts\\activate\n    uv pip install \"flimanalyzer[gui]\"\n\nThe `gui` extra installs the GUI. Without it, `uv pip install flimanalyzer` installs only what [batch mode](#run-flimanalyzer-in-batch-mode) needs, for example on a computing cluster. Add `dask` for the optional Dask support (see [Concurrent and distributed execution](#concurrent-and-distributed-execution)), e.g. `\"flimanalyzer[gui,dask]\"`.\n\n### From PyPI with pip\n\n    python3.12 -m venv .venv\n    source .venv/bin/activate    # Windows: .venv\\Scripts\\activate\n    pip install \"flimanalyzer[gui]\"\n\n### PyTorch and the GPU\n\nInstalled from PyPI, FLIMAnalyzer gets PyTorch from PyPI, which provides a different build on each platform:\n\n* **Linux:** the PyPI build includes CUDA, so an NVIDIA GPU is used if its driver is recent enough.\n* **Windows:** the PyPI build is CPU-only. For an NVIDIA GPU, install with `uv pip install \"flimanalyzer[gui]\" --torch-backend=cu128`, or with pip install the CUDA build first: `pip install torch --index-url https://download.pytorch.org/whl/cu128`. See [pytorch.org](https://pytorch.org/get-started/locally/) for other CUDA versions.\n* **macOS:** only Apple Silicon is supported, because current PyTorch versions are not available for Intel Macs. The PyPI build uses the Apple GPU (MPS).\n\n### Latest development version\n\nTo install the current state of the repository, clone it and let uv create the environment. `uv sync` installs FLIMAnalyzer with the GUI in editable mode, with the exact package versions from `uv.lock` (the versions the tests run with). On Windows and Linux (x86_64), it installs the CUDA 12.8 build of PyTorch:\n\n    git clone https://github.com/uvaKCCI/flimanalyzer.git\n    cd flimanalyzer\n    uv sync\n\nWithout the GUI, with the test dependencies, or with Dask support:\n\n    uv sync --no-group gui\n    uv sync --extra test\n    uv sync --extra dask\n\nWith pip, in a virtual environment in the cloned folder: `pip install -e \".[gui]\"`.\n\n### With Docker\n\nThe Docker images run only [batch mode](#run-flimanalyzer-in-batch-mode). They don't include the GUI. Each release is published to the GitHub Container Registry:\n\n| Image | |\n|---|---|\n| `ghcr.io/uvakcci/flimanalyzer:<version>`, `:latest` | with the CUDA build of PyTorch (x86_64, several GB) |\n| `ghcr.io/uvakcci/flimanalyzer:<version>-cpu`, `:latest-cpu` | CPU only (x86_64 and ARM), much smaller |\n\n    docker pull ghcr.io/uvakcci/flimanalyzer:latest-cpu\n\nTo build an image from the repository instead: with the CUDA 12.8 build of PyTorch, with the build for another CUDA version (here 12.6)",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 344,
+    "total_entries": 376,
+    "top_level_directories": [
+      ".github",
+      "docs",
+      "flim",
+      "scripts",
+      "tests"
+    ],
+    "important_files": [
+      "flim/gui/app.py",
+      "pyproject.toml"
+    ],
+    "workflow_files": [
+      ".github/workflows/docker.yml",
+      ".github/workflows/release.yml",
+      ".github/workflows/testpypi.yml",
+      ".github/workflows/tests.yml"
+    ],
+    "test_files_count": 50,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 6,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Next.js",
+      "NumPy",
+      "pandas",
+      "pytest"
+    ],
+    "dependencies": [],
+    "config_files": [
+      "pyproject.toml",
+      "Dockerfile"
+    ]
+  },
+  "external_links": [
+    "https://codecov.io/gh/uvaKCCI/flimanalyzer/branch/main/graph/badge.svg",
+    "https://codecov.io/gh/uvaKCCI/flimanalyzer",
+    "https://readthedocs.org/projects/flimanalyzer/badge/?version=latest",
+    "https://flimanalyzer.readthedocs.io/en/latest/",
+    "https://zenodo.org/badge/DOI/10.5281/zenodo.23426563.svg",
+    "https://doi.org/10.5281/zenodo.23426563",
+    "https://flimanalyzer.readthedocs.io",
+    "https://pytorch.org",
+    "https://www.prefect.io",
+    "https://docs.astral.sh/uv/",
+    "https://download.pytorch.org/whl/cu128`",
+    "https://pytorch.org/get-started/locally/",
+    "https://download.pytorch.org/whl/cu126",
+    "https://download.pytorch.org/whl/cpu",
+    "http://prefect.example.org:4200/api`",
+    "https://my-prefect-server/api",
+    "http://127.0.0.1:4200/api`",
+    "http://127.0.0.1:4200",
+    "https://www.dask.org",
+    "https://docs.prefect.io/v3/develop/task-run-limits",
+    "https://doi.org/10.1002/jbio.202400426",
+    "https://doi.org/10.1186/s10020-026-01605-2",
+    "https://doi.org/10.5281/zenodo.23438157",
+    "https://doi.org/10.5281/zenodo.23426564"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:09:21+00:00",
+  "detail_source": "api"
+}

@@ -1,0 +1,14 @@
+{
+  "full_name": "doobidoo/mcp-memory-service",
+  "url": "https://github.com/doobidoo/mcp-memory-service",
+  "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
+  "owner": "doobidoo",
+  "is_fork": false,
+  "stars": 2145,
+  "language": "Python",
+  "commits": 2,
+  "pull_requests": 3,
+  "issues": 0,
+  "reviews": 0,
+  "owned_by_profile": false
+}

@@ -1,0 +1,112 @@
+{
+  "id": "R_kgDOVQvC9A",
+  "name": "pinvault-pinterest-downloader",
+  "full_name": "hamids-ai-automations/pinvault-pinterest-downloader",
+  "url": "https://github.com/hamids-ai-automations/pinvault-pinterest-downloader",
+  "description": "PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export",
+  "homepage": null,
+  "created_at": "2026-10-20T09:58:24Z",
+  "updated_at": "2026-11-08T04:03:44Z",
+  "pushed_at": "2026-11-21T20:28:16Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-21T20:28:15Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "JavaScript",
+  "languages": {
+    "JavaScript": 160666,
+    "CSS": 13407,
+    "HTML": 12575,
+    "Python": 3196,
+    "PowerShell": 2214
+  },
+  "language_total_size": 192058,
+  "stars": 1,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 1,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [
+    "chrome-extension",
+    "downloader",
+    "manifest-v3",
+    "pinterest",
+    "privacy",
+    "vanilla-javascript"
+  ],
+  "size_kb": 132,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/pinvault-pinterest-downloader/blob/main/README.md",
+    "has_readme": true,
+    "length": 7196,
+    "excerpt": "# PinVault — Pinterest Image & Video Downloader\n\nPinVault is a local-first Chrome extension (Manifest V3) for saving Pinterest images and **directly accessible** videos with the best available resolution, smart filenames, bulk download queues, duplicate detection, collections, and CSV/JSON inventory export.\n\n**No build step, no runtime dependencies, vanilla JavaScript.** Request only the permissions it needs and never transmits your data.\n\n> **Legal reminder:** Save only content you are authorized to save. Respect creator rights and applicable copyright law. PinVault does not bypass DRM, logins, CAPTCHAs, or rate limits.\n\n## Features\n\n- **Hover quick download** — a download button appears over Pinterest pins (home feed, boards, search, pin pages).\n- **Popup quick download** — paste a pin URL (including `pin.it` short links) and download it directly.\n- **Page scan** — collect media from the current board/search/pin page into the dashboard.\n- **Bulk downloads** — bounded-concurrency queue (default 3), progress, pause, resume, cancel, and retry with backoff.\n- **Filters & selection** — orientation, minimum dimensions, format, duplicate status; select all / deselect / individual selection with preview.\n- **Highest accessible resolution** — picks the widest accessible CDN variant and excludes login-walled variants.\n- **Smart naming** — configurable templates: `pinterest-title-001.jpg`, `board-name_pin-id.jpg`, `yyyy-mm-dd_pin-id.webp`; sanitized, path-traversal-safe filenames.\n- **Duplicate prevention** — normalized media URLs and pin ids keep repeats out of your Downloads.\n- **Collections** — save collected media records into named local collections.\n- **History** — review past downloads, retry failures, clear independently of Chrome's download history.\n- **CSV/JSON export** — media inventory with pin URL, dimensions, format, and status.\n- **Light/dark/system theme**, keyboard-navigable, accessible UI.\n- **Video support** — direct MP4/WebM downloads; segmented HLS and DRM-protected videos are explicitly marked unsupported (never bypassed).\n- **Privacy** — local-first; one-click \"Erase all PinVault data\".\n\n## Install (developer mode, load unpacked)\n\n1. Download the release ZIP (`dist/pinvault-pinterest-downloader-1.0.0.zip`) and extract it, **or** clone the repository.\n2. Open `chrome://extensions`.\n3. Enable **Developer mode** (top-right).\n4. Click **Load unpacked** and select the folder that contains `manifest.json` (the project root, e.g. `D:\\pin extension\\PinVault`).\n5. Pin the PinVault toolbar icon. Visit a Pinterest board and hover a pin to test.\n\nTo repackage from source: `powershell -ExecutionPolicy Bypass -File scripts\\build.ps1`.\n\n## Usage\n\n### Quick download\n- **Hover:** hover any pin → click the download button.\n- **Popup:** click the PinVault toolbar icon → paste a pin URL → **Download**. The popup also shows the current page's media count, a mini queue, and recent history.\n\n### Bulk download\n1. Open the dashboard (`chrome://extensions` → PinVault → Details → Extension options, or right-click the toolbar icon → Options).\n2. Go to **Collect** → **Scan current page** (or scroll and re-scan to capture lazy-loaded pins).\n3. Filter and select media, then **Download selected**.\n4. Watch progress in **Bulk downloads**; pause, cancel, retry as needed.\n\n### Collections, history, exports\n- **Collections:** create a named collection and add selected media records.\n- **History:** review downloads, retry failed items, clear history.\n- **Export:** export the current inventory as CSV or JSON.\n\n## Permissions explained\n\n| Permission | Why |\n| --- | --- |\n| `storage` | Store settings/history/queue/collections/duplicate index locally |\n| `downloads` | Save media through Chrome's Downloads API |\n| `activeTab` | Read the active Pinterest tab when you click the popup |\n| Host: `*://*.pinterest.com/*`, `*://*.pinimg.com/*`, `https://pin.it/*` | Operate only on Pinterest and its media CDN |\n\n## Privacy & copyright notice\n\nPinVault is local-f",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 56,
+    "total_entries": 69,
+    "top_level_directories": [
+      ".github",
+      "background",
+      "content",
+      "dashboard",
+      "docs",
+      "icons",
+      "lib",
+      "popup",
+      "scripts",
+      "tests"
+    ],
+    "important_files": [
+      "package.json"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 11,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [],
+    "dependencies": [],
+    "config_files": [
+      "package.json"
+    ]
+  },
+  "external_links": [
+    "https://pin.it/*`",
+    "https://abouthamid.web.app/",
+    "https://wa.me/923167417135"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-23T05:08:57+00:00",
+  "detail_source": "api"
+}

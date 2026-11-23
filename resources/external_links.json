@@ -6,15 +6,15 @@
       "profile_website",
       "social_account",
       "profile_readme_link",
-      "repository_readme_link",
-      "repository_homepage"
+      "repository_homepage",
+      "repository_readme_link"
     ],
     "related_resources": [
+      "hamids-ai-automations/shopify-growth-mcp",
       "hamids-ai-automations/github-profile-master-record",
       "hamids-ai-automations/hamids-ai-automations",
       "hamids-ai-automations/ghl-devops-toolkit",
       "hamids-ai-automations/envscope",
-      "hamids-ai-automations/shopify-growth-mcp",
       "hamids-ai-automations/searchpulse-ai",
       "hamids-ai-automations/gemini-agent-automation-toolkit",
       "hamids-ai-automations/whatsapp-attribution-router",
@@ -177,6 +177,30 @@
     ],
     "related_resources": [],
     "source": "profile README",
+    "verified": null
+  },
+  {
+    "url": "https://m8ven.ai/badge/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?v=109ce7f30ab56045601044f15dae2367",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/shopify-growth-mcp"
+    ],
+    "source": "README of hamids-ai-automations/shopify-growth-mcp",
+    "verified": null
+  },
+  {
+    "url": "https://m8ven.ai/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?s=readme",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/shopify-growth-mcp"
+    ],
+    "source": "README of hamids-ai-automations/shopify-growth-mcp",
     "verified": null
   },
   {
@@ -351,7 +375,7 @@
     "verified": null
   },
   {
-    "url": "https://pypi.org/project/pubchem-finder",
+    "url": "https://opnform.com",
     "type": "website",
     "relationships": [
       "repository_readme_link",
@@ -359,7 +383,7 @@
     ],
     "related_resources": [
       "hamids-ai-automations/github-profile-master-record",
-      "hamids-ai-automations/pubchem-finder"
+      "hamids-ai-automations/OpnForm"
     ],
     "source": "README of hamids-ai-automations/github-profile-master-record",
     "verified": null
@@ -1513,6 +1537,19 @@
     "verified": null
   },
   {
+    "url": "https://pypi.org/project/pubchem-finder",
+    "type": "live_site",
+    "relationships": [
+      "repository_homepage",
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/pubchem-finder"
+    ],
+    "source": "repository hamids-ai-automations/pubchem-finder",
+    "verified": null
+  },
+  {
     "url": "https://pubchem.ncbi.nlm.nih.gov",
     "type": "website",
     "relationships": [
@@ -1734,19 +1771,6 @@
       "hamids-ai-automations/pubchem-finder"
     ],
     "source": "README of hamids-ai-automations/pubchem-finder",
-    "verified": null
-  },
-  {
-    "url": "https://opnform.com",
-    "type": "live_site",
-    "relationships": [
-      "repository_homepage",
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/OpnForm"
-    ],
-    "source": "repository hamids-ai-automations/OpnForm",
     "verified": null
   },
   {

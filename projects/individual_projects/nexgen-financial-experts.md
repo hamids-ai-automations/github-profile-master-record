@@ -94,8 +94,8 @@ Active — last push 2026-11-21
 
 ## Related projects
 
-- hamids-ai-automations/ghl-devops-toolkit
 - hamids-ai-automations/shopify-growth-mcp
+- hamids-ai-automations/ghl-devops-toolkit
 - hamids-ai-automations/firebase-ai-starter-kit
 - hamids-ai-automations/Go-High-Level-MCP-2026-Complete
 - hamids-ai-automations/cli

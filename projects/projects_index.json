@@ -3,6 +3,17 @@
   "count": 95,
   "projects": [
     {
+      "name": "shopify-growth-mcp",
+      "full_name": "hamids-ai-automations/shopify-growth-mcp",
+      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
+      "documentation": "projects/individual_projects/shopify-growth-mcp.md",
+      "live_url": "https://marvis.web.app/",
+      "language": "TypeScript",
+      "stars": 1,
+      "status": "active",
+      "is_fork": false
+    },
+    {
       "name": "github-profile-master-record",
       "full_name": "hamids-ai-automations/github-profile-master-record",
       "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
@@ -109,17 +120,6 @@
       "live_url": "https://marvis.web.app/",
       "language": "Python",
       "stars": 0,
-      "status": "active",
-      "is_fork": false
-    },
-    {
-      "name": "shopify-growth-mcp",
-      "full_name": "hamids-ai-automations/shopify-growth-mcp",
-      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
-      "documentation": "projects/individual_projects/shopify-growth-mcp.md",
-      "live_url": "https://marvis.web.app/",
-      "language": "TypeScript",
-      "stars": 1,
       "status": "active",
       "is_fork": false
     },

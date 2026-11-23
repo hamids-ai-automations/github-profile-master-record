@@ -5,6 +5,21 @@
   "forked_count": 59,
   "repositories": [
     {
+      "id": "R_kgDOVaAF6A",
+      "name": "shopify-growth-mcp",
+      "full_name": "hamids-ai-automations/shopify-growth-mcp",
+      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
+      "description": "Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT.",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "pushed_at": "2026-11-23T10:16:24Z",
+      "homepage": "https://marvis.web.app/",
+      "documentation": "projects/individual_projects/shopify-growth-mcp.md"
+    },
+    {
       "id": "R_kgDOV4S7nw",
       "name": "github-profile-master-record",
       "full_name": "hamids-ai-automations/github-profile-master-record",
@@ -15,7 +30,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-11-23T06:22:00Z",
+      "pushed_at": "2026-11-23T06:23:26Z",
       "homepage": null,
       "documentation": "projects/individual_projects/github-profile-master-record.md"
     },
@@ -153,21 +168,6 @@
       "pushed_at": "2026-11-21T20:28:26Z",
       "homepage": "https://marvis.web.app/",
       "documentation": "projects/individual_projects/envscope.md"
-    },
-    {
-      "id": "R_kgDOVaAF6A",
-      "name": "shopify-growth-mcp",
-      "full_name": "hamids-ai-automations/shopify-growth-mcp",
-      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
-      "description": "Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT.",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "pushed_at": "2026-11-21T20:28:23Z",
-      "homepage": "https://marvis.web.app/",
-      "documentation": "projects/individual_projects/shopify-growth-mcp.md"
     },
     {
       "id": "R_kgDOVOCTiA",

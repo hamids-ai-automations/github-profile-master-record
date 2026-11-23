@@ -2,7 +2,7 @@
 
 **Owner:** Muhammad Hamid (@hamids-ai-automations) — AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
-**Last synchronized:** 2026-11-23T06:23:24+00:00
+**Last synchronized:** 2026-11-23T18:05:59+00:00
 
 ## How to use this repository
 
@@ -47,7 +47,7 @@
 | [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |
 | [seo-audit-tool](https://github.com/hamids-ai-automations/seo-audit-tool) | Ethical on-page SEO audit crawler: analyzes titles, meta tags, headings, canonicals, image alt texts, duplicate content, and exports actionable CSVs. | Python | 1 | 0 | active | 2026-10-18 |
 | [seo-doctor](https://github.com/hamids-ai-automations/seo-doctor) | Open-source technical SEO crawler: broken links, canonical validation, crawl comparison and SEO health scoring. Python CLI. | Python | 1 | 0 | active | 2026-10-12 |
-| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-21 |
+| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |
 | [ai-agent-testing-lab](https://github.com/hamids-ai-automations/ai-agent-testing-lab) | AI agent evaluation and reliability harness: labelled suites, CI integration, accuracy/calibration/cost/latency reporting. Python, pytest, MCP. | Python | 0 | 0 | active | 2026-10-18 |
 | [ai-search-visibility-auditor](https://github.com/hamids-ai-automations/ai-search-visibility-auditor) | GEO toolkit: validate AI crawler access in robots.txt, generate and lint llms.txt, check AI-citation readiness of web content. Python, Streamlit. | Python | 0 | 0 | active | 2026-10-17 |
 | [conversionbridge](https://github.com/hamids-ai-automations/conversionbridge) | Server-side conversion gateway for Meta Conversions API and Google Analytics 4 with privacy controls. Python, Firebase. | Python | 0 | 0 | active | 2026-10-19 |
@@ -58,7 +58,7 @@
 
 ## Live sites and their repositories
 
-- https://marvis.web.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot
+- https://marvis.web.app → hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/github-profile-master-record, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot
 - https://hamid-resume.web.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/dynamic-schema-generator, hamids-ai-automations/hamid-resume, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer
 - https://marvis.web.app/projects/leadflow-sentinel → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/leadflow-sentinel
 - https://abouthamid.web.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/pinvault-pinterest-downloader, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector
@@ -72,7 +72,7 @@
 - https://google.github.io/sbsim → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/sbsim
 - https://gitwyd.github.io/sbsim_documentation → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/sbsim
 - https://github.com/googleapis/genai-toolbox → hamids-ai-automations/cymbal-air-toolbox-demo
-- https://opnform.com → hamids-ai-automations/OpnForm
+- https://pypi.org/project/pubchem-finder → hamids-ai-automations/pubchem-finder
 - https://vibgrate.com → hamids-ai-automations/cli
 - https://pypi.org/project/pygrpc-native → hamids-ai-automations/pygrpc-native
 - https://ab-lab.streamlit.app → hamids-ai-automations/ab-lab

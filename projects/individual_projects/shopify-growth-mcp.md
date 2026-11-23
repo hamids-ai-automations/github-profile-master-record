@@ -10,7 +10,7 @@
 | Status | active |
 | Creation date | 2026-10-28 |
 | Last update | 2026-11-20 |
-| Last push | 2026-11-21 |
+| Last push | 2026-11-23 |
 | Default branch | main |
 | License | MIT |
 | Primary language | TypeScript |
@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 2 |
-| Size | 142 KB |
+| Size | 150 KB |
 | Topics | ai, analytics, claude, cursor, digital-marketing, ecommerce, geo, graphql, inventory, llm, mcp, mcp-server, model-context-protocol, seo, shopify, shopify-api, typescript, ai-agents, approval-workflow |
 
 ## Objectives
@@ -74,10 +74,12 @@ Firebase/other hosting declared via homepage field: https://marvis.web.app/
 ## Documentation links
 
 - https://marvis.web.app
+- https://m8ven.ai/badge/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?v=109ce7f30ab56045601044f15dae2367
+- https://m8ven.ai/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?s=readme
 
 ## Development status
 
-Active — last push 2026-11-21
+Active — last push 2026-11-23
 
 ## Associated contributions
 

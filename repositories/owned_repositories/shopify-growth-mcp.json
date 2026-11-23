@@ -7,9 +7,9 @@
   "homepage": "https://marvis.web.app/",
   "created_at": "2026-10-28T03:23:17Z",
   "updated_at": "2026-11-20T10:11:12Z",
-  "pushed_at": "2026-11-21T20:28:23Z",
+  "pushed_at": "2026-11-23T10:16:24Z",
   "default_branch": "main",
-  "last_commit_at": "2026-11-21T20:28:23Z",
+  "last_commit_at": "2026-11-23T10:16:24Z",
   "visibility": "public",
   "is_private": false,
   "archived": false,
@@ -67,12 +67,12 @@
     "ai-agents",
     "approval-workflow"
   ],
-  "size_kb": 142,
+  "size_kb": 150,
   "readme": {
     "path": "README.md",
     "html_url": "https://github.com/hamids-ai-automations/shopify-growth-mcp/blob/main/README.md",
     "has_readme": true,
-    "length": 14571,
+    "length": 14779,
     "excerpt": "---\nAIGC:\n    Label: \"1\"\n    ContentProducer: 001191440300708461136T1XGW3\n    ProduceID: a60f8e46820ea466ef0868a20e79d739_6fc44ac2d27f11f196c5525400248c00\n    ReservedCode1: Ms0XkeFrR7dbnIUJDH7Za5ErwbcaOgxsDCu7djCtv5/ImJ0CLsCcutypQRUaR9Jje3M7wrn05kZ/3fpjC+TDxc44qLdP2G+oc9ciNFxXW5eK42wyCXNXF1ywPniW72FazYkwVBmTTv+ZWf5w3iZVQTEmJHUCWZXNeVFkEDS2Kndl6IoPHbC7SS1FU0g=\n    ContentPropagator: 001191440300708461136T1XGW3\n    PropagateID: a60f8e46820ea466ef0868a20e79d739_6fc44ac2d27f11f196c5525400248c00\n    ReservedCode2: Ms0XkeFrR7dbnIUJDH7Za5ErwbcaOgxsDCu7djCtv5/ImJ0CLsCcutypQRUaR9Jje3M7wrn05kZ/3fpjC+TDxc44qLdP2G+oc9ciNFxXW5eK42wyCXNXF1ywPniW72FazYkwVBmTTv+ZWf5w3iZVQTEmJHUCWZXNeVFkEDS2Kndl6IoPHbC7SS1FU0g=\n---\n\n# Shopify Growth MCP — AI Store Operations, SEO & Analytics\n\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Node](https://img.shields.io/badge/node-20%2B-brightgreen)](package.json)\n[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6)](tsconfig.json)\n[![Tools](https://img.shields.io/badge/tools-61-blue)](docs/tools.md)\n[![Tests](https://img.shields.io/badge/tests-64%20passing-brightgreen)](tests)\n[![CI](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF)](.github/workflows/ci.yml)\n\nA **production-grade Model Context Protocol (MCP) server for Shopify** that lets AI assistants like **Claude, Cursor, ChatGPT, VS Code and Codex** operate your store through natural language — while giving merchants, agencies and SEO professionals actionable growth workflows built on real store data.\n\n**Stop juggling 20 tabs in Shopify Admin. Ask your AI assistant to find low-stock products, audit SEO metadata, summarize sales trends, or draft marketing copy — and get structured, safe, reviewable results.**\n\n- **61 MCP tools** across products, orders, customers, collections, inventory, metafields, tags, SEO, GEO, analytics, feeds and marketing.\n- **Read-only by default**, with plan previews, bound approvals and audit logging for every write.\n- **Runs with zero configuration** in demo mode (fictional store data) — no Shopify credentials required to explore.\n- **Deterministic core**: Shopify connectivity and analytics never require an LLM API key.\n\n---\n\n## Why Shopify Growth MCP?\n\nMost Shopify MCP servers are thin API wrappers: they expose a CRUD surface but don't help you *decide* what to do next. Shopify Growth MCP combines reliable store operations with a growth layer that turns raw Shopify data into prioritized, explainable recommendations:\n\n| Problem merchants face | What this server does |\n| --- | --- |\n| Products missing titles, descriptions or alt text | `seo_audit` finds gaps with severity + evidence + suggested fix |\n| Low stock and stale listings cause lost sales | `inventory_intelligence` flags thresholds, stale products and reorder priorities |\n| Hard to see how the store is actually performing | `analytics_summary` computes sales, AOV, best sellers and trends from real orders |\n| Feed data quality breaks ad campaigns | `feed_quality_audit` + `feed_export` validate and export product feeds |\n| AI search engines can't understand the store | `geo_ai_readiness` audits content clarity, structured data and machine readability |\n| Writes are risky | Plan → preview → bound approval → apply, with a full audit trail |\n\n---\n\n## Feature Highlights\n\n### Core store operations (61 tools)\n\n- **Products** — list, search, create, update, archive, delete, media, variants, metafields, tags.\n- **Orders** — list, get, update, cancel, draft orders, customer order history.\n- **Customers** — list, search, get, create, update, addresses, order summaries (privacy-minimized).\n- **Collections** — list, get, create, update, membership management, uncategorized-product detection.\n- **Inventory** — levels, locations, set quantities, low-stock alerts.\n- **Metafields & tags** — list, set, delete, add/remove tags with namespace/key validation.\n\n### Growth differentiators\n\n- **SEO audit** (`seo_audit`) — scans products an",
     "full_content_path": null
   },
@@ -128,8 +128,11 @@
       "Dockerfile"
     ]
   },
-  "external_links": [],
+  "external_links": [
+    "https://m8ven.ai/badge/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?v=109ce7f30ab56045601044f15dae2367",
+    "https://m8ven.ai/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?s=readme"
+  ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-23T06:22:35+00:00",
+  "detail_refreshed_at": "2026-11-23T18:05:39+00:00",
   "detail_source": "api"
 }

@@ -34,11 +34,15 @@ def main(argv=None) -> int:
     client = GitHubClient(token=token)
     user = client.get("/user") or {}
     login = user.get("login")
-    api_repos = client.paginate("/user/repos", params={"affiliation": "owner,collaborator,organization_member",
-                                                      "per_page": 100}) or []
+    api_repos = client.paginate("/user/repos", params={"affiliation": "owner", "per_page": 100}) or []
     client.close()
 
-    api_names = {repo.get("full_name") for repo in api_repos if repo.get("full_name")}
+    # The collector records public repositories only (GraphQL privacy: PUBLIC), so
+    # completeness is measured against the same scope; private repositories are
+    # counted for transparency but never treated as drift.
+    api_public = [repo for repo in api_repos if not repo.get("private")]
+    api_private = [repo for repo in api_repos if repo.get("private")]
+    api_names = {repo.get("full_name") for repo in api_public if repo.get("full_name")}
     db_repos = db.get("repositories") or []
     db_all = {r.get("full_name") for r in db_repos if r.get("full_name")}
     owner_prefix = f"{login}/" if login else ""
@@ -46,7 +50,8 @@ def main(argv=None) -> int:
 
     missing = sorted(api_names - db_all)
     owned_missing = sorted(api_names - db_owned)
-    print(f"[completeness] account={login} api_repos={len(api_names)} db_repos={len(db_all)}")
+    print(f"[completeness] account={login} public_repos={len(api_names)} "
+          f"private_repos={len(api_private)} db_repos={len(db_all)}")
     print(f"[completeness] missing_from_db={len(missing)} owned_scope_missing={len(owned_missing)}")
     for name in missing[:25]:
         print(f"  MISSING {name}")

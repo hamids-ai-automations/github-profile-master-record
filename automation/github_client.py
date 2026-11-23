@@ -215,6 +215,19 @@ class GitHubClient:
             "failures": len(self.failed_requests),
         }
 
+    def close(self) -> None:
+        """Release the underlying HTTP session (safe to call more than once)."""
+        try:
+            self.session.close()
+        except Exception:
+            pass
+
+    def __enter__(self) -> "GitHubClient":
+        return self
+
+    def __exit__(self, *exc_info) -> None:
+        self.close()
+
     def rate_limit(self) -> Dict[str, Any]:
         try:
             return self.get("/rate_limit") or {}

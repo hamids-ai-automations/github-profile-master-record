@@ -80,10 +80,10 @@ Firebase/other hosting declared via homepage field: https://google.github.io/sbs
 ## Documentation links
 
 - https://google.github.io/sbsim
+- https://gitwyd.github.io/sbsim_documentation
 - https://dl.acm.org/doi/10.1145/3600100.3625682
 - https://www.tensorflow.org/datasets/catalog/smart_buildings
 - https://storage.googleapis.com/gresearch/smart_buildings_dataset/tabular_data/sb1.zip
-- https://gitwyd.github.io/sbsim_documentation
 - https://www.tensorflow.org/agents
 
 ## Development status

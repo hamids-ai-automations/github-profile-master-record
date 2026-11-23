@@ -33,7 +33,7 @@ No explicit feature list found in the README.
 ## Technical architecture
 
 - **Top-level directories:** .github, achievements, automation, contributions, history, profile, projects, repositories, resources
-- **Total files (tracked in default branch):** 335
+- **Total files (tracked in default branch):** 332
 - **CI workflows:** .github/workflows/automatic-profile-sync.yml, .github/workflows/initial-data-collection.yml, .github/workflows/scheduled-full-sync.yml, .github/workflows/validate-master-data.yml
 - **Test files detected:** 8
 
@@ -71,10 +71,10 @@ No deployment configuration detected.
 - https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**
 - https://musheabdulhakim.github.io/gohighlevel-php-sdk
 - https://gke-labs.github.io/k8s-ai-bench
-- https://pypi.org/project/pubchem-finder
-- https://opnform.com
 - https://airkube-dashboard-a4410b460d07.herokuapp.com
 - https://google.github.io/sbsim
+- https://gitwyd.github.io/sbsim_documentation
+- https://vibgrate.com
 - https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi
 - https://docs.github.com/rest/packages/packages#list-packages-for-a-user
 
@@ -111,7 +111,7 @@ Full README: https://github.com/hamids-ai-automations/github-profile-master-reco
 ```markdown
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-23T05:10:30+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-23T05:31:44+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -119,21 +119,21 @@ AI Automation Engineer | MCP servers, agent evals and permission-gated automatio
 
 | Metric | Value |
 | --- | --- |
-| Repositories (owned / forked) | 35 / 59 |
-| Projects documented | 94 |
+| Repositories (owned / forked) | 36 / 59 |
+| Projects documented | 95 |
 | Public gists | 0 |
-| Live websites | 61 |
+| Live websites | 59 |
 | Releases tracked | 6 |
-| External links | 785 |
+| External links | 787 |
 | Pull requests authored | 168 |
 | Issues authored | 1 |
-| Commits (last 12 months) | 261 |
-| Total contributions (last 12 months) | 527 |
+| Commits (last 12 months) | 263 |
+| Total contributions (last 12 months) | 530 |
 | Followers | 4 |
 
 ## Main technologies
 
-Python (69.83%), TypeScript (17.01%), JavaScript (3.38%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)
+Python (69.84%), TypeScript (17.0%), JavaScript (3.38%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)
 
 ## Important projects
 
@@ -151,8 +151,8 @@ Python (69.83%), TypeScript (17.01%), JavaScript (3.38%), HTML (2.41%), Go (1.97
 ## Live websites
 
 - https://marvis.web.app
-- https://marvis.web.app/projects/leadflow-sentinel
 - https://hamid-resume.web.app
+- https://marvis.web.app/projects/leadflow-sentinel
 - https://abouthamid.web.app
 - https://fb-ai-starter-kit.web.app
 - https://marvis.web.app/projects/firebase-ai-starter-kit
@@ -160,20 +160,22 @@ Python (69.83%), TypeScript (17.01%), JavaScript (3.38%), HTML (2.41%), Go (1.97
 - https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**
 - https://musheabdulhakim.github.io/gohighlevel-php-sdk
 - https://gke-labs.github.io/k8s-ai-bench
-- https://github.com/googleapis/genai-toolbox
-- https://pypi.org/project/pubchem-finder
-- https://opnform.com
 - https://airkube-dashboard-a4410b460d07.herokuapp.com
 - https://google.github.io/sbsim
+- https://github.com/googleapis/genai-toolbox
+- https://gitwyd.github.io/sbsim_documentation
+- https://vibgrate.com
 
 ## Latest changes in this sync
 
-- no changes detected in this run
+- **repository_added** — New repository discovered: hamids-ai-automations/github-profile-master-record
+- **external_links_added** — 2 new external link(s) discovered.
 
 ## Recently pushed repositories
 
 | Repository | Last push | Language |
 | --- | --- | --- |
+| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | 2026-11-23 | Python |
 | [leadflow-sentinel](https://github.com/hamids-ai-automations/leadflow-sentinel) | 2026-11-22 | Python |
 | [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | 2026-11-22 | - |
 | [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | 2026-11-22 | Python |
@@ -181,19 +183,18 @@ Python (69.83%), TypeScript (17.01%), JavaScript (3.38%), HTML (2.41%), Go (1.97
 | [gemini-agent-reliability-kit](https://github.com/hamids-ai-automations/gemini-agent-reliability-kit) | 2026-11-22 | Python |
 | [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | 2026-11-21 | JavaScript |
 | [proeventsolutions-pk](https://github.com/hamids-ai-automations/proeventsolutions-pk) | 2026-11-21 | HTML |
-| [nexgen-financial-experts](https://github.com/hamids-ai-automations/nexgen-financial-experts) | 2026-11-21 | TypeScript |
 
 ## Data quality
 
 | Check | Value |
 | --- | --- |
-| total repositories discovered | 94 |
-| total repositories documented | 93 |
-| documentation coverage percent | 98.94 |
+| total repositories discovered | 95 |
+| total repositories documented | 94 |
+| documentation coverage percent | 98.95 |
 | repositories without description | 6 |
-| total projects | 94 |
+| total projects | 95 |
 | total contributions | 169 |
-| total external links | 785 |
+| total external links | 787 |
 | total gists | 0 |
 | total releases | 6 |
 | total packages | 0 |
@@ -201,7 +202,7 @@ Python (69.83%), TypeScript (17.01%), JavaScript (3.38%), HTML (2.41%), Go (1.97
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-23T05:10:30+00:00 |
+| last validated | 2026-11-23T05:31:44+00:00 |
 
 ## Documentation map
 
@@ -216,6 +217,5 @@ Python (69.83%), TypeScript (17.01%), JavaScript (3.38%), HTML (2.41%), Go (1.97
 | [EXTERNAL_LINKS.md](https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/EXTERNAL_LINKS.md) | Links, live sites and GitHub Pages |
 | [TECHNOLOGY_STACK.md](https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/TECHNOLOGY_STACK.md) | Language and framework inventory |
 | [ACHIEVEMENTS.md](https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/ACHIEVEMENTS.md) | Achievements and badge availability |
-| [SYNC_STATUS.md](https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/SYNC_STATUS.md) | Automation state and sync history |
-| [CHANGELOG.md](https://github.com/
+| [SYNC_STATUS.md](https://github.com/hamids-ai
 ```

@@ -2,10 +2,10 @@
 
 - **Last successful sync:** 2026-11-23T06:02:33+00:00
 - **Sync mode:** full
-- **Triggered by:** initial data collection
-- **API requests this run:** 1062
-- **Failed API requests:** 0
-- **Runtime:** 54.2s
+- **Triggered by:** readme-template-refresh
+- **API requests this run:** 0
+- **Failed API requests:** None
+- **Runtime:** Nones
 
 ## Data quality
 

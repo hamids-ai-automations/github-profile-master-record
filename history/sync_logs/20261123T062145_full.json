@@ -1,0 +1,12 @@
+{
+  "run_at": "2026-11-23T062145",
+  "mode": "full",
+  "trigger": "readme-template-refresh",
+  "duration_seconds": null,
+  "api_requests": 0,
+  "failed_requests": null,
+  "changes_detected": 0,
+  "changed_fields": [],
+  "result": "success",
+  "error": null
+}

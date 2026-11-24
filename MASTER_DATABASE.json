@@ -2,18 +2,18 @@
   "metadata": {
     "schema_version": "1.0.0",
     "username": "hamids-ai-automations",
-    "generated_at": "2026-11-24T12:50:29+00:00",
+    "generated_at": "2026-11-24T14:53:15+00:00",
     "source": "GitHub REST API v3 + GraphQL API v4",
     "generator": "github-profile-master-record/automation/sync.py",
     "canonical": true,
-    "mode": "full",
-    "trigger": "scheduled full sync",
+    "mode": "incremental",
+    "trigger": "automatic profile sync",
     "run": {
-      "mode": "full",
-      "trigger": "scheduled full sync",
-      "api_requests": 1078,
-      "failed_requests": 0,
-      "duration_seconds": 153.4,
+      "mode": "incremental",
+      "trigger": "automatic profile sync",
+      "api_requests": 317,
+      "failed_requests": 1,
+      "duration_seconds": 121.6,
       "failures": [
         "packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {\"message\":\"The package_type parameter is invalid.\",\"documentation_url\":\"https://docs.github.com/rest/packages/packages#list-packages-for-a-user\",\"status\":\"422\"}"
       ]
@@ -176,7 +176,7 @@
         "private_gists": 0,
         "total_private_repos": 2,
         "owned_private_repos": 2,
-        "disk_usage": 31002,
+        "disk_usage": 31083,
         "collaborators": 0,
         "two_factor_authentication": true,
         "plan": {
@@ -354,7 +354,7 @@
     ],
     "achievements_highlights": {},
     "achievements_source": "https://github.com/hamids-ai-automations?tab=achievements",
-    "last_synced": "2026-11-24T12:50:29+00:00"
+    "last_synced": "2026-11-24T14:53:15+00:00"
   },
   "repositories": [
     {
@@ -366,9 +366,9 @@
       "homepage": null,
       "created_at": "2026-11-23T05:13:38Z",
       "updated_at": "2026-11-23T05:18:39Z",
-      "pushed_at": "2026-11-24T03:58:28Z",
+      "pushed_at": "2026-11-24T12:50:31Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-24T03:58:27Z",
+      "last_commit_at": "2026-11-24T12:50:29Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -404,20 +404,20 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 2905,
+      "size_kb": 2986,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/README.md",
         "has_readme": true,
-        "length": 9681,
-        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-24T03:58:26+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 37 / 59 |\n| Projects documented | 96 |\n| Public gists | 0 |\n| Live websites | 60 |\n| Releases tracked | 7 |\n| External links | 790 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 271 |\n| Total contributions (last 12 months) | 539 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.78%), TypeScript (17.07%), JavaScript (3.37%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/hamids-ai-automations/pinvault-pinterest-downloader) | PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |\n| [seo-audit-tool](https://github.com/hamids-ai-automations/seo-audit-tool) | Ethical on-page SEO audit crawler: analyzes titles, meta tags, headings, canonicals, image alt texts, duplicate content, and exports actionable CSVs. | Python | 1 | 0 | active | 2026-10-18 |\n| [ppc-performance-dashboard](https://github.com/hamids-ai-automations/ppc-performa",
+        "length": 9661,
+        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-24T12:50:29+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 37 / 59 |\n| Projects documented | 96 |\n| Public gists | 0 |\n| Live websites | 60 |\n| Releases tracked | 7 |\n| External links | 790 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 271 |\n| Total contributions (last 12 months) | 539 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.78%), TypeScript (17.07%), JavaScript (3.37%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/hamids-ai-automations/pinvault-pinterest-downloader) | PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |\n| [seo-audit-tool](https://github.com/hamids-ai-automations/seo-audit-tool) | Ethical on-page SEO audit crawler: analyzes titles, meta tags, headings, canonicals, image alt texts, duplicate content, and exports actionable CSVs. | Python | 1 | 0 | active | 2026-10-18 |\n| [ppc-performance-dashboard](https://github.com/hamids-ai-automations/ppc-performa",
         "full_content_path": null
       },
       "readme_full_content": null,
       "tree": {
         "truncated": false,
-        "total_files": 353,
-        "total_entries": 372,
+        "total_files": 356,
+        "total_entries": 375,
         "top_level_directories": [
           ".github",
           "achievements",
@@ -465,12 +465,12 @@
         "https://airkube-dashboard-a4410b460d07.herokuapp.com",
         "https://google.github.io/sbsim",
         "https://gitwyd.github.io/sbsim_documentation",
-        "https://pypi.org/project/pubchem-finder",
+        "https://opnform.com",
         "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
         "https://docs.github.com/rest/packages/packages#list-packages-for-a-user"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-24T12:49:32+00:00",
+      "detail_refreshed_at": "2026-11-24T14:52:51+00:00",
       "detail_source": "api"
     },
     {
@@ -662,7 +662,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:31+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaAF6A",
@@ -801,7 +801,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:32+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3mnag",
@@ -906,7 +906,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:32+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFVIqA",
@@ -1000,7 +1000,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:31+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV294pA",
@@ -1108,7 +1108,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:32+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3y_UA",
@@ -1308,7 +1308,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:31+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2H9tg",
@@ -1413,7 +1413,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:31+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVXn9SQ",
@@ -1538,7 +1538,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:34+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVxlzHg",
@@ -1683,7 +1683,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:35+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVedz1A",
@@ -1862,7 +1862,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:35+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdUKGQ",
@@ -1963,7 +1963,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:35+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVOCTiA",
@@ -2108,7 +2108,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:35+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVQvC9A",
@@ -2221,7 +2221,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:37+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVOhebA",
@@ -2345,7 +2345,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:38+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2ULAA",
@@ -2476,7 +2476,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:38+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2rQCQ",
@@ -2578,7 +2578,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:38+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2gYQw",
@@ -2690,7 +2690,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:38+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV1l5hw",
@@ -2810,7 +2810,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:38+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV1pT_w",
@@ -2912,7 +2912,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:40+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVIk0wQ",
@@ -3027,7 +3027,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:02+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVPAntw",
@@ -3153,7 +3153,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:03+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVO_MQw",
@@ -3288,7 +3288,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:03+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFaXWw",
@@ -3406,7 +3406,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:04+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFa1rg",
@@ -3521,7 +3521,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:04+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFgywQ",
@@ -3635,7 +3635,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:04+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFi44A",
@@ -3763,7 +3763,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:04+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVMt_Sg",
@@ -3879,7 +3879,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:05+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVK72jg",
@@ -3981,7 +3981,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:05+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVN1Lzg",
@@ -4093,7 +4093,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:06+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVK72GA",
@@ -4213,7 +4213,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:06+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFpFUA",
@@ -4337,7 +4337,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:07+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFr4KQ",
@@ -4459,7 +4459,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:07+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFr30w",
@@ -4582,7 +4582,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:07+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFr3iA",
@@ -4706,7 +4706,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:07+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFr3Pg",
@@ -4829,7 +4829,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:08+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFlfWg",
@@ -4968,7 +4968,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:08+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3vOhA",
@@ -5090,7 +5090,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:35+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3VphQ",
@@ -5187,7 +5187,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:35+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3QmVQ",
@@ -5318,7 +5318,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:35+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2KJ9Q",
@@ -5425,7 +5425,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:38+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2rUiQ",
@@ -5569,7 +5569,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:38+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVqInGQ",
@@ -5701,7 +5701,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:40+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVb74mg",
@@ -5830,7 +5830,7 @@
       "external_links": [],
       "documentation_status": "no_readme",
       "detail_refreshed_at": "2026-11-24T12:49:40+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaeg9w",
@@ -5961,7 +5961,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:41+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbCIDw",
@@ -6088,7 +6088,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:41+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVa_nmw",
@@ -6197,7 +6197,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:41+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVcAOcw",
@@ -6411,7 +6411,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:41+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVhZr5g",
@@ -6523,7 +6523,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:41+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVa_XHg",
@@ -6641,7 +6641,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:44+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbA2Xw",
@@ -6757,7 +6757,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:44+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdPeuQ",
@@ -6885,7 +6885,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:44+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfSanA",
@@ -7001,7 +7001,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:44+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdxCCQ",
@@ -7153,7 +7153,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:44+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdK0qA",
@@ -7323,7 +7323,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:45+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVnyV-A",
@@ -7442,7 +7442,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:44+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVnwqrw",
@@ -7661,7 +7661,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:45+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVa4tyw",
@@ -7787,7 +7787,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:47+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfBCbw",
@@ -7908,7 +7908,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:47+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfFbRw",
@@ -8048,7 +8048,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:47+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVe6D3A",
@@ -8212,7 +8212,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:47+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOViPt6A",
@@ -8325,7 +8325,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:47+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOViRvyA",
@@ -8470,7 +8470,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:48+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVh4owg",
@@ -8599,7 +8599,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:48+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVh8piQ",
@@ -8694,7 +8694,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:49+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaje3w",
@@ -8814,7 +8814,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:50+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfVgTg",
@@ -8963,7 +8963,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:50+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfPVrQ",
@@ -9112,7 +9112,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:51+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfRj2Q",
@@ -9261,7 +9261,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:51+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdzo-A",
@@ -9373,7 +9373,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:51+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaXvgg",
@@ -9530,7 +9530,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:51+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdipwg",
@@ -9687,7 +9687,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:52+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVe8Vnw",
@@ -9832,7 +9832,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:52+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaBbDA",
@@ -9996,7 +9996,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:53+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVblopw",
@@ -10111,7 +10111,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:54+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVcAUPQ",
@@ -10217,7 +10217,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:54+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVd6BKw",
@@ -10464,7 +10464,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:55+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVd2yZA",
@@ -10563,7 +10563,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:54+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdkUng",
@@ -10757,7 +10757,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:55+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVazoEQ",
@@ -10957,7 +10957,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:55+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbMBzw",
@@ -11104,7 +11104,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:55+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdUBjQ",
@@ -11373,7 +11373,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:58+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdDTHg",
@@ -11471,7 +11471,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:57+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbzSeA",
@@ -11587,7 +11587,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:57+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbVT7g",
@@ -11728,7 +11728,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:57+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbrDOw",
@@ -11874,7 +11874,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:58+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbu1Pg",
@@ -12003,7 +12003,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:58+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbnOlw",
@@ -12101,7 +12101,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:58+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbPBCg",
@@ -12230,7 +12230,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:49:59+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbSz2g",
@@ -12350,7 +12350,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:00+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbFNvA",
@@ -12448,7 +12448,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:00+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaB_dA",
@@ -12685,7 +12685,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:01+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVapqEA",
@@ -12822,7 +12822,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:01+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVa7HZw",
@@ -12962,7 +12962,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:01+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVafrQA",
@@ -13137,7 +13137,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:02+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaZ20Q",
@@ -13270,7 +13270,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-24T12:50:02+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     }
   ],
   "projects": [
@@ -16681,8 +16681,8 @@
   },
   "commits": {
     "window": {
-      "from": "2025-11-24T12:50:16Z",
-      "to": "2026-11-24T12:50:16Z"
+      "from": "2025-11-24T14:53:03Z",
+      "to": "2026-11-24T14:53:03Z"
     },
     "total_commits": 271,
     "total_contributions": 539,
@@ -17591,7 +17591,7 @@
         "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
         "owner": "doobidoo",
         "is_fork": false,
-        "stars": 2152,
+        "stars": 2153,
         "language": "Python",
         "commits": 2,
         "pull_requests": 3,
@@ -17661,7 +17661,7 @@
         "description": "Python & Command-line tool to gather text and metadata on the Web: Crawling, scraping, extraction, output as CSV, JSON, HTML, MD, TXT, XML",
         "owner": "adbar",
         "is_fork": false,
-        "stars": 7167,
+        "stars": 7170,
         "language": "Python",
         "commits": 1,
         "pull_requests": 2,
@@ -18343,8 +18343,8 @@
       }
     ],
     "window": {
-      "from": "2025-11-24T12:50:17Z",
-      "to": "2026-11-24T12:50:17Z"
+      "from": "2025-11-24T14:53:05Z",
+      "to": "2026-11-24T14:53:05Z"
     }
   },
   "external_links": [
@@ -18702,7 +18702,7 @@
       "verified": null
     },
     {
-      "url": "https://pypi.org/project/pubchem-finder",
+      "url": "https://opnform.com",
       "type": "website",
       "relationships": [
         "repository_readme_link",
@@ -18710,7 +18710,7 @@
       ],
       "related_resources": [
         "hamids-ai-automations/github-profile-master-record",
-        "hamids-ai-automations/pubchem-finder"
+        "hamids-ai-automations/OpnForm"
       ],
       "source": "README of hamids-ai-automations/github-profile-master-record",
       "verified": null
@@ -19904,6 +19904,19 @@
       "verified": null
     },
     {
+      "url": "https://pypi.org/project/pubchem-finder",
+      "type": "live_site",
+      "relationships": [
+        "repository_homepage",
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/pubchem-finder"
+      ],
+      "source": "repository hamids-ai-automations/pubchem-finder",
+      "verified": null
+    },
+    {
       "url": "https://pubchem.ncbi.nlm.nih.gov",
       "type": "website",
       "relationships": [
@@ -20125,19 +20138,6 @@
         "hamids-ai-automations/pubchem-finder"
       ],
       "source": "README of hamids-ai-automations/pubchem-finder",
-      "verified": null
-    },
-    {
-      "url": "https://opnform.com",
-      "type": "live_site",
-      "relationships": [
-        "repository_homepage",
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/OpnForm"
-      ],
-      "source": "repository hamids-ai-automations/OpnForm",
       "verified": null
     },
     {
@@ -29011,6 +29011,23 @@
         }
       },
       "detected_at": "2026-11-24T12:50:29+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "summary": "hamids-ai-automations/github-profile-master-record updated: pushed_at, readme",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-24T03:58:28Z",
+          "new": "2026-11-24T12:50:31Z"
+        },
+        "readme": {
+          "old": 9681,
+          "new": 9661
+        }
+      },
+      "detected_at": "2026-11-24T14:53:15+00:00"
     }
   ],
   "data_quality": {
@@ -29037,6 +29054,6 @@
     ],
     "validation_errors": 0,
     "validation_warnings": 1,
-    "last_validated": "2026-11-24T12:50:29+00:00"
+    "last_validated": "2026-11-24T14:53:15+00:00"
   }
 }

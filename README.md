@@ -1,6 +1,6 @@
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-24T12:50:29+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-24T14:53:15+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -55,7 +55,7 @@ Python (69.78%), TypeScript (17.07%), JavaScript (3.37%), HTML (2.41%), Go (1.97
 - https://google.github.io/sbsim
 - https://gitwyd.github.io/sbsim_documentation
 - https://github.com/googleapis/genai-toolbox
-- https://opnform.com
+- https://pypi.org/project/pubchem-finder
 
 ## Automation
 
@@ -116,7 +116,7 @@ python automation/validate.py                 # full gate: schema, links, tests
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-24T12:50:29+00:00 |
+| last validated | 2026-11-24T14:53:15+00:00 |
 
 ## Documentation map
 

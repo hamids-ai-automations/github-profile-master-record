@@ -264,9 +264,9 @@
 | https://opencomplai.com | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/opencomplai |
 | https://openlibrary.org | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/openlibrary |
 | https://openmed.life | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/openmed |
-| https://opnform.com | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/OpnForm |
 | https://proteanhq.com | live_site | repository_homepage | hamids-ai-automations/protean |
 | https://pypi.org/project/oschmod | live_site | repository_homepage | hamids-ai-automations/oschmod |
+| https://pypi.org/project/pubchem-finder | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/pubchem-finder |
 | https://pypi.org/project/pygrpc-native | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/pygrpc-native |
 | https://pysad.readthedocs.io/en/stable | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/pysad |
 | https://returns.rtfd.io | live_site | repository_homepage | hamids-ai-automations/returns |
@@ -576,6 +576,7 @@
 | https://openrouter.ai/models?max_price=0 | website | repository_readme_link | hamids-ai-automations/geniebot |
 | https://opensource.org/licenses/Apache-2.0 | website | repository_readme_link | hamids-ai-automations/mcp-memory-service |
 | https://opensource.org/licenses/MIT | website | repository_readme_link | hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/trustflow-backend |
+| https://opnform.com | website | repository_readme_link, repository_homepage | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/OpnForm |
 | https://opnform.com/pricing | website | repository_readme_link | hamids-ai-automations/OpnForm |
 | https://opnform.com/terms-conditions | website | repository_readme_link | hamids-ai-automations/OpnForm |
 | https://originals.example.com/products/backpack.jpg | website | repository_readme_link | hamids-ai-automations/imgproxykit |
@@ -609,7 +610,6 @@
 | https://pypi.org/project/openmed | website | repository_readme_link | hamids-ai-automations/openmed |
 | https://pypi.org/project/orb-py | website | repository_readme_link | hamids-ai-automations/open-resource-broker |
 | https://pypi.org/project/protean | website | repository_readme_link | hamids-ai-automations/protean |
-| https://pypi.org/project/pubchem-finder | website | repository_readme_link, repository_homepage | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/pubchem-finder |
 | https://pypi.org/project/pysad | website | repository_readme_link | hamids-ai-automations/pysad |
 | https://pypi.org/project/returns | website | repository_readme_link | hamids-ai-automations/returns |
 | https://pypi.org/project/rich | website | repository_readme_link | hamids-ai-automations/rich |

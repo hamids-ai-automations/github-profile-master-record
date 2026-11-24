@@ -2,7 +2,7 @@
 
 **Owner:** Muhammad Hamid (@hamids-ai-automations) — AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
-**Last synchronized:** 2026-11-24T02:08:02+00:00
+**Last synchronized:** 2026-11-24T03:58:26+00:00
 
 ## How to use this repository
 
@@ -58,7 +58,7 @@
 
 ## Live sites and their repositories
 
-- https://marvis.web.app → hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/github-profile-master-record, hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot
+- https://marvis.web.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot
 - https://hamid-resume.web.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/dynamic-schema-generator, hamids-ai-automations/hamid-resume, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer
 - https://marvis.web.app/projects/leadflow-sentinel → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/leadflow-sentinel
 - https://abouthamid.web.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/pinvault-pinterest-downloader, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector
@@ -72,7 +72,7 @@
 - https://google.github.io/sbsim → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/sbsim
 - https://gitwyd.github.io/sbsim_documentation → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/sbsim
 - https://github.com/googleapis/genai-toolbox → hamids-ai-automations/cymbal-air-toolbox-demo
-- https://opnform.com → hamids-ai-automations/OpnForm
+- https://pypi.org/project/pubchem-finder → hamids-ai-automations/pubchem-finder
 - https://vibgrate.com → hamids-ai-automations/cli
 - https://pypi.org/project/pygrpc-native → hamids-ai-automations/pygrpc-native
 - https://ab-lab.streamlit.app → hamids-ai-automations/ab-lab

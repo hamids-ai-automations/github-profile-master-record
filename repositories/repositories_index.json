@@ -5,6 +5,21 @@
   "forked_count": 59,
   "repositories": [
     {
+      "id": "R_kgDOV4S7nw",
+      "name": "github-profile-master-record",
+      "full_name": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "pushed_at": "2026-11-24T02:08:04Z",
+      "homepage": null,
+      "documentation": "projects/individual_projects/github-profile-master-record.md"
+    },
+    {
       "id": "R_kgDOV5Z3EA",
       "name": "servicenow-ultimate-mcp",
       "full_name": "hamids-ai-automations/servicenow-ultimate-mcp",
@@ -18,21 +33,6 @@
       "pushed_at": "2026-11-24T00:58:38Z",
       "homepage": "https://marvis.web.app",
       "documentation": "projects/individual_projects/servicenow-ultimate-mcp.md"
-    },
-    {
-      "id": "R_kgDOV4S7nw",
-      "name": "github-profile-master-record",
-      "full_name": "hamids-ai-automations/github-profile-master-record",
-      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
-      "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "pushed_at": "2026-11-23T18:06:01Z",
-      "homepage": null,
-      "documentation": "projects/individual_projects/github-profile-master-record.md"
     },
     {
       "id": "R_kgDOVaAF6A",

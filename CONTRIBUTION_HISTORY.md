@@ -1,6 +1,6 @@
 # Contribution History
 
-Generated from `MASTER_DATABASE.json` on 2026-11-24T02:08:02+00:00.
+Generated from `MASTER_DATABASE.json` on 2026-11-24T03:58:26+00:00.
 
 ## Summary
 
@@ -83,6 +83,7 @@ Generated from `MASTER_DATABASE.json` on 2026-11-24T02:08:02+00:00.
 
 | PR | Repository | State | Created | Merged |
 | --- | --- | --- | --- | --- |
+| [#126 test(scorers): derive LLM judge prompt coverage from production classes](https://github.com/wandb/rai-toolkit/pull/126) | wandb/rai-toolkit | open | 2026-11-01 | - |
 | [#27 fix(transporter): send a request body on PUT and PATCH requests](https://github.com/MusheAbdulHakim/gohighlevel-php-sdk/pull/27) | MusheAbdulHakim/gohighlevel-php-sdk | open | 2026-11-22 | - |
 | [#20 fix(agent-workspace): send contact search as POST and page opportunities explicitly](https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete/pull/20) | BusyBee3333/Go-High-Level-MCP-2026-Complete | open | 2026-11-22 | - |
 | [#684 fix(agent): report empty tool results as 'No results found.' instead of null](https://github.com/GoogleCloudPlatform/cymbal-air-toolbox-demo/pull/684) | GoogleCloudPlatform/cymbal-air-toolbox-demo | open | 2026-11-21 | - |
@@ -101,7 +102,6 @@ Generated from `MASTER_DATABASE.json` on 2026-11-24T02:08:02+00:00.
 | [#8 test: add webhook HMAC SHA-256 signature test suite and enforce 401 on invalid signatures](https://github.com/prachi137/ai-code-inspector/pull/8) | prachi137/ai-code-inspector | open | 2026-10-29 | - |
 | [#46001 fix(geo): correct currency symbols for CNY and IQD](https://github.com/frappe/frappe/pull/46001) | frappe/frappe | closed | 2026-10-31 | - |
 | [#56 fix(openapi): sanitize tag-derived result variable names in SDK samples](https://github.com/markline-dev/markline/pull/56) | markline-dev/markline | closed | 2026-10-31 | 2026-11-13 |
-| [#126 test(scorers): derive LLM judge prompt coverage from production classes](https://github.com/wandb/rai-toolkit/pull/126) | wandb/rai-toolkit | open | 2026-11-01 | - |
 | [#5720 fix: normalize hyphens in relative import module names](https://github.com/datamodel-code-generator/datamodel-code-generator/pull/5720) | datamodel-code-generator/datamodel-code-generator | closed | 2026-10-31 | - |
 | [#1086 fix(htmlprocessing): drop heading permalink anchors (¶/§) from output](https://github.com/adbar/trafilatura/pull/1086) | adbar/trafilatura | closed | 2026-11-01 | 2026-11-11 |
 | [#23 Fix #21: convert **bold** to Telegram single-asterisk *bold*](https://github.com/iamvisheshsrivastava/geniebot/pull/23) | iamvisheshsrivastava/geniebot | closed | 2026-10-28 | 2026-11-11 |

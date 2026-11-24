@@ -1,5 +1,21 @@
 [
   {
+    "id": 6150363916,
+    "number": 126,
+    "title": "test(scorers): derive LLM judge prompt coverage from production classes",
+    "state": "open",
+    "url": "https://github.com/wandb/rai-toolkit/pull/126",
+    "created_at": "2026-11-01T18:16:06Z",
+    "updated_at": "2026-11-24T03:38:27Z",
+    "closed_at": null,
+    "merged_at": null,
+    "repository": "wandb/rai-toolkit",
+    "author": "hamids-ai-automations",
+    "merged": false,
+    "pull_request_or_issue": "pull_request",
+    "relationship": "authored"
+  },
+  {
     "id": 6540974922,
     "number": 27,
     "title": "fix(transporter): send a request body on PUT and PATCH requests",
@@ -284,22 +300,6 @@
     "repository": "markline-dev/markline",
     "author": "hamids-ai-automations",
     "merged": true,
-    "pull_request_or_issue": "pull_request",
-    "relationship": "authored"
-  },
-  {
-    "id": 6150363916,
-    "number": 126,
-    "title": "test(scorers): derive LLM judge prompt coverage from production classes",
-    "state": "open",
-    "url": "https://github.com/wandb/rai-toolkit/pull/126",
-    "created_at": "2026-11-01T18:16:06Z",
-    "updated_at": "2026-11-12T12:37:08Z",
-    "closed_at": null,
-    "merged_at": null,
-    "repository": "wandb/rai-toolkit",
-    "author": "hamids-ai-automations",
-    "merged": false,
     "pull_request_or_issue": "pull_request",
     "relationship": "authored"
   },

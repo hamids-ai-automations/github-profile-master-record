@@ -3,23 +3,23 @@
   "count": 96,
   "projects": [
     {
-      "name": "servicenow-ultimate-mcp",
-      "full_name": "hamids-ai-automations/servicenow-ultimate-mcp",
-      "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp",
-      "documentation": "projects/individual_projects/servicenow-ultimate-mcp.md",
-      "live_url": "https://marvis.web.app",
-      "language": "TypeScript",
-      "stars": 0,
-      "status": "active",
-      "is_fork": false
-    },
-    {
       "name": "github-profile-master-record",
       "full_name": "hamids-ai-automations/github-profile-master-record",
       "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
       "documentation": "projects/individual_projects/github-profile-master-record.md",
       "live_url": null,
       "language": "Python",
+      "stars": 0,
+      "status": "active",
+      "is_fork": false
+    },
+    {
+      "name": "servicenow-ultimate-mcp",
+      "full_name": "hamids-ai-automations/servicenow-ultimate-mcp",
+      "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp",
+      "documentation": "projects/individual_projects/servicenow-ultimate-mcp.md",
+      "live_url": "https://marvis.web.app",
+      "language": "TypeScript",
       "stars": 0,
       "status": "active",
       "is_fork": false

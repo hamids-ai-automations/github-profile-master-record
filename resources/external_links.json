@@ -6,12 +6,12 @@
       "profile_website",
       "social_account",
       "profile_readme_link",
-      "repository_homepage",
-      "repository_readme_link"
+      "repository_readme_link",
+      "repository_homepage"
     ],
     "related_resources": [
-      "hamids-ai-automations/servicenow-ultimate-mcp",
       "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/servicenow-ultimate-mcp",
       "hamids-ai-automations/shopify-growth-mcp",
       "hamids-ai-automations/hamids-ai-automations",
       "hamids-ai-automations/ghl-devops-toolkit",
@@ -179,73 +179,6 @@
     ],
     "related_resources": [],
     "source": "profile README",
-    "verified": null
-  },
-  {
-    "url": "https://nextjs.org",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/servicenow-ultimate-mcp",
-      "hamids-ai-automations/ghl-devops-toolkit"
-    ],
-    "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
-    "verified": null
-  },
-  {
-    "url": "https://www.typescriptlang.org",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/servicenow-ultimate-mcp",
-      "hamids-ai-automations/ghl-devops-toolkit"
-    ],
-    "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
-    "verified": null
-  },
-  {
-    "url": "https://modelcontextprotocol.io",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/servicenow-ultimate-mcp",
-      "hamids-ai-automations/google-services-mcp",
-      "hamids-ai-automations/pubchem-finder"
-    ],
-    "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
-    "verified": null
-  },
-  {
-    "url": "http://localhost:3000",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/servicenow-ultimate-mcp",
-      "hamids-ai-automations/ghl-devops-toolkit",
-      "hamids-ai-automations/nexgen-financial-experts",
-      "hamids-ai-automations/markline"
-    ],
-    "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
-    "verified": null
-  },
-  {
-    "url": "https://your-instance.service-now.com",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/servicenow-ultimate-mcp"
-    ],
-    "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
     "verified": null
   },
   {
@@ -420,7 +353,7 @@
     "verified": null
   },
   {
-    "url": "https://pypi.org/project/pubchem-finder",
+    "url": "https://opnform.com",
     "type": "website",
     "relationships": [
       "repository_readme_link",
@@ -428,7 +361,7 @@
     ],
     "related_resources": [
       "hamids-ai-automations/github-profile-master-record",
-      "hamids-ai-automations/pubchem-finder"
+      "hamids-ai-automations/OpnForm"
     ],
     "source": "README of hamids-ai-automations/github-profile-master-record",
     "verified": null
@@ -455,6 +388,73 @@
       "hamids-ai-automations/github-profile-master-record"
     ],
     "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://nextjs.org",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/servicenow-ultimate-mcp",
+      "hamids-ai-automations/ghl-devops-toolkit"
+    ],
+    "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
+    "verified": null
+  },
+  {
+    "url": "https://www.typescriptlang.org",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/servicenow-ultimate-mcp",
+      "hamids-ai-automations/ghl-devops-toolkit"
+    ],
+    "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
+    "verified": null
+  },
+  {
+    "url": "https://modelcontextprotocol.io",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/servicenow-ultimate-mcp",
+      "hamids-ai-automations/google-services-mcp",
+      "hamids-ai-automations/pubchem-finder"
+    ],
+    "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
+    "verified": null
+  },
+  {
+    "url": "http://localhost:3000",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/servicenow-ultimate-mcp",
+      "hamids-ai-automations/ghl-devops-toolkit",
+      "hamids-ai-automations/nexgen-financial-experts",
+      "hamids-ai-automations/markline"
+    ],
+    "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
+    "verified": null
+  },
+  {
+    "url": "https://your-instance.service-now.com",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/servicenow-ultimate-mcp"
+    ],
+    "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
     "verified": null
   },
   {
@@ -1555,6 +1555,19 @@
     "verified": null
   },
   {
+    "url": "https://pypi.org/project/pubchem-finder",
+    "type": "live_site",
+    "relationships": [
+      "repository_homepage",
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/pubchem-finder"
+    ],
+    "source": "repository hamids-ai-automations/pubchem-finder",
+    "verified": null
+  },
+  {
     "url": "https://pubchem.ncbi.nlm.nih.gov",
     "type": "website",
     "relationships": [
@@ -1776,19 +1789,6 @@
       "hamids-ai-automations/pubchem-finder"
     ],
     "source": "README of hamids-ai-automations/pubchem-finder",
-    "verified": null
-  },
-  {
-    "url": "https://opnform.com",
-    "type": "live_site",
-    "relationships": [
-      "repository_homepage",
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/OpnForm"
-    ],
-    "source": "repository hamids-ai-automations/OpnForm",
     "verified": null
   },
   {

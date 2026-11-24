@@ -6,15 +6,15 @@ Derived from repository language byte counts and dependency files.
 
 | Language | Bytes | Share | Repositories |
 | --- | --- | --- | --- |
-| Python | 305350106 | 69.84% | 80 |
-| TypeScript | 74324304 | 17.0% | 26 |
-| JavaScript | 14765289 | 3.38% | 41 |
+| Python | 305350106 | 69.78% | 80 |
+| TypeScript | 74687689 | 17.07% | 27 |
+| JavaScript | 14767017 | 3.37% | 42 |
 | HTML | 10553015 | 2.41% | 35 |
 | Go | 8598365 | 1.97% | 7 |
 | PHP | 5011706 | 1.15% | 4 |
 | Vue | 4329562 | 0.99% | 3 |
 | Shell | 2916453 | 0.67% | 32 |
-| CSS | 2109043 | 0.48% | 26 |
+| CSS | 2114419 | 0.48% | 27 |
 | MDX | 1922688 | 0.44% | 2 |
 | Swift | 1922018 | 0.44% | 1 |
 | TLA | 962792 | 0.22% | 2 |
@@ -60,25 +60,25 @@ Derived from repository language byte counts and dependency files.
 | pytest | 53 |
 | FastAPI | 27 |
 | pandas | 22 |
-| MCP | 19 |
+| MCP | 20 |
 | NumPy | 16 |
 | requests | 13 |
-| Next.js | 9 |
+| Next.js | 10 |
+| React | 9 |
 | OpenAI API | 9 |
-| React | 8 |
 | Streamlit | 8 |
 | SQLAlchemy | 7 |
 | Express | 7 |
 | Anthropic API | 6 |
 | BeautifulSoup | 6 |
 | LangChain | 6 |
+| Tailwind CSS | 3 |
 | Google APIs | 3 |
 | Firebase | 3 |
 | Jest | 3 |
 | Flask | 3 |
 | Playwright | 3 |
 | Django | 3 |
-| Tailwind CSS | 2 |
 | Vue | 2 |
 | Supabase | 1 |
 | Svelte | 1 |

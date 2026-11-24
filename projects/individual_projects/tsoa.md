@@ -97,11 +97,11 @@ Fork of another project; see upstream for original authorship.
 
 ## Related projects
 
+- hamids-ai-automations/servicenow-ultimate-mcp
 - hamids-ai-automations/shopify-growth-mcp
 - hamids-ai-automations/ghl-devops-toolkit
 - hamids-ai-automations/nexgen-financial-experts
 - hamids-ai-automations/firebase-ai-starter-kit
-- hamids-ai-automations/Go-High-Level-MCP-2026-Complete
 
 ## Known issues and limitations
 

@@ -1,31 +1,31 @@
 # Sync Status
 
-- **Last successful sync:** 2026-11-23T18:05:59+00:00
+- **Last successful sync:** 2026-11-24T02:08:02+00:00
 - **Sync mode:** incremental
 - **Triggered by:** automatic profile sync
-- **API requests this run:** 322
+- **API requests this run:** 324
 - **Failed API requests:** 0
-- **Runtime:** 97.6s
+- **Runtime:** 84.9s
 
 ## Data quality
 
 | Check | Value |
 | --- | --- |
-| total repositories discovered | 95 |
-| total repositories documented | 94 |
-| documentation coverage percent | 98.95 |
+| total repositories discovered | 96 |
+| total repositories documented | 95 |
+| documentation coverage percent | 98.96 |
 | repositories without description | 6 |
-| total projects | 95 |
+| total projects | 96 |
 | total contributions | 169 |
-| total external links | 789 |
+| total external links | 790 |
 | total gists | 0 |
-| total releases | 6 |
+| total releases | 7 |
 | total packages | 0 |
 | missing optional fields | ['hamids-ai-automations/langchain-google-cloud-sql-pg-python: description', 'hamids-ai-automations/sbsim: description', 'hamids-ai-automations/rai-toolkit: description', 'hamids-ai-automations/trustflow-backend: description', 'hamids-ai-automations/simple_invoicing: description', 'hamids-ai-automations/TermXtract: description'] |
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-23T18:05:59+00:00 |
+| last validated | 2026-11-24T02:08:02+00:00 |
 
 ## Automation schedule
 

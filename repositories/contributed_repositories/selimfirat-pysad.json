@@ -4,7 +4,7 @@
   "description": "Streaming anomaly detection in Python: 50+ online multivariate and univariate detectors (LODA, RRCF, Half-Space Trees, xStream, DAMP, SAND) with calibrated alerts, drift handling, and prequential evaluation.",
   "owner": "selimfirat",
   "is_fork": false,
-  "stars": 321,
+  "stars": 322,
   "language": "Python",
   "commits": 4,
   "pull_requests": 4,

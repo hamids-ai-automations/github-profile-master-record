@@ -70,13 +70,13 @@ Firebase/other hosting declared via homepage field: https://marvis.web.app/
 
 - https://marvis.web.app
 - https://wa.me/923167417135
-- https://www.typescriptlang.org
 - https://nextjs.org
+- https://www.typescriptlang.org
+- http://localhost:3000
 - https://www.prisma.io
 - https://react.dev
 - https://tailwindcss.com
 - https://ui.shadcn.com
-- http://localhost:3000
 
 ## Development status
 
@@ -90,11 +90,11 @@ Active — last push 2026-11-22
 
 ## Related projects
 
+- hamids-ai-automations/servicenow-ultimate-mcp
 - hamids-ai-automations/shopify-growth-mcp
 - hamids-ai-automations/nexgen-financial-experts
 - hamids-ai-automations/firebase-ai-starter-kit
 - hamids-ai-automations/Go-High-Level-MCP-2026-Complete
-- hamids-ai-automations/cli
 
 ## Known issues and limitations
 

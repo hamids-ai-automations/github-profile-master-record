@@ -2,7 +2,7 @@
   "metadata": {
     "schema_version": "1.0.0",
     "username": "hamids-ai-automations",
-    "generated_at": "2026-11-23T18:05:59+00:00",
+    "generated_at": "2026-11-24T02:08:02+00:00",
     "source": "GitHub REST API v3 + GraphQL API v4",
     "generator": "github-profile-master-record/automation/sync.py",
     "canonical": true,
@@ -11,9 +11,9 @@
     "run": {
       "mode": "incremental",
       "trigger": "automatic profile sync",
-      "api_requests": 322,
+      "api_requests": 324,
       "failed_requests": 0,
-      "duration_seconds": 97.6,
+      "duration_seconds": 84.9,
       "failures": [
         "packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {\"message\":\"The package_type parameter is invalid.\",\"documentation_url\":\"https://docs.github.com/rest/packages/packages#list-packages-for-a-user\",\"status\":\"422\"}"
       ]
@@ -59,18 +59,18 @@
       }
     },
     "statistics": {
-      "public_repos": 95,
+      "public_repos": 96,
       "public_gists": 0,
       "followers": 4,
       "following": 1,
-      "owned_repositories_graphql": 95,
+      "owned_repositories_graphql": 96,
       "starred_repositories": 22,
-      "total_contributions_last_year": 536,
-      "total_commit_contributions": 269,
+      "total_contributions_last_year": 539,
+      "total_commit_contributions": 271,
       "total_issue_contributions": 1,
       "total_pull_request_contributions": 168,
       "total_pull_request_review_contributions": 0,
-      "repositories_with_contributed_commits": 57,
+      "repositories_with_contributed_commits": 58,
       "restricted_contributions": 0
     },
     "pinned_repositories": [
@@ -167,7 +167,7 @@
         "hireable": true,
         "bio": "AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.",
         "twitter_username": null,
-        "public_repos": 95,
+        "public_repos": 96,
         "public_gists": 0,
         "followers": 4,
         "following": 1,
@@ -176,7 +176,7 @@
         "private_gists": 0,
         "total_private_repos": 2,
         "owned_private_repos": 2,
-        "disk_usage": 30407,
+        "disk_usage": 30968,
         "collaborators": 0,
         "two_factor_authentication": true,
         "plan": {
@@ -208,7 +208,7 @@
           "totalCount": 1
         },
         "repositories": {
-          "totalCount": 95
+          "totalCount": 96
         },
         "starredRepositories": {
           "totalCount": 22
@@ -302,14 +302,14 @@
           ]
         },
         "contributionsCollection": {
-          "totalCommitContributions": 269,
+          "totalCommitContributions": 271,
           "totalIssueContributions": 1,
           "totalPullRequestContributions": 168,
           "totalPullRequestReviewContributions": 0,
-          "totalRepositoriesWithContributedCommits": 57,
+          "totalRepositoriesWithContributedCommits": 58,
           "restrictedContributionsCount": 0,
           "contributionCalendar": {
-            "totalContributions": 536
+            "totalContributions": 539
           }
         }
       }
@@ -354,9 +354,316 @@
     ],
     "achievements_highlights": {},
     "achievements_source": "https://github.com/hamids-ai-automations?tab=achievements",
-    "last_synced": "2026-11-23T18:05:59+00:00"
+    "last_synced": "2026-11-24T02:08:02+00:00"
   },
   "repositories": [
+    {
+      "id": "R_kgDOV5Z3EA",
+      "name": "servicenow-ultimate-mcp",
+      "full_name": "hamids-ai-automations/servicenow-ultimate-mcp",
+      "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp",
+      "description": "Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console.",
+      "homepage": "https://marvis.web.app",
+      "created_at": "2026-11-24T00:46:26Z",
+      "updated_at": "2026-11-24T00:50:06Z",
+      "pushed_at": "2026-11-24T00:58:38Z",
+      "default_branch": "main",
+      "last_commit_at": "2026-11-24T00:58:35Z",
+      "visibility": "public",
+      "is_private": false,
+      "archived": false,
+      "fork": false,
+      "disabled": false,
+      "is_template": false,
+      "in_organization": false,
+      "license": "MIT",
+      "license_name": "MIT License",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 363385,
+        "CSS": 5376,
+        "JavaScript": 1728
+      },
+      "language_total_size": 370489,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "closed_issues": 0,
+      "open_pull_requests": 0,
+      "merged_pull_requests": 0,
+      "closed_pull_requests": 0,
+      "releases_count": 1,
+      "releases": [
+        {
+          "name": "v1.0.0 — ServiceNow Ultimate MCP",
+          "tag_name": "v1.0.0",
+          "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp/releases/tag/v1.0.0",
+          "published_at": "2026-11-24T00:50:57Z",
+          "is_prerelease": false
+        }
+      ],
+      "tags_count": 1,
+      "branches_count": 1,
+      "discussions_count": 0,
+      "deployments_count": 0,
+      "environments_count": 0,
+      "packages_count": 0,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_projects": true,
+      "has_discussions": false,
+      "topics": [
+        "ai-agents",
+        "automation",
+        "cmdb",
+        "itsm",
+        "llm",
+        "mcp",
+        "model-context-protocol",
+        "nextjs",
+        "servicenow",
+        "typescript"
+      ],
+      "size_kb": 228,
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp/blob/main/README.md",
+        "has_readme": true,
+        "length": 16389,
+        "excerpt": "# ServiceNow Ultimate MCP — Enterprise AI Operations Platform\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)\n[![Next.js](https://img.shields.io/badge/Next.js-16-black.svg)](https://nextjs.org)\n[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg)](https://www.typescriptlang.org)\n[![MCP](https://img.shields.io/badge/MCP-2025.1-teal.svg)](https://modelcontextprotocol.io)\n\n> The bridge between AI agents and ServiceNow — an enterprise-grade Model\n> Context Protocol server that gives AI agents comprehensive access to\n> ServiceNow: ITSM, ITOM, ITAM, CMDB, HR, CSM, workflows, automation,\n> reporting, and administration.\n\nThis repository contains the **operations dashboard and reference web\napplication** for the ServiceNow Ultimate MCP server. It is a production-grade\nNext.js 16 control plane that visualises the MCP tool registry, ServiceNow\nmodules, automation workflows, live operations analytics, and an interactive\nnatural-language query console powered by a large language model.\n\n---\n\n## Table of Contents\n\n- [Overview](#overview)\n- [Features](#features)\n- [Tech Stack](#tech-stack)\n- [Getting Started](#getting-started)\n- [Project Structure](#project-structure)\n- [The NL Query Console](#the-nl-query-console)\n- [MCP Tools & Resources](#mcp-tools--resources)\n- [Configuration](#configuration)\n- [Available Scripts](#available-scripts)\n- [Testing & QA](#testing--qa)\n- [Roadmap](#roadmap)\n- [Security](#security)\n- [Developer & Contact](#developer--contact)\n- [License](#license)\n\n---\n\n## Overview\n\nServiceNow Ultimate MCP exposes ServiceNow's ITSM, ITOM, ITAM, CMDB, HR, and\nCSM capabilities to AI agents through the Model Context Protocol. AI clients\n(Claude Desktop, Cursor, Cline, VS Code MCP, Gemini agents, custom Python\nagents) connect over STDIO or Streamable HTTP and invoke **40+ validated\ntools** across **20 categories**, read **16 URI-addressable resources**, and\nexecute **multi-step automation workflows** — all with strict security\nsafeguards.\n\nThis web application is the **management and demonstration plane** for that\nserver: a real-time operations dashboard, a tools/resources explorer, a\nServiceNow records browser, and an interactive natural-language console.\n\n> **Note:** This web app uses mock ServiceNow data for demonstration. The\n> natural-language query console uses a real LLM (via `z-ai-web-dev-sdk`) to\n> translate plain English into validated ServiceNow encoded queries. To\n> connect a real ServiceNow instance, point the backend API routes at the\n> ServiceNow REST API and supply credentials via environment variables.\n\n---\n\n## Features\n\n### Operations Dashboard\n- 10 live KPIs (open incidents, critical, SLA breaches, problems, changes,\n  CMDB CIs, health, avg resolution, first-contact resolution, approvals)\n- Incident volume area chart (opened vs. resolved, 7 days)\n- Priority distribution pie chart\n- Assignment group performance bar chart\n- SLA compliance trend line (6 weeks)\n- Audited recent-activity feed\n\n### ServiceNow Modules Browser\nTabbed records browser for Incidents, Problems, Changes, CMDB, Assets,\nKnowledge, and SLA records with live filtering.\n\n### MCP Tools Explorer\n40 tools across 20 categories (Incident, Problem, Change, Request, CMDB,\nAsset, User, Group, Knowledge, SLA, Reporting, Query, Script, Attachment,\nWorkflow, Approval, Instance, Audit, AI Analysis, Bulk). Each tool card\nopens a detail dialog with the full input schema, output contract, permission\ntier, safety flag, and an example JSON-RPC invocation.\n\n### MCP Resources Browser\n16 URI-addressable resources (`servicenow://incidents`, templates like\n`servicenow://incidents/{number}`, schema endpoints, instance info, etc.).\n\n### Natural Language Query Console\nType any operational request in plain English — e.g. *\"Find all high-priority\nincidents that have not been updated in seven days\"* — and the LLM layer\nreturns:\n- an `understood` flag and intent label\n- the target ServiceNow table\n- a validated encoded query (",
+        "full_content_path": null
+      },
+      "readme_full_content": null,
+      "tree": {
+        "truncated": false,
+        "total_files": 114,
+        "total_entries": 137,
+        "top_level_directories": [
+          ".github",
+          "QA",
+          "examples",
+          "prisma",
+          "public",
+          "src",
+          "tests"
+        ],
+        "important_files": [
+          "package.json",
+          "tsconfig.json"
+        ],
+        "workflow_files": [
+          ".github/workflows/ci.yml"
+        ],
+        "test_files_count": 7,
+        "ci_enabled": true
+      },
+      "contributors": {
+        "count": 1,
+        "anonymous_included": false
+      },
+      "technology": {
+        "frameworks": [
+          "MCP",
+          "Next.js",
+          "React",
+          "Tailwind CSS"
+        ],
+        "dependencies": [
+          "@dnd-kit/core",
+          "@dnd-kit/sortable",
+          "@dnd-kit/utilities",
+          "@hookform/resolvers",
+          "@prisma/client",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@reactuses/core",
+          "@tailwindcss/postcss",
+          "@tanstack/react-query",
+          "@tanstack/react-table",
+          "@types/react",
+          "@types/react-dom",
+          "@vitest/coverage-v8",
+          "bun-types",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "date-fns",
+          "embla-carousel-react",
+          "eslint",
+          "eslint-config-next",
+          "framer-motion",
+          "input-otp",
+          "lucide-react",
+          "next",
+          "next-auth",
+          "next-intl",
+          "next-themes",
+          "prisma",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-markdown"
+        ],
+        "config_files": [
+          "package.json"
+        ]
+      },
+      "external_links": [
+        "https://nextjs.org",
+        "https://www.typescriptlang.org",
+        "https://modelcontextprotocol.io",
+        "http://localhost:3000",
+        "https://your-instance.service-now.com",
+        "https://marvis.web.app",
+        "https://wa.me/923167417135"
+      ],
+      "documentation_status": "documented",
+      "detail_refreshed_at": "2026-11-24T02:07:39+00:00",
+      "detail_source": "api"
+    },
+    {
+      "id": "R_kgDOV4S7nw",
+      "name": "github-profile-master-record",
+      "full_name": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
+      "homepage": null,
+      "created_at": "2026-11-23T05:13:38Z",
+      "updated_at": "2026-11-23T05:18:39Z",
+      "pushed_at": "2026-11-23T18:06:01Z",
+      "default_branch": "main",
+      "last_commit_at": "2026-11-23T18:06:00Z",
+      "visibility": "public",
+      "is_private": false,
+      "archived": false,
+      "fork": false,
+      "disabled": false,
+      "is_template": false,
+      "in_organization": false,
+      "license": null,
+      "license_name": null,
+      "language": "Python",
+      "languages": {
+        "Python": 145275
+      },
+      "language_total_size": 145275,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "closed_issues": 0,
+      "open_pull_requests": 0,
+      "merged_pull_requests": 0,
+      "closed_pull_requests": 0,
+      "releases_count": 0,
+      "releases": [],
+      "tags_count": 0,
+      "branches_count": 1,
+      "discussions_count": 0,
+      "deployments_count": 0,
+      "environments_count": 0,
+      "packages_count": 0,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_projects": true,
+      "has_discussions": false,
+      "topics": [],
+      "size_kb": 2871,
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/README.md",
+        "has_readme": true,
+        "length": 9830,
+        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-23T18:05:59+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 36 / 59 |\n| Projects documented | 95 |\n| Public gists | 0 |\n| Live websites | 60 |\n| Releases tracked | 6 |\n| External links | 789 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 269 |\n| Total contributions (last 12 months) | 536 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.84%), TypeScript (17.0%), JavaScript (3.38%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/hamids-ai-automations/pinvault-pinterest-downloader) | PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |\n| [seo-audit-tool](https://github.com/hamids-ai-automations/seo-audit-tool) | Ethical on-page SEO audit crawler: analyzes titles, meta tags, headings, canonicals, image alt texts, duplicate content, and exports actionable CSVs. | Python | 1 | 0 | active | 2026-10-18 |\n| [ppc-performance-dashboard](https://github.com/hamids-ai-automations/ppc-performan",
+        "full_content_path": null
+      },
+      "readme_full_content": null,
+      "tree": {
+        "truncated": false,
+        "total_files": 343,
+        "total_entries": 362,
+        "top_level_directories": [
+          ".github",
+          "achievements",
+          "automation",
+          "contributions",
+          "history",
+          "profile",
+          "projects",
+          "repositories",
+          "resources"
+        ],
+        "important_files": [
+          "automation/requirements.txt"
+        ],
+        "workflow_files": [
+          ".github/workflows/automatic-profile-sync.yml",
+          ".github/workflows/initial-data-collection.yml",
+          ".github/workflows/scheduled-full-sync.yml",
+          ".github/workflows/validate-master-data.yml"
+        ],
+        "test_files_count": 8,
+        "ci_enabled": true
+      },
+      "contributors": {
+        "count": 2,
+        "anonymous_included": false
+      },
+      "technology": {
+        "frameworks": [],
+        "dependencies": [],
+        "config_files": []
+      },
+      "external_links": [
+        "https://hamid-resume.web.app/",
+        "https://marvis.web.app",
+        "https://hamid-resume.web.app",
+        "https://marvis.web.app/projects/leadflow-sentinel",
+        "https://abouthamid.web.app",
+        "https://fb-ai-starter-kit.web.app",
+        "https://marvis.web.app/projects/firebase-ai-starter-kit",
+        "https://marvis.web.app/projects/gemini-agent-automation-toolkit",
+        "https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**",
+        "https://musheabdulhakim.github.io/gohighlevel-php-sdk",
+        "https://gke-labs.github.io/k8s-ai-bench",
+        "https://airkube-dashboard-a4410b460d07.herokuapp.com",
+        "https://google.github.io/sbsim",
+        "https://gitwyd.github.io/sbsim_documentation",
+        "https://pypi.org/project/pubchem-finder",
+        "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
+        "https://docs.github.com/rest/packages/packages#list-packages-for-a-user"
+      ],
+      "documentation_status": "documented",
+      "detail_refreshed_at": "2026-11-24T02:07:39+00:00",
+      "detail_source": "api"
+    },
     {
       "id": "R_kgDOVaAF6A",
       "name": "shopify-growth-mcp",
@@ -494,123 +801,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-23T18:05:39+00:00",
-      "detail_source": "api"
-    },
-    {
-      "id": "R_kgDOV4S7nw",
-      "name": "github-profile-master-record",
-      "full_name": "hamids-ai-automations/github-profile-master-record",
-      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
-      "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
-      "homepage": null,
-      "created_at": "2026-11-23T05:13:38Z",
-      "updated_at": "2026-11-23T05:18:39Z",
-      "pushed_at": "2026-11-23T06:23:26Z",
-      "default_branch": "main",
-      "last_commit_at": "2026-11-23T06:23:24Z",
-      "visibility": "public",
-      "is_private": false,
-      "archived": false,
-      "fork": false,
-      "disabled": false,
-      "is_template": false,
-      "in_organization": false,
-      "license": null,
-      "license_name": null,
-      "language": "Python",
-      "languages": {
-        "Python": 145275
-      },
-      "language_total_size": 145275,
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "closed_issues": 0,
-      "open_pull_requests": 0,
-      "merged_pull_requests": 0,
-      "closed_pull_requests": 0,
-      "releases_count": 0,
-      "releases": [],
-      "tags_count": 0,
-      "branches_count": 1,
-      "discussions_count": 0,
-      "deployments_count": 0,
-      "environments_count": 0,
-      "packages_count": 0,
-      "has_issues": true,
-      "has_wiki": true,
-      "has_projects": true,
-      "has_discussions": false,
-      "topics": [],
-      "size_kb": 2538,
-      "readme": {
-        "path": "README.md",
-        "html_url": "https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/README.md",
-        "has_readme": true,
-        "length": 9638,
-        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-23T06:23:24+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 36 / 59 |\n| Projects documented | 95 |\n| Public gists | 0 |\n| Live websites | 60 |\n| Releases tracked | 6 |\n| External links | 787 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 268 |\n| Total contributions (last 12 months) | 535 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.84%), TypeScript (17.0%), JavaScript (3.38%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/hamids-ai-automations/pinvault-pinterest-downloader) | PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |\n| [seo-audit-tool](https://github.com/hamids-ai-automations/seo-audit-tool) | Ethical on-page SEO audit crawler: analyzes titles, meta tags, headings, canonicals, image alt texts, duplicate content, and exports actionable CSVs. | Python | 1 | 0 | active | 2026-10-18 |\n| [ppc-performance-dashboard](https://github.com/hamids-ai-automations/ppc-performan",
-        "full_content_path": null
-      },
-      "readme_full_content": null,
-      "tree": {
-        "truncated": false,
-        "total_files": 340,
-        "total_entries": 359,
-        "top_level_directories": [
-          ".github",
-          "achievements",
-          "automation",
-          "contributions",
-          "history",
-          "profile",
-          "projects",
-          "repositories",
-          "resources"
-        ],
-        "important_files": [
-          "automation/requirements.txt"
-        ],
-        "workflow_files": [
-          ".github/workflows/automatic-profile-sync.yml",
-          ".github/workflows/initial-data-collection.yml",
-          ".github/workflows/scheduled-full-sync.yml",
-          ".github/workflows/validate-master-data.yml"
-        ],
-        "test_files_count": 8,
-        "ci_enabled": true
-      },
-      "contributors": {
-        "count": 2,
-        "anonymous_included": false
-      },
-      "technology": {
-        "frameworks": [],
-        "dependencies": [],
-        "config_files": []
-      },
-      "external_links": [
-        "https://hamid-resume.web.app/",
-        "https://marvis.web.app",
-        "https://hamid-resume.web.app",
-        "https://marvis.web.app/projects/leadflow-sentinel",
-        "https://abouthamid.web.app",
-        "https://fb-ai-starter-kit.web.app",
-        "https://marvis.web.app/projects/firebase-ai-starter-kit",
-        "https://marvis.web.app/projects/gemini-agent-automation-toolkit",
-        "https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**",
-        "https://musheabdulhakim.github.io/gohighlevel-php-sdk",
-        "https://gke-labs.github.io/k8s-ai-bench",
-        "https://airkube-dashboard-a4410b460d07.herokuapp.com",
-        "https://google.github.io/sbsim",
-        "https://gitwyd.github.io/sbsim_documentation",
-        "https://opnform.com",
-        "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
-        "https://docs.github.com/rest/packages/packages#list-packages-for-a-user"
-      ],
-      "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-23T18:05:39+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3mnag",
@@ -13084,9 +13275,9 @@
   ],
   "projects": [
     {
-      "name": "shopify-growth-mcp",
-      "full_name": "hamids-ai-automations/shopify-growth-mcp",
-      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
+      "name": "servicenow-ultimate-mcp",
+      "full_name": "hamids-ai-automations/servicenow-ultimate-mcp",
+      "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp",
       "documentation": null,
       "status": "active"
     },
@@ -13094,6 +13285,13 @@
       "name": "github-profile-master-record",
       "full_name": "hamids-ai-automations/github-profile-master-record",
       "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "documentation": null,
+      "status": "active"
+    },
+    {
+      "name": "shopify-growth-mcp",
+      "full_name": "hamids-ai-automations/shopify-growth-mcp",
+      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
       "documentation": null,
       "status": "active"
     },
@@ -16466,8 +16664,8 @@
     "reviews_last_year": 0,
     "discussions_authored": 0,
     "discussion_comments": 0,
-    "commits_last_year": 269,
-    "contributions_last_year": 536
+    "commits_last_year": 271,
+    "contributions_last_year": 539
   },
   "reviews": {
     "total": 0,
@@ -16483,11 +16681,11 @@
   },
   "commits": {
     "window": {
-      "from": "2025-11-23T18:05:49Z",
-      "to": "2026-11-23T18:05:49Z"
+      "from": "2025-11-24T02:07:49Z",
+      "to": "2026-11-24T02:07:49Z"
     },
-    "total_commits": 269,
-    "total_contributions": 536,
+    "total_commits": 271,
+    "total_contributions": 539,
     "by_repository": [
       {
         "repository": "hamids-ai-automations/hamids-ai-automations",
@@ -16525,23 +16723,8 @@
         "commits": 10
       },
       {
-        "repository": "hamids-ai-automations/firebase-ai-starter-kit",
-        "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
-        "commits": 9
-      },
-      {
         "repository": "hamids-ai-automations/hamid-resume",
         "url": "https://github.com/hamids-ai-automations/hamid-resume",
-        "commits": 9
-      },
-      {
-        "repository": "hamids-ai-automations/seo-audit-pro",
-        "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
-        "commits": 9
-      },
-      {
-        "repository": "hamids-ai-automations/conversion-tracking-doctor",
-        "url": "https://github.com/hamids-ai-automations/conversion-tracking-doctor",
         "commits": 9
       },
       {
@@ -16550,18 +16733,28 @@
         "commits": 9
       },
       {
-        "repository": "hamids-ai-automations/geo-visibility-lab",
-        "url": "https://github.com/hamids-ai-automations/geo-visibility-lab",
-        "commits": 8
+        "repository": "hamids-ai-automations/conversion-tracking-doctor",
+        "url": "https://github.com/hamids-ai-automations/conversion-tracking-doctor",
+        "commits": 9
       },
       {
-        "repository": "hamids-ai-automations/ecommerce-seo-optimizer",
-        "url": "https://github.com/hamids-ai-automations/ecommerce-seo-optimizer",
-        "commits": 8
+        "repository": "hamids-ai-automations/seo-audit-pro",
+        "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
+        "commits": 9
+      },
+      {
+        "repository": "hamids-ai-automations/firebase-ai-starter-kit",
+        "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
+        "commits": 9
       },
       {
         "repository": "hamids-ai-automations/meta-lead-quality-analyzer",
         "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
+        "commits": 8
+      },
+      {
+        "repository": "hamids-ai-automations/geo-visibility-lab",
+        "url": "https://github.com/hamids-ai-automations/geo-visibility-lab",
         "commits": 8
       },
       {
@@ -16570,13 +16763,18 @@
         "commits": 8
       },
       {
+        "repository": "hamids-ai-automations/ecommerce-seo-optimizer",
+        "url": "https://github.com/hamids-ai-automations/ecommerce-seo-optimizer",
+        "commits": 8
+      },
+      {
         "repository": "hamids-ai-automations/ai-marketing-mix-copilot",
         "url": "https://github.com/hamids-ai-automations/ai-marketing-mix-copilot",
         "commits": 7
       },
       {
-        "repository": "hamids-ai-automations/github-profile-master-record",
-        "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+        "repository": "hamids-ai-automations/pinvault-pinterest-downloader",
+        "url": "https://github.com/hamids-ai-automations/pinvault-pinterest-downloader",
         "commits": 7
       },
       {
@@ -16585,8 +16783,8 @@
         "commits": 7
       },
       {
-        "repository": "hamids-ai-automations/pinvault-pinterest-downloader",
-        "url": "https://github.com/hamids-ai-automations/pinvault-pinterest-downloader",
+        "repository": "hamids-ai-automations/github-profile-master-record",
+        "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
         "commits": 7
       },
       {
@@ -16620,6 +16818,16 @@
         "commits": 3
       },
       {
+        "repository": "iamvisheshsrivastava/AirKube",
+        "url": "https://github.com/iamvisheshsrivastava/AirKube",
+        "commits": 3
+      },
+      {
+        "repository": "iamvisheshsrivastava/Smart_CSV_Toolkit",
+        "url": "https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit",
+        "commits": 3
+      },
+      {
         "repository": "rdlugs/sentryward",
         "url": "https://github.com/rdlugs/sentryward",
         "commits": 3
@@ -16635,14 +16843,24 @@
         "commits": 3
       },
       {
-        "repository": "iamvisheshsrivastava/Smart_CSV_Toolkit",
-        "url": "https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit",
-        "commits": 3
+        "repository": "hamids-ai-automations/ai-marketing-portfolio-meta",
+        "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
+        "commits": 2
       },
       {
-        "repository": "iamvisheshsrivastava/AirKube",
-        "url": "https://github.com/iamvisheshsrivastava/AirKube",
-        "commits": 3
+        "repository": "hamids-ai-automations/conversionbridge",
+        "url": "https://github.com/hamids-ai-automations/conversionbridge",
+        "commits": 2
+      },
+      {
+        "repository": "doobidoo/mcp-memory-service",
+        "url": "https://github.com/doobidoo/mcp-memory-service",
+        "commits": 2
+      },
+      {
+        "repository": "hamids-ai-automations/servicenow-ultimate-mcp",
+        "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp",
+        "commits": 2
       },
       {
         "repository": "hamids-ai-automations/leadflow-sentinel",
@@ -16655,33 +16873,8 @@
         "commits": 2
       },
       {
-        "repository": "Opencomplai/opencomplai",
-        "url": "https://github.com/Opencomplai/opencomplai",
-        "commits": 2
-      },
-      {
-        "repository": "doobidoo/mcp-memory-service",
-        "url": "https://github.com/doobidoo/mcp-memory-service",
-        "commits": 2
-      },
-      {
-        "repository": "hamids-ai-automations/ai-marketing-portfolio-meta",
-        "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
-        "commits": 2
-      },
-      {
-        "repository": "finos/open-resource-broker",
-        "url": "https://github.com/finos/open-resource-broker",
-        "commits": 2
-      },
-      {
-        "repository": "iamvisheshsrivastava/geniebot",
-        "url": "https://github.com/iamvisheshsrivastava/geniebot",
-        "commits": 2
-      },
-      {
-        "repository": "iamvisheshsrivastava/ab-lab",
-        "url": "https://github.com/iamvisheshsrivastava/ab-lab",
+        "repository": "hamids-ai-automations/searchpulse-ai",
+        "url": "https://github.com/hamids-ai-automations/searchpulse-ai",
         "commits": 2
       },
       {
@@ -16690,14 +16883,49 @@
         "commits": 2
       },
       {
-        "repository": "hamids-ai-automations/conversionbridge",
-        "url": "https://github.com/hamids-ai-automations/conversionbridge",
+        "repository": "iamvisheshsrivastava/ab-lab",
+        "url": "https://github.com/iamvisheshsrivastava/ab-lab",
         "commits": 2
       },
       {
-        "repository": "hamids-ai-automations/searchpulse-ai",
-        "url": "https://github.com/hamids-ai-automations/searchpulse-ai",
+        "repository": "iamvisheshsrivastava/geniebot",
+        "url": "https://github.com/iamvisheshsrivastava/geniebot",
         "commits": 2
+      },
+      {
+        "repository": "finos/open-resource-broker",
+        "url": "https://github.com/finos/open-resource-broker",
+        "commits": 2
+      },
+      {
+        "repository": "Opencomplai/opencomplai",
+        "url": "https://github.com/Opencomplai/opencomplai",
+        "commits": 2
+      },
+      {
+        "repository": "exmergo/dex",
+        "url": "https://github.com/exmergo/dex",
+        "commits": 1
+      },
+      {
+        "repository": "OpenWave-India/modeldiff",
+        "url": "https://github.com/OpenWave-India/modeldiff",
+        "commits": 1
+      },
+      {
+        "repository": "laaielichter/Gulliver",
+        "url": "https://github.com/laaielichter/Gulliver",
+        "commits": 1
+      },
+      {
+        "repository": "hamids-ai-automations/ai-agent-testing-lab",
+        "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
+        "commits": 1
+      },
+      {
+        "repository": "cfgaudit/cfgaudit",
+        "url": "https://github.com/cfgaudit/cfgaudit",
+        "commits": 1
       },
       {
         "repository": "adbar/trafilatura",
@@ -16707,6 +16935,16 @@
       {
         "repository": "MysterionRise/pubchem-finder",
         "url": "https://github.com/MysterionRise/pubchem-finder",
+        "commits": 1
+      },
+      {
+        "repository": "pygrpc/pygrpc-native",
+        "url": "https://github.com/pygrpc/pygrpc-native",
+        "commits": 1
+      },
+      {
+        "repository": "connabyss/bite",
+        "url": "https://github.com/connabyss/bite",
         "commits": 1
       },
       {
@@ -16725,43 +16963,8 @@
         "commits": 1
       },
       {
-        "repository": "pygrpc/pygrpc-native",
-        "url": "https://github.com/pygrpc/pygrpc-native",
-        "commits": 1
-      },
-      {
-        "repository": "hamids-ai-automations/ai-agent-testing-lab",
-        "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
-        "commits": 1
-      },
-      {
-        "repository": "exmergo/dex",
-        "url": "https://github.com/exmergo/dex",
-        "commits": 1
-      },
-      {
-        "repository": "OpenWave-India/modeldiff",
-        "url": "https://github.com/OpenWave-India/modeldiff",
-        "commits": 1
-      },
-      {
-        "repository": "cfgaudit/cfgaudit",
-        "url": "https://github.com/cfgaudit/cfgaudit",
-        "commits": 1
-      },
-      {
         "repository": "supabase/supabase-py",
         "url": "https://github.com/supabase/supabase-py",
-        "commits": 1
-      },
-      {
-        "repository": "laaielichter/Gulliver",
-        "url": "https://github.com/laaielichter/Gulliver",
-        "commits": 1
-      },
-      {
-        "repository": "OpnForm/OpnForm",
-        "url": "https://github.com/OpnForm/OpnForm",
         "commits": 1
       },
       {
@@ -16770,8 +16973,8 @@
         "commits": 1
       },
       {
-        "repository": "connabyss/bite",
-        "url": "https://github.com/connabyss/bite",
+        "repository": "OpnForm/OpnForm",
+        "url": "https://github.com/OpnForm/OpnForm",
         "commits": 1
       }
     ],
@@ -16911,6 +17114,10 @@
       {
         "date": "2026-11-23",
         "count": 14
+      },
+      {
+        "date": "2026-11-24",
+        "count": 3
       }
     ]
   },
@@ -17071,20 +17278,6 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
-        "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
-        "description": "Secure Gemini AI on Firebase: Auth, Firestore ownership rules, hardened Cloud Functions, emulator-first tests, CI and guarded deploys.",
-        "owner": "hamids-ai-automations",
-        "is_fork": false,
-        "stars": 0,
-        "language": "TypeScript",
-        "commits": 9,
-        "pull_requests": 0,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": true
-      },
-      {
         "full_name": "hamids-ai-automations/hamid-resume",
         "url": "https://github.com/hamids-ai-automations/hamid-resume",
         "description": "Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/.",
@@ -17099,13 +17292,13 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/seo-audit-pro",
-        "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
-        "description": "Client-side SEO audit tool: 8 weighted domains, evidence-backed issues, PDF reports. Live at seoauditpro.web.app",
+        "full_name": "hamids-ai-automations/ppc-waste-detector",
+        "url": "https://github.com/hamids-ai-automations/ppc-waste-detector",
+        "description": "Free, open-source PPC budget leak detector for Google & Meta Ads. Detects negative keyword gaps, search query bleed, click fraud, and zero-conversion spend.",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 1,
-        "language": "TypeScript",
+        "language": "Python",
         "commits": 9,
         "pull_requests": 0,
         "issues": 0,
@@ -17127,14 +17320,42 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/ppc-waste-detector",
-        "url": "https://github.com/hamids-ai-automations/ppc-waste-detector",
-        "description": "Free, open-source PPC budget leak detector for Google & Meta Ads. Detects negative keyword gaps, search query bleed, click fraud, and zero-conversion spend.",
+        "full_name": "hamids-ai-automations/seo-audit-pro",
+        "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
+        "description": "Client-side SEO audit tool: 8 weighted domains, evidence-backed issues, PDF reports. Live at seoauditpro.web.app",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 1,
+        "language": "TypeScript",
+        "commits": 9,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
+        "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
+        "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
+        "description": "Secure Gemini AI on Firebase: Auth, Firestore ownership rules, hardened Cloud Functions, emulator-first tests, CI and guarded deploys.",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 0,
+        "language": "TypeScript",
+        "commits": 9,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
+        "full_name": "hamids-ai-automations/meta-lead-quality-analyzer",
+        "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
+        "description": "Open-source lead quality scoring & CRM revenue feedback engine for Meta Ads. Detects fake leads, disposable emails, bot form fatigue, and optimizes Cost-Per-Qualified-Lead (CPQL).",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 1,
         "language": "Python",
-        "commits": 9,
+        "commits": 8,
         "pull_requests": 0,
         "issues": 0,
         "reviews": 0,
@@ -17169,20 +17390,6 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/meta-lead-quality-analyzer",
-        "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
-        "description": "Open-source lead quality scoring & CRM revenue feedback engine for Meta Ads. Detects fake leads, disposable emails, bot form fatigue, and optimizes Cost-Per-Qualified-Lead (CPQL).",
-        "owner": "hamids-ai-automations",
-        "is_fork": false,
-        "stars": 1,
-        "language": "Python",
-        "commits": 8,
-        "pull_requests": 0,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": true
-      },
-      {
         "full_name": "lukeautry/tsoa",
         "url": "https://github.com/lukeautry/tsoa",
         "description": "Build OpenAPI-compliant REST APIs using TypeScript and Node",
@@ -17202,7 +17409,7 @@
         "description": "Streaming anomaly detection in Python: 50+ online multivariate and univariate detectors (LODA, RRCF, Half-Space Trees, xStream, DAMP, SAND) with calibrated alerts, drift handling, and prequential evaluation.",
         "owner": "selimfirat",
         "is_fork": false,
-        "stars": 321,
+        "stars": 322,
         "language": "Python",
         "commits": 4,
         "pull_requests": 4,
@@ -17225,13 +17432,13 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/github-profile-master-record",
-        "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
-        "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
+        "full_name": "hamids-ai-automations/pinvault-pinterest-downloader",
+        "url": "https://github.com/hamids-ai-automations/pinvault-pinterest-downloader",
+        "description": "PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export",
         "owner": "hamids-ai-automations",
         "is_fork": false,
-        "stars": 0,
-        "language": "Python",
+        "stars": 1,
+        "language": "JavaScript",
         "commits": 7,
         "pull_requests": 0,
         "issues": 0,
@@ -17253,13 +17460,13 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/pinvault-pinterest-downloader",
-        "url": "https://github.com/hamids-ai-automations/pinvault-pinterest-downloader",
-        "description": "PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export",
+        "full_name": "hamids-ai-automations/github-profile-master-record",
+        "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+        "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
         "owner": "hamids-ai-automations",
         "is_fork": false,
-        "stars": 1,
-        "language": "JavaScript",
+        "stars": 0,
+        "language": "Python",
         "commits": 7,
         "pull_requests": 0,
         "issues": 0,
@@ -17295,20 +17502,6 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "iamvisheshsrivastava/Smart_CSV_Toolkit",
-        "url": "https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit",
-        "description": "Streamlit app for LLM-assisted CSV cleaning, metadata inference, and multi-file merging, with guided decision-tree workflows.",
-        "owner": "iamvisheshsrivastava",
-        "is_fork": false,
-        "stars": 3,
-        "language": "Python",
-        "commits": 3,
-        "pull_requests": 3,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": false
-      },
-      {
         "full_name": "iamvisheshsrivastava/AirKube",
         "url": "https://github.com/iamvisheshsrivastava/AirKube",
         "description": "Agentic MLOps prototype with LangGraph tools, Neo4j knowledge graphs, FastAPI inference and Airflow data pipelines.",
@@ -17323,12 +17516,26 @@
         "owned_by_profile": false
       },
       {
-        "full_name": "Opencomplai/opencomplai",
-        "url": "https://github.com/Opencomplai/opencomplai",
-        "description": "Code-First AI Compliance. The open-source regulatory engine for the EU AI Act. Automate your risk assessments directly within your CI/CD pipeline.",
-        "owner": "Opencomplai",
+        "full_name": "iamvisheshsrivastava/Smart_CSV_Toolkit",
+        "url": "https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit",
+        "description": "Streamlit app for LLM-assisted CSV cleaning, metadata inference, and multi-file merging, with guided decision-tree workflows.",
+        "owner": "iamvisheshsrivastava",
         "is_fork": false,
-        "stars": 19,
+        "stars": 3,
+        "language": "Python",
+        "commits": 3,
+        "pull_requests": 3,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": false
+      },
+      {
+        "full_name": "iamvisheshsrivastava/ab-lab",
+        "url": "https://github.com/iamvisheshsrivastava/ab-lab",
+        "description": "Python experimentation toolkit: A/B simulations, power analysis, frequentist/Bayesian inference, CUPED and statistical guardrails.",
+        "owner": "iamvisheshsrivastava",
+        "is_fork": false,
+        "stars": 1,
         "language": "Python",
         "commits": 2,
         "pull_requests": 4,
@@ -17351,12 +17558,12 @@
         "owned_by_profile": false
       },
       {
-        "full_name": "iamvisheshsrivastava/ab-lab",
-        "url": "https://github.com/iamvisheshsrivastava/ab-lab",
-        "description": "Python experimentation toolkit: A/B simulations, power analysis, frequentist/Bayesian inference, CUPED and statistical guardrails.",
-        "owner": "iamvisheshsrivastava",
+        "full_name": "Opencomplai/opencomplai",
+        "url": "https://github.com/Opencomplai/opencomplai",
+        "description": "Code-First AI Compliance. The open-source regulatory engine for the EU AI Act. Automate your risk assessments directly within your CI/CD pipeline.",
+        "owner": "Opencomplai",
         "is_fork": false,
-        "stars": 1,
+        "stars": 20,
         "language": "Python",
         "commits": 2,
         "pull_requests": 4,
@@ -17384,7 +17591,7 @@
         "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
         "owner": "doobidoo",
         "is_fork": false,
-        "stars": 2150,
+        "stars": 2151,
         "language": "Python",
         "commits": 2,
         "pull_requests": 3,
@@ -17454,7 +17661,7 @@
         "description": "Python & Command-line tool to gather text and metadata on the Web: Crawling, scraping, extraction, output as CSV, JSON, HTML, MD, TXT, XML",
         "owner": "adbar",
         "is_fork": false,
-        "stars": 7164,
+        "stars": 7166,
         "language": "Python",
         "commits": 1,
         "pull_requests": 2,
@@ -17496,13 +17703,55 @@
         "description": "Beautiful Open-Source Form Builder",
         "owner": "OpnForm",
         "is_fork": false,
-        "stars": 4024,
+        "stars": 4026,
         "language": "PHP",
         "commits": 1,
         "pull_requests": 2,
         "issues": 0,
         "reviews": 0,
         "owned_by_profile": false
+      },
+      {
+        "full_name": "hamids-ai-automations/ai-marketing-portfolio-meta",
+        "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
+        "description": "Portfolio hub: standards, roadmap, case studies, architecture map for the AI Marketing Engineer portfolio",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 1,
+        "language": "Astro",
+        "commits": 2,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
+        "full_name": "hamids-ai-automations/conversionbridge",
+        "url": "https://github.com/hamids-ai-automations/conversionbridge",
+        "description": "Server-side conversion gateway for Meta Conversions API and Google Analytics 4 with privacy controls. Python, Firebase.",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 0,
+        "language": "Python",
+        "commits": 2,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
+        "full_name": "hamids-ai-automations/servicenow-ultimate-mcp",
+        "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp",
+        "description": "Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console.",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 0,
+        "language": "TypeScript",
+        "commits": 2,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
       },
       {
         "full_name": "hamids-ai-automations/leadflow-sentinel",
@@ -17533,13 +17782,13 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/ai-marketing-portfolio-meta",
-        "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
-        "description": "Portfolio hub: standards, roadmap, case studies, architecture map for the AI Marketing Engineer portfolio",
+        "full_name": "hamids-ai-automations/searchpulse-ai",
+        "url": "https://github.com/hamids-ai-automations/searchpulse-ai",
+        "description": "Google Search Console intelligence: traffic-drop diagnostics, content decay detection and evidence-based SEO decisions. Python, FastAPI, pytest.",
         "owner": "hamids-ai-automations",
         "is_fork": false,
-        "stars": 1,
-        "language": "Astro",
+        "stars": 0,
+        "language": "Python",
         "commits": 2,
         "pull_requests": 0,
         "issues": 0,
@@ -17559,48 +17808,6 @@
         "issues": 0,
         "reviews": 0,
         "owned_by_profile": true
-      },
-      {
-        "full_name": "hamids-ai-automations/conversionbridge",
-        "url": "https://github.com/hamids-ai-automations/conversionbridge",
-        "description": "Server-side conversion gateway for Meta Conversions API and Google Analytics 4 with privacy controls. Python, Firebase.",
-        "owner": "hamids-ai-automations",
-        "is_fork": false,
-        "stars": 0,
-        "language": "Python",
-        "commits": 2,
-        "pull_requests": 0,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": true
-      },
-      {
-        "full_name": "hamids-ai-automations/searchpulse-ai",
-        "url": "https://github.com/hamids-ai-automations/searchpulse-ai",
-        "description": "Google Search Console intelligence: traffic-drop diagnostics, content decay detection and evidence-based SEO decisions. Python, FastAPI, pytest.",
-        "owner": "hamids-ai-automations",
-        "is_fork": false,
-        "stars": 0,
-        "language": "Python",
-        "commits": 2,
-        "pull_requests": 0,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": true
-      },
-      {
-        "full_name": "pygrpc/pygrpc-native",
-        "url": "https://github.com/pygrpc/pygrpc-native",
-        "description": "Drop-in grpcio server with HTTP/2 and gRPC in Rust, outside the GIL. Your servicers stay in Python.",
-        "owner": "pygrpc",
-        "is_fork": false,
-        "stars": 7,
-        "language": "Python",
-        "commits": 1,
-        "pull_requests": 1,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": false
       },
       {
         "full_name": "exmergo/dex",
@@ -17631,6 +17838,20 @@
         "owned_by_profile": false
       },
       {
+        "full_name": "laaielichter/Gulliver",
+        "url": "https://github.com/laaielichter/Gulliver",
+        "description": "Test on tiny data before you run on giant data. MCP server + CLI that gives AI agents a dress rehearsal for SQL: cost preflight, scale lint with auto-fix, rehearse on 1% → 10%, predict 100%, run only within budget. DuckDB, Postgres, BigQuery, Snowflake. Local-first, MIT.",
+        "owner": "laaielichter",
+        "is_fork": false,
+        "stars": 2,
+        "language": "Python",
+        "commits": 1,
+        "pull_requests": 1,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": false
+      },
+      {
         "full_name": "cfgaudit/cfgaudit",
         "url": "https://github.com/cfgaudit/cfgaudit",
         "description": "Static security auditor for AI-agent configuration: Claude Code, MCP servers, Cursor, Codex, Copilot, Gemini CLI and more. SARIF output, OWASP LLM Top 10 mapping.",
@@ -17645,12 +17866,26 @@
         "owned_by_profile": false
       },
       {
-        "full_name": "laaielichter/Gulliver",
-        "url": "https://github.com/laaielichter/Gulliver",
-        "description": "Test on tiny data before you run on giant data. MCP server + CLI that gives AI agents a dress rehearsal for SQL: cost preflight, scale lint with auto-fix, rehearse on 1% → 10%, predict 100%, run only within budget. DuckDB, Postgres, BigQuery, Snowflake. Local-first, MIT.",
-        "owner": "laaielichter",
+        "full_name": "pygrpc/pygrpc-native",
+        "url": "https://github.com/pygrpc/pygrpc-native",
+        "description": "Drop-in grpcio server with HTTP/2 and gRPC in Rust, outside the GIL. Your servicers stay in Python.",
+        "owner": "pygrpc",
         "is_fork": false,
-        "stars": 2,
+        "stars": 7,
+        "language": "Python",
+        "commits": 1,
+        "pull_requests": 1,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": false
+      },
+      {
+        "full_name": "connabyss/bite",
+        "url": "https://github.com/connabyss/bite",
+        "description": "Checks whether the \"fixed\" in your AI coding agent's commits is true. It takes each fix back out and runs your tests. Free, with no key.",
+        "owner": "connabyss",
+        "is_fork": false,
+        "stars": 3,
         "language": "Python",
         "commits": 1,
         "pull_requests": 1,
@@ -17666,20 +17901,6 @@
         "is_fork": false,
         "stars": 0,
         "language": "JavaScript",
-        "commits": 1,
-        "pull_requests": 1,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": false
-      },
-      {
-        "full_name": "connabyss/bite",
-        "url": "https://github.com/connabyss/bite",
-        "description": "Checks whether the \"fixed\" in your AI coding agent's commits is true. It takes each fix back out and runs your tests. Free, with no key.",
-        "owner": "connabyss",
-        "is_fork": false,
-        "stars": 3,
-        "language": "Python",
         "commits": 1,
         "pull_requests": 1,
         "issues": 0,
@@ -17757,6 +17978,20 @@
         "owned_by_profile": false
       },
       {
+        "full_name": "hamids-ai-automations/ai-agent-testing-lab",
+        "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
+        "description": "AI agent evaluation and reliability harness: labelled suites, CI integration, accuracy/calibration/cost/latency reporting. Python, pytest, MCP.",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 0,
+        "language": "Python",
+        "commits": 1,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
         "full_name": "hamids-ai-automations/dynamic-schema-generator",
         "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
         "description": "Dynamic Schema Generator for WordPress: Automated, accurate JSON-LD Schema.org structured data engine with Elementor integration.",
@@ -17788,20 +18023,6 @@
         "full_name": "hamids-ai-automations/gemini-agent-reliability-kit",
         "url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit",
         "description": "Offline-first reliability harness for Gemini tool-calling agents: schema, tool choice, argument contracts, retry telemetry, latency and cost report cards.",
-        "owner": "hamids-ai-automations",
-        "is_fork": false,
-        "stars": 0,
-        "language": "Python",
-        "commits": 1,
-        "pull_requests": 0,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": true
-      },
-      {
-        "full_name": "hamids-ai-automations/ai-agent-testing-lab",
-        "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
-        "description": "AI agent evaluation and reliability harness: labelled suites, CI integration, accuracy/calibration/cost/latency reporting. Python, pytest, MCP.",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 0,
@@ -18122,8 +18343,8 @@
       }
     ],
     "window": {
-      "from": "2025-11-23T18:05:50Z",
-      "to": "2026-11-23T18:05:50Z"
+      "from": "2025-11-24T02:07:51Z",
+      "to": "2026-11-24T02:07:51Z"
     }
   },
   "external_links": [
@@ -18138,8 +18359,9 @@
         "repository_readme_link"
       ],
       "related_resources": [
-        "hamids-ai-automations/shopify-growth-mcp",
+        "hamids-ai-automations/servicenow-ultimate-mcp",
         "hamids-ai-automations/github-profile-master-record",
+        "hamids-ai-automations/shopify-growth-mcp",
         "hamids-ai-automations/hamids-ai-automations",
         "hamids-ai-automations/ghl-devops-toolkit",
         "hamids-ai-automations/envscope",
@@ -18282,6 +18504,7 @@
         "repository_readme_link"
       ],
       "related_resources": [
+        "hamids-ai-automations/servicenow-ultimate-mcp",
         "hamids-ai-automations/hamids-ai-automations",
         "hamids-ai-automations/ghl-devops-toolkit",
         "hamids-ai-automations/searchpulse-ai",
@@ -18308,27 +18531,70 @@
       "verified": null
     },
     {
-      "url": "https://m8ven.ai/badge/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?v=109ce7f30ab56045601044f15dae2367",
+      "url": "https://nextjs.org",
       "type": "website",
       "relationships": [
         "repository_readme_link"
       ],
       "related_resources": [
-        "hamids-ai-automations/shopify-growth-mcp"
+        "hamids-ai-automations/servicenow-ultimate-mcp",
+        "hamids-ai-automations/ghl-devops-toolkit"
       ],
-      "source": "README of hamids-ai-automations/shopify-growth-mcp",
+      "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
       "verified": null
     },
     {
-      "url": "https://m8ven.ai/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?s=readme",
+      "url": "https://www.typescriptlang.org",
       "type": "website",
       "relationships": [
         "repository_readme_link"
       ],
       "related_resources": [
-        "hamids-ai-automations/shopify-growth-mcp"
+        "hamids-ai-automations/servicenow-ultimate-mcp",
+        "hamids-ai-automations/ghl-devops-toolkit"
       ],
-      "source": "README of hamids-ai-automations/shopify-growth-mcp",
+      "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
+      "verified": null
+    },
+    {
+      "url": "https://modelcontextprotocol.io",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/servicenow-ultimate-mcp",
+        "hamids-ai-automations/google-services-mcp",
+        "hamids-ai-automations/pubchem-finder"
+      ],
+      "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
+      "verified": null
+    },
+    {
+      "url": "http://localhost:3000",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/servicenow-ultimate-mcp",
+        "hamids-ai-automations/ghl-devops-toolkit",
+        "hamids-ai-automations/nexgen-financial-experts",
+        "hamids-ai-automations/markline"
+      ],
+      "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
+      "verified": null
+    },
+    {
+      "url": "https://your-instance.service-now.com",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/servicenow-ultimate-mcp"
+      ],
+      "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
       "verified": null
     },
     {
@@ -18503,7 +18769,7 @@
       "verified": null
     },
     {
-      "url": "https://opnform.com",
+      "url": "https://pypi.org/project/pubchem-finder",
       "type": "website",
       "relationships": [
         "repository_readme_link",
@@ -18511,7 +18777,7 @@
       ],
       "related_resources": [
         "hamids-ai-automations/github-profile-master-record",
-        "hamids-ai-automations/OpnForm"
+        "hamids-ai-automations/pubchem-finder"
       ],
       "source": "README of hamids-ai-automations/github-profile-master-record",
       "verified": null
@@ -18541,27 +18807,27 @@
       "verified": null
     },
     {
-      "url": "https://www.typescriptlang.org",
+      "url": "https://m8ven.ai/badge/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?v=109ce7f30ab56045601044f15dae2367",
       "type": "website",
       "relationships": [
         "repository_readme_link"
       ],
       "related_resources": [
-        "hamids-ai-automations/ghl-devops-toolkit"
+        "hamids-ai-automations/shopify-growth-mcp"
       ],
-      "source": "README of hamids-ai-automations/ghl-devops-toolkit",
+      "source": "README of hamids-ai-automations/shopify-growth-mcp",
       "verified": null
     },
     {
-      "url": "https://nextjs.org",
+      "url": "https://m8ven.ai/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?s=readme",
       "type": "website",
       "relationships": [
         "repository_readme_link"
       ],
       "related_resources": [
-        "hamids-ai-automations/ghl-devops-toolkit"
+        "hamids-ai-automations/shopify-growth-mcp"
       ],
-      "source": "README of hamids-ai-automations/ghl-devops-toolkit",
+      "source": "README of hamids-ai-automations/shopify-growth-mcp",
       "verified": null
     },
     {
@@ -18609,20 +18875,6 @@
       ],
       "related_resources": [
         "hamids-ai-automations/ghl-devops-toolkit"
-      ],
-      "source": "README of hamids-ai-automations/ghl-devops-toolkit",
-      "verified": null
-    },
-    {
-      "url": "http://localhost:3000",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/ghl-devops-toolkit",
-        "hamids-ai-automations/nexgen-financial-experts",
-        "hamids-ai-automations/markline"
       ],
       "source": "README of hamids-ai-automations/ghl-devops-toolkit",
       "verified": null
@@ -18930,19 +19182,6 @@
         "hamids-ai-automations/firebase-ai-starter-kit"
       ],
       "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
-      "verified": null
-    },
-    {
-      "url": "https://modelcontextprotocol.io",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/google-services-mcp",
-        "hamids-ai-automations/pubchem-finder"
-      ],
-      "source": "README of hamids-ai-automations/google-services-mcp",
       "verified": null
     },
     {
@@ -19665,19 +19904,6 @@
       "verified": null
     },
     {
-      "url": "https://pypi.org/project/pubchem-finder",
-      "type": "live_site",
-      "relationships": [
-        "repository_homepage",
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/pubchem-finder"
-      ],
-      "source": "repository hamids-ai-automations/pubchem-finder",
-      "verified": null
-    },
-    {
       "url": "https://pubchem.ncbi.nlm.nih.gov",
       "type": "website",
       "relationships": [
@@ -19899,6 +20125,19 @@
         "hamids-ai-automations/pubchem-finder"
       ],
       "source": "README of hamids-ai-automations/pubchem-finder",
+      "verified": null
+    },
+    {
+      "url": "https://opnform.com",
+      "type": "live_site",
+      "relationships": [
+        "repository_homepage",
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/OpnForm"
+      ],
+      "source": "repository hamids-ai-automations/OpnForm",
       "verified": null
     },
     {
@@ -27726,6 +27965,14 @@
   "github_pages": [],
   "releases": [
     {
+      "repository": "hamids-ai-automations/servicenow-ultimate-mcp",
+      "name": "v1.0.0 — ServiceNow Ultimate MCP",
+      "tag_name": "v1.0.0",
+      "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp/releases/tag/v1.0.0",
+      "published_at": "2026-11-24T00:50:57Z",
+      "is_prerelease": false
+    },
+    {
       "repository": "hamids-ai-automations/ghl-devops-toolkit",
       "name": "GHL DevOps Toolkit v0.1.0 - Initial Production Release",
       "tag_name": "v0.1.0",
@@ -27822,22 +28069,22 @@
       "name": "Python",
       "category": "language",
       "total_bytes": 305350106,
-      "percentage": 69.84,
+      "percentage": 69.78,
       "repository_count": 80
     },
     {
       "name": "TypeScript",
       "category": "language",
-      "total_bytes": 74324304,
-      "percentage": 17.0,
-      "repository_count": 26
+      "total_bytes": 74687689,
+      "percentage": 17.07,
+      "repository_count": 27
     },
     {
       "name": "JavaScript",
       "category": "language",
-      "total_bytes": 14765289,
-      "percentage": 3.38,
-      "repository_count": 41
+      "total_bytes": 14767017,
+      "percentage": 3.37,
+      "repository_count": 42
     },
     {
       "name": "HTML",
@@ -27877,9 +28124,9 @@
     {
       "name": "CSS",
       "category": "language",
-      "total_bytes": 2109043,
+      "total_bytes": 2114419,
       "percentage": 0.48,
-      "repository_count": 26
+      "repository_count": 27
     },
     {
       "name": "MDX",
@@ -28232,7 +28479,7 @@
       "category": "framework",
       "total_bytes": null,
       "percentage": null,
-      "repository_count": 19,
+      "repository_count": 20,
       "repositories": [
         "Go-High-Level-MCP-2026-Complete",
         "Gulliver",
@@ -28252,6 +28499,7 @@
         "pubchem-finder",
         "pyrite",
         "rag-docker",
+        "servicenow-ultimate-mcp",
         "shopify-growth-mcp"
       ]
     },
@@ -28307,7 +28555,7 @@
       "category": "framework",
       "total_bytes": null,
       "percentage": null,
-      "repository_count": 9,
+      "repository_count": 10,
       "repositories": [
         "Tel-Agent",
         "flimanalyzer",
@@ -28317,7 +28565,26 @@
         "meho",
         "nexgen-financial-experts",
         "open-resource-broker",
-        "protean"
+        "protean",
+        "servicenow-ultimate-mcp"
+      ]
+    },
+    {
+      "name": "React",
+      "category": "framework",
+      "total_bytes": null,
+      "percentage": null,
+      "repository_count": 9,
+      "repositories": [
+        "agent-swarm",
+        "firebase-ai-starter-kit",
+        "ghl-devops-toolkit",
+        "markline",
+        "nexgen-financial-experts",
+        "open-resource-broker",
+        "restock-radar",
+        "servicenow-ultimate-mcp",
+        "simple_invoicing"
       ]
     },
     {
@@ -28336,23 +28603,6 @@
         "pyrite",
         "rai-toolkit",
         "sentryward"
-      ]
-    },
-    {
-      "name": "React",
-      "category": "framework",
-      "total_bytes": null,
-      "percentage": null,
-      "repository_count": 8,
-      "repositories": [
-        "agent-swarm",
-        "firebase-ai-starter-kit",
-        "ghl-devops-toolkit",
-        "markline",
-        "nexgen-financial-experts",
-        "open-resource-broker",
-        "restock-radar",
-        "simple_invoicing"
       ]
     },
     {
@@ -28450,6 +28700,18 @@
       ]
     },
     {
+      "name": "Tailwind CSS",
+      "category": "framework",
+      "total_bytes": null,
+      "percentage": null,
+      "repository_count": 3,
+      "repositories": [
+        "ghl-devops-toolkit",
+        "nexgen-financial-experts",
+        "servicenow-ultimate-mcp"
+      ]
+    },
+    {
       "name": "Google APIs",
       "category": "framework",
       "total_bytes": null,
@@ -28519,17 +28781,6 @@
         "cuga-agent",
         "imgproxykit",
         "openlibrary"
-      ]
-    },
-    {
-      "name": "Tailwind CSS",
-      "category": "framework",
-      "total_bytes": null,
-      "percentage": null,
-      "repository_count": 2,
-      "repositories": [
-        "ghl-devops-toolkit",
-        "nexgen-financial-experts"
       ]
     },
     {
@@ -28679,18 +28930,65 @@
         ]
       },
       "detected_at": "2026-11-23T18:05:59+00:00"
+    },
+    {
+      "type": "repository_added",
+      "resource": "hamids-ai-automations/servicenow-ultimate-mcp",
+      "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp",
+      "summary": "New repository discovered: hamids-ai-automations/servicenow-ultimate-mcp",
+      "fields": {},
+      "detected_at": "2026-11-24T02:08:02+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "summary": "hamids-ai-automations/github-profile-master-record updated: pushed_at, readme",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-23T06:23:26Z",
+          "new": "2026-11-23T18:06:01Z"
+        },
+        "readme": {
+          "old": 9638,
+          "new": 9830
+        }
+      },
+      "detected_at": "2026-11-24T02:08:02+00:00"
+    },
+    {
+      "type": "releases_added",
+      "resource": "releases",
+      "summary": "1 new release(s) discovered.",
+      "fields": {
+        "added": [
+          "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp/releases/tag/v1.0.0"
+        ]
+      },
+      "detected_at": "2026-11-24T02:08:02+00:00"
+    },
+    {
+      "type": "external_links_added",
+      "resource": "external_links",
+      "summary": "1 new external link(s) discovered.",
+      "fields": {
+        "added": [
+          "https://your-instance.service-now.com"
+        ]
+      },
+      "detected_at": "2026-11-24T02:08:02+00:00"
     }
   ],
   "data_quality": {
-    "total_repositories_discovered": 95,
-    "total_repositories_documented": 94,
-    "documentation_coverage_percent": 98.95,
+    "total_repositories_discovered": 96,
+    "total_repositories_documented": 95,
+    "documentation_coverage_percent": 98.96,
     "repositories_without_description": 6,
-    "total_projects": 95,
+    "total_projects": 96,
     "total_contributions": 169,
-    "total_external_links": 789,
+    "total_external_links": 790,
     "total_gists": 0,
-    "total_releases": 6,
+    "total_releases": 7,
     "total_packages": 0,
     "missing_optional_fields": [
       "hamids-ai-automations/langchain-google-cloud-sql-pg-python: description",
@@ -28705,6 +29003,6 @@
     ],
     "validation_errors": 0,
     "validation_warnings": 1,
-    "last_validated": "2026-11-23T18:05:59+00:00"
+    "last_validated": "2026-11-24T02:08:02+00:00"
   }
 }

@@ -1,6 +1,6 @@
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-23T18:05:59+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-24T02:08:02+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -10,21 +10,21 @@ AI Automation Engineer | MCP servers, agent evals and permission-gated automatio
 
 | Metric | Value |
 | --- | --- |
-| Repositories (owned / forked) | 36 / 59 |
-| Projects documented | 95 |
+| Repositories (owned / forked) | 37 / 59 |
+| Projects documented | 96 |
 | Public gists | 0 |
 | Live websites | 60 |
-| Releases tracked | 6 |
-| External links | 789 |
+| Releases tracked | 7 |
+| External links | 790 |
 | Pull requests authored | 168 |
 | Issues authored | 1 |
-| Commits (last 12 months) | 269 |
-| Total contributions (last 12 months) | 536 |
+| Commits (last 12 months) | 271 |
+| Total contributions (last 12 months) | 539 |
 | Followers | 4 |
 
 ## Main technologies
 
-Python (69.84%), TypeScript (17.0%), JavaScript (3.38%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)
+Python (69.78%), TypeScript (17.07%), JavaScript (3.37%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)
 
 ## Important projects
 
@@ -55,7 +55,7 @@ Python (69.84%), TypeScript (17.0%), JavaScript (3.38%), HTML (2.41%), Go (1.97%
 - https://google.github.io/sbsim
 - https://gitwyd.github.io/sbsim_documentation
 - https://github.com/googleapis/genai-toolbox
-- https://pypi.org/project/pubchem-finder
+- https://opnform.com
 
 ## Automation
 
@@ -83,42 +83,43 @@ python automation/validate.py                 # full gate: schema, links, tests
 
 ## Latest changes in this sync
 
-- **repository_updated** — hamids-ai-automations/shopify-growth-mcp updated: pushed_at, readme
-- **repository_updated** — hamids-ai-automations/github-profile-master-record updated: languages, pushed_at, readme
-- **external_links_added** — 2 new external link(s) discovered.
+- **repository_added** — New repository discovered: hamids-ai-automations/servicenow-ultimate-mcp
+- **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at, readme
+- **releases_added** — 1 new release(s) discovered.
+- **external_links_added** — 1 new external link(s) discovered.
 
 ## Recently pushed repositories
 
 | Repository | Last push | Language |
 | --- | --- | --- |
-| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | 2026-11-23 | TypeScript |
+| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | 2026-11-24 | TypeScript |
 | [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | 2026-11-23 | Python |
+| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | 2026-11-23 | TypeScript |
 | [leadflow-sentinel](https://github.com/hamids-ai-automations/leadflow-sentinel) | 2026-11-22 | Python |
 | [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | 2026-11-22 | - |
 | [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | 2026-11-22 | Python |
 | [ghl-devops-toolkit](https://github.com/hamids-ai-automations/ghl-devops-toolkit) | 2026-11-22 | TypeScript |
 | [gemini-agent-reliability-kit](https://github.com/hamids-ai-automations/gemini-agent-reliability-kit) | 2026-11-22 | Python |
-| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | 2026-11-21 | JavaScript |
 
 ## Data quality
 
 | Check | Value |
 | --- | --- |
-| total repositories discovered | 95 |
-| total repositories documented | 94 |
-| documentation coverage percent | 98.95 |
+| total repositories discovered | 96 |
+| total repositories documented | 95 |
+| documentation coverage percent | 98.96 |
 | repositories without description | 6 |
-| total projects | 95 |
+| total projects | 96 |
 | total contributions | 169 |
-| total external links | 789 |
+| total external links | 790 |
 | total gists | 0 |
-| total releases | 6 |
+| total releases | 7 |
 | total packages | 0 |
 | missing optional fields | ['hamids-ai-automations/langchain-google-cloud-sql-pg-python: description', 'hamids-ai-automations/sbsim: description', 'hamids-ai-automations/rai-toolkit: description', 'hamids-ai-automations/trustflow-backend: description', 'hamids-ai-automations/simple_invoicing: description', 'hamids-ai-automations/TermXtract: description'] |
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-23T18:05:59+00:00 |
+| last validated | 2026-11-24T02:08:02+00:00 |
 
 ## Documentation map
 

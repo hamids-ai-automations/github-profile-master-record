@@ -1,5 +1,13 @@
 [
   {
+    "repository": "hamids-ai-automations/servicenow-ultimate-mcp",
+    "name": "v1.0.0 — ServiceNow Ultimate MCP",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp/releases/tag/v1.0.0",
+    "published_at": "2026-11-24T00:50:57Z",
+    "is_prerelease": false
+  },
+  {
     "repository": "hamids-ai-automations/ghl-devops-toolkit",
     "name": "GHL DevOps Toolkit v0.1.0 - Initial Production Release",
     "tag_name": "v0.1.0",

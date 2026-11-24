@@ -1,15 +1,15 @@
 {
   "generated_from": "MASTER_DATABASE.json",
-  "count": 95,
+  "count": 96,
   "projects": [
     {
-      "name": "shopify-growth-mcp",
-      "full_name": "hamids-ai-automations/shopify-growth-mcp",
-      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
-      "documentation": "projects/individual_projects/shopify-growth-mcp.md",
-      "live_url": "https://marvis.web.app/",
+      "name": "servicenow-ultimate-mcp",
+      "full_name": "hamids-ai-automations/servicenow-ultimate-mcp",
+      "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp",
+      "documentation": "projects/individual_projects/servicenow-ultimate-mcp.md",
+      "live_url": "https://marvis.web.app",
       "language": "TypeScript",
-      "stars": 1,
+      "stars": 0,
       "status": "active",
       "is_fork": false
     },
@@ -21,6 +21,17 @@
       "live_url": null,
       "language": "Python",
       "stars": 0,
+      "status": "active",
+      "is_fork": false
+    },
+    {
+      "name": "shopify-growth-mcp",
+      "full_name": "hamids-ai-automations/shopify-growth-mcp",
+      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
+      "documentation": "projects/individual_projects/shopify-growth-mcp.md",
+      "live_url": "https://marvis.web.app/",
+      "language": "TypeScript",
+      "stars": 1,
       "status": "active",
       "is_fork": false
     },

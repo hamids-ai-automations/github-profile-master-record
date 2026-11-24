@@ -7,9 +7,9 @@
   "homepage": null,
   "created_at": "2026-11-23T05:13:38Z",
   "updated_at": "2026-11-23T05:18:39Z",
-  "pushed_at": "2026-11-24T12:50:31Z",
+  "pushed_at": "2026-11-24T14:53:16Z",
   "default_branch": "main",
-  "last_commit_at": "2026-11-24T12:50:29Z",
+  "last_commit_at": "2026-11-24T14:53:15Z",
   "visibility": "public",
   "is_private": false,
   "archived": false,
@@ -45,19 +45,19 @@
   "has_projects": true,
   "has_discussions": false,
   "topics": [],
-  "size_kb": 2986,
+  "size_kb": 3282,
   "readme": {
     "path": "README.md",
     "html_url": "https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/README.md",
     "has_readme": true,
-    "length": 9661,
-    "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-24T12:50:29+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 37 / 59 |\n| Projects documented | 96 |\n| Public gists | 0 |\n| Live websites | 60 |\n| Releases tracked | 7 |\n| External links | 790 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 271 |\n| Total contributions (last 12 months) | 539 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.78%), TypeScript (17.07%), JavaScript (3.37%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/hamids-ai-automations/pinvault-pinterest-downloader) | PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |\n| [seo-audit-tool](https://github.com/hamids-ai-automations/seo-audit-tool) | Ethical on-page SEO audit crawler: analyzes titles, meta tags, headings, canonicals, image alt texts, duplicate content, and exports actionable CSVs. | Python | 1 | 0 | active | 2026-10-18 |\n| [ppc-performance-dashboard](https://github.com/hamids-ai-automations/ppc-performa",
+    "length": 9681,
+    "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-24T14:53:15+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 37 / 59 |\n| Projects documented | 96 |\n| Public gists | 0 |\n| Live websites | 60 |\n| Releases tracked | 7 |\n| External links | 790 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 271 |\n| Total contributions (last 12 months) | 539 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.78%), TypeScript (17.07%), JavaScript (3.37%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/hamids-ai-automations/pinvault-pinterest-downloader) | PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |\n| [seo-audit-tool](https://github.com/hamids-ai-automations/seo-audit-tool) | Ethical on-page SEO audit crawler: analyzes titles, meta tags, headings, canonicals, image alt texts, duplicate content, and exports actionable CSVs. | Python | 1 | 0 | active | 2026-10-18 |\n| [ppc-performance-dashboard](https://github.com/hamids-ai-automations/ppc-performa",
     "full_content_path": null
   },
   "tree": {
     "truncated": false,
-    "total_files": 356,
-    "total_entries": 375,
+    "total_files": 359,
+    "total_entries": 378,
     "top_level_directories": [
       ".github",
       "achievements",
@@ -105,11 +105,11 @@
     "https://airkube-dashboard-a4410b460d07.herokuapp.com",
     "https://google.github.io/sbsim",
     "https://gitwyd.github.io/sbsim_documentation",
-    "https://opnform.com",
+    "https://pypi.org/project/pubchem-finder",
     "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
     "https://docs.github.com/rest/packages/packages#list-packages-for-a-user"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-24T14:52:51+00:00",
+  "detail_refreshed_at": "2026-11-24T23:53:45+00:00",
   "detail_source": "api"
 }

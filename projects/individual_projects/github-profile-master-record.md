@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 2 |
-| Size | 2986 KB |
+| Size | 3282 KB |
 | Topics | - |
 
 ## Objectives
@@ -33,7 +33,7 @@ No explicit feature list found in the README.
 ## Technical architecture
 
 - **Top-level directories:** .github, achievements, automation, contributions, history, profile, projects, repositories, resources
-- **Total files (tracked in default branch):** 356
+- **Total files (tracked in default branch):** 359
 - **CI workflows:** .github/workflows/automatic-profile-sync.yml, .github/workflows/initial-data-collection.yml, .github/workflows/scheduled-full-sync.yml, .github/workflows/validate-master-data.yml
 - **Test files detected:** 8
 
@@ -74,7 +74,7 @@ No deployment configuration detected.
 - https://airkube-dashboard-a4410b460d07.herokuapp.com
 - https://google.github.io/sbsim
 - https://gitwyd.github.io/sbsim_documentation
-- https://opnform.com
+- https://pypi.org/project/pubchem-finder
 - https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi
 - https://docs.github.com/rest/packages/packages#list-packages-for-a-user
 
@@ -111,7 +111,7 @@ Full README: https://github.com/hamids-ai-automations/github-profile-master-reco
 ```markdown
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-24T12:50:29+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-24T14:53:15+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -166,7 +166,7 @@ Python (69.78%), TypeScript (17.07%), JavaScript (3.37%), HTML (2.41%), Go (1.97
 - https://google.github.io/sbsim
 - https://gitwyd.github.io/sbsim_documentation
 - https://github.com/googleapis/genai-toolbox
-- https://opnform.com
+- https://pypi.org/project/pubchem-finder
 
 ## Automation
 
@@ -223,5 +223,5 @@ python automation/validate.py                 # full gate: schema, links, tests
 | total gists | 0 |
 | total releases | 7 |
 | total packages | 0 |
-| missing optional fields | ['hamids-ai-automations/langchain-google-cloud-sql-pg-python: description', 'hamids-ai-automations/sbsim: description', 'hamids-ai-automations/rai-toolkit: description', 'hamids-ai-auto
+| missing optional fields | ['hamids-ai-automations/langchain-google-cloud-sql-pg-python: description', 'hamids-ai-automations/sbsim: description', 'hamids-ai-automations/rai-toolkit: descripti
 ```

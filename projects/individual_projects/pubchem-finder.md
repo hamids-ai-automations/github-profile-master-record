@@ -63,8 +63,8 @@ Firebase/other hosting declared via homepage field: https://pypi.org/project/pub
 
 ## Documentation links
 
-- https://modelcontextprotocol.io
 - https://pypi.org/project/pubchem-finder
+- https://modelcontextprotocol.io
 - https://pubchem.ncbi.nlm.nih.gov
 - https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/media/search-demo.gif
 - https://raw.githubusercontent.com/MysterionRise/pubchem-finder/master/docs/media/search-demo.mp4

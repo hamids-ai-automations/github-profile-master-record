@@ -4,7 +4,7 @@
   "description": "Drop-in grpcio server with HTTP/2 and gRPC in Rust, outside the GIL. Your servicers stay in Python.",
   "owner": "pygrpc",
   "is_fork": false,
-  "stars": 7,
+  "stars": 9,
   "language": "Python",
   "commits": 1,
   "pull_requests": 1,

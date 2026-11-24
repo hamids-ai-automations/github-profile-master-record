@@ -353,7 +353,7 @@
     "verified": null
   },
   {
-    "url": "https://opnform.com",
+    "url": "https://pypi.org/project/pubchem-finder",
     "type": "website",
     "relationships": [
       "repository_readme_link",
@@ -361,7 +361,7 @@
     ],
     "related_resources": [
       "hamids-ai-automations/github-profile-master-record",
-      "hamids-ai-automations/OpnForm"
+      "hamids-ai-automations/pubchem-finder"
     ],
     "source": "README of hamids-ai-automations/github-profile-master-record",
     "verified": null
@@ -1555,19 +1555,6 @@
     "verified": null
   },
   {
-    "url": "https://pypi.org/project/pubchem-finder",
-    "type": "live_site",
-    "relationships": [
-      "repository_homepage",
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/pubchem-finder"
-    ],
-    "source": "repository hamids-ai-automations/pubchem-finder",
-    "verified": null
-  },
-  {
     "url": "https://pubchem.ncbi.nlm.nih.gov",
     "type": "website",
     "relationships": [
@@ -1789,6 +1776,19 @@
       "hamids-ai-automations/pubchem-finder"
     ],
     "source": "README of hamids-ai-automations/pubchem-finder",
+    "verified": null
+  },
+  {
+    "url": "https://opnform.com",
+    "type": "live_site",
+    "relationships": [
+      "repository_homepage",
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/OpnForm"
+    ],
+    "source": "repository hamids-ai-automations/OpnForm",
     "verified": null
   },
   {

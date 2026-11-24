@@ -152,7 +152,7 @@
     "ci_enabled": true
   },
   "contributors": {
-    "count": 43,
+    "count": 42,
     "anonymous_included": false
   },
   "technology": {
@@ -263,6 +263,6 @@
     "https://docs.agent-swarm.dev/docs/architecture/overview"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-23T06:22:55+00:00",
-  "detail_source": "cached"
+  "detail_refreshed_at": "2026-11-24T12:49:58+00:00",
+  "detail_source": "api"
 }

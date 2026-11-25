@@ -1,14 +1,14 @@
 {
   "generated_from": "MASTER_DATABASE.json",
-  "count": 97,
+  "count": 98,
   "projects": [
     {
-      "name": "marvis-portfolio",
-      "full_name": "hamids-ai-automations/marvis-portfolio",
-      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
-      "documentation": "projects/individual_projects/marvis-portfolio.md",
+      "name": "ghl-servicepro-theme",
+      "full_name": "hamids-ai-automations/ghl-servicepro-theme",
+      "url": "https://github.com/hamids-ai-automations/ghl-servicepro-theme",
+      "documentation": "projects/individual_projects/ghl-servicepro-theme.md",
       "live_url": null,
-      "language": "JavaScript",
+      "language": "TypeScript",
       "stars": 0,
       "status": "active",
       "is_fork": false
@@ -25,13 +25,24 @@
       "is_fork": false
     },
     {
+      "name": "marvis-portfolio",
+      "full_name": "hamids-ai-automations/marvis-portfolio",
+      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
+      "documentation": "projects/individual_projects/marvis-portfolio.md",
+      "live_url": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "status": "active",
+      "is_fork": false
+    },
+    {
       "name": "servicenow-ultimate-mcp",
       "full_name": "hamids-ai-automations/servicenow-ultimate-mcp",
       "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp",
       "documentation": "projects/individual_projects/servicenow-ultimate-mcp.md",
       "live_url": "https://marvis.web.app",
       "language": "TypeScript",
-      "stars": 0,
+      "stars": 1,
       "status": "active",
       "is_fork": false
     },

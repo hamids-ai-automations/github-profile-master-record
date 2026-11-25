@@ -10,6 +10,7 @@
       "repository_homepage"
     ],
     "related_resources": [
+      "hamids-ai-automations/ghl-servicepro-theme",
       "hamids-ai-automations/github-profile-master-record",
       "hamids-ai-automations/servicenow-ultimate-mcp",
       "hamids-ai-automations/shopify-growth-mcp",
@@ -155,6 +156,7 @@
       "repository_readme_link"
     ],
     "related_resources": [
+      "hamids-ai-automations/ghl-servicepro-theme",
       "hamids-ai-automations/marvis-portfolio",
       "hamids-ai-automations/servicenow-ultimate-mcp",
       "hamids-ai-automations/hamids-ai-automations",
@@ -183,27 +185,15 @@
     "verified": null
   },
   {
-    "url": "https://marvis.web.app**",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/marvis-portfolio"
-    ],
-    "source": "README of hamids-ai-automations/marvis-portfolio",
-    "verified": null
-  },
-  {
-    "url": "http://localhost:5000",
+    "url": "http://localhost:3000`",
     "type": "website",
     "relationships": [
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/marvis-portfolio"
+      "hamids-ai-automations/ghl-servicepro-theme"
     ],
-    "source": "README of hamids-ai-automations/marvis-portfolio",
+    "source": "README of hamids-ai-automations/ghl-servicepro-theme",
     "verified": null
   },
   {
@@ -221,6 +211,19 @@
       "hamids-ai-automations/seo-audit-tool",
       "hamids-ai-automations/ppc-performance-dashboard",
       "hamids-ai-automations/ecommerce-seo-optimizer"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://marvis.web.app**",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/marvis-portfolio"
     ],
     "source": "README of hamids-ai-automations/github-profile-master-record",
     "verified": null
@@ -378,20 +381,6 @@
     "verified": null
   },
   {
-    "url": "https://opnform.com",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link",
-      "repository_homepage"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/github-profile-master-record",
-      "hamids-ai-automations/OpnForm"
-    ],
-    "source": "README of hamids-ai-automations/github-profile-master-record",
-    "verified": null
-  },
-  {
     "url": "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
     "type": "github",
     "relationships": [
@@ -413,6 +402,18 @@
       "hamids-ai-automations/github-profile-master-record"
     ],
     "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "http://localhost:5000",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/marvis-portfolio"
+    ],
+    "source": "README of hamids-ai-automations/marvis-portfolio",
     "verified": null
   },
   {
@@ -1814,6 +1815,19 @@
       "hamids-ai-automations/pubchem-finder"
     ],
     "source": "README of hamids-ai-automations/pubchem-finder",
+    "verified": null
+  },
+  {
+    "url": "https://opnform.com",
+    "type": "live_site",
+    "relationships": [
+      "repository_homepage",
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/OpnForm"
+    ],
+    "source": "repository hamids-ai-automations/OpnForm",
     "verified": null
   },
   {

@@ -127,6 +127,6 @@
     "https://api.star-history.com/chart?repos=dpro-at/tel-agent&type=date&legend=top-left"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-24T12:50:02+00:00",
-  "detail_source": "cached"
+  "detail_refreshed_at": "2026-11-25T11:35:20+00:00",
+  "detail_source": "api"
 }

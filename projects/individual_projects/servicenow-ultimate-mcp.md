@@ -9,12 +9,12 @@
 | Visibility | public |
 | Status | active |
 | Creation date | 2026-11-24 |
-| Last update | 2026-11-24 |
+| Last update | 2026-11-25 |
 | Last push | 2026-11-24 |
 | Default branch | main |
 | License | MIT |
 | Primary language | TypeScript |
-| Stars / Forks / Watchers | 0 / 0 / 0 |
+| Stars / Forks / Watchers | 1 / 0 / 0 |
 | Issues (open / closed) | 0 / 0 |
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 1 |
@@ -88,11 +88,11 @@ Active — last push 2026-11-24
 
 ## Related projects
 
+- hamids-ai-automations/ghl-servicepro-theme
 - hamids-ai-automations/shopify-growth-mcp
 - hamids-ai-automations/ghl-devops-toolkit
 - hamids-ai-automations/nexgen-financial-experts
 - hamids-ai-automations/firebase-ai-starter-kit
-- hamids-ai-automations/Go-High-Level-MCP-2026-Complete
 
 ## Known issues and limitations
 

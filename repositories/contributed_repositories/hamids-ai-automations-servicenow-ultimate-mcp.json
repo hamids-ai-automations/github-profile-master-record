@@ -4,7 +4,7 @@
   "description": "Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console.",
   "owner": "hamids-ai-automations",
   "is_fork": false,
-  "stars": 0,
+  "stars": 1,
   "language": "TypeScript",
   "commits": 2,
   "pull_requests": 0,

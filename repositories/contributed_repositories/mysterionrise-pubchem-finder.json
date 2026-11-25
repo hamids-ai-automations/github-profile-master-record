@@ -4,7 +4,7 @@
   "description": "Molecular similarity search over PubChem with RDKit: CLI, MCP server for Claude, local fingerprint index",
   "owner": "MysterionRise",
   "is_fork": false,
-  "stars": 11,
+  "stars": 12,
   "language": "Python",
   "commits": 1,
   "pull_requests": 2,

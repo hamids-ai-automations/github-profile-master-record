@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-11-25T11:35:49+00:00",
+  "mode": "full",
+  "trigger": "scheduled full sync",
+  "changes": [
+    {
+      "type": "repository_added",
+      "resource": "hamids-ai-automations/ghl-servicepro-theme",
+      "url": "https://github.com/hamids-ai-automations/ghl-servicepro-theme",
+      "summary": "New repository discovered: hamids-ai-automations/ghl-servicepro-theme",
+      "fields": {}
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "summary": "hamids-ai-automations/github-profile-master-record updated: pushed_at, readme",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-24T23:54:06Z",
+          "new": "2026-11-25T08:31:58Z"
+        },
+        "readme": {
+          "old": 9661,
+          "new": 9801
+        }
+      }
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/servicenow-ultimate-mcp",
+      "url": "https://github.com/hamids-ai-automations/servicenow-ultimate-mcp",
+      "summary": "hamids-ai-automations/servicenow-ultimate-mcp updated: stars, updated_at",
+      "fields": {
+        "stars": {
+          "old": 0,
+          "new": 1
+        },
+        "updated_at": {
+          "old": "2026-11-24T00:50:06Z",
+          "new": "2026-11-25T10:07:19Z"
+        }
+      }
+    },
+    {
+      "type": "external_links_added",
+      "resource": "external_links",
+      "summary": "1 new external link(s) discovered.",
+      "fields": {
+        "added": [
+          "http://localhost:3000`"
+        ]
+      }
+    }
+  ]
+}

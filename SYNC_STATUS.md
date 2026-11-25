@@ -1,31 +1,31 @@
 # Sync Status
 
-- **Last successful sync:** 2026-11-25T08:31:56+00:00
-- **Sync mode:** incremental
-- **Triggered by:** automatic profile sync
-- **API requests this run:** 325
+- **Last successful sync:** 2026-11-25T11:35:49+00:00
+- **Sync mode:** full
+- **Triggered by:** scheduled full sync
+- **API requests this run:** 1097
 - **Failed API requests:** 0
-- **Runtime:** 58.4s
+- **Runtime:** 111.5s
 
 ## Data quality
 
 | Check | Value |
 | --- | --- |
-| total repositories discovered | 97 |
-| total repositories documented | 96 |
-| documentation coverage percent | 98.97 |
-| repositories without description | 6 |
-| total projects | 97 |
+| total repositories discovered | 98 |
+| total repositories documented | 97 |
+| documentation coverage percent | 98.98 |
+| repositories without description | 7 |
+| total projects | 98 |
 | total contributions | 169 |
-| total external links | 792 |
+| total external links | 793 |
 | total gists | 0 |
 | total releases | 7 |
 | total packages | 0 |
-| missing optional fields | ['hamids-ai-automations/langchain-google-cloud-sql-pg-python: description', 'hamids-ai-automations/sbsim: description', 'hamids-ai-automations/rai-toolkit: description', 'hamids-ai-automations/trustflow-backend: description', 'hamids-ai-automations/simple_invoicing: description', 'hamids-ai-automations/TermXtract: description'] |
+| missing optional fields | ['hamids-ai-automations/ghl-servicepro-theme: description', 'hamids-ai-automations/langchain-google-cloud-sql-pg-python: description', 'hamids-ai-automations/sbsim: description', 'hamids-ai-automations/rai-toolkit: description', 'hamids-ai-automations/trustflow-backend: description', 'hamids-ai-automations/simple_invoicing: description', 'hamids-ai-automations/TermXtract: description'] |
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-25T08:31:56+00:00 |
+| last validated | 2026-11-25T11:35:49+00:00 |
 
 ## Automation schedule
 

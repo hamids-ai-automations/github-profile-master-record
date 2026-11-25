@@ -131,6 +131,6 @@
     "https://api.star-history.com/chart?repos=aden-hive/hive&type=date&legend=top-left&sealed_token=vfX1DG8w_KTkonUUtIEjFRLvBopgDzxQpyb8hiYT22sobcDIpvQiMciZghLsDu5hyU3LJs-ZddFjl8eYFx5zRrY-kcMRsfyQ3vAiacsroPoqgRYmZaES3Q"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-24T12:50:01+00:00",
-  "detail_source": "cached"
+  "detail_refreshed_at": "2026-11-25T11:35:17+00:00",
+  "detail_source": "api"
 }

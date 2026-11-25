@@ -1,6 +1,6 @@
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-25T08:31:56+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-25T11:35:49+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -10,16 +10,16 @@ AI Automation Engineer | MCP servers, agent evals and permission-gated automatio
 
 | Metric | Value |
 | --- | --- |
-| Repositories (owned / forked) | 38 / 59 |
-| Projects documented | 97 |
+| Repositories (owned / forked) | 39 / 59 |
+| Projects documented | 98 |
 | Public gists | 0 |
-| Live websites | 61 |
+| Live websites | 62 |
 | Releases tracked | 7 |
-| External links | 792 |
+| External links | 793 |
 | Pull requests authored | 168 |
 | Issues authored | 1 |
-| Commits (last 12 months) | 279 |
-| Total contributions (last 12 months) | 548 |
+| Commits (last 12 months) | 281 |
+| Total contributions (last 12 months) | 551 |
 | Followers | 4 |
 
 ## Main technologies
@@ -30,6 +30,7 @@ Python (69.74%), TypeScript (17.06%), JavaScript (3.42%), HTML (2.41%), Go (1.96
 
 | Repository | Description | Language | Stars | Forks | Status | Last push |
 | --- | --- | --- | --- | --- | --- | --- |
+| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |
 | [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |
 | [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |
 | [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |
@@ -37,13 +38,12 @@ Python (69.74%), TypeScript (17.06%), JavaScript (3.42%), HTML (2.41%), Go (1.96
 | [pinvault-pinterest-downloader](https://github.com/hamids-ai-automations/pinvault-pinterest-downloader) | PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export | JavaScript | 1 | 0 | active | 2026-11-21 |
 | [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |
 | [seo-audit-tool](https://github.com/hamids-ai-automations/seo-audit-tool) | Ethical on-page SEO audit crawler: analyzes titles, meta tags, headings, canonicals, image alt texts, duplicate content, and exports actionable CSVs. | Python | 1 | 0 | active | 2026-10-18 |
-| [ppc-performance-dashboard](https://github.com/hamids-ai-automations/ppc-performance-dashboard) | Interactive PPC performance dashboard: normalize and visualize multi-channel ad spend, ROAS, CPA, conversion trends, and period-over-period comparisons. | Python | 1 | 0 | active | 2026-10-18 |
 
 ## Live websites
 
 - https://marvis.web.app
-- https://marvis.web.app**
 - https://hamid-resume.web.app
+- https://marvis.web.app**
 - https://marvis.web.app/projects/leadflow-sentinel
 - https://abouthamid.web.app
 - https://fb-ai-starter-kit.web.app
@@ -83,42 +83,43 @@ python automation/validate.py                 # full gate: schema, links, tests
 
 ## Latest changes in this sync
 
-- **repository_added** — New repository discovered: hamids-ai-automations/marvis-portfolio
+- **repository_added** — New repository discovered: hamids-ai-automations/ghl-servicepro-theme
 - **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at, readme
-- **external_links_added** — 2 new external link(s) discovered.
+- **repository_updated** — hamids-ai-automations/servicenow-ultimate-mcp updated: stars, updated_at
+- **external_links_added** — 1 new external link(s) discovered.
 
 ## Recently pushed repositories
 
 | Repository | Last push | Language |
 | --- | --- | --- |
+| [ghl-servicepro-theme](https://github.com/hamids-ai-automations/ghl-servicepro-theme) | 2026-11-25 | TypeScript |
+| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | 2026-11-25 | Python |
 | [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | 2026-11-25 | JavaScript |
-| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | 2026-11-24 | Python |
 | [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | 2026-11-24 | TypeScript |
 | [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | 2026-11-23 | TypeScript |
 | [leadflow-sentinel](https://github.com/hamids-ai-automations/leadflow-sentinel) | 2026-11-22 | Python |
 | [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | 2026-11-22 | - |
 | [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | 2026-11-22 | Python |
-| [ghl-devops-toolkit](https://github.com/hamids-ai-automations/ghl-devops-toolkit) | 2026-11-22 | TypeScript |
 
 ## Data quality
 
 | Check | Value |
 | --- | --- |
-| total repositories discovered | 97 |
-| total repositories documented | 96 |
-| documentation coverage percent | 98.97 |
-| repositories without description | 6 |
-| total projects | 97 |
+| total repositories discovered | 98 |
+| total repositories documented | 97 |
+| documentation coverage percent | 98.98 |
+| repositories without description | 7 |
+| total projects | 98 |
 | total contributions | 169 |
-| total external links | 792 |
+| total external links | 793 |
 | total gists | 0 |
 | total releases | 7 |
 | total packages | 0 |
-| missing optional fields | ['hamids-ai-automations/langchain-google-cloud-sql-pg-python: description', 'hamids-ai-automations/sbsim: description', 'hamids-ai-automations/rai-toolkit: description', 'hamids-ai-automations/trustflow-backend: description', 'hamids-ai-automations/simple_invoicing: description', 'hamids-ai-automations/TermXtract: description'] |
+| missing optional fields | ['hamids-ai-automations/ghl-servicepro-theme: description', 'hamids-ai-automations/langchain-google-cloud-sql-pg-python: description', 'hamids-ai-automations/sbsim: description', 'hamids-ai-automations/rai-toolkit: description', 'hamids-ai-automations/trustflow-backend: description', 'hamids-ai-automations/simple_invoicing: description', 'hamids-ai-automations/TermXtract: description'] |
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-25T08:31:56+00:00 |
+| last validated | 2026-11-25T11:35:49+00:00 |
 
 ## Documentation map
 

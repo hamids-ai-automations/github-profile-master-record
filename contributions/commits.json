@@ -1,10 +1,10 @@
 {
   "window": {
-    "from": "2025-11-25T08:31:42Z",
-    "to": "2026-11-25T08:31:42Z"
+    "from": "2025-11-25T11:35:36Z",
+    "to": "2026-11-25T11:35:36Z"
   },
-  "total_commits": 279,
-  "total_contributions": 548,
+  "total_commits": 281,
+  "total_contributions": 551,
   "by_repository": [
     {
       "repository": "hamids-ai-automations/hamids-ai-automations",
@@ -22,13 +22,13 @@
       "commits": 11
     },
     {
-      "repository": "hamids-ai-automations/seo-doctor",
-      "url": "https://github.com/hamids-ai-automations/seo-doctor",
+      "repository": "hamids-ai-automations/ai-marketing-growth-os",
+      "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
       "commits": 10
     },
     {
-      "repository": "hamids-ai-automations/ai-marketing-growth-os",
-      "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
+      "repository": "hamids-ai-automations/seo-doctor",
+      "url": "https://github.com/hamids-ai-automations/seo-doctor",
       "commits": 10
     },
     {
@@ -42,18 +42,13 @@
       "commits": 10
     },
     {
-      "repository": "hamids-ai-automations/firebase-ai-starter-kit",
-      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
-      "commits": 9
-    },
-    {
       "repository": "hamids-ai-automations/hamid-resume",
       "url": "https://github.com/hamids-ai-automations/hamid-resume",
       "commits": 9
     },
     {
-      "repository": "hamids-ai-automations/seo-audit-pro",
-      "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
+      "repository": "hamids-ai-automations/ppc-waste-detector",
+      "url": "https://github.com/hamids-ai-automations/ppc-waste-detector",
       "commits": 9
     },
     {
@@ -62,8 +57,13 @@
       "commits": 9
     },
     {
-      "repository": "hamids-ai-automations/ppc-waste-detector",
-      "url": "https://github.com/hamids-ai-automations/ppc-waste-detector",
+      "repository": "hamids-ai-automations/seo-audit-pro",
+      "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
+      "commits": 9
+    },
+    {
+      "repository": "hamids-ai-automations/firebase-ai-starter-kit",
+      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
       "commits": 9
     },
     {
@@ -82,24 +82,14 @@
       "commits": 8
     },
     {
-      "repository": "vibgrate/cli",
-      "url": "https://github.com/vibgrate/cli",
-      "commits": 8
-    },
-    {
       "repository": "hamids-ai-automations/marvis-portfolio",
       "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
       "commits": 8
     },
     {
-      "repository": "hamids-ai-automations/ai-marketing-mix-copilot",
-      "url": "https://github.com/hamids-ai-automations/ai-marketing-mix-copilot",
-      "commits": 7
-    },
-    {
-      "repository": "hamids-ai-automations/github-profile-master-record",
-      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
-      "commits": 7
+      "repository": "vibgrate/cli",
+      "url": "https://github.com/vibgrate/cli",
+      "commits": 8
     },
     {
       "repository": "hamids-ai-automations/pinvault-pinterest-downloader",
@@ -109,6 +99,16 @@
     {
       "repository": "hamids-ai-automations/pakistan-online-medical-store",
       "url": "https://github.com/hamids-ai-automations/pakistan-online-medical-store",
+      "commits": 7
+    },
+    {
+      "repository": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "commits": 7
+    },
+    {
+      "repository": "hamids-ai-automations/ai-marketing-mix-copilot",
+      "url": "https://github.com/hamids-ai-automations/ai-marketing-mix-copilot",
       "commits": 7
     },
     {
@@ -137,23 +137,13 @@
       "commits": 4
     },
     {
-      "repository": "hamids-ai-automations/envscope",
-      "url": "https://github.com/hamids-ai-automations/envscope",
-      "commits": 3
-    },
-    {
       "repository": "iamvisheshsrivastava/Smart_CSV_Toolkit",
       "url": "https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit",
       "commits": 3
     },
     {
-      "repository": "iamvisheshsrivastava/AirKube",
-      "url": "https://github.com/iamvisheshsrivastava/AirKube",
-      "commits": 3
-    },
-    {
-      "repository": "rdlugs/sentryward",
-      "url": "https://github.com/rdlugs/sentryward",
+      "repository": "hamids-ai-automations/envscope",
+      "url": "https://github.com/hamids-ai-automations/envscope",
       "commits": 3
     },
     {
@@ -167,23 +157,18 @@
       "commits": 3
     },
     {
-      "repository": "hamids-ai-automations/ai-marketing-portfolio-meta",
-      "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
-      "commits": 2
+      "repository": "iamvisheshsrivastava/AirKube",
+      "url": "https://github.com/iamvisheshsrivastava/AirKube",
+      "commits": 3
     },
     {
-      "repository": "hamids-ai-automations/shopify-growth-mcp",
-      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
-      "commits": 2
+      "repository": "rdlugs/sentryward",
+      "url": "https://github.com/rdlugs/sentryward",
+      "commits": 3
     },
     {
-      "repository": "hamids-ai-automations/leadflow-sentinel",
-      "url": "https://github.com/hamids-ai-automations/leadflow-sentinel",
-      "commits": 2
-    },
-    {
-      "repository": "hamids-ai-automations/conversionbridge",
-      "url": "https://github.com/hamids-ai-automations/conversionbridge",
+      "repository": "hamids-ai-automations/ghl-servicepro-theme",
+      "url": "https://github.com/hamids-ai-automations/ghl-servicepro-theme",
       "commits": 2
     },
     {
@@ -192,8 +177,13 @@
       "commits": 2
     },
     {
-      "repository": "hamids-ai-automations/google-services-mcp",
-      "url": "https://github.com/hamids-ai-automations/google-services-mcp",
+      "repository": "hamids-ai-automations/leadflow-sentinel",
+      "url": "https://github.com/hamids-ai-automations/leadflow-sentinel",
+      "commits": 2
+    },
+    {
+      "repository": "hamids-ai-automations/shopify-growth-mcp",
+      "url": "https://github.com/hamids-ai-automations/shopify-growth-mcp",
       "commits": 2
     },
     {
@@ -202,8 +192,28 @@
       "commits": 2
     },
     {
+      "repository": "hamids-ai-automations/google-services-mcp",
+      "url": "https://github.com/hamids-ai-automations/google-services-mcp",
+      "commits": 2
+    },
+    {
+      "repository": "hamids-ai-automations/ai-marketing-portfolio-meta",
+      "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
+      "commits": 2
+    },
+    {
+      "repository": "hamids-ai-automations/conversionbridge",
+      "url": "https://github.com/hamids-ai-automations/conversionbridge",
+      "commits": 2
+    },
+    {
       "repository": "iamvisheshsrivastava/ab-lab",
       "url": "https://github.com/iamvisheshsrivastava/ab-lab",
+      "commits": 2
+    },
+    {
+      "repository": "doobidoo/mcp-memory-service",
+      "url": "https://github.com/doobidoo/mcp-memory-service",
       "commits": 2
     },
     {
@@ -222,63 +232,8 @@
       "commits": 2
     },
     {
-      "repository": "doobidoo/mcp-memory-service",
-      "url": "https://github.com/doobidoo/mcp-memory-service",
-      "commits": 2
-    },
-    {
-      "repository": "exmergo/dex",
-      "url": "https://github.com/exmergo/dex",
-      "commits": 1
-    },
-    {
-      "repository": "connabyss/bite",
-      "url": "https://github.com/connabyss/bite",
-      "commits": 1
-    },
-    {
-      "repository": "OpenWave-India/modeldiff",
-      "url": "https://github.com/OpenWave-India/modeldiff",
-      "commits": 1
-    },
-    {
-      "repository": "hamids-ai-automations/ai-agent-testing-lab",
-      "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
-      "commits": 1
-    },
-    {
-      "repository": "laaielichter/Gulliver",
-      "url": "https://github.com/laaielichter/Gulliver",
-      "commits": 1
-    },
-    {
-      "repository": "VOLPAROSSA/volparossa-code",
-      "url": "https://github.com/VOLPAROSSA/volparossa-code",
-      "commits": 1
-    },
-    {
-      "repository": "cfgaudit/cfgaudit",
-      "url": "https://github.com/cfgaudit/cfgaudit",
-      "commits": 1
-    },
-    {
-      "repository": "OpnForm/OpnForm",
-      "url": "https://github.com/OpnForm/OpnForm",
-      "commits": 1
-    },
-    {
-      "repository": "hamids-ai-automations/dynamic-schema-generator",
-      "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
-      "commits": 1
-    },
-    {
       "repository": "adbar/trafilatura",
       "url": "https://github.com/adbar/trafilatura",
-      "commits": 1
-    },
-    {
-      "repository": "hamids-ai-automations/restock-radar",
-      "url": "https://github.com/hamids-ai-automations/restock-radar",
       "commits": 1
     },
     {
@@ -287,13 +242,63 @@
       "commits": 1
     },
     {
+      "repository": "hamids-ai-automations/restock-radar",
+      "url": "https://github.com/hamids-ai-automations/restock-radar",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/dynamic-schema-generator",
+      "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
+      "commits": 1
+    },
+    {
+      "repository": "laaielichter/Gulliver",
+      "url": "https://github.com/laaielichter/Gulliver",
+      "commits": 1
+    },
+    {
       "repository": "MysterionRise/pubchem-finder",
       "url": "https://github.com/MysterionRise/pubchem-finder",
       "commits": 1
     },
     {
+      "repository": "connabyss/bite",
+      "url": "https://github.com/connabyss/bite",
+      "commits": 1
+    },
+    {
+      "repository": "VOLPAROSSA/volparossa-code",
+      "url": "https://github.com/VOLPAROSSA/volparossa-code",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/ai-agent-testing-lab",
+      "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
+      "commits": 1
+    },
+    {
       "repository": "pygrpc/pygrpc-native",
       "url": "https://github.com/pygrpc/pygrpc-native",
+      "commits": 1
+    },
+    {
+      "repository": "OpnForm/OpnForm",
+      "url": "https://github.com/OpnForm/OpnForm",
+      "commits": 1
+    },
+    {
+      "repository": "exmergo/dex",
+      "url": "https://github.com/exmergo/dex",
+      "commits": 1
+    },
+    {
+      "repository": "OpenWave-India/modeldiff",
+      "url": "https://github.com/OpenWave-India/modeldiff",
+      "commits": 1
+    },
+    {
+      "repository": "cfgaudit/cfgaudit",
+      "url": "https://github.com/cfgaudit/cfgaudit",
       "commits": 1
     },
     {
@@ -445,7 +450,7 @@
     },
     {
       "date": "2026-11-25",
-      "count": 9
+      "count": 12
     }
   ]
 }

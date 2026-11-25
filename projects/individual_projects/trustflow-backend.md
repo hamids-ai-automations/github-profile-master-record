@@ -92,11 +92,11 @@ Fork of another project; see upstream for original authorship.
 
 ## Related projects
 
+- hamids-ai-automations/ghl-servicepro-theme
 - hamids-ai-automations/servicenow-ultimate-mcp
 - hamids-ai-automations/shopify-growth-mcp
 - hamids-ai-automations/ghl-devops-toolkit
 - hamids-ai-automations/nexgen-financial-experts
-- hamids-ai-automations/firebase-ai-starter-kit
 
 ## Known issues and limitations
 

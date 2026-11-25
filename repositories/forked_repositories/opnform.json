@@ -100,7 +100,7 @@
     "ci_enabled": true
   },
   "contributors": {
-    "count": 35,
+    "count": 36,
     "anonymous_included": false
   },
   "technology": {
@@ -125,6 +125,6 @@
     "https://opnform.com/terms-conditions"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-24T12:49:41+00:00",
-  "detail_source": "cached"
+  "detail_refreshed_at": "2026-11-25T11:34:58+00:00",
+  "detail_source": "api"
 }

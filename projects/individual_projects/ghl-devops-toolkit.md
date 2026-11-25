@@ -90,11 +90,11 @@ Active — last push 2026-11-22
 
 ## Related projects
 
+- hamids-ai-automations/ghl-servicepro-theme
 - hamids-ai-automations/servicenow-ultimate-mcp
 - hamids-ai-automations/shopify-growth-mcp
 - hamids-ai-automations/nexgen-financial-experts
 - hamids-ai-automations/firebase-ai-starter-kit
-- hamids-ai-automations/Go-High-Level-MCP-2026-Complete
 
 ## Known issues and limitations
 

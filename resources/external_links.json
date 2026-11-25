@@ -155,6 +155,7 @@
       "repository_readme_link"
     ],
     "related_resources": [
+      "hamids-ai-automations/marvis-portfolio",
       "hamids-ai-automations/servicenow-ultimate-mcp",
       "hamids-ai-automations/hamids-ai-automations",
       "hamids-ai-automations/ghl-devops-toolkit",
@@ -179,6 +180,30 @@
     ],
     "related_resources": [],
     "source": "profile README",
+    "verified": null
+  },
+  {
+    "url": "https://marvis.web.app**",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/marvis-portfolio"
+    ],
+    "source": "README of hamids-ai-automations/marvis-portfolio",
+    "verified": null
+  },
+  {
+    "url": "http://localhost:5000",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/marvis-portfolio"
+    ],
+    "source": "README of hamids-ai-automations/marvis-portfolio",
     "verified": null
   },
   {
@@ -353,7 +378,7 @@
     "verified": null
   },
   {
-    "url": "https://pypi.org/project/pubchem-finder",
+    "url": "https://opnform.com",
     "type": "website",
     "relationships": [
       "repository_readme_link",
@@ -361,7 +386,7 @@
     ],
     "related_resources": [
       "hamids-ai-automations/github-profile-master-record",
-      "hamids-ai-automations/pubchem-finder"
+      "hamids-ai-automations/OpnForm"
     ],
     "source": "README of hamids-ai-automations/github-profile-master-record",
     "verified": null
@@ -1555,6 +1580,19 @@
     "verified": null
   },
   {
+    "url": "https://pypi.org/project/pubchem-finder",
+    "type": "live_site",
+    "relationships": [
+      "repository_homepage",
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/pubchem-finder"
+    ],
+    "source": "repository hamids-ai-automations/pubchem-finder",
+    "verified": null
+  },
+  {
     "url": "https://pubchem.ncbi.nlm.nih.gov",
     "type": "website",
     "relationships": [
@@ -1776,19 +1814,6 @@
       "hamids-ai-automations/pubchem-finder"
     ],
     "source": "README of hamids-ai-automations/pubchem-finder",
-    "verified": null
-  },
-  {
-    "url": "https://opnform.com",
-    "type": "live_site",
-    "relationships": [
-      "repository_homepage",
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/OpnForm"
-    ],
-    "source": "repository hamids-ai-automations/OpnForm",
     "verified": null
   },
   {

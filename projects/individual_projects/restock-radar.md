@@ -83,6 +83,7 @@ Active — last push 2026-11-21
 
 ## Related projects
 
+- hamids-ai-automations/marvis-portfolio
 - hamids-ai-automations/pinvault-pinterest-downloader
 - hamids-ai-automations/volparossa-code
 - hamids-ai-automations/dayjs

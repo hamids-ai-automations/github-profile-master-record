@@ -1,6 +1,6 @@
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-24T23:54:04+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-25T08:31:56+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -10,21 +10,21 @@ AI Automation Engineer | MCP servers, agent evals and permission-gated automatio
 
 | Metric | Value |
 | --- | --- |
-| Repositories (owned / forked) | 37 / 59 |
-| Projects documented | 96 |
+| Repositories (owned / forked) | 38 / 59 |
+| Projects documented | 97 |
 | Public gists | 0 |
-| Live websites | 60 |
+| Live websites | 61 |
 | Releases tracked | 7 |
-| External links | 790 |
+| External links | 792 |
 | Pull requests authored | 168 |
 | Issues authored | 1 |
-| Commits (last 12 months) | 271 |
-| Total contributions (last 12 months) | 539 |
+| Commits (last 12 months) | 279 |
+| Total contributions (last 12 months) | 548 |
 | Followers | 4 |
 
 ## Main technologies
 
-Python (69.78%), TypeScript (17.07%), JavaScript (3.37%), HTML (2.41%), Go (1.97%), PHP (1.15%), Vue (0.99%), Shell (0.67%)
+Python (69.74%), TypeScript (17.06%), JavaScript (3.42%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.67%)
 
 ## Important projects
 
@@ -42,6 +42,7 @@ Python (69.78%), TypeScript (17.07%), JavaScript (3.37%), HTML (2.41%), Go (1.97
 ## Live websites
 
 - https://marvis.web.app
+- https://marvis.web.app**
 - https://hamid-resume.web.app
 - https://marvis.web.app/projects/leadflow-sentinel
 - https://abouthamid.web.app
@@ -55,7 +56,6 @@ Python (69.78%), TypeScript (17.07%), JavaScript (3.37%), HTML (2.41%), Go (1.97
 - https://google.github.io/sbsim
 - https://gitwyd.github.io/sbsim_documentation
 - https://github.com/googleapis/genai-toolbox
-- https://opnform.com
 
 ## Automation
 
@@ -83,12 +83,15 @@ python automation/validate.py                 # full gate: schema, links, tests
 
 ## Latest changes in this sync
 
+- **repository_added** — New repository discovered: hamids-ai-automations/marvis-portfolio
 - **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at, readme
+- **external_links_added** — 2 new external link(s) discovered.
 
 ## Recently pushed repositories
 
 | Repository | Last push | Language |
 | --- | --- | --- |
+| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | 2026-11-25 | JavaScript |
 | [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | 2026-11-24 | Python |
 | [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | 2026-11-24 | TypeScript |
 | [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | 2026-11-23 | TypeScript |
@@ -96,19 +99,18 @@ python automation/validate.py                 # full gate: schema, links, tests
 | [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | 2026-11-22 | - |
 | [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | 2026-11-22 | Python |
 | [ghl-devops-toolkit](https://github.com/hamids-ai-automations/ghl-devops-toolkit) | 2026-11-22 | TypeScript |
-| [gemini-agent-reliability-kit](https://github.com/hamids-ai-automations/gemini-agent-reliability-kit) | 2026-11-22 | Python |
 
 ## Data quality
 
 | Check | Value |
 | --- | --- |
-| total repositories discovered | 96 |
-| total repositories documented | 95 |
-| documentation coverage percent | 98.96 |
+| total repositories discovered | 97 |
+| total repositories documented | 96 |
+| documentation coverage percent | 98.97 |
 | repositories without description | 6 |
-| total projects | 96 |
+| total projects | 97 |
 | total contributions | 169 |
-| total external links | 790 |
+| total external links | 792 |
 | total gists | 0 |
 | total releases | 7 |
 | total packages | 0 |
@@ -116,7 +118,7 @@ python automation/validate.py                 # full gate: schema, links, tests
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-24T23:54:04+00:00 |
+| last validated | 2026-11-25T08:31:56+00:00 |
 
 ## Documentation map
 

@@ -77,6 +77,7 @@ Fork of another project; see upstream for original authorship.
 
 ## Related projects
 
+- hamids-ai-automations/marvis-portfolio
 - hamids-ai-automations/restock-radar
 - hamids-ai-automations/pinvault-pinterest-downloader
 - hamids-ai-automations/dayjs

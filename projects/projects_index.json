@@ -3,12 +3,12 @@
   "count": 98,
   "projects": [
     {
-      "name": "ghl-servicepro-theme",
-      "full_name": "hamids-ai-automations/ghl-servicepro-theme",
-      "url": "https://github.com/hamids-ai-automations/ghl-servicepro-theme",
-      "documentation": "projects/individual_projects/ghl-servicepro-theme.md",
+      "name": "marvis-portfolio",
+      "full_name": "hamids-ai-automations/marvis-portfolio",
+      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
+      "documentation": "projects/individual_projects/marvis-portfolio.md",
       "live_url": null,
-      "language": "TypeScript",
+      "language": "JavaScript",
       "stars": 0,
       "status": "active",
       "is_fork": false
@@ -25,12 +25,12 @@
       "is_fork": false
     },
     {
-      "name": "marvis-portfolio",
-      "full_name": "hamids-ai-automations/marvis-portfolio",
-      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
-      "documentation": "projects/individual_projects/marvis-portfolio.md",
+      "name": "ghl-servicepro-theme",
+      "full_name": "hamids-ai-automations/ghl-servicepro-theme",
+      "url": "https://github.com/hamids-ai-automations/ghl-servicepro-theme",
+      "documentation": "projects/individual_projects/ghl-servicepro-theme.md",
       "live_url": null,
-      "language": "JavaScript",
+      "language": "TypeScript",
       "stars": 0,
       "status": "active",
       "is_fork": false

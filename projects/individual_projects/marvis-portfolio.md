@@ -18,8 +18,8 @@
 | Issues (open / closed) | 0 / 0 |
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
-| Contributors | 1 |
-| Size | 465 KB |
+| Contributors | 2 |
+| Size | 494 KB |
 | Topics | - |
 
 ## Objectives
@@ -41,8 +41,8 @@ No explicit feature list found in the README.
 
 | Language | Bytes |
 | --- | --- |
-| JavaScript | 213102 |
-| CSS | 32382 |
+| JavaScript | 233466 |
+| CSS | 38804 |
 
 **Frameworks / libraries detected:** Firebase, MCP
 

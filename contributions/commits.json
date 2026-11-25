@@ -1,10 +1,10 @@
 {
   "window": {
-    "from": "2025-11-25T11:35:36Z",
-    "to": "2026-11-25T11:35:36Z"
+    "from": "2025-11-25T19:15:29Z",
+    "to": "2026-11-25T19:15:29Z"
   },
-  "total_commits": 281,
-  "total_contributions": 551,
+  "total_commits": 283,
+  "total_contributions": 553,
   "by_repository": [
     {
       "repository": "hamids-ai-automations/hamids-ai-automations",
@@ -24,6 +24,11 @@
     {
       "repository": "hamids-ai-automations/ai-marketing-growth-os",
       "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
+      "commits": 10
+    },
+    {
+      "repository": "hamids-ai-automations/marvis-portfolio",
+      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
       "commits": 10
     },
     {
@@ -57,13 +62,13 @@
       "commits": 9
     },
     {
-      "repository": "hamids-ai-automations/seo-audit-pro",
-      "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
+      "repository": "hamids-ai-automations/firebase-ai-starter-kit",
+      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
       "commits": 9
     },
     {
-      "repository": "hamids-ai-automations/firebase-ai-starter-kit",
-      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
+      "repository": "hamids-ai-automations/seo-audit-pro",
+      "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
       "commits": 9
     },
     {
@@ -79,11 +84,6 @@
     {
       "repository": "hamids-ai-automations/meta-lead-quality-analyzer",
       "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
-      "commits": 8
-    },
-    {
-      "repository": "hamids-ai-automations/marvis-portfolio",
-      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
       "commits": 8
     },
     {
@@ -450,7 +450,7 @@
     },
     {
       "date": "2026-11-25",
-      "count": 12
+      "count": 14
     }
   ]
 }

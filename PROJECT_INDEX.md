@@ -6,9 +6,9 @@ Generated from `MASTER_DATABASE.json` — 98 repositories (39 owned, 59 forked).
 
 | Repository | Description | Language | Stars | Forks | Status | Last push |
 | --- | --- | --- | --- | --- | --- | --- |
-| [ghl-servicepro-theme](https://github.com/hamids-ai-automations/ghl-servicepro-theme) | - | TypeScript | 0 | 0 | active | 2026-11-25 |
-| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 0 | 0 | active | 2026-11-25 |
 | [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | JavaScript | 0 | 0 | active | 2026-11-25 |
+| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 0 | 0 | active | 2026-11-25 |
+| [ghl-servicepro-theme](https://github.com/hamids-ai-automations/ghl-servicepro-theme) | - | TypeScript | 0 | 0 | active | 2026-11-25 |
 | [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |
 | [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |
 | [leadflow-sentinel](https://github.com/hamids-ai-automations/leadflow-sentinel) | Read-only GoHighLevel CRM observability engine: deterministic findings, explainable health score, optional AI narrative layer. | Python | 0 | 0 | active | 2026-11-22 |

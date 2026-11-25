@@ -8,13 +8,13 @@ Derived from repository language byte counts and dependency files.
 | --- | --- | --- | --- |
 | Python | 305350106 | 69.74% | 80 |
 | TypeScript | 74689479 | 17.06% | 28 |
-| JavaScript | 14981772 | 3.42% | 44 |
+| JavaScript | 15002136 | 3.43% | 44 |
 | HTML | 10553015 | 2.41% | 35 |
 | Go | 8598365 | 1.96% | 7 |
 | PHP | 5011706 | 1.14% | 4 |
 | Vue | 4329562 | 0.99% | 3 |
 | Shell | 2916453 | 0.67% | 32 |
-| CSS | 2146801 | 0.49% | 28 |
+| CSS | 2153223 | 0.49% | 28 |
 | MDX | 1922688 | 0.44% | 2 |
 | Swift | 1922018 | 0.44% | 1 |
 | TLA | 962792 | 0.22% | 2 |
@@ -72,8 +72,8 @@ Derived from repository language byte counts and dependency files.
 | Anthropic API | 6 |
 | BeautifulSoup | 6 |
 | LangChain | 6 |
-| Tailwind CSS | 4 |
 | Firebase | 4 |
+| Tailwind CSS | 4 |
 | Google APIs | 3 |
 | Jest | 3 |
 | Flask | 3 |

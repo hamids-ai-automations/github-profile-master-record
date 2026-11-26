@@ -1,20 +1,20 @@
 # Contribution History
 
-Generated from `MASTER_DATABASE.json` on 2026-11-25T19:15:38+00:00.
+Generated from `MASTER_DATABASE.json` on 2026-11-26T02:17:10+00:00.
 
 ## Summary
 
 | Metric | Value |
 | --- | --- |
 | pull requests total | 168 |
-| pull requests merged | 50 |
+| pull requests merged | 53 |
 | issues total | 1 |
 | issues open | 0 |
 | reviews last year | 0 |
 | discussions authored | 0 |
 | discussion comments | 0 |
-| commits last year | 283 |
-| contributions last year | 553 |
+| commits last year | 292 |
+| contributions last year | 562 |
 
 ## Commits by repository (last 12 months)
 
@@ -22,17 +22,17 @@ Generated from `MASTER_DATABASE.json` on 2026-11-25T19:15:38+00:00.
 | --- | --- |
 | [hamids-ai-automations/hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | 17 |
 | [hamids-ai-automations/ai-search-visibility-auditor](https://github.com/hamids-ai-automations/ai-search-visibility-auditor) | 16 |
+| [hamids-ai-automations/marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | 14 |
 | [hamids-ai-automations/proeventsolutions-pk](https://github.com/hamids-ai-automations/proeventsolutions-pk) | 11 |
-| [hamids-ai-automations/ai-marketing-growth-os](https://github.com/hamids-ai-automations/ai-marketing-growth-os) | 10 |
-| [hamids-ai-automations/marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | 10 |
 | [hamids-ai-automations/seo-doctor](https://github.com/hamids-ai-automations/seo-doctor) | 10 |
+| [hamids-ai-automations/ai-marketing-growth-os](https://github.com/hamids-ai-automations/ai-marketing-growth-os) | 10 |
 | [hamids-ai-automations/ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | 10 |
 | [hamids-ai-automations/ppc-performance-dashboard](https://github.com/hamids-ai-automations/ppc-performance-dashboard) | 10 |
 | [hamids-ai-automations/hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | 9 |
 | [hamids-ai-automations/ppc-waste-detector](https://github.com/hamids-ai-automations/ppc-waste-detector) | 9 |
 | [hamids-ai-automations/conversion-tracking-doctor](https://github.com/hamids-ai-automations/conversion-tracking-doctor) | 9 |
-| [hamids-ai-automations/firebase-ai-starter-kit](https://github.com/hamids-ai-automations/firebase-ai-starter-kit) | 9 |
 | [hamids-ai-automations/seo-audit-pro](https://github.com/hamids-ai-automations/seo-audit-pro) | 9 |
+| [hamids-ai-automations/firebase-ai-starter-kit](https://github.com/hamids-ai-automations/firebase-ai-starter-kit) | 9 |
 | [hamids-ai-automations/ecommerce-seo-optimizer](https://github.com/hamids-ai-automations/ecommerce-seo-optimizer) | 8 |
 | [hamids-ai-automations/geo-visibility-lab](https://github.com/hamids-ai-automations/geo-visibility-lab) | 8 |
 | [hamids-ai-automations/meta-lead-quality-analyzer](https://github.com/hamids-ai-automations/meta-lead-quality-analyzer) | 8 |
@@ -42,55 +42,58 @@ Generated from `MASTER_DATABASE.json` on 2026-11-25T19:15:38+00:00.
 | [hamids-ai-automations/github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | 7 |
 | [hamids-ai-automations/ai-marketing-mix-copilot](https://github.com/hamids-ai-automations/ai-marketing-mix-copilot) | 7 |
 | [hamids-ai-automations/seo-audit-tool](https://github.com/hamids-ai-automations/seo-audit-tool) | 6 |
-| [nikhilb2/simple-invoicing-free-gst-billing-software](https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software) | 5 |
-| [lukeautry/tsoa](https://github.com/lukeautry/tsoa) | 5 |
 | [hamids-ai-automations/nexgen-financial-experts](https://github.com/hamids-ai-automations/nexgen-financial-experts) | 5 |
+| [lukeautry/tsoa](https://github.com/lukeautry/tsoa) | 5 |
+| [nikhilb2/simple-invoicing-free-gst-billing-software](https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software) | 5 |
+| [MysterionRise/pubchem-finder](https://github.com/MysterionRise/pubchem-finder) | 4 |
 | [selimfirat/pysad](https://github.com/selimfirat/pysad) | 4 |
-| [iamvisheshsrivastava/Smart_CSV_Toolkit](https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit) | 3 |
-| [hamids-ai-automations/envscope](https://github.com/hamids-ai-automations/envscope) | 3 |
 | [markline-dev/markline](https://github.com/markline-dev/markline) | 3 |
 | [mikesilvers/rag-docker](https://github.com/mikesilvers/rag-docker) | 3 |
-| [iamvisheshsrivastava/AirKube](https://github.com/iamvisheshsrivastava/AirKube) | 3 |
 | [rdlugs/sentryward](https://github.com/rdlugs/sentryward) | 3 |
+| [iamvisheshsrivastava/Smart_CSV_Toolkit](https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit) | 3 |
+| [iamvisheshsrivastava/AirKube](https://github.com/iamvisheshsrivastava/AirKube) | 3 |
+| [hamids-ai-automations/envscope](https://github.com/hamids-ai-automations/envscope) | 3 |
+| [hamids-ai-automations/conversionbridge](https://github.com/hamids-ai-automations/conversionbridge) | 2 |
+| [hamids-ai-automations/ai-marketing-portfolio-meta](https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta) | 2 |
+| [doobidoo/mcp-memory-service](https://github.com/doobidoo/mcp-memory-service) | 2 |
+| [Dpro-at/Tel-Agent](https://github.com/Dpro-at/Tel-Agent) | 2 |
 | [hamids-ai-automations/ghl-servicepro-theme](https://github.com/hamids-ai-automations/ghl-servicepro-theme) | 2 |
 | [hamids-ai-automations/servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | 2 |
 | [hamids-ai-automations/leadflow-sentinel](https://github.com/hamids-ai-automations/leadflow-sentinel) | 2 |
+| [Opencomplai/opencomplai](https://github.com/Opencomplai/opencomplai) | 2 |
 | [hamids-ai-automations/shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | 2 |
+| [finos/open-resource-broker](https://github.com/finos/open-resource-broker) | 2 |
+| [iamvisheshsrivastava/geniebot](https://github.com/iamvisheshsrivastava/geniebot) | 2 |
+| [iamvisheshsrivastava/ab-lab](https://github.com/iamvisheshsrivastava/ab-lab) | 2 |
 | [hamids-ai-automations/searchpulse-ai](https://github.com/hamids-ai-automations/searchpulse-ai) | 2 |
 | [hamids-ai-automations/google-services-mcp](https://github.com/hamids-ai-automations/google-services-mcp) | 2 |
-| [hamids-ai-automations/ai-marketing-portfolio-meta](https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta) | 2 |
-| [hamids-ai-automations/conversionbridge](https://github.com/hamids-ai-automations/conversionbridge) | 2 |
-| [iamvisheshsrivastava/ab-lab](https://github.com/iamvisheshsrivastava/ab-lab) | 2 |
-| [doobidoo/mcp-memory-service](https://github.com/doobidoo/mcp-memory-service) | 2 |
-| [iamvisheshsrivastava/geniebot](https://github.com/iamvisheshsrivastava/geniebot) | 2 |
-| [finos/open-resource-broker](https://github.com/finos/open-resource-broker) | 2 |
-| [Opencomplai/opencomplai](https://github.com/Opencomplai/opencomplai) | 2 |
-| [adbar/trafilatura](https://github.com/adbar/trafilatura) | 1 |
 | [hamids-ai-automations/gemini-agent-reliability-kit](https://github.com/hamids-ai-automations/gemini-agent-reliability-kit) | 1 |
 | [hamids-ai-automations/restock-radar](https://github.com/hamids-ai-automations/restock-radar) | 1 |
 | [hamids-ai-automations/dynamic-schema-generator](https://github.com/hamids-ai-automations/dynamic-schema-generator) | 1 |
-| [laaielichter/Gulliver](https://github.com/laaielichter/Gulliver) | 1 |
-| [MysterionRise/pubchem-finder](https://github.com/MysterionRise/pubchem-finder) | 1 |
-| [connabyss/bite](https://github.com/connabyss/bite) | 1 |
-| [VOLPAROSSA/volparossa-code](https://github.com/VOLPAROSSA/volparossa-code) | 1 |
-| [hamids-ai-automations/ai-agent-testing-lab](https://github.com/hamids-ai-automations/ai-agent-testing-lab) | 1 |
 | [pygrpc/pygrpc-native](https://github.com/pygrpc/pygrpc-native) | 1 |
-| [OpnForm/OpnForm](https://github.com/OpnForm/OpnForm) | 1 |
+| [adbar/trafilatura](https://github.com/adbar/trafilatura) | 1 |
+| [hamids-ai-automations/ai-agent-testing-lab](https://github.com/hamids-ai-automations/ai-agent-testing-lab) | 1 |
 | [exmergo/dex](https://github.com/exmergo/dex) | 1 |
 | [OpenWave-India/modeldiff](https://github.com/OpenWave-India/modeldiff) | 1 |
 | [cfgaudit/cfgaudit](https://github.com/cfgaudit/cfgaudit) | 1 |
+| [laaielichter/Gulliver](https://github.com/laaielichter/Gulliver) | 1 |
 | [supabase/supabase-py](https://github.com/supabase/supabase-py) | 1 |
+| [connabyss/bite](https://github.com/connabyss/bite) | 1 |
+| [VOLPAROSSA/volparossa-code](https://github.com/VOLPAROSSA/volparossa-code) | 1 |
+| [OpnForm/OpnForm](https://github.com/OpnForm/OpnForm) | 1 |
 
 ## Authored pull requests
 
 | PR | Repository | State | Created | Merged |
 | --- | --- | --- | --- | --- |
+| [#267 chore(ci): enable Dependabot for pip and npm](https://github.com/Dpro-at/Tel-Agent/pull/267) | Dpro-at/Tel-Agent | closed | 2026-10-28 | 2026-11-25 |
+| [#268 deps: add upper bounds to remaining runtime dependencies](https://github.com/Dpro-at/Tel-Agent/pull/268) | Dpro-at/Tel-Agent | closed | 2026-10-28 | 2026-11-25 |
+| [#168 Retry a failed chunk download instead of ending the build](https://github.com/MysterionRise/pubchem-finder/pull/168) | MysterionRise/pubchem-finder | closed | 2026-11-11 | 2026-11-25 |
 | [#126 test(scorers): derive LLM judge prompt coverage from production classes](https://github.com/wandb/rai-toolkit/pull/126) | wandb/rai-toolkit | open | 2026-11-01 | - |
 | [#27 fix(transporter): send a request body on PUT and PATCH requests](https://github.com/MusheAbdulHakim/gohighlevel-php-sdk/pull/27) | MusheAbdulHakim/gohighlevel-php-sdk | open | 2026-11-22 | - |
 | [#20 fix(agent-workspace): send contact search as POST and page opportunities explicitly](https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete/pull/20) | BusyBee3333/Go-High-Level-MCP-2026-Complete | open | 2026-11-22 | - |
 | [#684 fix(agent): report empty tool results as 'No results found.' instead of null](https://github.com/GoogleCloudPlatform/cymbal-air-toolbox-demo/pull/684) | GoogleCloudPlatform/cymbal-air-toolbox-demo | open | 2026-11-21 | - |
 | [#34 evals: add init-container dependency and missing configmap key tasks](https://github.com/gke-labs/k8s-ai-bench/pull/34) | gke-labs/k8s-ai-bench | open | 2026-11-21 | - |
-| [#168 Retry a failed chunk download instead of ending the build](https://github.com/MysterionRise/pubchem-finder/pull/168) | MysterionRise/pubchem-finder | open | 2026-11-11 | - |
 | [#4412 Support exactOptionalPropertyTypes in options types (#4411)](https://github.com/date-fns/date-fns/pull/4412) | date-fns/date-fns | open | 2026-10-28 | - |
 | [#684 fix: apply k8s_legacy exception handlers on every call](https://github.com/finos/open-resource-broker/pull/684) | finos/open-resource-broker | closed | 2026-10-30 | 2026-11-19 |
 | [#2 fix(cache): version stylesheet URL so the mobile hardening actually reaches visitors](https://github.com/hamids-ai-automations/proeventsolutions-pk/pull/2) | hamids-ai-automations/proeventsolutions-pk | closed | 2026-11-19 | 2026-11-19 |
@@ -251,8 +254,6 @@ Generated from `MASTER_DATABASE.json` on 2026-11-25T19:15:38+00:00.
 | [#18 Fix lift_relative zero-baseline returning misleading huge values (issue #15)](https://github.com/iamvisheshsrivastava/ab-lab/pull/18) | iamvisheshsrivastava/ab-lab | closed | 2026-10-28 | - |
 | [#17 Add input validation to simulate functions (issue #16)](https://github.com/iamvisheshsrivastava/ab-lab/pull/17) | iamvisheshsrivastava/ab-lab | closed | 2026-10-28 | - |
 | [#14168 fix(marc): extract personal names from MARC 720 added entry fields](https://github.com/internetarchive/openlibrary/pull/14168) | internetarchive/openlibrary | closed | 2026-10-28 | - |
-| [#268 deps: add upper bounds to remaining runtime dependencies](https://github.com/Dpro-at/Tel-Agent/pull/268) | Dpro-at/Tel-Agent | open | 2026-10-28 | - |
-| [#267 chore(ci): enable Dependabot for pip and npm](https://github.com/Dpro-at/Tel-Agent/pull/267) | Dpro-at/Tel-Agent | open | 2026-10-28 | - |
 
 ## Authored issues
 
@@ -279,27 +280,27 @@ _No authored discussions discovered._
 | [lukeautry/tsoa](https://github.com/lukeautry/tsoa) | 5 | 3 | 0 | 0 |
 | [selimfirat/pysad](https://github.com/selimfirat/pysad) | 4 | 4 | 0 | 0 |
 | [rdlugs/sentryward](https://github.com/rdlugs/sentryward) | 3 | 4 | 0 | 0 |
+| [MysterionRise/pubchem-finder](https://github.com/MysterionRise/pubchem-finder) | 4 | 2 | 0 | 0 |
 | [iamvisheshsrivastava/Smart_CSV_Toolkit](https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit) | 3 | 3 | 0 | 0 |
 | [iamvisheshsrivastava/AirKube](https://github.com/iamvisheshsrivastava/AirKube) | 3 | 3 | 0 | 0 |
-| [iamvisheshsrivastava/ab-lab](https://github.com/iamvisheshsrivastava/ab-lab) | 2 | 4 | 0 | 0 |
-| [finos/open-resource-broker](https://github.com/finos/open-resource-broker) | 2 | 4 | 0 | 0 |
 | [Opencomplai/opencomplai](https://github.com/Opencomplai/opencomplai) | 2 | 4 | 0 | 0 |
+| [finos/open-resource-broker](https://github.com/finos/open-resource-broker) | 2 | 4 | 0 | 0 |
+| [iamvisheshsrivastava/ab-lab](https://github.com/iamvisheshsrivastava/ab-lab) | 2 | 4 | 0 | 0 |
 | [doobidoo/mcp-memory-service](https://github.com/doobidoo/mcp-memory-service) | 2 | 3 | 0 | 0 |
 | [iamvisheshsrivastava/geniebot](https://github.com/iamvisheshsrivastava/geniebot) | 2 | 3 | 0 | 0 |
 | [markline-dev/markline](https://github.com/markline-dev/markline) | 3 | 1 | 0 | 0 |
 | [mikesilvers/rag-docker](https://github.com/mikesilvers/rag-docker) | 3 | 1 | 0 | 0 |
+| [Dpro-at/Tel-Agent](https://github.com/Dpro-at/Tel-Agent) | 2 | 2 | 0 | 0 |
 | [adbar/trafilatura](https://github.com/adbar/trafilatura) | 1 | 2 | 0 | 0 |
-| [MysterionRise/pubchem-finder](https://github.com/MysterionRise/pubchem-finder) | 1 | 2 | 0 | 0 |
-| [OpnForm/OpnForm](https://github.com/OpnForm/OpnForm) | 1 | 2 | 0 | 0 |
 | [supabase/supabase-py](https://github.com/supabase/supabase-py) | 1 | 1 | 1 | 0 |
-| [laaielichter/Gulliver](https://github.com/laaielichter/Gulliver) | 1 | 1 | 0 | 0 |
-| [connabyss/bite](https://github.com/connabyss/bite) | 1 | 1 | 0 | 0 |
-| [VOLPAROSSA/volparossa-code](https://github.com/VOLPAROSSA/volparossa-code) | 1 | 1 | 0 | 0 |
+| [OpnForm/OpnForm](https://github.com/OpnForm/OpnForm) | 1 | 2 | 0 | 0 |
 | [pygrpc/pygrpc-native](https://github.com/pygrpc/pygrpc-native) | 1 | 1 | 0 | 0 |
 | [exmergo/dex](https://github.com/exmergo/dex) | 1 | 1 | 0 | 0 |
 | [OpenWave-India/modeldiff](https://github.com/OpenWave-India/modeldiff) | 1 | 1 | 0 | 0 |
 | [cfgaudit/cfgaudit](https://github.com/cfgaudit/cfgaudit) | 1 | 1 | 0 | 0 |
-| [Dpro-at/Tel-Agent](https://github.com/Dpro-at/Tel-Agent) | 0 | 2 | 0 | 0 |
+| [laaielichter/Gulliver](https://github.com/laaielichter/Gulliver) | 1 | 1 | 0 | 0 |
+| [connabyss/bite](https://github.com/connabyss/bite) | 1 | 1 | 0 | 0 |
+| [VOLPAROSSA/volparossa-code](https://github.com/VOLPAROSSA/volparossa-code) | 1 | 1 | 0 | 0 |
 | [dry-python/returns](https://github.com/dry-python/returns) | 0 | 2 | 0 | 0 |
 | [trustflow-protocol/trustflow-backend](https://github.com/trustflow-protocol/trustflow-backend) | 0 | 2 | 0 | 0 |
 | [YakDriver/oschmod](https://github.com/YakDriver/oschmod) | 0 | 2 | 0 | 0 |

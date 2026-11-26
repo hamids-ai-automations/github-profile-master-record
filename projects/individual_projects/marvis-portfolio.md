@@ -10,7 +10,7 @@
 | Status | active |
 | Creation date | 2026-11-25 |
 | Last update | 2026-11-25 |
-| Last push | 2026-11-25 |
+| Last push | 2026-11-26 |
 | Default branch | main |
 | License | none declared |
 | Primary language | JavaScript |
@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 2 |
-| Size | 494 KB |
+| Size | 600 KB |
 | Topics | - |
 
 ## Objectives
@@ -41,7 +41,7 @@ No explicit feature list found in the README.
 
 | Language | Bytes |
 | --- | --- |
-| JavaScript | 233466 |
+| JavaScript | 307939 |
 | CSS | 38804 |
 
 **Frameworks / libraries detected:** Firebase, MCP
@@ -78,7 +78,7 @@ No deployment configuration detected.
 
 ## Development status
 
-Active — last push 2026-11-25
+Active — last push 2026-11-26
 
 ## Associated contributions
 

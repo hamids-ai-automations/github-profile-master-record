@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 2 |
-| Size | 600 KB |
+| Size | 626 KB |
 | Topics | - |
 
 ## Objectives
@@ -32,27 +32,29 @@ No explicit feature list found in the README.
 
 ## Technical architecture
 
-- **Top-level directories:** .github, data, docs, scripts, src, tests
-- **Total files (tracked in default branch):** 51
-- **CI workflows:** .github/workflows/ci.yml, .github/workflows/deploy.yml, .github/workflows/live-check.yml, .github/workflows/sync-master-record.yml
+- **Top-level directories:** data, docs, public, scripts, src, tests
+- **Total files (tracked in default branch):** 67
+- **CI workflows:** none detected
 - **Test files detected:** 6
 
 ## Languages and technologies
 
 | Language | Bytes |
 | --- | --- |
-| JavaScript | 307939 |
+| JavaScript | 308352 |
 | CSS | 38804 |
+| TypeScript | 33488 |
 
-**Frameworks / libraries detected:** Firebase, MCP
+**Frameworks / libraries detected:** Firebase, MCP, Next.js, React, Tailwind CSS
 
-**Dependencies:** none detected
+**Dependencies:** @radix-ui/react-accordion, @radix-ui/react-dialog, @radix-ui/react-navigation-menu, @radix-ui/react-select, @tailwindcss/postcss, @types/react, @types/react-dom, bun-types, class-variance-authority, clsx, eslint, eslint-config-next, framer-motion, lucide-react, next, next-themes, react, react-dom, react-markdown, sharp, tailwind-merge, tailwindcss, tw-animate-css, typescript
 
 ## Important source files
 
 - `.firebaserc`
 - `firebase.json`
 - `package.json`
+- `tsconfig.json`
 
 ## Installation and setup
 

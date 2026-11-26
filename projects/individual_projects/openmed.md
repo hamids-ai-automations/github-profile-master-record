@@ -18,7 +18,7 @@
 | Issues (open / closed) | 0 / 0 |
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
-| Contributors | 100 |
+| Contributors | 99 |
 | Size | 97001 KB |
 | Topics | - |
 

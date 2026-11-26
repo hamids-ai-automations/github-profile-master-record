@@ -6,9 +6,9 @@ Derived from repository language byte counts and dependency files.
 
 | Language | Bytes | Share | Repositories |
 | --- | --- | --- | --- |
-| Python | 305350106 | 69.73% | 80 |
-| TypeScript | 74689479 | 17.06% | 28 |
-| JavaScript | 15076609 | 3.44% | 44 |
+| Python | 305350106 | 69.72% | 80 |
+| TypeScript | 74722967 | 17.06% | 29 |
+| JavaScript | 15077022 | 3.44% | 44 |
 | HTML | 10553015 | 2.41% | 35 |
 | Go | 8598365 | 1.96% | 7 |
 | PHP | 5011706 | 1.14% | 4 |
@@ -63,8 +63,8 @@ Derived from repository language byte counts and dependency files.
 | MCP | 21 |
 | NumPy | 16 |
 | requests | 13 |
-| Next.js | 11 |
-| React | 10 |
+| Next.js | 12 |
+| React | 11 |
 | OpenAI API | 9 |
 | Streamlit | 8 |
 | SQLAlchemy | 7 |
@@ -72,8 +72,8 @@ Derived from repository language byte counts and dependency files.
 | Anthropic API | 6 |
 | BeautifulSoup | 6 |
 | LangChain | 6 |
+| Tailwind CSS | 5 |
 | Firebase | 4 |
-| Tailwind CSS | 4 |
 | Google APIs | 3 |
 | Jest | 3 |
 | Flask | 3 |

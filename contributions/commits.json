@@ -1,11 +1,16 @@
 {
   "window": {
-    "from": "2025-11-26T02:17:02Z",
-    "to": "2026-11-26T02:17:02Z"
+    "from": "2025-11-26T11:18:34Z",
+    "to": "2026-11-26T11:18:34Z"
   },
-  "total_commits": 292,
-  "total_contributions": 562,
+  "total_commits": 299,
+  "total_contributions": 569,
   "by_repository": [
+    {
+      "repository": "hamids-ai-automations/marvis-portfolio",
+      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
+      "commits": 21
+    },
     {
       "repository": "hamids-ai-automations/hamids-ai-automations",
       "url": "https://github.com/hamids-ai-automations/hamids-ai-automations",
@@ -15,11 +20,6 @@
       "repository": "hamids-ai-automations/ai-search-visibility-auditor",
       "url": "https://github.com/hamids-ai-automations/ai-search-visibility-auditor",
       "commits": 16
-    },
-    {
-      "repository": "hamids-ai-automations/marvis-portfolio",
-      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
-      "commits": 14
     },
     {
       "repository": "hamids-ai-automations/proeventsolutions-pk",
@@ -459,7 +459,7 @@
     },
     {
       "date": "2026-11-26",
-      "count": 6
+      "count": 13
     }
   ]
 }

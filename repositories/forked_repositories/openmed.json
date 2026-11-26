@@ -160,7 +160,7 @@
     "ci_enabled": true
   },
   "contributors": {
-    "count": 100,
+    "count": 99,
     "anonymous_included": false
   },
   "technology": {
@@ -213,6 +213,6 @@
     "https://openmed.life"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-25T11:35:03+00:00",
-  "detail_source": "cached"
+  "detail_refreshed_at": "2026-11-26T11:18:10+00:00",
+  "detail_source": "api"
 }

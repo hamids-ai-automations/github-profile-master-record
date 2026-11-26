@@ -122,6 +122,6 @@
     "http://localhost:8000/dashboard"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-25T11:35:22+00:00",
-  "detail_source": "cached"
+  "detail_refreshed_at": "2026-11-26T11:18:24+00:00",
+  "detail_source": "api"
 }

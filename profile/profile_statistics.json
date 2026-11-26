@@ -1,15 +1,15 @@
 {
-  "public_repos": 98,
+  "public_repos": 101,
   "public_gists": 0,
   "followers": 4,
-  "following": 1,
-  "owned_repositories_graphql": 98,
-  "starred_repositories": 23,
-  "total_contributions_last_year": 570,
-  "total_commit_contributions": 300,
+  "following": 2,
+  "owned_repositories_graphql": 101,
+  "starred_repositories": 25,
+  "total_contributions_last_year": 577,
+  "total_commit_contributions": 306,
   "total_issue_contributions": 1,
   "total_pull_request_contributions": 168,
   "total_pull_request_review_contributions": 0,
-  "repositories_with_contributed_commits": 61,
+  "repositories_with_contributed_commits": 64,
   "restricted_contributions": 0
 }

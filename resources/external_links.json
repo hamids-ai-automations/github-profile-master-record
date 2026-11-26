@@ -10,6 +10,7 @@
       "repository_homepage"
     ],
     "related_resources": [
+      "hamids-ai-automations/agentshield-ai",
       "hamids-ai-automations/marvis-portfolio",
       "hamids-ai-automations/github-profile-master-record",
       "hamids-ai-automations/ghl-servicepro-theme",
@@ -157,6 +158,7 @@
       "repository_readme_link"
     ],
     "related_resources": [
+      "hamids-ai-automations/adwaste-intelligence",
       "hamids-ai-automations/marvis-portfolio",
       "hamids-ai-automations/ghl-servicepro-theme",
       "hamids-ai-automations/servicenow-ultimate-mcp",
@@ -183,6 +185,119 @@
     ],
     "related_resources": [],
     "source": "profile README",
+    "verified": null
+  },
+  {
+    "url": "https://www.python.org/downloads",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/agentshield-ai",
+      "hamids-ai-automations/seo-doctor",
+      "hamids-ai-automations/meta-lead-quality-analyzer",
+      "hamids-ai-automations/conversion-tracking-doctor",
+      "hamids-ai-automations/ppc-waste-detector",
+      "hamids-ai-automations/ai-marketing-mix-copilot",
+      "hamids-ai-automations/openmed",
+      "hamids-ai-automations/sample-aws-genai-db-modernizer",
+      "hamids-ai-automations/algen-agent-runtime"
+    ],
+    "source": "README of hamids-ai-automations/agentshield-ai",
+    "verified": null
+  },
+  {
+    "url": "https://streamlit.io",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/agentshield-ai"
+    ],
+    "source": "README of hamids-ai-automations/agentshield-ai",
+    "verified": null
+  },
+  {
+    "url": "https://agentshield-ai.streamlit.app`",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/agentshield-ai"
+    ],
+    "source": "README of hamids-ai-automations/agentshield-ai",
+    "verified": null
+  },
+  {
+    "url": "http://localhost:8501",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/agentshield-ai",
+      "hamids-ai-automations/seo-intelligence-ai",
+      "hamids-ai-automations/ai-search-visibility-auditor",
+      "hamids-ai-automations/AirKube"
+    ],
+    "source": "README of hamids-ai-automations/agentshield-ai",
+    "verified": null
+  },
+  {
+    "url": "https://share.streamlit.io",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/agentshield-ai",
+      "hamids-ai-automations/adwaste-intelligence"
+    ],
+    "source": "README of hamids-ai-automations/agentshield-ai",
+    "verified": null
+  },
+  {
+    "url": "https://adwaste-intelligence.streamlit.app",
+    "type": "live_site",
+    "relationships": [
+      "repository_homepage",
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/adwaste-intelligence"
+    ],
+    "source": "repository hamids-ai-automations/adwaste-intelligence",
+    "verified": null
+  },
+  {
+    "url": "https://www.python.org",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/adwaste-intelligence",
+      "hamids-ai-automations/gemini-agent-automation-toolkit",
+      "hamids-ai-automations/geo-visibility-lab",
+      "hamids-ai-automations/opencomplai",
+      "hamids-ai-automations/sqlalchemy-cubrid"
+    ],
+    "source": "README of hamids-ai-automations/adwaste-intelligence",
+    "verified": null
+  },
+  {
+    "url": "https:",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/adwaste-intelligence"
+    ],
+    "source": "README of hamids-ai-automations/adwaste-intelligence",
     "verified": null
   },
   {
@@ -851,21 +966,6 @@
     "verified": null
   },
   {
-    "url": "https://www.python.org",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/gemini-agent-automation-toolkit",
-      "hamids-ai-automations/geo-visibility-lab",
-      "hamids-ai-automations/opencomplai",
-      "hamids-ai-automations/sqlalchemy-cubrid"
-    ],
-    "source": "README of hamids-ai-automations/gemini-agent-automation-toolkit",
-    "verified": null
-  },
-  {
     "url": "https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20job%20opportunity%20or%20project",
     "type": "website",
     "relationships": [
@@ -987,19 +1087,6 @@
     "verified": null
   },
   {
-    "url": "http://localhost:8501",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/ai-search-visibility-auditor",
-      "hamids-ai-automations/AirKube"
-    ],
-    "source": "README of hamids-ai-automations/ai-search-visibility-auditor",
-    "verified": null
-  },
-  {
     "url": "https://your-site.com`",
     "type": "website",
     "relationships": [
@@ -1058,25 +1145,6 @@
       "hamids-ai-automations/ai-marketing-shared"
     ],
     "source": "README of hamids-ai-automations/ai-marketing-shared",
-    "verified": null
-  },
-  {
-    "url": "https://www.python.org/downloads",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/seo-doctor",
-      "hamids-ai-automations/meta-lead-quality-analyzer",
-      "hamids-ai-automations/conversion-tracking-doctor",
-      "hamids-ai-automations/ppc-waste-detector",
-      "hamids-ai-automations/ai-marketing-mix-copilot",
-      "hamids-ai-automations/openmed",
-      "hamids-ai-automations/sample-aws-genai-db-modernizer",
-      "hamids-ai-automations/algen-agent-runtime"
-    ],
-    "source": "README of hamids-ai-automations/seo-doctor",
     "verified": null
   },
   {

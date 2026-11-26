@@ -75,11 +75,11 @@ Active — last push 2026-11-22
 
 ## Related projects
 
+- hamids-ai-automations/agentshield-ai
+- hamids-ai-automations/seo-intelligence-ai
+- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/leadflow-sentinel
-- hamids-ai-automations/ghl-automation-engine
-- hamids-ai-automations/envscope
-- hamids-ai-automations/searchpulse-ai
 
 ## Known issues and limitations
 

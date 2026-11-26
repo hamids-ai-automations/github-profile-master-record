@@ -6,15 +6,15 @@ Derived from repository language byte counts and dependency files.
 
 | Language | Bytes | Share | Repositories |
 | --- | --- | --- | --- |
-| Python | 305350106 | 69.72% | 80 |
-| TypeScript | 74722967 | 17.06% | 29 |
-| JavaScript | 15077022 | 3.44% | 44 |
+| Python | 306054683 | 69.77% | 83 |
+| TypeScript | 75064022 | 17.11% | 29 |
+| JavaScript | 14781219 | 3.37% | 44 |
 | HTML | 10553015 | 2.41% | 35 |
 | Go | 8598365 | 1.96% | 7 |
 | PHP | 5011706 | 1.14% | 4 |
 | Vue | 4329562 | 0.99% | 3 |
-| Shell | 2916453 | 0.67% | 32 |
-| CSS | 2153223 | 0.49% | 28 |
+| Shell | 2916453 | 0.66% | 32 |
+| CSS | 2120788 | 0.48% | 28 |
 | MDX | 1922688 | 0.44% | 2 |
 | Swift | 1922018 | 0.44% | 1 |
 | TLA | 962792 | 0.22% | 2 |
@@ -57,20 +57,20 @@ Derived from repository language byte counts and dependency files.
 
 | Name | Repositories |
 | --- | --- |
-| pytest | 53 |
+| pytest | 56 |
 | FastAPI | 27 |
-| pandas | 22 |
+| pandas | 25 |
 | MCP | 21 |
-| NumPy | 16 |
-| requests | 13 |
+| NumPy | 19 |
+| requests | 15 |
 | Next.js | 12 |
+| Streamlit | 11 |
 | React | 11 |
 | OpenAI API | 9 |
-| Streamlit | 8 |
+| BeautifulSoup | 7 |
 | SQLAlchemy | 7 |
 | Express | 7 |
 | Anthropic API | 6 |
-| BeautifulSoup | 6 |
 | LangChain | 6 |
 | Tailwind CSS | 5 |
 | Firebase | 4 |

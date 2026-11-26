@@ -1,0 +1,117 @@
+{
+  "id": "R_kgDOV9cB4g",
+  "name": "seo-intelligence-ai",
+  "full_name": "hamids-ai-automations/seo-intelligence-ai",
+  "url": "https://github.com/hamids-ai-automations/seo-intelligence-ai",
+  "description": "Autonomous SEO audit platform - 100-point scoring engine, 31 rules across 6 families, SSRF-guarded crawler, 13-page Streamlit UI, JSON/CSV/PDF reports, Gemini + PageSpeed integrations",
+  "homepage": null,
+  "created_at": "2026-11-26T21:54:26Z",
+  "updated_at": "2026-11-26T21:55:30Z",
+  "pushed_at": "2026-11-26T21:55:25Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-26T21:51:01Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 307862
+  },
+  "language_total_size": 307862,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 0,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/seo-intelligence-ai/blob/main/README.md",
+    "has_readme": true,
+    "length": 19408,
+    "excerpt": "# SEO Intelligence AI\n\n> AI-powered website audit & growth intelligence — an offline-first Streamlit workspace by Muhammad Hamid.\n\nSEO Intelligence AI audits a public page against a **31-rule, 100-point SEO rubric**, explains every point\nit deducted, and then carries the same audit into performance, keyword, content, competitor and backlink\nworkflows. Every number the app shows is labelled with its provenance: a real fetch, a bundled sample, a\ndeterministic model, or a measured PageSpeed Insights call.\n\nThe app is designed to be **fully demonstrable with no API keys and no network**: three bundled sample\nsites ship with the repo, and every modelled data source is tagged as modelled instead of pretending to be\nmeasured.\n\n---\n\n## Table of contents\n\n- [What this is (and what it is not)](#what-this-is-and-what-it-is-not)\n- [Feature overview](#feature-overview)\n- [Scoring model](#scoring-model)\n- [Architecture](#architecture)\n- [Local setup](#local-setup)\n- [Running the checks](#running-the-checks)\n- [Optional API keys](#optional-api-keys)\n- [Data, storage and privacy](#data-storage-and-privacy)\n- [Screenshots](#screenshots)\n- [Deployment](#deployment)\n- [Project documentation](#project-documentation)\n- [Tech stack](#tech-stack)\n- [License](#license)\n\n---\n\n## What this is (and what it is not)\n\n**Is**\n\n- A deterministic SEO audit engine: 31 explicit rules across 6 categories, each rule declaring its own point\n  value, severity, recommendation and reference.\n- A multi-page analysis workspace: audit, Core Web Vitals, keyword planning, content analysis, competitor\n  comparison, backlink profiling, an assistant, a report exporter and a settings surface.\n- Offline-first. Sample sites, modelled keyword demand, modelled backlink\n  profiles and an offline assistant playbook all work with no keys and no internet.\n- Local by default. History lives in a single SQLite file; nothing is uploaded anywhere.\n\n**Is not**\n\n- **Not a rank tracker.** No Google Search Console, Google Analytics or Google Ads integration is\n  implemented. No ranking positions, impressions or ad data are read or stored.\n- **Not a crawler.** It audits **one URL per run** (plus `robots.txt` and `/sitemap.xml` probes). There is no\n  site-wide crawl, no sitemap fan-out, no JavaScript rendering.\n- **Not a keyword-volume provider.** Difficulty, volume bands, CPC bands and opportunity scores are computed\n  deterministically from the seed text (`source: modelled`). No third-party keyword API is bundled.\n- **Not a backlink database.** Referring domains, authority score and anchor mixes are deterministic models\n  derived from the domain string. The Backlink page says so on every surface.\n- **Not a hosted service.** It is a Streamlit app you run yourself.\n\n---\n\n## Feature overview\n\nNavigation is declared once in `app.py` with `st.navigation` — 13 pages in 5 groups.\n\n### Audit\n\n| Page | Route | What it does |\n|---|---|---|\n| **Overview** | `/overview` | Score, grade, failed-check and critical counts for the active audit; \"do these three first\" priority queue; audit provenance; score-history line chart; recent audits table; quick-audit form (URL + keyword, or a bundled sample). |\n| **SEO Auditor** | `/auditor` | The rulebook surface: run an audit (live crawl or sample, mobile/desktop strategy, optional PageSpeed), then inspect results as **Cards** (failed checks with fix text), **Table** (all findings), **All rules** (pass/warn/fail/skip per rule) and **Page facts** (final URL, status, HTML size, title, description, H1s, canonical, robots meta, lang, viewport, images, links, word count). Exports JSON/CSV in place. |\n| **Technical SEO Analyzer** | `/technical` | The technical family in isolation: the six technical checks (HTTPS, canonical, robots meta, viewport, structured data, language) worth 25 points, with a technical-weight gauge, earned-vs-available points per check, the crawler's observed signals (final URL, status, HTML size, canonical, robots meta, viewport, lang, JSON-LD and so",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 55,
+    "total_entries": 65,
+    "top_level_directories": [
+      ".github",
+      ".streamlit",
+      "app_pages",
+      "database",
+      "docs",
+      "modules",
+      "scripts",
+      "tests",
+      "ui"
+    ],
+    "important_files": [
+      "app.py",
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 6,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "BeautifulSoup",
+      "NumPy",
+      "Streamlit",
+      "pandas",
+      "pytest",
+      "requests"
+    ],
+    "dependencies": [
+      "altair",
+      "beautifulsoup4",
+      "numpy",
+      "pandas",
+      "pydantic",
+      "reportlab",
+      "requests",
+      "streamlit"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "http://localhost:8501"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-26T22:21:15+00:00",
+  "detail_source": "api"
+}

@@ -1,15 +1,48 @@
 {
   "generated_from": "MASTER_DATABASE.json",
-  "count": 98,
+  "count": 101,
   "projects": [
+    {
+      "name": "agentshield-ai",
+      "full_name": "hamids-ai-automations/agentshield-ai",
+      "url": "https://github.com/hamids-ai-automations/agentshield-ai",
+      "documentation": "projects/individual_projects/agentshield-ai.md",
+      "live_url": null,
+      "language": "Python",
+      "stars": 0,
+      "status": "active",
+      "is_fork": false
+    },
+    {
+      "name": "seo-intelligence-ai",
+      "full_name": "hamids-ai-automations/seo-intelligence-ai",
+      "url": "https://github.com/hamids-ai-automations/seo-intelligence-ai",
+      "documentation": "projects/individual_projects/seo-intelligence-ai.md",
+      "live_url": null,
+      "language": "Python",
+      "stars": 0,
+      "status": "active",
+      "is_fork": false
+    },
+    {
+      "name": "adwaste-intelligence",
+      "full_name": "hamids-ai-automations/adwaste-intelligence",
+      "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
+      "documentation": "projects/individual_projects/adwaste-intelligence.md",
+      "live_url": "https://adwaste-intelligence.streamlit.app",
+      "language": "Python",
+      "stars": 0,
+      "status": "active",
+      "is_fork": false
+    },
     {
       "name": "marvis-portfolio",
       "full_name": "hamids-ai-automations/marvis-portfolio",
       "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
       "documentation": "projects/individual_projects/marvis-portfolio.md",
       "live_url": null,
-      "language": "JavaScript",
-      "stars": 0,
+      "language": "TypeScript",
+      "stars": 1,
       "status": "active",
       "is_fork": false
     },
@@ -20,7 +53,7 @@
       "documentation": "projects/individual_projects/github-profile-master-record.md",
       "live_url": null,
       "language": "Python",
-      "stars": 0,
+      "stars": 1,
       "status": "active",
       "is_fork": false
     },

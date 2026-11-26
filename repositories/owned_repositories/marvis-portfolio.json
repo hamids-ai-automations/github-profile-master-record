@@ -6,10 +6,10 @@
   "description": "Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting.",
   "homepage": null,
   "created_at": "2026-11-25T01:04:26Z",
-  "updated_at": "2026-11-25T03:57:01Z",
-  "pushed_at": "2026-11-26T12:16:33Z",
+  "updated_at": "2026-11-26T14:57:57Z",
+  "pushed_at": "2026-11-26T15:10:02Z",
   "default_branch": "main",
-  "last_commit_at": "2026-11-26T12:02:14Z",
+  "last_commit_at": "2026-11-26T15:10:01Z",
   "visibility": "public",
   "is_private": false,
   "archived": false,
@@ -19,14 +19,14 @@
   "in_organization": false,
   "license": null,
   "license_name": null,
-  "language": "JavaScript",
+  "language": "TypeScript",
   "languages": {
-    "JavaScript": 308352,
-    "CSS": 38804,
-    "TypeScript": 33488
+    "TypeScript": 374543,
+    "JavaScript": 12549,
+    "CSS": 6369
   },
-  "language_total_size": 380644,
-  "stars": 0,
+  "language_total_size": 393461,
+  "stars": 1,
   "forks": 0,
   "watchers": 0,
   "open_issues": 0,
@@ -39,7 +39,7 @@
   "tags_count": 0,
   "branches_count": 1,
   "discussions_count": 0,
-  "deployments_count": 17,
+  "deployments_count": 19,
   "environments_count": 1,
   "packages_count": 0,
   "has_issues": true,
@@ -47,7 +47,7 @@
   "has_projects": true,
   "has_discussions": false,
   "topics": [],
-  "size_kb": 626,
+  "size_kb": 869,
   "readme": {
     "path": "README.md",
     "html_url": "https://github.com/hamids-ai-automations/marvis-portfolio/blob/main/README.md",
@@ -58,10 +58,11 @@
   },
   "tree": {
     "truncated": false,
-    "total_files": 109,
-    "total_entries": 134,
+    "total_files": 112,
+    "total_entries": 138,
     "top_level_directories": [
       ".github",
+      "data",
       "docs",
       "public",
       "scripts",
@@ -76,7 +77,8 @@
     "workflow_files": [
       ".github/workflows/ci.yml",
       ".github/workflows/firebase-deploy.yml",
-      ".github/workflows/live-check.yml"
+      ".github/workflows/live-check.yml",
+      ".github/workflows/sync-master-record.yml"
     ],
     "test_files_count": 0,
     "ci_enabled": true
@@ -130,6 +132,6 @@
     "https://wa.me/923167417135"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-26T12:30:37+00:00",
+  "detail_refreshed_at": "2026-11-26T22:21:16+00:00",
   "detail_source": "api"
 }

@@ -1,6 +1,6 @@
 # External Links & Live Sites
 
-792 links discovered, each mapped to the resource it belongs to.
+797 links discovered, each mapped to the resource it belongs to.
 
 | URL | Type | Relationships | Related resource |
 | --- | --- | --- | --- |
@@ -225,7 +225,9 @@
 | https://ab-lab.streamlit.app | live_site | repository_homepage | hamids-ai-automations/ab-lab |
 | https://ab-lab.streamlit.app/** | live_site | repository_readme_link | hamids-ai-automations/ab-lab |
 | https://abouthamid.web.app | live_site | repository_readme_link | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/pinvault-pinterest-downloader, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector |
+| https://adwaste-intelligence.streamlit.app | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/adwaste-intelligence |
 | https://agent-swarm.dev | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/agent-swarm |
+| https://agentshield-ai.streamlit.app` | live_site | repository_readme_link | hamids-ai-automations/agentshield-ai |
 | https://airkube-dashboard-a4410b460d07.herokuapp.com | live_site | repository_readme_link, repository_homepage | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/AirKube |
 | https://algenai.github.io/algen-agent-runtime | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/algen-agent-runtime |
 | https://aws-samples.github.io/sample-aws-genai-db-modernizer | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/sample-aws-genai-db-modernizer |
@@ -255,7 +257,7 @@
 | https://imgproxykit.rtfd.io | live_site | repository_homepage | hamids-ai-automations/imgproxykit |
 | https://laaielichter.github.io/Gulliver | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/Gulliver |
 | https://markline.dev | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/markline |
-| https://marvis.web.app | live_site | profile_website, social_account, profile_readme_link, repository_readme_link, repository_homepage | hamids-ai-automations/marvis-portfolio, hamids-ai-automations/github-profile-master-record, hamids-ai-automations/ghl-servicepro-theme, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot |
+| https://marvis.web.app | live_site | profile_website, social_account, profile_readme_link, repository_readme_link, repository_homepage | hamids-ai-automations/agentshield-ai, hamids-ai-automations/marvis-portfolio, hamids-ai-automations/github-profile-master-record, hamids-ai-automations/ghl-servicepro-theme, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot |
 | https://marvis.web.app** | live_site | repository_readme_link | hamids-ai-automations/github-profile-master-record |
 | https://marvis.web.app/projects/firebase-ai-starter-kit | live_site | repository_readme_link | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/firebase-ai-starter-kit |
 | https://marvis.web.app/projects/gemini-agent-automation-toolkit | live_site | repository_readme_link, repository_homepage | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/gemini-agent-automation-toolkit |
@@ -361,13 +363,14 @@
 | http://localhost:8080/api/v1/events | website | repository_readme_link | hamids-ai-automations/conversionbridge |
 | http://localhost:8080` | website | repository_readme_link | hamids-ai-automations/AirKube, hamids-ai-automations/rag-docker |
 | http://localhost:8088 | website | repository_readme_link | hamids-ai-automations/pyrite |
-| http://localhost:8501 | website | repository_readme_link | hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/AirKube |
+| http://localhost:8501 | website | repository_readme_link | hamids-ai-automations/agentshield-ai, hamids-ai-automations/seo-intelligence-ai, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/AirKube |
 | http://localhost:9000/generate | website | repository_readme_link | hamids-ai-automations/Smart_CSV_Toolkit |
 | http://localhost:9090` | website | repository_readme_link | hamids-ai-automations/rag-docker |
 | http://mypy-lang.org | website | repository_readme_link | hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector |
 | http://odds.cs.stonybrook.edu | website | repository_readme_link | hamids-ai-automations/pysad |
 | http://prefect.example.org:4200/api` | website | repository_readme_link | hamids-ai-automations/flimanalyzer |
 | http://your-inference-service:8000/v1 | website | repository_readme_link | hamids-ai-automations/cuga-agent |
+| https: | website | repository_readme_link | hamids-ai-automations/adwaste-intelligence |
 | https://` | website | repository_readme_link | hamids-ai-automations/sentryward, hamids-ai-automations/cfgaudit |
 | https://aclanthology.org/2021.acl-demo.15 | website | repository_readme_link | hamids-ai-automations/trafilatura |
 | https://adrien.barbaresi.eu | website | repository_readme_link | hamids-ai-automations/trafilatura |
@@ -664,6 +667,7 @@
 | https://sentryward.example.com/reviews | website | repository_readme_link | hamids-ai-automations/sentryward |
 | https://services.leadconnectorhq.com | website | repository_readme_link | hamids-ai-automations/Go-High-Level-MCP-2026-Complete |
 | https://services.leadconnectorhq.com/oauth/token | website | repository_readme_link | hamids-ai-automations/gohighlevel-php-sdk |
+| https://share.streamlit.io | website | repository_readme_link | hamids-ai-automations/agentshield-ai, hamids-ai-automations/adwaste-intelligence |
 | https://slsa.dev | website | repository_readme_link | hamids-ai-automations/cfgaudit |
 | https://slsa.dev/images/gh-badge-level3.svg | website | repository_readme_link | hamids-ai-automations/cfgaudit |
 | https://slsa.dev/spec/v1.0/levels | website | repository_readme_link | hamids-ai-automations/cfgaudit |
@@ -677,6 +681,7 @@
 | https://storage.googleapis.com/genai-toolbox/v$VERSION/linux/amd64/toolbox | website | repository_readme_link | hamids-ai-automations/cymbal-air-toolbox-demo |
 | https://storage.googleapis.com/gresearch/smart_buildings_dataset/tabular_data/sb1.zip | website | repository_readme_link | hamids-ai-automations/sbsim |
 | https://store.com/checkout/success?order=1042&email=user@test.com | website | repository_readme_link | hamids-ai-automations/conversion-tracking-doctor |
+| https://streamlit.io | website | repository_readme_link | hamids-ai-automations/agentshield-ai |
 | https://supabase.com | website | repository_readme_link | hamids-ai-automations/supabase-py |
 | https://supabase.com/blog/defense-in-depth-mcp | website | repository_readme_link | hamids-ai-automations/Gulliver |
 | https://supabase.com/blog/loading-data-supabase-python | website | repository_readme_link | hamids-ai-automations/supabase-py |
@@ -721,7 +726,7 @@
 | https://wa.me/...` | website | repository_readme_link | hamids-ai-automations/whatsapp-attribution-router |
 | https://wa.me/923074647635 | website | repository_readme_link | hamids-ai-automations/proeventsolutions-pk |
 | https://wa.me/923074647635` | website | repository_readme_link | hamids-ai-automations/proeventsolutions-pk |
-| https://wa.me/923167417135 | website | profile_readme_link, repository_readme_link | hamids-ai-automations/marvis-portfolio, hamids-ai-automations/ghl-servicepro-theme, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/pinvault-pinterest-downloader, hamids-ai-automations/firebase-ai-starter-kit, hamids-ai-automations/hamid-resume, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer |
+| https://wa.me/923167417135 | website | profile_readme_link, repository_readme_link | hamids-ai-automations/adwaste-intelligence, hamids-ai-automations/marvis-portfolio, hamids-ai-automations/ghl-servicepro-theme, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/pinvault-pinterest-downloader, hamids-ai-automations/firebase-ai-starter-kit, hamids-ai-automations/hamid-resume, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer |
 | https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20reviewed%20Dynamic%20Schema%20Generator%20and%20would%20like%20to%20discuss%20an%20enterprise%20SEO%20and%20Schema%20consulting%20project | website | repository_readme_link | hamids-ai-automations/dynamic-schema-generator |
 | https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20job%20opportunity%20or%20project | website | repository_readme_link | hamids-ai-automations/hamid-resume |
 | https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20saw%20your%20Dynamic%20Schema%20Generator%20plugin%20on%20GitHub%20and%20would%20like%20to%20discuss%20a%20project%20or%20job%20opportunity | website | repository_readme_link | hamids-ai-automations/dynamic-schema-generator |
@@ -771,9 +776,9 @@
 | https://www.promptingguide.ai/agents/introduction | website | repository_readme_link | hamids-ai-automations/cymbal-air-toolbox-demo |
 | https://www.promptingguide.ai/techniques/rag | website | repository_readme_link | hamids-ai-automations/cymbal-air-toolbox-demo |
 | https://www.proteantech.in | website | repository_readme_link | hamids-ai-automations/protean |
-| https://www.python.org | website | repository_readme_link | hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/opencomplai, hamids-ai-automations/sqlalchemy-cubrid |
+| https://www.python.org | website | repository_readme_link | hamids-ai-automations/adwaste-intelligence, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/opencomplai, hamids-ai-automations/sqlalchemy-cubrid |
 | https://www.python.org/dev/peps/pep-0561 | website | repository_readme_link | hamids-ai-automations/returns |
-| https://www.python.org/downloads | website | repository_readme_link | hamids-ai-automations/seo-doctor, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot, hamids-ai-automations/openmed, hamids-ai-automations/sample-aws-genai-db-modernizer, hamids-ai-automations/algen-agent-runtime |
+| https://www.python.org/downloads | website | repository_readme_link | hamids-ai-automations/agentshield-ai, hamids-ai-automations/seo-doctor, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot, hamids-ai-automations/openmed, hamids-ai-automations/sample-aws-genai-db-modernizer, hamids-ai-automations/algen-agent-runtime |
 | https://www.rdkit.org | website | repository_readme_link | hamids-ai-automations/pubchem-finder |
 | https://www.reddit.com/user/akin_opencomplai/m/opencomplai_research | website | repository_readme_link | hamids-ai-automations/opencomplai |
 | https://www.sayfone.com/call-rates | website | repository_readme_link | hamids-ai-automations/dayjs |

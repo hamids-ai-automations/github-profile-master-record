@@ -9,17 +9,17 @@
 | Visibility | public |
 | Status | active |
 | Creation date | 2026-11-23 |
-| Last update | 2026-11-23 |
+| Last update | 2026-11-26 |
 | Last push | 2026-11-26 |
 | Default branch | main |
 | License | none declared |
 | Primary language | Python |
-| Stars / Forks / Watchers | 0 / 0 / 0 |
+| Stars / Forks / Watchers | 1 / 0 / 0 |
 | Issues (open / closed) | 0 / 0 |
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 2 |
-| Size | 3832 KB |
+| Size | 4223 KB |
 | Topics | - |
 
 ## Objectives
@@ -33,7 +33,7 @@ No explicit feature list found in the README.
 ## Technical architecture
 
 - **Top-level directories:** .github, achievements, automation, contributions, history, profile, projects, repositories, resources
-- **Total files (tracked in default branch):** 385
+- **Total files (tracked in default branch):** 388
 - **CI workflows:** .github/workflows/automatic-profile-sync.yml, .github/workflows/initial-data-collection.yml, .github/workflows/scheduled-full-sync.yml, .github/workflows/validate-master-data.yml
 - **Test files detected:** 8
 
@@ -90,11 +90,11 @@ Active — last push 2026-11-26
 
 ## Related projects
 
+- hamids-ai-automations/agentshield-ai
+- hamids-ai-automations/seo-intelligence-ai
+- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine
-- hamids-ai-automations/gemini-agent-reliability-kit
-- hamids-ai-automations/envscope
-- hamids-ai-automations/searchpulse-ai
 
 ## Known issues and limitations
 
@@ -111,7 +111,7 @@ Full README: https://github.com/hamids-ai-automations/github-profile-master-reco
 ```markdown
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-26T11:18:45+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-26T12:30:59+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -126,11 +126,11 @@ AI Automation Engineer | MCP servers, agent evals and permission-gated automatio
 | Public gists | 0 |
 | Live websites | 62 |
 | Releases tracked | 7 |
-| External links | 793 |
+| External links | 792 |
 | Pull requests authored | 168 |
 | Issues authored | 1 |
-| Commits (last 12 months) | 299 |
-| Total contributions (last 12 months) | 569 |
+| Commits (last 12 months) | 300 |
+| Total contributions (last 12 months) | 570 |
 | Followers | 4 |
 
 ## Main technologies
@@ -153,8 +153,8 @@ Python (69.72%), TypeScript (17.06%), JavaScript (3.44%), HTML (2.41%), Go (1.96
 ## Live websites
 
 - https://marvis.web.app
-- https://marvis.web.app**
 - https://hamid-resume.web.app
+- https://marvis.web.app**
 - https://marvis.web.app/projects/leadflow-sentinel
 - https://abouthamid.web.app
 - https://fb-ai-starter-kit.web.app
@@ -194,8 +194,8 @@ python automation/validate.py                 # full gate: schema, links, tests
 
 ## Latest changes in this sync
 
-- **repository_updated** — hamids-ai-automations/marvis-portfolio updated: languages, pushed_at
-- **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at
+- **repository_updated** — hamids-ai-automations/marvis-portfolio updated: pushed_at, readme
+- **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at, readme
 
 ## Recently pushed repositories
 
@@ -220,9 +220,9 @@ python automation/validate.py                 # full gate: schema, links, tests
 | repositories without description | 7 |
 | total projects | 98 |
 | total contributions | 169 |
-| total external links | 793 |
+| total external links | 792 |
 | total gists | 0 |
 | total releases | 7 |
 | total packages | 0 |
-| missing optional fields | ['hamids-ai-automations/ghl-servicepro-theme: description', 'hamids-ai-automat
+| missing optional fields | ['hamids-ai-automations/ghl-servicepro-theme: description', 'hamids-ai-au
 ```

@@ -100,7 +100,6 @@ Active — last push 2026-11-21
 
 ## Related projects
 
-- hamids-ai-automations/marvis-portfolio
 - hamids-ai-automations/restock-radar
 - hamids-ai-automations/volparossa-code
 - hamids-ai-automations/dayjs

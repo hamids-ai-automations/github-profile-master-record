@@ -9,17 +9,17 @@
 | Visibility | public |
 | Status | active |
 | Creation date | 2026-11-25 |
-| Last update | 2026-11-25 |
+| Last update | 2026-11-26 |
 | Last push | 2026-11-26 |
 | Default branch | main |
 | License | none declared |
-| Primary language | JavaScript |
-| Stars / Forks / Watchers | 0 / 0 / 0 |
+| Primary language | TypeScript |
+| Stars / Forks / Watchers | 1 / 0 / 0 |
 | Issues (open / closed) | 0 / 0 |
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 2 |
-| Size | 626 KB |
+| Size | 869 KB |
 | Topics | - |
 
 ## Objectives
@@ -37,18 +37,18 @@
 
 ## Technical architecture
 
-- **Top-level directories:** .github, docs, public, scripts, src
-- **Total files (tracked in default branch):** 109
-- **CI workflows:** .github/workflows/ci.yml, .github/workflows/firebase-deploy.yml, .github/workflows/live-check.yml
+- **Top-level directories:** .github, data, docs, public, scripts, src
+- **Total files (tracked in default branch):** 112
+- **CI workflows:** .github/workflows/ci.yml, .github/workflows/firebase-deploy.yml, .github/workflows/live-check.yml, .github/workflows/sync-master-record.yml
 - **Test files detected:** 0
 
 ## Languages and technologies
 
 | Language | Bytes |
 | --- | --- |
-| JavaScript | 308352 |
-| CSS | 38804 |
-| TypeScript | 33488 |
+| TypeScript | 374543 |
+| JavaScript | 12549 |
+| CSS | 6369 |
 
 **Frameworks / libraries detected:** Firebase, MCP, Next.js, React, Tailwind CSS
 
@@ -93,10 +93,11 @@ Active — last push 2026-11-26
 
 ## Related projects
 
-- hamids-ai-automations/restock-radar
-- hamids-ai-automations/pinvault-pinterest-downloader
-- hamids-ai-automations/volparossa-code
-- hamids-ai-automations/dayjs
+- hamids-ai-automations/ghl-servicepro-theme
+- hamids-ai-automations/servicenow-ultimate-mcp
+- hamids-ai-automations/shopify-growth-mcp
+- hamids-ai-automations/ghl-devops-toolkit
+- hamids-ai-automations/nexgen-financial-experts
 
 ## Known issues and limitations
 

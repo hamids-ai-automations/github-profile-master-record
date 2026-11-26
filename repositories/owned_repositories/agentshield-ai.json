@@ -1,0 +1,120 @@
+{
+  "id": "R_kgDOV9cK6w",
+  "name": "agentshield-ai",
+  "full_name": "hamids-ai-automations/agentshield-ai",
+  "url": "https://github.com/hamids-ai-automations/agentshield-ai",
+  "description": "AI agent security scanner and governance console - prompt-injection analysis, telemetry dashboard, risk scoring, PDF/JSON/CSV reports, built with Streamlit",
+  "homepage": null,
+  "created_at": "2026-11-26T21:57:38Z",
+  "updated_at": "2026-11-26T21:58:05Z",
+  "pushed_at": "2026-11-26T22:04:55Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-26T22:04:51Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 250234
+  },
+  "language_total_size": 250234,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 0,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/agentshield-ai/blob/main/README.md",
+    "has_readme": true,
+    "length": 12323,
+    "excerpt": "# AgentShield AI\n\n**AI security scanning & governance console for agentic systems — built with Python and Streamlit.**\n\nAgentShield AI statically analyses AI agent configurations, detects leaked credentials and\nover-permissive tool grants, scores prompt-injection risk, tracks runtime telemetry, and\nproduces audit-ready reports. Every check runs locally: uploaded configurations are parsed as\ninert text and are never executed, and secrets are redacted before they reach the UI or disk.\n\n[![CI](https://github.com/hamids-ai-automations/agentshield-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/agentshield-ai/actions/workflows/ci.yml)\n[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)\n[![Streamlit 1.67](https://img.shields.io/badge/streamlit-1.67-FF4B4B.svg)](https://streamlit.io)\n[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)\n\n---\n\n## Live demo\n\n| | |\n|---|---|\n| **Live app** | `https://agentshield-ai.streamlit.app` *(Streamlit Community Cloud)* |\n| **Dashboard** | ![Dashboard](assets/screenshots/dashboard.png) |\n| **Scanner** | ![Security scanner](assets/screenshots/scanner.png) |\n| **Prompt analyzer** | ![Prompt analyzer](assets/screenshots/prompt-analyzer.png) |\n| **Demo GIF** | ![Walkthrough](assets/screenshots/demo.gif) |\n\nThe screenshots above are placeholders in this repository snapshot — run the app locally\n(`streamlit run app.py`) and drop real captures into `assets/screenshots/`.\n\n---\n\n## Why this project exists\n\nAgentic systems fail differently from traditional apps. The blast radius is defined by three\nthings that are almost never reviewed: **what the agent can call** (tool grants), **what it can\nread** (secrets and scopes), and **what it will obey** (prompt handling). AgentShield AI turns\nthose three questions into a repeatable, scored review that a security team can run before an\nagent reaches production — and re-run after every configuration change.\n\n---\n\n## Features\n\n### 1. Security Scanner (`/scanner`)\n- Accepts agent configurations as **JSON / YAML / TOML / .env / plain text**, via upload, paste,\n  or bundled reference samples.\n- **Static analysis only** — content is parsed with safe loaders; nothing is imported, evaluated\n  or executed. Files above 512 KB are refused.\n- Detects: wildcard tool grants, dangerous tool families (shell, filesystem write, browser,\n  payment), unbounded autonomy/recursion, missing human approval, disabled logging, exposed\n  system prompts, and unguarded PII handling.\n- **Secrets detector** with provider-aware patterns (OpenAI, Anthropic, Google, AWS, GitHub,\n  Slack, Stripe, private keys, JWTs) plus entropy heuristics and `.env`-style assignments.\n  Evidence is truncated and masked (`sk-live…9f2a`), never printed in full.\n- Findings carry severity, category, evidence excerpt, remediation and an OWASP LLM Top 10\n  reference.\n\n### 2. Prompt Analyzer (`/prompts`)\n- Scores a single prompt or a batch of prompts against 16 rule-based injection families:\n  instruction override, role hijack, jailbreak personas, policy-bypass requests, system-prompt\n  extraction, indirect injection (markup/template payloads), shell invocation, credential\n  exfiltration, concealment (\"do not tell the user\"), social pressure, unbounded recursion,\n  leetspeak obfuscation, base64/hex payloads, invisible/bidi characters and oversize prompts.\n- Weighted 0–100 risk score with banding (safe / low / medium / high / critical) and\n  per-signal remediation guidance.\n- Produces a **defanged preview** (zero-width and control characters stripped, truncation) that is\n  safe to paste into a ticket.\n\n### 3. Agent Monitoring (`/monitoring`)\n- Ingests agent run telemetry: model, tokens in/out, latency, cost, status, error type.\n- KPI strip (runs, tokens, spend, error rate) plus Altair charts for volume/spend, failure rate,\n  p95 latency and token mix — all timezone-safe and filtered by window/model/status.\n- Manual ",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 42,
+    "total_entries": 53,
+    "top_level_directories": [
+      ".github",
+      ".streamlit",
+      "app_pages",
+      "assets",
+      "database",
+      "modules",
+      "scripts",
+      "tests",
+      "ui"
+    ],
+    "important_files": [
+      "app.py",
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 6,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "NumPy",
+      "Streamlit",
+      "pandas",
+      "pytest",
+      "requests"
+    ],
+    "dependencies": [
+      "PyYAML",
+      "altair",
+      "numpy",
+      "pandas",
+      "reportlab",
+      "requests",
+      "streamlit"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://www.python.org/downloads/",
+    "https://streamlit.io",
+    "https://agentshield-ai.streamlit.app`",
+    "http://localhost:8501",
+    "https://share.streamlit.io",
+    "https://marvis.web.app"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-26T22:21:15+00:00",
+  "detail_source": "api"
+}

@@ -1,6 +1,6 @@
 # External Links & Live Sites
 
-793 links discovered, each mapped to the resource it belongs to.
+792 links discovered, each mapped to the resource it belongs to.
 
 | URL | Type | Relationships | Related resource |
 | --- | --- | --- | --- |
@@ -255,8 +255,8 @@
 | https://imgproxykit.rtfd.io | live_site | repository_homepage | hamids-ai-automations/imgproxykit |
 | https://laaielichter.github.io/Gulliver | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/Gulliver |
 | https://markline.dev | live_site | repository_homepage, repository_readme_link | hamids-ai-automations/markline |
-| https://marvis.web.app | live_site | profile_website, social_account, profile_readme_link, repository_readme_link, repository_homepage | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/ghl-servicepro-theme, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot |
-| https://marvis.web.app** | live_site | repository_readme_link | hamids-ai-automations/marvis-portfolio, hamids-ai-automations/github-profile-master-record |
+| https://marvis.web.app | live_site | profile_website, social_account, profile_readme_link, repository_readme_link, repository_homepage | hamids-ai-automations/marvis-portfolio, hamids-ai-automations/github-profile-master-record, hamids-ai-automations/ghl-servicepro-theme, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot |
+| https://marvis.web.app** | live_site | repository_readme_link | hamids-ai-automations/github-profile-master-record |
 | https://marvis.web.app/projects/firebase-ai-starter-kit | live_site | repository_readme_link | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/firebase-ai-starter-kit |
 | https://marvis.web.app/projects/gemini-agent-automation-toolkit | live_site | repository_readme_link, repository_homepage | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/gemini-agent-automation-toolkit |
 | https://marvis.web.app/projects/gemini-agent-automation-toolkit.html** | live_site | repository_readme_link | hamids-ai-automations/github-profile-master-record, hamids-ai-automations/gemini-agent-automation-toolkit |
@@ -322,7 +322,7 @@
 | http://host.docker.internal:11434/v1` | website | repository_readme_link | hamids-ai-automations/sentryward |
 | http://json-schema.org/draft-07/schema# | website | repository_readme_link | hamids-ai-automations/datamodel-code-generator |
 | http://localhost:11434 | website | repository_readme_link | hamids-ai-automations/modeldiff |
-| http://localhost:3000 | website | repository_readme_link | hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/nexgen-financial-experts, hamids-ai-automations/markline |
+| http://localhost:3000 | website | repository_readme_link | hamids-ai-automations/marvis-portfolio, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/nexgen-financial-experts, hamids-ai-automations/markline |
 | http://localhost:3000` | website | repository_readme_link | hamids-ai-automations/ghl-servicepro-theme |
 | http://localhost:3001/auth/challenge?address=GXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX | website | repository_readme_link | hamids-ai-automations/trustflow-backend |
 | http://localhost:3001/auth/verify | website | repository_readme_link | hamids-ai-automations/trustflow-backend |
@@ -332,7 +332,6 @@
 | http://localhost:38471** | website | repository_readme_link | hamids-ai-automations/Tel-Agent |
 | http://localhost:4000/api | website | repository_readme_link | hamids-ai-automations/sentryward |
 | http://localhost:4000/api/health | website | repository_readme_link | hamids-ai-automations/sentryward |
-| http://localhost:5000 | website | repository_readme_link | hamids-ai-automations/marvis-portfolio |
 | http://localhost:5173 | website | repository_readme_link | hamids-ai-automations/sentryward, hamids-ai-automations/simple_invoicing |
 | http://localhost:5173/api/connections/github/callback` | website | repository_readme_link | hamids-ai-automations/sentryward |
 | http://localhost:5173/api/connections/gitlab/oauth/callback` | website | repository_readme_link | hamids-ai-automations/sentryward |

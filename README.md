@@ -1,6 +1,6 @@
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-26T11:18:45+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-26T12:30:59+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -15,11 +15,11 @@ AI Automation Engineer | MCP servers, agent evals and permission-gated automatio
 | Public gists | 0 |
 | Live websites | 62 |
 | Releases tracked | 7 |
-| External links | 793 |
+| External links | 792 |
 | Pull requests authored | 168 |
 | Issues authored | 1 |
-| Commits (last 12 months) | 299 |
-| Total contributions (last 12 months) | 569 |
+| Commits (last 12 months) | 300 |
+| Total contributions (last 12 months) | 570 |
 | Followers | 4 |
 
 ## Main technologies
@@ -42,8 +42,8 @@ Python (69.72%), TypeScript (17.06%), JavaScript (3.44%), HTML (2.41%), Go (1.96
 ## Live websites
 
 - https://marvis.web.app
-- https://marvis.web.app**
 - https://hamid-resume.web.app
+- https://marvis.web.app**
 - https://marvis.web.app/projects/leadflow-sentinel
 - https://abouthamid.web.app
 - https://fb-ai-starter-kit.web.app
@@ -83,8 +83,8 @@ python automation/validate.py                 # full gate: schema, links, tests
 
 ## Latest changes in this sync
 
-- **repository_updated** — hamids-ai-automations/marvis-portfolio updated: languages, pushed_at
-- **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at
+- **repository_updated** — hamids-ai-automations/marvis-portfolio updated: pushed_at, readme
+- **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at, readme
 
 ## Recently pushed repositories
 
@@ -109,7 +109,7 @@ python automation/validate.py                 # full gate: schema, links, tests
 | repositories without description | 7 |
 | total projects | 98 |
 | total contributions | 169 |
-| total external links | 793 |
+| total external links | 792 |
 | total gists | 0 |
 | total releases | 7 |
 | total packages | 0 |
@@ -117,7 +117,7 @@ python automation/validate.py                 # full gate: schema, links, tests
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-26T11:18:45+00:00 |
+| last validated | 2026-11-26T12:30:59+00:00 |
 
 ## Documentation map
 

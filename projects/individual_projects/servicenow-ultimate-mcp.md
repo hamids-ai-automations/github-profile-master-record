@@ -70,10 +70,10 @@ Firebase/other hosting declared via homepage field: https://marvis.web.app
 
 - https://marvis.web.app
 - https://wa.me/923167417135
+- http://localhost:3000
 - https://nextjs.org
 - https://www.typescriptlang.org
 - https://modelcontextprotocol.io
-- http://localhost:3000
 - https://your-instance.service-now.com
 
 ## Development status

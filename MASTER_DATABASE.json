@@ -2,18 +2,18 @@
   "metadata": {
     "schema_version": "1.0.0",
     "username": "hamids-ai-automations",
-    "generated_at": "2026-11-26T11:18:45+00:00",
+    "generated_at": "2026-11-26T12:30:59+00:00",
     "source": "GitHub REST API v3 + GraphQL API v4",
     "generator": "github-profile-master-record/automation/sync.py",
     "canonical": true,
-    "mode": "full",
-    "trigger": "scheduled full sync",
+    "mode": "incremental",
+    "trigger": "automatic profile sync",
     "run": {
-      "mode": "full",
-      "trigger": "scheduled full sync",
-      "api_requests": 1095,
+      "mode": "incremental",
+      "trigger": "automatic profile sync",
+      "api_requests": 330,
       "failed_requests": 0,
-      "duration_seconds": 70.6,
+      "duration_seconds": 81.1,
       "failures": [
         "packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {\"message\":\"The package_type parameter is invalid.\",\"documentation_url\":\"https://docs.github.com/rest/packages/packages#list-packages-for-a-user\",\"status\":\"422\"}"
       ]
@@ -65,8 +65,8 @@
       "following": 1,
       "owned_repositories_graphql": 98,
       "starred_repositories": 23,
-      "total_contributions_last_year": 569,
-      "total_commit_contributions": 299,
+      "total_contributions_last_year": 570,
+      "total_commit_contributions": 300,
       "total_issue_contributions": 1,
       "total_pull_request_contributions": 168,
       "total_pull_request_review_contributions": 0,
@@ -176,7 +176,7 @@
         "private_gists": 0,
         "total_private_repos": 2,
         "owned_private_repos": 2,
-        "disk_usage": 32536,
+        "disk_usage": 32567,
         "collaborators": 0,
         "two_factor_authentication": true,
         "plan": {
@@ -302,14 +302,14 @@
           ]
         },
         "contributionsCollection": {
-          "totalCommitContributions": 299,
+          "totalCommitContributions": 300,
           "totalIssueContributions": 1,
           "totalPullRequestContributions": 168,
           "totalPullRequestReviewContributions": 0,
           "totalRepositoriesWithContributedCommits": 61,
           "restrictedContributionsCount": 0,
           "contributionCalendar": {
-            "totalContributions": 569
+            "totalContributions": 570
           }
         }
       }
@@ -354,7 +354,7 @@
     ],
     "achievements_highlights": {},
     "achievements_source": "https://github.com/hamids-ai-automations?tab=achievements",
-    "last_synced": "2026-11-26T11:18:45+00:00"
+    "last_synced": "2026-11-26T12:30:59+00:00"
   },
   "repositories": [
     {
@@ -366,9 +366,9 @@
       "homepage": null,
       "created_at": "2026-11-25T01:04:26Z",
       "updated_at": "2026-11-25T03:57:01Z",
-      "pushed_at": "2026-11-26T09:16:21Z",
+      "pushed_at": "2026-11-26T12:16:33Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-26T09:16:20Z",
+      "last_commit_at": "2026-11-26T12:02:14Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -398,7 +398,7 @@
       "tags_count": 0,
       "branches_count": 1,
       "discussions_count": 0,
-      "deployments_count": 16,
+      "deployments_count": 17,
       "environments_count": 1,
       "packages_count": 0,
       "has_issues": true,
@@ -411,22 +411,21 @@
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/marvis-portfolio/blob/main/README.md",
         "has_readme": true,
-        "length": 3956,
-        "excerpt": "# marvis-portfolio\n\nProduction site for **Muhammad Hamid** — Digital Marketing Head moving into AI automation\nengineering. Live at **https://marvis.web.app**.\n\nA dependency-free static site generator: Node 20, ES modules, zero npm packages. The build reads a\ncommitted snapshot of a GitHub \"master record\" and renders 38 routes, then a validator gates the\noutput on links, SEO, and contact policy before anything reaches Firebase Hosting.\n\n## Why it exists\n\nThe portfolio is generated, not hand-written. Facts about projects come from\n`hamids-ai-automations/github-profile-master-record` (`MASTER_DATABASE.json`), so the site cannot\ndrift from the repositories it describes. A daily workflow refreshes the snapshot, and any change to\nthe record hash triggers a rebuild and deploy.\n\n## Page inventory\n\n| Section | Routes |\n| --- | --- |\n| Home | `/` |\n| Work index | `/projects/` |\n| Projects | 19 curated case pages (`/projects/<slug>/`) |\n| Writing index | `/articles/` |\n| Articles | 4 long-form pieces (`/articles/<slug>/`) |\n| Services index | `/services/` |\n| Services | 6 offers (`/services/<slug>/`) |\n| About / Contact | `/about/`, `/contact/` |\n| Legal | `/privacy/`, `/terms/` |\n| Machine surfaces | `/sitemap.xml` (35 URLs), `/robots.txt`, `/llms.txt`, `/data/projects.json`, `/site.webmanifest`, `/404.html` |\n\n## Quick start\n\n```bash\nnpm run build      # render dist/\nnpm run validate   # gate the output\nnpm test           # 30 unit tests\nnpm run serve      # preview at http://localhost:5000 with Firebase-like routing\nnpm run ci         # build + validate + test — run before every push\n```\n\nNo install step is required: the project has no dependencies.\n\n## Structure\n\n```\ndata/          committed snapshot of the master record (source of truth)\nscripts/       sync, build entry, validate gate, local server\nsrc/lib/       data parsing, normalisation, model, layout, SEO, markdown\nsrc/pages/     one renderer per page family\nsrc/content/   site copy, services, articles, curated project overrides\nsrc/templates/ cards and shared components\nsrc/styles.css the entire stylesheet\ntests/         node:test suites\ndist/          generated output (never edit)\n```\n\n## Content rules\n\n- Every project claim traces to the master record or to a curated override that restates a verified\n  field from it.\n- WhatsApp `+923167417135` is the only contact channel: no forms, no email links, no phone-call CTAs.\n- Every page carries a unique title, a unique meta description, a canonical URL, exactly one `<h1>`,\n  JSON-LD where applicable, and a WhatsApp CTA.\n- Forks, the profile-README repository, and repositories without a description or README are never\n  published. Homepages that point back at this site or at the repository itself are dropped.\n- Content works without JavaScript.\n\n## Deployment\n\nFirebase Hosting, site `marvis`, project `my-1st-web-app-ef52d` (Spark plan, hosting only).\n\n```bash\nnpm run deploy           # ci + deploy --only hosting:marvis\nnpm run deploy:preview   # 7-day preview channel\n```\n\nCI/CD lives in `.github/workflows/`: `ci.yml` (build/validate/test), `deploy.yml` (live deploy on\npush to `main`), `sync-master-record.yml` (daily snapshot refresh), `live-check.yml` (weekly\nproduction smoke test). The deploy workflow needs the `FIREBASE_SERVICE_ACCOUNT` secret — see\n[docs/OPERATIONS.md](docs/OPERATIONS.md).\n\n## Documentation\n\n| Document | Contents |\n| --- | --- |\n| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Layers, data flow, inclusion rules, routing, invariants |\n| [docs/OPERATIONS.md](docs/OPERATIONS.md) | Commands, deploy and rollback, CI secrets, troubleshooting |\n| [docs/AUTONOMY.md](docs/AUTONOMY.md) | Standing authorization for autonomous work in this repo |\n| [AGENTS.md](AGENTS.md) | Hard facts and rules for agents and contributors |\n\n## Contact\n\nWhatsApp: [+92 316 7417135](https://wa.me/923167417135) — the only contact channel.\n\n## License\n\nUNLICENSED — private project. All rights reserved.\n",
+        "length": 9842,
+        "excerpt": "# Marvis Portfolio — Muhammad Hamid\n\n> **AI Automation Engineer | Gemini Developer | AI Agent Builder | GoHighLevel Automation Developer**\n\n[![Deploy to Firebase Hosting](https://github.com/hamids-ai-automations/marvis-portfolio/actions/workflows/firebase-deploy.yml/badge.svg)](https://github.com/hamids-ai-automations/marvis-portfolio/actions/workflows/firebase-deploy.yml)\n[![CI](https://github.com/hamids-ai-automations/marvis-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/marvis-portfolio/actions/workflows/ci.yml)\n\n**Live site: <https://marvis.web.app>** — the personal portfolio of **Muhammad Hamid** (Lahore, Pakistan).\n\nThis repository is the single source of truth for the site: every push to `main` that changes site files runs the full quality gate (lint → typecheck → OG generation → static export → SEO/link validation) and, if the checks pass, deploys itself to Firebase Hosting and verifies the live URLs.\n\n> **Screenshots:** coming soon — binaries can't be committed from every environment; capture and add them to the README per [NEXT_STEPS.md](docs/NEXT_STEPS.md) #5.\n\n## What this is\n\nA **Next.js 16 static export** — no server runtime, no database, no client-side data fetching. The site presents 46 indexable URLs:\n\n- **10 service landing pages** — AI automation, AI agent development, Gemini development, LLM development, AI integration, MCP development, GoHighLevel automation, marketing technology, Python automation, AI security — each with benefits, use cases, process, evidence, FAQ, and structured data.\n- **19 project case pages** — real open-source repositories (98 public repos on [GitHub](https://github.com/hamids-ai-automations)), with facts curated from the GitHub API (frozen 2026-11-25). No invented clients, testimonials, or metrics.\n- **14 technical articles** — long-form, internally linked, funneling readers to the matching services.\n- Home, about, contact, privacy, terms — every existing URL from the previous site preserved, with all legacy 301 redirects kept.\n\n**Conversion is WhatsApp-only:** contextual CTAs throughout, plus a client-side project brief builder on the contact page that opens `wa.me` with a prefilled message. Nothing is stored, nothing is sent — enforced by CSP `form-action 'none'`.\n\n## Technology stack\n\n| Layer | Technology |\n| --- | --- |\n| Framework | Next.js 16 (App Router) + React 19, static export (`NEXT_OUTPUT=export`) |\n| Language | TypeScript |\n| Styling | Tailwind CSS 4 + shadcn/ui (Radix primitives) |\n| Animation | framer-motion |\n| Theming | next-themes (dark-first emerald-on-charcoal, light mode) |\n| Content | react-markdown, typed content model in `src/data/` |\n| Fonts | Space Grotesk / Inter / JetBrains Mono — self-hosted via `next/font` |\n| Icons | lucide-react |\n| Build/OG | sharp (rasterizes committed SVG → `og.png` 1200×630 + touch icon) |\n| Tooling | Bun (`bun.lock`), ESLint, `tsc` |\n| Hosting | Firebase Hosting — site `marvis`, project `my-1st-web-app-ef52d` (Spark plan) |\n\n## Features\n\n- **Every page is a landing page** — unique title, meta description, canonical URL, OG/Twitter cards, exactly one H1, WhatsApp CTA.\n- **Structured data** — JSON-LD: Person, WebSite, ProfilePage, BreadcrumbList, FAQPage, Service, BlogPosting, SoftwareSourceCode, ContactPage.\n- **Machine surface** — `sitemap.xml` and `robots.txt` generated from the same data as the pages, `llms.txt` for AI crawlers, manifest, custom 404.\n- **Enforced, not promised** — a dependency-free validation gate (`scripts/validate.mjs`) checks the built `out/`: metadata uniqueness, canonicals, single H1, OG tags, WhatsApp presence, internal link resolution, sitemap↔page match. Exit 1 blocks deploy.\n- **Fast by default** — fully static HTML, self-hosted fonts with `font-display: swap`, ~zero CLS.\n- **Secure headers** — strict CSP, nosniff, frame protection, referrer policy; no forms, no external scripts.\n\n## Page inventory (46 routes)\n\n| Section | Routes |\n| --- | --- |\n| Home | `/` |\n",
         "full_content_path": null
       },
       "readme_full_content": null,
       "tree": {
         "truncated": false,
-        "total_files": 67,
-        "total_entries": 80,
+        "total_files": 109,
+        "total_entries": 134,
         "top_level_directories": [
-          "data",
+          ".github",
           "docs",
           "public",
           "scripts",
-          "src",
-          "tests"
+          "src"
         ],
         "important_files": [
           ".firebaserc",
@@ -434,9 +433,13 @@
           "package.json",
           "tsconfig.json"
         ],
-        "workflow_files": [],
-        "test_files_count": 6,
-        "ci_enabled": false
+        "workflow_files": [
+          ".github/workflows/ci.yml",
+          ".github/workflows/firebase-deploy.yml",
+          ".github/workflows/live-check.yml"
+        ],
+        "test_files_count": 0,
+        "ci_enabled": true
       },
       "contributors": {
         "count": 2,
@@ -482,12 +485,12 @@
         ]
       },
       "external_links": [
-        "https://marvis.web.app**",
-        "http://localhost:5000",
+        "https://marvis.web.app",
+        "http://localhost:3000",
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-26T11:17:57+00:00",
+      "detail_refreshed_at": "2026-11-26T12:30:37+00:00",
       "detail_source": "api"
     },
     {
@@ -499,9 +502,9 @@
       "homepage": null,
       "created_at": "2026-11-23T05:13:38Z",
       "updated_at": "2026-11-23T05:18:39Z",
-      "pushed_at": "2026-11-26T02:17:11Z",
+      "pushed_at": "2026-11-26T11:18:47Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-26T02:17:10Z",
+      "last_commit_at": "2026-11-26T11:18:45Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -537,20 +540,20 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 3801,
+      "size_kb": 3832,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/README.md",
         "has_readme": true,
-        "length": 9835,
-        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-26T02:17:10+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 39 / 59 |\n| Projects documented | 98 |\n| Public gists | 0 |\n| Live websites | 62 |\n| Releases tracked | 7 |\n| External links | 793 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 292 |\n| Total contributions (last 12 months) | 562 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.73%), TypeScript (17.06%), JavaScript (3.44%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.67%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/hamids-ai-automations/pinvault-pinterest-downloader) | PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |\n| [seo-audit-tool](https://g",
+        "length": 9827,
+        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-26T11:18:45+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 39 / 59 |\n| Projects documented | 98 |\n| Public gists | 0 |\n| Live websites | 62 |\n| Releases tracked | 7 |\n| External links | 793 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 299 |\n| Total contributions (last 12 months) | 569 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.72%), TypeScript (17.06%), JavaScript (3.44%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.67%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/hamids-ai-automations/pinvault-pinterest-downloader) | PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |\n| [seo-audit-tool](https://g",
         "full_content_path": null
       },
       "readme_full_content": null,
       "tree": {
         "truncated": false,
-        "total_files": 382,
-        "total_entries": 401,
+        "total_files": 385,
+        "total_entries": 404,
         "top_level_directories": [
           ".github",
           "achievements",
@@ -603,7 +606,7 @@
         "https://docs.github.com/rest/packages/packages#list-packages-for-a-user"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-26T11:17:58+00:00",
+      "detail_refreshed_at": "2026-11-26T12:30:37+00:00",
       "detail_source": "api"
     },
     {
@@ -761,7 +764,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:57+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV5Z3EA",
@@ -952,7 +955,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:57+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaAF6A",
@@ -1091,7 +1094,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:57+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3mnag",
@@ -1196,7 +1199,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:57+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFVIqA",
@@ -1290,7 +1293,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:57+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV294pA",
@@ -1398,7 +1401,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:57+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3y_UA",
@@ -1598,7 +1601,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:59+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2H9tg",
@@ -1703,7 +1706,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:59+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVXn9SQ",
@@ -1828,7 +1831,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:59+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVxlzHg",
@@ -1973,7 +1976,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:00+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVedz1A",
@@ -2152,7 +2155,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:00+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdUKGQ",
@@ -2253,7 +2256,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:01+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVOCTiA",
@@ -2398,7 +2401,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:01+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVQvC9A",
@@ -2511,7 +2514,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:02+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVOhebA",
@@ -2635,7 +2638,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:02+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2ULAA",
@@ -2766,7 +2769,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:02+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2rQCQ",
@@ -2868,7 +2871,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:03+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2gYQw",
@@ -2980,7 +2983,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:04+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV1l5hw",
@@ -3100,7 +3103,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:04+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV1pT_w",
@@ -3202,7 +3205,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:04+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVIk0wQ",
@@ -3317,7 +3320,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:22+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVPAntw",
@@ -3443,7 +3446,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:23+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVO_MQw",
@@ -3578,7 +3581,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:22+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFaXWw",
@@ -3696,7 +3699,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:23+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFa1rg",
@@ -3811,7 +3814,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:23+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFgywQ",
@@ -3925,7 +3928,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:24+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFi44A",
@@ -4053,7 +4056,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:24+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVMt_Sg",
@@ -4169,7 +4172,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:24+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVK72jg",
@@ -4271,7 +4274,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:25+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVN1Lzg",
@@ -4383,7 +4386,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:25+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVK72GA",
@@ -4503,7 +4506,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:25+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFpFUA",
@@ -4627,7 +4630,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:25+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFr4KQ",
@@ -4749,7 +4752,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:25+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFr30w",
@@ -4872,7 +4875,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:26+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFr3iA",
@@ -4996,7 +4999,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:26+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFr3Pg",
@@ -5119,7 +5122,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:27+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVFlfWg",
@@ -5258,7 +5261,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:27+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3vOhA",
@@ -5380,7 +5383,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:59+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3VphQ",
@@ -5477,7 +5480,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:00+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV3QmVQ",
@@ -5608,7 +5611,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:17:59+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2KJ9Q",
@@ -5715,7 +5718,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:02+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV2rUiQ",
@@ -5859,7 +5862,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:02+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVqInGQ",
@@ -5991,7 +5994,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:04+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVb74mg",
@@ -6120,7 +6123,7 @@
       "external_links": [],
       "documentation_status": "no_readme",
       "detail_refreshed_at": "2026-11-26T11:18:04+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaeg9w",
@@ -6251,7 +6254,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:06+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbCIDw",
@@ -6378,7 +6381,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:05+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVa_nmw",
@@ -6487,7 +6490,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:05+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVcAOcw",
@@ -6701,7 +6704,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:06+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVhZr5g",
@@ -6813,7 +6816,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:06+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVa_XHg",
@@ -6931,7 +6934,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:06+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbA2Xw",
@@ -7047,7 +7050,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:06+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdPeuQ",
@@ -7175,7 +7178,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:06+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfSanA",
@@ -7291,7 +7294,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:07+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdxCCQ",
@@ -7443,7 +7446,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:08+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdK0qA",
@@ -7613,7 +7616,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:08+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVnyV-A",
@@ -7732,7 +7735,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:09+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVnwqrw",
@@ -7951,7 +7954,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:10+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVa4tyw",
@@ -8077,7 +8080,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:09+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfBCbw",
@@ -8198,7 +8201,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:09+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfFbRw",
@@ -8338,7 +8341,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:09+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVe6D3A",
@@ -8502,7 +8505,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:10+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOViPt6A",
@@ -8615,7 +8618,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:10+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOViRvyA",
@@ -8760,7 +8763,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:11+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVh4owg",
@@ -8889,7 +8892,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:12+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVh8piQ",
@@ -8984,7 +8987,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:11+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaje3w",
@@ -9104,7 +9107,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:12+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfVgTg",
@@ -9253,7 +9256,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:12+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfPVrQ",
@@ -9402,7 +9405,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:13+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVfRj2Q",
@@ -9551,7 +9554,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:13+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdzo-A",
@@ -9663,7 +9666,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:13+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaXvgg",
@@ -9820,7 +9823,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:14+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdipwg",
@@ -9977,7 +9980,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:15+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVe8Vnw",
@@ -10122,7 +10125,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:15+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaBbDA",
@@ -10286,7 +10289,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:14+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVblopw",
@@ -10401,7 +10404,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:15+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVcAUPQ",
@@ -10507,7 +10510,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:15+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVd6BKw",
@@ -10754,7 +10757,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:16+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVd2yZA",
@@ -10853,7 +10856,7 @@
       "external_links": [],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:16+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdkUng",
@@ -11047,7 +11050,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:18+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVazoEQ",
@@ -11247,7 +11250,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:17+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbMBzw",
@@ -11394,7 +11397,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:17+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdUBjQ",
@@ -11663,7 +11666,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:18+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVdDTHg",
@@ -11761,7 +11764,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:17+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbzSeA",
@@ -11877,7 +11880,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:18+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbVT7g",
@@ -12018,7 +12021,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:18+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbrDOw",
@@ -12164,7 +12167,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:19+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbu1Pg",
@@ -12293,7 +12296,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:20+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbnOlw",
@@ -12391,7 +12394,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:20+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbPBCg",
@@ -12520,7 +12523,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:20+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbSz2g",
@@ -12640,7 +12643,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:20+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVbFNvA",
@@ -12738,7 +12741,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:20+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaB_dA",
@@ -12975,7 +12978,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:21+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVapqEA",
@@ -13112,7 +13115,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:22+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVa7HZw",
@@ -13252,7 +13255,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:21+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVafrQA",
@@ -13427,7 +13430,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:22+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOVaZ20Q",
@@ -13560,7 +13563,7 @@
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-26T11:18:22+00:00",
-      "detail_source": "api"
+      "detail_source": "cached"
     }
   ],
   "projects": [
@@ -16968,8 +16971,8 @@
     "reviews_last_year": 0,
     "discussions_authored": 0,
     "discussion_comments": 0,
-    "commits_last_year": 299,
-    "contributions_last_year": 569
+    "commits_last_year": 300,
+    "contributions_last_year": 570
   },
   "reviews": {
     "total": 0,
@@ -16985,16 +16988,16 @@
   },
   "commits": {
     "window": {
-      "from": "2025-11-26T11:18:34Z",
-      "to": "2026-11-26T11:18:34Z"
+      "from": "2025-11-26T12:30:49Z",
+      "to": "2026-11-26T12:30:49Z"
     },
-    "total_commits": 299,
-    "total_contributions": 569,
+    "total_commits": 300,
+    "total_contributions": 570,
     "by_repository": [
       {
         "repository": "hamids-ai-automations/marvis-portfolio",
         "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
-        "commits": 21
+        "commits": 22
       },
       {
         "repository": "hamids-ai-automations/hamids-ai-automations",
@@ -17444,7 +17447,7 @@
       },
       {
         "date": "2026-11-26",
-        "count": 13
+        "count": 14
       }
     ]
   },
@@ -17472,7 +17475,7 @@
         "is_fork": false,
         "stars": 0,
         "language": "JavaScript",
-        "commits": 21,
+        "commits": 22,
         "pull_requests": 0,
         "issues": 0,
         "reviews": 0,
@@ -18698,8 +18701,8 @@
       }
     ],
     "window": {
-      "from": "2025-11-26T11:18:36Z",
-      "to": "2026-11-26T11:18:36Z"
+      "from": "2025-11-26T12:30:50Z",
+      "to": "2026-11-26T12:30:50Z"
     }
   },
   "external_links": [
@@ -18714,6 +18717,7 @@
         "repository_homepage"
       ],
       "related_resources": [
+        "hamids-ai-automations/marvis-portfolio",
         "hamids-ai-automations/github-profile-master-record",
         "hamids-ai-automations/ghl-servicepro-theme",
         "hamids-ai-automations/servicenow-ultimate-mcp",
@@ -18889,26 +18893,17 @@
       "verified": null
     },
     {
-      "url": "https://marvis.web.app**",
-      "type": "live_site",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/marvis-portfolio",
-        "hamids-ai-automations/github-profile-master-record"
-      ],
-      "source": "README of hamids-ai-automations/marvis-portfolio",
-      "verified": null
-    },
-    {
-      "url": "http://localhost:5000",
+      "url": "http://localhost:3000",
       "type": "website",
       "relationships": [
         "repository_readme_link"
       ],
       "related_resources": [
-        "hamids-ai-automations/marvis-portfolio"
+        "hamids-ai-automations/marvis-portfolio",
+        "hamids-ai-automations/servicenow-ultimate-mcp",
+        "hamids-ai-automations/ghl-devops-toolkit",
+        "hamids-ai-automations/nexgen-financial-experts",
+        "hamids-ai-automations/markline"
       ],
       "source": "README of hamids-ai-automations/marvis-portfolio",
       "verified": null
@@ -18928,6 +18923,18 @@
         "hamids-ai-automations/seo-audit-tool",
         "hamids-ai-automations/ppc-performance-dashboard",
         "hamids-ai-automations/ecommerce-seo-optimizer"
+      ],
+      "source": "README of hamids-ai-automations/github-profile-master-record",
+      "verified": null
+    },
+    {
+      "url": "https://marvis.web.app**",
+      "type": "live_site",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/github-profile-master-record"
       ],
       "source": "README of hamids-ai-automations/github-profile-master-record",
       "verified": null
@@ -19156,21 +19163,6 @@
         "hamids-ai-automations/servicenow-ultimate-mcp",
         "hamids-ai-automations/google-services-mcp",
         "hamids-ai-automations/pubchem-finder"
-      ],
-      "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
-      "verified": null
-    },
-    {
-      "url": "http://localhost:3000",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/servicenow-ultimate-mcp",
-        "hamids-ai-automations/ghl-devops-toolkit",
-        "hamids-ai-automations/nexgen-financial-experts",
-        "hamids-ai-automations/markline"
       ],
       "source": "README of hamids-ai-automations/servicenow-ultimate-mcp",
       "verified": null
@@ -29653,6 +29645,40 @@
         }
       },
       "detected_at": "2026-11-26T11:18:45+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/marvis-portfolio",
+      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
+      "summary": "hamids-ai-automations/marvis-portfolio updated: pushed_at, readme",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-26T09:16:21Z",
+          "new": "2026-11-26T12:16:33Z"
+        },
+        "readme": {
+          "old": 3956,
+          "new": 9842
+        }
+      },
+      "detected_at": "2026-11-26T12:30:59+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "summary": "hamids-ai-automations/github-profile-master-record updated: pushed_at, readme",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-26T02:17:11Z",
+          "new": "2026-11-26T11:18:47Z"
+        },
+        "readme": {
+          "old": 9835,
+          "new": 9827
+        }
+      },
+      "detected_at": "2026-11-26T12:30:59+00:00"
     }
   ],
   "data_quality": {
@@ -29662,7 +29688,7 @@
     "repositories_without_description": 7,
     "total_projects": 98,
     "total_contributions": 169,
-    "total_external_links": 793,
+    "total_external_links": 792,
     "total_gists": 0,
     "total_releases": 7,
     "total_packages": 0,
@@ -29680,6 +29706,6 @@
     ],
     "validation_errors": 0,
     "validation_warnings": 1,
-    "last_validated": "2026-11-26T11:18:45+00:00"
+    "last_validated": "2026-11-26T12:30:59+00:00"
   }
 }

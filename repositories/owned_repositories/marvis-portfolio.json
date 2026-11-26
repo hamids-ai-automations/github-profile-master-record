@@ -7,9 +7,9 @@
   "homepage": null,
   "created_at": "2026-11-25T01:04:26Z",
   "updated_at": "2026-11-25T03:57:01Z",
-  "pushed_at": "2026-11-26T09:16:21Z",
+  "pushed_at": "2026-11-26T12:16:33Z",
   "default_branch": "main",
-  "last_commit_at": "2026-11-26T09:16:20Z",
+  "last_commit_at": "2026-11-26T12:02:14Z",
   "visibility": "public",
   "is_private": false,
   "archived": false,
@@ -39,7 +39,7 @@
   "tags_count": 0,
   "branches_count": 1,
   "discussions_count": 0,
-  "deployments_count": 16,
+  "deployments_count": 17,
   "environments_count": 1,
   "packages_count": 0,
   "has_issues": true,
@@ -52,21 +52,20 @@
     "path": "README.md",
     "html_url": "https://github.com/hamids-ai-automations/marvis-portfolio/blob/main/README.md",
     "has_readme": true,
-    "length": 3956,
-    "excerpt": "# marvis-portfolio\n\nProduction site for **Muhammad Hamid** — Digital Marketing Head moving into AI automation\nengineering. Live at **https://marvis.web.app**.\n\nA dependency-free static site generator: Node 20, ES modules, zero npm packages. The build reads a\ncommitted snapshot of a GitHub \"master record\" and renders 38 routes, then a validator gates the\noutput on links, SEO, and contact policy before anything reaches Firebase Hosting.\n\n## Why it exists\n\nThe portfolio is generated, not hand-written. Facts about projects come from\n`hamids-ai-automations/github-profile-master-record` (`MASTER_DATABASE.json`), so the site cannot\ndrift from the repositories it describes. A daily workflow refreshes the snapshot, and any change to\nthe record hash triggers a rebuild and deploy.\n\n## Page inventory\n\n| Section | Routes |\n| --- | --- |\n| Home | `/` |\n| Work index | `/projects/` |\n| Projects | 19 curated case pages (`/projects/<slug>/`) |\n| Writing index | `/articles/` |\n| Articles | 4 long-form pieces (`/articles/<slug>/`) |\n| Services index | `/services/` |\n| Services | 6 offers (`/services/<slug>/`) |\n| About / Contact | `/about/`, `/contact/` |\n| Legal | `/privacy/`, `/terms/` |\n| Machine surfaces | `/sitemap.xml` (35 URLs), `/robots.txt`, `/llms.txt`, `/data/projects.json`, `/site.webmanifest`, `/404.html` |\n\n## Quick start\n\n```bash\nnpm run build      # render dist/\nnpm run validate   # gate the output\nnpm test           # 30 unit tests\nnpm run serve      # preview at http://localhost:5000 with Firebase-like routing\nnpm run ci         # build + validate + test — run before every push\n```\n\nNo install step is required: the project has no dependencies.\n\n## Structure\n\n```\ndata/          committed snapshot of the master record (source of truth)\nscripts/       sync, build entry, validate gate, local server\nsrc/lib/       data parsing, normalisation, model, layout, SEO, markdown\nsrc/pages/     one renderer per page family\nsrc/content/   site copy, services, articles, curated project overrides\nsrc/templates/ cards and shared components\nsrc/styles.css the entire stylesheet\ntests/         node:test suites\ndist/          generated output (never edit)\n```\n\n## Content rules\n\n- Every project claim traces to the master record or to a curated override that restates a verified\n  field from it.\n- WhatsApp `+923167417135` is the only contact channel: no forms, no email links, no phone-call CTAs.\n- Every page carries a unique title, a unique meta description, a canonical URL, exactly one `<h1>`,\n  JSON-LD where applicable, and a WhatsApp CTA.\n- Forks, the profile-README repository, and repositories without a description or README are never\n  published. Homepages that point back at this site or at the repository itself are dropped.\n- Content works without JavaScript.\n\n## Deployment\n\nFirebase Hosting, site `marvis`, project `my-1st-web-app-ef52d` (Spark plan, hosting only).\n\n```bash\nnpm run deploy           # ci + deploy --only hosting:marvis\nnpm run deploy:preview   # 7-day preview channel\n```\n\nCI/CD lives in `.github/workflows/`: `ci.yml` (build/validate/test), `deploy.yml` (live deploy on\npush to `main`), `sync-master-record.yml` (daily snapshot refresh), `live-check.yml` (weekly\nproduction smoke test). The deploy workflow needs the `FIREBASE_SERVICE_ACCOUNT` secret — see\n[docs/OPERATIONS.md](docs/OPERATIONS.md).\n\n## Documentation\n\n| Document | Contents |\n| --- | --- |\n| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Layers, data flow, inclusion rules, routing, invariants |\n| [docs/OPERATIONS.md](docs/OPERATIONS.md) | Commands, deploy and rollback, CI secrets, troubleshooting |\n| [docs/AUTONOMY.md](docs/AUTONOMY.md) | Standing authorization for autonomous work in this repo |\n| [AGENTS.md](AGENTS.md) | Hard facts and rules for agents and contributors |\n\n## Contact\n\nWhatsApp: [+92 316 7417135](https://wa.me/923167417135) — the only contact channel.\n\n## License\n\nUNLICENSED — private project. All rights reserved.\n",
+    "length": 9842,
+    "excerpt": "# Marvis Portfolio — Muhammad Hamid\n\n> **AI Automation Engineer | Gemini Developer | AI Agent Builder | GoHighLevel Automation Developer**\n\n[![Deploy to Firebase Hosting](https://github.com/hamids-ai-automations/marvis-portfolio/actions/workflows/firebase-deploy.yml/badge.svg)](https://github.com/hamids-ai-automations/marvis-portfolio/actions/workflows/firebase-deploy.yml)\n[![CI](https://github.com/hamids-ai-automations/marvis-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/marvis-portfolio/actions/workflows/ci.yml)\n\n**Live site: <https://marvis.web.app>** — the personal portfolio of **Muhammad Hamid** (Lahore, Pakistan).\n\nThis repository is the single source of truth for the site: every push to `main` that changes site files runs the full quality gate (lint → typecheck → OG generation → static export → SEO/link validation) and, if the checks pass, deploys itself to Firebase Hosting and verifies the live URLs.\n\n> **Screenshots:** coming soon — binaries can't be committed from every environment; capture and add them to the README per [NEXT_STEPS.md](docs/NEXT_STEPS.md) #5.\n\n## What this is\n\nA **Next.js 16 static export** — no server runtime, no database, no client-side data fetching. The site presents 46 indexable URLs:\n\n- **10 service landing pages** — AI automation, AI agent development, Gemini development, LLM development, AI integration, MCP development, GoHighLevel automation, marketing technology, Python automation, AI security — each with benefits, use cases, process, evidence, FAQ, and structured data.\n- **19 project case pages** — real open-source repositories (98 public repos on [GitHub](https://github.com/hamids-ai-automations)), with facts curated from the GitHub API (frozen 2026-11-25). No invented clients, testimonials, or metrics.\n- **14 technical articles** — long-form, internally linked, funneling readers to the matching services.\n- Home, about, contact, privacy, terms — every existing URL from the previous site preserved, with all legacy 301 redirects kept.\n\n**Conversion is WhatsApp-only:** contextual CTAs throughout, plus a client-side project brief builder on the contact page that opens `wa.me` with a prefilled message. Nothing is stored, nothing is sent — enforced by CSP `form-action 'none'`.\n\n## Technology stack\n\n| Layer | Technology |\n| --- | --- |\n| Framework | Next.js 16 (App Router) + React 19, static export (`NEXT_OUTPUT=export`) |\n| Language | TypeScript |\n| Styling | Tailwind CSS 4 + shadcn/ui (Radix primitives) |\n| Animation | framer-motion |\n| Theming | next-themes (dark-first emerald-on-charcoal, light mode) |\n| Content | react-markdown, typed content model in `src/data/` |\n| Fonts | Space Grotesk / Inter / JetBrains Mono — self-hosted via `next/font` |\n| Icons | lucide-react |\n| Build/OG | sharp (rasterizes committed SVG → `og.png` 1200×630 + touch icon) |\n| Tooling | Bun (`bun.lock`), ESLint, `tsc` |\n| Hosting | Firebase Hosting — site `marvis`, project `my-1st-web-app-ef52d` (Spark plan) |\n\n## Features\n\n- **Every page is a landing page** — unique title, meta description, canonical URL, OG/Twitter cards, exactly one H1, WhatsApp CTA.\n- **Structured data** — JSON-LD: Person, WebSite, ProfilePage, BreadcrumbList, FAQPage, Service, BlogPosting, SoftwareSourceCode, ContactPage.\n- **Machine surface** — `sitemap.xml` and `robots.txt` generated from the same data as the pages, `llms.txt` for AI crawlers, manifest, custom 404.\n- **Enforced, not promised** — a dependency-free validation gate (`scripts/validate.mjs`) checks the built `out/`: metadata uniqueness, canonicals, single H1, OG tags, WhatsApp presence, internal link resolution, sitemap↔page match. Exit 1 blocks deploy.\n- **Fast by default** — fully static HTML, self-hosted fonts with `font-display: swap`, ~zero CLS.\n- **Secure headers** — strict CSP, nosniff, frame protection, referrer policy; no forms, no external scripts.\n\n## Page inventory (46 routes)\n\n| Section | Routes |\n| --- | --- |\n| Home | `/` |\n",
     "full_content_path": null
   },
   "tree": {
     "truncated": false,
-    "total_files": 67,
-    "total_entries": 80,
+    "total_files": 109,
+    "total_entries": 134,
     "top_level_directories": [
-      "data",
+      ".github",
       "docs",
       "public",
       "scripts",
-      "src",
-      "tests"
+      "src"
     ],
     "important_files": [
       ".firebaserc",
@@ -74,9 +73,13 @@
       "package.json",
       "tsconfig.json"
     ],
-    "workflow_files": [],
-    "test_files_count": 6,
-    "ci_enabled": false
+    "workflow_files": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/firebase-deploy.yml",
+      ".github/workflows/live-check.yml"
+    ],
+    "test_files_count": 0,
+    "ci_enabled": true
   },
   "contributors": {
     "count": 2,
@@ -122,11 +125,11 @@
     ]
   },
   "external_links": [
-    "https://marvis.web.app**",
-    "http://localhost:5000",
+    "https://marvis.web.app",
+    "http://localhost:3000",
     "https://wa.me/923167417135"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-26T11:17:57+00:00",
+  "detail_refreshed_at": "2026-11-26T12:30:37+00:00",
   "detail_source": "api"
 }

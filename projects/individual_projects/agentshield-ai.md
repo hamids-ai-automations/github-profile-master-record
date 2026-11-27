@@ -102,8 +102,8 @@ Active — last push 2026-11-27
 
 ## Related projects
 
-- hamids-ai-automations/seo-intelligence-ai
 - hamids-ai-automations/github-profile-master-record
+- hamids-ai-automations/seo-intelligence-ai
 - hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine

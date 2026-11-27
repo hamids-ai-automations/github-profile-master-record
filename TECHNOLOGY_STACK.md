@@ -64,8 +64,8 @@ Derived from repository language byte counts and dependency files.
 | NumPy | 19 |
 | requests | 15 |
 | Next.js | 12 |
-| Streamlit | 11 |
 | React | 11 |
+| Streamlit | 11 |
 | OpenAI API | 9 |
 | BeautifulSoup | 7 |
 | SQLAlchemy | 7 |

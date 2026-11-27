@@ -71,8 +71,8 @@ No deployment configuration detected.
 
 ## Documentation links
 
-- http://localhost:8501
 - https://hamid-seo-intelligence-ai.streamlit.app
+- http://localhost:8501
 
 ## Development status
 
@@ -86,8 +86,8 @@ Active — last push 2026-11-27
 
 ## Related projects
 
-- hamids-ai-automations/agentshield-ai
 - hamids-ai-automations/github-profile-master-record
+- hamids-ai-automations/agentshield-ai
 - hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine

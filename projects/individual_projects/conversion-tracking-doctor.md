@@ -66,8 +66,8 @@ Firebase/other hosting declared via homepage field: https://marvis.web.app/
 ## Documentation links
 
 - https://marvis.web.app
-- https://www.python.org/downloads
 - https://abouthamid.web.app
+- https://www.python.org/downloads
 - https://www.linkedin.com/in/muhammad-hamid-digital-marketing
 - http://mypy-lang.org
 - https://opensource.org/licenses/MIT
@@ -86,9 +86,9 @@ Active — last push 2026-10-12
 
 ## Related projects
 
+- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/agentshield-ai
 - hamids-ai-automations/seo-intelligence-ai
-- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
 

@@ -1,0 +1,12 @@
+{
+  "run_at": "2026-11-27T15:05:48+00:00",
+  "mode": "incremental",
+  "trigger": "automatic profile sync",
+  "duration_seconds": 130.4,
+  "api_requests": 342,
+  "failed_requests": 1,
+  "changes_detected": 0,
+  "changed_fields": [],
+  "result": "success",
+  "error": null
+}

@@ -2,7 +2,7 @@
   "metadata": {
     "schema_version": "1.0.0",
     "username": "hamids-ai-automations",
-    "generated_at": "2026-11-27T15:05:48+00:00",
+    "generated_at": "2026-11-27T23:28:03+00:00",
     "source": "GitHub REST API v3 + GraphQL API v4",
     "generator": "github-profile-master-record/automation/sync.py",
     "canonical": true,
@@ -11,9 +11,9 @@
     "run": {
       "mode": "incremental",
       "trigger": "automatic profile sync",
-      "api_requests": 342,
-      "failed_requests": 1,
-      "duration_seconds": 130.4,
+      "api_requests": 338,
+      "failed_requests": 0,
+      "duration_seconds": 56.0,
       "failures": [
         "packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {\"message\":\"The package_type parameter is invalid.\",\"documentation_url\":\"https://docs.github.com/rest/packages/packages#list-packages-for-a-user\",\"status\":\"422\"}"
       ]
@@ -176,7 +176,7 @@
         "private_gists": 0,
         "total_private_repos": 2,
         "owned_private_repos": 2,
-        "disk_usage": 39332,
+        "disk_usage": 39843,
         "collaborators": 0,
         "two_factor_authentication": true,
         "plan": {
@@ -354,7 +354,7 @@
     ],
     "achievements_highlights": {},
     "achievements_source": "https://github.com/hamids-ai-automations?tab=achievements",
-    "last_synced": "2026-11-27T15:05:48+00:00"
+    "last_synced": "2026-11-27T23:28:03+00:00"
   },
   "repositories": [
     {
@@ -366,9 +366,9 @@
       "homepage": null,
       "created_at": "2026-11-25T01:04:26Z",
       "updated_at": "2026-11-26T14:57:57Z",
-      "pushed_at": "2026-11-27T13:29:36Z",
+      "pushed_at": "2026-11-27T15:06:07Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-27T13:29:35Z",
+      "last_commit_at": "2026-11-27T15:06:06Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -398,7 +398,7 @@
       "tags_count": 0,
       "branches_count": 1,
       "discussions_count": 0,
-      "deployments_count": 25,
+      "deployments_count": 26,
       "environments_count": 1,
       "packages_count": 0,
       "has_issues": true,
@@ -406,7 +406,7 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 876,
+      "size_kb": 877,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/marvis-portfolio/blob/main/README.md",
@@ -492,7 +492,7 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T15:05:26+00:00",
+      "detail_refreshed_at": "2026-11-27T23:27:41+00:00",
       "detail_source": "api"
     },
     {
@@ -504,9 +504,9 @@
       "homepage": null,
       "created_at": "2026-11-23T05:13:38Z",
       "updated_at": "2026-11-26T14:57:56Z",
-      "pushed_at": "2026-11-27T11:14:02Z",
+      "pushed_at": "2026-11-27T15:05:50Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-27T11:14:01Z",
+      "last_commit_at": "2026-11-27T15:05:48Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -542,20 +542,20 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 4823,
+      "size_kb": 5333,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/README.md",
         "has_readme": true,
-        "length": 10153,
-        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-27T11:14:00+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 42 / 59 |\n| Projects documented | 101 |\n| Public gists | 0 |\n| Live websites | 67 |\n| Releases tracked | 7 |\n| External links | 801 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 313 |\n| Total contributions (last 12 months) | 584 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | TypeScript | 1 | 0 | active | 2026-11-27 |\n| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 1 | 0 | active | 2026-11-27 |\n| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/",
+        "length": 9813,
+        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-27T15:05:48+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 42 / 59 |\n| Projects documented | 101 |\n| Public gists | 0 |\n| Live websites | 67 |\n| Releases tracked | 7 |\n| External links | 801 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 313 |\n| Total contributions (last 12 months) | 584 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | TypeScript | 1 | 0 | active | 2026-11-27 |\n| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 1 | 0 | active | 2026-11-27 |\n| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/",
         "full_content_path": null
       },
       "readme_full_content": null,
       "tree": {
         "truncated": false,
-        "total_files": 410,
-        "total_entries": 429,
+        "total_files": 413,
+        "total_entries": 432,
         "top_level_directories": [
           ".github",
           "achievements",
@@ -608,7 +608,7 @@
         "https://docs.github.com/rest/packages/packages#list-packages-for-a-user"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T15:05:26+00:00",
+      "detail_refreshed_at": "2026-11-27T23:27:41+00:00",
       "detail_source": "api"
     },
     {
@@ -17380,8 +17380,8 @@
   },
   "commits": {
     "window": {
-      "from": "2025-11-27T15:05:36Z",
-      "to": "2026-11-27T15:05:36Z"
+      "from": "2025-11-27T23:27:50Z",
+      "to": "2026-11-27T23:27:50Z"
     },
     "total_commits": 313,
     "total_contributions": 584,
@@ -18360,7 +18360,7 @@
         "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
         "owner": "doobidoo",
         "is_fork": false,
-        "stars": 2160,
+        "stars": 2161,
         "language": "Python",
         "commits": 2,
         "pull_requests": 3,
@@ -18430,7 +18430,7 @@
         "description": "AI phone assistant | open-source ",
         "owner": "Dpro-at",
         "is_fork": false,
-        "stars": 1096,
+        "stars": 1097,
         "language": "Python",
         "commits": 2,
         "pull_requests": 2,
@@ -18486,7 +18486,7 @@
         "description": "Python & Command-line tool to gather text and metadata on the Web: Crawling, scraping, extraction, output as CSV, JSON, HTML, MD, TXT, XML",
         "owner": "adbar",
         "is_fork": false,
-        "stars": 7220,
+        "stars": 7237,
         "language": "Python",
         "commits": 1,
         "pull_requests": 2,
@@ -18500,7 +18500,7 @@
         "description": "Beautiful Open-Source Form Builder",
         "owner": "OpnForm",
         "is_fork": false,
-        "stars": 4038,
+        "stars": 4041,
         "language": "PHP",
         "commits": 1,
         "pull_requests": 2,
@@ -18514,7 +18514,7 @@
         "description": "Python Client for Supabase. Query Postgres from Flask, Django, FastAPI. Python user authentication, security policies, edge functions, file storage, and realtime data streaming.",
         "owner": "supabase",
         "is_fork": false,
-        "stars": 2638,
+        "stars": 2639,
         "language": "Python",
         "commits": 1,
         "pull_requests": 1,
@@ -19154,8 +19154,8 @@
       }
     ],
     "window": {
-      "from": "2025-11-27T15:05:38Z",
-      "to": "2026-11-27T15:05:38Z"
+      "from": "2025-11-27T23:27:53Z",
+      "to": "2026-11-27T23:27:53Z"
     }
   },
   "external_links": [
@@ -30622,6 +30622,36 @@
         }
       },
       "detected_at": "2026-11-27T15:05:48+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/marvis-portfolio",
+      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
+      "summary": "hamids-ai-automations/marvis-portfolio updated: pushed_at",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-27T13:29:36Z",
+          "new": "2026-11-27T15:06:07Z"
+        }
+      },
+      "detected_at": "2026-11-27T23:28:03+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "summary": "hamids-ai-automations/github-profile-master-record updated: pushed_at, readme",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-27T11:14:02Z",
+          "new": "2026-11-27T15:05:50Z"
+        },
+        "readme": {
+          "old": 10153,
+          "new": 9813
+        }
+      },
+      "detected_at": "2026-11-27T23:28:03+00:00"
     }
   ],
   "data_quality": {
@@ -30649,6 +30679,6 @@
     ],
     "validation_errors": 0,
     "validation_warnings": 1,
-    "last_validated": "2026-11-27T15:05:48+00:00"
+    "last_validated": "2026-11-27T23:28:03+00:00"
   }
 }

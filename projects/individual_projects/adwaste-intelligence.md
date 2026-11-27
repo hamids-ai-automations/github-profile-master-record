@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 9 / 0 |
 | Releases | 0 |
 | Contributors | 1 |
-| Size | 57 KB |
+| Size | 1253 KB |
 | Topics | adtech, google-ads, n-gram, negative-keywords, ppc, python, sem, streamlit |
 
 ## Objectives
@@ -53,7 +53,7 @@
 
 | Language | Bytes |
 | --- | --- |
-| Python | 146481 |
+| Python | 153363 |
 
 **Frameworks / libraries detected:** NumPy, Streamlit, pandas, pytest
 
@@ -77,12 +77,12 @@ Firebase/other hosting declared via homepage field: https://adwaste-intelligence
 
 - https://marvis.web.app
 - https://wa.me/923167417135
-- https://adwaste-intelligence.streamlit.app
 - https://www.python.org/downloads
 - https://streamlit.io
+- https://share.streamlit.io
+- https://adwaste-intelligence.streamlit.app
 - https://adwaste-intelligence.streamlit.app`
 - http://localhost:8501`
-- https://share.streamlit.io
 - https:
 
 ## Development status
@@ -97,9 +97,9 @@ Active — last push 2026-11-27
 
 ## Related projects
 
-- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/agentshield-ai
 - hamids-ai-automations/seo-intelligence-ai
+- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine
 

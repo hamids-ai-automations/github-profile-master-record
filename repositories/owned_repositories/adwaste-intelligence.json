@@ -21,9 +21,9 @@
   "license_name": "MIT License",
   "language": "Python",
   "languages": {
-    "Python": 146481
+    "Python": 153363
   },
-  "language_total_size": 146481,
+  "language_total_size": 153363,
   "stars": 0,
   "forks": 0,
   "watchers": 0,
@@ -54,7 +54,7 @@
     "sem",
     "streamlit"
   ],
-  "size_kb": 57,
+  "size_kb": 1253,
   "readme": {
     "path": "README.md",
     "html_url": "https://github.com/hamids-ai-automations/adwaste-intelligence/blob/main/README.md",
@@ -122,6 +122,6 @@
     "https://wa.me/923167417135"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-27T05:03:09+00:00",
+  "detail_refreshed_at": "2026-11-27T11:13:00+00:00",
   "detail_source": "api"
 }

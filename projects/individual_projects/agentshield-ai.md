@@ -19,12 +19,20 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 1 |
-| Size | 1000 KB |
+| Size | 1009 KB |
 | Topics | - |
 
 ## Objectives
 
-# AgentShield AI
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: a60f8e46820ea466ef0868a20e79d739_ff2bbb28e9fa11f1961f525400f8a581
+    ReservedCode1: s3cbLxVBiS/NMpouyElT0ILnP/uiZThCbEh+Np4o07Ri+eeI7a/zGFX4LyjUU3eQMNRy7S6ycPsNcag+n9PDBQGvcdozvPkOYfvA75by9+usoUiv7g91ldyCTnz6HGrUkRjtoVRfS+0/fOLuNquXoIpULwikW22TcT67LVwdqxEZj6F76CIC7XcNGnM=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: a60f8e46820ea466ef0868a20e79d739_ff2bbb28e9fa11f1961f525400f8a581
+    ReservedCode2: s3cbLxVBiS/NMpouyElT0ILnP/uiZThCbEh+Np4o07Ri+eeI7a/zGFX4LyjUU3eQMNRy7S6ycPsNcag+n9PD
 
 ## Features
 
@@ -76,10 +84,11 @@ No deployment configuration detected.
 ## Documentation links
 
 - https://marvis.web.app
+- https://hamid-agentshield.streamlit.app
 - https://www.python.org/downloads
 - https://streamlit.io
-- https://share.streamlit.io
 - http://localhost:8501
+- https://share.streamlit.io
 
 ## Development status
 
@@ -93,9 +102,9 @@ Active — last push 2026-11-27
 
 ## Related projects
 
-- hamids-ai-automations/adwaste-intelligence
-- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/seo-intelligence-ai
+- hamids-ai-automations/github-profile-master-record
+- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine
 
@@ -118,7 +127,23 @@ No limitations documented in the README.
 Full README: https://github.com/hamids-ai-automations/agentshield-ai/blob/main/README.md
 
 ```markdown
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: a60f8e46820ea466ef0868a20e79d739_ff2bbb28e9fa11f1961f525400f8a581
+    ReservedCode1: s3cbLxVBiS/NMpouyElT0ILnP/uiZThCbEh+Np4o07Ri+eeI7a/zGFX4LyjUU3eQMNRy7S6ycPsNcag+n9PDBQGvcdozvPkOYfvA75by9+usoUiv7g91ldyCTnz6HGrUkRjtoVRfS+0/fOLuNquXoIpULwikW22TcT67LVwdqxEZj6F76CIC7XcNGnM=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: a60f8e46820ea466ef0868a20e79d739_ff2bbb28e9fa11f1961f525400f8a581
+    ReservedCode2: s3cbLxVBiS/NMpouyElT0ILnP/uiZThCbEh+Np4o07Ri+eeI7a/zGFX4LyjUU3eQMNRy7S6ycPsNcag+n9PDBQGvcdozvPkOYfvA75by9+usoUiv7g91ldyCTnz6HGrUkRjtoVRfS+0/fOLuNquXoIpULwikW22TcT67LVwdqxEZj6F76CIC7XcNGnM=
+---
+
 # AgentShield AI
+
+[![Live demo](https://img.shields.io/badge/live%20demo-hamid--agentshield.streamlit.app-FF4B4B?logo=streamlit&logoColor=white)](https://hamid-agentshield.streamlit.app/)
+
+**▶ Live demo — <https://hamid-agentshield.streamlit.app/>**
+Hosted on Streamlit Community Cloud. No install and no sign-in; the app opens on the Dashboard.
 
 **AI security scanning & governance console for agentic systems — built with Python and Streamlit.**
 
@@ -140,10 +165,13 @@ inert text and are never executed, and secrets are redacted before they reach th
 |---|---|
 | **Repository** | [hamids-ai-automations/agentshield-ai](https://github.com/hamids-ai-automations/agentshield-ai) — public, `658ca9b` |
 | **CI** | Green on `52d211a` — `.github/workflows/ci.yml` runs `ruff check`, `pytest` (34 tests with coverage), a headless `AppTest` render pass over all six pages, `pip-audit` and a committed-secrets guard |
-| **Hosted demo** | **Not deployed yet.** Streamlit Community Cloud requires an interactive GitHub OAuth login, which has not been completed — run it locally, see [Getting started](#getting-started) |
-| **Data** | SQLite under `data/` (git-ignored); a fresh clone starts empty, use **Load demo workspace** |
+| **Hosted demo** | **Live** — <https://hamid-agentshield.streamlit.app/> on Streamlit Community Cloud (repo `hamids-ai-automations/agentshield-ai`, branch `main`, entrypoint `app.py`; Python 3.14.10, streamlit 1.67.0) |
+| **Data** | SQLite under `data/` (git-ignored); a fresh clone **and the hosted instance** start empty — click **Load demo workspace** to populate it |
 
-Nothing here is a live service. The screenshots below were captured from a local run.
+The hosted instance starts on an **empty database**, so the Dashboard reads *"No scans yet"* until you click
+**Load demo workspace**. Nothing from a local `data/` directory is ever uploaded, and anything you scan on the
+hosted app is discarded on the next rebuild. The screenshots below were captured from a local run against a
+database holding three saved scans and 22 findings.
 
 ---
 
@@ -227,45 +255,5 @@ agent reaches production — and re-run after every configuration change.
 
 ### 5. Reports (`/reports`)
 - Rehydrates saved scans and renders a Markdown executive summary.
-- One-click **PDF** (ReportLab, severity colour-coding, fix-first table), **JSON** and **CSV**
-  exports with timestamped, filesystem-safe filenames.
-- Fix-first prioritisation groups findings into actions so a reviewer knows what to do next.
-
-### 6. Dashboard (`/dashboard`)
-- Portfolio posture: average and worst score, severity mix, findings trend, category heat, recent
-  activity feed and latest prompt-risk readings.
-- One-click **demo workspace** seeding (3 sample configs, 3 prompt analyses, 14 days of telemetry)
-  and a guarded "clear all data" action.
-
----
-
-## Scoring model
-
-The posture score starts at 100 and deducts per finding, with **diminishing returns for repeats**
-of the same severity so a single noisy rule cannot dominate:
-
-| Severity | Deduction | Grade band |
-|---|---|---|
-| Critical | 22 | **A** ≥ 90 · hardened |
-| High | 11 | **B** ≥ 80 · solid, minor gaps |
-| Medium | 5 | **C** ≥ 70 · internal pilots only |
-| Low | 2 | **D** ≥ 60 · restrict autonomy |
-| Info | 0 | **F** < 60 · do not deploy |
-
-Prompt risk uses additive signal weights, capped at 100:
-`critical ≥ 70 · high ≥ 45 · medium ≥ 25 · low ≥ 1 · safe = 0`.
-
----
-
-## Architecture
-
-```
-agentshield-ai/
-├── app.py                      # entry point: st.navigation + sidebar + demo/clear actions
-├── app_pages/                  # one module per route (content only, no config)
-│   ├── 1_Dashboard.py
-│   ├── 2_Security_Scanner.py
-│   ├── 3_Prompt_Analyzer.py
-│   ├── 4_Agent_Monitoring.py
-│   ├
+- One-click **PDF** (ReportLab, severity colour-coding, fix-first table), **JSON** 
 ```

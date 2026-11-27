@@ -1,11 +1,11 @@
 # Sync Status
 
-- **Last successful sync:** 2026-11-27T05:03:33+00:00
-- **Sync mode:** incremental
-- **Triggered by:** automatic profile sync
-- **API requests this run:** 348
-- **Failed API requests:** 0
-- **Runtime:** 86.6s
+- **Last successful sync:** 2026-11-27T11:14:00+00:00
+- **Sync mode:** full
+- **Triggered by:** scheduled full sync
+- **API requests this run:** 1133
+- **Failed API requests:** 1
+- **Runtime:** 160.5s
 
 ## Data quality
 
@@ -17,7 +17,7 @@
 | repositories without description | 7 |
 | total projects | 101 |
 | total contributions | 169 |
-| total external links | 799 |
+| total external links | 801 |
 | total gists | 0 |
 | total releases | 7 |
 | total packages | 0 |
@@ -25,7 +25,7 @@
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-27T05:03:33+00:00 |
+| last validated | 2026-11-27T11:14:00+00:00 |
 
 ## Automation schedule
 

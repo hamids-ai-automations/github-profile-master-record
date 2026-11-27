@@ -19,12 +19,20 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 1 |
-| Size | 3251 KB |
+| Size | 3262 KB |
 | Topics | - |
 
 ## Objectives
 
-# SEO Intelligence AI
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: a60f8e46820ea466ef0868a20e79d739_eb52be59e9fa11f1961f525400f8a581
+    ReservedCode1: U9cxipT1hjvnawc2nfjaVyBInAkedlz5U2B6SyNpX0/uH7ZqbKWCN5XsOR50hXavweEpmjYh/2nYFSQERE63rkSbeTzgydV4wARL6VQL+LI/9+xezeQiJx31yDJ+vfKhY/ULNB+qgWdTDxs/BsQ62uKwGM/kcNDhJk68/N//NEuigjPryZZnIEhe4/A=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: a60f8e46820ea466ef0868a20e79d739_eb52be59e9fa11f1961f525400f8a581
+    ReservedCode2: U9cxipT1hjvnawc2nfjaVyBInAkedlz5U2B6SyNpX0/uH7ZqbKWCN5XsOR50hXavweEpmjYh/2nYFSQERE63
 
 ## Features
 
@@ -64,6 +72,7 @@ No deployment configuration detected.
 ## Documentation links
 
 - http://localhost:8501
+- https://hamid-seo-intelligence-ai.streamlit.app
 
 ## Development status
 
@@ -77,9 +86,9 @@ Active — last push 2026-11-27
 
 ## Related projects
 
-- hamids-ai-automations/adwaste-intelligence
-- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/agentshield-ai
+- hamids-ai-automations/github-profile-master-record
+- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine
 
@@ -96,7 +105,23 @@ No roadmap documented in the README.
 Full README: https://github.com/hamids-ai-automations/seo-intelligence-ai/blob/main/README.md
 
 ```markdown
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: a60f8e46820ea466ef0868a20e79d739_eb52be59e9fa11f1961f525400f8a581
+    ReservedCode1: U9cxipT1hjvnawc2nfjaVyBInAkedlz5U2B6SyNpX0/uH7ZqbKWCN5XsOR50hXavweEpmjYh/2nYFSQERE63rkSbeTzgydV4wARL6VQL+LI/9+xezeQiJx31yDJ+vfKhY/ULNB+qgWdTDxs/BsQ62uKwGM/kcNDhJk68/N//NEuigjPryZZnIEhe4/A=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: a60f8e46820ea466ef0868a20e79d739_eb52be59e9fa11f1961f525400f8a581
+    ReservedCode2: U9cxipT1hjvnawc2nfjaVyBInAkedlz5U2B6SyNpX0/uH7ZqbKWCN5XsOR50hXavweEpmjYh/2nYFSQERE63rkSbeTzgydV4wARL6VQL+LI/9+xezeQiJx31yDJ+vfKhY/ULNB+qgWdTDxs/BsQ62uKwGM/kcNDhJk68/N//NEuigjPryZZnIEhe4/A=
+---
+
 # SEO Intelligence AI
+
+[![Live demo](https://img.shields.io/badge/live%20demo-hamid--seo--intelligence--ai.streamlit.app-FF4B4B?logo=streamlit&logoColor=white)](https://hamid-seo-intelligence-ai.streamlit.app/)
+
+**▶ Live demo — <https://hamid-seo-intelligence-ai.streamlit.app/>**
+Hosted on Streamlit Community Cloud. No install, no API keys, no sign-in: the app opens on the Overview page.
 
 > AI-powered website audit & growth intelligence — an offline-first Streamlit workspace by Muhammad Hamid.
 
@@ -117,10 +142,12 @@ measured.
 |---|---|
 | **Repository** | [hamids-ai-automations/seo-intelligence-ai](https://github.com/hamids-ai-automations/seo-intelligence-ai) — public, first commit `0cc3aaa` |
 | **CI** | Green — `.github/workflows/ci.yml` runs `ruff check`, `pytest` (95 tests) and a headless render gate over all 13 pages |
-| **Hosted demo** | **Not deployed yet.** Streamlit Community Cloud needs an interactive GitHub OAuth login, which has not been completed. Run it locally: see [Local setup](#local-setup) |
+| **Hosted demo** | **Live** — <https://hamid-seo-intelligence-ai.streamlit.app/> on Streamlit Community Cloud (repo `hamids-ai-automations/seo-intelligence-ai`, branch `main`, entrypoint `app.py`; Python 3.14.10, streamlit 1.67.0) |
+| **Hosted data** | The cloud instance starts on a **fresh, empty SQLite database**; the numbers you see there come from the bundled sample audit. Local `data/` is git-ignored and is never uploaded |
 | **App root** | `/` — the Overview page is the default route, so `/overview` returns 404 by design (see `PROJECT_PROGRESS.md` §5.9) |
 
-Nothing in this repository is a live service; the screenshots below were taken from a local run.
+The screenshots below were captured from a local run and match the hosted layout. The deployment details,
+build log and operational caveats live in [`DEPLOYMENT_STATUS.md`](https://github.com/hamids-ai-automations/seo-intelligence-ai/blob/main/DEPLOYMENT_STATUS.md).
 
 ---
 
@@ -188,25 +215,5 @@ Navigation is declared once in `app.py` with `st.navigation` — 13 pages in 5 g
 |---|---|---|
 | **Keyword Intelligence** | `/keywords` | Seed → prioritised plan: intent, cluster, difficulty, volume band, CPC band, opportunity score and a written rationale per keyword. Market/language/idea-count controls, intent mix pie, cluster rollup, difficulty-vs-opportunity bars, secondary keywords, CSV export, plan persistence, and a hand-off button that sends the keyword to the Content page. |
 | **Content Intelligence** | `/content` | Two tabs. **Analyse draft**: word count vs the 600-word baseline, Flesch reading ease, keyword density band, title/description length checks, heading-outline issues. **Build brief**: suggested title/meta/outline/talking points/internal-link ideas, Markdown + JSON preview and Markdown download. |
-| **Competitor Analysis** | `/competitors` | Scores up to a handful of public pages on the **same 100-point rubric**, then reports field average, leader, your gap to the leader, category gap table, radar comparison, side-by-side table and takeaways. Live fetch is a toggle; off means deterministic modelled snapshots. |
-| **Backlink & Authority** | `/backlinks` | Builds a modelled authority profile from a domain: authority score, referring domains, total backlinks, dofollow ratio, monthly referring-domain trend, anchor-text mix, top referring domains and an outreach playbook. Saved profiles are listed. |
-
-### Assist & deliver
-
-| Page | Route | What it does |
-|---|---|---|
-| **AI SEO Assistant** | `/assistant` | Chat over the active audit. With a Gemini key, answers come from the model; without one, a built-in offline SEO playbook answers with concrete steps. "Ground the answer in the active audit" passes a trimmed finding summary as context — raw HTML is never sent. |
-| **Reports** | `/reports` | Rebuilds any stored audit from its payload and exports it: **PDF** (ReportLab A4), **CSV** (UTF-8 with BOM) and **JSON**, plus "write all three to disk" into `reports/` and a payload preview. |
-
-### Configure
-
-| Page | Route | What it does |
-|---|---|---|
-| **Settings & Integrations** | `/settings` | Integration status for `GEMINI_API_KEY`, `PAGESPEED_API_KEY`, `OPENAI_API_KEY` (present/absent, source, masked value); default outbound-HTTP toggle; SQLite table counts and file size; "delete all stored data" danger zone; app/site/app-version metadata. |
-
-### About
-
-| Page | Route | What it does |
-|---|---|---|
-| **About Developer** 
+| **Competitor Analysis** | `/competitors` | Scores up to a handful of public pages on the **same 100-point rubric**, then reports field average, leader,
 ```

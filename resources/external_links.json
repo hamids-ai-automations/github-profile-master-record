@@ -10,10 +10,10 @@
       "repository_homepage"
     ],
     "related_resources": [
-      "hamids-ai-automations/adwaste-intelligence",
+      "hamids-ai-automations/agentshield-ai",
       "hamids-ai-automations/marvis-portfolio",
       "hamids-ai-automations/github-profile-master-record",
-      "hamids-ai-automations/agentshield-ai",
+      "hamids-ai-automations/adwaste-intelligence",
       "hamids-ai-automations/ghl-servicepro-theme",
       "hamids-ai-automations/servicenow-ultimate-mcp",
       "hamids-ai-automations/shopify-growth-mcp",
@@ -159,8 +159,8 @@
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/adwaste-intelligence",
       "hamids-ai-automations/marvis-portfolio",
+      "hamids-ai-automations/adwaste-intelligence",
       "hamids-ai-automations/ghl-servicepro-theme",
       "hamids-ai-automations/servicenow-ultimate-mcp",
       "hamids-ai-automations/hamids-ai-automations",
@@ -189,17 +189,15 @@
     "verified": null
   },
   {
-    "url": "https://adwaste-intelligence.streamlit.app",
+    "url": "https://hamid-agentshield.streamlit.app",
     "type": "live_site",
     "relationships": [
-      "repository_homepage",
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/adwaste-intelligence",
-      "hamids-ai-automations/github-profile-master-record"
+      "hamids-ai-automations/agentshield-ai"
     ],
-    "source": "repository hamids-ai-automations/adwaste-intelligence",
+    "source": "README of hamids-ai-automations/agentshield-ai",
     "verified": null
   },
   {
@@ -209,8 +207,8 @@
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/adwaste-intelligence",
       "hamids-ai-automations/agentshield-ai",
+      "hamids-ai-automations/adwaste-intelligence",
       "hamids-ai-automations/seo-doctor",
       "hamids-ai-automations/meta-lead-quality-analyzer",
       "hamids-ai-automations/conversion-tracking-doctor",
@@ -220,7 +218,7 @@
       "hamids-ai-automations/sample-aws-genai-db-modernizer",
       "hamids-ai-automations/algen-agent-runtime"
     ],
-    "source": "README of hamids-ai-automations/adwaste-intelligence",
+    "source": "README of hamids-ai-automations/agentshield-ai",
     "verified": null
   },
   {
@@ -230,34 +228,25 @@
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/adwaste-intelligence",
-      "hamids-ai-automations/agentshield-ai"
-    ],
-    "source": "README of hamids-ai-automations/adwaste-intelligence",
-    "verified": null
-  },
-  {
-    "url": "https://adwaste-intelligence.streamlit.app`",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
+      "hamids-ai-automations/agentshield-ai",
       "hamids-ai-automations/adwaste-intelligence"
     ],
-    "source": "README of hamids-ai-automations/adwaste-intelligence",
+    "source": "README of hamids-ai-automations/agentshield-ai",
     "verified": null
   },
   {
-    "url": "http://localhost:8501`",
+    "url": "http://localhost:8501",
     "type": "website",
     "relationships": [
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/adwaste-intelligence"
+      "hamids-ai-automations/agentshield-ai",
+      "hamids-ai-automations/seo-intelligence-ai",
+      "hamids-ai-automations/ai-search-visibility-auditor",
+      "hamids-ai-automations/AirKube"
     ],
-    "source": "README of hamids-ai-automations/adwaste-intelligence",
+    "source": "README of hamids-ai-automations/agentshield-ai",
     "verified": null
   },
   {
@@ -267,22 +256,22 @@
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/adwaste-intelligence",
-      "hamids-ai-automations/agentshield-ai"
+      "hamids-ai-automations/agentshield-ai",
+      "hamids-ai-automations/adwaste-intelligence"
     ],
-    "source": "README of hamids-ai-automations/adwaste-intelligence",
+    "source": "README of hamids-ai-automations/agentshield-ai",
     "verified": null
   },
   {
-    "url": "https:",
-    "type": "website",
+    "url": "https://hamid-seo-intelligence-ai.streamlit.app",
+    "type": "live_site",
     "relationships": [
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/adwaste-intelligence"
+      "hamids-ai-automations/seo-intelligence-ai"
     ],
-    "source": "README of hamids-ai-automations/adwaste-intelligence",
+    "source": "README of hamids-ai-automations/seo-intelligence-ai",
     "verified": null
   },
   {
@@ -299,6 +288,33 @@
       "hamids-ai-automations/markline"
     ],
     "source": "README of hamids-ai-automations/marvis-portfolio",
+    "verified": null
+  },
+  {
+    "url": "https://adwaste-intelligence.streamlit.app",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link",
+      "repository_homepage"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/adwaste-intelligence"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://adwaste-intelligence.streamlit.app`",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/adwaste-intelligence"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
     "verified": null
   },
   {
@@ -470,20 +486,6 @@
     "verified": null
   },
   {
-    "url": "https://google.github.io/sbsim",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link",
-      "repository_homepage"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/github-profile-master-record",
-      "hamids-ai-automations/sbsim"
-    ],
-    "source": "README of hamids-ai-automations/github-profile-master-record",
-    "verified": null
-  },
-  {
     "url": "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
     "type": "github",
     "relationships": [
@@ -508,18 +510,27 @@
     "verified": null
   },
   {
-    "url": "http://localhost:8501",
+    "url": "http://localhost:8501`",
     "type": "website",
     "relationships": [
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/agentshield-ai",
-      "hamids-ai-automations/seo-intelligence-ai",
-      "hamids-ai-automations/ai-search-visibility-auditor",
-      "hamids-ai-automations/AirKube"
+      "hamids-ai-automations/adwaste-intelligence"
     ],
-    "source": "README of hamids-ai-automations/agentshield-ai",
+    "source": "README of hamids-ai-automations/adwaste-intelligence",
+    "verified": null
+  },
+  {
+    "url": "https:",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/adwaste-intelligence"
+    ],
+    "source": "README of hamids-ai-automations/adwaste-intelligence",
     "verified": null
   },
   {
@@ -2044,6 +2055,19 @@
       "hamids-ai-automations/rag-docker"
     ],
     "source": "README of hamids-ai-automations/AirKube",
+    "verified": null
+  },
+  {
+    "url": "https://google.github.io/sbsim",
+    "type": "live_site",
+    "relationships": [
+      "repository_homepage",
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/sbsim"
+    ],
+    "source": "repository hamids-ai-automations/sbsim",
     "verified": null
   },
   {

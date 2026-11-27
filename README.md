@@ -1,6 +1,6 @@
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-27T05:03:33+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-27T11:14:00+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -13,13 +13,13 @@ AI Automation Engineer | MCP servers, agent evals and permission-gated automatio
 | Repositories (owned / forked) | 42 / 59 |
 | Projects documented | 101 |
 | Public gists | 0 |
-| Live websites | 65 |
+| Live websites | 67 |
 | Releases tracked | 7 |
-| External links | 799 |
+| External links | 801 |
 | Pull requests authored | 168 |
 | Issues authored | 1 |
-| Commits (last 12 months) | 311 |
-| Total contributions (last 12 months) | 582 |
+| Commits (last 12 months) | 313 |
+| Total contributions (last 12 months) | 584 |
 | Followers | 4 |
 
 ## Main technologies
@@ -42,6 +42,8 @@ Python (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96
 ## Live websites
 
 - https://marvis.web.app
+- https://hamid-agentshield.streamlit.app
+- https://hamid-seo-intelligence-ai.streamlit.app
 - https://adwaste-intelligence.streamlit.app
 - https://adwaste-intelligence.streamlit.app`
 - https://agentshield-ai.streamlit.app`
@@ -54,8 +56,6 @@ Python (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96
 - https://marvis.web.app/projects/gemini-agent-automation-toolkit
 - https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**
 - https://musheabdulhakim.github.io/gohighlevel-php-sdk
-- https://gke-labs.github.io/k8s-ai-bench
-- https://airkube-dashboard-a4410b460d07.herokuapp.com
 
 ## Automation
 
@@ -83,20 +83,22 @@ python automation/validate.py                 # full gate: schema, links, tests
 
 ## Latest changes in this sync
 
-- **repository_updated** — hamids-ai-automations/adwaste-intelligence updated: open_pull_requests, pushed_at, readme
+- **repository_updated** — hamids-ai-automations/agentshield-ai updated: pushed_at, readme
+- **repository_updated** — hamids-ai-automations/seo-intelligence-ai updated: pushed_at, readme
 - **repository_updated** — hamids-ai-automations/marvis-portfolio updated: pushed_at
 - **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at, readme
+- **repository_updated** — hamids-ai-automations/adwaste-intelligence updated: languages
 - **external_links_added** — 2 new external link(s) discovered.
 
 ## Recently pushed repositories
 
 | Repository | Last push | Language |
 | --- | --- | --- |
-| [adwaste-intelligence](https://github.com/hamids-ai-automations/adwaste-intelligence) | 2026-11-27 | Python |
-| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | 2026-11-27 | TypeScript |
-| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | 2026-11-27 | Python |
 | [agentshield-ai](https://github.com/hamids-ai-automations/agentshield-ai) | 2026-11-27 | Python |
 | [seo-intelligence-ai](https://github.com/hamids-ai-automations/seo-intelligence-ai) | 2026-11-27 | Python |
+| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | 2026-11-27 | TypeScript |
+| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | 2026-11-27 | Python |
+| [adwaste-intelligence](https://github.com/hamids-ai-automations/adwaste-intelligence) | 2026-11-27 | Python |
 | [ghl-servicepro-theme](https://github.com/hamids-ai-automations/ghl-servicepro-theme) | 2026-11-25 | TypeScript |
 | [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | 2026-11-24 | TypeScript |
 | [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | 2026-11-23 | TypeScript |
@@ -111,7 +113,7 @@ python automation/validate.py                 # full gate: schema, links, tests
 | repositories without description | 7 |
 | total projects | 101 |
 | total contributions | 169 |
-| total external links | 799 |
+| total external links | 801 |
 | total gists | 0 |
 | total releases | 7 |
 | total packages | 0 |
@@ -119,7 +121,7 @@ python automation/validate.py                 # full gate: schema, links, tests
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-27T05:03:33+00:00 |
+| last validated | 2026-11-27T11:14:00+00:00 |
 
 ## Documentation map
 

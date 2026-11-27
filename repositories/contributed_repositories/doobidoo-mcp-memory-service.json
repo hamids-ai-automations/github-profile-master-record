@@ -4,7 +4,7 @@
   "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
   "owner": "doobidoo",
   "is_fork": false,
-  "stars": 2157,
+  "stars": 2159,
   "language": "Python",
   "commits": 2,
   "pull_requests": 3,

@@ -115,10 +115,10 @@ Fork of another project; see upstream for original authorship.
 
 ## Related projects
 
-- hamids-ai-automations/adwaste-intelligence
-- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/agentshield-ai
 - hamids-ai-automations/seo-intelligence-ai
+- hamids-ai-automations/github-profile-master-record
+- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
 
 ## Known issues and limitations

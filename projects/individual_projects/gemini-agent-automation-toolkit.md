@@ -76,9 +76,9 @@ Firebase/other hosting declared via homepage field: https://marvis.web.app/proje
 ## Documentation links
 
 - https://marvis.web.app
-- https://www.python.org
 - https://marvis.web.app/projects/gemini-agent-automation-toolkit
 - https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**
+- https://www.python.org
 
 ## Development status
 
@@ -94,8 +94,8 @@ Active — last push 2026-11-21
 
 - hamids-ai-automations/agentshield-ai
 - hamids-ai-automations/seo-intelligence-ai
-- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/github-profile-master-record
+- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
 
 ## Known issues and limitations

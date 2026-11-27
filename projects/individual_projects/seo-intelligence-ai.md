@@ -10,7 +10,7 @@
 | Status | active |
 | Creation date | 2026-11-26 |
 | Last update | 2026-11-26 |
-| Last push | 2026-11-26 |
+| Last push | 2026-11-27 |
 | Default branch | main |
 | License | MIT |
 | Primary language | Python |
@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 1 |
-| Size | 0 KB |
+| Size | 3251 KB |
 | Topics | - |
 
 ## Objectives
@@ -32,8 +32,8 @@ No explicit feature list found in the README.
 
 ## Technical architecture
 
-- **Top-level directories:** .github, .streamlit, app_pages, database, docs, modules, scripts, tests, ui
-- **Total files (tracked in default branch):** 55
+- **Top-level directories:** .github, .streamlit, app_pages, assets, database, docs, modules, scripts, tests, ui
+- **Total files (tracked in default branch):** 68
 - **CI workflows:** .github/workflows/ci.yml
 - **Test files detected:** 6
 
@@ -67,7 +67,7 @@ No deployment configuration detected.
 
 ## Development status
 
-Active — last push 2026-11-26
+Active — last push 2026-11-27
 
 ## Associated contributions
 
@@ -78,8 +78,8 @@ Active — last push 2026-11-26
 ## Related projects
 
 - hamids-ai-automations/agentshield-ai
-- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/github-profile-master-record
+- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine
 
@@ -108,6 +108,19 @@ deterministic model, or a measured PageSpeed Insights call.
 The app is designed to be **fully demonstrable with no API keys and no network**: three bundled sample
 sites ship with the repo, and every modelled data source is tagged as modelled instead of pretending to be
 measured.
+
+---
+
+## Status
+
+| | |
+|---|---|
+| **Repository** | [hamids-ai-automations/seo-intelligence-ai](https://github.com/hamids-ai-automations/seo-intelligence-ai) — public, first commit `0cc3aaa` |
+| **CI** | Green — `.github/workflows/ci.yml` runs `ruff check`, `pytest` (95 tests) and a headless render gate over all 13 pages |
+| **Hosted demo** | **Not deployed yet.** Streamlit Community Cloud needs an interactive GitHub OAuth login, which has not been completed. Run it locally: see [Local setup](#local-setup) |
+| **App root** | `/` — the Overview page is the default route, so `/overview` returns 404 by design (see `PROJECT_PROGRESS.md` §5.9) |
+
+Nothing in this repository is a live service; the screenshots below were taken from a local run.
 
 ---
 
@@ -195,24 +208,5 @@ Navigation is declared once in `app.py` with `st.navigation` — 13 pages in 5 g
 
 | Page | Route | What it does |
 |---|---|---|
-| **About Developer** | `/about` | Who built the app and how it is wired: the author and repository/portfolio links, the live rubric (rule count, per-category declared points vs the points actually summed from the rules) and the versions of the packages that are actually installed in the running environment, read at render time. |
-
----
-
-## Scoring model
-
-Weights are declared once in `modules/config.py` (`CATEGORY_WEIGHTS`) and imported by the auditor, the
-scoring engine, the charts and the report generator, so they cannot drift apart.
-
-| Category | Weight | Rules |
-|---|---:|---:|
-| Technical SEO | 25 | 6 |
-| On-page | 25 | 7 |
-| Content | 20 | 6 |
-| Performance | 15 | 4 |
-| Accessibility | 10 | 5 |
-| Crawlability | 5 | 3 |
-| **Total** | **100** | **31** |
-
--
+| **About Developer** 
 ```

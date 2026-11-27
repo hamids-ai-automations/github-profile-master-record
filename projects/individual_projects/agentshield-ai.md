@@ -10,7 +10,7 @@
 | Status | active |
 | Creation date | 2026-11-26 |
 | Last update | 2026-11-26 |
-| Last push | 2026-11-26 |
+| Last push | 2026-11-27 |
 | Default branch | main |
 | License | MIT |
 | Primary language | Python |
@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 1 |
-| Size | 0 KB |
+| Size | 1000 KB |
 | Topics | - |
 
 ## Objectives
@@ -33,7 +33,7 @@ No explicit feature list found in the README.
 ## Technical architecture
 
 - **Top-level directories:** .github, .streamlit, app_pages, assets, database, modules, scripts, tests, ui
-- **Total files (tracked in default branch):** 42
+- **Total files (tracked in default branch):** 48
 - **CI workflows:** .github/workflows/ci.yml
 - **Test files detected:** 6
 
@@ -78,13 +78,12 @@ No deployment configuration detected.
 - https://marvis.web.app
 - https://www.python.org/downloads
 - https://streamlit.io
-- https://agentshield-ai.streamlit.app`
 - http://localhost:8501
 - https://share.streamlit.io
 
 ## Development status
 
-Active — last push 2026-11-26
+Active — last push 2026-11-27
 
 ## Associated contributions
 
@@ -95,8 +94,8 @@ Active — last push 2026-11-26
 ## Related projects
 
 - hamids-ai-automations/seo-intelligence-ai
-- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/github-profile-master-record
+- hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine
 
@@ -135,18 +134,42 @@ inert text and are never executed, and secrets are redacted before they reach th
 
 ---
 
-## Live demo
+## Status
 
 | | |
 |---|---|
-| **Live app** | `https://agentshield-ai.streamlit.app` *(Streamlit Community Cloud)* |
-| **Dashboard** | ![Dashboard](https://raw.githubusercontent.com/hamids-ai-automations/agentshield-ai/main/assets/screenshots/dashboard.png) |
-| **Scanner** | ![Security scanner](https://raw.githubusercontent.com/hamids-ai-automations/agentshield-ai/main/assets/screenshots/scanner.png) |
-| **Prompt analyzer** | ![Prompt analyzer](https://raw.githubusercontent.com/hamids-ai-automations/agentshield-ai/main/assets/screenshots/prompt-analyzer.png) |
-| **Demo GIF** | ![Walkthrough](https://raw.githubusercontent.com/hamids-ai-automations/agentshield-ai/main/assets/screenshots/demo.gif) |
+| **Repository** | [hamids-ai-automations/agentshield-ai](https://github.com/hamids-ai-automations/agentshield-ai) — public, `658ca9b` |
+| **CI** | Green on `52d211a` — `.github/workflows/ci.yml` runs `ruff check`, `pytest` (34 tests with coverage), a headless `AppTest` render pass over all six pages, `pip-audit` and a committed-secrets guard |
+| **Hosted demo** | **Not deployed yet.** Streamlit Community Cloud requires an interactive GitHub OAuth login, which has not been completed — run it locally, see [Getting started](#getting-started) |
+| **Data** | SQLite under `data/` (git-ignored); a fresh clone starts empty, use **Load demo workspace** |
 
-The screenshots above are placeholders in this repository snapshot — run the app locally
-(`streamlit run app.py`) and drop real captures into `assets/screenshots/`.
+Nothing here is a live service. The screenshots below were captured from a local run.
+
+---
+
+## Screenshots
+
+Six full-page captures from the running app (Chromium, viewport 1600×1000, full-page, light theme) against a
+local database holding three saved scans and 22 findings, so charts and KPI strips show real data rather than
+mocks. Files live in `assets/screenshots/`.
+
+**Dashboard** — portfolio posture, severity mix, findings trend, category heat and recent activity.
+![Dashboard](https://raw.githubusercontent.com/hamids-ai-automations/agentshield-ai/main/assets/screenshots/01-dashboard.png)
+
+**Security scanner** — grade, severity filter and per-finding evidence/remediation from a static config scan.
+![Security scanner](https://raw.githubusercontent.com/hamids-ai-automations/agentshield-ai/main/assets/screenshots/02-scanner.png)
+
+**Prompt analyzer** — risk band, matched injection families and a defanged preview safe to paste into a ticket.
+![Prompt analyzer](https://raw.githubusercontent.com/hamids-ai-automations/agentshield-ai/main/assets/screenshots/03-prompts.png)
+
+**Agent monitoring** — KPI strip plus volume/spend, failure-rate, latency and token-mix charts over real telemetry.
+![Agent monitoring](https://raw.githubusercontent.com/hamids-ai-automations/agentshield-ai/main/assets/screenshots/04-monitoring.png)
+
+**AI assistant** — grounded chat; without a key it answers from the offline knowledge base.
+![AI assistant](https://raw.githubusercontent.com/hamids-ai-automations/agentshield-ai/main/assets/screenshots/05-assistant.png)
+
+**Reports** — executive summary, fix-first priorities and PDF/JSON/CSV export.
+![Reports](https://raw.githubusercontent.com/hamids-ai-automations/agentshield-ai/main/assets/screenshots/06-reports.png)
 
 ---
 
@@ -244,28 +267,5 @@ agentshield-ai/
 │   ├── 2_Security_Scanner.py
 │   ├── 3_Prompt_Analyzer.py
 │   ├── 4_Agent_Monitoring.py
-│   ├── 5_AI_Assistant.py
-│   └── 6_Reports.py
-├── modules/                    # framework-free business logic (unit-tested)
-│   ├── scanner.py              # config parsing + rule orchestration
-│   ├── secrets_detector.py     # provider patterns, entropy, masking
-│   ├── permission_analyzer.py  # tool grants, scopes, autonomy checks
-│   ├── prompt_analyzer.py      # 16 injection rule families + sanitizer
-│   ├── risk_engine.py          # posture scoring, grading, prioritisation
-│   ├── report_generator.py     # PDF / JSON / CSV / Markdown builders
-│   ├── assistant.py            # grounded assistant + offline knowledge base
-│   ├── llm.py                  # Gemini / OpenAI bridge (no key persistence)
-│   ├── demo_data.py            # deterministic sample workspace
-│   ├── models.py               # frozen dataclasses shared across layers
-│   └── config.py               # paths, severity taxonomy, weights, colours
-├── database/db.py              # SQLite: scans, findings, prompt analyses, telemetry
-├── ui/                         # components.py (KPI strip, badges, activity feed), theme.py
-├── .streamlit/config.toml      # theme: light/dark palettes, Inter, dense dashboard spacing
-├── tests/                      # pytest: scanner, risk engine, prompts, reports, database
-├── scripts/smoke_core.py       # offline sanity run of the analysis pipeline
-└── .github/workflows/ci.yml    # lint + tests on Python 3.12
-```
-
-**Layering rule:** `app_pages/` render only. All logic lives in `modules/` and is importable
-without Streamlit, which is what makes the te
+│   ├
 ```

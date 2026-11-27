@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 1 |
-| Size | 0 KB |
+| Size | 57 KB |
 | Topics | adtech, google-ads, n-gram, negative-keywords, ppc, python, sem, streamlit |
 
 ## Objectives

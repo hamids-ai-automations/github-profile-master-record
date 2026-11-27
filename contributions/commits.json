@@ -1,10 +1,10 @@
 {
   "window": {
-    "from": "2025-11-26T22:21:25Z",
-    "to": "2026-11-26T22:21:25Z"
+    "from": "2025-11-27T01:46:59Z",
+    "to": "2026-11-27T01:46:59Z"
   },
-  "total_commits": 303,
-  "total_contributions": 573,
+  "total_commits": 308,
+  "total_contributions": 579,
   "by_repository": [
     {
       "repository": "hamids-ai-automations/marvis-portfolio",
@@ -27,13 +27,13 @@
       "commits": 11
     },
     {
-      "repository": "hamids-ai-automations/ai-marketing-growth-os",
-      "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
+      "repository": "hamids-ai-automations/seo-doctor",
+      "url": "https://github.com/hamids-ai-automations/seo-doctor",
       "commits": 10
     },
     {
-      "repository": "hamids-ai-automations/seo-doctor",
-      "url": "https://github.com/hamids-ai-automations/seo-doctor",
+      "repository": "hamids-ai-automations/ppc-performance-dashboard",
+      "url": "https://github.com/hamids-ai-automations/ppc-performance-dashboard",
       "commits": 10
     },
     {
@@ -42,9 +42,14 @@
       "commits": 10
     },
     {
-      "repository": "hamids-ai-automations/ppc-performance-dashboard",
-      "url": "https://github.com/hamids-ai-automations/ppc-performance-dashboard",
+      "repository": "hamids-ai-automations/ai-marketing-growth-os",
+      "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
       "commits": 10
+    },
+    {
+      "repository": "hamids-ai-automations/seo-audit-pro",
+      "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
+      "commits": 9
     },
     {
       "repository": "hamids-ai-automations/ppc-waste-detector",
@@ -62,11 +67,6 @@
       "commits": 9
     },
     {
-      "repository": "hamids-ai-automations/seo-audit-pro",
-      "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
-      "commits": 9
-    },
-    {
       "repository": "hamids-ai-automations/firebase-ai-starter-kit",
       "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
       "commits": 9
@@ -77,13 +77,13 @@
       "commits": 8
     },
     {
-      "repository": "vibgrate/cli",
-      "url": "https://github.com/vibgrate/cli",
+      "repository": "hamids-ai-automations/geo-visibility-lab",
+      "url": "https://github.com/hamids-ai-automations/geo-visibility-lab",
       "commits": 8
     },
     {
-      "repository": "hamids-ai-automations/geo-visibility-lab",
-      "url": "https://github.com/hamids-ai-automations/geo-visibility-lab",
+      "repository": "hamids-ai-automations/meta-lead-quality-analyzer",
+      "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
       "commits": 8
     },
     {
@@ -92,8 +92,8 @@
       "commits": 8
     },
     {
-      "repository": "hamids-ai-automations/meta-lead-quality-analyzer",
-      "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
+      "repository": "vibgrate/cli",
+      "url": "https://github.com/vibgrate/cli",
       "commits": 8
     },
     {
@@ -142,8 +142,8 @@
       "commits": 4
     },
     {
-      "repository": "markline-dev/markline",
-      "url": "https://github.com/markline-dev/markline",
+      "repository": "rdlugs/sentryward",
+      "url": "https://github.com/rdlugs/sentryward",
       "commits": 3
     },
     {
@@ -152,8 +152,13 @@
       "commits": 3
     },
     {
-      "repository": "rdlugs/sentryward",
-      "url": "https://github.com/rdlugs/sentryward",
+      "repository": "markline-dev/markline",
+      "url": "https://github.com/markline-dev/markline",
+      "commits": 3
+    },
+    {
+      "repository": "hamids-ai-automations/agentshield-ai",
+      "url": "https://github.com/hamids-ai-automations/agentshield-ai",
       "commits": 3
     },
     {
@@ -162,18 +167,18 @@
       "commits": 3
     },
     {
-      "repository": "iamvisheshsrivastava/AirKube",
-      "url": "https://github.com/iamvisheshsrivastava/AirKube",
-      "commits": 3
-    },
-    {
       "repository": "hamids-ai-automations/envscope",
       "url": "https://github.com/hamids-ai-automations/envscope",
       "commits": 3
     },
     {
-      "repository": "hamids-ai-automations/conversionbridge",
-      "url": "https://github.com/hamids-ai-automations/conversionbridge",
+      "repository": "iamvisheshsrivastava/AirKube",
+      "url": "https://github.com/iamvisheshsrivastava/AirKube",
+      "commits": 3
+    },
+    {
+      "repository": "hamids-ai-automations/seo-intelligence-ai",
+      "url": "https://github.com/hamids-ai-automations/seo-intelligence-ai",
       "commits": 2
     },
     {
@@ -184,11 +189,6 @@
     {
       "repository": "hamids-ai-automations/ghl-servicepro-theme",
       "url": "https://github.com/hamids-ai-automations/ghl-servicepro-theme",
-      "commits": 2
-    },
-    {
-      "repository": "hamids-ai-automations/ai-marketing-portfolio-meta",
-      "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
       "commits": 2
     },
     {
@@ -207,8 +207,13 @@
       "commits": 2
     },
     {
-      "repository": "doobidoo/mcp-memory-service",
-      "url": "https://github.com/doobidoo/mcp-memory-service",
+      "repository": "hamids-ai-automations/ai-marketing-portfolio-meta",
+      "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
+      "commits": 2
+    },
+    {
+      "repository": "hamids-ai-automations/conversionbridge",
+      "url": "https://github.com/hamids-ai-automations/conversionbridge",
       "commits": 2
     },
     {
@@ -219,11 +224,6 @@
     {
       "repository": "hamids-ai-automations/google-services-mcp",
       "url": "https://github.com/hamids-ai-automations/google-services-mcp",
-      "commits": 2
-    },
-    {
-      "repository": "Opencomplai/opencomplai",
-      "url": "https://github.com/Opencomplai/opencomplai",
       "commits": 2
     },
     {
@@ -242,8 +242,63 @@
       "commits": 2
     },
     {
+      "repository": "doobidoo/mcp-memory-service",
+      "url": "https://github.com/doobidoo/mcp-memory-service",
+      "commits": 2
+    },
+    {
+      "repository": "Opencomplai/opencomplai",
+      "url": "https://github.com/Opencomplai/opencomplai",
+      "commits": 2
+    },
+    {
+      "repository": "hamids-ai-automations/adwaste-intelligence",
+      "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
+      "commits": 1
+    },
+    {
+      "repository": "laaielichter/Gulliver",
+      "url": "https://github.com/laaielichter/Gulliver",
+      "commits": 1
+    },
+    {
+      "repository": "connabyss/bite",
+      "url": "https://github.com/connabyss/bite",
+      "commits": 1
+    },
+    {
+      "repository": "VOLPAROSSA/volparossa-code",
+      "url": "https://github.com/VOLPAROSSA/volparossa-code",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/gemini-agent-reliability-kit",
+      "url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/restock-radar",
+      "url": "https://github.com/hamids-ai-automations/restock-radar",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/dynamic-schema-generator",
+      "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
+      "commits": 1
+    },
+    {
+      "repository": "OpnForm/OpnForm",
+      "url": "https://github.com/OpnForm/OpnForm",
+      "commits": 1
+    },
+    {
       "repository": "hamids-ai-automations/ai-agent-testing-lab",
       "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
+      "commits": 1
+    },
+    {
+      "repository": "adbar/trafilatura",
+      "url": "https://github.com/adbar/trafilatura",
       "commits": 1
     },
     {
@@ -257,63 +312,18 @@
       "commits": 1
     },
     {
-      "repository": "cfgaudit/cfgaudit",
-      "url": "https://github.com/cfgaudit/cfgaudit",
-      "commits": 1
-    },
-    {
       "repository": "supabase/supabase-py",
       "url": "https://github.com/supabase/supabase-py",
       "commits": 1
     },
     {
-      "repository": "OpnForm/OpnForm",
-      "url": "https://github.com/OpnForm/OpnForm",
-      "commits": 1
-    },
-    {
-      "repository": "VOLPAROSSA/volparossa-code",
-      "url": "https://github.com/VOLPAROSSA/volparossa-code",
-      "commits": 1
-    },
-    {
-      "repository": "connabyss/bite",
-      "url": "https://github.com/connabyss/bite",
-      "commits": 1
-    },
-    {
-      "repository": "laaielichter/Gulliver",
-      "url": "https://github.com/laaielichter/Gulliver",
-      "commits": 1
-    },
-    {
-      "repository": "adbar/trafilatura",
-      "url": "https://github.com/adbar/trafilatura",
+      "repository": "cfgaudit/cfgaudit",
+      "url": "https://github.com/cfgaudit/cfgaudit",
       "commits": 1
     },
     {
       "repository": "pygrpc/pygrpc-native",
       "url": "https://github.com/pygrpc/pygrpc-native",
-      "commits": 1
-    },
-    {
-      "repository": "hamids-ai-automations/dynamic-schema-generator",
-      "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
-      "commits": 1
-    },
-    {
-      "repository": "hamids-ai-automations/restock-radar",
-      "url": "https://github.com/hamids-ai-automations/restock-radar",
-      "commits": 1
-    },
-    {
-      "repository": "hamids-ai-automations/gemini-agent-reliability-kit",
-      "url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit",
-      "commits": 1
-    },
-    {
-      "repository": "hamids-ai-automations/agentshield-ai",
-      "url": "https://github.com/hamids-ai-automations/agentshield-ai",
       "commits": 1
     }
   ],
@@ -324,7 +334,7 @@
     },
     {
       "date": "2026-10-12",
-      "count": 84
+      "count": 82
     },
     {
       "date": "2026-10-14",
@@ -465,6 +475,10 @@
     {
       "date": "2026-11-26",
       "count": 17
+    },
+    {
+      "date": "2026-11-27",
+      "count": 8
     }
   ]
 }

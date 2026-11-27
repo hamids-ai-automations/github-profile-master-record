@@ -54,7 +54,7 @@
     "sem",
     "streamlit"
   ],
-  "size_kb": 0,
+  "size_kb": 57,
   "readme": {
     "path": "README.md",
     "html_url": "https://github.com/hamids-ai-automations/adwaste-intelligence/blob/main/README.md",
@@ -115,5 +115,5 @@
   ],
   "documentation_status": "documented",
   "detail_refreshed_at": "2026-11-26T22:21:15+00:00",
-  "detail_source": "api"
+  "detail_source": "cached"
 }

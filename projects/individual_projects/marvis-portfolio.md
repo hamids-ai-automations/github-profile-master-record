@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 2 |
-| Size | 869 KB |
+| Size | 871 KB |
 | Topics | - |
 
 ## Objectives
@@ -46,7 +46,7 @@
 
 | Language | Bytes |
 | --- | --- |
-| TypeScript | 374543 |
+| TypeScript | 374544 |
 | JavaScript | 12549 |
 | CSS | 6369 |
 

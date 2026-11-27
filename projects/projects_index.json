@@ -25,17 +25,6 @@
       "is_fork": false
     },
     {
-      "name": "adwaste-intelligence",
-      "full_name": "hamids-ai-automations/adwaste-intelligence",
-      "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
-      "documentation": "projects/individual_projects/adwaste-intelligence.md",
-      "live_url": "https://adwaste-intelligence.streamlit.app",
-      "language": "Python",
-      "stars": 0,
-      "status": "active",
-      "is_fork": false
-    },
-    {
       "name": "marvis-portfolio",
       "full_name": "hamids-ai-automations/marvis-portfolio",
       "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
@@ -54,6 +43,17 @@
       "live_url": null,
       "language": "Python",
       "stars": 1,
+      "status": "active",
+      "is_fork": false
+    },
+    {
+      "name": "adwaste-intelligence",
+      "full_name": "hamids-ai-automations/adwaste-intelligence",
+      "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
+      "documentation": "projects/individual_projects/adwaste-intelligence.md",
+      "live_url": "https://adwaste-intelligence.streamlit.app",
+      "language": "Python",
+      "stars": 0,
       "status": "active",
       "is_fork": false
     },

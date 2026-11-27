@@ -2,7 +2,7 @@
   "metadata": {
     "schema_version": "1.0.0",
     "username": "hamids-ai-automations",
-    "generated_at": "2026-11-26T22:21:34+00:00",
+    "generated_at": "2026-11-27T01:47:07+00:00",
     "source": "GitHub REST API v3 + GraphQL API v4",
     "generator": "github-profile-master-record/automation/sync.py",
     "canonical": true,
@@ -11,9 +11,9 @@
     "run": {
       "mode": "incremental",
       "trigger": "automatic profile sync",
-      "api_requests": 361,
+      "api_requests": 353,
       "failed_requests": 0,
-      "duration_seconds": 41.5,
+      "duration_seconds": 37.9,
       "failures": [
         "packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {\"message\":\"The package_type parameter is invalid.\",\"documentation_url\":\"https://docs.github.com/rest/packages/packages#list-packages-for-a-user\",\"status\":\"422\"}"
       ]
@@ -65,8 +65,8 @@
       "following": 2,
       "owned_repositories_graphql": 101,
       "starred_repositories": 25,
-      "total_contributions_last_year": 577,
-      "total_commit_contributions": 306,
+      "total_contributions_last_year": 579,
+      "total_commit_contributions": 308,
       "total_issue_contributions": 1,
       "total_pull_request_contributions": 168,
       "total_pull_request_review_contributions": 0,
@@ -176,7 +176,7 @@
         "private_gists": 0,
         "total_private_repos": 2,
         "owned_private_repos": 2,
-        "disk_usage": 33201,
+        "disk_usage": 38001,
         "collaborators": 0,
         "two_factor_authentication": true,
         "plan": {
@@ -302,14 +302,14 @@
           ]
         },
         "contributionsCollection": {
-          "totalCommitContributions": 306,
+          "totalCommitContributions": 308,
           "totalIssueContributions": 1,
           "totalPullRequestContributions": 168,
           "totalPullRequestReviewContributions": 0,
           "totalRepositoriesWithContributedCommits": 64,
           "restrictedContributionsCount": 0,
           "contributionCalendar": {
-            "totalContributions": 577
+            "totalContributions": 579
           }
         }
       }
@@ -354,7 +354,7 @@
     ],
     "achievements_highlights": {},
     "achievements_source": "https://github.com/hamids-ai-automations?tab=achievements",
-    "last_synced": "2026-11-26T22:21:34+00:00"
+    "last_synced": "2026-11-27T01:47:07+00:00"
   },
   "repositories": [
     {
@@ -366,9 +366,9 @@
       "homepage": null,
       "created_at": "2026-11-26T21:57:38Z",
       "updated_at": "2026-11-26T21:58:05Z",
-      "pushed_at": "2026-11-26T22:04:55Z",
+      "pushed_at": "2026-11-27T00:33:12Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-26T22:04:51Z",
+      "last_commit_at": "2026-11-27T00:28:38Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -404,20 +404,20 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 0,
+      "size_kb": 1000,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/agentshield-ai/blob/main/README.md",
         "has_readme": true,
-        "length": 12323,
-        "excerpt": "# AgentShield AI\n\n**AI security scanning & governance console for agentic systems — built with Python and Streamlit.**\n\nAgentShield AI statically analyses AI agent configurations, detects leaked credentials and\nover-permissive tool grants, scores prompt-injection risk, tracks runtime telemetry, and\nproduces audit-ready reports. Every check runs locally: uploaded configurations are parsed as\ninert text and are never executed, and secrets are redacted before they reach the UI or disk.\n\n[![CI](https://github.com/hamids-ai-automations/agentshield-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/agentshield-ai/actions/workflows/ci.yml)\n[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)\n[![Streamlit 1.67](https://img.shields.io/badge/streamlit-1.67-FF4B4B.svg)](https://streamlit.io)\n[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)\n\n---\n\n## Live demo\n\n| | |\n|---|---|\n| **Live app** | `https://agentshield-ai.streamlit.app` *(Streamlit Community Cloud)* |\n| **Dashboard** | ![Dashboard](assets/screenshots/dashboard.png) |\n| **Scanner** | ![Security scanner](assets/screenshots/scanner.png) |\n| **Prompt analyzer** | ![Prompt analyzer](assets/screenshots/prompt-analyzer.png) |\n| **Demo GIF** | ![Walkthrough](assets/screenshots/demo.gif) |\n\nThe screenshots above are placeholders in this repository snapshot — run the app locally\n(`streamlit run app.py`) and drop real captures into `assets/screenshots/`.\n\n---\n\n## Why this project exists\n\nAgentic systems fail differently from traditional apps. The blast radius is defined by three\nthings that are almost never reviewed: **what the agent can call** (tool grants), **what it can\nread** (secrets and scopes), and **what it will obey** (prompt handling). AgentShield AI turns\nthose three questions into a repeatable, scored review that a security team can run before an\nagent reaches production — and re-run after every configuration change.\n\n---\n\n## Features\n\n### 1. Security Scanner (`/scanner`)\n- Accepts agent configurations as **JSON / YAML / TOML / .env / plain text**, via upload, paste,\n  or bundled reference samples.\n- **Static analysis only** — content is parsed with safe loaders; nothing is imported, evaluated\n  or executed. Files above 512 KB are refused.\n- Detects: wildcard tool grants, dangerous tool families (shell, filesystem write, browser,\n  payment), unbounded autonomy/recursion, missing human approval, disabled logging, exposed\n  system prompts, and unguarded PII handling.\n- **Secrets detector** with provider-aware patterns (OpenAI, Anthropic, Google, AWS, GitHub,\n  Slack, Stripe, private keys, JWTs) plus entropy heuristics and `.env`-style assignments.\n  Evidence is truncated and masked (`sk-live…9f2a`), never printed in full.\n- Findings carry severity, category, evidence excerpt, remediation and an OWASP LLM Top 10\n  reference.\n\n### 2. Prompt Analyzer (`/prompts`)\n- Scores a single prompt or a batch of prompts against 16 rule-based injection families:\n  instruction override, role hijack, jailbreak personas, policy-bypass requests, system-prompt\n  extraction, indirect injection (markup/template payloads), shell invocation, credential\n  exfiltration, concealment (\"do not tell the user\"), social pressure, unbounded recursion,\n  leetspeak obfuscation, base64/hex payloads, invisible/bidi characters and oversize prompts.\n- Weighted 0–100 risk score with banding (safe / low / medium / high / critical) and\n  per-signal remediation guidance.\n- Produces a **defanged preview** (zero-width and control characters stripped, truncation) that is\n  safe to paste into a ticket.\n\n### 3. Agent Monitoring (`/monitoring`)\n- Ingests agent run telemetry: model, tokens in/out, latency, cost, status, error type.\n- KPI strip (runs, tokens, spend, error rate) plus Altair charts for volume/spend, failure rate,\n  p95 latency and token mix — all timezone-safe and filtered by window/model/status.\n- Manual ",
+        "length": 14661,
+        "excerpt": "# AgentShield AI\n\n**AI security scanning & governance console for agentic systems — built with Python and Streamlit.**\n\nAgentShield AI statically analyses AI agent configurations, detects leaked credentials and\nover-permissive tool grants, scores prompt-injection risk, tracks runtime telemetry, and\nproduces audit-ready reports. Every check runs locally: uploaded configurations are parsed as\ninert text and are never executed, and secrets are redacted before they reach the UI or disk.\n\n[![CI](https://github.com/hamids-ai-automations/agentshield-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/agentshield-ai/actions/workflows/ci.yml)\n[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)\n[![Streamlit 1.67](https://img.shields.io/badge/streamlit-1.67-FF4B4B.svg)](https://streamlit.io)\n[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)\n\n---\n\n## Status\n\n| | |\n|---|---|\n| **Repository** | [hamids-ai-automations/agentshield-ai](https://github.com/hamids-ai-automations/agentshield-ai) — public, `658ca9b` |\n| **CI** | Green on `52d211a` — `.github/workflows/ci.yml` runs `ruff check`, `pytest` (34 tests with coverage), a headless `AppTest` render pass over all six pages, `pip-audit` and a committed-secrets guard |\n| **Hosted demo** | **Not deployed yet.** Streamlit Community Cloud requires an interactive GitHub OAuth login, which has not been completed — run it locally, see [Getting started](#getting-started) |\n| **Data** | SQLite under `data/` (git-ignored); a fresh clone starts empty, use **Load demo workspace** |\n\nNothing here is a live service. The screenshots below were captured from a local run.\n\n---\n\n## Screenshots\n\nSix full-page captures from the running app (Chromium, viewport 1600×1000, full-page, light theme) against a\nlocal database holding three saved scans and 22 findings, so charts and KPI strips show real data rather than\nmocks. Files live in `assets/screenshots/`.\n\n**Dashboard** — portfolio posture, severity mix, findings trend, category heat and recent activity.\n![Dashboard](assets/screenshots/01-dashboard.png)\n\n**Security scanner** — grade, severity filter and per-finding evidence/remediation from a static config scan.\n![Security scanner](assets/screenshots/02-scanner.png)\n\n**Prompt analyzer** — risk band, matched injection families and a defanged preview safe to paste into a ticket.\n![Prompt analyzer](assets/screenshots/03-prompts.png)\n\n**Agent monitoring** — KPI strip plus volume/spend, failure-rate, latency and token-mix charts over real telemetry.\n![Agent monitoring](assets/screenshots/04-monitoring.png)\n\n**AI assistant** — grounded chat; without a key it answers from the offline knowledge base.\n![AI assistant](assets/screenshots/05-assistant.png)\n\n**Reports** — executive summary, fix-first priorities and PDF/JSON/CSV export.\n![Reports](assets/screenshots/06-reports.png)\n\n---\n\n## Why this project exists\n\nAgentic systems fail differently from traditional apps. The blast radius is defined by three\nthings that are almost never reviewed: **what the agent can call** (tool grants), **what it can\nread** (secrets and scopes), and **what it will obey** (prompt handling). AgentShield AI turns\nthose three questions into a repeatable, scored review that a security team can run before an\nagent reaches production — and re-run after every configuration change.\n\n---\n\n## Features\n\n### 1. Security Scanner (`/scanner`)\n- Accepts agent configurations as **JSON / YAML / TOML / .env / plain text**, via upload, paste,\n  or bundled reference samples.\n- **Static analysis only** — content is parsed with safe loaders; nothing is imported, evaluated\n  or executed. Files above 512 KB are refused.\n- Detects: wildcard tool grants, dangerous tool families (shell, filesystem write, browser,\n  payment), unbounded autonomy/recursion, missing human approval, disabled logging, exposed\n  system prompts, and unguarded PII handling.\n- **Secrets det",
         "full_content_path": null
       },
       "readme_full_content": null,
       "tree": {
         "truncated": false,
-        "total_files": 42,
-        "total_entries": 53,
+        "total_files": 48,
+        "total_entries": 59,
         "top_level_directories": [
           ".github",
           ".streamlit",
@@ -469,13 +469,12 @@
       "external_links": [
         "https://www.python.org/downloads/",
         "https://streamlit.io",
-        "https://agentshield-ai.streamlit.app`",
         "http://localhost:8501",
         "https://share.streamlit.io",
         "https://marvis.web.app"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-26T22:21:15+00:00",
+      "detail_refreshed_at": "2026-11-27T01:46:52+00:00",
       "detail_source": "api"
     },
     {
@@ -487,9 +486,9 @@
       "homepage": null,
       "created_at": "2026-11-26T21:54:26Z",
       "updated_at": "2026-11-26T21:55:30Z",
-      "pushed_at": "2026-11-26T21:55:25Z",
+      "pushed_at": "2026-11-27T00:27:19Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-26T21:51:01Z",
+      "last_commit_at": "2026-11-27T00:18:34Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -525,24 +524,25 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 0,
+      "size_kb": 3251,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/seo-intelligence-ai/blob/main/README.md",
         "has_readme": true,
-        "length": 19408,
-        "excerpt": "# SEO Intelligence AI\n\n> AI-powered website audit & growth intelligence — an offline-first Streamlit workspace by Muhammad Hamid.\n\nSEO Intelligence AI audits a public page against a **31-rule, 100-point SEO rubric**, explains every point\nit deducted, and then carries the same audit into performance, keyword, content, competitor and backlink\nworkflows. Every number the app shows is labelled with its provenance: a real fetch, a bundled sample, a\ndeterministic model, or a measured PageSpeed Insights call.\n\nThe app is designed to be **fully demonstrable with no API keys and no network**: three bundled sample\nsites ship with the repo, and every modelled data source is tagged as modelled instead of pretending to be\nmeasured.\n\n---\n\n## Table of contents\n\n- [What this is (and what it is not)](#what-this-is-and-what-it-is-not)\n- [Feature overview](#feature-overview)\n- [Scoring model](#scoring-model)\n- [Architecture](#architecture)\n- [Local setup](#local-setup)\n- [Running the checks](#running-the-checks)\n- [Optional API keys](#optional-api-keys)\n- [Data, storage and privacy](#data-storage-and-privacy)\n- [Screenshots](#screenshots)\n- [Deployment](#deployment)\n- [Project documentation](#project-documentation)\n- [Tech stack](#tech-stack)\n- [License](#license)\n\n---\n\n## What this is (and what it is not)\n\n**Is**\n\n- A deterministic SEO audit engine: 31 explicit rules across 6 categories, each rule declaring its own point\n  value, severity, recommendation and reference.\n- A multi-page analysis workspace: audit, Core Web Vitals, keyword planning, content analysis, competitor\n  comparison, backlink profiling, an assistant, a report exporter and a settings surface.\n- Offline-first. Sample sites, modelled keyword demand, modelled backlink\n  profiles and an offline assistant playbook all work with no keys and no internet.\n- Local by default. History lives in a single SQLite file; nothing is uploaded anywhere.\n\n**Is not**\n\n- **Not a rank tracker.** No Google Search Console, Google Analytics or Google Ads integration is\n  implemented. No ranking positions, impressions or ad data are read or stored.\n- **Not a crawler.** It audits **one URL per run** (plus `robots.txt` and `/sitemap.xml` probes). There is no\n  site-wide crawl, no sitemap fan-out, no JavaScript rendering.\n- **Not a keyword-volume provider.** Difficulty, volume bands, CPC bands and opportunity scores are computed\n  deterministically from the seed text (`source: modelled`). No third-party keyword API is bundled.\n- **Not a backlink database.** Referring domains, authority score and anchor mixes are deterministic models\n  derived from the domain string. The Backlink page says so on every surface.\n- **Not a hosted service.** It is a Streamlit app you run yourself.\n\n---\n\n## Feature overview\n\nNavigation is declared once in `app.py` with `st.navigation` — 13 pages in 5 groups.\n\n### Audit\n\n| Page | Route | What it does |\n|---|---|---|\n| **Overview** | `/overview` | Score, grade, failed-check and critical counts for the active audit; \"do these three first\" priority queue; audit provenance; score-history line chart; recent audits table; quick-audit form (URL + keyword, or a bundled sample). |\n| **SEO Auditor** | `/auditor` | The rulebook surface: run an audit (live crawl or sample, mobile/desktop strategy, optional PageSpeed), then inspect results as **Cards** (failed checks with fix text), **Table** (all findings), **All rules** (pass/warn/fail/skip per rule) and **Page facts** (final URL, status, HTML size, title, description, H1s, canonical, robots meta, lang, viewport, images, links, word count). Exports JSON/CSV in place. |\n| **Technical SEO Analyzer** | `/technical` | The technical family in isolation: the six technical checks (HTTPS, canonical, robots meta, viewport, structured data, language) worth 25 points, with a technical-weight gauge, earned-vs-available points per check, the crawler's observed signals (final URL, status, HTML size, canonical, robots meta, viewport, lang, JSON-LD and so",
+        "length": 22061,
+        "excerpt": "# SEO Intelligence AI\n\n> AI-powered website audit & growth intelligence — an offline-first Streamlit workspace by Muhammad Hamid.\n\nSEO Intelligence AI audits a public page against a **31-rule, 100-point SEO rubric**, explains every point\nit deducted, and then carries the same audit into performance, keyword, content, competitor and backlink\nworkflows. Every number the app shows is labelled with its provenance: a real fetch, a bundled sample, a\ndeterministic model, or a measured PageSpeed Insights call.\n\nThe app is designed to be **fully demonstrable with no API keys and no network**: three bundled sample\nsites ship with the repo, and every modelled data source is tagged as modelled instead of pretending to be\nmeasured.\n\n---\n\n## Status\n\n| | |\n|---|---|\n| **Repository** | [hamids-ai-automations/seo-intelligence-ai](https://github.com/hamids-ai-automations/seo-intelligence-ai) — public, first commit `0cc3aaa` |\n| **CI** | Green — `.github/workflows/ci.yml` runs `ruff check`, `pytest` (95 tests) and a headless render gate over all 13 pages |\n| **Hosted demo** | **Not deployed yet.** Streamlit Community Cloud needs an interactive GitHub OAuth login, which has not been completed. Run it locally: see [Local setup](#local-setup) |\n| **App root** | `/` — the Overview page is the default route, so `/overview` returns 404 by design (see `PROJECT_PROGRESS.md` §5.9) |\n\nNothing in this repository is a live service; the screenshots below were taken from a local run.\n\n---\n\n## Table of contents\n\n- [What this is (and what it is not)](#what-this-is-and-what-it-is-not)\n- [Feature overview](#feature-overview)\n- [Scoring model](#scoring-model)\n- [Architecture](#architecture)\n- [Local setup](#local-setup)\n- [Running the checks](#running-the-checks)\n- [Optional API keys](#optional-api-keys)\n- [Data, storage and privacy](#data-storage-and-privacy)\n- [Screenshots](#screenshots)\n- [Deployment](#deployment)\n- [Project documentation](#project-documentation)\n- [Tech stack](#tech-stack)\n- [License](#license)\n\n---\n\n## What this is (and what it is not)\n\n**Is**\n\n- A deterministic SEO audit engine: 31 explicit rules across 6 categories, each rule declaring its own point\n  value, severity, recommendation and reference.\n- A multi-page analysis workspace: audit, Core Web Vitals, keyword planning, content analysis, competitor\n  comparison, backlink profiling, an assistant, a report exporter and a settings surface.\n- Offline-first. Sample sites, modelled keyword demand, modelled backlink\n  profiles and an offline assistant playbook all work with no keys and no internet.\n- Local by default. History lives in a single SQLite file; nothing is uploaded anywhere.\n\n**Is not**\n\n- **Not a rank tracker.** No Google Search Console, Google Analytics or Google Ads integration is\n  implemented. No ranking positions, impressions or ad data are read or stored.\n- **Not a crawler.** It audits **one URL per run** (plus `robots.txt` and `/sitemap.xml` probes). There is no\n  site-wide crawl, no sitemap fan-out, no JavaScript rendering.\n- **Not a keyword-volume provider.** Difficulty, volume bands, CPC bands and opportunity scores are computed\n  deterministically from the seed text (`source: modelled`). No third-party keyword API is bundled.\n- **Not a backlink database.** Referring domains, authority score and anchor mixes are deterministic models\n  derived from the domain string. The Backlink page says so on every surface.\n- **Not a hosted service.** It is a Streamlit app you run yourself.\n\n---\n\n## Feature overview\n\nNavigation is declared once in `app.py` with `st.navigation` — 13 pages in 5 groups.\n\n### Audit\n\n| Page | Route | What it does |\n|---|---|---|\n| **Overview** | `/overview` | Score, grade, failed-check and critical counts for the active audit; \"do these three first\" priority queue; audit provenance; score-history line chart; recent audits table; quick-audit form (URL + keyword, or a bundled sample). |\n| **SEO Auditor** | `/auditor` | The rulebook surface: run an audit (live c",
         "full_content_path": null
       },
       "readme_full_content": null,
       "tree": {
         "truncated": false,
-        "total_files": 55,
-        "total_entries": 65,
+        "total_files": 68,
+        "total_entries": 80,
         "top_level_directories": [
           ".github",
           ".streamlit",
           "app_pages",
+          "assets",
           "database",
           "docs",
           "modules",
@@ -593,127 +593,7 @@
         "http://localhost:8501"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-26T22:21:15+00:00",
-      "detail_source": "api"
-    },
-    {
-      "id": "R_kgDOV9bh8w",
-      "name": "adwaste-intelligence",
-      "full_name": "hamids-ai-automations/adwaste-intelligence",
-      "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
-      "description": "Google Ads Waste Detector — N-Gram Audit Engine: 1-4 gram search-term waste analysis, converting-query conflict guard, and Excel/Ads Editor exports.",
-      "homepage": "https://adwaste-intelligence.streamlit.app",
-      "created_at": "2026-11-26T21:43:14Z",
-      "updated_at": "2026-11-26T21:46:50Z",
-      "pushed_at": "2026-11-26T21:43:26Z",
-      "default_branch": "main",
-      "last_commit_at": "2026-11-26T21:43:10Z",
-      "visibility": "public",
-      "is_private": false,
-      "archived": false,
-      "fork": false,
-      "disabled": false,
-      "is_template": false,
-      "in_organization": false,
-      "license": "MIT",
-      "license_name": "MIT License",
-      "language": "Python",
-      "languages": {
-        "Python": 146481
-      },
-      "language_total_size": 146481,
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "closed_issues": 0,
-      "open_pull_requests": 0,
-      "merged_pull_requests": 0,
-      "closed_pull_requests": 0,
-      "releases_count": 0,
-      "releases": [],
-      "tags_count": 0,
-      "branches_count": 1,
-      "discussions_count": 0,
-      "deployments_count": 0,
-      "environments_count": 0,
-      "packages_count": 0,
-      "has_issues": true,
-      "has_wiki": true,
-      "has_projects": true,
-      "has_discussions": false,
-      "topics": [
-        "adtech",
-        "google-ads",
-        "n-gram",
-        "negative-keywords",
-        "ppc",
-        "python",
-        "sem",
-        "streamlit"
-      ],
-      "size_kb": 0,
-      "readme": {
-        "path": "README.md",
-        "html_url": "https://github.com/hamids-ai-automations/adwaste-intelligence/blob/main/README.md",
-        "has_readme": true,
-        "length": 7214,
-        "excerpt": "# AdWaste Intelligence\n\n**Google Ads Waste Detector — N-Gram Audit Engine**\n\n[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-059669?logo=python&logoColor=white)](https://www.python.org/)\n[![Streamlit](https://img.shields.io/badge/streamlit-app-FF4B4B?logo=streamlit&logoColor=white)](https://adwaste-intelligence.streamlit.app)\n[![Tests](https://img.shields.io/badge/pytest-passing-059669)](#testing)\n[![License: MIT](https://img.shields.io/badge/license-MIT-0F172A)](LICENSE)\n\n> Companion web app to the **Google Ads Waste Detector** Chrome extension.\n> Upload a Search Terms report (or load the demo account), get a full 1–4 gram\n> waste audit, build conflict-safe negative keyword lists, and export\n> client-ready Excel audit reports — in under 60 seconds.\n>\n> **Privacy-first: 100% in-memory processing. Client CSV data is never saved or logged.**\n\n---\n\n## What it does\n\n| | Feature | Why it matters |\n|---|---|---|\n| 1 | **Bulletproof Google Ads ingestion** | Handles 2-row metadata headers, `Total:` rows, UTF-16, tab delimiters, `$` / `AED` / `PKR` / `€` currencies, `--` and `< 10%` placeholders, and variant column names. Falls back to a manual column-mapping UI when a required column is missing. |\n| 2 | **One-click demo account** | 1,500 realistic search terms (~$30k spend, deliberate waste clusters) so visitors experience full value in 2 seconds — no CSV needed. |\n| 3 | **Vectorized 1–4 gram engine** | Cost / clicks / conversions / CPA / ROAS per n-gram with **zero double-counting** inside a single query. 50,000-row stress test analyzes in seconds. |\n| 4 | **Configurable waste rules** | Target CPA (auto-initialized to account average), CPA bleeder multiplier, zero-conversion spend threshold, min-clicks gating, brand-term whitelist, bundled stopword handling, and 4 preset negative-intent dictionaries (Job Seekers, Free/Cheap/Piracy, DIY/Academic, Support). |\n| 5 | **Executive dashboard** | 5 KPI cards (total spend, flagged waste $ and %, projected annualized savings, wasted terms, wasted n-grams), spend-allocation donut, top-15 wasted n-grams bar, campaign-level waste breakdown. |\n| 6 | **N-gram explorer with drill-down** | Filter by campaign / match type / flagged-only / min spend / text search, check rows into a staging list, and inspect every raw search term behind any n-gram. |\n| 7 | **Conflict guard (the differentiator)** | Cross-checks every staged negative (Exact / Phrase / Broad semantics) against all **converting** search terms, shows the conversions + revenue you would block, and removes conflicts with one click. |\n| 8 | **3 export channels** | Copy-paste block for Google Ads UI, Google Ads Editor CSV (`Campaign, Ad group, Keyword, Criterion Type`), and a branded multi-tab Excel client audit report. |\n| 9 | **Optional AI intent audit (BYOK)** | Paste a Gemini API key (or set `GEMINI_API_KEY` in secrets) to classify your top 100 non-converting terms into High Commercial Intent / Informational / Competitor / Job / Irrelevant. The app is fully functional without it. |\n\n## Screenshots\n\n> TODO after first deploy: add a 20-second screen-recording GIF of\n> *upload CSV → flagged n-grams → conflict checker → export* at the top of\n> this README (see the launch checklist in `SPEC.md`).\n\n## Quickstart (local)\n\n```bash\ngit clone https://github.com/hamids-ai-automations/adwaste-intelligence.git\ncd adwaste-intelligence\n\npython -m venv .venv\nsource .venv/bin/activate        # Windows: .venv\\Scripts\\activate\npip install -r requirements.txt\n\nstreamlit run app.py\n```\n\nThen click **Load Demo Account (1,500 Search Terms)** — no report needed.\n\n### Testing\n\n```bash\npip install pytest\npython -m pytest tests/ -v\n```\n\nThe suite covers messy Google Ads CSVs (metadata rows, totals, UTF-16,\ncurrencies, placeholders), n-gram math (dedup, stopwords, roll-ups), waste\nrules (bleeders, high CPA, presets, brand whitelist), the conflict guard's\nmatch-type semantics, all three export formats, and a 50,000-row performance\nguard.\n\n## Deploy on Strea",
-        "full_content_path": null
-      },
-      "readme_full_content": null,
-      "tree": {
-        "truncated": false,
-        "total_files": 20,
-        "total_entries": 25,
-        "top_level_directories": [
-          ".github",
-          ".streamlit",
-          "src",
-          "tests"
-        ],
-        "important_files": [
-          "app.py",
-          "requirements.txt"
-        ],
-        "workflow_files": [
-          ".github/workflows/tests.yml"
-        ],
-        "test_files_count": 6,
-        "ci_enabled": true
-      },
-      "contributors": {
-        "count": 1,
-        "anonymous_included": false
-      },
-      "technology": {
-        "frameworks": [
-          "NumPy",
-          "Streamlit",
-          "pandas",
-          "pytest"
-        ],
-        "dependencies": [
-          "google-genai",
-          "numpy",
-          "openpyxl",
-          "pandas",
-          "plotly",
-          "streamlit"
-        ],
-        "config_files": [
-          "requirements.txt"
-        ]
-      },
-      "external_links": [
-        "https://www.python.org/",
-        "https://adwaste-intelligence.streamlit.app",
-        "https://share.streamlit.io",
-        "https://",
-        "https://wa.me/923167417135"
-      ],
-      "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-26T22:21:15+00:00",
+      "detail_refreshed_at": "2026-11-27T01:46:52+00:00",
       "detail_source": "api"
     },
     {
@@ -725,9 +605,9 @@
       "homepage": null,
       "created_at": "2026-11-25T01:04:26Z",
       "updated_at": "2026-11-26T14:57:57Z",
-      "pushed_at": "2026-11-26T15:10:02Z",
+      "pushed_at": "2026-11-26T22:21:51Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-26T15:10:01Z",
+      "last_commit_at": "2026-11-26T22:21:50Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -739,11 +619,11 @@
       "license_name": null,
       "language": "TypeScript",
       "languages": {
-        "TypeScript": 374543,
+        "TypeScript": 374544,
         "JavaScript": 12549,
         "CSS": 6369
       },
-      "language_total_size": 393461,
+      "language_total_size": 393462,
       "stars": 1,
       "forks": 0,
       "watchers": 0,
@@ -757,7 +637,7 @@
       "tags_count": 0,
       "branches_count": 1,
       "discussions_count": 0,
-      "deployments_count": 19,
+      "deployments_count": 20,
       "environments_count": 1,
       "packages_count": 0,
       "has_issues": true,
@@ -765,7 +645,7 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 869,
+      "size_kb": 871,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/marvis-portfolio/blob/main/README.md",
@@ -851,7 +731,7 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-26T22:21:16+00:00",
+      "detail_refreshed_at": "2026-11-27T01:46:52+00:00",
       "detail_source": "api"
     },
     {
@@ -863,9 +743,9 @@
       "homepage": null,
       "created_at": "2026-11-23T05:13:38Z",
       "updated_at": "2026-11-26T14:57:56Z",
-      "pushed_at": "2026-11-26T14:41:40Z",
+      "pushed_at": "2026-11-26T22:21:36Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-26T14:41:27Z",
+      "last_commit_at": "2026-11-26T22:21:35Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -901,20 +781,20 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 4223,
+      "size_kb": 4713,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/README.md",
         "has_readme": true,
-        "length": 9832,
-        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-26T12:30:59+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 39 / 59 |\n| Projects documented | 98 |\n| Public gists | 0 |\n| Live websites | 62 |\n| Releases tracked | 7 |\n| External links | 792 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 300 |\n| Total contributions (last 12 months) | 570 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.72%), TypeScript (17.06%), JavaScript (3.44%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.67%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/hamids-ai-automations/pinvault-pinterest-downloader) | PinVault — Pinterest image & video downloader: privacy-first Manifest V3 Chrome extension with bulk queue, dedupe and CSV/JSON export | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |\n| [seo-audit-tool](https://g",
+        "length": 10206,
+        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-26T22:21:34+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 42 / 59 |\n| Projects documented | 101 |\n| Public gists | 0 |\n| Live websites | 64 |\n| Releases tracked | 7 |\n| External links | 797 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 303 |\n| Total contributions (last 12 months) | 573 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | TypeScript | 1 | 0 | active | 2026-11-26 |\n| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 1 | 0 | active | 2026-11-26 |\n| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/",
         "full_content_path": null
       },
       "readme_full_content": null,
       "tree": {
         "truncated": false,
-        "total_files": 388,
-        "total_entries": 407,
+        "total_files": 398,
+        "total_entries": 417,
         "top_level_directories": [
           ".github",
           "achievements",
@@ -948,8 +828,9 @@
         "config_files": []
       },
       "external_links": [
-        "https://hamid-resume.web.app/",
         "https://marvis.web.app",
+        "https://agentshield-ai.streamlit.app`",
+        "https://adwaste-intelligence.streamlit.app",
         "https://hamid-resume.web.app",
         "https://marvis.web.app**",
         "https://marvis.web.app/projects/leadflow-sentinel",
@@ -962,13 +843,132 @@
         "https://gke-labs.github.io/k8s-ai-bench",
         "https://airkube-dashboard-a4410b460d07.herokuapp.com",
         "https://google.github.io/sbsim",
-        "https://gitwyd.github.io/sbsim_documentation",
         "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
         "https://docs.github.com/rest/packages/packages#list-packages-for-a-user"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-26T22:21:15+00:00",
+      "detail_refreshed_at": "2026-11-27T01:46:52+00:00",
       "detail_source": "api"
+    },
+    {
+      "id": "R_kgDOV9bh8w",
+      "name": "adwaste-intelligence",
+      "full_name": "hamids-ai-automations/adwaste-intelligence",
+      "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
+      "description": "Google Ads Waste Detector — N-Gram Audit Engine: 1-4 gram search-term waste analysis, converting-query conflict guard, and Excel/Ads Editor exports.",
+      "homepage": "https://adwaste-intelligence.streamlit.app",
+      "created_at": "2026-11-26T21:43:14Z",
+      "updated_at": "2026-11-26T21:46:50Z",
+      "pushed_at": "2026-11-26T21:43:26Z",
+      "default_branch": "main",
+      "last_commit_at": "2026-11-26T21:43:10Z",
+      "visibility": "public",
+      "is_private": false,
+      "archived": false,
+      "fork": false,
+      "disabled": false,
+      "is_template": false,
+      "in_organization": false,
+      "license": "MIT",
+      "license_name": "MIT License",
+      "language": "Python",
+      "languages": {
+        "Python": 146481
+      },
+      "language_total_size": 146481,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "closed_issues": 0,
+      "open_pull_requests": 0,
+      "merged_pull_requests": 0,
+      "closed_pull_requests": 0,
+      "releases_count": 0,
+      "releases": [],
+      "tags_count": 0,
+      "branches_count": 1,
+      "discussions_count": 0,
+      "deployments_count": 0,
+      "environments_count": 0,
+      "packages_count": 0,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_projects": true,
+      "has_discussions": false,
+      "topics": [
+        "adtech",
+        "google-ads",
+        "n-gram",
+        "negative-keywords",
+        "ppc",
+        "python",
+        "sem",
+        "streamlit"
+      ],
+      "size_kb": 57,
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/hamids-ai-automations/adwaste-intelligence/blob/main/README.md",
+        "has_readme": true,
+        "length": 7214,
+        "excerpt": "# AdWaste Intelligence\n\n**Google Ads Waste Detector — N-Gram Audit Engine**\n\n[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-059669?logo=python&logoColor=white)](https://www.python.org/)\n[![Streamlit](https://img.shields.io/badge/streamlit-app-FF4B4B?logo=streamlit&logoColor=white)](https://adwaste-intelligence.streamlit.app)\n[![Tests](https://img.shields.io/badge/pytest-passing-059669)](#testing)\n[![License: MIT](https://img.shields.io/badge/license-MIT-0F172A)](LICENSE)\n\n> Companion web app to the **Google Ads Waste Detector** Chrome extension.\n> Upload a Search Terms report (or load the demo account), get a full 1–4 gram\n> waste audit, build conflict-safe negative keyword lists, and export\n> client-ready Excel audit reports — in under 60 seconds.\n>\n> **Privacy-first: 100% in-memory processing. Client CSV data is never saved or logged.**\n\n---\n\n## What it does\n\n| | Feature | Why it matters |\n|---|---|---|\n| 1 | **Bulletproof Google Ads ingestion** | Handles 2-row metadata headers, `Total:` rows, UTF-16, tab delimiters, `$` / `AED` / `PKR` / `€` currencies, `--` and `< 10%` placeholders, and variant column names. Falls back to a manual column-mapping UI when a required column is missing. |\n| 2 | **One-click demo account** | 1,500 realistic search terms (~$30k spend, deliberate waste clusters) so visitors experience full value in 2 seconds — no CSV needed. |\n| 3 | **Vectorized 1–4 gram engine** | Cost / clicks / conversions / CPA / ROAS per n-gram with **zero double-counting** inside a single query. 50,000-row stress test analyzes in seconds. |\n| 4 | **Configurable waste rules** | Target CPA (auto-initialized to account average), CPA bleeder multiplier, zero-conversion spend threshold, min-clicks gating, brand-term whitelist, bundled stopword handling, and 4 preset negative-intent dictionaries (Job Seekers, Free/Cheap/Piracy, DIY/Academic, Support). |\n| 5 | **Executive dashboard** | 5 KPI cards (total spend, flagged waste $ and %, projected annualized savings, wasted terms, wasted n-grams), spend-allocation donut, top-15 wasted n-grams bar, campaign-level waste breakdown. |\n| 6 | **N-gram explorer with drill-down** | Filter by campaign / match type / flagged-only / min spend / text search, check rows into a staging list, and inspect every raw search term behind any n-gram. |\n| 7 | **Conflict guard (the differentiator)** | Cross-checks every staged negative (Exact / Phrase / Broad semantics) against all **converting** search terms, shows the conversions + revenue you would block, and removes conflicts with one click. |\n| 8 | **3 export channels** | Copy-paste block for Google Ads UI, Google Ads Editor CSV (`Campaign, Ad group, Keyword, Criterion Type`), and a branded multi-tab Excel client audit report. |\n| 9 | **Optional AI intent audit (BYOK)** | Paste a Gemini API key (or set `GEMINI_API_KEY` in secrets) to classify your top 100 non-converting terms into High Commercial Intent / Informational / Competitor / Job / Irrelevant. The app is fully functional without it. |\n\n## Screenshots\n\n> TODO after first deploy: add a 20-second screen-recording GIF of\n> *upload CSV → flagged n-grams → conflict checker → export* at the top of\n> this README (see the launch checklist in `SPEC.md`).\n\n## Quickstart (local)\n\n```bash\ngit clone https://github.com/hamids-ai-automations/adwaste-intelligence.git\ncd adwaste-intelligence\n\npython -m venv .venv\nsource .venv/bin/activate        # Windows: .venv\\Scripts\\activate\npip install -r requirements.txt\n\nstreamlit run app.py\n```\n\nThen click **Load Demo Account (1,500 Search Terms)** — no report needed.\n\n### Testing\n\n```bash\npip install pytest\npython -m pytest tests/ -v\n```\n\nThe suite covers messy Google Ads CSVs (metadata rows, totals, UTF-16,\ncurrencies, placeholders), n-gram math (dedup, stopwords, roll-ups), waste\nrules (bleeders, high CPA, presets, brand whitelist), the conflict guard's\nmatch-type semantics, all three export formats, and a 50,000-row performance\nguard.\n\n## Deploy on Strea",
+        "full_content_path": null
+      },
+      "readme_full_content": null,
+      "tree": {
+        "truncated": false,
+        "total_files": 20,
+        "total_entries": 25,
+        "top_level_directories": [
+          ".github",
+          ".streamlit",
+          "src",
+          "tests"
+        ],
+        "important_files": [
+          "app.py",
+          "requirements.txt"
+        ],
+        "workflow_files": [
+          ".github/workflows/tests.yml"
+        ],
+        "test_files_count": 6,
+        "ci_enabled": true
+      },
+      "contributors": {
+        "count": 1,
+        "anonymous_included": false
+      },
+      "technology": {
+        "frameworks": [
+          "NumPy",
+          "Streamlit",
+          "pandas",
+          "pytest"
+        ],
+        "dependencies": [
+          "google-genai",
+          "numpy",
+          "openpyxl",
+          "pandas",
+          "plotly",
+          "streamlit"
+        ],
+        "config_files": [
+          "requirements.txt"
+        ]
+      },
+      "external_links": [
+        "https://www.python.org/",
+        "https://adwaste-intelligence.streamlit.app",
+        "https://share.streamlit.io",
+        "https://",
+        "https://wa.me/923167417135"
+      ],
+      "documentation_status": "documented",
+      "detail_refreshed_at": "2026-11-26T22:21:15+00:00",
+      "detail_source": "cached"
     },
     {
       "id": "R_kgDOV7aKCg",
@@ -13943,13 +13943,6 @@
       "status": "active"
     },
     {
-      "name": "adwaste-intelligence",
-      "full_name": "hamids-ai-automations/adwaste-intelligence",
-      "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
-      "documentation": null,
-      "status": "active"
-    },
-    {
       "name": "marvis-portfolio",
       "full_name": "hamids-ai-automations/marvis-portfolio",
       "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
@@ -13960,6 +13953,13 @@
       "name": "github-profile-master-record",
       "full_name": "hamids-ai-automations/github-profile-master-record",
       "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "documentation": null,
+      "status": "active"
+    },
+    {
+      "name": "adwaste-intelligence",
+      "full_name": "hamids-ai-automations/adwaste-intelligence",
+      "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
       "documentation": null,
       "status": "active"
     },
@@ -17353,8 +17353,8 @@
     "reviews_last_year": 0,
     "discussions_authored": 0,
     "discussion_comments": 0,
-    "commits_last_year": 303,
-    "contributions_last_year": 573
+    "commits_last_year": 308,
+    "contributions_last_year": 579
   },
   "reviews": {
     "total": 0,
@@ -17370,11 +17370,11 @@
   },
   "commits": {
     "window": {
-      "from": "2025-11-26T22:21:25Z",
-      "to": "2026-11-26T22:21:25Z"
+      "from": "2025-11-27T01:46:59Z",
+      "to": "2026-11-27T01:46:59Z"
     },
-    "total_commits": 303,
-    "total_contributions": 573,
+    "total_commits": 308,
+    "total_contributions": 579,
     "by_repository": [
       {
         "repository": "hamids-ai-automations/marvis-portfolio",
@@ -17397,13 +17397,13 @@
         "commits": 11
       },
       {
-        "repository": "hamids-ai-automations/ai-marketing-growth-os",
-        "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
+        "repository": "hamids-ai-automations/seo-doctor",
+        "url": "https://github.com/hamids-ai-automations/seo-doctor",
         "commits": 10
       },
       {
-        "repository": "hamids-ai-automations/seo-doctor",
-        "url": "https://github.com/hamids-ai-automations/seo-doctor",
+        "repository": "hamids-ai-automations/ppc-performance-dashboard",
+        "url": "https://github.com/hamids-ai-automations/ppc-performance-dashboard",
         "commits": 10
       },
       {
@@ -17412,9 +17412,14 @@
         "commits": 10
       },
       {
-        "repository": "hamids-ai-automations/ppc-performance-dashboard",
-        "url": "https://github.com/hamids-ai-automations/ppc-performance-dashboard",
+        "repository": "hamids-ai-automations/ai-marketing-growth-os",
+        "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
         "commits": 10
+      },
+      {
+        "repository": "hamids-ai-automations/seo-audit-pro",
+        "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
+        "commits": 9
       },
       {
         "repository": "hamids-ai-automations/ppc-waste-detector",
@@ -17432,11 +17437,6 @@
         "commits": 9
       },
       {
-        "repository": "hamids-ai-automations/seo-audit-pro",
-        "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
-        "commits": 9
-      },
-      {
         "repository": "hamids-ai-automations/firebase-ai-starter-kit",
         "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
         "commits": 9
@@ -17447,13 +17447,13 @@
         "commits": 8
       },
       {
-        "repository": "vibgrate/cli",
-        "url": "https://github.com/vibgrate/cli",
+        "repository": "hamids-ai-automations/geo-visibility-lab",
+        "url": "https://github.com/hamids-ai-automations/geo-visibility-lab",
         "commits": 8
       },
       {
-        "repository": "hamids-ai-automations/geo-visibility-lab",
-        "url": "https://github.com/hamids-ai-automations/geo-visibility-lab",
+        "repository": "hamids-ai-automations/meta-lead-quality-analyzer",
+        "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
         "commits": 8
       },
       {
@@ -17462,8 +17462,8 @@
         "commits": 8
       },
       {
-        "repository": "hamids-ai-automations/meta-lead-quality-analyzer",
-        "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
+        "repository": "vibgrate/cli",
+        "url": "https://github.com/vibgrate/cli",
         "commits": 8
       },
       {
@@ -17512,8 +17512,8 @@
         "commits": 4
       },
       {
-        "repository": "markline-dev/markline",
-        "url": "https://github.com/markline-dev/markline",
+        "repository": "rdlugs/sentryward",
+        "url": "https://github.com/rdlugs/sentryward",
         "commits": 3
       },
       {
@@ -17522,8 +17522,13 @@
         "commits": 3
       },
       {
-        "repository": "rdlugs/sentryward",
-        "url": "https://github.com/rdlugs/sentryward",
+        "repository": "markline-dev/markline",
+        "url": "https://github.com/markline-dev/markline",
+        "commits": 3
+      },
+      {
+        "repository": "hamids-ai-automations/agentshield-ai",
+        "url": "https://github.com/hamids-ai-automations/agentshield-ai",
         "commits": 3
       },
       {
@@ -17532,18 +17537,18 @@
         "commits": 3
       },
       {
-        "repository": "iamvisheshsrivastava/AirKube",
-        "url": "https://github.com/iamvisheshsrivastava/AirKube",
-        "commits": 3
-      },
-      {
         "repository": "hamids-ai-automations/envscope",
         "url": "https://github.com/hamids-ai-automations/envscope",
         "commits": 3
       },
       {
-        "repository": "hamids-ai-automations/conversionbridge",
-        "url": "https://github.com/hamids-ai-automations/conversionbridge",
+        "repository": "iamvisheshsrivastava/AirKube",
+        "url": "https://github.com/iamvisheshsrivastava/AirKube",
+        "commits": 3
+      },
+      {
+        "repository": "hamids-ai-automations/seo-intelligence-ai",
+        "url": "https://github.com/hamids-ai-automations/seo-intelligence-ai",
         "commits": 2
       },
       {
@@ -17554,11 +17559,6 @@
       {
         "repository": "hamids-ai-automations/ghl-servicepro-theme",
         "url": "https://github.com/hamids-ai-automations/ghl-servicepro-theme",
-        "commits": 2
-      },
-      {
-        "repository": "hamids-ai-automations/ai-marketing-portfolio-meta",
-        "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
         "commits": 2
       },
       {
@@ -17577,8 +17577,13 @@
         "commits": 2
       },
       {
-        "repository": "doobidoo/mcp-memory-service",
-        "url": "https://github.com/doobidoo/mcp-memory-service",
+        "repository": "hamids-ai-automations/ai-marketing-portfolio-meta",
+        "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
+        "commits": 2
+      },
+      {
+        "repository": "hamids-ai-automations/conversionbridge",
+        "url": "https://github.com/hamids-ai-automations/conversionbridge",
         "commits": 2
       },
       {
@@ -17589,11 +17594,6 @@
       {
         "repository": "hamids-ai-automations/google-services-mcp",
         "url": "https://github.com/hamids-ai-automations/google-services-mcp",
-        "commits": 2
-      },
-      {
-        "repository": "Opencomplai/opencomplai",
-        "url": "https://github.com/Opencomplai/opencomplai",
         "commits": 2
       },
       {
@@ -17612,8 +17612,63 @@
         "commits": 2
       },
       {
+        "repository": "doobidoo/mcp-memory-service",
+        "url": "https://github.com/doobidoo/mcp-memory-service",
+        "commits": 2
+      },
+      {
+        "repository": "Opencomplai/opencomplai",
+        "url": "https://github.com/Opencomplai/opencomplai",
+        "commits": 2
+      },
+      {
+        "repository": "hamids-ai-automations/adwaste-intelligence",
+        "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
+        "commits": 1
+      },
+      {
+        "repository": "laaielichter/Gulliver",
+        "url": "https://github.com/laaielichter/Gulliver",
+        "commits": 1
+      },
+      {
+        "repository": "connabyss/bite",
+        "url": "https://github.com/connabyss/bite",
+        "commits": 1
+      },
+      {
+        "repository": "VOLPAROSSA/volparossa-code",
+        "url": "https://github.com/VOLPAROSSA/volparossa-code",
+        "commits": 1
+      },
+      {
+        "repository": "hamids-ai-automations/gemini-agent-reliability-kit",
+        "url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit",
+        "commits": 1
+      },
+      {
+        "repository": "hamids-ai-automations/restock-radar",
+        "url": "https://github.com/hamids-ai-automations/restock-radar",
+        "commits": 1
+      },
+      {
+        "repository": "hamids-ai-automations/dynamic-schema-generator",
+        "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
+        "commits": 1
+      },
+      {
+        "repository": "OpnForm/OpnForm",
+        "url": "https://github.com/OpnForm/OpnForm",
+        "commits": 1
+      },
+      {
         "repository": "hamids-ai-automations/ai-agent-testing-lab",
         "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
+        "commits": 1
+      },
+      {
+        "repository": "adbar/trafilatura",
+        "url": "https://github.com/adbar/trafilatura",
         "commits": 1
       },
       {
@@ -17627,63 +17682,18 @@
         "commits": 1
       },
       {
-        "repository": "cfgaudit/cfgaudit",
-        "url": "https://github.com/cfgaudit/cfgaudit",
-        "commits": 1
-      },
-      {
         "repository": "supabase/supabase-py",
         "url": "https://github.com/supabase/supabase-py",
         "commits": 1
       },
       {
-        "repository": "OpnForm/OpnForm",
-        "url": "https://github.com/OpnForm/OpnForm",
-        "commits": 1
-      },
-      {
-        "repository": "VOLPAROSSA/volparossa-code",
-        "url": "https://github.com/VOLPAROSSA/volparossa-code",
-        "commits": 1
-      },
-      {
-        "repository": "connabyss/bite",
-        "url": "https://github.com/connabyss/bite",
-        "commits": 1
-      },
-      {
-        "repository": "laaielichter/Gulliver",
-        "url": "https://github.com/laaielichter/Gulliver",
-        "commits": 1
-      },
-      {
-        "repository": "adbar/trafilatura",
-        "url": "https://github.com/adbar/trafilatura",
+        "repository": "cfgaudit/cfgaudit",
+        "url": "https://github.com/cfgaudit/cfgaudit",
         "commits": 1
       },
       {
         "repository": "pygrpc/pygrpc-native",
         "url": "https://github.com/pygrpc/pygrpc-native",
-        "commits": 1
-      },
-      {
-        "repository": "hamids-ai-automations/dynamic-schema-generator",
-        "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
-        "commits": 1
-      },
-      {
-        "repository": "hamids-ai-automations/restock-radar",
-        "url": "https://github.com/hamids-ai-automations/restock-radar",
-        "commits": 1
-      },
-      {
-        "repository": "hamids-ai-automations/gemini-agent-reliability-kit",
-        "url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit",
-        "commits": 1
-      },
-      {
-        "repository": "hamids-ai-automations/agentshield-ai",
-        "url": "https://github.com/hamids-ai-automations/agentshield-ai",
         "commits": 1
       }
     ],
@@ -17694,7 +17704,7 @@
       },
       {
         "date": "2026-10-12",
-        "count": 84
+        "count": 82
       },
       {
         "date": "2026-10-14",
@@ -17835,6 +17845,10 @@
       {
         "date": "2026-11-26",
         "count": 17
+      },
+      {
+        "date": "2026-11-27",
+        "count": 8
       }
     ]
   },
@@ -17953,9 +17967,9 @@
         "owned_by_profile": false
       },
       {
-        "full_name": "hamids-ai-automations/ai-marketing-growth-os",
-        "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
-        "description": "Autonomous agentic marketing intelligence platform with human-in-the-loop governance and outcome tracking for multi-channel growth.",
+        "full_name": "hamids-ai-automations/seo-doctor",
+        "url": "https://github.com/hamids-ai-automations/seo-doctor",
+        "description": "Open-source technical SEO crawler: broken links, canonical validation, crawl comparison and SEO health scoring. Python CLI.",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 1,
@@ -17967,9 +17981,9 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/seo-doctor",
-        "url": "https://github.com/hamids-ai-automations/seo-doctor",
-        "description": "Open-source technical SEO crawler: broken links, canonical validation, crawl comparison and SEO health scoring. Python CLI.",
+        "full_name": "hamids-ai-automations/ppc-performance-dashboard",
+        "url": "https://github.com/hamids-ai-automations/ppc-performance-dashboard",
+        "description": "Interactive PPC performance dashboard: normalize and visualize multi-channel ad spend, ROAS, CPA, conversion trends, and period-over-period comparisons.",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 1,
@@ -17995,14 +18009,28 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/ppc-performance-dashboard",
-        "url": "https://github.com/hamids-ai-automations/ppc-performance-dashboard",
-        "description": "Interactive PPC performance dashboard: normalize and visualize multi-channel ad spend, ROAS, CPA, conversion trends, and period-over-period comparisons.",
+        "full_name": "hamids-ai-automations/ai-marketing-growth-os",
+        "url": "https://github.com/hamids-ai-automations/ai-marketing-growth-os",
+        "description": "Autonomous agentic marketing intelligence platform with human-in-the-loop governance and outcome tracking for multi-channel growth.",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 1,
         "language": "Python",
         "commits": 10,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
+        "full_name": "hamids-ai-automations/seo-audit-pro",
+        "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
+        "description": "Client-side SEO audit tool: 8 weighted domains, evidence-backed issues, PDF reports. Live at seoauditpro.web.app",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 1,
+        "language": "TypeScript",
+        "commits": 9,
         "pull_requests": 0,
         "issues": 0,
         "reviews": 0,
@@ -18044,20 +18072,6 @@
         "is_fork": false,
         "stars": 1,
         "language": "HTML",
-        "commits": 9,
-        "pull_requests": 0,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": true
-      },
-      {
-        "full_name": "hamids-ai-automations/seo-audit-pro",
-        "url": "https://github.com/hamids-ai-automations/seo-audit-pro",
-        "description": "Client-side SEO audit tool: 8 weighted domains, evidence-backed issues, PDF reports. Live at seoauditpro.web.app",
-        "owner": "hamids-ai-automations",
-        "is_fork": false,
-        "stars": 1,
-        "language": "TypeScript",
         "commits": 9,
         "pull_requests": 0,
         "issues": 0,
@@ -18107,9 +18121,9 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/github-profile-master-record",
-        "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
-        "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
+        "full_name": "hamids-ai-automations/meta-lead-quality-analyzer",
+        "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
+        "description": "Open-source lead quality scoring & CRM revenue feedback engine for Meta Ads. Detects fake leads, disposable emails, bot form fatigue, and optimizes Cost-Per-Qualified-Lead (CPQL).",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 1,
@@ -18121,9 +18135,9 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/meta-lead-quality-analyzer",
-        "url": "https://github.com/hamids-ai-automations/meta-lead-quality-analyzer",
-        "description": "Open-source lead quality scoring & CRM revenue feedback engine for Meta Ads. Detects fake leads, disposable emails, bot form fatigue, and optimizes Cost-Per-Qualified-Lead (CPQL).",
+        "full_name": "hamids-ai-automations/github-profile-master-record",
+        "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+        "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 1,
@@ -18275,20 +18289,6 @@
         "owned_by_profile": false
       },
       {
-        "full_name": "Opencomplai/opencomplai",
-        "url": "https://github.com/Opencomplai/opencomplai",
-        "description": "Code-First AI Compliance. The open-source regulatory engine for the EU AI Act. Automate your risk assessments directly within your CI/CD pipeline.",
-        "owner": "Opencomplai",
-        "is_fork": false,
-        "stars": 20,
-        "language": "Python",
-        "commits": 2,
-        "pull_requests": 4,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": false
-      },
-      {
         "full_name": "iamvisheshsrivastava/ab-lab",
         "url": "https://github.com/iamvisheshsrivastava/ab-lab",
         "description": "Python experimentation toolkit: A/B simulations, power analysis, frequentist/Bayesian inference, CUPED and statistical guardrails.",
@@ -18317,6 +18317,20 @@
         "owned_by_profile": false
       },
       {
+        "full_name": "Opencomplai/opencomplai",
+        "url": "https://github.com/Opencomplai/opencomplai",
+        "description": "Code-First AI Compliance. The open-source regulatory engine for the EU AI Act. Automate your risk assessments directly within your CI/CD pipeline.",
+        "owner": "Opencomplai",
+        "is_fork": false,
+        "stars": 20,
+        "language": "Python",
+        "commits": 2,
+        "pull_requests": 4,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": false
+      },
+      {
         "full_name": "hamids-ai-automations/nexgen-financial-experts",
         "url": "https://github.com/hamids-ai-automations/nexgen-financial-experts",
         "description": "NexGen Financial Experts — Next.js 16 marketing website (rebuilt from recovered WordPress content)",
@@ -18329,20 +18343,6 @@
         "issues": 0,
         "reviews": 0,
         "owned_by_profile": true
-      },
-      {
-        "full_name": "doobidoo/mcp-memory-service",
-        "url": "https://github.com/doobidoo/mcp-memory-service",
-        "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
-        "owner": "doobidoo",
-        "is_fork": false,
-        "stars": 2157,
-        "language": "Python",
-        "commits": 2,
-        "pull_requests": 3,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": false
       },
       {
         "full_name": "iamvisheshsrivastava/geniebot",
@@ -18359,15 +18359,15 @@
         "owned_by_profile": false
       },
       {
-        "full_name": "markline-dev/markline",
-        "url": "https://github.com/markline-dev/markline",
-        "description": "Open-source, self-hostable documentation framework with first-class OpenAPI, full-text search, and an interactive API playground. A fully open alternative to Scalar and Mintlify.",
-        "owner": "markline-dev",
+        "full_name": "doobidoo/mcp-memory-service",
+        "url": "https://github.com/doobidoo/mcp-memory-service",
+        "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
+        "owner": "doobidoo",
         "is_fork": false,
-        "stars": 5,
-        "language": "TypeScript",
-        "commits": 3,
-        "pull_requests": 1,
+        "stars": 2157,
+        "language": "Python",
+        "commits": 2,
+        "pull_requests": 3,
         "issues": 0,
         "reviews": 0,
         "owned_by_profile": false
@@ -18380,6 +18380,20 @@
         "is_fork": false,
         "stars": 1,
         "language": "Python",
+        "commits": 3,
+        "pull_requests": 1,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": false
+      },
+      {
+        "full_name": "markline-dev/markline",
+        "url": "https://github.com/markline-dev/markline",
+        "description": "Open-source, self-hostable documentation framework with first-class OpenAPI, full-text search, and an interactive API playground. A fully open alternative to Scalar and Mintlify.",
+        "owner": "markline-dev",
+        "is_fork": false,
+        "stars": 5,
+        "language": "TypeScript",
         "commits": 3,
         "pull_requests": 1,
         "issues": 0,
@@ -18401,6 +18415,20 @@
         "owned_by_profile": false
       },
       {
+        "full_name": "hamids-ai-automations/agentshield-ai",
+        "url": "https://github.com/hamids-ai-automations/agentshield-ai",
+        "description": "AI agent security scanner and governance console - prompt-injection analysis, telemetry dashboard, risk scoring, PDF/JSON/CSV reports, built with Streamlit",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 0,
+        "language": "Python",
+        "commits": 3,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
         "full_name": "hamids-ai-automations/envscope",
         "url": "https://github.com/hamids-ai-automations/envscope",
         "description": "CLI that audits .env files against .env.example and a JSON schema without ever printing secrets. DevSecOps, Python.",
@@ -18413,20 +18441,6 @@
         "issues": 0,
         "reviews": 0,
         "owned_by_profile": true
-      },
-      {
-        "full_name": "supabase/supabase-py",
-        "url": "https://github.com/supabase/supabase-py",
-        "description": "Python Client for Supabase. Query Postgres from Flask, Django, FastAPI. Python user authentication, security policies, edge functions, file storage, and realtime data streaming.",
-        "owner": "supabase",
-        "is_fork": false,
-        "stars": 2638,
-        "language": "Python",
-        "commits": 1,
-        "pull_requests": 1,
-        "issues": 1,
-        "reviews": 0,
-        "owned_by_profile": false
       },
       {
         "full_name": "OpnForm/OpnForm",
@@ -18448,7 +18462,7 @@
         "description": "Python & Command-line tool to gather text and metadata on the Web: Crawling, scraping, extraction, output as CSV, JSON, HTML, MD, TXT, XML",
         "owner": "adbar",
         "is_fork": false,
-        "stars": 7182,
+        "stars": 7183,
         "language": "Python",
         "commits": 1,
         "pull_requests": 2,
@@ -18457,9 +18471,23 @@
         "owned_by_profile": false
       },
       {
-        "full_name": "hamids-ai-automations/conversionbridge",
-        "url": "https://github.com/hamids-ai-automations/conversionbridge",
-        "description": "Server-side conversion gateway for Meta Conversions API and Google Analytics 4 with privacy controls. Python, Firebase.",
+        "full_name": "supabase/supabase-py",
+        "url": "https://github.com/supabase/supabase-py",
+        "description": "Python Client for Supabase. Query Postgres from Flask, Django, FastAPI. Python user authentication, security policies, edge functions, file storage, and realtime data streaming.",
+        "owner": "supabase",
+        "is_fork": false,
+        "stars": 2638,
+        "language": "Python",
+        "commits": 1,
+        "pull_requests": 1,
+        "issues": 1,
+        "reviews": 0,
+        "owned_by_profile": false
+      },
+      {
+        "full_name": "hamids-ai-automations/seo-intelligence-ai",
+        "url": "https://github.com/hamids-ai-automations/seo-intelligence-ai",
+        "description": "Autonomous SEO audit platform - 100-point scoring engine, 31 rules across 6 families, SSRF-guarded crawler, 13-page Streamlit UI, JSON/CSV/PDF reports, Gemini + PageSpeed integrations",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 0,
@@ -18478,20 +18506,6 @@
         "is_fork": false,
         "stars": 0,
         "language": "TypeScript",
-        "commits": 2,
-        "pull_requests": 0,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": true
-      },
-      {
-        "full_name": "hamids-ai-automations/ai-marketing-portfolio-meta",
-        "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
-        "description": "Portfolio hub: standards, roadmap, case studies, architecture map for the AI Marketing Engineer portfolio",
-        "owner": "hamids-ai-automations",
-        "is_fork": false,
-        "stars": 1,
-        "language": "Astro",
         "commits": 2,
         "pull_requests": 0,
         "issues": 0,
@@ -18541,6 +18555,34 @@
         "owned_by_profile": true
       },
       {
+        "full_name": "hamids-ai-automations/ai-marketing-portfolio-meta",
+        "url": "https://github.com/hamids-ai-automations/ai-marketing-portfolio-meta",
+        "description": "Portfolio hub: standards, roadmap, case studies, architecture map for the AI Marketing Engineer portfolio",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 1,
+        "language": "Astro",
+        "commits": 2,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
+        "full_name": "hamids-ai-automations/conversionbridge",
+        "url": "https://github.com/hamids-ai-automations/conversionbridge",
+        "description": "Server-side conversion gateway for Meta Conversions API and Google Analytics 4 with privacy controls. Python, Firebase.",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 0,
+        "language": "Python",
+        "commits": 2,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
         "full_name": "hamids-ai-automations/searchpulse-ai",
         "url": "https://github.com/hamids-ai-automations/searchpulse-ai",
         "description": "Google Search Console intelligence: traffic-drop diagnostics, content decay detection and evidence-based SEO decisions. Python, FastAPI, pytest.",
@@ -18567,6 +18609,48 @@
         "issues": 0,
         "reviews": 0,
         "owned_by_profile": true
+      },
+      {
+        "full_name": "laaielichter/Gulliver",
+        "url": "https://github.com/laaielichter/Gulliver",
+        "description": "Test on tiny data before you run on giant data. MCP server + CLI that gives AI agents a dress rehearsal for SQL: cost preflight, scale lint with auto-fix, rehearse on 1% → 10%, predict 100%, run only within budget. DuckDB, Postgres, BigQuery, Snowflake. Local-first, MIT.",
+        "owner": "laaielichter",
+        "is_fork": false,
+        "stars": 2,
+        "language": "Python",
+        "commits": 1,
+        "pull_requests": 1,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": false
+      },
+      {
+        "full_name": "connabyss/bite",
+        "url": "https://github.com/connabyss/bite",
+        "description": "Checks whether the \"fixed\" in your AI coding agent's commits is true. It takes each fix back out and runs your tests. Free, with no key.",
+        "owner": "connabyss",
+        "is_fork": false,
+        "stars": 3,
+        "language": "Python",
+        "commits": 1,
+        "pull_requests": 1,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": false
+      },
+      {
+        "full_name": "VOLPAROSSA/volparossa-code",
+        "url": "https://github.com/VOLPAROSSA/volparossa-code",
+        "description": "Open-source coding assistant integrating OpenCode with VOLPAROSSA's Decentralized Intelligent Cooperative Network (DICN). Designed to read, edit and test code through cooperating agents and shared intelligence. Editor integrations start with VS Code and VSCodium. Under active development.",
+        "owner": "VOLPAROSSA",
+        "is_fork": false,
+        "stars": 0,
+        "language": "JavaScript",
+        "commits": 1,
+        "pull_requests": 1,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": false
       },
       {
         "full_name": "exmergo/dex",
@@ -18604,48 +18688,6 @@
         "is_fork": false,
         "stars": 30,
         "language": "Go",
-        "commits": 1,
-        "pull_requests": 1,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": false
-      },
-      {
-        "full_name": "VOLPAROSSA/volparossa-code",
-        "url": "https://github.com/VOLPAROSSA/volparossa-code",
-        "description": "Open-source coding assistant integrating OpenCode with VOLPAROSSA's Decentralized Intelligent Cooperative Network (DICN). Designed to read, edit and test code through cooperating agents and shared intelligence. Editor integrations start with VS Code and VSCodium. Under active development.",
-        "owner": "VOLPAROSSA",
-        "is_fork": false,
-        "stars": 0,
-        "language": "JavaScript",
-        "commits": 1,
-        "pull_requests": 1,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": false
-      },
-      {
-        "full_name": "connabyss/bite",
-        "url": "https://github.com/connabyss/bite",
-        "description": "Checks whether the \"fixed\" in your AI coding agent's commits is true. It takes each fix back out and runs your tests. Free, with no key.",
-        "owner": "connabyss",
-        "is_fork": false,
-        "stars": 3,
-        "language": "Python",
-        "commits": 1,
-        "pull_requests": 1,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": false
-      },
-      {
-        "full_name": "laaielichter/Gulliver",
-        "url": "https://github.com/laaielichter/Gulliver",
-        "description": "Test on tiny data before you run on giant data. MCP server + CLI that gives AI agents a dress rehearsal for SQL: cost preflight, scale lint with auto-fix, rehearse on 1% → 10%, predict 100%, run only within budget. DuckDB, Postgres, BigQuery, Snowflake. Local-first, MIT.",
-        "owner": "laaielichter",
-        "is_fork": false,
-        "stars": 2,
-        "language": "Python",
         "commits": 1,
         "pull_requests": 1,
         "issues": 0,
@@ -18723,41 +18765,13 @@
         "owned_by_profile": false
       },
       {
-        "full_name": "hamids-ai-automations/ai-agent-testing-lab",
-        "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
-        "description": "AI agent evaluation and reliability harness: labelled suites, CI integration, accuracy/calibration/cost/latency reporting. Python, pytest, MCP.",
+        "full_name": "hamids-ai-automations/adwaste-intelligence",
+        "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
+        "description": "Google Ads Waste Detector — N-Gram Audit Engine: 1-4 gram search-term waste analysis, converting-query conflict guard, and Excel/Ads Editor exports.",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 0,
         "language": "Python",
-        "commits": 1,
-        "pull_requests": 0,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": true
-      },
-      {
-        "full_name": "hamids-ai-automations/dynamic-schema-generator",
-        "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
-        "description": "Dynamic Schema Generator for WordPress: Automated, accurate JSON-LD Schema.org structured data engine with Elementor integration.",
-        "owner": "hamids-ai-automations",
-        "is_fork": false,
-        "stars": 0,
-        "language": "PHP",
-        "commits": 1,
-        "pull_requests": 0,
-        "issues": 0,
-        "reviews": 0,
-        "owned_by_profile": true
-      },
-      {
-        "full_name": "hamids-ai-automations/restock-radar",
-        "url": "https://github.com/hamids-ai-automations/restock-radar",
-        "description": "Shopify app for back-in-stock alerts and preorder recovery",
-        "owner": "hamids-ai-automations",
-        "is_fork": false,
-        "stars": 1,
-        "language": "JavaScript",
         "commits": 1,
         "pull_requests": 0,
         "issues": 0,
@@ -18779,9 +18793,37 @@
         "owned_by_profile": true
       },
       {
-        "full_name": "hamids-ai-automations/agentshield-ai",
-        "url": "https://github.com/hamids-ai-automations/agentshield-ai",
-        "description": "AI agent security scanner and governance console - prompt-injection analysis, telemetry dashboard, risk scoring, PDF/JSON/CSV reports, built with Streamlit",
+        "full_name": "hamids-ai-automations/restock-radar",
+        "url": "https://github.com/hamids-ai-automations/restock-radar",
+        "description": "Shopify app for back-in-stock alerts and preorder recovery",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 1,
+        "language": "JavaScript",
+        "commits": 1,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
+        "full_name": "hamids-ai-automations/dynamic-schema-generator",
+        "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
+        "description": "Dynamic Schema Generator for WordPress: Automated, accurate JSON-LD Schema.org structured data engine with Elementor integration.",
+        "owner": "hamids-ai-automations",
+        "is_fork": false,
+        "stars": 0,
+        "language": "PHP",
+        "commits": 1,
+        "pull_requests": 0,
+        "issues": 0,
+        "reviews": 0,
+        "owned_by_profile": true
+      },
+      {
+        "full_name": "hamids-ai-automations/ai-agent-testing-lab",
+        "url": "https://github.com/hamids-ai-automations/ai-agent-testing-lab",
+        "description": "AI agent evaluation and reliability harness: labelled suites, CI integration, accuracy/calibration/cost/latency reporting. Python, pytest, MCP.",
         "owner": "hamids-ai-automations",
         "is_fork": false,
         "stars": 0,
@@ -19102,8 +19144,8 @@
       }
     ],
     "window": {
-      "from": "2025-11-26T22:21:26Z",
-      "to": "2026-11-26T22:21:26Z"
+      "from": "2025-11-27T01:47:01Z",
+      "to": "2026-11-27T01:47:01Z"
     }
   },
   "external_links": [
@@ -19266,8 +19308,8 @@
         "repository_readme_link"
       ],
       "related_resources": [
-        "hamids-ai-automations/adwaste-intelligence",
         "hamids-ai-automations/marvis-portfolio",
+        "hamids-ai-automations/adwaste-intelligence",
         "hamids-ai-automations/ghl-servicepro-theme",
         "hamids-ai-automations/servicenow-ultimate-mcp",
         "hamids-ai-automations/hamids-ai-automations",
@@ -19328,18 +19370,6 @@
       "verified": null
     },
     {
-      "url": "https://agentshield-ai.streamlit.app`",
-      "type": "live_site",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/agentshield-ai"
-      ],
-      "source": "README of hamids-ai-automations/agentshield-ai",
-      "verified": null
-    },
-    {
       "url": "http://localhost:8501",
       "type": "website",
       "relationships": [
@@ -19368,47 +19398,6 @@
       "verified": null
     },
     {
-      "url": "https://adwaste-intelligence.streamlit.app",
-      "type": "live_site",
-      "relationships": [
-        "repository_homepage",
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/adwaste-intelligence"
-      ],
-      "source": "repository hamids-ai-automations/adwaste-intelligence",
-      "verified": null
-    },
-    {
-      "url": "https://www.python.org",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/adwaste-intelligence",
-        "hamids-ai-automations/gemini-agent-automation-toolkit",
-        "hamids-ai-automations/geo-visibility-lab",
-        "hamids-ai-automations/opencomplai",
-        "hamids-ai-automations/sqlalchemy-cubrid"
-      ],
-      "source": "README of hamids-ai-automations/adwaste-intelligence",
-      "verified": null
-    },
-    {
-      "url": "https:",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/adwaste-intelligence"
-      ],
-      "source": "README of hamids-ai-automations/adwaste-intelligence",
-      "verified": null
-    },
-    {
       "url": "http://localhost:3000",
       "type": "website",
       "relationships": [
@@ -19422,6 +19411,32 @@
         "hamids-ai-automations/markline"
       ],
       "source": "README of hamids-ai-automations/marvis-portfolio",
+      "verified": null
+    },
+    {
+      "url": "https://agentshield-ai.streamlit.app`",
+      "type": "live_site",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/github-profile-master-record"
+      ],
+      "source": "README of hamids-ai-automations/github-profile-master-record",
+      "verified": null
+    },
+    {
+      "url": "https://adwaste-intelligence.streamlit.app",
+      "type": "live_site",
+      "relationships": [
+        "repository_readme_link",
+        "repository_homepage"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/github-profile-master-record",
+        "hamids-ai-automations/adwaste-intelligence"
+      ],
+      "source": "README of hamids-ai-automations/github-profile-master-record",
       "verified": null
     },
     {
@@ -19595,19 +19610,6 @@
       "verified": null
     },
     {
-      "url": "https://gitwyd.github.io/sbsim_documentation",
-      "type": "live_site",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/github-profile-master-record",
-        "hamids-ai-automations/sbsim"
-      ],
-      "source": "README of hamids-ai-automations/github-profile-master-record",
-      "verified": null
-    },
-    {
       "url": "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
       "type": "github",
       "relationships": [
@@ -19629,6 +19631,34 @@
         "hamids-ai-automations/github-profile-master-record"
       ],
       "source": "README of hamids-ai-automations/github-profile-master-record",
+      "verified": null
+    },
+    {
+      "url": "https://www.python.org",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/adwaste-intelligence",
+        "hamids-ai-automations/gemini-agent-automation-toolkit",
+        "hamids-ai-automations/geo-visibility-lab",
+        "hamids-ai-automations/opencomplai",
+        "hamids-ai-automations/sqlalchemy-cubrid"
+      ],
+      "source": "README of hamids-ai-automations/adwaste-intelligence",
+      "verified": null
+    },
+    {
+      "url": "https:",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/adwaste-intelligence"
+      ],
+      "source": "README of hamids-ai-automations/adwaste-intelligence",
       "verified": null
     },
     {
@@ -21167,6 +21197,18 @@
     {
       "url": "https://storage.googleapis.com/gresearch/smart_buildings_dataset/tabular_data/sb1.zip",
       "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/sbsim"
+      ],
+      "source": "README of hamids-ai-automations/sbsim",
+      "verified": null
+    },
+    {
+      "url": "https://gitwyd.github.io/sbsim_documentation",
+      "type": "live_site",
       "relationships": [
         "repository_readme_link"
       ],
@@ -28930,7 +28972,7 @@
     {
       "name": "TypeScript",
       "category": "language",
-      "total_bytes": 75064022,
+      "total_bytes": 75064023,
       "percentage": 17.11,
       "repository_count": 29
     },
@@ -30258,6 +30300,82 @@
         ]
       },
       "detected_at": "2026-11-26T22:21:34+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/agentshield-ai",
+      "url": "https://github.com/hamids-ai-automations/agentshield-ai",
+      "summary": "hamids-ai-automations/agentshield-ai updated: pushed_at, readme",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-26T22:04:55Z",
+          "new": "2026-11-27T00:33:12Z"
+        },
+        "readme": {
+          "old": 12323,
+          "new": 14661
+        }
+      },
+      "detected_at": "2026-11-27T01:47:07+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/seo-intelligence-ai",
+      "url": "https://github.com/hamids-ai-automations/seo-intelligence-ai",
+      "summary": "hamids-ai-automations/seo-intelligence-ai updated: pushed_at, readme",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-26T21:55:25Z",
+          "new": "2026-11-27T00:27:19Z"
+        },
+        "readme": {
+          "old": 19408,
+          "new": 22061
+        }
+      },
+      "detected_at": "2026-11-27T01:47:07+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/marvis-portfolio",
+      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
+      "summary": "hamids-ai-automations/marvis-portfolio updated: languages, pushed_at",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-26T15:10:02Z",
+          "new": "2026-11-26T22:21:51Z"
+        },
+        "languages": {
+          "old": [
+            "TypeScript",
+            "JavaScript",
+            "CSS"
+          ],
+          "new": [
+            "TypeScript",
+            "JavaScript",
+            "CSS"
+          ]
+        }
+      },
+      "detected_at": "2026-11-27T01:47:07+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "summary": "hamids-ai-automations/github-profile-master-record updated: pushed_at, readme",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-26T14:41:40Z",
+          "new": "2026-11-26T22:21:36Z"
+        },
+        "readme": {
+          "old": 9832,
+          "new": 10206
+        }
+      },
+      "detected_at": "2026-11-27T01:47:07+00:00"
     }
   ],
   "data_quality": {
@@ -30285,6 +30403,6 @@
     ],
     "validation_errors": 0,
     "validation_warnings": 1,
-    "last_validated": "2026-11-26T22:21:34+00:00"
+    "last_validated": "2026-11-27T01:47:07+00:00"
   }
 }

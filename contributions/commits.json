@@ -1,15 +1,15 @@
 {
   "window": {
-    "from": "2025-11-27T01:46:59Z",
-    "to": "2026-11-27T01:46:59Z"
+    "from": "2025-11-27T05:03:20Z",
+    "to": "2026-11-27T05:03:20Z"
   },
-  "total_commits": 308,
-  "total_contributions": 579,
+  "total_commits": 311,
+  "total_contributions": 582,
   "by_repository": [
     {
       "repository": "hamids-ai-automations/marvis-portfolio",
       "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
-      "commits": 23
+      "commits": 24
     },
     {
       "repository": "hamids-ai-automations/hamids-ai-automations",
@@ -162,18 +162,23 @@
       "commits": 3
     },
     {
+      "repository": "hamids-ai-automations/adwaste-intelligence",
+      "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
+      "commits": 3
+    },
+    {
       "repository": "iamvisheshsrivastava/Smart_CSV_Toolkit",
       "url": "https://github.com/iamvisheshsrivastava/Smart_CSV_Toolkit",
       "commits": 3
     },
     {
-      "repository": "hamids-ai-automations/envscope",
-      "url": "https://github.com/hamids-ai-automations/envscope",
+      "repository": "iamvisheshsrivastava/AirKube",
+      "url": "https://github.com/iamvisheshsrivastava/AirKube",
       "commits": 3
     },
     {
-      "repository": "iamvisheshsrivastava/AirKube",
-      "url": "https://github.com/iamvisheshsrivastava/AirKube",
+      "repository": "hamids-ai-automations/envscope",
+      "url": "https://github.com/hamids-ai-automations/envscope",
       "commits": 3
     },
     {
@@ -222,11 +227,6 @@
       "commits": 2
     },
     {
-      "repository": "hamids-ai-automations/google-services-mcp",
-      "url": "https://github.com/hamids-ai-automations/google-services-mcp",
-      "commits": 2
-    },
-    {
       "repository": "iamvisheshsrivastava/ab-lab",
       "url": "https://github.com/iamvisheshsrivastava/ab-lab",
       "commits": 2
@@ -242,53 +242,28 @@
       "commits": 2
     },
     {
-      "repository": "doobidoo/mcp-memory-service",
-      "url": "https://github.com/doobidoo/mcp-memory-service",
-      "commits": 2
-    },
-    {
       "repository": "Opencomplai/opencomplai",
       "url": "https://github.com/Opencomplai/opencomplai",
       "commits": 2
     },
     {
-      "repository": "hamids-ai-automations/adwaste-intelligence",
-      "url": "https://github.com/hamids-ai-automations/adwaste-intelligence",
+      "repository": "doobidoo/mcp-memory-service",
+      "url": "https://github.com/doobidoo/mcp-memory-service",
+      "commits": 2
+    },
+    {
+      "repository": "hamids-ai-automations/google-services-mcp",
+      "url": "https://github.com/hamids-ai-automations/google-services-mcp",
+      "commits": 2
+    },
+    {
+      "repository": "supabase/supabase-py",
+      "url": "https://github.com/supabase/supabase-py",
       "commits": 1
     },
     {
-      "repository": "laaielichter/Gulliver",
-      "url": "https://github.com/laaielichter/Gulliver",
-      "commits": 1
-    },
-    {
-      "repository": "connabyss/bite",
-      "url": "https://github.com/connabyss/bite",
-      "commits": 1
-    },
-    {
-      "repository": "VOLPAROSSA/volparossa-code",
-      "url": "https://github.com/VOLPAROSSA/volparossa-code",
-      "commits": 1
-    },
-    {
-      "repository": "hamids-ai-automations/gemini-agent-reliability-kit",
-      "url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit",
-      "commits": 1
-    },
-    {
-      "repository": "hamids-ai-automations/restock-radar",
-      "url": "https://github.com/hamids-ai-automations/restock-radar",
-      "commits": 1
-    },
-    {
-      "repository": "hamids-ai-automations/dynamic-schema-generator",
-      "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
-      "commits": 1
-    },
-    {
-      "repository": "OpnForm/OpnForm",
-      "url": "https://github.com/OpnForm/OpnForm",
+      "repository": "exmergo/dex",
+      "url": "https://github.com/exmergo/dex",
       "commits": 1
     },
     {
@@ -302,8 +277,33 @@
       "commits": 1
     },
     {
-      "repository": "exmergo/dex",
-      "url": "https://github.com/exmergo/dex",
+      "repository": "hamids-ai-automations/dynamic-schema-generator",
+      "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/restock-radar",
+      "url": "https://github.com/hamids-ai-automations/restock-radar",
+      "commits": 1
+    },
+    {
+      "repository": "hamids-ai-automations/gemini-agent-reliability-kit",
+      "url": "https://github.com/hamids-ai-automations/gemini-agent-reliability-kit",
+      "commits": 1
+    },
+    {
+      "repository": "OpnForm/OpnForm",
+      "url": "https://github.com/OpnForm/OpnForm",
+      "commits": 1
+    },
+    {
+      "repository": "VOLPAROSSA/volparossa-code",
+      "url": "https://github.com/VOLPAROSSA/volparossa-code",
+      "commits": 1
+    },
+    {
+      "repository": "connabyss/bite",
+      "url": "https://github.com/connabyss/bite",
       "commits": 1
     },
     {
@@ -312,18 +312,18 @@
       "commits": 1
     },
     {
-      "repository": "supabase/supabase-py",
-      "url": "https://github.com/supabase/supabase-py",
-      "commits": 1
-    },
-    {
-      "repository": "cfgaudit/cfgaudit",
-      "url": "https://github.com/cfgaudit/cfgaudit",
+      "repository": "laaielichter/Gulliver",
+      "url": "https://github.com/laaielichter/Gulliver",
       "commits": 1
     },
     {
       "repository": "pygrpc/pygrpc-native",
       "url": "https://github.com/pygrpc/pygrpc-native",
+      "commits": 1
+    },
+    {
+      "repository": "cfgaudit/cfgaudit",
+      "url": "https://github.com/cfgaudit/cfgaudit",
       "commits": 1
     }
   ],
@@ -478,7 +478,7 @@
     },
     {
       "date": "2026-11-27",
-      "count": 8
+      "count": 11
     }
   ]
 }

@@ -77,9 +77,9 @@ Active — last push 2026-11-27
 
 ## Related projects
 
-- hamids-ai-automations/agentshield-ai
-- hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/adwaste-intelligence
+- hamids-ai-automations/github-profile-master-record
+- hamids-ai-automations/agentshield-ai
 - hamids-ai-automations/leadflow-sentinel
 - hamids-ai-automations/ghl-automation-engine
 

@@ -10,9 +10,10 @@
       "repository_homepage"
     ],
     "related_resources": [
-      "hamids-ai-automations/agentshield-ai",
+      "hamids-ai-automations/adwaste-intelligence",
       "hamids-ai-automations/marvis-portfolio",
       "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/agentshield-ai",
       "hamids-ai-automations/ghl-servicepro-theme",
       "hamids-ai-automations/servicenow-ultimate-mcp",
       "hamids-ai-automations/shopify-growth-mcp",
@@ -158,8 +159,8 @@
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/marvis-portfolio",
       "hamids-ai-automations/adwaste-intelligence",
+      "hamids-ai-automations/marvis-portfolio",
       "hamids-ai-automations/ghl-servicepro-theme",
       "hamids-ai-automations/servicenow-ultimate-mcp",
       "hamids-ai-automations/hamids-ai-automations",
@@ -188,12 +189,27 @@
     "verified": null
   },
   {
+    "url": "https://adwaste-intelligence.streamlit.app",
+    "type": "live_site",
+    "relationships": [
+      "repository_homepage",
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/adwaste-intelligence",
+      "hamids-ai-automations/github-profile-master-record"
+    ],
+    "source": "repository hamids-ai-automations/adwaste-intelligence",
+    "verified": null
+  },
+  {
     "url": "https://www.python.org/downloads",
     "type": "website",
     "relationships": [
       "repository_readme_link"
     ],
     "related_resources": [
+      "hamids-ai-automations/adwaste-intelligence",
       "hamids-ai-automations/agentshield-ai",
       "hamids-ai-automations/seo-doctor",
       "hamids-ai-automations/meta-lead-quality-analyzer",
@@ -204,7 +220,7 @@
       "hamids-ai-automations/sample-aws-genai-db-modernizer",
       "hamids-ai-automations/algen-agent-runtime"
     ],
-    "source": "README of hamids-ai-automations/agentshield-ai",
+    "source": "README of hamids-ai-automations/adwaste-intelligence",
     "verified": null
   },
   {
@@ -214,24 +230,34 @@
       "repository_readme_link"
     ],
     "related_resources": [
+      "hamids-ai-automations/adwaste-intelligence",
       "hamids-ai-automations/agentshield-ai"
     ],
-    "source": "README of hamids-ai-automations/agentshield-ai",
+    "source": "README of hamids-ai-automations/adwaste-intelligence",
     "verified": null
   },
   {
-    "url": "http://localhost:8501",
+    "url": "https://adwaste-intelligence.streamlit.app`",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/adwaste-intelligence"
+    ],
+    "source": "README of hamids-ai-automations/adwaste-intelligence",
+    "verified": null
+  },
+  {
+    "url": "http://localhost:8501`",
     "type": "website",
     "relationships": [
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/agentshield-ai",
-      "hamids-ai-automations/seo-intelligence-ai",
-      "hamids-ai-automations/ai-search-visibility-auditor",
-      "hamids-ai-automations/AirKube"
+      "hamids-ai-automations/adwaste-intelligence"
     ],
-    "source": "README of hamids-ai-automations/agentshield-ai",
+    "source": "README of hamids-ai-automations/adwaste-intelligence",
     "verified": null
   },
   {
@@ -241,10 +267,22 @@
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/agentshield-ai",
+      "hamids-ai-automations/adwaste-intelligence",
+      "hamids-ai-automations/agentshield-ai"
+    ],
+    "source": "README of hamids-ai-automations/adwaste-intelligence",
+    "verified": null
+  },
+  {
+    "url": "https:",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
       "hamids-ai-automations/adwaste-intelligence"
     ],
-    "source": "README of hamids-ai-automations/agentshield-ai",
+    "source": "README of hamids-ai-automations/adwaste-intelligence",
     "verified": null
   },
   {
@@ -271,20 +309,6 @@
     ],
     "related_resources": [
       "hamids-ai-automations/github-profile-master-record"
-    ],
-    "source": "README of hamids-ai-automations/github-profile-master-record",
-    "verified": null
-  },
-  {
-    "url": "https://adwaste-intelligence.streamlit.app",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link",
-      "repository_homepage"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/github-profile-master-record",
-      "hamids-ai-automations/adwaste-intelligence"
     ],
     "source": "README of hamids-ai-automations/github-profile-master-record",
     "verified": null
@@ -484,31 +508,18 @@
     "verified": null
   },
   {
-    "url": "https://www.python.org",
+    "url": "http://localhost:8501",
     "type": "website",
     "relationships": [
       "repository_readme_link"
     ],
     "related_resources": [
-      "hamids-ai-automations/adwaste-intelligence",
-      "hamids-ai-automations/gemini-agent-automation-toolkit",
-      "hamids-ai-automations/geo-visibility-lab",
-      "hamids-ai-automations/opencomplai",
-      "hamids-ai-automations/sqlalchemy-cubrid"
+      "hamids-ai-automations/agentshield-ai",
+      "hamids-ai-automations/seo-intelligence-ai",
+      "hamids-ai-automations/ai-search-visibility-auditor",
+      "hamids-ai-automations/AirKube"
     ],
-    "source": "README of hamids-ai-automations/adwaste-intelligence",
-    "verified": null
-  },
-  {
-    "url": "https:",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/adwaste-intelligence"
-    ],
-    "source": "README of hamids-ai-automations/adwaste-intelligence",
+    "source": "README of hamids-ai-automations/agentshield-ai",
     "verified": null
   },
   {
@@ -951,6 +962,21 @@
       "hamids-ai-automations/firebase-ai-starter-kit"
     ],
     "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
+    "verified": null
+  },
+  {
+    "url": "https://www.python.org",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/gemini-agent-automation-toolkit",
+      "hamids-ai-automations/geo-visibility-lab",
+      "hamids-ai-automations/opencomplai",
+      "hamids-ai-automations/sqlalchemy-cubrid"
+    ],
+    "source": "README of hamids-ai-automations/gemini-agent-automation-toolkit",
     "verified": null
   },
   {

@@ -7,9 +7,9 @@
   "homepage": "https://adwaste-intelligence.streamlit.app",
   "created_at": "2026-11-26T21:43:14Z",
   "updated_at": "2026-11-26T21:46:50Z",
-  "pushed_at": "2026-11-26T21:43:26Z",
+  "pushed_at": "2026-11-27T04:50:08Z",
   "default_branch": "main",
-  "last_commit_at": "2026-11-26T21:43:10Z",
+  "last_commit_at": "2026-11-27T04:36:51Z",
   "visibility": "public",
   "is_private": false,
   "archived": false,
@@ -29,13 +29,13 @@
   "watchers": 0,
   "open_issues": 0,
   "closed_issues": 0,
-  "open_pull_requests": 0,
+  "open_pull_requests": 9,
   "merged_pull_requests": 0,
   "closed_pull_requests": 0,
   "releases_count": 0,
   "releases": [],
   "tags_count": 0,
-  "branches_count": 1,
+  "branches_count": 10,
   "discussions_count": 0,
   "deployments_count": 0,
   "environments_count": 0,
@@ -59,26 +59,30 @@
     "path": "README.md",
     "html_url": "https://github.com/hamids-ai-automations/adwaste-intelligence/blob/main/README.md",
     "has_readme": true,
-    "length": 7214,
-    "excerpt": "# AdWaste Intelligence\n\n**Google Ads Waste Detector — N-Gram Audit Engine**\n\n[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-059669?logo=python&logoColor=white)](https://www.python.org/)\n[![Streamlit](https://img.shields.io/badge/streamlit-app-FF4B4B?logo=streamlit&logoColor=white)](https://adwaste-intelligence.streamlit.app)\n[![Tests](https://img.shields.io/badge/pytest-passing-059669)](#testing)\n[![License: MIT](https://img.shields.io/badge/license-MIT-0F172A)](LICENSE)\n\n> Companion web app to the **Google Ads Waste Detector** Chrome extension.\n> Upload a Search Terms report (or load the demo account), get a full 1–4 gram\n> waste audit, build conflict-safe negative keyword lists, and export\n> client-ready Excel audit reports — in under 60 seconds.\n>\n> **Privacy-first: 100% in-memory processing. Client CSV data is never saved or logged.**\n\n---\n\n## What it does\n\n| | Feature | Why it matters |\n|---|---|---|\n| 1 | **Bulletproof Google Ads ingestion** | Handles 2-row metadata headers, `Total:` rows, UTF-16, tab delimiters, `$` / `AED` / `PKR` / `€` currencies, `--` and `< 10%` placeholders, and variant column names. Falls back to a manual column-mapping UI when a required column is missing. |\n| 2 | **One-click demo account** | 1,500 realistic search terms (~$30k spend, deliberate waste clusters) so visitors experience full value in 2 seconds — no CSV needed. |\n| 3 | **Vectorized 1–4 gram engine** | Cost / clicks / conversions / CPA / ROAS per n-gram with **zero double-counting** inside a single query. 50,000-row stress test analyzes in seconds. |\n| 4 | **Configurable waste rules** | Target CPA (auto-initialized to account average), CPA bleeder multiplier, zero-conversion spend threshold, min-clicks gating, brand-term whitelist, bundled stopword handling, and 4 preset negative-intent dictionaries (Job Seekers, Free/Cheap/Piracy, DIY/Academic, Support). |\n| 5 | **Executive dashboard** | 5 KPI cards (total spend, flagged waste $ and %, projected annualized savings, wasted terms, wasted n-grams), spend-allocation donut, top-15 wasted n-grams bar, campaign-level waste breakdown. |\n| 6 | **N-gram explorer with drill-down** | Filter by campaign / match type / flagged-only / min spend / text search, check rows into a staging list, and inspect every raw search term behind any n-gram. |\n| 7 | **Conflict guard (the differentiator)** | Cross-checks every staged negative (Exact / Phrase / Broad semantics) against all **converting** search terms, shows the conversions + revenue you would block, and removes conflicts with one click. |\n| 8 | **3 export channels** | Copy-paste block for Google Ads UI, Google Ads Editor CSV (`Campaign, Ad group, Keyword, Criterion Type`), and a branded multi-tab Excel client audit report. |\n| 9 | **Optional AI intent audit (BYOK)** | Paste a Gemini API key (or set `GEMINI_API_KEY` in secrets) to classify your top 100 non-converting terms into High Commercial Intent / Informational / Competitor / Job / Irrelevant. The app is fully functional without it. |\n\n## Screenshots\n\n> TODO after first deploy: add a 20-second screen-recording GIF of\n> *upload CSV → flagged n-grams → conflict checker → export* at the top of\n> this README (see the launch checklist in `SPEC.md`).\n\n## Quickstart (local)\n\n```bash\ngit clone https://github.com/hamids-ai-automations/adwaste-intelligence.git\ncd adwaste-intelligence\n\npython -m venv .venv\nsource .venv/bin/activate        # Windows: .venv\\Scripts\\activate\npip install -r requirements.txt\n\nstreamlit run app.py\n```\n\nThen click **Load Demo Account (1,500 Search Terms)** — no report needed.\n\n### Testing\n\n```bash\npip install pytest\npython -m pytest tests/ -v\n```\n\nThe suite covers messy Google Ads CSVs (metadata rows, totals, UTF-16,\ncurrencies, placeholders), n-gram math (dedup, stopwords, roll-ups), waste\nrules (bleeders, high CPA, presets, brand whitelist), the conflict guard's\nmatch-type semantics, all three export formats, and a 50,000-row performance\nguard.\n\n## Deploy on Strea",
+    "length": 12037,
+    "excerpt": "# AdWaste Intelligence\n\n**Google Ads Waste Detector — N-Gram Audit Engine**\n\n[![CI](https://github.com/hamids-ai-automations/adwaste-intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/adwaste-intelligence/actions/workflows/ci.yml)\n[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-059669?logo=python&logoColor=white)](https://www.python.org/downloads/)\n[![Streamlit 1.67+](https://img.shields.io/badge/streamlit-1.67%2B-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)\n[![License: MIT](https://img.shields.io/badge/license-MIT-0F172A)](LICENSE)\n\n> Companion web SaaS to the **Google Ads Waste Detector** Chrome extension.\n> Upload any Google Ads Search Terms report (`.csv` or `.xlsx`) — or load the\n> 1,500-term demo account — to run a full 1–4 gram waste audit, block conflicting\n> negatives before they harm converting queries, and export ready-to-paste lists\n> and client-ready Excel audit workbooks in under 60 seconds.\n>\n> **Privacy-first: 100% in-memory processing. Client CSV data is never written to disk, stored, or logged.**\n\n---\n\n## Status\n\n| | |\n|---|---|\n| **Repository** | [hamids-ai-automations/adwaste-intelligence](https://github.com/hamids-ai-automations/adwaste-intelligence) — public |\n| **CI** | `.github/workflows/ci.yml` runs `ruff check`, `pytest` (with `src/` coverage), headless `AppTest` smoke (`scripts/smoke_pages.py`), committed-secrets guard, `pip-audit`, and `gitleaks` across Python 3.11 & 3.12 |\n| **Hosted demo** | Target URL: `https://adwaste-intelligence.streamlit.app` — **pending Streamlit Community Cloud interactive OAuth link** (see [Deployment status](DEPLOYMENT_STATUS.md) and [Deploy on Streamlit Community Cloud](#deploy-on-streamlit-community-cloud)) |\n| **Local run** | Fully verified with demo mode ($37,297.43 spend, 18.5% flagged waste, $81.2k projected annual savings) and messy Google Ads CSV/XLSX ingestion |\n\n---\n\n## Table of Contents\n\n- [What it does](#what-it-does)\n- [Screenshots](#screenshots)\n- [Quickstart (local)](#quickstart-local)\n- [Quality checks & testing](#quality-checks--testing)\n- [Deploy on Streamlit Community Cloud](#deploy-on-streamlit-community-cloud)\n- [Project structure & architecture](#project-structure--architecture)\n- [How wasted spend is calculated](#how-wasted-spend-is-calculated)\n- [Privacy & security](#privacy--security)\n- [Documentation](#documentation)\n- [Author](#author)\n- [License](#license)\n\n---\n\n## What it does\n\n| | Feature | Why it matters |\n|---|---|---|\n| 1 | **Bulletproof Google Ads ingestion** | Handles 2-row metadata headers, `Total:` summary rows, UTF-16, tab/semicolon/comma delimiters, `$` / `AED` / `PKR` / `€` / `£` / `INR` currencies, `--` and `< 10%` placeholders, ragged rows, and variant column names. Falls back to a manual column-mapping UI if a required column is missing. |\n| 2 | **One-click demo account** | Deterministic 1,500-term B2B SaaS + Home Services account (`$37,297.43` spend, deliberate waste clusters) so visitors experience every workflow in 2 seconds with zero file upload needed. |\n| 3 | **Vectorized 1–4 gram engine** | Rolls up cost, impressions, clicks, conversions, CTR, CPC, Conv. Rate, CPA, and ROAS per n-gram with **zero intra-query double-counting**. Includes a 50,000-row performance benchmark guard in `tests/`. |\n| 4 | **Configurable waste rules** | Auto-initialized Target CPA, CPA bleeder multiplier, zero-conversion spend threshold, min-clicks gating, brand-term whitelist protection, bundled stopword exclusion (1-grams only), and 4 preset negative-intent dictionaries (Job Seekers, Free/Cheap/Piracy, DIY/Academic, Existing Customer/Support). |\n| 5 | **Executive dashboard** | 5 KPI cards (Total Spend Analyzed, Flagged Wasted Spend, Projected Annualized Savings, Wasted Search Terms, Wasted N-Grams), spend-allocation donut, top-15 wasted n-grams bar chart, and campaign-level waste breakdown. |\n| 6 | **N-gram explorer with drill-down** | Filter by n-gram level (1–4), campaign, mat",
     "full_content_path": null
   },
   "tree": {
     "truncated": false,
-    "total_files": 20,
-    "total_entries": 25,
+    "total_files": 43,
+    "total_entries": 53,
     "top_level_directories": [
       ".github",
       ".streamlit",
+      "assets",
+      "docs",
+      "scripts",
       "src",
       "tests"
     ],
     "important_files": [
       "app.py",
+      "pyproject.toml",
       "requirements.txt"
     ],
     "workflow_files": [
-      ".github/workflows/tests.yml"
+      ".github/workflows/ci.yml"
     ],
     "test_files_count": 6,
     "ci_enabled": true
@@ -103,17 +107,21 @@
       "streamlit"
     ],
     "config_files": [
-      "requirements.txt"
+      "requirements.txt",
+      "pyproject.toml"
     ]
   },
   "external_links": [
-    "https://www.python.org/",
-    "https://adwaste-intelligence.streamlit.app",
+    "https://www.python.org/downloads/",
+    "https://streamlit.io",
+    "https://adwaste-intelligence.streamlit.app`",
+    "http://localhost:8501`",
     "https://share.streamlit.io",
     "https://",
+    "https://marvis.web.app/",
     "https://wa.me/923167417135"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-26T22:21:15+00:00",
-  "detail_source": "cached"
+  "detail_refreshed_at": "2026-11-27T05:03:09+00:00",
+  "detail_source": "api"
 }

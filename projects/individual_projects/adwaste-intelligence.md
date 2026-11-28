@@ -77,11 +77,11 @@ Firebase/other hosting declared via homepage field: https://adwaste-intelligence
 
 - https://marvis.web.app
 - https://wa.me/923167417135
-- https://adwaste-intelligence.streamlit.app
-- https://adwaste-intelligence.streamlit.app`
 - https://www.python.org/downloads
 - https://streamlit.io
 - https://share.streamlit.io
+- https://adwaste-intelligence.streamlit.app
+- https://adwaste-intelligence.streamlit.app`
 - http://localhost:8501`
 - https:
 
@@ -97,11 +97,11 @@ Active — last push 2026-11-27
 
 ## Related projects
 
+- hamids-ai-automations/marvis-streamlit-dashboard
 - hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/agentshield-ai
 - hamids-ai-automations/seo-intelligence-ai
 - hamids-ai-automations/leadflow-sentinel
-- hamids-ai-automations/ghl-automation-engine
 
 ## Known issues and limitations
 

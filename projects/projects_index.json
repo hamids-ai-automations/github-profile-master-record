@@ -1,18 +1,7 @@
 {
   "generated_from": "MASTER_DATABASE.json",
-  "count": 101,
+  "count": 103,
   "projects": [
-    {
-      "name": "proeventsolutions-pk",
-      "full_name": "hamids-ai-automations/proeventsolutions-pk",
-      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
-      "documentation": "projects/individual_projects/proeventsolutions-pk.md",
-      "live_url": null,
-      "language": "HTML",
-      "stars": 0,
-      "status": "active",
-      "is_fork": false
-    },
     {
       "name": "marvis-portfolio",
       "full_name": "hamids-ai-automations/marvis-portfolio",
@@ -25,6 +14,28 @@
       "is_fork": false
     },
     {
+      "name": "marvis-commerce-os",
+      "full_name": "hamids-ai-automations/marvis-commerce-os",
+      "url": "https://github.com/hamids-ai-automations/marvis-commerce-os",
+      "documentation": "projects/individual_projects/marvis-commerce-os.md",
+      "live_url": null,
+      "language": null,
+      "stars": 0,
+      "status": "active",
+      "is_fork": false
+    },
+    {
+      "name": "marvis-streamlit-dashboard",
+      "full_name": "hamids-ai-automations/marvis-streamlit-dashboard",
+      "url": "https://github.com/hamids-ai-automations/marvis-streamlit-dashboard",
+      "documentation": "projects/individual_projects/marvis-streamlit-dashboard.md",
+      "live_url": null,
+      "language": "Python",
+      "stars": 0,
+      "status": "active",
+      "is_fork": false
+    },
+    {
       "name": "github-profile-master-record",
       "full_name": "hamids-ai-automations/github-profile-master-record",
       "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
@@ -32,6 +43,17 @@
       "live_url": null,
       "language": "Python",
       "stars": 1,
+      "status": "active",
+      "is_fork": false
+    },
+    {
+      "name": "proeventsolutions-pk",
+      "full_name": "hamids-ai-automations/proeventsolutions-pk",
+      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
+      "documentation": "projects/individual_projects/proeventsolutions-pk.md",
+      "live_url": null,
+      "language": "HTML",
+      "stars": 0,
       "status": "active",
       "is_fork": false
     },

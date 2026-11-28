@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 2 |
 | Releases | 0 |
 | Contributors | 1 |
-| Size | 7587 KB |
+| Size | 7608 KB |
 | Topics | client-project, responsive-design, website |
 
 ## Objectives
@@ -41,7 +41,7 @@ No explicit feature list found in the README.
 
 | Language | Bytes |
 | --- | --- |
-| HTML | 4495094 |
+| HTML | 4565866 |
 | CSS | 41512 |
 | JavaScript | 10909 |
 | Python | 4697 |

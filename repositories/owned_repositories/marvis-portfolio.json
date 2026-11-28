@@ -7,9 +7,9 @@
   "homepage": null,
   "created_at": "2026-11-25T01:04:26Z",
   "updated_at": "2026-11-26T14:57:57Z",
-  "pushed_at": "2026-11-28T07:46:49Z",
+  "pushed_at": "2026-11-28T12:43:11Z",
   "default_branch": "main",
-  "last_commit_at": "2026-11-28T07:46:48Z",
+  "last_commit_at": "2026-11-28T12:43:10Z",
   "visibility": "public",
   "is_private": false,
   "archived": false,
@@ -39,7 +39,7 @@
   "tags_count": 0,
   "branches_count": 1,
   "discussions_count": 0,
-  "deployments_count": 29,
+  "deployments_count": 30,
   "environments_count": 1,
   "packages_count": 0,
   "has_issues": true,
@@ -47,7 +47,7 @@
   "has_projects": true,
   "has_discussions": false,
   "topics": [],
-  "size_kb": 880,
+  "size_kb": 881,
   "readme": {
     "path": "README.md",
     "html_url": "https://github.com/hamids-ai-automations/marvis-portfolio/blob/main/README.md",
@@ -132,6 +132,6 @@
     "https://wa.me/923167417135"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-28T10:44:43+00:00",
+  "detail_refreshed_at": "2026-11-28T16:53:04+00:00",
   "detail_source": "api"
 }

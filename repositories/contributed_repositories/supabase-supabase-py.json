@@ -4,7 +4,7 @@
   "description": "Python Client for Supabase. Query Postgres from Flask, Django, FastAPI. Python user authentication, security policies, edge functions, file storage, and realtime data streaming.",
   "owner": "supabase",
   "is_fork": false,
-  "stars": 2640,
+  "stars": 2642,
   "language": "Python",
   "commits": 1,
   "pull_requests": 1,

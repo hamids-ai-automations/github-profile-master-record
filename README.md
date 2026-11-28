@@ -1,6 +1,6 @@
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-28T10:45:13+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-28T16:53:18+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -10,21 +10,21 @@ AI Automation Engineer | MCP servers, agent evals and permission-gated automatio
 
 | Metric | Value |
 | --- | --- |
-| Repositories (owned / forked) | 42 / 59 |
-| Projects documented | 101 |
+| Repositories (owned / forked) | 44 / 59 |
+| Projects documented | 103 |
 | Public gists | 0 |
 | Live websites | 67 |
 | Releases tracked | 7 |
 | External links | 801 |
 | Pull requests authored | 168 |
 | Issues authored | 1 |
-| Commits (last 12 months) | 313 |
-| Total contributions (last 12 months) | 584 |
+| Commits (last 12 months) | 314 |
+| Total contributions (last 12 months) | 585 |
 | Followers | 4 |
 
 ## Main technologies
 
-Python (69.76%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.42%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)
+Python (69.76%), TypeScript (17.1%), JavaScript (3.37%), HTML (2.44%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)
 
 ## Important projects
 
@@ -83,32 +83,34 @@ python automation/validate.py                 # full gate: schema, links, tests
 
 ## Latest changes in this sync
 
-- **repository_updated** — hamids-ai-automations/proeventsolutions-pk updated: pushed_at
 - **repository_updated** — hamids-ai-automations/marvis-portfolio updated: pushed_at
+- **repository_added** — New repository discovered: hamids-ai-automations/marvis-commerce-os
+- **repository_added** — New repository discovered: hamids-ai-automations/marvis-streamlit-dashboard
 - **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at, readme
+- **repository_updated** — hamids-ai-automations/proeventsolutions-pk updated: languages
 
 ## Recently pushed repositories
 
 | Repository | Last push | Language |
 | --- | --- | --- |
-| [proeventsolutions-pk](https://github.com/hamids-ai-automations/proeventsolutions-pk) | 2026-11-28 | HTML |
 | [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | 2026-11-28 | TypeScript |
+| [marvis-commerce-os](https://github.com/hamids-ai-automations/marvis-commerce-os) | 2026-11-28 | - |
+| [marvis-streamlit-dashboard](https://github.com/hamids-ai-automations/marvis-streamlit-dashboard) | 2026-11-28 | Python |
 | [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | 2026-11-28 | Python |
+| [proeventsolutions-pk](https://github.com/hamids-ai-automations/proeventsolutions-pk) | 2026-11-28 | HTML |
 | [firebase-ai-starter-kit](https://github.com/hamids-ai-automations/firebase-ai-starter-kit) | 2026-11-28 | TypeScript |
 | [agentshield-ai](https://github.com/hamids-ai-automations/agentshield-ai) | 2026-11-27 | Python |
 | [seo-intelligence-ai](https://github.com/hamids-ai-automations/seo-intelligence-ai) | 2026-11-27 | Python |
-| [adwaste-intelligence](https://github.com/hamids-ai-automations/adwaste-intelligence) | 2026-11-27 | Python |
-| [ghl-servicepro-theme](https://github.com/hamids-ai-automations/ghl-servicepro-theme) | 2026-11-25 | TypeScript |
 
 ## Data quality
 
 | Check | Value |
 | --- | --- |
-| total repositories discovered | 101 |
-| total repositories documented | 100 |
-| documentation coverage percent | 99.01 |
+| total repositories discovered | 103 |
+| total repositories documented | 101 |
+| documentation coverage percent | 98.06 |
 | repositories without description | 7 |
-| total projects | 101 |
+| total projects | 103 |
 | total contributions | 169 |
 | total external links | 801 |
 | total gists | 0 |
@@ -117,8 +119,8 @@ python automation/validate.py                 # full gate: schema, links, tests
 | missing optional fields | ['hamids-ai-automations/ghl-servicepro-theme: description', 'hamids-ai-automations/langchain-google-cloud-sql-pg-python: description', 'hamids-ai-automations/sbsim: description', 'hamids-ai-automations/rai-toolkit: description', 'hamids-ai-automations/trustflow-backend: description', 'hamids-ai-automations/simple_invoicing: description', 'hamids-ai-automations/TermXtract: description'] |
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
-| validation warnings | 1 |
-| last validated | 2026-11-28T10:45:13+00:00 |
+| validation warnings | 2 |
+| last validated | 2026-11-28T16:53:18+00:00 |
 
 ## Documentation map
 

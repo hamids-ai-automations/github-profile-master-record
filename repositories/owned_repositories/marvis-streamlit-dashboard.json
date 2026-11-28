@@ -1,0 +1,115 @@
+{
+  "id": "R_kgDOV_LhkA",
+  "name": "marvis-streamlit-dashboard",
+  "full_name": "hamids-ai-automations/marvis-streamlit-dashboard",
+  "url": "https://github.com/hamids-ai-automations/marvis-streamlit-dashboard",
+  "description": "MARVIS - GitHub Profile & Professional Work Intelligence Dashboard powered by github-profile-master-record",
+  "homepage": null,
+  "created_at": "2026-11-28T12:04:09Z",
+  "updated_at": "2026-11-28T12:10:10Z",
+  "pushed_at": "2026-11-28T12:10:06Z",
+  "default_branch": "main",
+  "last_commit_at": "2026-11-28T12:04:05Z",
+  "visibility": "public",
+  "is_private": false,
+  "archived": false,
+  "fork": false,
+  "disabled": false,
+  "is_template": false,
+  "in_organization": false,
+  "license": "MIT",
+  "license_name": "MIT License",
+  "language": "Python",
+  "languages": {
+    "Python": 256715
+  },
+  "language_total_size": 256715,
+  "stars": 0,
+  "forks": 0,
+  "watchers": 0,
+  "open_issues": 0,
+  "closed_issues": 0,
+  "open_pull_requests": 0,
+  "merged_pull_requests": 0,
+  "closed_pull_requests": 0,
+  "releases_count": 0,
+  "releases": [],
+  "tags_count": 0,
+  "branches_count": 1,
+  "discussions_count": 0,
+  "deployments_count": 0,
+  "environments_count": 0,
+  "packages_count": 0,
+  "has_issues": true,
+  "has_wiki": true,
+  "has_projects": true,
+  "has_discussions": false,
+  "topics": [],
+  "size_kb": 363,
+  "readme": {
+    "path": "README.md",
+    "html_url": "https://github.com/hamids-ai-automations/marvis-streamlit-dashboard/blob/main/README.md",
+    "has_readme": true,
+    "length": 8176,
+    "excerpt": "# MARVIS — GitHub Profile & Professional Work Intelligence Dashboard\n\n[![CI](https://github.com/hamids-ai-automations/marvis-streamlit-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/marvis-streamlit-dashboard/actions/workflows/ci.yml)\n[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)\n[![Streamlit 1.67+](https://img.shields.io/badge/streamlit-1.67%2B-FF4B4B.svg)](https://streamlit.io)\n[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)\n\n**MARVIS** is a read-only, live-synchronized Streamlit intelligence hub and public portfolio for **Muhammad Hamid** (`@hamids-ai-automations`), powered directly by the canonical GitHub master record repository [`hamids-ai-automations/github-profile-master-record`](https://github.com/hamids-ai-automations/github-profile-master-record).\n\n> **Public Portfolio:** [marvis.web.app](https://marvis.web.app/) · **GitHub:** [@hamids-ai-automations](https://github.com/hamids-ai-automations) · **WhatsApp:** [+92 316 7417135](https://wa.me/923167417135)\n\n---\n\n## What MARVIS Does\n\nInstead of maintaining a static, manually edited portfolio, MARVIS fetches, validates, normalizes, and visualizes Muhammad Hamid's canonical GitHub database (`MASTER_DATABASE.json`) and supplemental index documents in real time:\n\n1. **Executive Dashboard** — Live dynamically computed KPIs (total, owned, forked, archived repositories, live websites, contributions, commits, pull requests, releases), pinned flagships, language breakdown, and recently updated repositories.\n2. **Repository Explorer** — Searchable, filterable, sortable, paginated explorer across all 101+ repositories (zero omitted), with rich detail views and on-demand loading of individual `projects/individual_projects/<slug>.md` dossiers.\n3. **Project Portfolio & Case Studies** — Domain-organized portfolio (MCP Servers, AI Agents & LLM Automation, AI Security & DevSecOps, GoHighLevel & CRM, E-Commerce & Shopify, SEO & Search Intelligence, AdTech & Marketing Analytics, Websites & SaaS) with strictly factual case-study breakdowns.\n4. **Development Activity & Timeline** — Daily & monthly contribution trends, commit counts by repository, authored pull requests & issues, software releases, sync change logs, and explicit disclosure of historical gaps.\n5. **Skills & Technology Intelligence** — Clearly separates **profile-documented capabilities** (from GitHub Profile README) from **repository-inferred technologies** (languages, frameworks, dependencies, CI/test tooling).\n6. **Websites & External Work Directory** — Filterable directory of live sites, documentation, APIs, and business profiles linked back to owning repositories, with opt-in, SSRF-guarded reachability verification.\n7. **Achievements & Professional History** — Chronological milestones, releases, merged upstream PRs, and honest `unverified`/`unavailable` badge status tracking.\n8. **AI Career & Project Analyst** — Runs 100% deterministically without an API key (citation-backed queries, CV draft, monthly report, gap audit) and supports optional live synthesis via Google Gemini (`google-genai`, `gemini-3.8-flash`) configured via Streamlit Secrets.\n9. **Synchronization & Data Health Center** — Displays master commit SHA, dual timestamps (`source_synced_at` vs `app_fetched_at`), cache TTL, schema/URL audits, cross-document consistency checks, manual refresh trigger, and full JSON/CSV/Markdown/PDF export downloads.\n\n---\n\n## Architecture & Data Sources\n\n```\ngithub-profile-master-record (Read-Only Source of Truth)\n  ├── MASTER_DATABASE.json          (Canonical machine-readable DB)\n  ├── projects/projects_index.json  (Project docs & live URL mapping)\n  ├── repositories/repositories_index.json\n  ├── README.md, SYNC_STATUS.md, MASTER_PROFILE.md, AI_AGENT_CONTEXT.md\n  └── projects/individual_projects/<slug>.md (Fetched lazily on demand)\n          │\n          ▼ HTTPS GET (retries + timeout + @st.cache_dat",
+    "full_content_path": null
+  },
+  "tree": {
+    "truncated": false,
+    "total_files": 58,
+    "total_entries": 69,
+    "top_level_directories": [
+      ".github",
+      ".streamlit",
+      "app_pages",
+      "assets",
+      "docs",
+      "src",
+      "tests"
+    ],
+    "important_files": [
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "workflow_files": [
+      ".github/workflows/ci.yml"
+    ],
+    "test_files_count": 15,
+    "ci_enabled": true
+  },
+  "contributors": {
+    "count": 1,
+    "anonymous_included": false
+  },
+  "technology": {
+    "frameworks": [
+      "Streamlit",
+      "pandas",
+      "pytest",
+      "requests"
+    ],
+    "dependencies": [
+      "google-genai",
+      "pandas",
+      "pillow",
+      "pydantic",
+      "reportlab",
+      "requests",
+      "streamlit"
+    ],
+    "config_files": [
+      "requirements.txt",
+      "pyproject.toml"
+    ]
+  },
+  "external_links": [
+    "https://www.python.org/downloads/",
+    "https://streamlit.io",
+    "https://marvis.web.app/",
+    "https://wa.me/923167417135",
+    "https://share.streamlit.io/"
+  ],
+  "documentation_status": "documented",
+  "detail_refreshed_at": "2026-11-28T16:53:04+00:00",
+  "detail_source": "api"
+}

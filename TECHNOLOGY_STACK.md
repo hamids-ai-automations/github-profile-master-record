@@ -6,10 +6,10 @@ Derived from repository language byte counts and dependency files.
 
 | Language | Bytes | Share | Repositories |
 | --- | --- | --- | --- |
-| Python | 306061565 | 69.76% | 83 |
-| TypeScript | 75064023 | 17.11% | 29 |
+| Python | 306318280 | 69.76% | 84 |
+| TypeScript | 75064023 | 17.1% | 29 |
 | JavaScript | 14781219 | 3.37% | 44 |
-| HTML | 10623043 | 2.42% | 35 |
+| HTML | 10693815 | 2.44% | 35 |
 | Go | 8598365 | 1.96% | 7 |
 | PHP | 5011706 | 1.14% | 4 |
 | Vue | 4329562 | 0.99% | 3 |
@@ -57,15 +57,15 @@ Derived from repository language byte counts and dependency files.
 
 | Name | Repositories |
 | --- | --- |
-| pytest | 56 |
+| pytest | 57 |
 | FastAPI | 27 |
-| pandas | 25 |
+| pandas | 26 |
 | MCP | 21 |
 | NumPy | 19 |
-| requests | 15 |
+| requests | 16 |
 | Next.js | 12 |
+| Streamlit | 12 |
 | React | 11 |
-| Streamlit | 11 |
 | OpenAI API | 9 |
 | BeautifulSoup | 7 |
 | SQLAlchemy | 7 |

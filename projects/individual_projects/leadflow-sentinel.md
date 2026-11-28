@@ -85,11 +85,11 @@ Active — last push 2026-11-22
 
 ## Related projects
 
+- hamids-ai-automations/marvis-streamlit-dashboard
 - hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/agentshield-ai
 - hamids-ai-automations/seo-intelligence-ai
 - hamids-ai-automations/adwaste-intelligence
-- hamids-ai-automations/ghl-automation-engine
 
 ## Known issues and limitations
 

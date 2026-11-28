@@ -84,11 +84,11 @@ No deployment configuration detected.
 ## Documentation links
 
 - https://marvis.web.app
-- https://hamid-agentshield.streamlit.app
 - https://www.python.org/downloads
 - https://streamlit.io
-- http://localhost:8501
 - https://share.streamlit.io
+- https://hamid-agentshield.streamlit.app
+- http://localhost:8501
 
 ## Development status
 
@@ -102,11 +102,11 @@ Active — last push 2026-11-27
 
 ## Related projects
 
+- hamids-ai-automations/marvis-streamlit-dashboard
 - hamids-ai-automations/github-profile-master-record
 - hamids-ai-automations/seo-intelligence-ai
 - hamids-ai-automations/adwaste-intelligence
 - hamids-ai-automations/leadflow-sentinel
-- hamids-ai-automations/ghl-automation-engine
 
 ## Known issues and limitations
 

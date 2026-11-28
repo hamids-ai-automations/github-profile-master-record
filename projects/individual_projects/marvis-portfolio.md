@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 2 |
-| Size | 880 KB |
+| Size | 881 KB |
 | Topics | - |
 
 ## Objectives

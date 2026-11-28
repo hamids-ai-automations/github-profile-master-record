@@ -2,7 +2,7 @@
 
 **Owner:** Muhammad Hamid (@hamids-ai-automations) — AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
-**Last synchronized:** 2026-11-28T10:45:13+00:00
+**Last synchronized:** 2026-11-28T16:53:18+00:00
 
 ## How to use this repository
 
@@ -21,8 +21,8 @@
 
 ## Profile facts
 
-- Total repositories documented: 101 (42 owned, 59 forked)
-- Active owned repositories: 42; archived: 0
+- Total repositories documented: 103 (44 owned, 59 forked)
+- Active owned repositories: 44; archived: 0
 - Live websites: 67
 - Languages in use: Python, TypeScript, JavaScript, HTML, Go, PHP, Vue, Shell, CSS, MDX, Swift, TLA, Jinja, Kotlin, SCSS, Svelte, Jupyter Notebook, Java, C#, PowerShell, Makefile, Dockerfile, Rust, Go Template, Blade, C, Handlebars, Dart, TSQL, PLpgSQL, Batchfile, Nix, Slim, HCL, Astro, C++, Gherkin, Ruby, Inno Setup, CMake, Mermaid, Mako, WGSL, Tape, Procfile, Rich Text Format
 
@@ -58,7 +58,7 @@
 
 ## Live sites and their repositories
 
-- https://marvis.web.app → hamids-ai-automations/marvis-portfolio, hamids-ai-automations/github-profile-master-record, hamids-ai-automations/agentshield-ai, hamids-ai-automations/adwaste-intelligence, hamids-ai-automations/ghl-servicepro-theme, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot
+- https://marvis.web.app → hamids-ai-automations/marvis-portfolio, hamids-ai-automations/marvis-streamlit-dashboard, hamids-ai-automations/github-profile-master-record, hamids-ai-automations/agentshield-ai, hamids-ai-automations/adwaste-intelligence, hamids-ai-automations/ghl-servicepro-theme, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot
 - https://fb-ai-starter-kit.web.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/firebase-ai-starter-kit
 - https://marvis.web.app/projects/firebase-ai-starter-kit → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/firebase-ai-starter-kit
 - https://hamid-agentshield.streamlit.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/agentshield-ai

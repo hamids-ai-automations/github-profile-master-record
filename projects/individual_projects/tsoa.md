@@ -98,10 +98,10 @@ Fork of another project; see upstream for original authorship.
 ## Related projects
 
 - hamids-ai-automations/marvis-portfolio
+- hamids-ai-automations/firebase-ai-starter-kit
 - hamids-ai-automations/ghl-servicepro-theme
 - hamids-ai-automations/servicenow-ultimate-mcp
 - hamids-ai-automations/shopify-growth-mcp
-- hamids-ai-automations/ghl-devops-toolkit
 
 ## Known issues and limitations
 

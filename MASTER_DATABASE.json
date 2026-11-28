@@ -2,7 +2,7 @@
   "metadata": {
     "schema_version": "1.0.0",
     "username": "hamids-ai-automations",
-    "generated_at": "2026-11-27T23:28:03+00:00",
+    "generated_at": "2026-11-28T07:46:31+00:00",
     "source": "GitHub REST API v3 + GraphQL API v4",
     "generator": "github-profile-master-record/automation/sync.py",
     "canonical": true,
@@ -11,9 +11,9 @@
     "run": {
       "mode": "incremental",
       "trigger": "automatic profile sync",
-      "api_requests": 338,
+      "api_requests": 354,
       "failed_requests": 0,
-      "duration_seconds": 56.0,
+      "duration_seconds": 59.1,
       "failures": [
         "packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {\"message\":\"The package_type parameter is invalid.\",\"documentation_url\":\"https://docs.github.com/rest/packages/packages#list-packages-for-a-user\",\"status\":\"422\"}"
       ]
@@ -176,7 +176,7 @@
         "private_gists": 0,
         "total_private_repos": 2,
         "owned_private_repos": 2,
-        "disk_usage": 39843,
+        "disk_usage": 39928,
         "collaborators": 0,
         "two_factor_authentication": true,
         "plan": {
@@ -354,7 +354,7 @@
     ],
     "achievements_highlights": {},
     "achievements_source": "https://github.com/hamids-ai-automations?tab=achievements",
-    "last_synced": "2026-11-27T23:28:03+00:00"
+    "last_synced": "2026-11-28T07:46:31+00:00"
   },
   "repositories": [
     {
@@ -366,9 +366,9 @@
       "homepage": null,
       "created_at": "2026-11-25T01:04:26Z",
       "updated_at": "2026-11-26T14:57:57Z",
-      "pushed_at": "2026-11-27T15:06:07Z",
+      "pushed_at": "2026-11-28T04:01:55Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-27T15:06:06Z",
+      "last_commit_at": "2026-11-28T04:01:55Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -398,7 +398,7 @@
       "tags_count": 0,
       "branches_count": 1,
       "discussions_count": 0,
-      "deployments_count": 26,
+      "deployments_count": 28,
       "environments_count": 1,
       "packages_count": 0,
       "has_issues": true,
@@ -406,7 +406,7 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 877,
+      "size_kb": 879,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/marvis-portfolio/blob/main/README.md",
@@ -492,7 +492,283 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T23:27:41+00:00",
+      "detail_refreshed_at": "2026-11-28T07:46:08+00:00",
+      "detail_source": "api"
+    },
+    {
+      "id": "R_kgDOV2ULAA",
+      "name": "firebase-ai-starter-kit",
+      "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
+      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
+      "description": "Secure Gemini AI on Firebase: Auth, Firestore ownership rules, hardened Cloud Functions, emulator-first tests, CI and guarded deploys.",
+      "homepage": null,
+      "created_at": "2026-11-21T06:06:33Z",
+      "updated_at": "2026-11-21T06:07:40Z",
+      "pushed_at": "2026-11-28T03:33:39Z",
+      "default_branch": "main",
+      "last_commit_at": "2026-11-21T16:01:46Z",
+      "visibility": "public",
+      "is_private": false,
+      "archived": false,
+      "fork": false,
+      "disabled": false,
+      "is_template": false,
+      "in_organization": false,
+      "license": "MIT",
+      "license_name": "MIT License",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 151246,
+        "JavaScript": 12472,
+        "HTML": 531,
+        "CSS": 201
+      },
+      "language_total_size": 164450,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "closed_issues": 0,
+      "open_pull_requests": 11,
+      "merged_pull_requests": 0,
+      "closed_pull_requests": 2,
+      "releases_count": 0,
+      "releases": [],
+      "tags_count": 0,
+      "branches_count": 12,
+      "discussions_count": 0,
+      "deployments_count": 0,
+      "environments_count": 0,
+      "packages_count": 0,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_projects": true,
+      "has_discussions": false,
+      "topics": [
+        "cloud-functions",
+        "firebase",
+        "gemini",
+        "google-ai",
+        "openai-alternative",
+        "react",
+        "security",
+        "starter-kit",
+        "typescript",
+        "vite"
+      ],
+      "size_kb": 633,
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit/blob/main/README.md",
+        "has_readme": true,
+        "length": 25362,
+        "excerpt": "# Firebase AI Starter Kit\n\n[![CI](https://github.com/hamids-ai-automations/firebase-ai-starter-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/firebase-ai-starter-kit/actions/workflows/ci.yml)\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Node 22+](https://img.shields.io/badge/node-22%2B%20%7C%2024.x-brightgreen.svg)](package.json)\n\nA production-minded starter kit for building **Gemini AI features on Firebase** — real authentication,\nowner-scoped Firestore rules, strict validation, an emulator-first workflow, and a working React demo\ninstead of a snippet collection.\n\nIt ships in two interchangeable deployment modes. The default build targets the **free Spark plan**;\nthe same endpoints also exist as server-side Cloud Functions for teams that want the key off the client.\n\n| Mode                                  | Gemini calls run                                                 | Billing             | Status                                        |\n| ------------------------------------- | ---------------------------------------------------------------- | ------------------- | --------------------------------------------- |\n| **Spark mode** (default build)        | In the browser via REST, using the signed-in user's own API key  | None — no Blaze     | **Live:** <https://fb-ai-starter-kit.web.app> |\n| **Blaze mode** (`functions/` variant) | Inside Cloud Functions 2nd gen, key held as a server-only secret | Blaze plan required | Reference implementation, deployed on demand  |\n\n- **Live demo (Spark):** <https://fb-ai-starter-kit.web.app>\n- **Project page:** <https://marvis.web.app/projects/firebase-ai-starter-kit>\n- **Spark deployment guide:** [`docs/FREE_PLAN_DEPLOYMENT.md`](docs/FREE_PLAN_DEPLOYMENT.md)\n- **Documentation:** [`docs/`](docs/) — architecture, setup, API reference, security, testing, deployment\n\n---\n\n## Table of contents\n\n1. [Project introduction](#1-project-introduction)\n2. [Problem statement](#2-problem-statement)\n3. [Key features](#3-key-features)\n4. [Architecture](#4-architecture)\n5. [Technology stack](#5-technology-stack)\n6. [Screenshots](#6-screenshots)\n7. [Prerequisites](#7-prerequisites)\n8. [Installation](#8-installation)\n9. [Firebase configuration](#9-firebase-configuration)\n10. [Gemini configuration](#10-gemini-configuration)\n11. [Environment variables](#11-environment-variables)\n12. [Local development](#12-local-development)\n13. [Authentication guide](#13-authentication-guide)\n14. [Firestore guide](#14-firestore-guide)\n15. [Gemini integration guide](#15-gemini-integration-guide)\n16. [Cloud Functions guide](#16-cloud-functions-guide)\n17. [Security documentation](#17-security-documentation)\n18. [Testing](#18-testing)\n19. [Deployment](#19-deployment)\n20. [Troubleshooting](#20-troubleshooting)\n21. [Contributing](#21-contributing)\n22. [License](#22-license)\n23. [Roadmap](#23-roadmap)\n24. [Project links](#24-project-links)\n\n---\n\n## 1. Project introduction\n\nMost \"AI + Firebase\" samples skip Firestore rules, trust the client to police its own data, and stop\nat a single prototype file. This kit is built around the parts that decide whether an AI feature\nsurvives real users: **who may read a document, what happens when the model returns malformed JSON,\nwhere the API key lives, and how any of it is tested before production.**\n\nThe kit deliberately implements the same product through two back ends:\n\n- **Spark mode** — the browser calls Gemini REST directly with a key the user supplies in the Setup\n  tab. The key lives in `sessionStorage` for that tab only: never committed, never bundled, never\n  written to Firestore. This mode needs no billing account, and it is what runs at\n  <https://fb-ai-starter-kit.web.app>.\n- **Blaze mode** — the same endpoints as Cloud Functions 2nd gen: Zod validation, per-user rate\n  limits, server-only `GEMINI_API_KEY`, conversation persistence. Kept in `functions/` as the\n  production upgrade path.\n\nBoth modes share one co",
+        "full_content_path": null
+      },
+      "readme_full_content": null,
+      "tree": {
+        "truncated": false,
+        "total_files": 109,
+        "total_entries": 136,
+        "top_level_directories": [
+          ".github",
+          "apps",
+          "docs",
+          "firestore",
+          "functions",
+          "scripts"
+        ],
+        "important_files": [
+          "apps/web/package.json",
+          "apps/web/tsconfig.json",
+          "firebase.json",
+          "functions/package.json",
+          "functions/tsconfig.json",
+          "package.json"
+        ],
+        "workflow_files": [
+          ".github/workflows/ci.yml",
+          ".github/workflows/deploy.yml"
+        ],
+        "test_files_count": 10,
+        "ci_enabled": true
+      },
+      "contributors": {
+        "count": 1,
+        "anonymous_included": false
+      },
+      "technology": {
+        "frameworks": [
+          "Firebase",
+          "React"
+        ],
+        "dependencies": [
+          "@eslint/js",
+          "eslint",
+          "eslint-plugin-react-hooks",
+          "eslint-plugin-react-refresh",
+          "globals",
+          "prettier",
+          "typescript-eslint"
+        ],
+        "config_files": [
+          "package.json",
+          "firebase.json"
+        ]
+      },
+      "external_links": [
+        "https://fb-ai-starter-kit.web.app",
+        "https://marvis.web.app/projects/firebase-ai-starter-kit",
+        "https://console.firebase.google.com/",
+        "https://wa.me/923167417135"
+      ],
+      "documentation_status": "documented",
+      "detail_refreshed_at": "2026-11-28T07:46:08+00:00",
+      "detail_source": "api"
+    },
+    {
+      "id": "R_kgDOVxlzHg",
+      "name": "proeventsolutions-pk",
+      "full_name": "hamids-ai-automations/proeventsolutions-pk",
+      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
+      "description": "Production website repository for Pro Event Solutions (https://proeventsolutions.pk/) with automated cPanel deployment workflow.",
+      "homepage": null,
+      "created_at": "2026-11-17T10:59:48Z",
+      "updated_at": "2026-11-20T01:21:12Z",
+      "pushed_at": "2026-11-28T03:14:30Z",
+      "default_branch": "main",
+      "last_commit_at": "2026-11-28T03:13:15Z",
+      "visibility": "public",
+      "is_private": false,
+      "archived": false,
+      "fork": false,
+      "disabled": false,
+      "is_template": false,
+      "in_organization": false,
+      "license": "MIT",
+      "license_name": "MIT License",
+      "language": "HTML",
+      "languages": {
+        "HTML": 4495094,
+        "CSS": 41512,
+        "JavaScript": 10909,
+        "Python": 4697
+      },
+      "language_total_size": 4552212,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "closed_issues": 0,
+      "open_pull_requests": 0,
+      "merged_pull_requests": 2,
+      "closed_pull_requests": 0,
+      "releases_count": 0,
+      "releases": [],
+      "tags_count": 0,
+      "branches_count": 3,
+      "discussions_count": 0,
+      "deployments_count": 0,
+      "environments_count": 0,
+      "packages_count": 0,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_projects": true,
+      "has_discussions": false,
+      "topics": [
+        "client-project",
+        "responsive-design",
+        "website"
+      ],
+      "size_kb": 7587,
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/hamids-ai-automations/proeventsolutions-pk/blob/main/README.md",
+        "has_readme": true,
+        "length": 5736,
+        "excerpt": "# Pro Event Solutions — Production Static Website\n\n## Executive Summary\nA brand-new, modern, premium, fully-static, mobile-first, SEO-optimized website for **Pro Event Solutions** ([https://proeventsolutions.pk/](https://proeventsolutions.pk/)).\n\n- **Primary Conversion Channel:** WhatsApp Exclusive (`+923074647635`)\n- **Direct WhatsApp URL:** [https://wa.me/923074647635](https://wa.me/923074647635)\n- **Google Tag Manager Container:** `GTM-PPNT33QP` (gtag.js + dataLayer events on all CTAs)\n- **Target Market:** Lahore, Punjab, Pakistan\n- **Architecture:** 100% Static HTML5, Modern CSS3, Vanilla JavaScript, Optimized WebP/SVG, JSON-LD Structured Data, Apache `.htaccess`\n- **Hosting Environment:** Standard cPanel shared hosting (zero Node.js, Python, or database runtime dependencies)\n- **Total URLs Preserved:** 79/79 (100% URL fidelity, exact slugs, trailing slashes, and canonical matching)\n\n---\n\n## Deliverables & Directory Structure\n\nAll deliverables have been saved inside:\n1. **Uncompressed Deployment Folder:** `D:\\pro event\\ProEventSolutions_Static_Website_Production\\`\n2. **Ready-to-Upload ZIP Archive:** `D:\\pro event\\ProEventSolutions_Static_Website_Production.zip` (6.59 MB)\n\n```\nD:\\pro event\\ProEventSolutions_Static_Website_Production\\\n│\n├── index.html                                 (Homepage)\n├── about-us/index.html                        (About Us)\n├── contact/index.html                         (Contact Us)\n├── wedding-event-management-lahore/index.html (Wedding Services)\n├── corporate-event-management-services-lahore/index.html\n├── [all other 74 page folders]/index.html     (All 79 original URLs preserved)\n│\n├── assets/\n│   ├── css/\n│   │   └── style.css                          (Modern luxury dark/gold design system)\n│   ├── js/\n│   │   └── main.js                            (GTM tracking, WhatsApp delegator, drawer, accordion)\n│   └── images/\n│       ├── branding/                          (logo.svg, favicon.svg)\n│       ├── homepage/                          (High-res hero & production WebP)\n│       ├── weddings/                          (Bespoke stages, floral arches, mehndi)\n│       ├── corporate-events/                  (Conferences, LED backdrops, summits)\n│       ├── expo-centre/                       (Expo Centre Lahore exhibition stalls)\n│       ├── brand-launch/                      (Product reveals & stage lasers)\n│       ├── private-events/                    (Milestone celebrations & dinners)\n│       ├── catering-venues/                   (Banquet setups & buffet layouts)\n│       ├── photography-studio/                (Cyclorama infinity curve studios)\n│       ├── podcast-studio/                    (Acoustic slat walls & broadcast mics)\n│       ├── tv-studio/                         (News anchor desks & studio sets)\n│       ├── creative-production/               (Stage trussing & cinema cameras)\n│       └── lahore-locations/                  (DHA, Gulberg, Bahria Town, etc.)\n│\n├── .htaccess                                  (HTTPS, trailing slashes, compression, caching, security headers)\n├── robots.txt                                 (Allows all, points to sitemap)\n├── sitemap.xml                                (All 79 canonical URLs + priorities)\n├── 404.html                                   (Custom branded 404 error page)\n├── favicon.svg                                (Vector favicon)\n├── url_mapping.csv                            (Complete audit and mapping of all 79 URLs)\n├── qa_results.csv                             (Automated test results: 79/79 passed)\n├── image_asset_inventory.csv                  (Metadata, dimensions, licensing for all 35 images)\n└── cPanel_Deployment_Guide.md                 (Step-by-step instructions for hosting)\n```\n\n---\n\n## Key Features Implemented\n\n### 1. Google Tag & CTA Event Tracking\n- Asynchronous Google Tag (`GTM-PPNT33QP`) implemented in `<head>` of all 79 pages + 404 page.\n- GTM `<noscript>` iframe implemented in `<body>` of all pages.\n- **Event Tracking on ALL CTAs:**",
+        "full_content_path": null
+      },
+      "readme_full_content": null,
+      "tree": {
+        "truncated": false,
+        "total_files": 166,
+        "total_entries": 267,
+        "top_level_directories": [
+          ".github",
+          "about-us",
+          "articles",
+          "assets",
+          "best-event-planner-lahore-pro-event-solutions",
+          "brand-launch-event-management-lahore",
+          "catering-and-venue-management-services-in-lahore",
+          "contact",
+          "corporate-event-management-services-lahore",
+          "creative-production-services-lahore",
+          "docs",
+          "event-management-company-for-expo-centre-lahore",
+          "event-planner-al-kabir-town-lahore",
+          "event-planner-allama-iqbal-town",
+          "event-planner-anarkali-lahore",
+          "event-planner-barki-road-lahore",
+          "event-planner-canal-view-lahore",
+          "event-planner-cavalry-ground-lahore",
+          "event-planner-central-park-lahore",
+          "event-planner-defence-road-lahore",
+          "event-planner-dream-gardens-lahore",
+          "event-planner-eden-avenue-lahore",
+          "event-planner-eden-city-lahore",
+          "event-planner-etihad-town-lahore",
+          "event-planner-gulberg-lahore",
+          "event-planner-gulshan-ravi-lahore",
+          "event-planner-harbanspura-lahore",
+          "event-planner-ichhra-lahore",
+          "event-planner-in-askari-lahore",
+          "event-planner-in-bahria-town-lahore",
+          "event-planner-in-dha-lahore",
+          "event-planner-in-faisal-town-lahore",
+          "event-planner-in-garden-town-lahore",
+          "event-planner-in-green-town-lahore",
+          "event-planner-in-johar-town-lahore",
+          "event-planner-in-lahore-cantt",
+          "event-planner-in-lake-city-lahore",
+          "event-planner-in-model-town-lahore",
+          "event-planner-in-pia-housing-society",
+          "event-planner-in-township-lahore",
+          "event-planner-in-valencia-lahore",
+          "event-planner-in-wapda-town-lahore",
+          "event-planner-jubilee-town-lahore",
+          "event-planner-kahna-lahore",
+          "event-planner-kings-town-lahore",
+          "event-planner-kot-lakhpat-lahore",
+          "event-planner-lda-avenue-lahore",
+          "event-planner-mall-road-lahore",
+          "event-planner-mm-alam-road-lahore",
+          "event-planner-mughalpura-lahore"
+        ],
+        "important_files": [],
+        "workflow_files": [
+          ".github/workflows/deploy.yml"
+        ],
+        "test_files_count": 0,
+        "ci_enabled": true
+      },
+      "contributors": {
+        "count": 1,
+        "anonymous_included": false
+      },
+      "technology": {
+        "frameworks": [],
+        "dependencies": [],
+        "config_files": []
+      },
+      "external_links": [
+        "https://proeventsolutions.pk/",
+        "https://wa.me/923074647635",
+        "https://wa.me/923074647635`"
+      ],
+      "documentation_status": "documented",
+      "detail_refreshed_at": "2026-11-28T07:46:08+00:00",
       "detail_source": "api"
     },
     {
@@ -504,9 +780,9 @@
       "homepage": null,
       "created_at": "2026-11-23T05:13:38Z",
       "updated_at": "2026-11-26T14:57:56Z",
-      "pushed_at": "2026-11-27T15:05:50Z",
+      "pushed_at": "2026-11-27T23:28:04Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-27T15:05:48Z",
+      "last_commit_at": "2026-11-27T23:28:03Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -542,20 +818,20 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 5333,
+      "size_kb": 5340,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/README.md",
         "has_readme": true,
         "length": 9813,
-        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-27T15:05:48+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 42 / 59 |\n| Projects documented | 101 |\n| Public gists | 0 |\n| Live websites | 67 |\n| Releases tracked | 7 |\n| External links | 801 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 313 |\n| Total contributions (last 12 months) | 584 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | TypeScript | 1 | 0 | active | 2026-11-27 |\n| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 1 | 0 | active | 2026-11-27 |\n| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/",
+        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-27T23:28:03+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 42 / 59 |\n| Projects documented | 101 |\n| Public gists | 0 |\n| Live websites | 67 |\n| Releases tracked | 7 |\n| External links | 801 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 313 |\n| Total contributions (last 12 months) | 584 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | TypeScript | 1 | 0 | active | 2026-11-27 |\n| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 1 | 0 | active | 2026-11-27 |\n| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/",
         "full_content_path": null
       },
       "readme_full_content": null,
       "tree": {
         "truncated": false,
-        "total_files": 413,
-        "total_entries": 432,
+        "total_files": 416,
+        "total_entries": 435,
         "top_level_directories": [
           ".github",
           "achievements",
@@ -608,7 +884,7 @@
         "https://docs.github.com/rest/packages/packages#list-packages-for-a-user"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T23:27:41+00:00",
+      "detail_refreshed_at": "2026-11-28T07:46:08+00:00",
       "detail_source": "api"
     },
     {
@@ -2205,151 +2481,6 @@
       "detail_source": "cached"
     },
     {
-      "id": "R_kgDOVxlzHg",
-      "name": "proeventsolutions-pk",
-      "full_name": "hamids-ai-automations/proeventsolutions-pk",
-      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
-      "description": "Production website repository for Pro Event Solutions (https://proeventsolutions.pk/) with automated cPanel deployment workflow.",
-      "homepage": null,
-      "created_at": "2026-11-17T10:59:48Z",
-      "updated_at": "2026-11-20T01:21:12Z",
-      "pushed_at": "2026-11-21T20:28:41Z",
-      "default_branch": "main",
-      "last_commit_at": "2026-11-21T20:28:40Z",
-      "visibility": "public",
-      "is_private": false,
-      "archived": false,
-      "fork": false,
-      "disabled": false,
-      "is_template": false,
-      "in_organization": false,
-      "license": "MIT",
-      "license_name": "MIT License",
-      "language": "HTML",
-      "languages": {
-        "HTML": 4425066,
-        "CSS": 41512,
-        "JavaScript": 10909,
-        "Python": 4697
-      },
-      "language_total_size": 4482184,
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "closed_issues": 0,
-      "open_pull_requests": 0,
-      "merged_pull_requests": 2,
-      "closed_pull_requests": 0,
-      "releases_count": 0,
-      "releases": [],
-      "tags_count": 0,
-      "branches_count": 3,
-      "discussions_count": 0,
-      "deployments_count": 0,
-      "environments_count": 0,
-      "packages_count": 0,
-      "has_issues": true,
-      "has_wiki": true,
-      "has_projects": true,
-      "has_discussions": false,
-      "topics": [
-        "client-project",
-        "responsive-design",
-        "website"
-      ],
-      "size_kb": 7574,
-      "readme": {
-        "path": "README.md",
-        "html_url": "https://github.com/hamids-ai-automations/proeventsolutions-pk/blob/main/README.md",
-        "has_readme": true,
-        "length": 5736,
-        "excerpt": "# Pro Event Solutions — Production Static Website\n\n## Executive Summary\nA brand-new, modern, premium, fully-static, mobile-first, SEO-optimized website for **Pro Event Solutions** ([https://proeventsolutions.pk/](https://proeventsolutions.pk/)).\n\n- **Primary Conversion Channel:** WhatsApp Exclusive (`+923074647635`)\n- **Direct WhatsApp URL:** [https://wa.me/923074647635](https://wa.me/923074647635)\n- **Google Tag Manager Container:** `GTM-PPNT33QP` (gtag.js + dataLayer events on all CTAs)\n- **Target Market:** Lahore, Punjab, Pakistan\n- **Architecture:** 100% Static HTML5, Modern CSS3, Vanilla JavaScript, Optimized WebP/SVG, JSON-LD Structured Data, Apache `.htaccess`\n- **Hosting Environment:** Standard cPanel shared hosting (zero Node.js, Python, or database runtime dependencies)\n- **Total URLs Preserved:** 79/79 (100% URL fidelity, exact slugs, trailing slashes, and canonical matching)\n\n---\n\n## Deliverables & Directory Structure\n\nAll deliverables have been saved inside:\n1. **Uncompressed Deployment Folder:** `D:\\pro event\\ProEventSolutions_Static_Website_Production\\`\n2. **Ready-to-Upload ZIP Archive:** `D:\\pro event\\ProEventSolutions_Static_Website_Production.zip` (6.59 MB)\n\n```\nD:\\pro event\\ProEventSolutions_Static_Website_Production\\\n│\n├── index.html                                 (Homepage)\n├── about-us/index.html                        (About Us)\n├── contact/index.html                         (Contact Us)\n├── wedding-event-management-lahore/index.html (Wedding Services)\n├── corporate-event-management-services-lahore/index.html\n├── [all other 74 page folders]/index.html     (All 79 original URLs preserved)\n│\n├── assets/\n│   ├── css/\n│   │   └── style.css                          (Modern luxury dark/gold design system)\n│   ├── js/\n│   │   └── main.js                            (GTM tracking, WhatsApp delegator, drawer, accordion)\n│   └── images/\n│       ├── branding/                          (logo.svg, favicon.svg)\n│       ├── homepage/                          (High-res hero & production WebP)\n│       ├── weddings/                          (Bespoke stages, floral arches, mehndi)\n│       ├── corporate-events/                  (Conferences, LED backdrops, summits)\n│       ├── expo-centre/                       (Expo Centre Lahore exhibition stalls)\n│       ├── brand-launch/                      (Product reveals & stage lasers)\n│       ├── private-events/                    (Milestone celebrations & dinners)\n│       ├── catering-venues/                   (Banquet setups & buffet layouts)\n│       ├── photography-studio/                (Cyclorama infinity curve studios)\n│       ├── podcast-studio/                    (Acoustic slat walls & broadcast mics)\n│       ├── tv-studio/                         (News anchor desks & studio sets)\n│       ├── creative-production/               (Stage trussing & cinema cameras)\n│       └── lahore-locations/                  (DHA, Gulberg, Bahria Town, etc.)\n│\n├── .htaccess                                  (HTTPS, trailing slashes, compression, caching, security headers)\n├── robots.txt                                 (Allows all, points to sitemap)\n├── sitemap.xml                                (All 79 canonical URLs + priorities)\n├── 404.html                                   (Custom branded 404 error page)\n├── favicon.svg                                (Vector favicon)\n├── url_mapping.csv                            (Complete audit and mapping of all 79 URLs)\n├── qa_results.csv                             (Automated test results: 79/79 passed)\n├── image_asset_inventory.csv                  (Metadata, dimensions, licensing for all 35 images)\n└── cPanel_Deployment_Guide.md                 (Step-by-step instructions for hosting)\n```\n\n---\n\n## Key Features Implemented\n\n### 1. Google Tag & CTA Event Tracking\n- Asynchronous Google Tag (`GTM-PPNT33QP`) implemented in `<head>` of all 79 pages + 404 page.\n- GTM `<noscript>` iframe implemented in `<body>` of all pages.\n- **Event Tracking on ALL CTAs:**",
-        "full_content_path": null
-      },
-      "readme_full_content": null,
-      "tree": {
-        "truncated": false,
-        "total_files": 164,
-        "total_entries": 263,
-        "top_level_directories": [
-          ".github",
-          "about-us",
-          "assets",
-          "best-event-planner-lahore-pro-event-solutions",
-          "brand-launch-event-management-lahore",
-          "catering-and-venue-management-services-in-lahore",
-          "contact",
-          "corporate-event-management-services-lahore",
-          "creative-production-services-lahore",
-          "docs",
-          "event-management-company-for-expo-centre-lahore",
-          "event-planner-al-kabir-town-lahore",
-          "event-planner-allama-iqbal-town",
-          "event-planner-anarkali-lahore",
-          "event-planner-barki-road-lahore",
-          "event-planner-canal-view-lahore",
-          "event-planner-cavalry-ground-lahore",
-          "event-planner-central-park-lahore",
-          "event-planner-defence-road-lahore",
-          "event-planner-dream-gardens-lahore",
-          "event-planner-eden-avenue-lahore",
-          "event-planner-eden-city-lahore",
-          "event-planner-etihad-town-lahore",
-          "event-planner-gulberg-lahore",
-          "event-planner-gulshan-ravi-lahore",
-          "event-planner-harbanspura-lahore",
-          "event-planner-ichhra-lahore",
-          "event-planner-in-askari-lahore",
-          "event-planner-in-bahria-town-lahore",
-          "event-planner-in-dha-lahore",
-          "event-planner-in-faisal-town-lahore",
-          "event-planner-in-garden-town-lahore",
-          "event-planner-in-green-town-lahore",
-          "event-planner-in-johar-town-lahore",
-          "event-planner-in-lahore-cantt",
-          "event-planner-in-lake-city-lahore",
-          "event-planner-in-model-town-lahore",
-          "event-planner-in-pia-housing-society",
-          "event-planner-in-township-lahore",
-          "event-planner-in-valencia-lahore",
-          "event-planner-in-wapda-town-lahore",
-          "event-planner-jubilee-town-lahore",
-          "event-planner-kahna-lahore",
-          "event-planner-kings-town-lahore",
-          "event-planner-kot-lakhpat-lahore",
-          "event-planner-lda-avenue-lahore",
-          "event-planner-mall-road-lahore",
-          "event-planner-mm-alam-road-lahore",
-          "event-planner-mughalpura-lahore",
-          "event-planner-muslim-town-lahore"
-        ],
-        "important_files": [],
-        "workflow_files": [
-          ".github/workflows/deploy.yml"
-        ],
-        "test_files_count": 0,
-        "ci_enabled": true
-      },
-      "contributors": {
-        "count": 1,
-        "anonymous_included": false
-      },
-      "technology": {
-        "frameworks": [],
-        "dependencies": [],
-        "config_files": []
-      },
-      "external_links": [
-        "https://proeventsolutions.pk/",
-        "https://wa.me/923074647635",
-        "https://wa.me/923074647635`"
-      ],
-      "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:05+00:00",
-      "detail_source": "cached"
-    },
-    {
       "id": "R_kgDOVedz1A",
       "name": "nexgen-financial-experts",
       "full_name": "hamids-ai-automations/nexgen-financial-experts",
@@ -3006,137 +3137,6 @@
         "http://localhost:8080",
         "https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20reviewed%20Dynamic%20Schema%20Generator%20and%20would%20like%20to%20discuss%20an%20enterprise%20SEO%20and%20Schema%20consulting%20project",
         "https://hamid-resume.web.app/"
-      ],
-      "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:05+00:00",
-      "detail_source": "cached"
-    },
-    {
-      "id": "R_kgDOV2ULAA",
-      "name": "firebase-ai-starter-kit",
-      "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
-      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
-      "description": "Secure Gemini AI on Firebase: Auth, Firestore ownership rules, hardened Cloud Functions, emulator-first tests, CI and guarded deploys.",
-      "homepage": null,
-      "created_at": "2026-11-21T06:06:33Z",
-      "updated_at": "2026-11-21T06:07:40Z",
-      "pushed_at": "2026-11-21T16:02:56Z",
-      "default_branch": "main",
-      "last_commit_at": "2026-11-21T16:01:46Z",
-      "visibility": "public",
-      "is_private": false,
-      "archived": false,
-      "fork": false,
-      "disabled": false,
-      "is_template": false,
-      "in_organization": false,
-      "license": "MIT",
-      "license_name": "MIT License",
-      "language": "TypeScript",
-      "languages": {
-        "TypeScript": 151246,
-        "JavaScript": 12472,
-        "HTML": 531,
-        "CSS": 201
-      },
-      "language_total_size": 164450,
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "closed_issues": 0,
-      "open_pull_requests": 9,
-      "merged_pull_requests": 0,
-      "closed_pull_requests": 0,
-      "releases_count": 0,
-      "releases": [],
-      "tags_count": 0,
-      "branches_count": 10,
-      "discussions_count": 0,
-      "deployments_count": 0,
-      "environments_count": 0,
-      "packages_count": 0,
-      "has_issues": true,
-      "has_wiki": true,
-      "has_projects": true,
-      "has_discussions": false,
-      "topics": [
-        "cloud-functions",
-        "firebase",
-        "gemini",
-        "google-ai",
-        "openai-alternative",
-        "react",
-        "security",
-        "starter-kit",
-        "typescript",
-        "vite"
-      ],
-      "size_kb": 570,
-      "readme": {
-        "path": "README.md",
-        "html_url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit/blob/main/README.md",
-        "has_readme": true,
-        "length": 25362,
-        "excerpt": "# Firebase AI Starter Kit\n\n[![CI](https://github.com/hamids-ai-automations/firebase-ai-starter-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/hamids-ai-automations/firebase-ai-starter-kit/actions/workflows/ci.yml)\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Node 22+](https://img.shields.io/badge/node-22%2B%20%7C%2024.x-brightgreen.svg)](package.json)\n\nA production-minded starter kit for building **Gemini AI features on Firebase** — real authentication,\nowner-scoped Firestore rules, strict validation, an emulator-first workflow, and a working React demo\ninstead of a snippet collection.\n\nIt ships in two interchangeable deployment modes. The default build targets the **free Spark plan**;\nthe same endpoints also exist as server-side Cloud Functions for teams that want the key off the client.\n\n| Mode                                  | Gemini calls run                                                 | Billing             | Status                                        |\n| ------------------------------------- | ---------------------------------------------------------------- | ------------------- | --------------------------------------------- |\n| **Spark mode** (default build)        | In the browser via REST, using the signed-in user's own API key  | None — no Blaze     | **Live:** <https://fb-ai-starter-kit.web.app> |\n| **Blaze mode** (`functions/` variant) | Inside Cloud Functions 2nd gen, key held as a server-only secret | Blaze plan required | Reference implementation, deployed on demand  |\n\n- **Live demo (Spark):** <https://fb-ai-starter-kit.web.app>\n- **Project page:** <https://marvis.web.app/projects/firebase-ai-starter-kit>\n- **Spark deployment guide:** [`docs/FREE_PLAN_DEPLOYMENT.md`](docs/FREE_PLAN_DEPLOYMENT.md)\n- **Documentation:** [`docs/`](docs/) — architecture, setup, API reference, security, testing, deployment\n\n---\n\n## Table of contents\n\n1. [Project introduction](#1-project-introduction)\n2. [Problem statement](#2-problem-statement)\n3. [Key features](#3-key-features)\n4. [Architecture](#4-architecture)\n5. [Technology stack](#5-technology-stack)\n6. [Screenshots](#6-screenshots)\n7. [Prerequisites](#7-prerequisites)\n8. [Installation](#8-installation)\n9. [Firebase configuration](#9-firebase-configuration)\n10. [Gemini configuration](#10-gemini-configuration)\n11. [Environment variables](#11-environment-variables)\n12. [Local development](#12-local-development)\n13. [Authentication guide](#13-authentication-guide)\n14. [Firestore guide](#14-firestore-guide)\n15. [Gemini integration guide](#15-gemini-integration-guide)\n16. [Cloud Functions guide](#16-cloud-functions-guide)\n17. [Security documentation](#17-security-documentation)\n18. [Testing](#18-testing)\n19. [Deployment](#19-deployment)\n20. [Troubleshooting](#20-troubleshooting)\n21. [Contributing](#21-contributing)\n22. [License](#22-license)\n23. [Roadmap](#23-roadmap)\n24. [Project links](#24-project-links)\n\n---\n\n## 1. Project introduction\n\nMost \"AI + Firebase\" samples skip Firestore rules, trust the client to police its own data, and stop\nat a single prototype file. This kit is built around the parts that decide whether an AI feature\nsurvives real users: **who may read a document, what happens when the model returns malformed JSON,\nwhere the API key lives, and how any of it is tested before production.**\n\nThe kit deliberately implements the same product through two back ends:\n\n- **Spark mode** — the browser calls Gemini REST directly with a key the user supplies in the Setup\n  tab. The key lives in `sessionStorage` for that tab only: never committed, never bundled, never\n  written to Firestore. This mode needs no billing account, and it is what runs at\n  <https://fb-ai-starter-kit.web.app>.\n- **Blaze mode** — the same endpoints as Cloud Functions 2nd gen: Zod validation, per-user rate\n  limits, server-only `GEMINI_API_KEY`, conversation persistence. Kept in `functions/` as the\n  production upgrade path.\n\nBoth modes share one co",
-        "full_content_path": null
-      },
-      "readme_full_content": null,
-      "tree": {
-        "truncated": false,
-        "total_files": 109,
-        "total_entries": 136,
-        "top_level_directories": [
-          ".github",
-          "apps",
-          "docs",
-          "firestore",
-          "functions",
-          "scripts"
-        ],
-        "important_files": [
-          "apps/web/package.json",
-          "apps/web/tsconfig.json",
-          "firebase.json",
-          "functions/package.json",
-          "functions/tsconfig.json",
-          "package.json"
-        ],
-        "workflow_files": [
-          ".github/workflows/ci.yml",
-          ".github/workflows/deploy.yml"
-        ],
-        "test_files_count": 10,
-        "ci_enabled": true
-      },
-      "contributors": {
-        "count": 1,
-        "anonymous_included": false
-      },
-      "technology": {
-        "frameworks": [
-          "Firebase",
-          "React"
-        ],
-        "dependencies": [
-          "@eslint/js",
-          "eslint",
-          "eslint-plugin-react-hooks",
-          "eslint-plugin-react-refresh",
-          "globals",
-          "prettier",
-          "typescript-eslint"
-        ],
-        "config_files": [
-          "package.json",
-          "firebase.json"
-        ]
-      },
-      "external_links": [
-        "https://fb-ai-starter-kit.web.app",
-        "https://marvis.web.app/projects/firebase-ai-starter-kit",
-        "https://console.firebase.google.com/",
-        "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
       "detail_refreshed_at": "2026-11-27T11:13:05+00:00",
@@ -13946,6 +13946,20 @@
       "status": "active"
     },
     {
+      "name": "firebase-ai-starter-kit",
+      "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
+      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
+      "documentation": null,
+      "status": "active"
+    },
+    {
+      "name": "proeventsolutions-pk",
+      "full_name": "hamids-ai-automations/proeventsolutions-pk",
+      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
+      "documentation": null,
+      "status": "active"
+    },
+    {
       "name": "github-profile-master-record",
       "full_name": "hamids-ai-automations/github-profile-master-record",
       "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
@@ -14037,13 +14051,6 @@
       "status": "active"
     },
     {
-      "name": "proeventsolutions-pk",
-      "full_name": "hamids-ai-automations/proeventsolutions-pk",
-      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
-      "documentation": null,
-      "status": "active"
-    },
-    {
       "name": "nexgen-financial-experts",
       "full_name": "hamids-ai-automations/nexgen-financial-experts",
       "url": "https://github.com/hamids-ai-automations/nexgen-financial-experts",
@@ -14075,13 +14082,6 @@
       "name": "dynamic-schema-generator",
       "full_name": "hamids-ai-automations/dynamic-schema-generator",
       "url": "https://github.com/hamids-ai-automations/dynamic-schema-generator",
-      "documentation": null,
-      "status": "active"
-    },
-    {
-      "name": "firebase-ai-starter-kit",
-      "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
-      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
       "documentation": null,
       "status": "active"
     },
@@ -17380,8 +17380,8 @@
   },
   "commits": {
     "window": {
-      "from": "2025-11-27T23:27:50Z",
-      "to": "2026-11-27T23:27:50Z"
+      "from": "2025-11-28T07:46:18Z",
+      "to": "2026-11-28T07:46:18Z"
     },
     "total_commits": 313,
     "total_contributions": 584,
@@ -18360,7 +18360,7 @@
         "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
         "owner": "doobidoo",
         "is_fork": false,
-        "stars": 2161,
+        "stars": 2163,
         "language": "Python",
         "commits": 2,
         "pull_requests": 3,
@@ -18486,7 +18486,7 @@
         "description": "Python & Command-line tool to gather text and metadata on the Web: Crawling, scraping, extraction, output as CSV, JSON, HTML, MD, TXT, XML",
         "owner": "adbar",
         "is_fork": false,
-        "stars": 7237,
+        "stars": 7243,
         "language": "Python",
         "commits": 1,
         "pull_requests": 2,
@@ -19154,8 +19154,8 @@
       }
     ],
     "window": {
-      "from": "2025-11-27T23:27:53Z",
-      "to": "2026-11-27T23:27:53Z"
+      "from": "2025-11-28T07:46:20Z",
+      "to": "2026-11-28T07:46:20Z"
     }
   },
   "external_links": [
@@ -19320,6 +19320,7 @@
       ],
       "related_resources": [
         "hamids-ai-automations/marvis-portfolio",
+        "hamids-ai-automations/firebase-ai-starter-kit",
         "hamids-ai-automations/adwaste-intelligence",
         "hamids-ai-automations/ghl-servicepro-theme",
         "hamids-ai-automations/servicenow-ultimate-mcp",
@@ -19327,7 +19328,6 @@
         "hamids-ai-automations/ghl-devops-toolkit",
         "hamids-ai-automations/searchpulse-ai",
         "hamids-ai-automations/pinvault-pinterest-downloader",
-        "hamids-ai-automations/firebase-ai-starter-kit",
         "hamids-ai-automations/hamid-resume",
         "hamids-ai-automations/whatsapp-attribution-router",
         "hamids-ai-automations/conversionbridge",
@@ -19362,6 +19362,80 @@
         "hamids-ai-automations/markline"
       ],
       "source": "README of hamids-ai-automations/marvis-portfolio",
+      "verified": null
+    },
+    {
+      "url": "https://fb-ai-starter-kit.web.app",
+      "type": "live_site",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/firebase-ai-starter-kit",
+        "hamids-ai-automations/github-profile-master-record"
+      ],
+      "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
+      "verified": null
+    },
+    {
+      "url": "https://marvis.web.app/projects/firebase-ai-starter-kit",
+      "type": "live_site",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/firebase-ai-starter-kit",
+        "hamids-ai-automations/github-profile-master-record"
+      ],
+      "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
+      "verified": null
+    },
+    {
+      "url": "https://console.firebase.google.com",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/firebase-ai-starter-kit"
+      ],
+      "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
+      "verified": null
+    },
+    {
+      "url": "https://proeventsolutions.pk",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/proeventsolutions-pk"
+      ],
+      "source": "README of hamids-ai-automations/proeventsolutions-pk",
+      "verified": null
+    },
+    {
+      "url": "https://wa.me/923074647635",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/proeventsolutions-pk"
+      ],
+      "source": "README of hamids-ai-automations/proeventsolutions-pk",
+      "verified": null
+    },
+    {
+      "url": "https://wa.me/923074647635`",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/proeventsolutions-pk"
+      ],
+      "source": "README of hamids-ai-automations/proeventsolutions-pk",
       "verified": null
     },
     {
@@ -19487,32 +19561,6 @@
         "hamids-ai-automations/meta-lead-quality-analyzer",
         "hamids-ai-automations/conversion-tracking-doctor",
         "hamids-ai-automations/ppc-waste-detector"
-      ],
-      "source": "README of hamids-ai-automations/github-profile-master-record",
-      "verified": null
-    },
-    {
-      "url": "https://fb-ai-starter-kit.web.app",
-      "type": "live_site",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/github-profile-master-record",
-        "hamids-ai-automations/firebase-ai-starter-kit"
-      ],
-      "source": "README of hamids-ai-automations/github-profile-master-record",
-      "verified": null
-    },
-    {
-      "url": "https://marvis.web.app/projects/firebase-ai-starter-kit",
-      "type": "live_site",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/github-profile-master-record",
-        "hamids-ai-automations/firebase-ai-starter-kit"
       ],
       "source": "README of hamids-ai-automations/github-profile-master-record",
       "verified": null
@@ -19878,42 +19926,6 @@
       "verified": null
     },
     {
-      "url": "https://proeventsolutions.pk",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/proeventsolutions-pk"
-      ],
-      "source": "README of hamids-ai-automations/proeventsolutions-pk",
-      "verified": null
-    },
-    {
-      "url": "https://wa.me/923074647635",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/proeventsolutions-pk"
-      ],
-      "source": "README of hamids-ai-automations/proeventsolutions-pk",
-      "verified": null
-    },
-    {
-      "url": "https://wa.me/923074647635`",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/proeventsolutions-pk"
-      ],
-      "source": "README of hamids-ai-automations/proeventsolutions-pk",
-      "verified": null
-    },
-    {
       "url": "https://nexgenfinancialexperts.com",
       "type": "website",
       "relationships": [
@@ -20096,18 +20108,6 @@
         "hamids-ai-automations/dynamic-schema-generator"
       ],
       "source": "README of hamids-ai-automations/dynamic-schema-generator",
-      "verified": null
-    },
-    {
-      "url": "https://console.firebase.google.com",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/firebase-ai-starter-kit"
-      ],
-      "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
       "verified": null
     },
     {
@@ -29026,7 +29026,7 @@
       "name": "Python",
       "category": "language",
       "total_bytes": 306061565,
-      "percentage": 69.77,
+      "percentage": 69.76,
       "repository_count": 83
     },
     {
@@ -29046,8 +29046,8 @@
     {
       "name": "HTML",
       "category": "language",
-      "total_bytes": 10553015,
-      "percentage": 2.41,
+      "total_bytes": 10623043,
+      "percentage": 2.42,
       "repository_count": 35
     },
     {
@@ -30652,6 +30652,76 @@
         }
       },
       "detected_at": "2026-11-27T23:28:03+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/marvis-portfolio",
+      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
+      "summary": "hamids-ai-automations/marvis-portfolio updated: pushed_at",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-27T15:06:07Z",
+          "new": "2026-11-28T04:01:55Z"
+        }
+      },
+      "detected_at": "2026-11-28T07:46:31+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/firebase-ai-starter-kit",
+      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
+      "summary": "hamids-ai-automations/firebase-ai-starter-kit updated: open_pull_requests, pushed_at",
+      "fields": {
+        "open_pull_requests": {
+          "old": 9,
+          "new": 11
+        },
+        "pushed_at": {
+          "old": "2026-11-21T16:02:56Z",
+          "new": "2026-11-28T03:33:39Z"
+        }
+      },
+      "detected_at": "2026-11-28T07:46:31+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/proeventsolutions-pk",
+      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
+      "summary": "hamids-ai-automations/proeventsolutions-pk updated: languages, pushed_at",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-21T20:28:41Z",
+          "new": "2026-11-28T03:14:30Z"
+        },
+        "languages": {
+          "old": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python"
+          ],
+          "new": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python"
+          ]
+        }
+      },
+      "detected_at": "2026-11-28T07:46:31+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "summary": "hamids-ai-automations/github-profile-master-record updated: pushed_at",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-27T15:05:50Z",
+          "new": "2026-11-27T23:28:04Z"
+        }
+      },
+      "detected_at": "2026-11-28T07:46:31+00:00"
     }
   ],
   "data_quality": {
@@ -30679,6 +30749,6 @@
     ],
     "validation_errors": 0,
     "validation_warnings": 1,
-    "last_validated": "2026-11-27T23:28:03+00:00"
+    "last_validated": "2026-11-28T07:46:31+00:00"
   }
 }

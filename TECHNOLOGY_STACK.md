@@ -6,10 +6,10 @@ Derived from repository language byte counts and dependency files.
 
 | Language | Bytes | Share | Repositories |
 | --- | --- | --- | --- |
-| Python | 306061565 | 69.77% | 83 |
+| Python | 306061565 | 69.76% | 83 |
 | TypeScript | 75064023 | 17.11% | 29 |
 | JavaScript | 14781219 | 3.37% | 44 |
-| HTML | 10553015 | 2.41% | 35 |
+| HTML | 10623043 | 2.42% | 35 |
 | Go | 8598365 | 1.96% | 7 |
 | PHP | 5011706 | 1.14% | 4 |
 | Vue | 4329562 | 0.99% | 3 |

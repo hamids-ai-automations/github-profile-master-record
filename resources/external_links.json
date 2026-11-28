@@ -160,6 +160,7 @@
     ],
     "related_resources": [
       "hamids-ai-automations/marvis-portfolio",
+      "hamids-ai-automations/firebase-ai-starter-kit",
       "hamids-ai-automations/adwaste-intelligence",
       "hamids-ai-automations/ghl-servicepro-theme",
       "hamids-ai-automations/servicenow-ultimate-mcp",
@@ -167,7 +168,6 @@
       "hamids-ai-automations/ghl-devops-toolkit",
       "hamids-ai-automations/searchpulse-ai",
       "hamids-ai-automations/pinvault-pinterest-downloader",
-      "hamids-ai-automations/firebase-ai-starter-kit",
       "hamids-ai-automations/hamid-resume",
       "hamids-ai-automations/whatsapp-attribution-router",
       "hamids-ai-automations/conversionbridge",
@@ -202,6 +202,80 @@
       "hamids-ai-automations/markline"
     ],
     "source": "README of hamids-ai-automations/marvis-portfolio",
+    "verified": null
+  },
+  {
+    "url": "https://fb-ai-starter-kit.web.app",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/firebase-ai-starter-kit",
+      "hamids-ai-automations/github-profile-master-record"
+    ],
+    "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
+    "verified": null
+  },
+  {
+    "url": "https://marvis.web.app/projects/firebase-ai-starter-kit",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/firebase-ai-starter-kit",
+      "hamids-ai-automations/github-profile-master-record"
+    ],
+    "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
+    "verified": null
+  },
+  {
+    "url": "https://console.firebase.google.com",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/firebase-ai-starter-kit"
+    ],
+    "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
+    "verified": null
+  },
+  {
+    "url": "https://proeventsolutions.pk",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/proeventsolutions-pk"
+    ],
+    "source": "README of hamids-ai-automations/proeventsolutions-pk",
+    "verified": null
+  },
+  {
+    "url": "https://wa.me/923074647635",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/proeventsolutions-pk"
+    ],
+    "source": "README of hamids-ai-automations/proeventsolutions-pk",
+    "verified": null
+  },
+  {
+    "url": "https://wa.me/923074647635`",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/proeventsolutions-pk"
+    ],
+    "source": "README of hamids-ai-automations/proeventsolutions-pk",
     "verified": null
   },
   {
@@ -327,32 +401,6 @@
       "hamids-ai-automations/meta-lead-quality-analyzer",
       "hamids-ai-automations/conversion-tracking-doctor",
       "hamids-ai-automations/ppc-waste-detector"
-    ],
-    "source": "README of hamids-ai-automations/github-profile-master-record",
-    "verified": null
-  },
-  {
-    "url": "https://fb-ai-starter-kit.web.app",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/github-profile-master-record",
-      "hamids-ai-automations/firebase-ai-starter-kit"
-    ],
-    "source": "README of hamids-ai-automations/github-profile-master-record",
-    "verified": null
-  },
-  {
-    "url": "https://marvis.web.app/projects/firebase-ai-starter-kit",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/github-profile-master-record",
-      "hamids-ai-automations/firebase-ai-starter-kit"
     ],
     "source": "README of hamids-ai-automations/github-profile-master-record",
     "verified": null
@@ -718,42 +766,6 @@
     "verified": null
   },
   {
-    "url": "https://proeventsolutions.pk",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/proeventsolutions-pk"
-    ],
-    "source": "README of hamids-ai-automations/proeventsolutions-pk",
-    "verified": null
-  },
-  {
-    "url": "https://wa.me/923074647635",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/proeventsolutions-pk"
-    ],
-    "source": "README of hamids-ai-automations/proeventsolutions-pk",
-    "verified": null
-  },
-  {
-    "url": "https://wa.me/923074647635`",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/proeventsolutions-pk"
-    ],
-    "source": "README of hamids-ai-automations/proeventsolutions-pk",
-    "verified": null
-  },
-  {
     "url": "https://nexgenfinancialexperts.com",
     "type": "website",
     "relationships": [
@@ -936,18 +948,6 @@
       "hamids-ai-automations/dynamic-schema-generator"
     ],
     "source": "README of hamids-ai-automations/dynamic-schema-generator",
-    "verified": null
-  },
-  {
-    "url": "https://console.firebase.google.com",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/firebase-ai-starter-kit"
-    ],
-    "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
     "verified": null
   },
   {

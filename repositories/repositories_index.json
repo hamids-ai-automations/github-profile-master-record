@@ -15,9 +15,39 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-11-27T15:06:07Z",
+      "pushed_at": "2026-11-28T04:01:55Z",
       "homepage": null,
       "documentation": "projects/individual_projects/marvis-portfolio.md"
+    },
+    {
+      "id": "R_kgDOV2ULAA",
+      "name": "firebase-ai-starter-kit",
+      "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
+      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
+      "description": "Secure Gemini AI on Firebase: Auth, Firestore ownership rules, hardened Cloud Functions, emulator-first tests, CI and guarded deploys.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "pushed_at": "2026-11-28T03:33:39Z",
+      "homepage": null,
+      "documentation": "projects/individual_projects/firebase-ai-starter-kit.md"
+    },
+    {
+      "id": "R_kgDOVxlzHg",
+      "name": "proeventsolutions-pk",
+      "full_name": "hamids-ai-automations/proeventsolutions-pk",
+      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
+      "description": "Production website repository for Pro Event Solutions (https://proeventsolutions.pk/) with automated cPanel deployment workflow.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "pushed_at": "2026-11-28T03:14:30Z",
+      "homepage": null,
+      "documentation": "projects/individual_projects/proeventsolutions-pk.md"
     },
     {
       "id": "R_kgDOV4S7nw",
@@ -30,7 +60,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-11-27T15:05:50Z",
+      "pushed_at": "2026-11-27T23:28:04Z",
       "homepage": null,
       "documentation": "projects/individual_projects/github-profile-master-record.md"
     },
@@ -215,21 +245,6 @@
       "documentation": "projects/individual_projects/restock-radar.md"
     },
     {
-      "id": "R_kgDOVxlzHg",
-      "name": "proeventsolutions-pk",
-      "full_name": "hamids-ai-automations/proeventsolutions-pk",
-      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
-      "description": "Production website repository for Pro Event Solutions (https://proeventsolutions.pk/) with automated cPanel deployment workflow.",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "pushed_at": "2026-11-21T20:28:41Z",
-      "homepage": null,
-      "documentation": "projects/individual_projects/proeventsolutions-pk.md"
-    },
-    {
       "id": "R_kgDOVedz1A",
       "name": "nexgen-financial-experts",
       "full_name": "hamids-ai-automations/nexgen-financial-experts",
@@ -303,21 +318,6 @@
       "pushed_at": "2026-11-21T20:28:12Z",
       "homepage": "https://hamid-resume.web.app/",
       "documentation": "projects/individual_projects/dynamic-schema-generator.md"
-    },
-    {
-      "id": "R_kgDOV2ULAA",
-      "name": "firebase-ai-starter-kit",
-      "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
-      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
-      "description": "Secure Gemini AI on Firebase: Auth, Firestore ownership rules, hardened Cloud Functions, emulator-first tests, CI and guarded deploys.",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "pushed_at": "2026-11-21T16:02:56Z",
-      "homepage": null,
-      "documentation": "projects/individual_projects/firebase-ai-starter-kit.md"
     },
     {
       "id": "R_kgDOV2rQCQ",

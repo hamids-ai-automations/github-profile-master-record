@@ -10,16 +10,16 @@
 | Status | active |
 | Creation date | 2026-11-21 |
 | Last update | 2026-11-21 |
-| Last push | 2026-11-21 |
+| Last push | 2026-11-28 |
 | Default branch | main |
 | License | MIT |
 | Primary language | TypeScript |
 | Stars / Forks / Watchers | 0 / 0 / 0 |
 | Issues (open / closed) | 0 / 0 |
-| Pull requests (open / merged) | 9 / 0 |
+| Pull requests (open / merged) | 11 / 0 |
 | Releases | 0 |
 | Contributors | 1 |
-| Size | 570 KB |
+| Size | 633 KB |
 | Topics | cloud-functions, firebase, gemini, google-ai, openai-alternative, react, security, starter-kit, typescript, vite |
 
 ## Objectives
@@ -76,7 +76,7 @@ No deployment configuration detected.
 
 ## Development status
 
-Active — last push 2026-11-21
+Active — last push 2026-11-28
 
 ## Associated contributions
 

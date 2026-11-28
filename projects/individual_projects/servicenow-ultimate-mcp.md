@@ -89,10 +89,10 @@ Active — last push 2026-11-24
 ## Related projects
 
 - hamids-ai-automations/marvis-portfolio
+- hamids-ai-automations/firebase-ai-starter-kit
 - hamids-ai-automations/ghl-servicepro-theme
 - hamids-ai-automations/shopify-growth-mcp
 - hamids-ai-automations/ghl-devops-toolkit
-- hamids-ai-automations/nexgen-financial-experts
 
 ## Known issues and limitations
 

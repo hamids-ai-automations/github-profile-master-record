@@ -10,7 +10,7 @@
 | Status | active |
 | Creation date | 2026-11-25 |
 | Last update | 2026-11-26 |
-| Last push | 2026-11-27 |
+| Last push | 2026-11-28 |
 | Default branch | main |
 | License | none declared |
 | Primary language | TypeScript |
@@ -19,7 +19,7 @@
 | Pull requests (open / merged) | 0 / 0 |
 | Releases | 0 |
 | Contributors | 2 |
-| Size | 877 KB |
+| Size | 879 KB |
 | Topics | - |
 
 ## Objectives
@@ -83,7 +83,7 @@ No deployment configuration detected.
 
 ## Development status
 
-Active — last push 2026-11-27
+Active — last push 2026-11-28
 
 ## Associated contributions
 
@@ -93,11 +93,11 @@ Active — last push 2026-11-27
 
 ## Related projects
 
+- hamids-ai-automations/firebase-ai-starter-kit
 - hamids-ai-automations/ghl-servicepro-theme
 - hamids-ai-automations/servicenow-ultimate-mcp
 - hamids-ai-automations/shopify-growth-mcp
 - hamids-ai-automations/ghl-devops-toolkit
-- hamids-ai-automations/nexgen-financial-experts
 
 ## Known issues and limitations
 

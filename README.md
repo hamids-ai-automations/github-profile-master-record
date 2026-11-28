@@ -1,6 +1,6 @@
 # Muhammad Hamid — GitHub Master Record
 
-> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-27T23:28:03+00:00
+> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-28T07:46:31+00:00
 
 AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
@@ -24,13 +24,13 @@ AI Automation Engineer | MCP servers, agent evals and permission-gated automatio
 
 ## Main technologies
 
-Python (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)
+Python (69.76%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.42%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)
 
 ## Important projects
 
 | Repository | Description | Language | Stars | Forks | Status | Last push |
 | --- | --- | --- | --- | --- | --- | --- |
-| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | TypeScript | 1 | 0 | active | 2026-11-27 |
+| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | TypeScript | 1 | 0 | active | 2026-11-28 |
 | [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 1 | 0 | active | 2026-11-27 |
 | [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |
 | [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |
@@ -42,6 +42,8 @@ Python (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96
 ## Live websites
 
 - https://marvis.web.app
+- https://fb-ai-starter-kit.web.app
+- https://marvis.web.app/projects/firebase-ai-starter-kit
 - https://hamid-agentshield.streamlit.app
 - https://hamid-seo-intelligence-ai.streamlit.app
 - https://adwaste-intelligence.streamlit.app
@@ -51,8 +53,6 @@ Python (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96
 - https://marvis.web.app**
 - https://marvis.web.app/projects/leadflow-sentinel
 - https://abouthamid.web.app
-- https://fb-ai-starter-kit.web.app
-- https://marvis.web.app/projects/firebase-ai-starter-kit
 - https://marvis.web.app/projects/gemini-agent-automation-toolkit
 - https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**
 - https://musheabdulhakim.github.io/gohighlevel-php-sdk
@@ -84,20 +84,22 @@ python automation/validate.py                 # full gate: schema, links, tests
 ## Latest changes in this sync
 
 - **repository_updated** — hamids-ai-automations/marvis-portfolio updated: pushed_at
-- **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at, readme
+- **repository_updated** — hamids-ai-automations/firebase-ai-starter-kit updated: open_pull_requests, pushed_at
+- **repository_updated** — hamids-ai-automations/proeventsolutions-pk updated: languages, pushed_at
+- **repository_updated** — hamids-ai-automations/github-profile-master-record updated: pushed_at
 
 ## Recently pushed repositories
 
 | Repository | Last push | Language |
 | --- | --- | --- |
-| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | 2026-11-27 | TypeScript |
+| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | 2026-11-28 | TypeScript |
+| [firebase-ai-starter-kit](https://github.com/hamids-ai-automations/firebase-ai-starter-kit) | 2026-11-28 | TypeScript |
+| [proeventsolutions-pk](https://github.com/hamids-ai-automations/proeventsolutions-pk) | 2026-11-28 | HTML |
 | [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | 2026-11-27 | Python |
 | [agentshield-ai](https://github.com/hamids-ai-automations/agentshield-ai) | 2026-11-27 | Python |
 | [seo-intelligence-ai](https://github.com/hamids-ai-automations/seo-intelligence-ai) | 2026-11-27 | Python |
 | [adwaste-intelligence](https://github.com/hamids-ai-automations/adwaste-intelligence) | 2026-11-27 | Python |
 | [ghl-servicepro-theme](https://github.com/hamids-ai-automations/ghl-servicepro-theme) | 2026-11-25 | TypeScript |
-| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | 2026-11-24 | TypeScript |
-| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | 2026-11-23 | TypeScript |
 
 ## Data quality
 
@@ -117,7 +119,7 @@ python automation/validate.py                 # full gate: schema, links, tests
 | unavailable sources | ['packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {"message":"The package_type parameter is invalid.","documentation_url":"https://docs.github.com/rest/packages/packages#list-packages-for-a-user","status":"422"}'] |
 | validation errors | 0 |
 | validation warnings | 1 |
-| last validated | 2026-11-27T23:28:03+00:00 |
+| last validated | 2026-11-28T07:46:31+00:00 |
 
 ## Documentation map
 

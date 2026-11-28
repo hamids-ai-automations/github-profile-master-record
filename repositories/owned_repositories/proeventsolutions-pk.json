@@ -7,9 +7,9 @@
   "homepage": null,
   "created_at": "2026-11-17T10:59:48Z",
   "updated_at": "2026-11-20T01:21:12Z",
-  "pushed_at": "2026-11-21T20:28:41Z",
+  "pushed_at": "2026-11-28T03:14:30Z",
   "default_branch": "main",
-  "last_commit_at": "2026-11-21T20:28:40Z",
+  "last_commit_at": "2026-11-28T03:13:15Z",
   "visibility": "public",
   "is_private": false,
   "archived": false,
@@ -21,12 +21,12 @@
   "license_name": "MIT License",
   "language": "HTML",
   "languages": {
-    "HTML": 4425066,
+    "HTML": 4495094,
     "CSS": 41512,
     "JavaScript": 10909,
     "Python": 4697
   },
-  "language_total_size": 4482184,
+  "language_total_size": 4552212,
   "stars": 0,
   "forks": 0,
   "watchers": 0,
@@ -52,7 +52,7 @@
     "responsive-design",
     "website"
   ],
-  "size_kb": 7574,
+  "size_kb": 7587,
   "readme": {
     "path": "README.md",
     "html_url": "https://github.com/hamids-ai-automations/proeventsolutions-pk/blob/main/README.md",
@@ -63,11 +63,12 @@
   },
   "tree": {
     "truncated": false,
-    "total_files": 164,
-    "total_entries": 263,
+    "total_files": 166,
+    "total_entries": 267,
     "top_level_directories": [
       ".github",
       "about-us",
+      "articles",
       "assets",
       "best-event-planner-lahore-pro-event-solutions",
       "brand-launch-event-management-lahore",
@@ -114,8 +115,7 @@
       "event-planner-lda-avenue-lahore",
       "event-planner-mall-road-lahore",
       "event-planner-mm-alam-road-lahore",
-      "event-planner-mughalpura-lahore",
-      "event-planner-muslim-town-lahore"
+      "event-planner-mughalpura-lahore"
     ],
     "important_files": [],
     "workflow_files": [
@@ -139,6 +139,6 @@
     "https://wa.me/923074647635`"
   ],
   "documentation_status": "documented",
-  "detail_refreshed_at": "2026-11-27T11:13:05+00:00",
-  "detail_source": "cached"
+  "detail_refreshed_at": "2026-11-28T07:46:08+00:00",
+  "detail_source": "api"
 }

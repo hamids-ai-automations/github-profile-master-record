@@ -1,0 +1,12 @@
+{
+  "run_at": "2026-11-28T10:45:13+00:00",
+  "mode": "full",
+  "trigger": "scheduled full sync",
+  "duration_seconds": 61.9,
+  "api_requests": 1130,
+  "failed_requests": 0,
+  "changes_detected": 0,
+  "changed_fields": [],
+  "result": "success",
+  "error": null
+}

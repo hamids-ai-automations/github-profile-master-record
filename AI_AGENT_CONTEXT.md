@@ -2,7 +2,7 @@
 
 **Owner:** Muhammad Hamid (@hamids-ai-automations) — AI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.
 
-**Last synchronized:** 2026-11-28T07:46:31+00:00
+**Last synchronized:** 2026-11-28T10:45:13+00:00
 
 ## How to use this repository
 
@@ -38,7 +38,7 @@
 | [ecommerce-seo-optimizer](https://github.com/hamids-ai-automations/ecommerce-seo-optimizer) | Audit and optimize e-commerce product listings at scale. Validates titles, descriptions, pricing, image alt tags, and exports keyword-optimized catalogs. | Python | 1 | 0 | active | 2026-10-18 |
 | [geo-visibility-lab](https://github.com/hamids-ai-automations/geo-visibility-lab) | Open-source Local SEO & Google Business Profile (GBP) proximity rank tracker. Audits 5x5 geo-grids, aggregator NAP citation drift, review velocity decay, and exports Schema.org JSON-LD. | Python | 1 | 0 | active | 2026-10-12 |
 | [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |
-| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 1 | 0 | active | 2026-11-27 |
+| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 1 | 0 | active | 2026-11-28 |
 | [hamid-resume](https://github.com/hamids-ai-automations/hamid-resume) | Official professional portfolio and MarTech showcase of Muhammad Hamid (Digital Marketing Head). Deployed live on Firebase Hosting at https://hamid-resume.web.app/. | HTML | 1 | 0 | active | 2026-10-19 |
 | [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |
 | [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | TypeScript | 1 | 0 | active | 2026-11-28 |
@@ -59,8 +59,8 @@
 ## Live sites and their repositories
 
 - https://marvis.web.app → hamids-ai-automations/marvis-portfolio, hamids-ai-automations/github-profile-master-record, hamids-ai-automations/agentshield-ai, hamids-ai-automations/adwaste-intelligence, hamids-ai-automations/ghl-servicepro-theme, hamids-ai-automations/servicenow-ultimate-mcp, hamids-ai-automations/shopify-growth-mcp, hamids-ai-automations/hamids-ai-automations, hamids-ai-automations/ghl-devops-toolkit, hamids-ai-automations/envscope, hamids-ai-automations/searchpulse-ai, hamids-ai-automations/gemini-agent-automation-toolkit, hamids-ai-automations/whatsapp-attribution-router, hamids-ai-automations/conversionbridge, hamids-ai-automations/seo-audit-tool, hamids-ai-automations/ppc-performance-dashboard, hamids-ai-automations/ecommerce-seo-optimizer, hamids-ai-automations/ai-marketing-growth-os, hamids-ai-automations/ai-agent-testing-lab, hamids-ai-automations/ai-search-visibility-auditor, hamids-ai-automations/ai-marketing-shared, hamids-ai-automations/seo-doctor, hamids-ai-automations/geo-visibility-lab, hamids-ai-automations/meta-lead-quality-analyzer, hamids-ai-automations/conversion-tracking-doctor, hamids-ai-automations/ppc-waste-detector, hamids-ai-automations/ai-marketing-mix-copilot
-- https://fb-ai-starter-kit.web.app → hamids-ai-automations/firebase-ai-starter-kit, hamids-ai-automations/github-profile-master-record
-- https://marvis.web.app/projects/firebase-ai-starter-kit → hamids-ai-automations/firebase-ai-starter-kit, hamids-ai-automations/github-profile-master-record
+- https://fb-ai-starter-kit.web.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/firebase-ai-starter-kit
+- https://marvis.web.app/projects/firebase-ai-starter-kit → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/firebase-ai-starter-kit
 - https://hamid-agentshield.streamlit.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/agentshield-ai
 - https://hamid-seo-intelligence-ai.streamlit.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/seo-intelligence-ai
 - https://adwaste-intelligence.streamlit.app → hamids-ai-automations/github-profile-master-record, hamids-ai-automations/adwaste-intelligence

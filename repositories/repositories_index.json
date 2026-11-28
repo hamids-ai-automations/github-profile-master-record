@@ -5,6 +5,21 @@
   "forked_count": 59,
   "repositories": [
     {
+      "id": "R_kgDOVxlzHg",
+      "name": "proeventsolutions-pk",
+      "full_name": "hamids-ai-automations/proeventsolutions-pk",
+      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
+      "description": "Production website repository for Pro Event Solutions (https://proeventsolutions.pk/) with automated cPanel deployment workflow.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "pushed_at": "2026-11-28T10:43:38Z",
+      "homepage": null,
+      "documentation": "projects/individual_projects/proeventsolutions-pk.md"
+    },
+    {
       "id": "R_kgDOV6509w",
       "name": "marvis-portfolio",
       "full_name": "hamids-ai-automations/marvis-portfolio",
@@ -15,9 +30,24 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-11-28T04:01:55Z",
+      "pushed_at": "2026-11-28T07:46:49Z",
       "homepage": null,
       "documentation": "projects/individual_projects/marvis-portfolio.md"
+    },
+    {
+      "id": "R_kgDOV4S7nw",
+      "name": "github-profile-master-record",
+      "full_name": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
+      "language": "Python",
+      "stars": 1,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "pushed_at": "2026-11-28T07:46:33Z",
+      "homepage": null,
+      "documentation": "projects/individual_projects/github-profile-master-record.md"
     },
     {
       "id": "R_kgDOV2ULAA",
@@ -33,36 +63,6 @@
       "pushed_at": "2026-11-28T03:33:39Z",
       "homepage": null,
       "documentation": "projects/individual_projects/firebase-ai-starter-kit.md"
-    },
-    {
-      "id": "R_kgDOVxlzHg",
-      "name": "proeventsolutions-pk",
-      "full_name": "hamids-ai-automations/proeventsolutions-pk",
-      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
-      "description": "Production website repository for Pro Event Solutions (https://proeventsolutions.pk/) with automated cPanel deployment workflow.",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "pushed_at": "2026-11-28T03:14:30Z",
-      "homepage": null,
-      "documentation": "projects/individual_projects/proeventsolutions-pk.md"
-    },
-    {
-      "id": "R_kgDOV4S7nw",
-      "name": "github-profile-master-record",
-      "full_name": "hamids-ai-automations/github-profile-master-record",
-      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
-      "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
-      "language": "Python",
-      "stars": 1,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "pushed_at": "2026-11-27T23:28:04Z",
-      "homepage": null,
-      "documentation": "projects/individual_projects/github-profile-master-record.md"
     },
     {
       "id": "R_kgDOV9cK6w",

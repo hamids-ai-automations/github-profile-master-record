@@ -2,18 +2,18 @@
   "metadata": {
     "schema_version": "1.0.0",
     "username": "hamids-ai-automations",
-    "generated_at": "2026-11-28T07:46:31+00:00",
+    "generated_at": "2026-11-28T10:45:13+00:00",
     "source": "GitHub REST API v3 + GraphQL API v4",
     "generator": "github-profile-master-record/automation/sync.py",
     "canonical": true,
-    "mode": "incremental",
-    "trigger": "automatic profile sync",
+    "mode": "full",
+    "trigger": "scheduled full sync",
     "run": {
-      "mode": "incremental",
-      "trigger": "automatic profile sync",
-      "api_requests": 354,
+      "mode": "full",
+      "trigger": "scheduled full sync",
+      "api_requests": 1130,
       "failed_requests": 0,
-      "duration_seconds": 59.1,
+      "duration_seconds": 61.9,
       "failures": [
         "packages unavailable: HTTP 422 for https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi: {\"message\":\"The package_type parameter is invalid.\",\"documentation_url\":\"https://docs.github.com/rest/packages/packages#list-packages-for-a-user\",\"status\":\"422\"}"
       ]
@@ -176,7 +176,7 @@
         "private_gists": 0,
         "total_private_repos": 2,
         "owned_private_repos": 2,
-        "disk_usage": 39928,
+        "disk_usage": 40747,
         "collaborators": 0,
         "two_factor_authentication": true,
         "plan": {
@@ -354,9 +354,154 @@
     ],
     "achievements_highlights": {},
     "achievements_source": "https://github.com/hamids-ai-automations?tab=achievements",
-    "last_synced": "2026-11-28T07:46:31+00:00"
+    "last_synced": "2026-11-28T10:45:13+00:00"
   },
   "repositories": [
+    {
+      "id": "R_kgDOVxlzHg",
+      "name": "proeventsolutions-pk",
+      "full_name": "hamids-ai-automations/proeventsolutions-pk",
+      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
+      "description": "Production website repository for Pro Event Solutions (https://proeventsolutions.pk/) with automated cPanel deployment workflow.",
+      "homepage": null,
+      "created_at": "2026-11-17T10:59:48Z",
+      "updated_at": "2026-11-20T01:21:12Z",
+      "pushed_at": "2026-11-28T10:43:38Z",
+      "default_branch": "main",
+      "last_commit_at": "2026-11-28T10:43:32Z",
+      "visibility": "public",
+      "is_private": false,
+      "archived": false,
+      "fork": false,
+      "disabled": false,
+      "is_template": false,
+      "in_organization": false,
+      "license": "MIT",
+      "license_name": "MIT License",
+      "language": "HTML",
+      "languages": {
+        "HTML": 4495094,
+        "CSS": 41512,
+        "JavaScript": 10909,
+        "Python": 4697
+      },
+      "language_total_size": 4552212,
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "closed_issues": 0,
+      "open_pull_requests": 0,
+      "merged_pull_requests": 2,
+      "closed_pull_requests": 0,
+      "releases_count": 0,
+      "releases": [],
+      "tags_count": 0,
+      "branches_count": 3,
+      "discussions_count": 0,
+      "deployments_count": 0,
+      "environments_count": 0,
+      "packages_count": 0,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_projects": true,
+      "has_discussions": false,
+      "topics": [
+        "client-project",
+        "responsive-design",
+        "website"
+      ],
+      "size_kb": 7587,
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/hamids-ai-automations/proeventsolutions-pk/blob/main/README.md",
+        "has_readme": true,
+        "length": 5736,
+        "excerpt": "# Pro Event Solutions — Production Static Website\n\n## Executive Summary\nA brand-new, modern, premium, fully-static, mobile-first, SEO-optimized website for **Pro Event Solutions** ([https://proeventsolutions.pk/](https://proeventsolutions.pk/)).\n\n- **Primary Conversion Channel:** WhatsApp Exclusive (`+923074647635`)\n- **Direct WhatsApp URL:** [https://wa.me/923074647635](https://wa.me/923074647635)\n- **Google Tag Manager Container:** `GTM-PPNT33QP` (gtag.js + dataLayer events on all CTAs)\n- **Target Market:** Lahore, Punjab, Pakistan\n- **Architecture:** 100% Static HTML5, Modern CSS3, Vanilla JavaScript, Optimized WebP/SVG, JSON-LD Structured Data, Apache `.htaccess`\n- **Hosting Environment:** Standard cPanel shared hosting (zero Node.js, Python, or database runtime dependencies)\n- **Total URLs Preserved:** 79/79 (100% URL fidelity, exact slugs, trailing slashes, and canonical matching)\n\n---\n\n## Deliverables & Directory Structure\n\nAll deliverables have been saved inside:\n1. **Uncompressed Deployment Folder:** `D:\\pro event\\ProEventSolutions_Static_Website_Production\\`\n2. **Ready-to-Upload ZIP Archive:** `D:\\pro event\\ProEventSolutions_Static_Website_Production.zip` (6.59 MB)\n\n```\nD:\\pro event\\ProEventSolutions_Static_Website_Production\\\n│\n├── index.html                                 (Homepage)\n├── about-us/index.html                        (About Us)\n├── contact/index.html                         (Contact Us)\n├── wedding-event-management-lahore/index.html (Wedding Services)\n├── corporate-event-management-services-lahore/index.html\n├── [all other 74 page folders]/index.html     (All 79 original URLs preserved)\n│\n├── assets/\n│   ├── css/\n│   │   └── style.css                          (Modern luxury dark/gold design system)\n│   ├── js/\n│   │   └── main.js                            (GTM tracking, WhatsApp delegator, drawer, accordion)\n│   └── images/\n│       ├── branding/                          (logo.svg, favicon.svg)\n│       ├── homepage/                          (High-res hero & production WebP)\n│       ├── weddings/                          (Bespoke stages, floral arches, mehndi)\n│       ├── corporate-events/                  (Conferences, LED backdrops, summits)\n│       ├── expo-centre/                       (Expo Centre Lahore exhibition stalls)\n│       ├── brand-launch/                      (Product reveals & stage lasers)\n│       ├── private-events/                    (Milestone celebrations & dinners)\n│       ├── catering-venues/                   (Banquet setups & buffet layouts)\n│       ├── photography-studio/                (Cyclorama infinity curve studios)\n│       ├── podcast-studio/                    (Acoustic slat walls & broadcast mics)\n│       ├── tv-studio/                         (News anchor desks & studio sets)\n│       ├── creative-production/               (Stage trussing & cinema cameras)\n│       └── lahore-locations/                  (DHA, Gulberg, Bahria Town, etc.)\n│\n├── .htaccess                                  (HTTPS, trailing slashes, compression, caching, security headers)\n├── robots.txt                                 (Allows all, points to sitemap)\n├── sitemap.xml                                (All 79 canonical URLs + priorities)\n├── 404.html                                   (Custom branded 404 error page)\n├── favicon.svg                                (Vector favicon)\n├── url_mapping.csv                            (Complete audit and mapping of all 79 URLs)\n├── qa_results.csv                             (Automated test results: 79/79 passed)\n├── image_asset_inventory.csv                  (Metadata, dimensions, licensing for all 35 images)\n└── cPanel_Deployment_Guide.md                 (Step-by-step instructions for hosting)\n```\n\n---\n\n## Key Features Implemented\n\n### 1. Google Tag & CTA Event Tracking\n- Asynchronous Google Tag (`GTM-PPNT33QP`) implemented in `<head>` of all 79 pages + 404 page.\n- GTM `<noscript>` iframe implemented in `<body>` of all pages.\n- **Event Tracking on ALL CTAs:**",
+        "full_content_path": null
+      },
+      "readme_full_content": null,
+      "tree": {
+        "truncated": false,
+        "total_files": 167,
+        "total_entries": 269,
+        "top_level_directories": [
+          ".github",
+          "about-us",
+          "articles",
+          "assets",
+          "best-event-planner-lahore-pro-event-solutions",
+          "brand-launch-event-management-lahore",
+          "catering-and-venue-management-services-in-lahore",
+          "contact",
+          "corporate-event-management-services-lahore",
+          "creative-production-services-lahore",
+          "docs",
+          "event-management-company-for-expo-centre-lahore",
+          "event-planner-al-kabir-town-lahore",
+          "event-planner-allama-iqbal-town",
+          "event-planner-anarkali-lahore",
+          "event-planner-barki-road-lahore",
+          "event-planner-canal-view-lahore",
+          "event-planner-cavalry-ground-lahore",
+          "event-planner-central-park-lahore",
+          "event-planner-defence-road-lahore",
+          "event-planner-dream-gardens-lahore",
+          "event-planner-eden-avenue-lahore",
+          "event-planner-eden-city-lahore",
+          "event-planner-etihad-town-lahore",
+          "event-planner-gulberg-lahore",
+          "event-planner-gulshan-ravi-lahore",
+          "event-planner-harbanspura-lahore",
+          "event-planner-ichhra-lahore",
+          "event-planner-in-askari-lahore",
+          "event-planner-in-bahria-town-lahore",
+          "event-planner-in-dha-lahore",
+          "event-planner-in-faisal-town-lahore",
+          "event-planner-in-garden-town-lahore",
+          "event-planner-in-green-town-lahore",
+          "event-planner-in-johar-town-lahore",
+          "event-planner-in-lahore-cantt",
+          "event-planner-in-lake-city-lahore",
+          "event-planner-in-model-town-lahore",
+          "event-planner-in-pia-housing-society",
+          "event-planner-in-township-lahore",
+          "event-planner-in-valencia-lahore",
+          "event-planner-in-wapda-town-lahore",
+          "event-planner-jubilee-town-lahore",
+          "event-planner-kahna-lahore",
+          "event-planner-kings-town-lahore",
+          "event-planner-kot-lakhpat-lahore",
+          "event-planner-lda-avenue-lahore",
+          "event-planner-mall-road-lahore",
+          "event-planner-mm-alam-road-lahore",
+          "event-planner-mughalpura-lahore"
+        ],
+        "important_files": [],
+        "workflow_files": [
+          ".github/workflows/deploy.yml"
+        ],
+        "test_files_count": 0,
+        "ci_enabled": true
+      },
+      "contributors": {
+        "count": 1,
+        "anonymous_included": false
+      },
+      "technology": {
+        "frameworks": [],
+        "dependencies": [],
+        "config_files": []
+      },
+      "external_links": [
+        "https://proeventsolutions.pk/",
+        "https://wa.me/923074647635",
+        "https://wa.me/923074647635`"
+      ],
+      "documentation_status": "documented",
+      "detail_refreshed_at": "2026-11-28T10:44:42+00:00",
+      "detail_source": "api"
+    },
     {
       "id": "R_kgDOV6509w",
       "name": "marvis-portfolio",
@@ -366,9 +511,9 @@
       "homepage": null,
       "created_at": "2026-11-25T01:04:26Z",
       "updated_at": "2026-11-26T14:57:57Z",
-      "pushed_at": "2026-11-28T04:01:55Z",
+      "pushed_at": "2026-11-28T07:46:49Z",
       "default_branch": "main",
-      "last_commit_at": "2026-11-28T04:01:55Z",
+      "last_commit_at": "2026-11-28T07:46:48Z",
       "visibility": "public",
       "is_private": false,
       "archived": false,
@@ -398,7 +543,7 @@
       "tags_count": 0,
       "branches_count": 1,
       "discussions_count": 0,
-      "deployments_count": 28,
+      "deployments_count": 29,
       "environments_count": 1,
       "packages_count": 0,
       "has_issues": true,
@@ -406,7 +551,7 @@
       "has_projects": true,
       "has_discussions": false,
       "topics": [],
-      "size_kb": 879,
+      "size_kb": 880,
       "readme": {
         "path": "README.md",
         "html_url": "https://github.com/hamids-ai-automations/marvis-portfolio/blob/main/README.md",
@@ -492,7 +637,123 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-28T07:46:08+00:00",
+      "detail_refreshed_at": "2026-11-28T10:44:43+00:00",
+      "detail_source": "api"
+    },
+    {
+      "id": "R_kgDOV4S7nw",
+      "name": "github-profile-master-record",
+      "full_name": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
+      "homepage": null,
+      "created_at": "2026-11-23T05:13:38Z",
+      "updated_at": "2026-11-26T14:57:56Z",
+      "pushed_at": "2026-11-28T07:46:33Z",
+      "default_branch": "main",
+      "last_commit_at": "2026-11-28T07:46:31Z",
+      "visibility": "public",
+      "is_private": false,
+      "archived": false,
+      "fork": false,
+      "disabled": false,
+      "is_template": false,
+      "in_organization": false,
+      "license": null,
+      "license_name": null,
+      "language": "Python",
+      "languages": {
+        "Python": 145275
+      },
+      "language_total_size": 145275,
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "closed_issues": 0,
+      "open_pull_requests": 0,
+      "merged_pull_requests": 0,
+      "closed_pull_requests": 0,
+      "releases_count": 0,
+      "releases": [],
+      "tags_count": 0,
+      "branches_count": 1,
+      "discussions_count": 0,
+      "deployments_count": 0,
+      "environments_count": 0,
+      "packages_count": 0,
+      "has_issues": true,
+      "has_wiki": true,
+      "has_projects": true,
+      "has_discussions": false,
+      "topics": [],
+      "size_kb": 6158,
+      "readme": {
+        "path": "README.md",
+        "html_url": "https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/README.md",
+        "has_readme": true,
+        "length": 10015,
+        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-28T07:46:31+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 42 / 59 |\n| Projects documented | 101 |\n| Public gists | 0 |\n| Live websites | 67 |\n| Releases tracked | 7 |\n| External links | 801 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 313 |\n| Total contributions (last 12 months) | 584 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.76%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.42%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | TypeScript | 1 | 0 | active | 2026-11-28 |\n| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 1 | 0 | active | 2026-11-27 |\n| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/",
+        "full_content_path": null
+      },
+      "readme_full_content": null,
+      "tree": {
+        "truncated": false,
+        "total_files": 420,
+        "total_entries": 439,
+        "top_level_directories": [
+          ".github",
+          "achievements",
+          "automation",
+          "contributions",
+          "history",
+          "profile",
+          "projects",
+          "repositories",
+          "resources"
+        ],
+        "important_files": [
+          "automation/requirements.txt"
+        ],
+        "workflow_files": [
+          ".github/workflows/automatic-profile-sync.yml",
+          ".github/workflows/initial-data-collection.yml",
+          ".github/workflows/scheduled-full-sync.yml",
+          ".github/workflows/validate-master-data.yml"
+        ],
+        "test_files_count": 8,
+        "ci_enabled": true
+      },
+      "contributors": {
+        "count": 2,
+        "anonymous_included": false
+      },
+      "technology": {
+        "frameworks": [],
+        "dependencies": [],
+        "config_files": []
+      },
+      "external_links": [
+        "https://marvis.web.app",
+        "https://fb-ai-starter-kit.web.app",
+        "https://marvis.web.app/projects/firebase-ai-starter-kit",
+        "https://hamid-agentshield.streamlit.app",
+        "https://hamid-seo-intelligence-ai.streamlit.app",
+        "https://adwaste-intelligence.streamlit.app",
+        "https://adwaste-intelligence.streamlit.app`",
+        "https://agentshield-ai.streamlit.app`",
+        "https://hamid-resume.web.app",
+        "https://marvis.web.app**",
+        "https://marvis.web.app/projects/leadflow-sentinel",
+        "https://abouthamid.web.app",
+        "https://marvis.web.app/projects/gemini-agent-automation-toolkit",
+        "https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**",
+        "https://musheabdulhakim.github.io/gohighlevel-php-sdk",
+        "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
+        "https://docs.github.com/rest/packages/packages#list-packages-for-a-user"
+      ],
+      "documentation_status": "documented",
+      "detail_refreshed_at": "2026-11-28T10:44:43+00:00",
       "detail_source": "api"
     },
     {
@@ -623,268 +884,7 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-28T07:46:08+00:00",
-      "detail_source": "api"
-    },
-    {
-      "id": "R_kgDOVxlzHg",
-      "name": "proeventsolutions-pk",
-      "full_name": "hamids-ai-automations/proeventsolutions-pk",
-      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
-      "description": "Production website repository for Pro Event Solutions (https://proeventsolutions.pk/) with automated cPanel deployment workflow.",
-      "homepage": null,
-      "created_at": "2026-11-17T10:59:48Z",
-      "updated_at": "2026-11-20T01:21:12Z",
-      "pushed_at": "2026-11-28T03:14:30Z",
-      "default_branch": "main",
-      "last_commit_at": "2026-11-28T03:13:15Z",
-      "visibility": "public",
-      "is_private": false,
-      "archived": false,
-      "fork": false,
-      "disabled": false,
-      "is_template": false,
-      "in_organization": false,
-      "license": "MIT",
-      "license_name": "MIT License",
-      "language": "HTML",
-      "languages": {
-        "HTML": 4495094,
-        "CSS": 41512,
-        "JavaScript": 10909,
-        "Python": 4697
-      },
-      "language_total_size": 4552212,
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "closed_issues": 0,
-      "open_pull_requests": 0,
-      "merged_pull_requests": 2,
-      "closed_pull_requests": 0,
-      "releases_count": 0,
-      "releases": [],
-      "tags_count": 0,
-      "branches_count": 3,
-      "discussions_count": 0,
-      "deployments_count": 0,
-      "environments_count": 0,
-      "packages_count": 0,
-      "has_issues": true,
-      "has_wiki": true,
-      "has_projects": true,
-      "has_discussions": false,
-      "topics": [
-        "client-project",
-        "responsive-design",
-        "website"
-      ],
-      "size_kb": 7587,
-      "readme": {
-        "path": "README.md",
-        "html_url": "https://github.com/hamids-ai-automations/proeventsolutions-pk/blob/main/README.md",
-        "has_readme": true,
-        "length": 5736,
-        "excerpt": "# Pro Event Solutions — Production Static Website\n\n## Executive Summary\nA brand-new, modern, premium, fully-static, mobile-first, SEO-optimized website for **Pro Event Solutions** ([https://proeventsolutions.pk/](https://proeventsolutions.pk/)).\n\n- **Primary Conversion Channel:** WhatsApp Exclusive (`+923074647635`)\n- **Direct WhatsApp URL:** [https://wa.me/923074647635](https://wa.me/923074647635)\n- **Google Tag Manager Container:** `GTM-PPNT33QP` (gtag.js + dataLayer events on all CTAs)\n- **Target Market:** Lahore, Punjab, Pakistan\n- **Architecture:** 100% Static HTML5, Modern CSS3, Vanilla JavaScript, Optimized WebP/SVG, JSON-LD Structured Data, Apache `.htaccess`\n- **Hosting Environment:** Standard cPanel shared hosting (zero Node.js, Python, or database runtime dependencies)\n- **Total URLs Preserved:** 79/79 (100% URL fidelity, exact slugs, trailing slashes, and canonical matching)\n\n---\n\n## Deliverables & Directory Structure\n\nAll deliverables have been saved inside:\n1. **Uncompressed Deployment Folder:** `D:\\pro event\\ProEventSolutions_Static_Website_Production\\`\n2. **Ready-to-Upload ZIP Archive:** `D:\\pro event\\ProEventSolutions_Static_Website_Production.zip` (6.59 MB)\n\n```\nD:\\pro event\\ProEventSolutions_Static_Website_Production\\\n│\n├── index.html                                 (Homepage)\n├── about-us/index.html                        (About Us)\n├── contact/index.html                         (Contact Us)\n├── wedding-event-management-lahore/index.html (Wedding Services)\n├── corporate-event-management-services-lahore/index.html\n├── [all other 74 page folders]/index.html     (All 79 original URLs preserved)\n│\n├── assets/\n│   ├── css/\n│   │   └── style.css                          (Modern luxury dark/gold design system)\n│   ├── js/\n│   │   └── main.js                            (GTM tracking, WhatsApp delegator, drawer, accordion)\n│   └── images/\n│       ├── branding/                          (logo.svg, favicon.svg)\n│       ├── homepage/                          (High-res hero & production WebP)\n│       ├── weddings/                          (Bespoke stages, floral arches, mehndi)\n│       ├── corporate-events/                  (Conferences, LED backdrops, summits)\n│       ├── expo-centre/                       (Expo Centre Lahore exhibition stalls)\n│       ├── brand-launch/                      (Product reveals & stage lasers)\n│       ├── private-events/                    (Milestone celebrations & dinners)\n│       ├── catering-venues/                   (Banquet setups & buffet layouts)\n│       ├── photography-studio/                (Cyclorama infinity curve studios)\n│       ├── podcast-studio/                    (Acoustic slat walls & broadcast mics)\n│       ├── tv-studio/                         (News anchor desks & studio sets)\n│       ├── creative-production/               (Stage trussing & cinema cameras)\n│       └── lahore-locations/                  (DHA, Gulberg, Bahria Town, etc.)\n│\n├── .htaccess                                  (HTTPS, trailing slashes, compression, caching, security headers)\n├── robots.txt                                 (Allows all, points to sitemap)\n├── sitemap.xml                                (All 79 canonical URLs + priorities)\n├── 404.html                                   (Custom branded 404 error page)\n├── favicon.svg                                (Vector favicon)\n├── url_mapping.csv                            (Complete audit and mapping of all 79 URLs)\n├── qa_results.csv                             (Automated test results: 79/79 passed)\n├── image_asset_inventory.csv                  (Metadata, dimensions, licensing for all 35 images)\n└── cPanel_Deployment_Guide.md                 (Step-by-step instructions for hosting)\n```\n\n---\n\n## Key Features Implemented\n\n### 1. Google Tag & CTA Event Tracking\n- Asynchronous Google Tag (`GTM-PPNT33QP`) implemented in `<head>` of all 79 pages + 404 page.\n- GTM `<noscript>` iframe implemented in `<body>` of all pages.\n- **Event Tracking on ALL CTAs:**",
-        "full_content_path": null
-      },
-      "readme_full_content": null,
-      "tree": {
-        "truncated": false,
-        "total_files": 166,
-        "total_entries": 267,
-        "top_level_directories": [
-          ".github",
-          "about-us",
-          "articles",
-          "assets",
-          "best-event-planner-lahore-pro-event-solutions",
-          "brand-launch-event-management-lahore",
-          "catering-and-venue-management-services-in-lahore",
-          "contact",
-          "corporate-event-management-services-lahore",
-          "creative-production-services-lahore",
-          "docs",
-          "event-management-company-for-expo-centre-lahore",
-          "event-planner-al-kabir-town-lahore",
-          "event-planner-allama-iqbal-town",
-          "event-planner-anarkali-lahore",
-          "event-planner-barki-road-lahore",
-          "event-planner-canal-view-lahore",
-          "event-planner-cavalry-ground-lahore",
-          "event-planner-central-park-lahore",
-          "event-planner-defence-road-lahore",
-          "event-planner-dream-gardens-lahore",
-          "event-planner-eden-avenue-lahore",
-          "event-planner-eden-city-lahore",
-          "event-planner-etihad-town-lahore",
-          "event-planner-gulberg-lahore",
-          "event-planner-gulshan-ravi-lahore",
-          "event-planner-harbanspura-lahore",
-          "event-planner-ichhra-lahore",
-          "event-planner-in-askari-lahore",
-          "event-planner-in-bahria-town-lahore",
-          "event-planner-in-dha-lahore",
-          "event-planner-in-faisal-town-lahore",
-          "event-planner-in-garden-town-lahore",
-          "event-planner-in-green-town-lahore",
-          "event-planner-in-johar-town-lahore",
-          "event-planner-in-lahore-cantt",
-          "event-planner-in-lake-city-lahore",
-          "event-planner-in-model-town-lahore",
-          "event-planner-in-pia-housing-society",
-          "event-planner-in-township-lahore",
-          "event-planner-in-valencia-lahore",
-          "event-planner-in-wapda-town-lahore",
-          "event-planner-jubilee-town-lahore",
-          "event-planner-kahna-lahore",
-          "event-planner-kings-town-lahore",
-          "event-planner-kot-lakhpat-lahore",
-          "event-planner-lda-avenue-lahore",
-          "event-planner-mall-road-lahore",
-          "event-planner-mm-alam-road-lahore",
-          "event-planner-mughalpura-lahore"
-        ],
-        "important_files": [],
-        "workflow_files": [
-          ".github/workflows/deploy.yml"
-        ],
-        "test_files_count": 0,
-        "ci_enabled": true
-      },
-      "contributors": {
-        "count": 1,
-        "anonymous_included": false
-      },
-      "technology": {
-        "frameworks": [],
-        "dependencies": [],
-        "config_files": []
-      },
-      "external_links": [
-        "https://proeventsolutions.pk/",
-        "https://wa.me/923074647635",
-        "https://wa.me/923074647635`"
-      ],
-      "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-28T07:46:08+00:00",
-      "detail_source": "api"
-    },
-    {
-      "id": "R_kgDOV4S7nw",
-      "name": "github-profile-master-record",
-      "full_name": "hamids-ai-automations/github-profile-master-record",
-      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
-      "description": "Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile",
-      "homepage": null,
-      "created_at": "2026-11-23T05:13:38Z",
-      "updated_at": "2026-11-26T14:57:56Z",
-      "pushed_at": "2026-11-27T23:28:04Z",
-      "default_branch": "main",
-      "last_commit_at": "2026-11-27T23:28:03Z",
-      "visibility": "public",
-      "is_private": false,
-      "archived": false,
-      "fork": false,
-      "disabled": false,
-      "is_template": false,
-      "in_organization": false,
-      "license": null,
-      "license_name": null,
-      "language": "Python",
-      "languages": {
-        "Python": 145275
-      },
-      "language_total_size": 145275,
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "closed_issues": 0,
-      "open_pull_requests": 0,
-      "merged_pull_requests": 0,
-      "closed_pull_requests": 0,
-      "releases_count": 0,
-      "releases": [],
-      "tags_count": 0,
-      "branches_count": 1,
-      "discussions_count": 0,
-      "deployments_count": 0,
-      "environments_count": 0,
-      "packages_count": 0,
-      "has_issues": true,
-      "has_wiki": true,
-      "has_projects": true,
-      "has_discussions": false,
-      "topics": [],
-      "size_kb": 5340,
-      "readme": {
-        "path": "README.md",
-        "html_url": "https://github.com/hamids-ai-automations/github-profile-master-record/blob/main/README.md",
-        "has_readme": true,
-        "length": 9813,
-        "excerpt": "# Muhammad Hamid — GitHub Master Record\n\n> Single source of truth for the complete GitHub history of [@hamids-ai-automations](https://github.com/hamids-ai-automations). **Last synchronized:** 2026-11-27T23:28:03+00:00\n\nAI Automation Engineer | MCP servers, agent evals and permission-gated automation | Python. Building open-source agent tooling for real business systems.\n\n[![Automatic Profile Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/automatic-profile-sync.yml) [![Validate Master Data](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/validate-master-data.yml) [![Scheduled Full Sync](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml/badge.svg)](https://github.com/hamids-ai-automations/github-profile-master-record/actions/workflows/scheduled-full-sync.yml)\n\n## Profile overview\n\n| Metric | Value |\n| --- | --- |\n| Repositories (owned / forked) | 42 / 59 |\n| Projects documented | 101 |\n| Public gists | 0 |\n| Live websites | 67 |\n| Releases tracked | 7 |\n| External links | 801 |\n| Pull requests authored | 168 |\n| Issues authored | 1 |\n| Commits (last 12 months) | 313 |\n| Total contributions (last 12 months) | 584 |\n| Followers | 4 |\n\n## Main technologies\n\nPython (69.77%), TypeScript (17.11%), JavaScript (3.37%), HTML (2.41%), Go (1.96%), PHP (1.14%), Vue (0.99%), Shell (0.66%)\n\n## Important projects\n\n| Repository | Description | Language | Stars | Forks | Status | Last push |\n| --- | --- | --- | --- | --- | --- | --- |\n| [marvis-portfolio](https://github.com/hamids-ai-automations/marvis-portfolio) | Automated GitHub-driven portfolio for Muhammad Hamid — AI Automation Engineer. Static site generated from github-profile-master-record and deployed to Firebase Hosting. | TypeScript | 1 | 0 | active | 2026-11-27 |\n| [github-profile-master-record](https://github.com/hamids-ai-automations/github-profile-master-record) | Permanent, automatically synchronized master record of the hamids-ai-automations GitHub profile | Python | 1 | 0 | active | 2026-11-27 |\n| [servicenow-ultimate-mcp](https://github.com/hamids-ai-automations/servicenow-ultimate-mcp) | Enterprise operations console and reference control plane for the ServiceNow Ultimate MCP server - ITSM, CMDB, workflows, analytics and an LLM-powered natural-language query console. | TypeScript | 1 | 0 | active | 2026-11-24 |\n| [shopify-growth-mcp](https://github.com/hamids-ai-automations/shopify-growth-mcp) | Production-grade Shopify Growth MCP Server: 61 MCP tools for AI store operations, SEO audits, GEO readiness, deterministic analytics, inventory intelligence, feed quality and safe marketing workflows. Model Context Protocol for Claude, Cursor, VS Code, Codex. TypeScript, MIT. | TypeScript | 1 | 0 | active | 2026-11-23 |\n| [hamids-ai-automations](https://github.com/hamids-ai-automations/hamids-ai-automations) | AI Automation Engineer building open-source agentic systems: MCP servers, eval harnesses, Python automation and API integrations. Portfolio: marvis.web.app | - | 1 | 0 | active | 2026-11-22 |\n| [ghl-automation-engine](https://github.com/hamids-ai-automations/ghl-automation-engine) | Contract-first HighLevel (GoHighLevel) engine: honest pagination, single-flight OAuth refresh, PII-safe logging, signed webhook intake with replay protection, and an offline mock with fault injection. 83 tests, zero runtime dependencies. | Python | 1 | 0 | active | 2026-11-22 |\n| [restock-radar](https://github.com/hamids-ai-automations/restock-radar) | Shopify app for back-in-stock alerts and preorder recovery | JavaScript | 1 | 0 | active | 2026-11-21 |\n| [pinvault-pinterest-downloader](https://github.com/",
-        "full_content_path": null
-      },
-      "readme_full_content": null,
-      "tree": {
-        "truncated": false,
-        "total_files": 416,
-        "total_entries": 435,
-        "top_level_directories": [
-          ".github",
-          "achievements",
-          "automation",
-          "contributions",
-          "history",
-          "profile",
-          "projects",
-          "repositories",
-          "resources"
-        ],
-        "important_files": [
-          "automation/requirements.txt"
-        ],
-        "workflow_files": [
-          ".github/workflows/automatic-profile-sync.yml",
-          ".github/workflows/initial-data-collection.yml",
-          ".github/workflows/scheduled-full-sync.yml",
-          ".github/workflows/validate-master-data.yml"
-        ],
-        "test_files_count": 8,
-        "ci_enabled": true
-      },
-      "contributors": {
-        "count": 2,
-        "anonymous_included": false
-      },
-      "technology": {
-        "frameworks": [],
-        "dependencies": [],
-        "config_files": []
-      },
-      "external_links": [
-        "https://marvis.web.app",
-        "https://hamid-agentshield.streamlit.app",
-        "https://hamid-seo-intelligence-ai.streamlit.app",
-        "https://adwaste-intelligence.streamlit.app",
-        "https://adwaste-intelligence.streamlit.app`",
-        "https://agentshield-ai.streamlit.app`",
-        "https://hamid-resume.web.app",
-        "https://marvis.web.app**",
-        "https://marvis.web.app/projects/leadflow-sentinel",
-        "https://abouthamid.web.app",
-        "https://fb-ai-starter-kit.web.app",
-        "https://marvis.web.app/projects/firebase-ai-starter-kit",
-        "https://marvis.web.app/projects/gemini-agent-automation-toolkit",
-        "https://marvis.web.app/projects/gemini-agent-automation-toolkit.html**",
-        "https://musheabdulhakim.github.io/gohighlevel-php-sdk",
-        "https://api.github.com/users/hamids-ai-automations/packages?package_type=pypi",
-        "https://docs.github.com/rest/packages/packages#list-packages-for-a-user"
-      ],
-      "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-28T07:46:08+00:00",
+      "detail_refreshed_at": "2026-11-28T10:44:43+00:00",
       "detail_source": "api"
     },
     {
@@ -1005,8 +1005,8 @@
         "https://marvis.web.app"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:00+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:43+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV9cB4g",
@@ -1125,8 +1125,8 @@
         "http://localhost:8501"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:00+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:43+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV9bh8w",
@@ -1253,8 +1253,8 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:00+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:42+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV7aKCg",
@@ -1410,8 +1410,8 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:00+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:43+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV5Z3EA",
@@ -1601,8 +1601,8 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:00+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:44+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVaAF6A",
@@ -1740,8 +1740,8 @@
         "https://m8ven.ai/mcp/hamid-digitalmarketer-shopify-growth-mcp-14q9ul?s=readme"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:00+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:44+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV3mnag",
@@ -1845,8 +1845,8 @@
         "https://marvis.web.app/projects/leadflow-sentinel"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:02+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:44+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFVIqA",
@@ -1939,8 +1939,8 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:02+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:44+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV294pA",
@@ -2047,8 +2047,8 @@
       },
       "external_links": [],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:02+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:44+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV3y_UA",
@@ -2247,8 +2247,8 @@
         "https://marvis.web.app/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:02+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:44+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV2H9tg",
@@ -2352,8 +2352,8 @@
         "https://me.developers.google.com/u/hamidautomations"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:02+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:44+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVXn9SQ",
@@ -2477,8 +2477,8 @@
         "https://restock-radar.example.com"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:04+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:45+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVedz1A",
@@ -2656,8 +2656,8 @@
         "http://localhost:3000"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:05+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:45+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVdUKGQ",
@@ -2757,8 +2757,8 @@
       },
       "external_links": [],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:05+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:45+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVOCTiA",
@@ -2902,8 +2902,8 @@
         "https://www.googleapis.com/auth/webmasters.readonly`"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:05+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:45+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVQvC9A",
@@ -3015,8 +3015,8 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:05+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:45+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVOhebA",
@@ -3139,8 +3139,8 @@
         "https://hamid-resume.web.app/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:05+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:45+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV2rQCQ",
@@ -3241,8 +3241,8 @@
       },
       "external_links": [],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:07+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:47+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV2gYQw",
@@ -3353,8 +3353,8 @@
         "https://modelcontextprotocol.io"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:07+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:47+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV1l5hw",
@@ -3473,8 +3473,8 @@
         "https://marvis.web.app/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:07+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:47+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV1pT_w",
@@ -3575,8 +3575,8 @@
       },
       "external_links": [],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:08+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:47+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVIk0wQ",
@@ -3690,8 +3690,8 @@
         "https://wa.me/923167417135?text=Hello%20Hamid%2C%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20job%20opportunity%20or%20project"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:29+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:58+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVPAntw",
@@ -3816,8 +3816,8 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:29+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:58+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVO_MQw",
@@ -3951,8 +3951,8 @@
         "https://example.com/consultation"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:29+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:58+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFaXWw",
@@ -4069,8 +4069,8 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:30+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:58+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFa1rg",
@@ -4184,8 +4184,8 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:30+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:59+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFgywQ",
@@ -4298,8 +4298,8 @@
         "https://wa.me/923167417135"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:31+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:59+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFi44A",
@@ -4426,8 +4426,8 @@
         "http://localhost:8000/dashboard"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:31+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:59+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVMt_Sg",
@@ -4542,8 +4542,8 @@
       },
       "external_links": [],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:31+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:59+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVK72jg",
@@ -4644,8 +4644,8 @@
         "https://python.org"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:32+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:59+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVN1Lzg",
@@ -4756,8 +4756,8 @@
         "https://example.com"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:32+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:59+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVK72GA",
@@ -4876,8 +4876,8 @@
         "https://docs.pydantic.dev"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:32+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:59+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFpFUA",
@@ -5000,8 +5000,8 @@
         "http://127.0.0.1:8000/sitemap.xml"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:32+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:45:00+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFr4KQ",
@@ -5122,8 +5122,8 @@
         "https://www.apexdentalcare-example.com"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:34+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:45:00+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFr30w",
@@ -5245,8 +5245,8 @@
         "http://localhost:8000`"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:33+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:45:00+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFr3iA",
@@ -5369,8 +5369,8 @@
         "http://localhost:8000`"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:34+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:45:00+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFr3Pg",
@@ -5492,8 +5492,8 @@
         "http://localhost:8000`"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:34+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:45:01+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVFlfWg",
@@ -5631,8 +5631,8 @@
         "http://localhost:8000/docs"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:34+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:45:01+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV3vOhA",
@@ -5753,8 +5753,8 @@
         "https://docs.python.org/3/library/asyncio.html"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:02+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:44+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV3VphQ",
@@ -5850,8 +5850,8 @@
         "https://pestphp.com/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:03+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:45+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV3QmVQ",
@@ -5981,8 +5981,8 @@
         "http://localhost:3001/preview`"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:03+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:45+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV2KJ9Q",
@@ -6088,8 +6088,8 @@
         "http://localhost:8000"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:07+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:47+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOV2rUiQ",
@@ -6232,8 +6232,8 @@
         "https://mcp-toolbox.dev/documentation/configuration/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:07+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:47+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVqInGQ",
@@ -6364,8 +6364,8 @@
         "http://127.0.0.1:8000/mcp"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:08+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:47+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVb74mg",
@@ -6493,8 +6493,8 @@
       },
       "external_links": [],
       "documentation_status": "no_readme",
-      "detail_refreshed_at": "2026-11-27T11:13:08+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:47+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVaeg9w",
@@ -6624,8 +6624,8 @@
         "https://opnform.com/terms-conditions"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:11+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:48+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbCIDw",
@@ -6751,8 +6751,8 @@
         "http://localhost:8080`"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:10+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:48+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVa_nmw",
@@ -6860,8 +6860,8 @@
         "https://www.tensorflow.org/agents"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:10+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:48+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVcAOcw",
@@ -7074,8 +7074,8 @@
         "https://vibgrate.com/glossary/sbom"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:10+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:48+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVhZr5g",
@@ -7186,8 +7186,8 @@
         "https://raw.githubusercontent.com/pygrpc/pygrpc-native/main/assets/benchmark.gif"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:10+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:48+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVa_XHg",
@@ -7304,8 +7304,8 @@
         "https://linkedin.com/in/iamvisheshsrivastava"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:10+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:48+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbA2Xw",
@@ -7420,8 +7420,8 @@
         "https://render.com"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:11+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:48+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVdPeuQ",
@@ -7548,8 +7548,8 @@
         "https://www.sigwac.org.uk/wiki/WAC-X"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:11+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:48+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVfSanA",
@@ -7664,8 +7664,8 @@
         "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-15"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:13+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:49+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVdxCCQ",
@@ -7816,8 +7816,8 @@
         "https://example.com/api/docs-feedback"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:14+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:49+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVdK0qA",
@@ -7986,8 +7986,8 @@
         "https://finos.github.io/open-resource-broker/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:13+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:50+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVnyV-A",
@@ -8105,8 +8105,8 @@
         "https://contrib.rocks/image?repo=laaielichter/Gulliver"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:13+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:50+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVnwqrw",
@@ -8324,8 +8324,8 @@
         "https://openmed.life"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:14+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:50+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVa4tyw",
@@ -8450,8 +8450,8 @@
         "https://tsoa-community.github.io/docs/getting-started"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:13+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:50+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVfBCbw",
@@ -8571,8 +8571,8 @@
         "https://sentryward.example.com/api/reviews/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:14+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:50+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVfFbRw",
@@ -8711,8 +8711,8 @@
         "http://collector:4318`"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:14+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:50+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVe6D3A",
@@ -8875,8 +8875,8 @@
         "https://discord.gg/zrsNMEzmCj"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:15+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:51+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOViPt6A",
@@ -8988,8 +8988,8 @@
         "https://shields.io/badges/endpoint-badge"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:16+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:51+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOViRvyA",
@@ -9133,8 +9133,8 @@
         "https://docs.proteanhq.com/community/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:17+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:52+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVh4owg",
@@ -9262,8 +9262,8 @@
         "https://doi.org/10.5281/zenodo.23426564"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:16+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:52+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVh8piQ",
@@ -9357,8 +9357,8 @@
       },
       "external_links": [],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:16+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:51+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVaje3w",
@@ -9477,8 +9477,8 @@
         "https://docs.astral.sh/uv/concepts/projects/workspaces/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:18+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:52+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVfVgTg",
@@ -9626,8 +9626,8 @@
         "https://keepachangelog.com/en/1.1.0/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:17+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:52+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVfPVrQ",
@@ -9775,8 +9775,8 @@
         "https://aws.amazon.com/migration-evaluator/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:18+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:52+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVfRj2Q",
@@ -9924,8 +9924,8 @@
         "http://127.0.0.1:8000/agent-ui`"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:20+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:53+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVdzo-A",
@@ -10036,8 +10036,8 @@
         "https://stellar.org/community"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:19+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:53+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVaXvgg",
@@ -10193,8 +10193,8 @@
         "https://opencomplai.com"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:19+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:53+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVdipwg",
@@ -10350,8 +10350,8 @@
         "https://reuse.software/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:19+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:53+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVe8Vnw",
@@ -10495,8 +10495,8 @@
         "https://transparencycascade.org"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:20+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:54+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVaBbDA",
@@ -10659,8 +10659,8 @@
         "https://kossnocorp.mit-license.org/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:20+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:53+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVblopw",
@@ -10774,8 +10774,8 @@
         "https://tallysolutions.com/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:20+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:53+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVcAUPQ",
@@ -10880,8 +10880,8 @@
         "https://avatars.githubusercontent.com/u/210186755?v=4?s=80"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:21+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:54+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVd6BKw",
@@ -11127,8 +11127,8 @@
         "https://frappe.io/files/Frappe-black.png"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:22+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:55+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVd2yZA",
@@ -11226,8 +11226,8 @@
       },
       "external_links": [],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:22+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:54+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVdkUng",
@@ -11420,8 +11420,8 @@
         "https://datamodel-code-generator.koxudaxi.dev/python-client/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:23+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:55+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVazoEQ",
@@ -11620,8 +11620,8 @@
         "https://opencollective.com/dayjs#backers"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:23+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:55+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbMBzw",
@@ -11767,8 +11767,8 @@
         "https://trunkbaseddevelopment.com/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:24+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:55+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVdUBjQ",
@@ -12036,8 +12036,8 @@
         "https://docs.agent-swarm.dev/docs/architecture/overview"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:24+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:55+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVdDTHg",
@@ -12134,8 +12134,8 @@
         "https://pypi.org/project/wn/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:23+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:55+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbzSeA",
@@ -12250,8 +12250,8 @@
         "https://imgproxykit.readthedocs.io/en/latest/pages/changelog.html"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:24+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:55+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbVT7g",
@@ -12391,8 +12391,8 @@
         "https://render.com"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:24+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:56+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbrDOw",
@@ -12537,8 +12537,8 @@
         "https://www.exmergo.com/connectors/duckdb.png"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:26+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:56+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbu1Pg",
@@ -12666,8 +12666,8 @@
         "https://peps.python.org/pep-0619/#310-lifespan"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:25+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:56+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbnOlw",
@@ -12764,8 +12764,8 @@
         "https://docs.astral.sh/uv/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:26+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:57+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbPBCg",
@@ -12893,8 +12893,8 @@
         "https://en.wikipedia.org/wiki/Pure_function"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:26+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:56+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbSz2g",
@@ -13013,8 +13013,8 @@
         "https://pyyaml.org/wiki/PyYAMLDocumentation"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:27+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:56+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVbFNvA",
@@ -13111,8 +13111,8 @@
         "https://medium.com/@dirk.avery/securing-files-on-windows-macos-and-linux-7b2b9899992"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:27+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:57+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVaB_dA",
@@ -13348,8 +13348,8 @@
         "https://www.gnu.org/licenses/agpl-3.0.html"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:28+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:57+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVapqEA",
@@ -13485,8 +13485,8 @@
         "https://api.star-history.com/chart?repos=aden-hive/hive&type=date&legend=top-left&sealed_token=vfX1DG8w_KTkonUUtIEjFRLvBopgDzxQpyb8hiYT22sobcDIpvQiMciZghLsDu5hyU3LJs-ZddFjl8eYFx5zRrY-kcMRsfyQ3vAiacsroPoqgRYmZaES3Q"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:27+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:57+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVa7HZw",
@@ -13625,8 +13625,8 @@
         "https://rich.readthedocs.io/en/latest/traceback.html"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:28+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:58+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVafrQA",
@@ -13800,8 +13800,8 @@
         "https://docs.cuga.dev/docs/build/cuga-agent/"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:29+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:58+00:00",
+      "detail_source": "api"
     },
     {
       "id": "R_kgDOVaZ20Q",
@@ -13933,25 +13933,11 @@
         "https://api.star-history.com/chart?repos=dpro-at/tel-agent&type=date&legend=top-left"
       ],
       "documentation_status": "documented",
-      "detail_refreshed_at": "2026-11-27T11:13:29+00:00",
-      "detail_source": "cached"
+      "detail_refreshed_at": "2026-11-28T10:44:58+00:00",
+      "detail_source": "api"
     }
   ],
   "projects": [
-    {
-      "name": "marvis-portfolio",
-      "full_name": "hamids-ai-automations/marvis-portfolio",
-      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
-      "documentation": null,
-      "status": "active"
-    },
-    {
-      "name": "firebase-ai-starter-kit",
-      "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
-      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
-      "documentation": null,
-      "status": "active"
-    },
     {
       "name": "proeventsolutions-pk",
       "full_name": "hamids-ai-automations/proeventsolutions-pk",
@@ -13960,9 +13946,23 @@
       "status": "active"
     },
     {
+      "name": "marvis-portfolio",
+      "full_name": "hamids-ai-automations/marvis-portfolio",
+      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
+      "documentation": null,
+      "status": "active"
+    },
+    {
       "name": "github-profile-master-record",
       "full_name": "hamids-ai-automations/github-profile-master-record",
       "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "documentation": null,
+      "status": "active"
+    },
+    {
+      "name": "firebase-ai-starter-kit",
+      "full_name": "hamids-ai-automations/firebase-ai-starter-kit",
+      "url": "https://github.com/hamids-ai-automations/firebase-ai-starter-kit",
       "documentation": null,
       "status": "active"
     },
@@ -17380,8 +17380,8 @@
   },
   "commits": {
     "window": {
-      "from": "2025-11-28T07:46:18Z",
-      "to": "2026-11-28T07:46:18Z"
+      "from": "2025-11-28T10:45:05Z",
+      "to": "2026-11-28T10:45:05Z"
     },
     "total_commits": 313,
     "total_contributions": 584,
@@ -18360,7 +18360,7 @@
         "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
         "owner": "doobidoo",
         "is_fork": false,
-        "stars": 2163,
+        "stars": 2165,
         "language": "Python",
         "commits": 2,
         "pull_requests": 3,
@@ -18486,7 +18486,7 @@
         "description": "Python & Command-line tool to gather text and metadata on the Web: Crawling, scraping, extraction, output as CSV, JSON, HTML, MD, TXT, XML",
         "owner": "adbar",
         "is_fork": false,
-        "stars": 7243,
+        "stars": 7247,
         "language": "Python",
         "commits": 1,
         "pull_requests": 2,
@@ -18514,7 +18514,7 @@
         "description": "Python Client for Supabase. Query Postgres from Flask, Django, FastAPI. Python user authentication, security policies, edge functions, file storage, and realtime data streaming.",
         "owner": "supabase",
         "is_fork": false,
-        "stars": 2639,
+        "stars": 2640,
         "language": "Python",
         "commits": 1,
         "pull_requests": 1,
@@ -18696,7 +18696,7 @@
         "description": "Dex lets your agent build your analytics.",
         "owner": "exmergo",
         "is_fork": false,
-        "stars": 145,
+        "stars": 148,
         "language": "Python",
         "commits": 1,
         "pull_requests": 1,
@@ -19154,8 +19154,8 @@
       }
     ],
     "window": {
-      "from": "2025-11-28T07:46:20Z",
-      "to": "2026-11-28T07:46:20Z"
+      "from": "2025-11-28T10:45:07Z",
+      "to": "2026-11-28T10:45:07Z"
     }
   },
   "external_links": [
@@ -19349,60 +19349,6 @@
       "verified": null
     },
     {
-      "url": "http://localhost:3000",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/marvis-portfolio",
-        "hamids-ai-automations/servicenow-ultimate-mcp",
-        "hamids-ai-automations/ghl-devops-toolkit",
-        "hamids-ai-automations/nexgen-financial-experts",
-        "hamids-ai-automations/markline"
-      ],
-      "source": "README of hamids-ai-automations/marvis-portfolio",
-      "verified": null
-    },
-    {
-      "url": "https://fb-ai-starter-kit.web.app",
-      "type": "live_site",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/firebase-ai-starter-kit",
-        "hamids-ai-automations/github-profile-master-record"
-      ],
-      "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
-      "verified": null
-    },
-    {
-      "url": "https://marvis.web.app/projects/firebase-ai-starter-kit",
-      "type": "live_site",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/firebase-ai-starter-kit",
-        "hamids-ai-automations/github-profile-master-record"
-      ],
-      "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
-      "verified": null
-    },
-    {
-      "url": "https://console.firebase.google.com",
-      "type": "website",
-      "relationships": [
-        "repository_readme_link"
-      ],
-      "related_resources": [
-        "hamids-ai-automations/firebase-ai-starter-kit"
-      ],
-      "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
-      "verified": null
-    },
-    {
       "url": "https://proeventsolutions.pk",
       "type": "website",
       "relationships": [
@@ -19436,6 +19382,48 @@
         "hamids-ai-automations/proeventsolutions-pk"
       ],
       "source": "README of hamids-ai-automations/proeventsolutions-pk",
+      "verified": null
+    },
+    {
+      "url": "http://localhost:3000",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/marvis-portfolio",
+        "hamids-ai-automations/servicenow-ultimate-mcp",
+        "hamids-ai-automations/ghl-devops-toolkit",
+        "hamids-ai-automations/nexgen-financial-experts",
+        "hamids-ai-automations/markline"
+      ],
+      "source": "README of hamids-ai-automations/marvis-portfolio",
+      "verified": null
+    },
+    {
+      "url": "https://fb-ai-starter-kit.web.app",
+      "type": "live_site",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/github-profile-master-record",
+        "hamids-ai-automations/firebase-ai-starter-kit"
+      ],
+      "source": "README of hamids-ai-automations/github-profile-master-record",
+      "verified": null
+    },
+    {
+      "url": "https://marvis.web.app/projects/firebase-ai-starter-kit",
+      "type": "live_site",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/github-profile-master-record",
+        "hamids-ai-automations/firebase-ai-starter-kit"
+      ],
+      "source": "README of hamids-ai-automations/github-profile-master-record",
       "verified": null
     },
     {
@@ -19628,6 +19616,18 @@
         "hamids-ai-automations/github-profile-master-record"
       ],
       "source": "README of hamids-ai-automations/github-profile-master-record",
+      "verified": null
+    },
+    {
+      "url": "https://console.firebase.google.com",
+      "type": "website",
+      "relationships": [
+        "repository_readme_link"
+      ],
+      "related_resources": [
+        "hamids-ai-automations/firebase-ai-starter-kit"
+      ],
+      "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
       "verified": null
     },
     {
@@ -30722,6 +30722,49 @@
         }
       },
       "detected_at": "2026-11-28T07:46:31+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/proeventsolutions-pk",
+      "url": "https://github.com/hamids-ai-automations/proeventsolutions-pk",
+      "summary": "hamids-ai-automations/proeventsolutions-pk updated: pushed_at",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-28T03:14:30Z",
+          "new": "2026-11-28T10:43:38Z"
+        }
+      },
+      "detected_at": "2026-11-28T10:45:13+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/marvis-portfolio",
+      "url": "https://github.com/hamids-ai-automations/marvis-portfolio",
+      "summary": "hamids-ai-automations/marvis-portfolio updated: pushed_at",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-28T04:01:55Z",
+          "new": "2026-11-28T07:46:49Z"
+        }
+      },
+      "detected_at": "2026-11-28T10:45:13+00:00"
+    },
+    {
+      "type": "repository_updated",
+      "resource": "hamids-ai-automations/github-profile-master-record",
+      "url": "https://github.com/hamids-ai-automations/github-profile-master-record",
+      "summary": "hamids-ai-automations/github-profile-master-record updated: pushed_at, readme",
+      "fields": {
+        "pushed_at": {
+          "old": "2026-11-27T23:28:04Z",
+          "new": "2026-11-28T07:46:33Z"
+        },
+        "readme": {
+          "old": 9813,
+          "new": 10015
+        }
+      },
+      "detected_at": "2026-11-28T10:45:13+00:00"
     }
   ],
   "data_quality": {
@@ -30749,6 +30792,6 @@
     ],
     "validation_errors": 0,
     "validation_warnings": 1,
-    "last_validated": "2026-11-28T07:46:31+00:00"
+    "last_validated": "2026-11-28T10:45:13+00:00"
   }
 }

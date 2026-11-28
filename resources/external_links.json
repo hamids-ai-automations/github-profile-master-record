@@ -189,60 +189,6 @@
     "verified": null
   },
   {
-    "url": "http://localhost:3000",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/marvis-portfolio",
-      "hamids-ai-automations/servicenow-ultimate-mcp",
-      "hamids-ai-automations/ghl-devops-toolkit",
-      "hamids-ai-automations/nexgen-financial-experts",
-      "hamids-ai-automations/markline"
-    ],
-    "source": "README of hamids-ai-automations/marvis-portfolio",
-    "verified": null
-  },
-  {
-    "url": "https://fb-ai-starter-kit.web.app",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/firebase-ai-starter-kit",
-      "hamids-ai-automations/github-profile-master-record"
-    ],
-    "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
-    "verified": null
-  },
-  {
-    "url": "https://marvis.web.app/projects/firebase-ai-starter-kit",
-    "type": "live_site",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/firebase-ai-starter-kit",
-      "hamids-ai-automations/github-profile-master-record"
-    ],
-    "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
-    "verified": null
-  },
-  {
-    "url": "https://console.firebase.google.com",
-    "type": "website",
-    "relationships": [
-      "repository_readme_link"
-    ],
-    "related_resources": [
-      "hamids-ai-automations/firebase-ai-starter-kit"
-    ],
-    "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
-    "verified": null
-  },
-  {
     "url": "https://proeventsolutions.pk",
     "type": "website",
     "relationships": [
@@ -276,6 +222,48 @@
       "hamids-ai-automations/proeventsolutions-pk"
     ],
     "source": "README of hamids-ai-automations/proeventsolutions-pk",
+    "verified": null
+  },
+  {
+    "url": "http://localhost:3000",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/marvis-portfolio",
+      "hamids-ai-automations/servicenow-ultimate-mcp",
+      "hamids-ai-automations/ghl-devops-toolkit",
+      "hamids-ai-automations/nexgen-financial-experts",
+      "hamids-ai-automations/markline"
+    ],
+    "source": "README of hamids-ai-automations/marvis-portfolio",
+    "verified": null
+  },
+  {
+    "url": "https://fb-ai-starter-kit.web.app",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/firebase-ai-starter-kit"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://marvis.web.app/projects/firebase-ai-starter-kit",
+    "type": "live_site",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/github-profile-master-record",
+      "hamids-ai-automations/firebase-ai-starter-kit"
+    ],
+    "source": "README of hamids-ai-automations/github-profile-master-record",
     "verified": null
   },
   {
@@ -468,6 +456,18 @@
       "hamids-ai-automations/github-profile-master-record"
     ],
     "source": "README of hamids-ai-automations/github-profile-master-record",
+    "verified": null
+  },
+  {
+    "url": "https://console.firebase.google.com",
+    "type": "website",
+    "relationships": [
+      "repository_readme_link"
+    ],
+    "related_resources": [
+      "hamids-ai-automations/firebase-ai-starter-kit"
+    ],
+    "source": "README of hamids-ai-automations/firebase-ai-starter-kit",
     "verified": null
   },
   {
